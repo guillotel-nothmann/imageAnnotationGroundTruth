@@ -1,0 +1,51 @@
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-15T07:21:09</pc:Created>
+        <pc:LastChange>2020-06-15T07:21:09</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Matthaei_1652-006.png" imageWidth="1167" imageHeight="1447" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Matthaei_1652-006-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Matthaei_1652-006.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="176,103 1018,103 1018,1353 176,1353"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/></pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="heading"><pc:Coords points="402,104 808,104 809,140 747,139 703,145 646,140 513,139 403,143 402,104"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="drop-capital"><pc:Coords points="276,141 276,216 351,216 351,141 276,141"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="drop-capital"><pc:Coords points="373,143 373,229 439,229 439,143 373,143"/></pc:TextRegion><pc:TextRegion id="region_id_3" type="drop-capital"><pc:Coords points="459,144 459,221 530,221 530,144 459,144"/></pc:TextRegion><pc:TextRegion id="region_id_4" type="drop-capital"><pc:Coords points="551,144 551,226 615,226 615,144 551,144"/></pc:TextRegion><pc:TextRegion id="region_id_5" type="drop-capital"><pc:Coords points="640,146 640,220 698,220 698,146 640,146"/></pc:TextRegion><pc:TextRegion id="region_id_6" type="drop-capital"><pc:Coords points="719,144 719,225 779,225 779,144 719,144"/></pc:TextRegion><pc:TextRegion id="region_id_7" type="drop-capital"><pc:Coords points="798,143 798,224 872,224 872,140 798,143"/></pc:TextRegion><pc:TextRegion id="region_id_8" type="heading"><pc:Coords points="531,232 664,232 664,266 1018,270 1032,395 1028,567 971,661 786,667 786,699 398,697 398,663 226,659 169,584 171,404 175,268 525,257 531,232"/></pc:TextRegion><pc:GraphicRegion id="region_id_9"><pc:Coords points="203,706 203,1252 965,1252 965,706 203,706"/></pc:GraphicRegion><pc:TextRegion id="region_id_10" type="heading"><pc:Coords points="200,1276 965,1266 965,1353 194,1355 200,1276"/></pc:TextRegion></pc:Page>
+</pc:PcGts>

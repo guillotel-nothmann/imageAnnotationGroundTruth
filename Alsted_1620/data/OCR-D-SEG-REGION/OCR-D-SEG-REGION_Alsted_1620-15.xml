@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-12T08:00:20</pc:Created>
+        <pc:LastChange>2020-06-12T08:00:20</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alsted_1620-15.png" imageWidth="2602" imageHeight="3586" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alsted_1620-15-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alsted_1620-15.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="249,236 2338,236 2338,3160 249,3160"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
+                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
+                <pc:RegionRefIndexed index="13" regionRef="region0013"/>
+                <pc:RegionRefIndexed index="14" regionRef="region0014"/>
+                <pc:RegionRefIndexed index="15" regionRef="region0015"/>
+                <pc:RegionRefIndexed index="16" regionRef="region0016"/>
+                <pc:RegionRefIndexed index="17" regionRef="region0017"/>
+                <pc:RegionRefIndexed index="18" regionRef="region0018"/>
+                <pc:RegionRefIndexed index="19" regionRef="region0019"/>
+                <pc:RegionRefIndexed index="20" regionRef="region0020"/>
+                <pc:RegionRefIndexed index="21" regionRef="region0021"/>
+                <pc:RegionRefIndexed index="22" regionRef="region0022"/>
+                <pc:RegionRefIndexed index="23" regionRef="region0023"/>
+                <pc:RegionRefIndexed index="24" regionRef="region0024"/>
+                <pc:RegionRefIndexed index="25" regionRef="region0025"/>
+                <pc:RegionRefIndexed index="26" regionRef="region0026"/>
+                <pc:RegionRefIndexed index="27" regionRef="region0027"/>
+                <pc:RegionRefIndexed index="28" regionRef="region0028"/>
+                <pc:RegionRefIndexed index="29" regionRef="region0029"/>
+                <pc:RegionRefIndexed index="30" regionRef="region0030"/>
+                <pc:RegionRefIndexed index="31" regionRef="region0031"/>
+                <pc:RegionRefIndexed index="32" regionRef="region0032"/>
+                <pc:RegionRefIndexed index="33" regionRef="region0033"/>
+                <pc:RegionRefIndexed index="34" regionRef="region0034"/>
+                <pc:RegionRefIndexed index="35" regionRef="region0035"/>
+                <pc:RegionRefIndexed index="36" regionRef="region0036"/>
+                <pc:RegionRefIndexed index="37" regionRef="region0037"/>
+                <pc:RegionRefIndexed index="38" regionRef="region0038"/>
+                <pc:RegionRefIndexed index="39" regionRef="region0039"/>
+                <pc:RegionRefIndexed index="40" regionRef="region0040"/>
+                <pc:RegionRefIndexed index="41" regionRef="region0041"/>
+                <pc:RegionRefIndexed index="42" regionRef="region0042"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="294,237 1222,237 1222,1215 294,1215"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="290,1202 1194,1202 1194,1322 290,1322"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="512,1316 903,1316 903,1353 512,1353"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="287,1362 692,1362 692,1466 287,1466"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="282,1472 1184,1472 1184,1615 282,1615"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006" type="floating">
+            <pc:Coords points="282,1607 1190,1607 1190,1663 282,1663"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="262,1650 1181,1650 1181,1880 262,1880"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="337,1914 1127,1914 1127,2027 337,2027"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="520,2062 902,2062 902,2095 520,2095"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010" type="floating">
+            <pc:Coords points="308,2114 1176,2114 1176,2165 308,2165"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0011">
+            <pc:Coords points="249,2171 1160,2171 1160,3160 249,3160"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0012" type="floating">
+            <pc:Coords points="874,240 1635,240 1635,293 874,293"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0013">
+            <pc:Coords points="1238,262 2171,262 2171,1278 1238,1278"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0014">
+            <pc:Coords points="2157,1082 2325,1082 2325,1122 2157,1122"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0015">
+            <pc:Coords points="2152,1123 2337,1123 2337,1230 2152,1230"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0016" type="heading">
+            <pc:Coords points="1236,1273 2157,1273 2157,1323 1236,1323"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0017">
+            <pc:Coords points="1234,1324 2136,1324 2136,1371 1234,1371"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0018" type="heading">
+            <pc:Coords points="1233,1369 2156,1369 2156,1423 1233,1423"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0019">
+            <pc:Coords points="1232,1416 2136,1416 2136,1468 1232,1468"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0020">
+            <pc:Coords points="2317,1440 2333,1440 2333,1454 2317,1454"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0021" type="heading">
+            <pc:Coords points="1230,1461 2149,1461 2149,1510 1230,1510"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0022">
+            <pc:Coords points="1229,1513 2132,1513 2132,1566 1229,1566"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0023" type="heading">
+            <pc:Coords points="1226,1557 2149,1557 2149,1656 1226,1656"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0024">
+            <pc:Coords points="1225,1657 2127,1657 2127,1704 1225,1704"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0025" type="heading">
+            <pc:Coords points="1224,1699 2141,1699 2141,1747 1224,1747"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0026">
+            <pc:Coords points="1220,1745 2130,1745 2130,1886 1220,1886"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0027" type="heading">
+            <pc:Coords points="1218,1886 2141,1886 2141,1942 1218,1942"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0028">
+            <pc:Coords points="1217,1934 1857,1934 1857,1984 1217,1984"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0029" type="heading">
+            <pc:Coords points="1258,1988 2137,1988 2137,2044 1258,2044"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0030">
+            <pc:Coords points="1213,2043 2120,2043 2120,2187 1213,2187"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0031" type="heading">
+            <pc:Coords points="1211,2185 2133,2185 2133,2226 1211,2226"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0032">
+            <pc:Coords points="1206,2234 2114,2234 2114,2445 1206,2445"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0033">
+            <pc:Coords points="1199,2453 2111,2453 2111,2687 1199,2687"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0034">
+            <pc:Coords points="2120,2407 2254,2407 2254,2447 2120,2447"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0035">
+            <pc:Coords points="2118,2447 2299,2447 2299,2478 2118,2478"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0036" type="floating">
+            <pc:Coords points="2107,2488 2281,2488 2281,2564 2107,2564"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0037" type="heading">
+            <pc:Coords points="1198,2685 2122,2685 2122,2736 1198,2736"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0038">
+            <pc:Coords points="1191,2734 2098,2734 2098,2972 1191,2972"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0039" type="heading">
+            <pc:Coords points="1190,2968 2117,2968 2117,3018 1190,3018"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0040">
+            <pc:Coords points="1188,3017 2091,3017 2091,3068 1188,3068"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0041" type="heading">
+            <pc:Coords points="1185,3064 2114,3064 2114,3111 1185,3111"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0042">
+            <pc:Coords points="1184,3111 2088,3111 2088,3160 1184,3160"/>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0005">
+            <pc:Coords points="693,1369 1187,1369 1187,1462 693,1462"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

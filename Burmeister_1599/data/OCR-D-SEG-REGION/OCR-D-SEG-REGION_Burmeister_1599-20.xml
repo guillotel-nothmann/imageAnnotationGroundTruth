@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:39:35</pc:Created>
+        <pc:LastChange>2020-06-14T20:39:35</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-20.png" imageWidth="2208" imageHeight="2767" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-20-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-20.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="161,213 1785,213 1785,2381 161,2381"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="19" regionRef="region0019"/>
+                <pc:RegionRefIndexed index="20" regionRef="region0020"/>
+                <pc:RegionRefIndexed index="24" regionRef="region0024"/>
+                <pc:RegionRefIndexed index="26" regionRef="region0026"/>
+                <pc:RegionRefIndexed index="27" regionRef="region0027"/>
+                <pc:RegionRefIndexed index="40" regionRef="region0040"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="392,213 1664,213 1664,384 392,384"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="911,774 1028,774 1028,784 911,784"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="407,766 1784,766 1784,1008 407,1008"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="718,1032 1033,1032 1033,1113 718,1113"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="168,1129 1211,1129 1211,1334 168,1334"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="326,1337 1269,1337 1269,1522 326,1522"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0019">
+            <pc:Coords points="1101,1130 1388,1130 1388,1147 1101,1147"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0020">
+            <pc:Coords points="1158,1128 1584,1128 1584,1351 1158,1351"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0026">
+            <pc:Coords points="166,1831 553,1831 553,1904 166,1904"/>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0027">
+            <pc:Coords points="214,1849 1684,1849 1684,1953 214,1953"/>
+        </pc:TextRegion>
+        <pc:TableRegion id="region0003">
+            <pc:Coords points="166,288 1664,288 1664,775 166,775"/>
+        </pc:TableRegion>
+        <pc:TableRegion id="region0024">
+            <pc:Coords points="243,1554 1672,1554 1672,1827 243,1827"/>
+        </pc:TableRegion>
+        <pc:TableRegion id="region0040">
+            <pc:Coords points="162,1914 1782,1914 1782,2322 162,2322"/>
+        </pc:TableRegion>
+        <pc:SeparatorRegion id="region0001">
+            <pc:Coords points="886,215 889,215 889,313 886,313"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0002">
+            <pc:Coords points="834,485 1341,485 1341,499 834,499"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0009">
+            <pc:Coords points="1004,810 1013,810 1013,921 1004,921"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0010">
+            <pc:Coords points="840,905 969,905 969,909 840,909"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0011">
+            <pc:Coords points="810,215 823,215 823,980 810,980"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0012">
+            <pc:Coords points="848,822 853,822 853,971 848,971"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0013">
+            <pc:Coords points="888,826 895,826 895,971 888,971"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0014">
+            <pc:Coords points="843,950 974,950 974,953 843,953"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0015">
+            <pc:Coords points="396,215 413,215 413,1003 396,1003"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0016">
+            <pc:Coords points="644,215 658,215 658,1004 644,1004"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0017">
+            <pc:Coords points="1522,215 1546,215 1546,1000 1522,1000"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0018">
+            <pc:Coords points="176,1125 938,1125 938,1139 176,1139"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0021">
+            <pc:Coords points="1064,1130 1073,1130 1073,1241 1064,1241"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0022">
+            <pc:Coords points="255,1304 1146,1304 1146,1322 255,1322"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0023">
+            <pc:Coords points="997,1737 1376,1737 1376,1766 997,1766"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0025">
+            <pc:Coords points="924,1834 1371,1834 1371,1846 924,1846"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0028">
+            <pc:Coords points="923,1887 1034,1887 1034,1891 923,1891"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0029">
+            <pc:Coords points="1184,1831 1194,1831 1194,1949 1184,1949"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0030">
+            <pc:Coords points="972,1821 981,1821 981,1967 972,1967"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0031">
+            <pc:Coords points="931,1822 940,1822 940,2010 931,2010"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0032">
+            <pc:Coords points="990,1974 1136,1974 1136,1983 990,1983"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0033">
+            <pc:Coords points="251,1553 265,1553 265,2243 251,2243"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0034">
+            <pc:Coords points="415,1564 432,1564 432,2242 415,2242"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0035">
+            <pc:Coords points="1387,1558 1411,1558 1411,2253 1387,2253"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0036">
+            <pc:Coords points="601,1559 622,1559 622,2303 601,2303"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0037">
+            <pc:Coords points="896,1557 911,1557 911,2303 896,2303"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0038">
+            <pc:Coords points="1550,1554 1579,1554 1579,2298 1550,2298"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0039">
+            <pc:Coords points="770,1562 785,1562 785,2311 770,2311"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>
