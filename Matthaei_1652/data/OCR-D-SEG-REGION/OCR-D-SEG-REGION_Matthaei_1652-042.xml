@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-15T07:22:17</pc:Created>
@@ -46,11 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000">
-            <pc:Coords points="134,106 874,106 874,1305 134,1305"/>
-        </pc:TextRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="425,104 874,106 876,142 425,136 425,104"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="paragraph"><pc:Coords points="131,149 133,694 152,695 157,689 592,687 591,653 877,647 877,149 131,149"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="131,722 131,907 222,906 229,904 246,901 338,901 339,873 876,863 875,686 188,692 191,721 131,722"/></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="127,1269 127,940 185,942 184,910 240,907 872,905 873,1266 127,1269"/></pc:TextRegion><pc:TextRegion id="region_id_4" type="footer"><pc:Coords points="527,1305 528,1269 812,1270 874,1267 876,1305 527,1305"/></pc:TextRegion></pc:Page>
 </pc:PcGts>
