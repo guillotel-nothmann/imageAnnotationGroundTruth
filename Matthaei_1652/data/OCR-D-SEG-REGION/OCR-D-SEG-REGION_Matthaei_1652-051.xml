@@ -45,7 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/></pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="other"><pc:Coords points="292,106 1033,106 1033,243 292,243 292,106"/></pc:TextRegion></pc:Page>
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="285,112 740,96 746,132 289,144 285,112"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="paragraph"><pc:Coords points="285,153 285,290 1038,290 1036,140 285,153"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="285,404 285,292 1038,292 1040,400 285,404"/></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="287,679 285,402 1032,402 1033,671 287,679"/></pc:TextRegion><pc:MusicRegion id="region_id_4" custom="staffNotation"><pc:Coords points="339,863 339,679 973,673 972,863 820,865 804,866 781,864 339,863"/></pc:MusicRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="287,1083 287,863 1034,863 1035,1078 287,1083"/></pc:TextRegion><pc:TextRegion id="region_id_6" type="paragraph"><pc:Coords points="291,1244 291,1089 1032,1089 1035,1197 769,1199 771,1239 291,1244"/></pc:TextRegion><pc:TextRegion id="region_id_7" type="footer"><pc:Coords points="956,1241 956,1288 1035,1288 1035,1241 956,1241"/></pc:TextRegion></pc:Page>
 </pc:PcGts>
