@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:40:34</pc:Created>
@@ -46,26 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
-                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
-                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000" type="caption">
-            <pc:Coords points="655,213 1898,213 1898,385 655,385"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0001" type="caption">
-            <pc:Coords points="661,402 1888,402 1888,558 661,558"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0004">
-            <pc:Coords points="658,1922 1967,1922 1967,2407 658,2407"/>
-        </pc:TextRegion>
-        <pc:ImageRegion id="region0003">
-            <pc:Coords points="625,610 1889,610 1889,1866 625,1866"/>
-        </pc:ImageRegion>
-        <pc:SeparatorRegion id="region0002">
-            <pc:Coords points="1292,1432 1301,1432 1301,1602 1292,1602"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="caption"><pc:Coords points="658,210 1914,201 1898,385 655,385 658,210"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="caption"><pc:Coords points="661,402 1888,402 1888,558 661,558 661,402"/></pc:TextRegion><pc:ImageRegion id="region_id_2"><pc:Coords points="625,610 1889,610 1889,1866 625,1866 625,610"/></pc:ImageRegion><pc:TextRegion id="region_id_3" type="heading"><pc:Coords points="964,1911 1568,1913 1559,1996 940,1991 964,1911"/></pc:TextRegion><pc:TextRegion id="region_id_4" type="other" custom="linegroup"><pc:Coords points="644,1996 644,2385 1707,2385 1882,2090 1869,2005 644,1996"/></pc:TextRegion><pc:TextRegion id="region_id_5" type="footer"><pc:Coords points="1827,2344 1827,2412 1977,2412 1977,2344 1827,2344"/></pc:TextRegion></pc:Page>
 </pc:PcGts>
