@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-15T07:22:55</pc:Created>
@@ -46,46 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
-                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
-                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
-                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
-                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
-                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
-                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
-                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/><pc:RegionRefIndexed index="11" regionRef="region_id_11"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000">
-            <pc:Coords points="294,99 891,99 891,195 294,195"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0004">
-            <pc:Coords points="888,442 1031,442 1031,544 888,544"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0007">
-            <pc:Coords points="301,586 1042,586 1042,1301 301,1301"/>
-        </pc:TextRegion>
-        <pc:ImageRegion id="region0001">
-            <pc:Coords points="494,254 566,254 566,259 494,259"/>
-        </pc:ImageRegion>
-        <pc:ImageRegion id="region0002">
-            <pc:Coords points="756,257 796,257 796,260 756,260"/>
-        </pc:ImageRegion>
-        <pc:ImageRegion id="region0006">
-            <pc:Coords points="297,419 891,419 891,591 297,591"/>
-        </pc:ImageRegion>
-        <pc:ImageRegion id="region0008">
-            <pc:Coords points="592,969 1039,969 1039,1069 592,1069"/>
-        </pc:ImageRegion>
-        <pc:ImageRegion id="region0009">
-            <pc:Coords points="594,1077 1041,1077 1041,1226 594,1226"/>
-        </pc:ImageRegion>
-        <pc:TableRegion id="region0003">
-            <pc:Coords points="298,203 1039,203 1039,401 298,401"/>
-        </pc:TableRegion>
-        <pc:SeparatorRegion id="region0005">
-            <pc:Coords points="887,206 902,206 902,542 887,542"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="368,140 286,140 288,100 790,90 785,134 368,140"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="caption"><pc:Coords points="296,230 296,274 444,274 444,230 296,230"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="caption"><pc:Coords points="297,433 297,538 357,539 355,512 458,503 458,435 297,433"/></pc:TextRegion><pc:MusicRegion id="region_id_3" custom="staffNotation"><pc:Coords points="455,143 461,420 462,552 455,600 899,597 903,144 455,143"/></pc:MusicRegion><pc:TextRegion id="region_id_4" type="caption"><pc:Coords points="903,210 903,298 1038,298 1038,210 903,210"/></pc:TextRegion><pc:TextRegion id="region_id_5" type="caption"><pc:Coords points="901,435 904,545 1038,541 1038,435 901,435"/></pc:TextRegion><pc:TextRegion id="region_id_6" type="paragraph"><pc:Coords points="298,678 298,606 1032,606 1035,682 298,678"/></pc:TextRegion><pc:TextRegion id="region_id_7" type="paragraph"><pc:Coords points="300,824 300,685 423,681 1037,685 1037,824 300,824"/></pc:TextRegion><pc:TextRegion id="region_id_8" type="paragraph"><pc:Coords points="298,966 298,829 1037,827 1036,966 298,966"/></pc:TextRegion><pc:TextRegion id="region_id_9" type="paragraph"><pc:Coords points="300,970 300,1264 570,1264 1039,1261 1038,1193 579,1191 570,970 300,970"/></pc:TextRegion><pc:MusicRegion id="region_id_10" custom="staffNotation"><pc:Coords points="691,1192 595,1188 591,971 1034,972 1036,1181 691,1192"/></pc:MusicRegion><pc:TextRegion id="region_id_11" type="footer"><pc:Coords points="1018,1300 979,1296 968,1271 1034,1268 1038,1291 1018,1300"/></pc:TextRegion></pc:Page>
 </pc:PcGts>
