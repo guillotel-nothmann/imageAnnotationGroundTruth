@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:41:28</pc:Created>
@@ -46,11 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000">
-            <pc:Coords points="492,217 1931,217 1931,2442 492,2442"/>
-        </pc:TextRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="paragraph"><pc:Coords points="482,211 1939,202 1968,1786 1094,1765 1032,1781 1001,1763 484,1771 482,211"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="heading"><pc:Coords points="911,1784 911,1844 1460,1844 1460,1784 911,1784"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="491,1849 489,2312 659,2304 672,2317 689,2302 850,2301 877,2320 925,2306 1758,2301 1931,2229 1940,1849 491,1849"/></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="489,2340 489,2454 1940,2454 1940,2307 930,2309 881,2328 844,2307 691,2305 666,2323 620,2311 489,2340"/></pc:TextRegion></pc:Page>
 </pc:PcGts>
