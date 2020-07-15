@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:42:46</pc:Created>
+        <pc:LastChange>2020-06-14T20:42:46</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-89.png" imageWidth="2116" imageHeight="2438" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-89-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-89.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="149,78 1661,78 1661,2300 149,2300"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+                <pc:RegionRefIndexed index="16" regionRef="region_id_16"/>
+                <pc:RegionRefIndexed index="17" regionRef="region_id_17"/>
+                <pc:RegionRefIndexed index="18" regionRef="region_id_18"/>
+                <pc:RegionRefIndexed index="19" regionRef="region_id_19"/>
+                <pc:RegionRefIndexed index="20" regionRef="region_id_20"/>
+                <pc:RegionRefIndexed index="21" regionRef="region_id_21"/>
+                <pc:RegionRefIndexed index="22" regionRef="region_id_22"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_2" type="other">
+            <pc:Coords points="984,134 1660,134 1660,291 984,291 984,134"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="984,134 1658,134 1658,176 984,176"/>
+                <pc:TextEquiv conf="0.5571053624153137">
+                    <pc:Unicode>e s</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="984,137 1660,137 1660,240 984,240"/>
+                <pc:TextEquiv conf="0.5088123083114624">
+                    <pc:Unicode>e ll</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="985,210 1653,210 1653,255 985,255"/>
+                <pc:TextEquiv conf="0.47592100501060486">
+                    <pc:Unicode>E . .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="984,211 1655,211 1655,291 984,291"/>
+                <pc:TextEquiv conf="0.5703971982002258">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>e s
+e ll
+E . .
+</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="other">
+            <pc:Coords points="1025,288 1606,288 1606,365 1025,365 1025,288"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1025,288 1606,288 1606,365 1025,365"/>
+                <pc:TextEquiv conf="0.3177791237831116">
+                    <pc:Unicode>r e  s</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>r e  s</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="other">
+            <pc:Coords points="285,183 1656,183 1656,479 285,479 285,183"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,183 1656,183 1656,240 285,240"/>
+                <pc:TextEquiv conf="0.40224552154541016">
+                    <pc:Unicode>r   Fi i i L</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="384,211 1655,211 1655,291 384,291"/>
+                <pc:TextEquiv conf="0.4266187250614166">
+                    <pc:Unicode>Xvmi f x *</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,273 1655,273 1655,365 285,365"/>
+                <pc:TextEquiv conf="0.5865033268928528">
+                    <pc:Unicode>5 RiaiRRRXKR ce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,336 1656,336 1656,417 285,417"/>
+                <pc:TextEquiv conf="0.6516539454460144">
+                    <pc:Unicode>VID¶. X¶</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,349 1653,349 1653,471 285,471"/>
+                <pc:TextEquiv conf="0.48701831698417664">
+                    <pc:Unicode>11IONE-E d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,429 1651,429 1651,479 285,479"/>
+                <pc:TextEquiv conf="0.6340344548225403">
+                    <pc:Unicode>5 . A 41 H</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>r   Fi i i L
+Xvmi f x *
+5 RiaiRRRXKR ce
+VID¶. X¶
+11IONE-E d
+5 . A 41 H</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="other">
+            <pc:Coords points="497,451 1587,451 1587,559 497,559 497,451"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,451 1587,451 1587,492 497,492"/>
+                <pc:TextEquiv conf="0.5295062065124512">
+                    <pc:Unicode>22 5lse</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,451 1587,451 1587,559 497,559"/>
+                <pc:TextEquiv conf="0.8114639520645142">
+                    <pc:Unicode>MATVM MVSICAE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>22 5lse
+MATVM MVSICAE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="other">
+            <pc:Coords points="819,79 1656,79 1656,153 819,153 819,79"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="819,79 1656,79 1656,131 819,131"/>
+                <pc:TextEquiv conf="0.43613141775131226">
+                    <pc:Unicode>deeHE di i d e L e Le )ꝶ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-89_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="819,124 1654,124 1654,153 819,153"/>
+                <pc:TextEquiv conf="0.7478688955307007">
+                    <pc:Unicode>32, d. .. X 0.*.A</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>deeHE di i d e L e Le )ꝶ
+32, d. .. X 0.*.A</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="other">
+            <pc:Coords points="786,531 1417,531 1417,579 786,579 786,531"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="786,531 1417,531 1417,579 786,579"/>
+                <pc:TextEquiv conf="0.5822569131851196">
+                    <pc:Unicode>r — R</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>r — R</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="other">
+            <pc:Coords points="1495,567 1558,567 1558,592 1495,592 1495,567"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="1495,567 1558,567 1558,592 1495,592"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_16" type="other">
+            <pc:Coords points="458,667 979,667 979,741 458,741 458,667"/>
+            <pc:TextLine id="region_id_16_line0000">
+                <pc:Coords points="471,670 805,670 805,738 471,738"/>
+                <pc:TextEquiv conf="0.19001494348049164">
+                    <pc:Unicode>aa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>aa</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_18" type="other">
+            <pc:Coords points="1429,1967 1661,1967 1661,2054 1429,2054 1429,1967"/>
+            <pc:TextLine id="region_id_18_line0000">
+                <pc:Coords points="1429,1967 1661,1967 1661,2001 1429,2001"/>
+                <pc:TextEquiv conf="0.9004154801368713">
+                    <pc:Unicode>Staatshihli</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_18_line0001">
+                <pc:Coords points="1430,2020 1615,2020 1615,2054 1430,2054"/>
+                <pc:TextEquiv conf="0.9395222067832947">
+                    <pc:Unicode>u Berlin</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Staatshihli
+u Berlin</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_19" type="other">
+            <pc:Coords points="1430,2081 1661,2081 1661,2119 1430,2119 1430,2081"/>
+            <pc:TextLine id="region_id_19_line0000">
+                <pc:Coords points="1430,2081 1661,2081 1661,2119 1430,2119"/>
+                <pc:TextEquiv conf="0.9486098289489746">
+                    <pc:Unicode>Preuſsischer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Preuſsischer</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_22" type="other">
+            <pc:Coords points="1595,2232 1644,2232 1644,2278 1595,2278 1595,2232"/>
+            <pc:TextLine id="region_id_22_line0000">
+                <pc:Coords points="1595,2232 1644,2232 1644,2278 1595,2278"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region_id_0">
+            <pc:Coords points="151,78 1188,78 1188,572 151,572 151,78"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_1">
+            <pc:Coords points="1050,80 1233,80 1233,130 1050,130 1050,80"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_7">
+            <pc:Coords points="885,119 1204,119 1204,176 885,176 885,119"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_8">
+            <pc:Coords points="835,153 837,153 837,155 835,155 835,153"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_9">
+            <pc:Coords points="1069,248 1188,248 1188,265 1069,265 1069,248"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_10">
+            <pc:Coords points="1172,268 1187,268 1187,282 1172,282 1172,268"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_12">
+            <pc:Coords points="1513,540 1661,540 1661,643 1513,643 1513,540"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_14">
+            <pc:Coords points="149,638 1661,638 1661,2300 149,2300 149,638"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_15">
+            <pc:Coords points="1184,572 1380,572 1380,643 1184,643 1184,572"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_17">
+            <pc:Coords points="1046,830 1661,830 1661,1767 1046,1767 1046,830"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_20">
+            <pc:Coords points="1227,1964 1385,1964 1385,2121 1227,2121 1227,1964"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region_id_21">
+            <pc:Coords points="1644,2190 1661,2190 1661,2300 1644,2300 1644,2190"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

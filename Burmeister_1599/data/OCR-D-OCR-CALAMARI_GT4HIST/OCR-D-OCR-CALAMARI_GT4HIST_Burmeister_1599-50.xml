@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:40:51</pc:Created>
+        <pc:LastChange>2020-06-14T20:40:51</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-50.png" imageWidth="2172" imageHeight="2765" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-50-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-50.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="179,218 1614,218 1614,2037 179,2037"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="heading">
+            <pc:Coords points="525,220 1245,214 1249,320 528,322 525,220"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="645,219 534,220 534,318 1241,318 1241,219 645,219"/>
+                <pc:TextEquiv conf="0.956696093082428">
+                    <pc:Unicode>Explicatio Schematis.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Explicatio Schematis.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" custom="linegroup" type="other">
+            <pc:Coords points="168,361 1603,339 1614,1145 173,1153 168,361"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,367 1597,367 1597,464 274,464"/>
+                <pc:TextEquiv conf="0.8430591821670532">
+                    <pc:Unicode>Hie tibi prgreditur MOLLI TRAMMo.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="224,462 1301,462 1301,525 224,525"/>
+                <pc:TextEquiv conf="0.867097795009613">
+                    <pc:Unicode>ERIO cantus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="179,536 1397,536 1397,640 179,640"/>
+                <pc:TextEquiv conf="0.7829963564872742">
+                    <pc:Unicode>uâſicæ mueo MOMM ars loga; bacli</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="182,621 1511,621 1511,715 182,715"/>
+                <pc:TextEquiv conf="0.9306716322898865">
+                    <pc:Unicode>utbentæ attingit ſpeoiem modulaminis. Ipſum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="182,701 1533,701 1533,807 182,807"/>
+                <pc:TextEquiv conf="0.8640345931053162">
+                    <pc:Unicode>Quò ſt tranſpoſitum monſtrat contracor illa.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="281,788 1600,788 1600,887 281,887"/>
+                <pc:TextEquiv conf="0.9165374636650085">
+                    <pc:Unicode>Rite procedit ſic Dl IERIO cants,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="183,872 1447,872 1447,972 183,972"/>
+                <pc:TextEquiv conf="0.9176287055015564">
+                    <pc:Unicode>i ſicæ capulus Nomen: s curta bacelli</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="185,952 1606,952 1606,1049 185,1049"/>
+                <pc:TextEquiv conf="0.9004707932472229">
+                    <pc:Unicode>Authenta (S ſtimulat ſpeem modulamiis. Ipſum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_1_region_id_1_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,1039 1413,1039 1413,1145 187,1145"/>
+                <pc:TextEquiv conf="0.8918129801750183">
+                    <pc:Unicode>Quò ſit translatum monſtrat productior llâ.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Hie tibi prgreditur MOLLI TRAMMo.
+ERIO cantus
+uâſicæ mueo MOMM ars loga; bacli
+utbentæ attingit ſpeoiem modulaminis. Ipſum
+Quò ſt tranſpoſitum monſtrat contracor illa.
+Rite procedit ſic Dl IERIO cants,
+i ſicæ capulus Nomen: s curta bacelli
+Authenta (S ſtimulat ſpeem modulamiis. Ipſum
+Quò ſit translatum monſtrat productior llâ.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="424,1174 410,1279 876,1266 1379,1254 1378,1174 424,1174"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="423,1179 419,1212 419,1266 876,1266 1367,1254 1367,1179 423,1179"/>
+                <pc:TextEquiv conf="0.9752495288848877">
+                    <pc:Unicode>,Schematis dilucidior ſenſus.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>,Schematis dilucidior ſenſus.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="188,1303 1266,1273 1308,1257 1357,1266 1393,1277 1618,1273 1622,1778 158,1793 188,1303"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1295,1262 297,1300 297,1368 1614,1368 1614,1273 1335,1262 1295,1262"/>
+                <pc:TextEquiv conf="0.9444542527198792">
+                    <pc:Unicode>AdNomen Modi, ex Qualitate, qu ex Mi, vel quadrato, in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="190,1365 1614,1365 1614,1449 190,1449"/>
+                <pc:TextEquiv conf="0.9294233918190002">
+                    <pc:Unicode>Qualitatem, quæ ex Fa, vel Brorundô eft, trmnſponendi, admoveatur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="191,1425 1614,1425 1614,1512 191,1512"/>
+                <pc:TextEquiv conf="0.9589880704879761">
+                    <pc:Unicode>enſis mucro, cum quô ſimul baculi longior pars ad litemm aliquam ad-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="193,1494 1614,1494 1614,1579 193,1579"/>
+                <pc:TextEquiv conf="0.9510142207145691">
+                    <pc:Unicode>movetur, quæ eff] altera Ambitus litearum extremarum, nimirum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="196,1560 1613,1560 1613,1640 196,1640"/>
+                <pc:TextEquiv conf="0.9466227889060974">
+                    <pc:Unicode>infima. Quô factô partes, tàm enſis, quàm baculi breviores, extem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,1621 1614,1621 1614,1711 187,1711"/>
+                <pc:TextEquiv conf="0.9265397787094116">
+                    <pc:Unicode>plò è regions monſtmnt, ad quam ſpeciem, boc ef, liteam, Modus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="195,1695 1449,1695 1449,1778 195,1778"/>
+                <pc:TextEquiv conf="0.9367569088935852">
+                    <pc:Unicode>tmnſponatur. Contmrium fis ſervatis contmrariu ·</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>AdNomen Modi, ex Qualitate, qu ex Mi, vel quadrato, in
+Qualitatem, quæ ex Fa, vel Brorundô eft, trmnſponendi, admoveatur
+enſis mucro, cum quô ſimul baculi longior pars ad litemm aliquam ad-
+movetur, quæ eff] altera Ambitus litearum extremarum, nimirum
+infima. Quô factô partes, tàm enſis, quàm baculi breviores, extem
+plò è regions monſtmnt, ad quam ſpeciem, boc ef, liteam, Modus
+tmnſponatur. Contmrium fis ſervatis contmrariu ·</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="253,1839 1600,1803 1373,2182 380,2257 253,1839"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1413,1808 292,1838 292,1951 1511,1951 1525,1928 1525,1808 1413,1808"/>
+                <pc:TextEquiv conf="0.9960044026374817">
+                    <pc:Unicode>Plagiorum tranſpoſitionem hic deinde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-50_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="412,1930 1409,1930 1409,2037 412,2037"/>
+                <pc:TextEquiv conf="0.9873210191726685">
+                    <pc:Unicode>typus, ſceptrum cum graphio</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Plagiorum tranſpoſitionem hic deinde
+typus, ſceptrum cum graphio</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footer">
+            <pc:Coords points="1428,2244 1428,2333 1628,2333 1628,2244 1428,2244"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

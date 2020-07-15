@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:40:29</pc:Created>
+        <pc:LastChange>2020-06-14T20:40:29</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-41.png" imageWidth="2191" imageHeight="2767" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-41-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-41.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="539,203 1965,203 1965,2414 539,2414"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="paragraph">
+            <pc:Coords points="535,181 1970,193 1983,273 766,293 520,356 535,181"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="541,203 1964,203 1964,273 541,273"/>
+                <pc:TextEquiv conf="0.9051560759544373">
+                    <pc:Unicode>4. Cbamcteres ad Chamcteriſmi requiſitum connexi, ſunt exem-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0001">
+                <pc:Coords points="539,281 539,347 555,347 614,332 614,281 539,281"/>
+                <pc:TextEquiv conf="0.5816104412078857">
+                    <pc:Unicode>l.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4. Cbamcteres ad Chamcteriſmi requiſitum connexi, ſunt exem-
+l.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="heading">
+            <pc:Coords points="773,310 773,490 1762,490 1762,310 773,310"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="794,331 1694,331 1694,405 794,405"/>
+                <pc:TextEquiv conf="0.9865038394927979">
+                    <pc:Unicode>Obſervanda in clauſularum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:Coords points="1062,421 1530,421 1530,485 1062,485"/>
+                <pc:TextEquiv conf="0.9897884726524353">
+                    <pc:Unicode>formatione.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Obſervanda in clauſularum
+formatione.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="531,497 532,694 957,716 1091,690 1981,680 1981,497 531,497"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="539,504 1961,504 1961,567 539,567"/>
+                <pc:TextEquiv conf="0.9923520088195801">
+                    <pc:Unicode>J. Medii omnium Clauſularum duplicatio vel etiam</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="539,573 1962,573 1962,635 539,635"/>
+                <pc:TextEquiv conf="0.9812896251678467">
+                    <pc:Unicode>diminutio &amp; reſolutio, non autem variatio aut mutatio</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="540,638 540,694 687,702 1029,702 1953,680 1953,638 540,638"/>
+                <pc:TextEquiv conf="0.9891963601112366">
+                    <pc:Unicode>fieri committivè poteſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>J. Medii omnium Clauſularum duplicatio vel etiam
+diminutio &amp; reſolutio, non autem variatio aut mutatio
+fieri committivè poteſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="caption">
+            <pc:Coords points="1090,698 1090,766 1270,787 1404,766 1406,694 1090,698"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1090,700 1090,766 1227,782 1302,782 1403,766 1403,700 1090,700"/>
+                <pc:TextEquiv conf="0.8978139162063599">
+                    <pc:Unicode>Exemplum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Exemplum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="537,1730 1963,1725 1971,1861 534,1866 537,1730"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-41_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,1730 1956,1730 1956,1805 542,1805"/>
+                <pc:TextEquiv conf="0.9648686051368713">
+                    <pc:Unicode>JJ. Initii &amp;Finis tam multiplex fit variatio, quam mul.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-41_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="541,1804 541,1866 1953,1861 1953,1804 541,1804"/>
+                <pc:TextEquiv conf="0.9907737374305725">
+                    <pc:Unicode>tas in concordiam ſibi adſciſcunt concordantias</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>JJ. Initii &amp;Finis tam multiplex fit variatio, quam mul.
+tas in concordiam ſibi adſciſcunt concordantias</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="caption">
+            <pc:Coords points="1084,1867 1083,1954 1419,1951 1418,1867 1084,1867"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1091,1872 1091,1952 1307,1952 1406,1951 1406,1872 1091,1872"/>
+                <pc:TextEquiv conf="0.9567134380340576">
+                    <pc:Unicode>Exemplum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Exemplum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="1688,2362 1688,2435 1959,2435 1958,2360 1688,2362"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1696,2364 1956,2364 1956,2414 1696,2414"/>
+                <pc:TextEquiv conf="0.8548628687858582">
+                    <pc:Unicode>JJJ. Ouan-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>JJJ. Ouan-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_4">
+            <pc:Coords points="540,763 973,766 1068,795 1359,803 1430,761 1925,761 1958,1700 542,1705 540,763"/>
+        </pc:TableRegion>
+        <pc:TableRegion id="region_id_7">
+            <pc:Coords points="685,1942 1078,1954 1478,1952 1969,1932 1965,2357 658,2382 685,1942"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

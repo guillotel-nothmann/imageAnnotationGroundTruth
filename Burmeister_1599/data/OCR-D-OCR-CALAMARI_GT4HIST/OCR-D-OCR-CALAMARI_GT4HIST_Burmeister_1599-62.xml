@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:41:20</pc:Created>
+        <pc:LastChange>2020-06-14T20:41:20</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-62.png" imageWidth="2191" imageHeight="2767" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-62-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-62.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="191,340 1622,340 1622,2437 191,2437"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="caption">
+            <pc:Coords points="718,215 721,309 1096,309 1100,215 718,215"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="caption">
+            <pc:Coords points="189,923 181,786 320,771 1614,764 1617,837 1366,847 1354,906 189,923"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-62_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1429,765 320,771 303,773 303,850 1365,850 1611,837 1611,765 1429,765"/>
+                <pc:TextEquiv conf="0.9388343095779419">
+                    <pc:Unicode>Frequens ea eft apud Orlandum, qui exemplum in Cantilen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-62_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="191,839 191,910 1080,910 1274,907 1274,839 191,839"/>
+                <pc:TextEquiv conf="0.9616406559944153">
+                    <pc:Unicode>(Domine Dominus noſter) ſub finem ſuppoditat.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Frequens ea eft apud Orlandum, qui exemplum in Cantilen
+(Domine Dominus noſter) ſub finem ſuppoditat.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="663,941 663,1008 1133,1008 1133,941 663,941"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="687,959 1112,959 1112,1008 687,1008"/>
+                <pc:TextEquiv conf="0.7727670073509216">
+                    <pc:Unicode>X. MIMnIIE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>X. MIMnIIE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="322,1253 149,1221 232,1026 1608,1021 1627,1175 322,1253"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-62_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1333,1022 303,1026 303,1111 1610,1111 1610,1037 1608,1022 1333,1022"/>
+                <pc:TextEquiv conf="0.9194387793540955">
+                    <pc:Unicode>MitEII fit, quando vocum quarundam propin-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-62_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="203,1094 191,1122 191,1173 1611,1173 1611,1094 203,1094"/>
+                <pc:TextEquiv conf="0.9811586737632751">
+                    <pc:Unicode>quiſsimè conjunctarum ſuavis affectio imitatione quadam</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="191,1174 191,1229 268,1243 489,1243 1299,1195 1299,1174 191,1174"/>
+                <pc:TextEquiv conf="0.9858882427215576">
+                    <pc:Unicode>ab aliis repetitur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>MitEII fit, quando vocum quarundam propin-
+quiſsimè conjunctarum ſuavis affectio imitatione quadam
+ab aliis repetitur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="caption">
+            <pc:Coords points="735,1260 735,1357 1081,1357 1081,1260 735,1260"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="745,1265 1062,1265 1062,1351 745,1351"/>
+                <pc:TextEquiv conf="0.8488215804100037">
+                    <pc:Unicode>Exemplum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Exemplum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="caption">
+            <pc:Coords points="191,1944 167,2079 1622,2031 1628,1925 191,1944"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="947,1934 207,1944 207,2025 1620,2025 1620,1934 947,1934"/>
+                <pc:TextEquiv conf="0.958663821220398">
+                    <pc:Unicode>Similia apud rlandum, evernagen, Meilandum cateros paſim</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="199,2027 199,2066 561,2066 1036,2050 1036,2027 199,2027"/>
+                <pc:TextEquiv conf="0.6822420358657837">
+                    <pc:Unicode>ditnuntui.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Similia apud rlandum, evernagen, Meilandum cateros paſim
+ditnuntui.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="582,2180 585,2110 1225,2122 1222,2178 582,2180"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="609,2126 1212,2126 1212,2177 609,2177"/>
+                <pc:TextEquiv conf="0.8673964142799377">
+                    <pc:Unicode>XI. ANAAIIE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>XI. ANAAIIE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="1163,2323 203,2357 186,2302 296,2201 1625,2178 1629,2276 1163,2323"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1278,2184 305,2201 305,2264 1621,2264 1621,2184 1278,2184"/>
+                <pc:TextEquiv conf="0.9300562739372253">
+                    <pc:Unicode>ANADIPL0SIS vicina Mimeſi eſt, geminans id</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="224,2267 203,2286 203,2341 655,2341 1163,2323 1171,2322 1171,2267 224,2267"/>
+                <pc:TextEquiv conf="0.8976495265960693">
+                    <pc:Unicode>quod uunlinãs ſemel eſt introductum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ANADIPL0SIS vicina Mimeſi eſt, geminans id
+quod uunlinãs ſemel eſt introductum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="920,2366 920,2451 1627,2451 1627,2366 920,2366"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="944,2376 1621,2376 1621,2437 944,2437"/>
+                <pc:TextEquiv conf="0.901187002658844">
+                    <pc:Unicode>H Exemplum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>H Exemplum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_1" custom="tablatureNotation">
+            <pc:Coords points="112,323 112,761 1622,761 1618,277 1267,321 112,323"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_6" custom="tablatureNotation">
+            <pc:Coords points="110,1417 108,1939 1626,1915 1631,1336 110,1417"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

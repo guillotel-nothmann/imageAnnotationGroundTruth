@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:39:09</pc:Created>
+        <pc:LastChange>2020-06-14T20:39:09</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-10.png" imageWidth="2208" imageHeight="2765" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-10-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-10.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="261,235 1680,235 1680,2419 261,2419"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="paragraph">
+            <pc:Coords points="257,230 1679,228 1684,826 399,810 377,869 241,874 257,230"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,235 1679,235 1679,293 266,293"/>
+                <pc:TextEquiv conf="0.9471959471702576">
+                    <pc:Unicode>literas (quod vernaculâ abſetzen vocamus); de concordantiis &amp; diſcordatijs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,293 1678,293 1678,352 264,352"/>
+                <pc:TextEquiv conf="0.9670179486274719">
+                    <pc:Unicode>muſicis: ex quibus illæ yulgo in perſectas, quæ ſe mutuò inuicem ſequi non poſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,352 1676,352 1676,411 261,411"/>
+                <pc:TextEquiv conf="0.9487114548683167">
+                    <pc:Unicode>ſunt, niſi inſima vox deſcendat, ſuprema aſtendat. v. g. () &amp; imperſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,411 1679,411 1679,468 266,468"/>
+                <pc:TextEquiv conf="0.943485677242279">
+                    <pc:Unicode>ctas quæ ſe mutuò ſequi poſunt. Diſcordantijs autem fere nullus est locus, niſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0004">
+                <pc:Coords points="269,470 1678,470 1678,525 269,525"/>
+                <pc:TextEquiv conf="0.9629070162773132">
+                    <pc:Unicode>in clauſulis formalibus quas voc ant. Imprimis verò placuit mihi doctrina de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0005">
+                <pc:Coords points="267,526 1673,526 1673,585 267,585"/>
+                <pc:TextEquiv conf="0.9422099590301514">
+                    <pc:Unicode>Modis &amp; Figuris: &amp; quoi in harum tractatione Molos Fugarum tùm ſimpli-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,587 1675,587 1675,645 265,645"/>
+                <pc:TextEquiv conf="0.9675132036209106">
+                    <pc:Unicode>cium, tùm coniunctarum (Coniunctas autem voco, quæ per concordantias fiunt)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,645 1674,645 1674,703 264,703"/>
+                <pc:TextEquiv conf="0.973080575466156">
+                    <pc:Unicode>ex tam infinir fere multitudine, aliquot conſtituerit, eosq oratorijs vocabulis</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,705 1672,705 1672,762 266,762"/>
+                <pc:TextEquiv conf="0.9816393256187439">
+                    <pc:Unicode>appellauerit. Quare ipſi meo nomine gratias ages, &amp; ut hoc bono publicum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_0_region_id_0_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,762 266,812 1673,812 1673,762 266,762"/>
+                <pc:TextEquiv conf="0.9779075980186462">
+                    <pc:Unicode>bonum iuuare velit, eum excitabis, &amp; currenti calcaia addes. B. V. amice</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_0_line0010">
+                <pc:Coords points="266,823 372,823 372,863 266,863"/>
+                <pc:TextEquiv conf="0.9961040019989014">
+                    <pc:Unicode>Stati.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>literas (quod vernaculâ abſetzen vocamus); de concordantiis &amp; diſcordatijs
+muſicis: ex quibus illæ yulgo in perſectas, quæ ſe mutuò inuicem ſequi non poſ-
+ſunt, niſi inſima vox deſcendat, ſuprema aſtendat. v. g. () &amp; imperſe.
+ctas quæ ſe mutuò ſequi poſunt. Diſcordantijs autem fere nullus est locus, niſi
+in clauſulis formalibus quas voc ant. Imprimis verò placuit mihi doctrina de
+Modis &amp; Figuris: &amp; quoi in harum tractatione Molos Fugarum tùm ſimpli-
+cium, tùm coniunctarum (Coniunctas autem voco, quæ per concordantias fiunt)
+ex tam infinir fere multitudine, aliquot conſtituerit, eosq oratorijs vocabulis
+appellauerit. Quare ipſi meo nomine gratias ages, &amp; ut hoc bono publicum
+bonum iuuare velit, eum excitabis, &amp; currenti calcaia addes. B. V. amice
+Stati.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="marginalia">
+            <pc:Coords points="1707,348 1703,759 1939,764 1939,348 1707,348"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="other">
+            <pc:Coords points="408,818 409,879 854,868 892,877 1003,880 1004,821 408,818"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="411,823 411,878 995,878 995,823 411,823"/>
+                <pc:TextEquiv conf="0.924530565738678">
+                    <pc:Unicode>ex Muſeo. 7. Iul. Anno 1599.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ex Muſeo. 7. Iul. Anno 1599.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="other">
+            <pc:Coords points="493,878 495,921 633,990 1595,982 1647,934 1661,870 1047,880 883,883 493,878"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="496,879 496,922 505,926 1648,926 1648,879 496,879"/>
+                <pc:TextEquiv conf="0.9690195918083191">
+                    <pc:Unicode>T. IOHANNESSIMONIVSin Academia</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="639,936 639,984 1354,984 1593,982 1593,936 639,936"/>
+                <pc:TextEquiv conf="0.994834840297699">
+                    <pc:Unicode>Roſtochienſi Oratoriæ Facultatis Profeſſor.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>T. IOHANNESSIMONIVSin Academia
+Roſtochienſi Oratoriæ Facultatis Profeſſor.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="372,1055 376,1178 891,1182 905,1181 930,1193 959,1178 1609,1178 1611,1058 372,1055"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="376,1058 1569,1058 1569,1116 376,1116"/>
+                <pc:TextEquiv conf="0.7648943662643433">
+                    <pc:Unicode>M. IOOAACCHMMO BlRMEISTERO,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="537,1124 537,1179 922,1189 938,1189 1392,1178 1392,1124 537,1124"/>
+                <pc:TextEquiv conf="0.9968711137771606">
+                    <pc:Unicode>amico &amp; Collegæ ſuo colendo. S.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>M. IOOAACCHMMO BlRMEISTERO,
+amico &amp; Collegæ ſuo colendo. S.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="drop-capital">
+            <pc:Coords points="257,1187 258,1306 348,1306 348,1186 257,1187"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="262,1189 348,1189 348,1303 262,1303"/>
+                <pc:TextEquiv conf="0.8314436674118042">
+                    <pc:Unicode>P</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>P</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="348,1313 235,1318 215,2373 1077,2366 1677,2351 1675,1182 956,1188 935,1194 892,1188 351,1192 348,1313"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="622,1190 356,1192 356,1245 1672,1245 1672,1190 622,1190"/>
+                <pc:TextEquiv conf="0.9404786825180054">
+                    <pc:Unicode>Erlegi, doctiß. Dne. M. Ioachime, tuam ίdlip,uti vocasMuſicæ Poi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="350,1246 349,1273 349,1300 1672,1300 1672,1246 350,1246"/>
+                <pc:TextEquiv conf="0.9647562503814697">
+                    <pc:Unicode>ticæ: quâ non tantùm rationem componendi cantum: vel leges Conſonanti-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="348,1302 265,1317 265,1358 1670,1358 1670,1302 348,1302"/>
+                <pc:TextEquiv conf="0.9632446765899658">
+                    <pc:Unicode>arum ſyntacticas, &amp; modos muſicos tùm Schematibus: tùm accurrati diviſi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="267,1362 1670,1362 1670,1422 267,1422"/>
+                <pc:TextEquiv conf="0.9670841097831726">
+                    <pc:Unicode>onibus cognoſcendos proponis: verum etiam omnia aptis &amp; convenientibus vo.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1424 1675,1424 1675,1483 263,1483"/>
+                <pc:TextEquiv conf="0.972527027130127">
+                    <pc:Unicode>cabulis, ex Rhetorum officina, alijsq; artibus leſumptis, enuntias, ut eo minor in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1482 1672,1482 1672,1541 266,1541"/>
+                <pc:TextEquiv conf="0.967828094959259">
+                    <pc:Unicode>vocum ambiguitatibus exiſtat error hæſitatio. Etſi autem ſine dubio defu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1541 1671,1541 1671,1598 263,1598"/>
+                <pc:TextEquiv conf="0.9652000069618225">
+                    <pc:Unicode>turi non ſunt, quibus hæc ob novitatem terminorum non omnino probabuntur:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:Coords points="261,1601 1672,1601 1672,1656 261,1656"/>
+                <pc:TextEquiv conf="0.9836850166320801">
+                    <pc:Unicode>tamen cum ex hiſce tuilucubrationibus non exiguus fructus ad rem literariam</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:Coords points="265,1658 1656,1658 1656,1716 265,1716"/>
+                <pc:TextEquiv conf="0.961144745349884">
+                    <pc:Unicode>eſt perventurus; atq; omnes Philomuſi rem gratißimam ſibi fieri haud nega</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0009">
+                <pc:Coords points="266,1718 1672,1718 1672,1775 266,1775"/>
+                <pc:TextEquiv conf="0.9567854404449463">
+                    <pc:Unicode>bunt; non poßum te non hortari, ut in tuo inſtituto pergas &amp; ec præcepta typi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1777 1670,1777 1670,1835 263,1835"/>
+                <pc:TextEquiv conf="0.9506424069404602">
+                    <pc:Unicode>excudenda atq; cim alijs comminicanda, tanquam Bonum Commune, cures.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1833 1669,1833 1669,1892 266,1892"/>
+                <pc:TextEquiv conf="0.9560422301292419">
+                    <pc:Unicode>Vtinam tali ſimili; ſtudio hæc tota ars penitus indagari c cognoſci queat.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1887 1670,1887 1670,1951 264,1951"/>
+                <pc:TextEquiv conf="0.9270206689834595">
+                    <pc:Unicode>Et ſi enim cognitio &amp; diſcrimen Modorum tùm ex ià ů Mediatione tùm</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1947 1671,1947 1671,2011 263,2011"/>
+                <pc:TextEquiv conf="0.9525953531265259">
+                    <pc:Unicode>ex poſitu Seimitoniorum perſpicitur, atq; ideò ſingulis modi ſua vis at; effica-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2005 1671,2005 1671,2067 261,2067"/>
+                <pc:TextEquiv conf="0.9733699560165405">
+                    <pc:Unicode>cia, tanquam propri attribuitur: hanc tamen an ſolus ſemitoniorum poſitus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,2066 1667,2066 1667,2129 264,2129"/>
+                <pc:TextEquiv conf="0.9566179513931274">
+                    <pc:Unicode>non minus creet, quam ipſos Modos inter ſe diſcriminet, non abs re quæritir.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,2124 1661,2124 1661,2187 264,2187"/>
+                <pc:TextEquiv conf="0.9766974449157715">
+                    <pc:Unicode>Conſt at enim ex antiquis ſcriptoribus, proprietates Modorum apud ve</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,2184 1668,2184 1668,2244 263,2244"/>
+                <pc:TextEquiv conf="0.9790202975273132">
+                    <pc:Unicode>teres ita mclulando eſſe expreſſas, ut non tantum aures, attingerent: Verum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,2241 1665,2241 1665,2303 265,2303"/>
+                <pc:TextEquiv conf="0.9571604132652283">
+                    <pc:Unicode>etiam al cor penetrarent: unde affectus hominum vel ardentiores vel re-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-10_region_id_7_region_id_7_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2301 261,2367 954,2367 1077,2366 1663,2351 1663,2301 261,2301"/>
+                <pc:TextEquiv conf="0.9556035399436951">
+                    <pc:Unicode>mißiores yel grauiores yel leuiores aut etiam triſtiores, &amp;c. extiterint. Si</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erlegi, doctiß. Dne. M. Ioachime, tuam ίdlip,uti vocasMuſicæ Poi.
+ticæ: quâ non tantùm rationem componendi cantum: vel leges Conſonanti-
+arum ſyntacticas, &amp; modos muſicos tùm Schematibus: tùm accurrati diviſi.
+onibus cognoſcendos proponis: verum etiam omnia aptis &amp; convenientibus vo.
+cabulis, ex Rhetorum officina, alijsq; artibus leſumptis, enuntias, ut eo minor in
+vocum ambiguitatibus exiſtat error hæſitatio. Etſi autem ſine dubio defu-
+turi non ſunt, quibus hæc ob novitatem terminorum non omnino probabuntur:
+tamen cum ex hiſce tuilucubrationibus non exiguus fructus ad rem literariam
+eſt perventurus; atq; omnes Philomuſi rem gratißimam ſibi fieri haud nega
+bunt; non poßum te non hortari, ut in tuo inſtituto pergas &amp; ec præcepta typi
+excudenda atq; cim alijs comminicanda, tanquam Bonum Commune, cures.
+Vtinam tali ſimili; ſtudio hæc tota ars penitus indagari c cognoſci queat.
+Et ſi enim cognitio &amp; diſcrimen Modorum tùm ex ià ů Mediatione tùm
+ex poſitu Seimitoniorum perſpicitur, atq; ideò ſingulis modi ſua vis at; effica-
+cia, tanquam propri attribuitur: hanc tamen an ſolus ſemitoniorum poſitus
+non minus creet, quam ipſos Modos inter ſe diſcriminet, non abs re quæritir.
+Conſt at enim ex antiquis ſcriptoribus, proprietates Modorum apud ve
+teres ita mclulando eſſe expreſſas, ut non tantum aures, attingerent: Verum
+etiam al cor penetrarent: unde affectus hominum vel ardentiores vel re-
+mißiores yel grauiores yel leuiores aut etiam triſtiores, &amp;c. extiterint. Si</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="1537,2355 1537,2424 1670,2424 1670,2355 1537,2355"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:LineDrawingRegion id="region_id_4">
+            <pc:Coords points="264,1001 277,1049 1679,1053 1679,994 264,1001"/>
+        </pc:LineDrawingRegion>
+    </pc:Page>
+</pc:PcGts>

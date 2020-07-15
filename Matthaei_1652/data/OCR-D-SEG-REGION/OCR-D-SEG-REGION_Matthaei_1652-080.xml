@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-15T07:23:26</pc:Created>
@@ -46,45 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
-                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
-                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
-                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000">
-            <pc:Coords points="444,102 881,102 881,135 444,135"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0001">
-            <pc:Coords points="155,146 892,146 892,818 155,818"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0009">
-            <pc:Coords points="161,965 893,965 893,1249 161,1249"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0010">
-            <pc:Coords points="542,1258 891,1258 891,1297 542,1297"/>
-        </pc:TextRegion>
-        <pc:TableRegion id="region0007">
-            <pc:Coords points="160,829 888,829 888,970 160,970"/>
-        </pc:TableRegion>
-        <pc:SeparatorRegion id="region0002">
-            <pc:Coords points="179,826 858,826 858,849 179,849"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0003">
-            <pc:Coords points="188,866 849,866 849,888 188,888"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0004">
-            <pc:Coords points="770,917 855,917 855,924 770,924"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0005">
-            <pc:Coords points="434,949 520,949 520,955 434,955"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0006">
-            <pc:Coords points="605,949 750,949 750,959 605,959"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0008">
-            <pc:Coords points="473,987 562,987 562,993 473,993"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="836,136 544,136 521,132 516,110 702,98 865,104 896,116 836,136"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="footer"><pc:Coords points="890,1290 548,1290 544,1266 563,1256 857,1260 896,1266 890,1290"/></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="825,1256 201,1244 168,1232 162,1167 173,1144 205,1140 865,1156 882,1176 886,1213 864,1242 825,1256"/></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="232,814 188,806 152,741 156,583 186,516 866,517 872,710 862,747 837,772 639,754 502,778 361,776 232,814"/></pc:TextRegion><pc:MusicRegion id="region_id_4" custom="staffNotation"><pc:Coords points="427,1038 225,1000 186,916 200,859 284,836 476,848 607,828 827,832 862,842 852,851 882,883 872,892 886,900 886,983 858,1032 680,1024 427,1038"/></pc:MusicRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="823,378 655,378 559,356 489,372 388,352 379,338 326,338 252,360 270,370 208,374 184,360 156,301 146,217 158,166 183,148 834,150 882,200 886,243 858,351 823,378"/></pc:TextRegion></pc:Page>
 </pc:PcGts>

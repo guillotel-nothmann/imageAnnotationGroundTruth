@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:40:08</pc:Created>
+        <pc:LastChange>2020-06-14T20:40:08</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-33.png" imageWidth="2193" imageHeight="2765" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-33-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-33.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="529,519 1953,519 1953,2399 529,2399"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="caption">
+            <pc:Coords points="1097,186 1096,285 1204,290 1420,288 1420,186 1097,186"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="caption">
+            <pc:Coords points="1091,513 1397,518 1357,587 1091,581 1091,513"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1105,520 1358,520 1358,580 1105,580"/>
+                <pc:TextEquiv conf="0.9743685126304626">
+                    <pc:Unicode>Reductio.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Reductio.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="caption">
+            <pc:Coords points="1147,711 1321,713 1318,798 1132,793 1147,711"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1146,716 1139,755 1139,793 1206,795 1307,795 1307,716 1146,716"/>
+                <pc:TextEquiv conf="0.9445633888244629">
+                    <pc:Unicode>ta</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ta</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="caption">
+            <pc:Coords points="1121,1047 1117,1113 1384,1113 1384,1051 1121,1047"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1123,1049 1123,1110 1374,1110 1374,1051 1252,1049 1123,1049"/>
+                <pc:TextEquiv conf="0.98526930809021">
+                    <pc:Unicode>Reductio.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Reductio.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="528,1257 1981,1251 1975,2020 516,2049 528,1257"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="635,1261 1949,1261 1949,1328 635,1328"/>
+                <pc:TextEquiv conf="0.9789201617240906">
+                    <pc:Unicode>chema conſtructionem Concordantiarum inculcans, non prohibe-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1323 1947,1323 1947,1395 529,1395"/>
+                <pc:TextEquiv conf="0.9685788750648499">
+                    <pc:Unicode>bit, quo minus Concordantiæ ad loca remotiom diſponantur. Aſectio</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1391 1947,1391 1947,1457 529,1457"/>
+                <pc:TextEquiv conf="0.9429460763931274">
+                    <pc:Unicode>namg Melodiæ à futuro Componiſta ſic effingi poteſt, ut ea remotionem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1449 1948,1449 1948,1518 529,1518"/>
+                <pc:TextEquiv conf="0.9663118124008179">
+                    <pc:Unicode>diſtantium ſonorum exigat, &amp; Harmoniæ damno futurum ſit, ut illa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1512 1953,1512 1953,1578 529,1578"/>
+                <pc:TextEquiv conf="0.9703041315078735">
+                    <pc:Unicode>vel emendetur, vel ad normam præſcripti chemats conſtringatur. Lice-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1576 1942,1576 1942,1646 529,1646"/>
+                <pc:TextEquiv conf="0.9719319939613342">
+                    <pc:Unicode>bit itaq latius diſponere concordantiarum ſonos, &amp; quidem compoſtos,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1643 1946,1643 1946,1715 529,1715"/>
+                <pc:TextEquiv conf="0.9830630421638489">
+                    <pc:Unicode>velut ſimplicibus æquipollentes: Verùm, ne remotio illa terminos exce-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1709 1947,1709 1947,1774 529,1774"/>
+                <pc:TextEquiv conf="0.9663605093955994">
+                    <pc:Unicode>dat muſicos, mete ad idà veteribus Muſics ſunt adinventæ, inter quæ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1769 1945,1769 1945,1838 529,1838"/>
+                <pc:TextEquiv conf="0.9744616150856018">
+                    <pc:Unicode>&amp; adhue cantilenæ ſunt continende, vel quibus Harmoniæ conſtructio</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1831 1942,1831 1942,1903 529,1903"/>
+                <pc:TextEquiv conf="0.9672966003417969">
+                    <pc:Unicode>eff determinanda, illas ii dixâre Modos. Cujus rei uſum, omnibus i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1894 1946,1894 1946,1969 529,1969"/>
+                <pc:TextEquiv conf="0.9603242874145508">
+                    <pc:Unicode>abſoluts, quæ ad cognitionem Modorum faciunt; &amp; hoc in libello per-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_8_region_id_8_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,1959 529,2040 969,2040 1905,2021 1905,1959 529,1959"/>
+                <pc:TextEquiv conf="0.9324058294296265">
+                    <pc:Unicode>ſtringi poſſunt, ſubjungemus, e exemplo declambimus.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>chema conſtructionem Concordantiarum inculcans, non prohibe-
+bit, quo minus Concordantiæ ad loca remotiom diſponantur. Aſectio
+namg Melodiæ à futuro Componiſta ſic effingi poteſt, ut ea remotionem
+diſtantium ſonorum exigat, &amp; Harmoniæ damno futurum ſit, ut illa
+vel emendetur, vel ad normam præſcripti chemats conſtringatur. Lice-
+bit itaq latius diſponere concordantiarum ſonos, &amp; quidem compoſtos,
+velut ſimplicibus æquipollentes: Verùm, ne remotio illa terminos exce-
+dat muſicos, mete ad idà veteribus Muſics ſunt adinventæ, inter quæ
+&amp; adhue cantilenæ ſunt continende, vel quibus Harmoniæ conſtructio
+eff determinanda, illas ii dixâre Modos. Cujus rei uſum, omnibus i
+abſoluts, quæ ad cognitionem Modorum faciunt; &amp; hoc in libello per-
+ſtringi poſſunt, ſubjungemus, e exemplo declambimus.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="680,2124 680,2201 1806,2201 1806,2124 1277,2045 1202,2047 680,2124"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1100,2062 959,2083 959,2113 1573,2113 1573,2089 1391,2062 1100,2062"/>
+                <pc:TextEquiv conf="0.4948878288269043">
+                    <pc:Unicode>V.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="691,2130 1776,2130 1776,2200 691,2200"/>
+                <pc:TextEquiv conf="0.819259524345398">
+                    <pc:Unicode>EX CAPITE DE MODI.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>V.
+EX CAPITE DE MODI.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="538,2210 520,2331 954,2341 1003,2310 1969,2308 1942,2185 1884,2206 538,2210"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1890,2204 559,2210 559,2287 1942,2287 1942,2204 1890,2204"/>
+                <pc:TextEquiv conf="0.9966115355491638">
+                    <pc:Unicode>Modus eſt tam Melodiæ quam Harmoniæ determi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-33_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,2279 533,2331 824,2338 959,2338 1852,2308 1852,2279 533,2279"/>
+                <pc:TextEquiv conf="0.7463032007217407">
+                    <pc:Unicode>natio &amp; usleóτs.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Modus eſt tam Melodiæ quam Harmoniæ determi-
+natio &amp; usleóτs.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footer">
+            <pc:Coords points="1871,2318 1868,2385 1981,2394 1981,2320 1871,2318"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1874,2332 1950,2332 1950,2384 1874,2384"/>
+                <pc:TextEquiv conf="0.43395593762397766">
+                    <pc:Unicode>d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>d</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_1" custom="staffNotation">
+            <pc:Coords points="524,283 524,507 575,535 637,509 1418,507 1492,534 1985,507 1985,283 1393,295 1103,296 878,282 820,232 524,283"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_3" custom="tablatureNotation">
+            <pc:Coords points="609,588 611,705 1824,705 1826,598 609,588"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_5" custom="staffNotation">
+            <pc:Coords points="530,810 1957,800 1954,1039 524,1051 530,810"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_7" custom="tablatureNotation">
+            <pc:Coords points="639,1124 639,1247 1885,1239 1879,1124 639,1124"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

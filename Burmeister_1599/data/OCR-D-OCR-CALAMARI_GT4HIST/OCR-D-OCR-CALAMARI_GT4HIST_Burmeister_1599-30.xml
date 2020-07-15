@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:40:01</pc:Created>
+        <pc:LastChange>2020-06-14T20:40:01</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-30.png" imageWidth="2232" imageHeight="2765" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-30-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-30.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="228,169 1677,169 1677,2361 228,2361"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_1" type="paragraph">
+            <pc:Coords points="227,999 1666,980 1668,1183 230,1234 227,999"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_1_region_id_1_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="984,989 345,997 345,1078 1659,1078 1659,989 984,989"/>
+                <pc:TextEquiv conf="0.8592059016227722">
+                    <pc:Unicode>8v1i PRÆcEpseſt, quando llniſoni &amp; Octa-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_1_region_id_1_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,1053 1661,1053 1661,1154 241,1154"/>
+                <pc:TextEquiv conf="0.9865503907203674">
+                    <pc:Unicode>væ in Fugarum exordijs vel citius juſtô concurrunt vel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_1_region_id_1_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="245,1147 245,1226 456,1226 1127,1202 1127,1147 245,1147"/>
+                <pc:TextEquiv conf="0.9519448280334473">
+                    <pc:Unicode>longius lub menſurâ commorantur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8v1i PRÆcEpseſt, quando llniſoni &amp; Octa-
+væ in Fugarum exordijs vel citius juſtô concurrunt vel
+longius lub menſurâ commorantur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="caption">
+            <pc:Coords points="766,1223 766,1311 1173,1311 1173,1223 766,1223"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="781,1233 1130,1233 1130,1310 781,1310"/>
+                <pc:TextEquiv conf="0.8219451904296875">
+                    <pc:Unicode>Exempl</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Exempl</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="243,1870 239,2131 259,2153 302,2140 325,2129 433,2126 448,2138 472,2124 688,2116 1681,2037 1679,1839 243,1870"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="984,1854 346,1868 346,1933 1670,1933 1670,1854 984,1854"/>
+                <pc:TextEquiv conf="0.8856474161148071">
+                    <pc:Unicode>CATAcERESISQuARTÆ, fit, quando Concen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1912 1674,1912 1674,2005 264,2005"/>
+                <pc:TextEquiv conf="0.9554026126861572">
+                    <pc:Unicode>tus Nnoων fundamenti vices ſuſtinet, tam in abſoluta</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1978 266,2084 1090,2084 1676,2037 1676,1978 266,1978"/>
+                <pc:TextEquiv conf="0.9908291101455688">
+                    <pc:Unicode>quam in relatâ conſtructione quarum utriusque mentio</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-30_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,2066 269,2147 279,2147 448,2138 1151,2079 1151,2066 269,2066"/>
+                <pc:TextEquiv conf="0.9807059168815613">
+                    <pc:Unicode>paulo poſt fiet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CATAcERESISQuARTÆ, fit, quando Concen-
+tus Nnoων fundamenti vices ſuſtinet, tam in abſoluta
+quam in relatâ conſtructione quarum utriusque mentio
+paulo poſt fiet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footer">
+            <pc:Coords points="1003,2303 1004,2367 1687,2371 1685,2300 1003,2303"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1021,2303 1677,2303 1677,2361 1021,2361"/>
+                <pc:TextEquiv conf="0.9829103946685791">
+                    <pc:Unicode>D2 Appro</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>D2 Appro</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_0">
+            <pc:Coords points="183,170 1653,139 1663,969 229,995 183,170"/>
+        </pc:TableRegion>
+        <pc:TableRegion id="region_id_3">
+            <pc:Coords points="237,1372 357,1340 1216,1319 1241,1298 1668,1289 1682,1837 256,1845 237,1372"/>
+        </pc:TableRegion>
+        <pc:MusicRegion id="region_id_5" custom="tablatureNotation">
+            <pc:Coords points="259,2154 307,2141 433,2130 445,2138 488,2127 1686,2061 1683,2293 983,2298 895,2328 267,2350 259,2154"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

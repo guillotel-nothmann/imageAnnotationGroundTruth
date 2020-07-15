@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2020-06-14T20:40:41</pc:Created>
+        <pc:LastChange>2020-06-14T20:40:41</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-46.png" imageWidth="2172" imageHeight="2767" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-46-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-46.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="178,226 1626,226 1626,2451 178,2451"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="heading">
+            <pc:Coords points="284,226 1508,221 1516,303 281,302 284,226"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="284,226 284,302 1507,303 1507,226 284,226"/>
+                <pc:TextEquiv conf="0.6793187260627747">
+                    <pc:Unicode>FIMI IVDEX OC 7ICO</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>FIMI IVDEX OC 7ICO</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="caption">
+            <pc:Coords points="585,305 1204,310 1212,396 582,399 585,305"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="585,311 583,368 583,394 1199,394 1199,311 585,311"/>
+                <pc:TextEquiv conf="0.9567392468452454">
+                    <pc:Unicode>compcndio inquiritur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>compcndio inquiritur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="163,1269 1633,1269 1634,2376 1492,2379 1454,2400 1068,2403 979,2393 912,2405 173,2429 163,1269"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,1287 1621,1287 1621,1376 294,1376"/>
+                <pc:TextEquiv conf="0.9174535870552063">
+                    <pc:Unicode>Ab eô, quô à doltrinâ de conſtruendi concordantii, ad alias di-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="179,1355 1620,1355 1620,1445 179,1445"/>
+                <pc:TextEquiv conf="0.9378425478935242">
+                    <pc:Unicode>greſi buc uſq ſumus, tyronem muſicum bactenus detinuimus, ne quo ipſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="179,1420 1624,1420 1624,1508 179,1508"/>
+                <pc:TextEquiv conf="0.9807758927345276">
+                    <pc:Unicode>ibi ſumeret poteſlatem concordantias rematius cum diſpendio diſponendi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="188,1489 1623,1489 1623,1568 188,1568"/>
+                <pc:TextEquiv conf="0.9652338624000549">
+                    <pc:Unicode>diſtendivé. Et remiſimus illum hûc, tanquam ad llam doctrinam, quæ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="188,1554 1622,1554 1622,1635 188,1635"/>
+                <pc:TextEquiv conf="0.9605427980422974">
+                    <pc:Unicode>illi copiam ejus ſuppeditare poſſet idoneam e ſufficientem, promit-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,1614 1622,1614 1622,1698 187,1698"/>
+                <pc:TextEquiv conf="0.9637173414230347">
+                    <pc:Unicode>tentes, quod opemm e ſtudium ita ipſiſimus probaturi, ut doctrina illa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="178,1679 1626,1679 1626,1774 178,1774"/>
+                <pc:TextEquiv conf="0.8928266763687134">
+                    <pc:Unicode>per expemplum explicita ſatsſuperg intelligi pſit planag fiat. Quod</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,1742 1623,1742 1623,1831 187,1831"/>
+                <pc:TextEquiv conf="0.9676855802536011">
+                    <pc:Unicode>quoniam ita factum eft, ex debito a nobis requiri videtur, ut, quæ illic</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="178,1808 1614,1808 1614,1897 178,1897"/>
+                <pc:TextEquiv conf="0.9606895446777344">
+                    <pc:Unicode>fecimus, hic nune promiſſa ſolvamus. Quapropter ills ſtantes ſignfica-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,1877 1621,1877 1621,1959 187,1959"/>
+                <pc:TextEquiv conf="0.9722664952278137">
+                    <pc:Unicode>mus, tenendum eſſe, dum ſingulæ voces certi alicujus Ambitus metis ter-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="188,1936 1623,1936 1623,2021 188,2021"/>
+                <pc:TextEquiv conf="0.9815352559089661">
+                    <pc:Unicode>minantur, quod, earum ſi duæ ſaltem in ſonjugium copularentnr, lon-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="181,1998 1625,1998 1625,2092 181,2092"/>
+                <pc:TextEquiv conf="0.9585347175598145">
+                    <pc:Unicode>gius remotiuſve ſpacium extremitatum conjugi diſtantium, eæ ſint</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,2065 1620,2065 1620,2150 187,2150"/>
+                <pc:TextEquiv conf="0.9705948829650879">
+                    <pc:Unicode>exacturæ, quàm à nobis Schemate illô ſunt determinata, ne dum plures:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="189,2131 1625,2131 1625,2209 189,2209"/>
+                <pc:TextEquiv conf="0.9593378305435181">
+                    <pc:Unicode>Et hic nune eô nomine connexionum partes diſſolvi &amp; concordanttas</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="187,2195 1624,2195 1624,2281 187,2281"/>
+                <pc:TextEquiv conf="0.9549035429954529">
+                    <pc:Unicode>librius ad remotiom loca diſtendi poſſe e concedi in promptu eft. Vt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="189,2260 1623,2260 1623,2346 189,2346"/>
+                <pc:TextEquiv conf="0.9514719247817993">
+                    <pc:Unicode>autem id mags perſpicuum fiat, exemplum advocemus hocce, ex Hh-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-46_region_id_3_region_id_3_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="181,2326 181,2415 604,2415 1454,2400 1620,2376 1620,2326 181,2326"/>
+                <pc:TextEquiv conf="0.9015737771987915">
+                    <pc:Unicode>pomixohydio Modo, qui illius eft Qualitatu,gua ex eſt, petuum.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ab eô, quô à doltrinâ de conſtruendi concordantii, ad alias di-
+greſi buc uſq ſumus, tyronem muſicum bactenus detinuimus, ne quo ipſi
+ibi ſumeret poteſlatem concordantias rematius cum diſpendio diſponendi
+diſtendivé. Et remiſimus illum hûc, tanquam ad llam doctrinam, quæ
+illi copiam ejus ſuppeditare poſſet idoneam e ſufficientem, promit-
+tentes, quod opemm e ſtudium ita ipſiſimus probaturi, ut doctrina illa
+per expemplum explicita ſatsſuperg intelligi pſit planag fiat. Quod
+quoniam ita factum eft, ex debito a nobis requiri videtur, ut, quæ illic
+fecimus, hic nune promiſſa ſolvamus. Quapropter ills ſtantes ſignfica-
+mus, tenendum eſſe, dum ſingulæ voces certi alicujus Ambitus metis ter-
+minantur, quod, earum ſi duæ ſaltem in ſonjugium copularentnr, lon-
+gius remotiuſve ſpacium extremitatum conjugi diſtantium, eæ ſint
+exacturæ, quàm à nobis Schemate illô ſunt determinata, ne dum plures:
+Et hic nune eô nomine connexionum partes diſſolvi &amp; concordanttas
+librius ad remotiom loca diſtendi poſſe e concedi in promptu eft. Vt
+autem id mags perſpicuum fiat, exemplum advocemus hocce, ex Hh-
+pomixohydio Modo, qui illius eft Qualitatu,gua ex eſt, petuum.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footer">
+            <pc:Coords points="933,2407 934,2459 1638,2459 1638,2381 1521,2383 1493,2410 1019,2411 971,2396 933,2407"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1515,2389 971,2396 937,2406 937,2451 1626,2451 1626,2389 1515,2389"/>
+                <pc:TextEquiv conf="0.7208449244499207">
+                    <pc:Unicode>F2 46/</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>F2 46/</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_2">
+            <pc:Coords points="152,432 1616,429 1601,1253 152,1259 152,432"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>
