@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:38:56</pc:Created>
@@ -67,261 +66,32 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="heading">
-            <pc:Coords points="804,218 804,291 868,316 1344,300 1376,316 1614,305 1773,291 1773,218 804,218"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="831,226 831,302 855,311 1484,311 1614,305 1745,293 1745,226 831,226"/>
-                <pc:TextEquiv conf="0.9157408475875854">
-                    <pc:Unicode>Epigramma de Muſices origine.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Epigramma de Muſices origine.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="drop-capital">
-            <pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_1_region_id_1_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="590,318 850,318 850,427 590,427"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_1_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_1_region_id_1_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="591,351 842,351 842,489 591,489"/>
-                <pc:TextEquiv conf="0.2880510985851288">
-                    <pc:Unicode>ßs</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_1_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_1_region_id_1_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="590,453 846,453 846,496 590,496"/>
-                <pc:TextEquiv conf="0.32961541414260864">
-                    <pc:Unicode>C</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_1_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_1_region_id_1_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="591,483 847,483 847,532 591,532"/>
-                <pc:TextEquiv conf="0.22428667545318604">
-                    <pc:Unicode>i</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_1_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_1_region_id_1_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="595,501 848,501 848,581 595,581"/>
-                <pc:TextEquiv conf="0.3393108546733856">
-                    <pc:Unicode>XM</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>
+        <pc:TextRegion id="region_id_0" type="heading"><pc:Coords points="804,218 804,291 868,316 1344,300 1376,316 1614,305 1773,291 1773,218 804,218"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="804,218 804,291 868,316 1344,300 1376,316 1614,305 1773,291 1773,218 804,218"/><pc:TextEquiv conf="0.9157408475875854"><pc:Unicode>Epigramma de Muſices origine.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Epigramma de Muſices origine.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="drop-capital"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_1_line0001"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextEquiv conf="0.2880510985851288"><pc:Unicode>ßs</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_1_line0002"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextEquiv conf="0.32961541414260864"><pc:Unicode>C</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_1_line0003"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextEquiv conf="0.22428667545318604"><pc:Unicode>i</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_1_line0004"><pc:Coords points="578,318 852,315 850,582 679,584 638,585 578,582 578,318"/><pc:TextEquiv conf="0.3393108546733856"><pc:Unicode>XM</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>
 ßs
 C
 i
-XM</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:Coords points="1790,303 1335,305 875,320 875,399 1995,399 1995,303 1790,303"/>
-                <pc:TextEquiv conf="0.9881477952003479">
-                    <pc:Unicode>Bs uno Triados, quis te duxiſſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="1075,402 1995,402 1995,490 1075,490"/>
-                <pc:TextEquiv conf="0.9373284578323364">
-                    <pc:Unicode>negaret,(tuum?</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="937,481 1992,481 1992,573 937,573"/>
-                <pc:TextEquiv conf="0.9389918446540833">
-                    <pc:Unicode>Numine, principiũ, Mſca dia,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="870,571 577,585 577,661 1935,661 1935,571 870,571"/>
-                <pc:TextEquiv conf="0.9923314452171326">
-                    <pc:Unicode>Dum repræſentas Triados myſteria diæ:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="635,656 1994,656 1994,748 635,748"/>
-                <pc:TextEquiv conf="0.9959660768508911">
-                    <pc:Unicode>Dũ numero gaudes impare ut alma Trias.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="578,744 1999,744 1999,825 578,825"/>
-                <pc:TextEquiv conf="0.9838753938674927">
-                    <pc:Unicode>Nam trina laem cantum reſerare vide-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="652,830 2012,830 2012,931 652,931"/>
-                <pc:TextEquiv conf="0.970647931098938">
-                    <pc:Unicode>Higiam trini cernimus eſſe ſoni. (mus?</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="582,919 1934,919 1934,1017 582,1017"/>
-                <pc:TextEquiv conf="0.9794874787330627">
-                    <pc:Unicode>(oniugium ocum trino de fonte ſcaturit;</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="577,1007 1887,1007 1887,1101 577,1101"/>
-                <pc:TextEquiv conf="0.963410496711731">
-                    <pc:Unicode>Fon teq; de trino manat Origo Nodi.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="584,1091 2005,1091 2005,1186 584,1186"/>
-                <pc:TextEquiv conf="0.9391069412231445">
-                    <pc:Unicode>Per finnutenerosq; gradus, atq; Intervalla,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0010">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
-                <pc:Coords points="670,1186 1594,1186 1594,1278 670,1278"/>
-                <pc:TextEquiv conf="0.997849702835083">
-                    <pc:Unicode>patentes</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0011">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
-                <pc:Coords points="656,1271 2014,1271 2014,1371 656,1371"/>
-                <pc:TextEquiv conf="0.9869645237922668">
-                    <pc:Unicode>yllaba Trina vias ire redire, docet. (omni</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0012">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
-                <pc:Coords points="592,1361 592,1450 2015,1450 2015,1361 592,1361"/>
-                <pc:TextEquiv conf="0.95658940076828">
-                    <pc:Unicode>Clauſula Trina animam dat cantu; nititur</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0013">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
-                <pc:Coords points="656,1446 1881,1446 1881,1541 656,1541"/>
-                <pc:TextEquiv conf="0.9880937933921814">
-                    <pc:Unicode>Inq Mo do trino Clauſula quæq; Loco.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0014">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
-                <pc:Coords points="593,1532 2005,1532 2005,1627 593,1627"/>
-                <pc:TextEquiv conf="0.9922038912773132">
-                    <pc:Unicode>Vna eademq; velut non eſt Habitudo canori</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0015">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
-                <pc:Coords points="592,1623 1881,1623 1881,1715 592,1715"/>
-                <pc:TextEquiv conf="0.9828367233276367">
-                    <pc:Unicode>Cantus: ſic idem non alor inq; ſonis.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0016">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
-                <pc:Coords points="594,1713 2006,1713 2006,1806 594,1806"/>
-                <pc:TextEquiv conf="0.9931723475456238">
-                    <pc:Unicode>Illam pone priùs. diuerſum deinde valorem:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0017">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
-                <pc:Coords points="663,1798 1860,1798 1860,1886 663,1886"/>
-                <pc:TextEquiv conf="0.9721974730491638">
-                    <pc:Unicode>An nonCharacter eſt vtriuſq; triplex?</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0018">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
-                <pc:Coords points="596,1884 596,1923 597,1985 2009,1985 2009,1884 596,1884"/>
-                <pc:TextEquiv conf="0.9817214608192444">
-                    <pc:Unicode>Perpetuæ tibi dum ſcatebræ ſumt, fonsq;</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0019">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
-                <pc:Coords points="614,1994 1464,1994 1464,2062 614,2062"/>
-                <pc:TextEquiv conf="0.988664448261261">
-                    <pc:Unicode>perennis,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0020">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0020.png" comments="binarized,clipped"/>
-                <pc:Coords points="601,2061 601,2139 602,2162 2015,2162 2015,2061 601,2061"/>
-                <pc:TextEquiv conf="0.9429612159729004">
-                    <pc:Unicode>Digna es, qu vigeas, Muſica,perpetuùm.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0021">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-05_region_id_2_region_id_2_line0021.png" comments="binarized,clipped"/>
-                <pc:Coords points="602,2150 602,2182 603,2216 2015,2216 2015,2150 602,2150"/>
-                <pc:TextEquiv conf="0.8627908825874329">
-                    <pc:Unicode>M. F. B.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Bs uno Triados, quis te duxiſſe
+XM</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9881477952003479"><pc:Unicode>Bs uno Triados, quis te duxiſſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9373284578323364"><pc:Unicode>negaret,(tuum?</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9389918446540833"><pc:Unicode>Numine, principiũ, Mſca dia,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9923314452171326"><pc:Unicode>Dum repræſentas Triados myſteria diæ:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9959660768508911"><pc:Unicode>Dũ numero gaudes impare ut alma Trias.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0005"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9838753938674927"><pc:Unicode>Nam trina laem cantum reſerare vide-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0006"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.970647931098938"><pc:Unicode>Higiam trini cernimus eſſe ſoni. (mus?</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0007"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9794874787330627"><pc:Unicode>(oniugium ocum trino de fonte ſcaturit;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0008"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.963410496711731"><pc:Unicode>Fon teq; de trino manat Origo Nodi.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0009"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9391069412231445"><pc:Unicode>Per finnutenerosq; gradus, atq; Intervalla,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0010"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.997849702835083"><pc:Unicode>patentes</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0011"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9869645237922668"><pc:Unicode>yllaba Trina vias ire redire, docet. (omni</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0012"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.95658940076828"><pc:Unicode>Clauſula Trina animam dat cantu; nititur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0013"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9880937933921814"><pc:Unicode>Inq Mo do trino Clauſula quæq; Loco.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0014"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9922038912773132"><pc:Unicode>Vna eademq; velut non eſt Habitudo canori</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0015"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9828367233276367"><pc:Unicode>Cantus: ſic idem non alor inq; ſonis.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0016"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9931723475456238"><pc:Unicode>Illam pone priùs. diuerſum deinde valorem:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0017"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9721974730491638"><pc:Unicode>An nonCharacter eſt vtriuſq; triplex?</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0018"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9817214608192444"><pc:Unicode>Perpetuæ tibi dum ſcatebræ ſumt, fonsq;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0019"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.988664448261261"><pc:Unicode>perennis,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0020"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.9429612159729004"><pc:Unicode>Digna es, qu vigeas, Muſica,perpetuùm.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0021"><pc:Coords points="867,320 1157,311 1335,305 1363,321 1586,312 2016,293 2015,2290 605,2312 565,584 635,588 654,598 870,592 867,320"/><pc:TextEquiv conf="0.8627908825874329"><pc:Unicode>M. F. B.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Bs uno Triados, quis te duxiſſe
 negaret,(tuum?
-Numine, principiũ, Mſca dia,
+Numine, principiũ, Muſica dia,
 Dum repræſentas Triados myſteria diæ:
 Dũ numero gaudes impare ut alma Trias.
-Nam trina laem cantum reſerare vide-
-Higiam trini cernimus eſſe ſoni. (mus?
-(oniugium ocum trino de fonte ſcaturit;
-Fon teq; de trino manat Origo Nodi.
+Nam trinam Clavem cantum reſerare vide-
+Sigiam trini cernimus eſſe ſoni. (mus?
+Coniugium Vocum trino de fonte ſcaturit;
+Fon teq; de trino manat Origo Modi.
 Per finnutenerosq; gradus, atq; Intervalla,
 patentes
-yllaba Trina vias ire redire, docet. (omni
+Syllaba Trina vias ire redire, docet. (omni
 Clauſula Trina animam dat cantu; nititur
 Inq Mo do trino Clauſula quæq; Loco.
 Vna eademq; velut non eſt Habitudo canori
-Cantus: ſic idem non alor inq; ſonis.
+Cantus: ſic idem non Valor inq; ſonis.
 Illam pone priùs. diuerſum deinde valorem:
 An nonCharacter eſt vtriuſq; triplex?
-Perpetuæ tibi dum ſcatebræ ſumt, fonsq;
+Perpetuæ tibi dum ſcatebræ ſunt, fonsq;
 perennis,
-Digna es, qu vigeas, Muſica,perpetuùm.
-M. F. B.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="other">
-            <pc:Coords points="99,666 99,833 533,833 533,666 99,666"/>
-            <pc:TextEquiv>
-                <pc:Unicode></pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="other">
-            <pc:Coords points="115,1298 115,1524 541,1524 557,1473 562,1445 561,1414 559,1396 554,1345 541,1298 115,1298"/>
-            <pc:TextEquiv>
-                <pc:Unicode></pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-    </pc:Page>
+Digna es, quæ vigeas, Muſica, perpetuùm.
+M. F. B.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="other"><pc:Coords points="99,666 99,833 533,833 533,666 99,666"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="other"><pc:Coords points="115,1298 115,1524 541,1524 557,1473 562,1445 561,1414 559,1396 554,1345 541,1298 115,1298"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
