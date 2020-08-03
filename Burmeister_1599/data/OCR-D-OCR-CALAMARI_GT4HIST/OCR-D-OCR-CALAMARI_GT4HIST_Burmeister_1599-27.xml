@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:39:53</pc:Created>
@@ -67,252 +66,24 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
-                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="heading">
-            <pc:Coords points="681,186 1859,192 1853,394 682,394 681,186"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="682,198 1853,198 1853,253 682,253"/>
-                <pc:TextEquiv conf="0.6930553317070007">
-                    <pc:Unicode>ScIoVV Co N.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_0_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_0_region_id_0_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="756,265 1755,265 1755,333 756,333"/>
-                <pc:TextEquiv conf="0.9057807922363281">
-                    <pc:Unicode>ſonantias in 4. vocum EuusλAia quam arctiſi-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_0_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_0_region_id_0_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="1038,331 1574,331 1574,394 1038,394"/>
-                <pc:TextEquiv conf="0.936042308807373">
-                    <pc:Unicode>mè connectere docens.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ScIoVV Co N.
-ſonantias in 4. vocum EuusλAia quam arctiſi-
-mè connectere docens.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="caption">
-            <pc:Coords points="936,422 936,498 1601,498 1601,422 936,422"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="946,429 1562,429 1562,492 946,492"/>
-                <pc:TextEquiv conf="0.9579964876174927">
-                    <pc:Unicode>Partes connectionum.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Partes connectionum.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="other">
-            <pc:Coords points="295,543 295,1038 523,1038 523,543 295,543"/>
-            <pc:TextEquiv>
-                <pc:Unicode></pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="heading">
-            <pc:Coords points="762,1038 1760,1036 1771,1126 756,1133 762,1038"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:Coords points="762,1041 762,1129 1336,1129 1762,1126 1762,1052 1761,1041 762,1041"/>
-                <pc:TextEquiv conf="0.9398602247238159">
-                    <pc:Unicode>Explicatio chematis per exemplu.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Explicatio chematis per exemplu.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="other">
-            <pc:Coords points="135,1066 135,1411 436,1411 436,1066 135,1066"/>
-            <pc:TextEquiv>
-                <pc:Unicode></pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" type="paragraph">
-            <pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:Coords points="658,1154 1961,1154 1961,1219 658,1219"/>
-                <pc:TextEquiv conf="0.9987606406211853">
-                    <pc:Unicode>Datur ſonus Melodiæ tenoralis, cujus Characteriſtica</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0001">
-                <pc:Coords points="552,1222 1961,1222 1961,1289 552,1289"/>
-                <pc:TextEquiv conf="0.9896915555000305">
-                    <pc:Unicode>eſt a; ei ſi ſubordinatur Baſi Melodiæ ſonus per diſtan-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="553,1291 1966,1291 1966,1357 553,1357"/>
-                <pc:TextEquiv conf="0.9954136610031128">
-                    <pc:Unicode>tiam Tertiæ, juxta partem connectionum primam, ut pro-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="553,1341 1964,1341 1964,1408 553,1408"/>
-                <pc:TextEquiv conf="0.9720483422279358">
-                    <pc:Unicode>veniat concentus Tertiæ, characteriſtica futura erit .3</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="554,1411 1964,1411 1964,1480 554,1480"/>
-                <pc:TextEquiv conf="0.9830049872398376">
-                    <pc:Unicode>Alti ſi ſuperingeritur per diſtantiam Tertiæ, : vel Quartæ</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="554,1473 1961,1473 1961,1542 554,1542"/>
-                <pc:TextEquiv conf="0.9816662073135376">
-                    <pc:Unicode>d, prodibit; Diſcanti ſi ſuper imponitur per Quartæ in-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="555,1531 1960,1531 1960,1607 555,1607"/>
-                <pc:TextEquiv conf="0.9881225228309631">
-                    <pc:Unicode>tercapedinem, &amp; in connectionem adducetur, f. Atque</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="556,1599 556,1674 782,1674 1293,1671 1483,1655 1483,1599 556,1599"/>
-                <pc:TextEquiv conf="0.9981791973114014">
-                    <pc:Unicode>ita de reliquis connectionum partibus.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Datur ſonus Melodiæ tenoralis, cujus Characteriſtica
-eſt a; ei ſi ſubordinatur Baſi Melodiæ ſonus per diſtan-
+        <pc:TextRegion id="region_id_0" type="heading"><pc:Coords points="681,186 1859,192 1853,394 682,394 681,186"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="681,186 1859,192 1853,394 682,394 681,186"/><pc:TextEquiv conf="0.6930553317070007"><pc:Unicode>ScIoVV Co N.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0001"><pc:Coords points="681,186 1859,192 1853,394 682,394 681,186"/><pc:TextEquiv conf="0.9057807922363281"><pc:Unicode>ſonantias in 4. vocum EuusλAia quam arctiſi-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0002"><pc:Coords points="681,186 1859,192 1853,394 682,394 681,186"/><pc:TextEquiv conf="0.936042308807373"><pc:Unicode>mè connectere docens.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>SCHEMA COMPENDIOSUM CON-
+ſonantias in 4. vocum [GR Eμμελέια] quam arctißi-
+mè connectere docens.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="caption"><pc:Coords points="936,422 936,498 1601,498 1601,422 936,422"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="936,422 936,498 1601,498 1601,422 936,422"/><pc:TextEquiv conf="0.9579964876174927"><pc:Unicode>Partes connectionum.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Partes connectionum.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_2" custom="staffNotation"><pc:Coords points="546,497 1970,504 1964,1025 551,1025 546,497"/><pc:TextEquiv><pc:Unicode></pc:Unicode></pc:TextEquiv></pc:MusicRegion><pc:TextRegion id="region_id_3" type="other"><pc:Coords points="295,543 295,1038 523,1038 523,543 295,543"/><pc:TextEquiv><pc:Unicode></pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="heading"><pc:Coords points="762,1038 1760,1036 1771,1126 756,1133 762,1038"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="762,1038 1760,1036 1771,1126 756,1133 762,1038"/><pc:TextEquiv conf="0.9398602247238159"><pc:Unicode>Explicatio chematis per exemplu.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Explicatio Schematis per exemplum.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="other"><pc:Coords points="135,1066 135,1411 436,1411 436,1066 135,1066"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="paragraph"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9987606406211853"><pc:Unicode>Datur ſonus Melodiæ tenoralis, cujus Characteriſtica</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9896915555000305"><pc:Unicode>eſt a; ei ſi ſubordinatur Baſi Melodiæ ſonus per diſtan-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0002"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9954136610031128"><pc:Unicode>tiam Tertiæ, juxta partem connectionum primam, ut pro-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0003"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9720483422279358"><pc:Unicode>veniat concentus Tertiæ, characteriſtica futura erit .3</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0004"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9830049872398376"><pc:Unicode>Alti ſi ſuperingeritur per diſtantiam Tertiæ, : vel Quartæ</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0005"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9816662073135376"><pc:Unicode>d, prodibit; Diſcanti ſi ſuper imponitur per Quartæ in-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0006"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9881225228309631"><pc:Unicode>tercapedinem, &amp; in connectionem adducetur, f. Atque</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0007"><pc:Coords points="546,1151 1989,1138 1978,1624 1496,1654 1293,1671 1281,1670 1256,1662 1098,1659 550,1685 546,1151"/><pc:TextEquiv conf="0.9981791973114014"><pc:Unicode>ita de reliquis connectionum partibus.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Datur ſonus Melodiæ tenoralis, cujus Characteriſtica
+eſt a ; ei ſi ſubordinatur Baſsi Melodiæ ſonus per diſtan-
 tiam Tertiæ, juxta partem connectionum primam, ut pro-
 veniat concentus Tertiæ, characteriſtica futura erit .3
-Alti ſi ſuperingeritur per diſtantiam Tertiæ, : vel Quartæ
+Alti ſi ſuperingeritur per diſtantiam Tertiæ, [GR ϰ]: vel Quartæ
 d, prodibit; Diſcanti ſi ſuper imponitur per Quartæ in-
 tercapedinem, &amp; in connectionem adducetur, f. Atque
-ita de reliquis connectionum partibus.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_7" type="heading">
-            <pc:Coords points="1128,1664 1128,1746 1383,1746 1383,1674 1278,1674 1259,1667 1128,1664"/>
-            <pc:TextLine id="region_id_7_line0000">
-                <pc:Coords points="1142,1670 1142,1734 1373,1734 1373,1674 1267,1670 1142,1670"/>
-                <pc:TextEquiv conf="0.95691978931427">
-                    <pc:Unicode>Obiter.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Obiter.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_8" type="paragraph">
-            <pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/>
-            <pc:TextLine id="region_id_8_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="1183,1751 627,1755 627,1825 1964,1825 1964,1751 1183,1751"/>
-                <pc:TextEquiv conf="0.977540135383606">
-                    <pc:Unicode>Latius diſtendi poſſunt concentuum copulationes, quàm expoſitum</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="556,1816 1960,1816 1960,1884 556,1884"/>
-                <pc:TextEquiv conf="0.9754239320755005">
-                    <pc:Unicode>Sehema admittit. Cujus rei ratio in doctrina de Modis dabitur. n-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="554,1879 1962,1879 1962,1948 554,1948"/>
-                <pc:TextEquiv conf="0.9778589606285095">
-                    <pc:Unicode>terea ab arcis hujus tyrone requiritur ut ſe in ſyntaxi concordantiarum</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="554,1942 1963,1942 1963,2008 554,2008"/>
-                <pc:TextEquiv conf="0.9565927982330322">
-                    <pc:Unicode>creberrimè exerceat, atg ita hic ſe pauliſper derineri patiatur, doner</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="555,1965 1962,1965 1962,2074 555,2074"/>
-                <pc:TextEquiv conf="0.3563982844352722">
-                    <pc:Unicode>x r Xi X</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="557,2070 1964,2070 1964,2143 557,2143"/>
-                <pc:TextEquiv conf="0.9874459505081177">
-                    <pc:Unicode>moniæ citius ſuavitatem conciliet, quam ut obſcuritati perplexitati</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="558,2133 1960,2133 1960,2207 558,2207"/>
-                <pc:TextEquiv conf="0.9783139824867249">
-                    <pc:Unicode>eandem involvere amet. Quoniam autem mox annexis ſyntaxeos legi-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="556,2196 1962,2196 1962,2270 556,2270"/>
-                <pc:TextEquiv conf="0.9577184319496155">
-                    <pc:Unicode>hus illam intra terminos detinere conaturt erimus, ne conſtructio in in-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-27_region_id_8_region_id_8_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="551,2261 551,2331 1408,2331 1792,2323 1960,2313 1960,2261 551,2261"/>
-                <pc:TextEquiv conf="0.9479659795761108">
-                    <pc:Unicode>finitum attentetur, ſcire eft, ex omnibus ills, Tertiam Ltgem in</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Latius diſtendi poſſunt concentuum copulationes, quàm expoſitum
-Sehema admittit. Cujus rei ratio in doctrina de Modis dabitur. n-
-terea ab arcis hujus tyrone requiritur ut ſe in ſyntaxi concordantiarum
-creberrimè exerceat, atg ita hic ſe pauliſper derineri patiatur, doner
-x r Xi X
-moniæ citius ſuavitatem conciliet, quam ut obſcuritati perplexitati
+ita de reliquis connectionum partibus.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="heading"><pc:Coords points="1128,1664 1128,1746 1383,1746 1383,1674 1278,1674 1259,1667 1128,1664"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="1128,1664 1128,1746 1383,1746 1383,1674 1278,1674 1259,1667 1128,1664"/><pc:TextEquiv conf="0.95691978931427"><pc:Unicode>Obiter.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Obiter.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="paragraph"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.977540135383606"><pc:Unicode>Latius diſtendi poſſunt concentuum copulationes, quàm expoſitum</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0001"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9754239320755005"><pc:Unicode>Sehema admittit. Cujus rei ratio in doctrina de Modis dabitur. n-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0002"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9778589606285095"><pc:Unicode>terea ab arcis hujus tyrone requiritur ut ſe in ſyntaxi concordantiarum</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0003"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9565927982330322"><pc:Unicode>creberrimè exerceat, atg ita hic ſe pauliſper derineri patiatur, doner</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0004"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.3563982844352722"><pc:Unicode>x r Xi X</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0005"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9874459505081177"><pc:Unicode>moniæ citius ſuavitatem conciliet, quam ut obſcuritati perplexitati</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0006"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9783139824867249"><pc:Unicode>eandem involvere amet. Quoniam autem mox annexis ſyntaxeos legi-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0007"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9577184319496155"><pc:Unicode>hus illam intra terminos detinere conaturt erimus, ne conſtructio in in-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0008"><pc:Coords points="552,1755 545,2349 1792,2323 1965,2313 1972,1746 552,1755"/><pc:TextEquiv conf="0.9479659795761108"><pc:Unicode>finitum attentetur, ſcire eft, ex omnibus ills, Tertiam Ltgem in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Latius diſtendi poſſunt concentuum copulationes, quàm expoſitum
+Schema admittit. Cujus rei ratio in doctrina de Modis dabitur. In-
+terea ab artis hujus tyrone requiritur ut ſe in ſyntaxi concordantiarum
+creberrimè exerceat, atq ita hîc ſe pauliſper detineri patiatur, donec
+doctrinam de Modis probé addidicerit. Ita enim futurum erit ut har-
+moniæ citius ſua vitatem conciliet, quam ut obſcuritati &amp; perplexitati
 eandem involvere amet. Quoniam autem mox annexis ſyntaxeos legi-
-hus illam intra terminos detinere conaturt erimus, ne conſtructio in in-
-finitum attentetur, ſcire eft, ex omnibus ills, Tertiam Ltgem in</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_9" type="footer">
-            <pc:Coords points="1797,2323 1797,2377 1986,2377 1984,2315 1797,2323"/>
-            <pc:TextLine id="region_id_9_line0000">
-                <pc:Coords points="1820,2322 1802,2323 1802,2371 1968,2371 1968,2322 1820,2322"/>
-                <pc:TextEquiv conf="0.9640806913375854">
-                    <pc:Unicode>doctrina</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>doctrina</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:MusicRegion id="region_id_2" custom="staffNotation">
-            <pc:Coords points="546,497 1970,504 1964,1025 551,1025 546,497"/>
-        </pc:MusicRegion>
-    </pc:Page>
+hus illam intra terminos detinere conaturi erimus, ne conſtructio in in-
+finitum attentetur, ſcire est, ex omnibus illis, Tertiam Legem in</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_9" type="footer"><pc:Coords points="1797,2323 1797,2377 1986,2377 1984,2315 1797,2323"/><pc:TextLine id="region_id_9_line0000"><pc:Coords points="1797,2323 1797,2377 1986,2377 1984,2315 1797,2323"/><pc:TextEquiv conf="0.9640806913375854"><pc:Unicode>doctrina</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>doctrina</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
