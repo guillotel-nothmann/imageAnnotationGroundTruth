@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:40:14</pc:Created>
@@ -67,129 +66,11 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="caption">
-            <pc:Coords points="1051,236 1403,241 1410,302 1043,308 1051,236"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="1050,241 1045,290 1045,297 1403,297 1403,241 1050,241"/>
-                <pc:TextEquiv conf="0.8762210011482239">
-                    <pc:Unicode>AMITus</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>AMITus</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="525,788 523,921 536,929 554,917 1955,912 1955,787 525,788"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="629,788 1955,788 1955,868 629,868"/>
-                <pc:TextEquiv conf="0.9600263833999634">
-                    <pc:Unicode>Aus eſt duplex: Symphonus &amp; Aſym-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="527,858 527,923 528,924 544,924 1726,913 1726,858 527,858"/>
-                <pc:TextEquiv conf="0.9528708457946777">
-                    <pc:Unicode>phonus.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Aus eſt duplex: Symphonus &amp; Aſym-
-phonus.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="paragraph">
-            <pc:Coords points="546,931 561,920 1958,921 1967,998 895,1029 705,1056 688,1045 519,1052 525,938 546,931"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="560,921 550,928 550,1000 1898,1000 1958,998 1958,921 560,921"/>
-                <pc:TextEquiv conf="0.9336633086204529">
-                    <pc:Unicode>S Mi0NuS Ambitus eſt ille qui Modis Authen-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="525,992 525,1052 700,1053 726,1053 828,1039 828,992 525,992"/>
-                <pc:TextEquiv conf="0.996860146522522">
-                    <pc:Unicode>tis competit.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>S Mi0NuS Ambitus eſt ille qui Modis Authen-
-tis competit.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="paragraph">
-            <pc:Coords points="525,1053 675,1052 699,1061 849,1055 1963,1010 1968,1130 860,1123 811,1164 657,1169 629,1183 516,1168 525,1053"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="1047,1047 583,1053 583,1121 1957,1121 1957,1047 1047,1047"/>
-                <pc:TextEquiv conf="0.930932343006134">
-                    <pc:Unicode>AStP1o0Nus Ambitus eſt ille qui Modis Plagiis</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_4_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="522,1117 522,1169 584,1177 641,1177 798,1164 798,1117 522,1117"/>
-                <pc:TextEquiv conf="0.9785839915275574">
-                    <pc:Unicode>competit.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>AStP1o0Nus Ambitus eſt ille qui Modis Plagiis
-competit.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            <pc:Coords points="625,1190 620,1200 618,1321 1854,1317 1855,1176 659,1173 625,1190"/>
-            <pc:TextLine id="region_id_5_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="651,1177 625,1190 622,1196 622,1253 1847,1253 1847,1177 651,1177"/>
-                <pc:TextEquiv conf="0.9159049391746521">
-                    <pc:Unicode>Vierg ex ſlſequenti Schemate, cyath pro indice circumro-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Burmeister_1599-35_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="721,1247 721,1318 1545,1318 1685,1318 1685,1247 721,1247"/>
-                <pc:TextEquiv conf="0.9594070911407471">
-                    <pc:Unicode>tand, tanquam ex compendiò addiſci poteſt.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Vierg ex ſlſequenti Schemate, cyath pro indice circumro-
-tand, tanquam ex compendiò addiſci poteſt.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" type="caption">
-            <pc:Coords points="794,1324 1660,1323 1665,1391 794,1393 794,1324"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:Coords points="794,1327 794,1393 1660,1391 1660,1327 794,1327"/>
-                <pc:TextEquiv conf="0.9074670076370239">
-                    <pc:Unicode>S CHEMA DE AMBITU.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>S CHEMA DE AMBITU.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:ImageRegion id="region_id_7">
-            <pc:Coords points="635,1400 1837,1398 1844,2566 633,2563 635,1400"/>
-        </pc:ImageRegion>
-        <pc:TableRegion id="region_id_1">
-            <pc:Coords points="512,323 1929,318 1932,785 513,785 512,323"/>
-        </pc:TableRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="caption"><pc:Coords points="1051,236 1403,241 1410,302 1043,308 1051,236"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="1051,236 1403,241 1410,302 1043,308 1051,236"/><pc:TextEquiv conf="0.8762210011482239"><pc:Unicode>AMITus</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AMBITUS</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TableRegion id="region_id_1"><pc:Coords points="512,323 1929,318 1932,785 513,785 512,323"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TableRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="525,788 523,921 536,929 554,917 1955,912 1955,787 525,788"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="525,788 523,921 536,929 554,917 1955,912 1955,787 525,788"/><pc:TextEquiv conf="0.9600263833999634"><pc:Unicode>Aus eſt duplex: Symphonus &amp; Aſym-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="525,788 523,921 536,929 554,917 1955,912 1955,787 525,788"/><pc:TextEquiv conf="0.9528708457946777"><pc:Unicode>phonus.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AMBITUS eſt duplex : Symphonus &amp; Aſym-
+phonus.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="546,931 561,920 1958,921 1967,998 895,1029 705,1056 688,1045 519,1052 525,938 546,931"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="546,931 561,920 1958,921 1967,998 895,1029 705,1056 688,1045 519,1052 525,938 546,931"/><pc:TextEquiv conf="0.9336633086204529"><pc:Unicode>S Mi0NuS Ambitus eſt ille qui Modis Authen-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="546,931 561,920 1958,921 1967,998 895,1029 705,1056 688,1045 519,1052 525,938 546,931"/><pc:TextEquiv conf="0.996860146522522"><pc:Unicode>tis competit.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>SYMPHONUS Ambitus eſt ille qui Modis Authen-
+tis competit.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="paragraph"><pc:Coords points="525,1053 675,1052 699,1061 849,1055 1963,1010 1968,1130 860,1123 811,1164 657,1169 629,1183 516,1168 525,1053"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="525,1053 675,1052 699,1061 849,1055 1963,1010 1968,1130 860,1123 811,1164 657,1169 629,1183 516,1168 525,1053"/><pc:TextEquiv conf="0.930932343006134"><pc:Unicode>AStP1o0Nus Ambitus eſt ille qui Modis Plagiis</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="525,1053 675,1052 699,1061 849,1055 1963,1010 1968,1130 860,1123 811,1164 657,1169 629,1183 516,1168 525,1053"/><pc:TextEquiv conf="0.9785839915275574"><pc:Unicode>competit.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ASYMPHONUS Ambitus eſt ille qui Modis Plagiis
+competit.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="625,1190 620,1200 618,1321 1854,1317 1855,1176 659,1173 625,1190"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="625,1190 620,1200 618,1321 1854,1317 1855,1176 659,1173 625,1190"/><pc:TextEquiv conf="0.9159049391746521"><pc:Unicode>Vierg ex ſlſequenti Schemate, cyath pro indice circumro-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="625,1190 620,1200 618,1321 1854,1317 1855,1176 659,1173 625,1190"/><pc:TextEquiv conf="0.9594070911407471"><pc:Unicode>tand, tanquam ex compendiò addiſci poteſt.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Vterq ex ſubſequenti Schemate, cyathô pro indice circumro-
+tandô, tanquam ex compendiô addiſci potest.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="caption"><pc:Coords points="794,1324 1660,1323 1665,1391 794,1393 794,1324"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="794,1324 1660,1323 1665,1391 794,1393 794,1324"/><pc:TextEquiv conf="0.9074670076370239"><pc:Unicode>S CHEMA DE AMBITU.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>SCHEMA DE AMBITU.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:ImageRegion id="region_id_7"><pc:Coords points="635,1400 1837,1398 1844,2566 633,2563 635,1400"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:ImageRegion></pc:Page>
 </pc:PcGts>
