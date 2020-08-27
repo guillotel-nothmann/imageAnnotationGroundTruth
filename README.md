@@ -1,6 +1,6 @@
 # imageAnnotationGroundTruth
 
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotation/blob/master/ImageAnnotation/annotationExample/annotationExemple.png?raw=true)
+
 
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
 
