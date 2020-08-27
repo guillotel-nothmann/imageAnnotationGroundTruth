@@ -1,5 +1,6 @@
 # imageAnnotationGroundTruth
 
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)
 
 
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
