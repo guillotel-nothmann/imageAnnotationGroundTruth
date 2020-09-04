@@ -103,7 +103,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         ó         |             |              |             |
 |                  |  U+E8BF     |              |             |
 |                   |             |[q+aigu]      |             |
-|                   |             |[+aigu]      |![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/tree/master/img/q_aigu_ligated.jpg)|
+|                   |             |[+aigu]      |![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |                   |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)             |
 |                   |             |              |             |
 
