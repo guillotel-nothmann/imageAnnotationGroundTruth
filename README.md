@@ -78,7 +78,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 ## Liste des symboles
 ### Les caractères latins
 
-| Caractère  Unicode| Hex Unicode | Transcription|    image    |
+| Caractère  Unicode| Hexadécimal | Transcription|    image    |
 |:-----------------:|:-----------:|:------------:|:-----------:|
 |         â         |             |              |             |
 |         &         |             |              |             |
@@ -109,7 +109,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 ### Les caractères grecs
-| Caractère Unicode | Hex Unicode | Transcription|    image    |
+| Caractère Unicode | Hexadécimal | Transcription|    image    |
 |:-----------------:|:-----------:|:------------:|:-----------:|
 |         Ω         |             |              |             |
 |         Π         |             |              |             |
@@ -174,7 +174,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 ### Les caractères musicaux
-| Caractère Unicode | Hex Unicode | Transcription|    image    |
+| Caractère Unicode | Hexadécimal | Transcription|    image    |
 |:-----------------:|:-----------:|:------------:|:-----------:|
 |          †        |             |              |             |
 |          ♪        |             |              |             |
