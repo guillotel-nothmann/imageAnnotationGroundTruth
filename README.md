@@ -8,12 +8,12 @@
 ## Restructuration du balisage automatique
 
 - Supprimer les balisages inutiles.
-- La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après l'avoir identifié, on peut la supprimer avec la touche backspace.
+- La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après avoir identifié l'une de ces petites régions, supprimer la avec la touche backspace.
 
 
 ## Paragraphe
 
-Chaque paragraphe est identifié par son indentation.
+Les paragraphee sont identifiés par leur indentation à l'exception des paragraphes continuant sur la page suivante.
 
 ## Portées et caractères musicaux
 
