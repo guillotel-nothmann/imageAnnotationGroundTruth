@@ -17,22 +17,24 @@ Les paragraphes sont identifiés par leur indentation.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
 
 Il y a cependant quelques exceptions:
-- Les paragraphes continuant sur la page suivante ont été identifiés commes deux paragraphes distincts.
-- L'épigramme de la page 5 est identifié dans une seule région paragraph.
-- Les poèmes ont été identifié dans la région linegroup. Voir l'exemple dans la Table de l'ensemble des catégories de régions plus bas.
+- Un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
+- L'épigramme est identifié dans une seule région paragraph. Exemple page 5 de Burmeister.
+- Les poèmes ont été identifié dans la région linegroup. 
+Exemple :
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)
 
 ## Portées, caractères musicaux et notation par lettres
-### Staffnotation :
-- Toutes les portées sont signalées par la région Staffnotation. 
-- Si un début de portée précède de la notation par lettres, la région est signalée par Staffnotation. 
+### staffNotation :
+- Toutes les portées sont signalées par la région staffNotation. 
+- Si un début de portée précède de la notation par lettres, la région est signalée par staffNotation. 
 - Quand la notation par lettres n'est pas une tablature, elle est identifiée comme une région staffNotation. Exemple p. 14.
 - Une tablature accompagnant une mélodie sur portée intègre la région staffNotation. Exemple p. 14.
 
-### paragraph
+### paragraph :
 - Les caractères musicaux dans le texte ne représentent pas une région particulière. Quand un caractère sans portée se trouvent isolé sur une ligne de texte, ils intègrent la région paragraph qui sélectionne le texte.
 Exemple page 13 de Burmeister
 
-#### tablatureNotation et 
+#### tablatureNotation :
 - La notation par lettres est généralement considérée comme la région tablatureNotation.
 
 ## Encodade d'une région dans une autre région
@@ -102,7 +104,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         Æ         |             |              |             |
 |         ũ         |             |              |             |
 |         ù         |             |              |             |
-|         q́         |             |              |             |
+|         q́         |             |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
 |         ß         |        	  |              |             |
 |         æ         |             |              |             |
 |         œ         |             |              |             |
@@ -117,10 +119,10 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         á         |             |              |             |
 |         č         |             |              |             |
 |         ó         |             |              |             |
-|                  |  U+E8BF     |              |             |
-|                   |             |[q+aigu]      |             |
-|                   |             |[+aigu]      |![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
-|                   |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)             |
+|                   |  U+E8BF     |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
+|                   |             |              |             |
+|                   |             |[[ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)+aigu]      |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|                   |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |                   |             |              |             |
 
 
