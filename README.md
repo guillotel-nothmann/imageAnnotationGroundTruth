@@ -12,7 +12,11 @@
 
 ## Paragraphe
 
-Les paragraphes sont identifiés par leur indentation. Il y a cependant quelques exceptions:
+Les paragraphes sont identifiés par leur indentation. 
+
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
+
+Il y a cependant quelques exceptions:
 - Les paragraphes continuant sur la page suivante ont été identifiés commes deux paragraphes distincts.
 - L'épigramme de la page 5 est identifié dans une seule région paragraph.
 - Les poèmes ont été identifié dans la région linegroup. Voir l'exemple dans la Table de l'ensemble des catégories de régions plus bas.
