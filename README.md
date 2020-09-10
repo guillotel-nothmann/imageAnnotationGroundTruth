@@ -52,8 +52,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 ## Table de l'ensemble des catégories de régions avec leurs équivalents en XML : 
 - Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux. 
 
-|       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en images |
-|:------------------:|:----------------------------------------------------------------:|:------------------:|:
+|       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
+|:------------------:|:----------------------------------------------------------------:|:------------------:|
 |      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |                    |
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
