@@ -50,7 +50,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 |       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en images |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|:
-|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)                |
+|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)  |
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
