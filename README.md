@@ -193,7 +193,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 ### Les caractères musicaux
-- Le character ou l'Unicode hexadécimal se réfère à celui proposé par l'[babelstone](https://www.babelstone.co.uk/Unicode/babelmap.html "lien vers le site babelstone").
+- Le character ou l'Unicode hexadécimal se réfère à celui proposé par le site [babelstone](https://www.babelstone.co.uk/Unicode/babelmap.html "lien vers le site babelstone").
 | Caractère Unicode | Hexadécimal | Transcription|    image    |
 |:-----------------:|:-----------:|:------------:|:-----------:|
 |          †        |             |              |             |
@@ -211,7 +211,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
 |          ♮        |   U+266E    |              |             |
 |          𝄞        |  U + 1D11E  | [Mus clef G] |             |
-|&#119074; &#x1D122;|  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
+|     &#119074;     |  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |                   |             |[Mus clef C1] |             |
 |                   |             |[Mus clef C3] |             |
 |         g         |  U+0067     |     [Mus g]  |             |
