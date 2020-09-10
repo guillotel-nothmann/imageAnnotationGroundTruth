@@ -211,7 +211,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
 |          ♮        |   U+266E    |              |             |
 |          𝄞        |  U + 1D11E  | [Mus clef G] |             |
-|     &#119074;     |  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
+|                   |  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |                   |             |[Mus clef C1] |             |
 |                   |             |[Mus clef C3] |             |
 |         g         |  U+0067     |     [Mus g]  |             |
