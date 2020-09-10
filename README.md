@@ -10,19 +10,30 @@
 - Supprimer les balisages inutiles.
 - La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après avoir identifié l'une de ces petites régions, supprimer la avec la touche backspace.
 
-
 ## Paragraphe
 
-Les paragraphee sont identifiés par leur indentation à l'exception des paragraphes continuant sur la page suivante.
+Les paragraphes sont identifiés par leur indentation. Il y a cependant quelques exceptions:
+- Les paragraphes continuant sur la page suivante ont été identifiés commes deux paragraphes distincts.
+- L'épigramme de la page 5 est identifié dans une seule région paragraph.
+- Les poèmes ont été identifié dans la région linegroup. Voir l'exemple dans la Table de l'ensemble des catégories de régions plus bas.
 
-## Portées et caractères musicaux
+## Portées, caractères musicaux et notation par lettres
+### Staffnotation :
+- Toutes les portées sont signalées par la région Staffnotation. 
+- Si un début de portée précède de la notation par lettres, la région est signalée par Staffnotation. 
+- Quand la notation par lettres n'est pas une tablature, elle est identifiée comme une région staffNotation. Exemple p. 14.
+- Une tablature accompagnant une mélodie sur portée intègre la région staffNotation. Exemple p. 14.
 
-Toutes les portées sont signalées par la région Staffnotation. La notation par lettres est également signalée par Staffnotation. Les caractères musicaux dans le texte ne représentent pas une région particulière. S'ils se trouvent dans un paragraphe, ils intègrent cette région.
-Exemple page 13 de Burmeister 
+### paragraph
+- Les caractères musicaux dans le texte ne représentent pas une région particulière. Quand un caractère sans portée se trouvent isolé sur une ligne de texte, ils intègrent la région paragraph qui sélectionne le texte.
+Exemple page 13 de Burmeister
 
-## Encodade de certaines zones dans des zones
+#### tablatureNotation et 
+- La notation par lettres est généralement considérée comme la région tablatureNotation.
 
-Si des exemples musicaux sont insérés dans des tables, séléctionnez les exemples musicaux dans la région staffNotation, puis sélectionnez la table dans région table insérant ainsi staffNotation dans table.
+## Encodade d'une région dans une autre région
+
+Si des exemples musicaux sont insérés dans des tables, séléctionnez les exemples musicaux dans la région staffNotation, puis sélectionnez la table dans une région table insérant ainsi la région staffNotation dans table.
 Exemple page 20 de Burmeister.
 
 ## Numérotation des régions
@@ -35,27 +46,28 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 - Eviter de zoomer en sélectionnant l'extérieur d'une marge. 
 
 ## Table de l'ensemble des catégories de régions avec leurs équivalents en XML : 
+- Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux. 
 
-|       Classe       |            Page XML : Region class et @type ou @custom :            |
-|:------------------:|:----------------------------------------------------------------:|
-|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |
-|       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |
-|       Header       |          <pc:TextRegion id="region_id_0" type="header">          |
-|       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |
-|       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |
-| Drop-capital       |       <pc:TextRegion id="region_id_0" type="drop-capital">       |
-|     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |
-|      Footnote      |         <pc:TextRegion id="region_id_0" type="footnote">         |
-|        Other       |           <pc:TextRegion id="region_id_0" type="other">          |
-|        List        |          <pc:TextRegion id="region_id_0" type="caption">         |
-|     Line group     | <pc:TextRegion id="region_id_0" custom="linegroup" type="other"> |
-|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |
-| Tablature notation |   <pc:MusicRegion id="region_id_2" custom="tablatureNotation">   |
-|        Table       |                 <pc:TableRegion id="region_id_0">                |
-|       Graphic      |                <pc:GraphicRegion id="region_id_0">               |
-|        Image       |                 <pc:ImageRegion id="region_id_0">                |
-|    Line drawing    |              <pc:LineDrawingRegion id="region_id_0">             |
-|      Separator     |               <pc:SeparatorRegion id="region_id_0">              |
+|       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en images |
+|:------------------:|:----------------------------------------------------------------:|:------------------:|:
+|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)                |
+|       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
+|       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
+|       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
+|       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |                    |
+| Drop-capital       |       <pc:TextRegion id="region_id_0" type="drop-capital">       |                    |
+|     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |                    |
+|      Footnote      |         <pc:TextRegion id="region_id_0" type="footnote">         |                    |
+|        Other       |           <pc:TextRegion id="region_id_0" type="other">          |                    |
+|        List        |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
+|     Line group     | <pc:TextRegion id="region_id_0" custom="linegroup" type="other"> |                    |
+|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |                    |
+| Tablature notation |   <pc:MusicRegion id="region_id_2" custom="tablatureNotation">   |                    |
+|        Table       |                 <pc:TableRegion id="region_id_0">                |                    |
+|       Graphic      |                <pc:GraphicRegion id="region_id_0">               |                    |
+|        Image       |                 <pc:ImageRegion id="region_id_0">                |                    |
+|    Line drawing    |              <pc:LineDrawingRegion id="region_id_0">             |                    |
+|      Separator     |               <pc:SeparatorRegion id="region_id_0">              |                    |
 
 
 
