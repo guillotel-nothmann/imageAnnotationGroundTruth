@@ -97,7 +97,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 ### Les caractères latins
 - Certains caractères ne s'affiches pas. Nous avons utilisé une tanscription pour les désigner.
 - Le ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true) ne s'affiche pas dans le READme sur github mais s'affiche dans notre transcription.
-- Le character ou l'Unicode hexadécimal se réfère à celui proposé par l'[OCR-D] (https://ocr-d.de/en/gt-guidelines/trans/trFremdsprache.html "lien vers la page de l'OCR-D").
+- Le character ou l'Unicode hexadécimal se réfère à celui proposé par l'[OCR-D](https://ocr-d.de/en/gt-guidelines/trans/trFremdsprache.html "lien vers la page de l'OCR-D").
 
 | Character or Unicode hexadecimal| Transcription|    image    |
 |:-------------------------------:|:------------:|:-----------:|
@@ -124,7 +124,6 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         ó                       |              |             |
 |       U+E8BF or q&#x0301;       |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
 |         q&#x0301;&#x037E;      |[![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)+aigu]      |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
-|                   |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |                   |             |              |             |
 
 
@@ -211,7 +210,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
 |          ♮        |   U+266E    |              |             |
 |          𝄞        |  U + 1D11E  | [Mus clef G] |             |
-|                   |  U+1D122    | [Mus clef F] |             |
+|                   |  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |                   |             |[Mus clef C1] |             |
 |                   |             |[Mus clef C3] |             |
 |         g         |  U+0067     |     [Mus g]  |             |
