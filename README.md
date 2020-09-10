@@ -194,6 +194,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 ### Les caractères musicaux
 - Le character ou l'Unicode hexadécimal se réfère à celui proposé par le site [babelstone](https://www.babelstone.co.uk/Unicode/babelmap.html "lien vers le site babelstone").
+
 | Caractère Unicode | Hexadécimal | Transcription|    image    |
 |:-----------------:|:-----------:|:------------:|:-----------:|
 |          †        |             |              |             |
