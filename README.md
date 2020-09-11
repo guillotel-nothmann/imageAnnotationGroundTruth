@@ -119,8 +119,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         á                       |              |             |
 |         č                       |              |             |
 |         ó                       |              |             |
-|       U+E8BF or q&#x0301;       |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
-|         q&#x0301;&#x037E;      |[![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)+aigu]      |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|       U+E8BF or q&#x037E;       |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
+|         q&#x0301;&#x037E;      |[![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)+aigu]      |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |                   |             |              |             |
 
 
@@ -202,7 +202,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆶        |   U+1D1B6   | [Mus maxima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/maxima.png?raw=true)|
 |          𝆷        |  U+1D1B7    | [Mus longa]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longa.png?raw=true)|
 |          𝆸        |  U+1D1B8    | [Mus brevis] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/brevis.png?raw=true)|
-|          𝆹        |  U+1D1B9    |[Mus sebrevis]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/sebrevis.png?raw=true)|
+|  𝆹 or &#x1D1B9;   |  U+1D1B9    |[Mus sebrevis]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/sebrevis.png?raw=true)|
 |          𝅭         |  U+1D16D    |[Mus aug dat] |             |
 |          𝆹𝅥        |  U+1D1BB    | [Mus minima] |             |
 |          𝆺𝅥        |  U+1D1BC    |[Mus seminima]|             |
