@@ -198,9 +198,9 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          ♪        |             |              |             |
 |          𝅗𝅥         |             |              |             |
 |          𝅆         |             |              |             |
-|          #        |             |              |             |
-|          𝆶        |   U+1D1B6   | [Mus maxima] |             |
-|          𝆷        |  U+1D1B7    | [Mus longa]  |             |
+|          #        |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/diese.png?raw=true) |
+|          𝆶        |   U+1D1B6   | [Mus maxima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/maxima.png?raw=true)|
+|          𝆷        |  U+1D1B7    | [Mus longa]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longa.png?raw=true)|
 |          𝆸        |  U+1D1B8    | [Mus brevis] |             |
 |          𝆹        |  U+1D1B9    |[Mus sebrevis]|             |
 |          𝅭         |  U+1D16D    |[Mus aug dat] |             |
@@ -208,7 +208,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆺𝅥        |  U+1D1BC    |[Mus seminima]|             |
 |          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
 |          ♮        |   U+266E    |              |             |
-|          𝄞        |  U+1D11E  | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
+|          𝄞        |  U+1D11E    | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
 |&#119074; &#x1D122;|  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |     &#x1D121;     |             |[Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
 |     &#x1D121;     |             |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
