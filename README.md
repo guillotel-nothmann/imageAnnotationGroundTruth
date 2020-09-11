@@ -208,10 +208,10 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          𝆺𝅥        |  U+1D1BC    |[Mus seminima]|             |
 |          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
 |          ♮        |   U+266E    |              |             |
-|          𝄞        |  U + 1D11E  | [Mus clef G] |             |
+|          𝄞        |  U+1D11E  | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |&#119074; &#x1D122;|  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
-|                   |             |[Mus clef C1] |             |
-|                   |             |[Mus clef C3] |             |
+|     &#x1D121;     |             |[Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
+|     &#x1D121;     |             |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC.jpg?r3aw=true)             |
 |         g         |  U+0067     |     [Mus g]  |             |
 |         Ƒ         |  U+0191     |              |             |
 |         𝄐         |  U+1D110    |[Mus fermata] |             |
