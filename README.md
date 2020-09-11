@@ -98,29 +98,29 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 | Character | Unicode hexadecimal | Transcription|    image    |
 |:---------:|:-------------------:|:------------:|:-----------:|
+|         á |    ``&#x00E1;``     |              |             |
 |         â |    ``&#x00E2;``     |              |             |
+|         æ |    ``&#x00E6;``     |              |             |
+|         Æ |    ``&#x00C6;``     |              |             |
+|         č |    ``&#x010D;``     |              |             |
+|         ê |    ``&#x00EA;``     |              |             |
 |         & |    ``&#x0026;``     |              |             |
-|         ſ |                     |              |             |
-|         Æ |                     |              |             |
-|         ũ |                     |              |             |
-|         ù |                     |              |             |
-|         q́ |   ``&#x0301;``      |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
-|         ß |                 	  |              |             |
-|         æ |                     |              |             |
-|         œ |                     |              |             |
-|         ò |                     |              |             |
-|         ô |                     |              |             |
-|         ê |                     |              |             |
-|         ÿ |                     |              |             |
-|         * |                     |              |             |
-|         m̃ |                     |              |             |
-|         ì |                     |              |             |
-|         í |                     |              |             |
-|         á |                     |              |             |
-|         č |                     |              |             |
-|         ó |                     |              |             |
+|         ì |    ``&#x00EC;``     |              |             |
+|         í |    ``&#x00ED;``     |              |             |
+|         m̃ |``&#x006D;&#x0303;`` |              |             |
+|         ò |    ``&#x00F2;``     |              |             |
+|         ó |    ``&#x00F3;``     |              |             |
+|         ô |    ``&#x00F4;``     |              |             |
+|         œ |    ``&#x0153;``     |              |             |
+|         q́ |    ``&#x0301;``     |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
 |  q&#x037E;| U+E8BF ``q&#x037E;``|              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
 |           |``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|         ſ |    ``&#x017F;``     |              |             |
+|         ß |    ``&#x00DF;``  	  |              |             |
+|         ũ |    ``&#x0169;``     |              |             |
+|         ù |    ``&#x00F9;``     |              |             |
+|         ÿ |    ``&#x00FF;``     |              |             |
+|         * |    ``&#x002A;``     |              |             |
 |           |                      |              |             |
 
 
