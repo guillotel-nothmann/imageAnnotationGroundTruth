@@ -113,8 +113,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         ô |    ``&#x00F4;``     |              |             |
 |         œ |    ``&#x0153;``     |              |             |
 |         q́ |    ``&#x0301;``     |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
-|  q&#x037E;| U+E8BF ``q&#x037E;``|              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
-|           |``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|  q&#x037E;|    ``q&#x037E;``    |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
+|      	  q́;|``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |         ſ |    ``&#x017F;``     |              |             |
 |         ß |    ``&#x00DF;``  	  |              |             |
 |         ũ |    ``&#x0169;``     |              |             |
