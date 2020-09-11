@@ -201,8 +201,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |          #        |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/diese.png?raw=true) |
 |          𝆶        |   U+1D1B6   | [Mus maxima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/maxima.png?raw=true)|
 |          𝆷        |  U+1D1B7    | [Mus longa]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longa.png?raw=true)|
-|          𝆸        |  U+1D1B8    | [Mus brevis] |             |
-|          𝆹        |  U+1D1B9    |[Mus sebrevis]|             |
+|          𝆸        |  U+1D1B8    | [Mus brevis] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/brevis.png?raw=true)|
+|          𝆹        |  U+1D1B9    |[Mus sebrevis]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/sebrevis.png?raw=true)|
 |          𝅭         |  U+1D16D    |[Mus aug dat] |             |
 |          𝆹𝅥        |  U+1D1BB    | [Mus minima] |             |
 |          𝆺𝅥        |  U+1D1BC    |[Mus seminima]|             |
