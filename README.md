@@ -98,8 +98,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 | Character | Unicode hexadecimal | Transcription|    image    |
 |:---------:|:-------------------:|:------------:|:-----------:|
-|         â |                     |              |             |
-|         & |                     |              |             |
+|         â |    ``&#x00E2;``     |              |             |
+|         & |    ``&#x0026;``     |              |             |
 |         ſ |                     |              |             |
 |         Æ |                     |              |             |
 |         ũ |                     |              |             |
@@ -120,7 +120,7 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |         č |                     |              |             |
 |         ó |                     |              |             |
 |  q&#x037E;| U+E8BF ``q&#x037E;``|              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
-|          |``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|           |``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
 |           |                      |              |             |
 
 
