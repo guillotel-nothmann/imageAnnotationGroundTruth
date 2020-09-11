@@ -96,32 +96,32 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 - Le ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true) ne s'affiche pas dans le READme sur github mais s'affiche dans notre transcription.
 - Le character ou l'Unicode hexadécimal se réfère à celui proposé par l'[OCR-D](https://ocr-d.de/en/gt-guidelines/trans/trFremdsprache.html "lien vers la page de l'OCR-D").
 
-| Character or Unicode hexadecimal| Transcription|    image    |
-|:-------------------------------:|:------------:|:-----------:|
-|         â                       |              |             |
-|         &                       |              |             |
-|         ſ                       |              |             |
-|         Æ                       |              |             |
-|         ũ                       |              |             |
-|         ù                       |              |             |
-|         q́   or &#x0301;         |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
-|         ß                  	  |              |             |
-|         æ                       |              |             |
-|         œ                       |              |             |
-|         ò                       |              |             |
-|         ô                       |              |             |
-|         ê                       |              |             |
-|         ÿ                       |              |             |
-|         *                       |              |             |
-|         m̃                       |              |             |
-|         ì                       |              |             |
-|         í                       |              |             |
-|         á                       |              |             |
-|         č                       |              |             |
-|         ó                       |              |             |
-|       U+E8BF or q&#x037E;       |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
-|         q&#x0301;&#x037E;      |[![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)+aigu]      |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
-|                   |             |              |             |
+| Character | Unicode hexadecimal | Transcription|    image    |
+|:---------:|:-------------------:|:------------:|:-----------:|
+|         â |                     |              |             |
+|         & |                     |              |             |
+|         ſ |                     |              |             |
+|         Æ |                     |              |             |
+|         ũ |                     |              |             |
+|         ù |                     |              |             |
+|         q́ |   ``&#x0301;``      |   [q+aigu]   | ![qaiguligated](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qaigu.png?raw=true) |
+|         ß |                 	  |              |             |
+|         æ |                     |              |             |
+|         œ |                     |              |             |
+|         ò |                     |              |             |
+|         ô |                     |              |             |
+|         ê |                     |              |             |
+|         ÿ |                     |              |             |
+|         * |                     |              |             |
+|         m̃ |                     |              |             |
+|         ì |                     |              |             |
+|         í |                     |              |             |
+|         á |                     |              |             |
+|         č |                     |              |             |
+|         ó |                     |              |             |
+|  q&#x037E;| U+E8BF ``q&#x037E;``|              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true)|
+|          |``q&#x0301;&#x037E;``|[q&#x037E;+aigu]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/q_aigu_ligated.jpg?raw=true)|
+|           |                      |              |             |
 
 
 ### Les caractères grecs
