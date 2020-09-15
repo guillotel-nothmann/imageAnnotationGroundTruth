@@ -125,90 +125,87 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 ### Les caractères grecs
-| Charactere        | Unicode hexadecimal |
-|:-----------------:|:-------------------:|
-|         Γ         |    ``&#x0393;``     |
-|         Δ         |    ``&#x0394;``     |
-|         Θ         |    ``&#x0398;``     |
-|         Λ         |    ``&#x039B;``     |
-|         Ξ         |    ``&#x039E;``     |
-|         Π         |    ``&#x03A0;``     |
-|         Σ         |    ``&#x03A3;``     |
-|         Φ         |    ``&#x03A6;``     | 
-|         Ψ         |    ``&#x03A8;``     |
-|         Ω         |    ``&#x03A9;``     |
-|         ά         |    ``&#x03AC;``     |
-|         έ         |    ``&#x03AD;``     |
-|         ή         |    ``&#x03AE;``     |  
-|         ἰ         |    ``&#x03A9;``     |
-|         α         |    ``&#x03B1;``     |
-|         β         |    ``&#x03B2;``     |
-|         γ         |    ``&#x03B3;``     |
-|         δ         |    ``&#x03B4;``     |
-|         ε         |    ``&#x03B5;``     |
-|         ζ	        |    ``&#x03B6;``     |
-|         η         |    ``&#x03B7;``     |
-|         θ         |    ``&#x03B8;``     |
-|         ι         |    ``&#x03B9;``     |
-|         λ         |    ``&#x03BB;``     |
-|         μ         |    ``&#x03BC;``     |
-|         ν         |    ``&#x03BD;``     |
-|         ο         |    ``&#x03BF;``     |
-|         π         |    ``&#x03C0;``     |
-|         ρ         |    ``&#x03C1;``     |
-|         ϛ         |    ``&#x03C2;``     |
-|         σ         |    ``&#x03C3;``     |
-|         τ         |    ``&#x03C4;``     |
-|         υ         |    ``&#x03C5;``     |
-|         φ         |    ``&#x03C6;``     |
-|         ψ         |    ``&#x03C8;``     |
-|         ω         |    ``&#x03C9;``     |
-|         ϊ         |    ``&#x03CA;``     |
-|         ύ         |    ``&#x03CD;``     |
-|         ώ         |    ``&#x03CE;``     |
-|         ϒ         |    ``&#x03D2;``     |
-|         ϕ         |    ``&#x03D5;``     |
-|         Ϥ         |    ``&#x03E4;``     |
-|         ϰ         |    ``&#x03F0;``     |
-|         ϱ         |    ``&#x03F1;``     | 
-|         ϲ         |    ``&#x03F2;``     |
-|         ἁ         |    ``&#x1F01;``     | 
-|         ἄ         |    ``&#x1F04;``     |
-|         ἔ         |    ``&#x1F14;``     |
-|         ὡ         |    ``&#x1F61;``     |
-|         ῖ         |    ``&#x1FD6;``     |
-|         ῤ         |    ``&#x1FE4;``     |
-|         ῦ         |    ``&#x1FE6;``     |
-|         ῶ         |    ``&#x1FF6;``     |
-|                   |                     |
+|   Character   | Unicode hexadecimal |
+|:-------------:|:-------------------:|
+|       Γ       |    ``&#x0393;``     |
+|       Δ       |    ``&#x0394;``     |
+|       Θ       |    ``&#x0398;``     |
+|       Λ       |    ``&#x039B;``     |
+|       Ξ       |    ``&#x039E;``     |
+|       Π       |    ``&#x03A0;``     |
+|       Σ       |    ``&#x03A3;``     |
+|       Φ       |    ``&#x03A6;``     | 
+|       Ψ       |    ``&#x03A8;``     |
+|       Ω       |    ``&#x03A9;``     |
+|       ά       |    ``&#x03AC;``     |
+|       έ       |    ``&#x03AD;``     |
+|       ή       |    ``&#x03AE;``     |  
+|       ἰ       |    ``&#x03A9;``     |
+|       α       |    ``&#x03B1;``     |
+|       β       |    ``&#x03B2;``     |
+|       γ       |    ``&#x03B3;``     |
+|       δ       |    ``&#x03B4;``     |
+|       ε       |    ``&#x03B5;``     |
+|       ζ 	    |    ``&#x03B6;``     |
+|       η       |    ``&#x03B7;``     |
+|       θ       |    ``&#x03B8;``     |
+|       ι       |    ``&#x03B9;``     |
+|       λ       |    ``&#x03BB;``     |
+|       μ       |    ``&#x03BC;``     |
+|       ν       |    ``&#x03BD;``     |
+|       ο       |    ``&#x03BF;``     |
+|       π       |    ``&#x03C0;``     |
+|       ρ       |    ``&#x03C1;``     |
+|       ϛ       |    ``&#x03C2;``     |
+|       σ       |    ``&#x03C3;``     |
+|       τ       |    ``&#x03C4;``     |
+|       υ       |    ``&#x03C5;``     |
+|       φ       |    ``&#x03C6;``     |
+|       ψ       |    ``&#x03C8;``     |
+|       ω       |    ``&#x03C9;``     |
+|       ϊ       |    ``&#x03CA;``     |
+|       ύ       |    ``&#x03CD;``     |
+|       ώ       |    ``&#x03CE;``     |
+|       ϒ       |    ``&#x03D2;``     |
+|       ϕ       |    ``&#x03D5;``     |
+|       Ϥ       |    ``&#x03E4;``     |
+|       ϰ       |    ``&#x03F0;``     |
+|       ϱ       |    ``&#x03F1;``     | 
+|       ϲ       |    ``&#x03F2;``     |
+|       ἁ       |    ``&#x1F01;``     | 
+|       ἄ       |    ``&#x1F04;``     |
+|       ἔ       |    ``&#x1F14;``     |
+|       ὡ       |    ``&#x1F61;``     |
+|       ῖ       |    ``&#x1FD6;``     |
+|       ῤ       |    ``&#x1FE4;``     |
+|       ῦ       |    ``&#x1FE6;``     |
+|       ῶ       |    ``&#x1FF6;``     |
+|               |                     |
 
 
 ### Les caractères musicaux
 - Le character ou l'Unicode hexadécimal se réfère à celui proposé par le site [babelstone](https://www.babelstone.co.uk/Unicode/babelmap.html "lien vers le site babelstone").
 
-| Caractère Unicode | Hexadécimal | Transcription|    image    |
-|:-----------------:|:-----------:|:------------:|:-----------:|
-|          †        |             |              |             |
-|          ♪        |             |              |             |
-|          𝅗𝅥         |             |              |             |
-|          𝅆         |             |              |             |
-|          #        |             |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/diese.png?raw=true) |
-|          𝆶        |   U+1D1B6   | [Mus maxima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/maxima.png?raw=true)|
-|          𝆷        |  U+1D1B7    | [Mus longa]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longa.png?raw=true)|
-|          𝆸        |  U+1D1B8    | [Mus brevis] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/brevis.png?raw=true)|
-|  𝆹 or &#x1D1B9;   |  U+1D1B9    |[Mus sebrevis]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/sebrevis.png?raw=true)|
-|          𝅭         |  U+1D16D    |[Mus aug dat] |             |
-|          𝆹𝅥        |  U+1D1BB    | [Mus minima] |             |
-|          𝆺𝅥        |  U+1D1BC    |[Mus seminima]|             |
-|          𝆺𝅥𝅮        |  U+1D1BE    | [Mus fusa]   |             |
-|          ♮        |   U+266E    |              |             |
-|          𝄞        |  U+1D11E    | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
-|&#119074; &#x1D122;|  U+1D122    | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
-|     &#x1D121;     |             |[Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
-|     &#x1D121;     |             |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
-|         g         |  U+0067     |     [Mus g]  |             |
-|         Ƒ         |  U+0191     |              |             |
-|         𝄐         |  U+1D110    |[Mus fermata] |             |
-|         𝄑         |  U+1D111    |[Mus fermatab]|             |
-|                   |             |              |             |
-|                   |             |              |             |
+| Character | Unicode hexadecimal | Transcription|    image    |
+|:---------:|:-------------------:|:------------:|:-----------:|
+|     †     |    ``&#x2020;``     |              |             |
+|     #     |    ``&#x0023;``     |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/diese.png?raw=true) |
+|     𝆶     |    ``&#x1D1B6;``    | [Mus maxima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/maxima.png?raw=true)|
+|     𝆷     |    ``&#x1D1B7;``    | [Mus longa]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longa.png?raw=true)|
+|     𝆸     |    ``&#x1D1B8;``      | [Mus brevis] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/brevis.png?raw=true)|
+|     𝆹      |   ``&#x1D1B9;``     |[Mus sebrevis]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/sebrevis.png?raw=true)|
+|     𝅭      |  ``&#x1D16D;``      | [Mus aug dat] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/longadatp16.png?raw=true)             |
+|     𝆹𝅥      |  ``&#x1D1BB;``      | [Mus minima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/minima.png?raw=true)             |
+|     𝆺𝅥      |  ``&#x1D1BC;``      |[Mus seminima]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/seminima.png?raw=true)             |
+|     𝆺𝅥𝅮      |  ``&#x1D1BE;``      | [Mus fusa]   |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fusa.png?raw=true)             |
+|     ♮     |   ``&#x266E;``      |              |             |
+|     𝄞     |    ``&#x1D11E;``    | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
+|     𝄢       |    ``&#x1D122;``   | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
+|     𝄡       |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
+|     𝄡       |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
+|     g       |    ``&#x0067;``    |     [Mus g]  |             |
+|     Ƒ       |    ``&#x0191;``    |              |             |
+|     𝄐       |    ``&#x1D110;``   |[Mus fermata] |             |
+|     𝄑       |    ``&#x1D111;``   |[Mus fermatab]|             |
+|             |                    |              |             |
+|             |                    |              |             |
