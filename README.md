@@ -125,14 +125,14 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 ### Les caractères grecs
-| Charactere        | Unicode hexadecimal | Transcription|    image    |
-|:-----------------:|:-------------------:|:------------:|:-----------:|
+| Charactere        | Unicode hexadecimal |
+|:-----------------:|:-------------------:|
 |         Γ         |    ``&#x0393;``     |
 |         Δ         |    ``&#x0394;``     |
 |         Θ         |    ``&#x0398;``     |
 |         Λ         |    ``&#x039B;``     |
 |         Ξ         |    ``&#x039E;``     |
-|         Π         |    ``&#x03A0;``     |              |             |
+|         Π         |    ``&#x03A0;``     |
 |         Σ         |    ``&#x03A3;``     |
 |         Φ         |    ``&#x03A6;``     | 
 |         Ψ         |    ``&#x03A8;``     |
