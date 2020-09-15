@@ -198,14 +198,14 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |     𝆹𝅥      |  ``&#x1D1BB;``      | [Mus minima] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/minima.png?raw=true)             |
 |     𝆺𝅥      |  ``&#x1D1BC;``      | [Mus minimab]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/minimab.png?raw=true)             |
 |     𝆺𝅥𝅮      |  ``&#x1D1BE;``      | [Mus seminimab]   |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/seminimab.png?raw=true)             |
-|     ♮     |   ``&#x266E;``      |              |             |
+|     ♮     |   ``&#x266E;``      |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/becarre.png?r3aw=true)             |
 |     𝄞     |    ``&#x1D11E;``    | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
 |     𝄢       |    ``&#x1D122;``   | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |     𝄡       |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
 |     𝄡       |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
 |     g       |    ``&#x0067;``    |     [Mus g]  |             |
 |     Ƒ       |    ``&#x0191;``    |              |             |
-|     𝄐       |    ``&#x1D110;``   |[Mus fermata] |[Mus fermatab]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
+|     𝄐       |    ``&#x1D110;``   |[Mus fermata] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
 |     𝄑       |    ``&#x1D111;``   |[Mus fermatab]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
 |             |                    |              |             |
 |             |                    |              |             |
