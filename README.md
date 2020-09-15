@@ -203,8 +203,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |     𝄢       |    ``&#x1D122;``   | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |     𝄡       |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
 |     𝄡       |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
-|     g       |    ``&#x0067;``    |     [Mus g]  |             |
-|     Ƒ       |    ``&#x0191;``    |              |             |
+|     g       |    ``&#x0067;``    |     [Mus g]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Musgp13.png?r3aw=true)             |
+|     Ƒ       |    ``&#x0191;``    |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Ƒp14.jpg?r3aw=true)             |
 |     𝄐       |    ``&#x1D110;``   |[Mus fermata] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
 |     𝄑       |    ``&#x1D111;``   |[Mus fermatab]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
 |             |                    |              |             |
