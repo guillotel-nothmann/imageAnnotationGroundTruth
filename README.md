@@ -2,58 +2,13 @@
 
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
 
-## Restructuration du balisage automatique
-
-- Supprimer les balisages inutiles.
-- La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après avoir identifié l'une de ces petites régions, supprimer la avec la touche backspace.
-
-## Paragraphe
-
-Les paragraphes sont identifiés par leur indentation. 
-
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
-
-Il y a cependant quelques exceptions:
-- Un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
-- L'épigramme est identifié dans une seule région paragraph. Exemple page 5 de Burmeister.
-- Les poèmes ont été identifié dans la région linegroup. 
-Exemple :
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)
-
-## Portées, caractères musicaux et notation par lettres
-### staffNotation :
-- Toutes les portées sont signalées par la région staffNotation. 
-- Si un début de portée précède de la notation par lettres, la région est signalée par staffNotation. 
-- Quand la notation par lettres n'est pas une tablature, elle est identifiée comme une région staffNotation. Exemple p. 14.
-- Une tablature accompagnant une mélodie sur portée intègre la région staffNotation. Exemple p. 14.
-
-### paragraph :
-- Les caractères musicaux dans le texte ne représentent pas une région particulière. Quand un caractère sans portée se trouvent isolé sur une ligne de texte, ils intègrent la région paragraph qui sélectionne le texte.
-Exemple page 13 de Burmeister
-
-#### tablatureNotation :
-- La notation par lettres est généralement considérée comme la région tablatureNotation.
-
-## Encodade d'une région dans une autre région
-
-Si des exemples musicaux sont insérés dans des tables, séléctionnez les exemples musicaux dans la région staffNotation, puis sélectionnez la table dans une région table insérant ainsi la région staffNotation dans table.
-Exemple page 20 de Burmeister.
-
-## Numérotation des régions
-
-La numérotation se fait en fonction de la dernière région du balisage automatique. C'est-à-dire que si vous ajouter une région, elle prendra le numéro suivant de la dernière balise de la page. Il est donc préférable si on doit modifier la numérotation, de mettre à jour sa numérotation quand le réglage du balisage des régions est terminé.
-
-## Zoom
-
-- Le zoom permet de préciser le balisage des régions. Il est préférable de zoomer la région sur laquelle on veut travailler avant de la modifier et d'ajuster les balisages sans erreur.
-- Eviter de zoomer en sélectionnant l'extérieur d'une marge. 
-
 ## Table de l'ensemble des catégories de régions avec leurs équivalents en XML : 
 - Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux. 
 
 |       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
-|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |                    |
+|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |![Exemple 1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)
+[Exemple 2]![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)                    |
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
@@ -74,27 +29,75 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 
 
 
+
+### Paragraph
+
+Les paragraphes sont identifiés par leur indentation. 
+
+Exemple 1:
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
+
+Exception:
+- Un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
+Exemple 2:
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)
+
+
+
+
+
+## Portées, caractères musicaux et notation par lettres
+### staffNotation :
+- Toutes les portées sont signalées par la région staffNotation. 
+- Si un début de portée précède de la notation par lettres, la région est signalée par staffNotation. 
+- Quand la notation par lettres n'est pas une tablature, elle est identifiée comme une région staffNotation. Exemple p. 14.
+- Une tablature accompagnant une mélodie sur portée intègre la région staffNotation. Exemple p. 14.
+
+### Linegroup
+- Les poèmes ont été identifié dans la région linegroup. 
+Exemple :
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)
+
+
+### paragraph :
+- Les caractères musicaux dans le texte ne représentent pas une région particulière. Quand un caractère sans portée se trouvent isolé sur une ligne de texte, ils intègrent la région paragraph qui sélectionne le texte.
+Exemple page 13 de Burmeister
+
+#### tablatureNotation :
+- La notation par lettres est généralement considérée comme la région tablatureNotation.
+
+## Encodade d'une région dans une autre région
+
+Si des exemples musicaux sont insérés dans des tables, séléctionnez les exemples musicaux dans la région staffNotation, puis sélectionnez la table dans une région table insérant ainsi la région staffNotation dans table.
+Exemple page 20 de Burmeister.
+
+## Numérotation des régions
+
+La numérotation se fait en fonction de la dernière région du balisage automatique. C'est-à-dire que si vous ajouter une région, elle prendra le numéro suivant de la dernière balise de la page. Il est donc préférable si on doit modifier la numérotation, de mettre à jour sa numérotation quand le réglage du balisage des régions est terminé.
+
+## Restructuration du balisage automatique
+
+- Supprimer les balisages inutiles.
+- La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après avoir identifié l'une de ces petites régions, supprimer la avec la touche backspace.
+
+
 ## Conseils méthologiques pour la relecture de la transcription
 
 * Utilisation du zoon pour élargir la ou les zones à relire.
-* Ouvrir la transcription avec "alt gr+#".
+* Ouvrir la transcription avec ``alt gr+#``.
 * Régler avec la souris le cadre de la région du texte à corriger afin de pouvoir superposer ce cadre au dessus de la région à corriger.
-* Cliquer sur "ok" quand les corrections sont terminées.
-* Sauvegarder en faisant "alt+s" pour windows.
+* Cliquer sur ``ok`` quand les corrections sont terminées.
+* Sauvegarder en faisant ``alt+s`` pour windows.
 
 
-## Préfixes spécifiques pour certains caractères 
+## Les caractères
 
-* Le q́ latin est noté [q+aigu]
-* Les caractères grecs sont précédés de [GR], exemple : [GR γάμμα]
-* Les caractères musicaux sont précédés [Mus ]
+* L'ensemble des caractères uilisé est représenté par l'Unicode hexadécimal se référant à celui proposé par l'[OCR-D](https://ocr-d.de/en/gt-guidelines/trans/trFremdsprache.html "lien vers la page de l'OCR-D").
+* Les caractères grecs sont précédés du préfixe [GR], par exemple : [GR γάμμα].
 * Si un court exemple musical se trouve dans un paragraphe de texte, il est indiqué comme ceci : [Mus musical staff]
 
-## Liste des symboles
 ### Les caractères latins
-- Certains caractères ne s'affiches pas. Nous avons utilisé une tanscription pour les désigner.
-- Le ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/qligated.png?raw=true) ne s'affiche pas dans le READme sur github mais s'affiche dans notre transcription.
-- Le character ou l'Unicode hexadécimal se réfère à celui proposé par l'[OCR-D](https://ocr-d.de/en/gt-guidelines/trans/trFremdsprache.html "lien vers la page de l'OCR-D").
+- Certains caractères ne s'affichant pas, nous avons utilisé une tanscription pour les désigner.
 
 | Character | Unicode hexadecimal | Transcription|    image    |
 |:---------:|:-------------------:|:------------:|:-----------:|
@@ -201,11 +204,12 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |     ♮     |   ``&#x266E;``      |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/becarre.png?r3aw=true)             |
 |     𝄞     |    ``&#x1D11E;``    | [Mus clef G] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefG.jpg?raw=true) |
 |     𝄢       |    ``&#x1D122;``   | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
-|     𝄡       |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
-|     𝄡       |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
-|     g       |    ``&#x0067;``    |     [Mus g]  |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Musgp13.png?r3aw=true)             |
-|     Ƒ       |    ``&#x0191;``    |              |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Ƒp14.jpg?r3aw=true)             |
-|     𝄐       |    ``&#x1D110;``   |[Mus fermata] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
-|     𝄑       |    ``&#x1D111;``   |[Mus fermatab]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
+|             |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
+|             |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
+|     𝄐       |    ``&#x1D110;``   |[Mus fugueEntA]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
+|     𝄑       |    ``&#x1D111;``   |[Mus fugueEntB]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
 |             |                    |              |             |
 |             |                    |              |             |
+
+## License
+Ce projet est sous licence [CC BY-NC-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en "lien vers le résumé explicatif")
