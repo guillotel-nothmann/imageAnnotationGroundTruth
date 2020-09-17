@@ -18,11 +18,11 @@
 |        Other       |           <pc:TextRegion id="region_id_0" type="other">          |                    |
 |        List        |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |     Line group     | <pc:TextRegion id="region_id_0" custom="linegroup" type="other"> |                    |
-|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |                    |
-| Tablature notation |   <pc:MusicRegion id="region_id_2" custom="tablatureNotation">   |                    |
-|        Table       |                 <pc:TableRegion id="region_id_0">                |                    |
+|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |[Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true)                    |
+| Tablature notation |   <pc:MusicRegion id="region_id_2" custom="tablatureNotation">   |[Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true)                    |
+|        Table       |                 <pc:TableRegion id="region_id_0">                |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true)                    |
 |       Graphic      |                <pc:GraphicRegion id="region_id_0">               |                    |
-|        Image       |                 <pc:ImageRegion id="region_id_0">                |                    |
+|        Image       |                 <pc:ImageRegion id="region_id_0">                |[Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)                    |
 |    Line drawing    |              <pc:LineDrawingRegion id="region_id_0">             |                    |
 |      Separator     |               <pc:SeparatorRegion id="region_id_0">              |                    |
 
@@ -31,20 +31,35 @@
 
 ### Paragraph
 
-Les paragraphes sont identifiés par leur indentation. 
+Les paragraphes sont identifiés par leur indentation à l'exception des paragraphes continu sur deux pages. 
 
-Exemple 1:
+- Exemple 1:
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
 
-Exception:
-- Un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
-
-Exemple 2:
+- Exemple 2:
+Exception: un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
 
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)
 
+### Caption
 
+Les légendes des tables, de la notation sur portée, des tablatures ou des images sont signalées par la région caption.
 
+- Exemple 3:
+Caption pour une table.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true)
+
+- Exemple 4:
+Caption pour une notation sur portée.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true)
+
+-Exemple 5:
+Caption pour une tablature.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true)
+
+- Exemple 6:
+Caption pour une image.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)
 
 
 ## Portées, caractères musicaux et notation par lettres
