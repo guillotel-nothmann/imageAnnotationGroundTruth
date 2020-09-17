@@ -8,7 +8,7 @@
 |       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
 |      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)                    |
-|       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
+|       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true) [Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true) [Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)                     |
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
 |       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |                    |
