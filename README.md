@@ -7,8 +7,7 @@
 
 |       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
-|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple 1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)
-[Exemple 2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)                    |
+|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple 1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true)[Exemple 2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)                    |
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
