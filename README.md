@@ -3,10 +3,11 @@
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
   
 ## Table de l'ensemble des catégories de régions avec leurs équivalents en XML : 
-- Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux. 
+- Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux.  
+- Les exemples en image s'affichent, soit quand vous cliquez sur le mot `exemple` ou dans les paragrahes après cette table décrivant toutes les classes des régions.
 
 
-|       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
+|       Classe       |            Page XML : Region class et @type ou @custom           | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
 |      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)|
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true) [Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true) [Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)|
@@ -14,7 +15,7 @@
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
 |       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |[Exemple&nbsp;9](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)|
 |    Drop-capital    |       <pc:TextRegion id="region_id_0" type="drop-capital">       |[Exemple&nbsp;10](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true) [Exemple&nbsp;11](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)|
-|     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |                    |
+|     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |[Exemple&nbsp;12](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)|
 |      Footnote      |         <pc:TextRegion id="region_id_0" type="footnote">         |                    |
 |        Other       |           <pc:TextRegion id="region_id_0" type="other">          |                    |
 |        List        |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
@@ -55,7 +56,7 @@ Caption pour une table.
 Caption pour une notation sur portée.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true)
 
--Exemple 5:
+- Exemple 5:
 Caption pour une tablature.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true)
 
@@ -65,30 +66,35 @@ Caption pour une image.
 
 
 ### Header
--Exemple 7: la page de titre du traité de Burmeister. La région header est en violet.  
+- Exemple 7: la page de titre du traité de Burmeister. La région header est en violet.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)  
 
 
 ### Heading
 Les titres et sous-titres des chapiters sont représentés par la région heading.  
--Exemple 8: Le titre d'un chapitre suivi d'un paragraphe.
+- Exemple 8: Le titre d'un chapitre suivi d'un paragraphe.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)  
    
    
 ### Footer
 La région footer représente les pieds de page.  
--Exemple 9: Un paragraphe suivi d'un footer.  
+- Exemple 9: Un paragraphe suivi d'un footer.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
    
    
 ### Drop-capital
 Les lettres capitales sont identifiées dans une région spécifique quand elles s'étendent sur plusieurs lignes et se démarquent graphiquement.   
--Exemple 10: Lettre capitale sur plusieurs lignes.  
+- Exemple 10: Lettre capitale sur plusieurs lignes.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true)
    
--Exemple 11: Lettre capitale ornementée.  
+- Exemple 11: Lettre capitale ornementée.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)
-  
+   
+
+### Marginalia
+La région Marginalia représente les marges extérieures en caractères imprimés.   
+- Exemple 12: Une marginalia extérieure au paragraphe.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)
   
 
 ## Portées, caractères musicaux et notation par lettres
