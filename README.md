@@ -100,22 +100,22 @@ La région Marginalia représente les marges extérieures en caractères imprim�
 ### Other
 La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur.   
 - Exemple 13: Annotation manuscrite.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)  
    
-- Exemple 14: Elément date et auteur.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)
+- Exemple 14: Elément date et auteur.   
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)  
    
 
 ### List
-Les listes numérotées ont une région spécifique.
-Exemple 15 :  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)
+Les listes numérotées ont une région spécifique.  
+Exemple 15 :   
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)  
 
   
 ### Linegroup
-- Les poèmes ont été identifié dans la région linegroup. 
-Exemple 16:
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)
+- Les poèmes ont été identifiés dans la région linegroup.   
+Exemple 16:  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)  
 
 
 
