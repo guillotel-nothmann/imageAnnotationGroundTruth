@@ -1,18 +1,19 @@
 # imageAnnotationGroundTruth
-
+  
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
-
+  
 ## Table de l'ensemble des catégories de régions avec leurs équivalents en XML : 
 - Notre fichier mets.xml utilise le format [PAGE XML](https://ocr-d.de/en/gt-guidelines/trans/trPage.html "lien vers OCR-D/Documentation of the PAGE XML Format") généré par OCR-D. Certaines zones ont évolué en fonction du contenu de ces sources spécifiques que sont les traités musicaux. 
+
 
 |       Classe       |            Page XML : Region class et @type ou @custom :         | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
 |      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)|
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true) [Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true) [Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)|
-|       Header       |          <pc:TextRegion id="region_id_0" type="header">          |                    |
-|       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |                    |
-|       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |                    |
-| Drop-capital       |       <pc:TextRegion id="region_id_0" type="drop-capital">       |                    |
+|       Header       |          <pc:TextRegion id="region_id_0" type="header">          |[Exemple&nbsp;7](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)|
+|       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
+|       Footer       |          <pc:TextRegion id="region_id_0" type="footer">          |[Exemple&nbsp;9](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)|
+|    Drop-capital    |       <pc:TextRegion id="region_id_0" type="drop-capital">       |[Exemple&nbsp;10](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true) [Exemple&nbsp;11] (https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)|
 |     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |                    |
 |      Footnote      |         <pc:TextRegion id="region_id_0" type="footnote">         |                    |
 |        Other       |           <pc:TextRegion id="region_id_0" type="other">          |                    |
@@ -36,10 +37,11 @@ Les paragraphes sont identifiés par leur indentation à l'exception des paragra
 - Exemple 1:
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
 
-- Exemple 2:
-Exception: un paragraphe continu sur deux pages a été identifié commes deux paragraphes distincts.
+- Exemple 2:  
+Un paragraphe continu sur deux pages est identifié commes deux paragraphes distincts.
 
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)
+
 
 ### Caption
 
@@ -59,8 +61,35 @@ Caption pour une tablature.
 
 - Exemple 6:
 Caption pour une image.
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)  
 
+
+### Header
+-Exemple 7: la page de titre du traité de Burmeister. La région header est en violet.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)  
+
+
+### Heading
+Les titres et sous-titres des chapiters sont représentés par la région heading.  
+-Exemple 8: Le titre d'un chapitre suivi d'un paragraphe.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)  
+   
+   
+### Footer
+La région footer représente les pieds de page.  
+-Exemple 9: Un paragraphe suivi d'un footer.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
+   
+   
+### Drop-capital
+Les lettres capitales sont identifiées dans une région spécifique quand elles s'étendent sur plusieurs lignes et se démarquent graphiquement.   
+-Exemple 10: Lettre capitale sur plusieurs lignes.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true)
+   
+-Exemple 11: Lettre capitale ornementée.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)
+  
+  
 
 ## Portées, caractères musicaux et notation par lettres
 ### staffNotation :
@@ -87,23 +116,6 @@ Exemple page 13 de Burmeister
 Si des exemples musicaux sont insérés dans des tables, séléctionnez les exemples musicaux dans la région staffNotation, puis sélectionnez la table dans une région table insérant ainsi la région staffNotation dans table.
 Exemple page 20 de Burmeister.
 
-## Numérotation des régions
-
-La numérotation se fait en fonction de la dernière région du balisage automatique. C'est-à-dire que si vous ajouter une région, elle prendra le numéro suivant de la dernière balise de la page. Il est donc préférable si on doit modifier la numérotation, de mettre à jour sa numérotation quand le réglage du balisage des régions est terminé.
-
-## Restructuration du balisage automatique
-
-- Supprimer les balisages inutiles.
-- La possibilité de passer d'une région à une autre avec la flèche descendante du clavier permet de repérer de petites régions balisées en dessous d'une grande région. Après avoir identifié l'une de ces petites régions, supprimer la avec la touche backspace.
-
-
-## Conseils méthologiques pour la relecture de la transcription
-
-* Utilisation du zoon pour élargir la ou les zones à relire.
-* Ouvrir la transcription avec ``alt gr+#``.
-* Régler avec la souris le cadre de la région du texte à corriger afin de pouvoir superposer ce cadre au dessus de la région à corriger.
-* Cliquer sur ``ok`` quand les corrections sont terminées.
-* Sauvegarder en faisant ``alt+s`` pour windows.
 
 
 ## Les caractères
@@ -222,8 +234,8 @@ La numérotation se fait en fonction de la dernière région du balisage automat
 |     𝄢       |    ``&#x1D122;``   | [Mus clef F] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefF.jpg?raw=true) |
 |             |    ``&#x1D121;``   | [Mus clef C1] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC1.jpg?raw=true)|
 |             |   ``&#x1D121;``    |[Mus clef C3] |![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/ClefC3.jpg?r3aw=true)             |
-|     𝄐       |    ``&#x1D110;``   |[Mus fugueEntA]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
-|     𝄑       |    ``&#x1D111;``   |[Mus fugueEntB]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
+|             |    ``&#x1D110;``   |[Mus fugueEntA]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatap56.png?r3aw=true)             |
+|             |    ``&#x1D111;``   |[Mus fugueEntB]|![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/fermatabp56.png?r3aw=true)             |
 |             |                    |              |             |
 |             |                    |              |             |
 
