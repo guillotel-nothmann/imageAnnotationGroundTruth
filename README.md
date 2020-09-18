@@ -17,7 +17,7 @@
 |    Drop-capital    |       <pc:TextRegion id="region_id_0" type="drop-capital">       |[Exemple&nbsp;10](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true) [Exemple&nbsp;11](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)|
 |     Marginalia     |        <pc:TextRegion id="region_id_0" type="marginalia">        |[Exemple&nbsp;12](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)|
 |      Footnote      |         <pc:TextRegion id="region_id_0" type="footnote">         |                    |
-|        Other       |           <pc:TextRegion id="region_id_0" type="other">          |                    |
+|        Other       |           <pc:TextRegion id="region_id_0" type="other">          |[Exemple&nbsp;13](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true) [Exemple&nbsp;14](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)|
 |        List        |          <pc:TextRegion id="region_id_0" type="caption">         |                    |
 |     Line group     | <pc:TextRegion id="region_id_0" custom="linegroup" type="other"> |                    |
 |   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |[Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true)                    |
@@ -77,7 +77,7 @@ Les titres et sous-titres des chapiters sont représentés par la région headin
    
    
 ### Footer
-La région footer représente les pieds de page.  
+La région footer représente les pieds de page comprenant le début du texte de la page suivante et parfois un référencement pour la page consacrée aux corrections située en fin d'ouvrage.  
 - Exemple 9: Un paragraphe suivi d'un footer.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
    
@@ -96,6 +96,15 @@ La région Marginalia représente les marges extérieures en caractères imprim�
 - Exemple 12: Une marginalia extérieure au paragraphe.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)
   
+
+### Other
+La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur.   
+- Exemple 13: Annotation manuscrite.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)
+   
+- Exemple 14: Elément date et auteur.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)
+   
 
 ## Portées, caractères musicaux et notation par lettres
 ### staffNotation :
