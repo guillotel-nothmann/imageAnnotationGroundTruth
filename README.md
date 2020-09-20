@@ -9,7 +9,7 @@
 
 |       Classe       |            Page XML : Region class et @type ou @custom           | exemples en image  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
-|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)|
+|      Paragraph     |         <pc:TextRegion id="region_id_0" type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true) [Exemple&nbsp;21](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaractereMusicauxParagraphP14.png?raw=true)|
 |       Caption      |          <pc:TextRegion id="region_id_0" type="caption">         |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true) [Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true) [Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)|
 |       Header       |          <pc:TextRegion id="region_id_0" type="header">          |[Exemple&nbsp;7](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)|
 |       Heading      |          <pc:TextRegion id="region_id_0" type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
@@ -25,7 +25,7 @@
 |        Image       |                 <pc:ImageRegion id="region_id_0">                |[Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)                    |
 |    Line drawing    |              <pc:LineDrawingRegion id="region_id_0">             |[Exemple&nbsp;17](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linedrawingp11.png?raw=true)|
 |      Separator     |               <pc:SeparatorRegion id="region_id_0">              |                    |
-|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |[Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;18](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationEtTablatureP14.png?raw=true) [Exemple&nbsp;19](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationLetteNotation.png?raw=true) [Exemple&nbsp;20](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotation.png?raw=true) [Exemple&nbsp;21](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaractereMusicauxParagraphP14.png?raw=true)|
+|   Staff notation   |     <pc:MusicRegion id="region_id_0" custom="staffNotation">     |[Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;18](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationEtTablatureP14.png?raw=true) [Exemple&nbsp;19](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP13.png?raw=true) [Exemple&nbsp;20](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP14.png?raw=true)|
 | Tablature notation |   <pc:MusicRegion id="region_id_2" custom="tablatureNotation">   |[Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true)                    |
 
 
@@ -119,7 +119,7 @@ Exemple 16:
 
   
 ### Table
-Les informations structurées en colonnes ou en lignes désignées comme région Table.
+Les informations structurées en colonnes ou en lignes sont désignées comme région Table.
 - Exemple 3: La région Caption puis Table. La région Caption est de la même couleur que la Table.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true)   
    
@@ -148,10 +148,10 @@ Tout texte, annotation par lettre, annotation analytique ou tablature se rattach
      
 Quand la notation par lettre n'est pas une tablature, elle est identifiée comme une région staffNotation.   
 - Exemple 19 et 20:   
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationLetteNotation.png?raw=true)    
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP13.png?raw=true)    
    
 
-[ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotation.png?raw=true)    
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP14.png?raw=true)    
    
     
 Les caractères musicaux dans le texte ne représentent pas une région particulière. Quand un caractère sans portée se trouvent isolé sur une ligne de texte, ils intègrent la région paragraphe qui sélectionne le texte.   
@@ -170,7 +170,7 @@ Si une région est placée dans une région, il est possible de sélectionner s�
 - Exemple 22 et 23 :
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/TabledansParagraph.png?raw=true)  
    
-[ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationdansTable.png?raw=true)
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationdansTable.png?raw=true)
    
    
 ## Les caractères
