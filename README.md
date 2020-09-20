@@ -167,9 +167,10 @@ La notation par lettres est définie par la région tablatureNotation
    
 ## Superposition de région
 Si une région est placée dans une région, il est possible de sélectionner séparemment les régions et ainsi de les superposer.
-- Exemple 22 et 23 :
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/TabledansParagraph.png?raw=true)  
-   
+- Exemple 22: Une tablature dans un paragraphe.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/TabledansParagraph.png?raw=true)   
+
+- Exemple 23: Une staffNotation dans une Table.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationdansTable.png?raw=true)
    
    
