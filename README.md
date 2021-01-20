@@ -1,9 +1,6 @@
 # 
 
-- Item
-- Item
-- Item
-imageAnnotationGroundTruth
+
   
  Amélioration du balisage généré automatiquement par TMG_ImageAnnotation.
   
@@ -12,9 +9,10 @@ imageAnnotationGroundTruth
 - Les exemples en image s'affichent, soit quand vous cliquez sur le mot `exemple` ou dans les paragrahes après cette table décrivant toutes les classes des régions.
 
 
-|       Classe       |            Page XML : Region class et @type ou @custom           | exemples en image  |
+|       Classe       |            Page XML        | exemples  |
 |:------------------:|:----------------------------------------------------------------:|:------------------:|
 |       Caption      |          <pc:TextRegion type="caption">         |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true) [Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true) [Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)|
+|    Diagram         |       <pc:ChartRegion >                       | |
 |    Drop-capital    |       <pc:TextRegion type="drop-capital">       |[Exemple&nbsp;10](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true) [Exemple&nbsp;11](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)|
 |       Footer       |          <pc:TextRegion type="footer">          |[Exemple&nbsp;9](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)|
 |      Footnote      |         <pc:TextRegion type="footnote">         |                    |
@@ -22,16 +20,18 @@ imageAnnotationGroundTruth
 |       Header       |          <pc:TextRegion type="header">          |[Exemple&nbsp;7](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)|
 |       Heading      |          <pc:TextRegion type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
 |        Image       |                 <pc:ImageRegion >                |[Exemple&nbsp;6](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)                    |
+|    Line drawing    |              <pc:LineDrawingRegion >             |[Exemple&nbsp;17](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linedrawingp11.png?raw=true)|
 |     Line group     | <pc:TextRegion custom="linegroup" type="other"> |[Exemple&nbsp;16](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)|
 |        List        |          <pc:TextRegion type="other">         |[Exemple&nbsp;15](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)|
 |     Marginalia     |        <pc:TextRegion type="marginalia">        |[Exemple&nbsp;12](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)|
+|        Ornament    |          <pc:GraphicRegion type="decoration" >          |  |
 |        Other       |           <pc:TextRegion type="other">          |[Exemple&nbsp;13](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true) [Exemple&nbsp;14](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)|
+|      Page number     |         <pc:TextRegion type="page-number">        | |
 |      Paragraph     |         <pc:TextRegion type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true) [Exemple&nbsp;21](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaractereMusicauxParagraphP14.png?raw=true)|
-|        Table       |                 <pc:TableRegion >                |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true)                    |
-|    Line drawing    |              <pc:LineDrawingRegion >             |[Exemple&nbsp;17](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linedrawingp11.png?raw=true)|
 |      Separator     |               <pc:SeparatorRegion >              |                    |
 |   Staff notation   |     <pc:MusicRegion custom="staffNotation">     |[Exemple&nbsp;4](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionStaffNotation.png?raw=true) [Exemple&nbsp;18](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StaffNotationEtTablatureP14.png?raw=true) [Exemple&nbsp;19](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP13.png?raw=true) [Exemple&nbsp;20](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/StattNotationPorteeLetteNotationP14.png?raw=true)|
 | Tablature notation |   <pc:MusicRegion custom="tablatureNotation">   |[Exemple&nbsp;5](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptiontablatureNotation.png?raw=true)                    |
+|        Table       |                 <pc:TableRegion >                |[Exemple&nbsp;3](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionTable.png?raw=true)                    |
 
 
 
