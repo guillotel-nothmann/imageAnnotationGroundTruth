@@ -135,8 +135,8 @@ La région Image comprend un dessin.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)   
    
 
-### Line drawing
-Les lignes séparent des parties et ont un motif particulier.  
+### Separator
+Les lignes séparent des parties et peuvent être ornées.  
 - Exemple 17:     
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linedrawingp11.png?raw=true)     
        
