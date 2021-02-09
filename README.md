@@ -19,8 +19,8 @@
 |       Graphic      |                <pc:GraphicRegion >               |                    |
 |       Header       |          <pc:TextRegion type="header">          |[Exemple&nbsp;7](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)|
 |       Heading      |          <pc:TextRegion type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
-|        ~~Image~~       |                 <pc:ImageRegion >                |                    |
-|   ~~Line drawing~~  |              <pc:LineDrawingRegion >             |
+|        ~~Image~~   |                 <pc:ImageRegion >    <!--NS: il me semble que l'on n'utilise plus cette région-->              |                    |
+|   Line drawing  |              <pc:LineDrawingRegion >    <!--NS: On garde cette région ?-->           |
 |     Line group     | <pc:TextRegion custom="linegroup" type="other"> |[Exemple&nbsp;16](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)|
 |        List        |          <pc:TextRegion type="other">         |[Exemple&nbsp;15](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)|
 |     Marginalia     |        <pc:TextRegion type="marginalia">        |[Exemple&nbsp;12](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)|
@@ -43,8 +43,7 @@ Les paragraphes sont identifiés par leur indentation à l'exception des paragra
 - Exemple 1:
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) 
 
-- Exemple 2:  
-Un paragraphe continu sur deux pages est identifié commes deux paragraphes distincts.
+- Exemple 2: Un paragraphe continu sur deux pages est identifié commes deux paragraphes distincts.
 
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true)
 
@@ -73,23 +72,27 @@ Caption pour un diagramme.
 ### Diagram
 
 La région Diagram comprend un dessin.   
-- Exemple 6: La région Caption puis un Diagram.
+- Exemple 6: La région Caption (en jaune) puis un Diagram (vert).
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)   
   
 
 ### Header
-- Exemple 7: la page de titre du traité de Burmeister. La région header est en violet.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)  
-
+La région Header représente l'en-tête.
 
 ### Heading
-Les titres et sous-titres des chapiters sont représentés par la région heading.  
+Les titres et sous-titres des chapiters sont représentés par la région Heading.  
 - Exemple 8: Le titre d'un chapitre suivi d'un paragraphe.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)  
    
    
+- Exemple 7: Le titre d'un ouvrage.
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)  
+
+
+   
+   
 ### Footer
-La région footer représente les pieds de page comprenant le début du texte de la page suivante et parfois un référencement pour la page consacrée aux corrections située en fin d'ouvrage.  
+La région Footer représente les pieds de page comprenant le début du texte de la page suivante et parfois un référencement pour la page consacrée aux corrections située en fin d'ouvrage.  
 - Exemple 9: Un paragraphe suivi d'un footer.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
    
@@ -109,7 +112,7 @@ La région Marginalia représente les marges extérieures en caractères imprim�
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)
   
 ### Ornament
-La région Ornament regroupe l'ensemble des ornements typographiques sauf des séparateurs de texte décoratifs, attribués à la région Separator. 
+La région Ornament regroupe l'ensemble des ornements typographiques sauf des séparateurs de texte décoratifs, ces derniers étant attribués à la région Separator. 
 
 
 
@@ -118,7 +121,7 @@ La région Ornament regroupe l'ensemble des ornements typographiques sauf des s�
 
 
 ### Other
-La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur.   
+La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur, ainsi que nom d'éditeur, année et lieu de publication (sur la page de titre).   
 - Exemple 13: Annotation manuscrite.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)  
    
@@ -128,13 +131,14 @@ La région Other regroupe des annotations manuscrites, tampons ou des éléments
 
 ### List
 Les listes numérotées ont une région spécifique.  
-Exemple 15: Une liste après une région paragraphe.  
+
+- Exemple 15: Une liste après une région paragraphe.  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)  
 
   
 ### Linegroup
-- Les poèmes ont été identifiés dans la région linegroup.   
-Exemple 16:  
+Les poèmes ont été identifiés dans la région Linegroup.   
+- Exemple 16:  
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)  
 
   
