@@ -16,7 +16,7 @@
 |    Drop-capital    |       <pc:TextRegion type="drop-capital">       |[Exemple&nbsp;10](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true) [Exemple&nbsp;11](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)|
 |       Footer       |          <pc:TextRegion type="footer">          |[Exemple&nbsp;9](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)|
 |      Footnote      |         <pc:TextRegion type="footnote">         |                    |
-|       Graphic      |                <pc:GraphicRegion >               |                    |
+|       ~~Graphic~~      |                <pc:GraphicRegion >               |                    |
 |       Header       |          <pc:TextRegion type="header">          |[Exemple&nbsp;7](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/Header.png?raw=true)|
 |       Heading      |          <pc:TextRegion type="heading">         |[Exemple&nbsp;8](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/HeadingParagraph.png?raw=true)|
 |        ~~Image~~   |                 <pc:ImageRegion >    <!--NS: il me semble que l'on n'utilise plus cette région-->              |                    |
@@ -24,7 +24,7 @@
 |     Line group     | <pc:TextRegion custom="linegroup" type="other"> |[Exemple&nbsp;16](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)|
 |        List        |          <pc:TextRegion type="other">         |[Exemple&nbsp;15](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/listp34.png?raw=true)|
 |     Marginalia     |        <pc:TextRegion type="marginalia">        |[Exemple&nbsp;12](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)|
-|        Ornament    |          <pc:GraphicRegion type="decoration" >          |  |
+|        Ornament    |          <pc:GraphicRegion type="decoration" >          | [Exemple&nbsp;22](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OrnamentBurmeister.png?raw=true) |
 |        Other       |           <pc:TextRegion type="other">          |[Exemple&nbsp;13](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true) [Exemple&nbsp;14](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)|
 |      Page number     |         <pc:TextRegion type="page-number">        | |
 |      Paragraph     |         <pc:TextRegion type="paragraph">        |[Exemple&nbsp;1](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphp35.png?raw=true) [Exemple&nbsp;2](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/paragraphSur2pages.jpg?raw=true) [Exemple&nbsp;21](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaractereMusicauxParagraphP14.png?raw=true)|
@@ -75,6 +75,22 @@ La région Diagram comprend un dessin.
 - Exemple 6: La région Caption (en jaune) puis un Diagram (vert).
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/CaptionImage.png?raw=true)   
   
+### Drop-capital
+Les lettres capitales sont identifiées dans une région spécifique quand elles s'étendent sur plusieurs lignes et se démarquent graphiquement.   
+- Exemple 10: Lettre capitale sur plusieurs lignes.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true)
+   
+- Exemple 11: Lettre capitale ornementée.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)
+   
+
+   
+### Footer
+La région Footer représente les pieds de page comprenant le début du texte de la page suivante et parfois un référencement pour la page consacrée aux corrections située en fin d'ouvrage.  
+- Exemple 9: Un paragraphe suivi d'un footer.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
+   
+   
 
 ### Header
 La région Header représente l'en-tête.
@@ -90,45 +106,6 @@ Les titres et sous-titres des chapiters sont représentés par la région Headin
 
 
    
-   
-### Footer
-La région Footer représente les pieds de page comprenant le début du texte de la page suivante et parfois un référencement pour la page consacrée aux corrections située en fin d'ouvrage.  
-- Exemple 9: Un paragraphe suivi d'un footer.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/FooterParagraph.png?raw=true)
-   
-   
-### Drop-capital
-Les lettres capitales sont identifiées dans une région spécifique quand elles s'étendent sur plusieurs lignes et se démarquent graphiquement.   
-- Exemple 10: Lettre capitale sur plusieurs lignes.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapital2Lines.png?raw=true)
-   
-- Exemple 11: Lettre capitale ornementée.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/DropCapitalOrnement.png?raw=true)
-   
-
-### Marginalia
-La région Marginalia représente les marges extérieures en caractères imprimés.   
-- Exemple 12: Une marginalia extérieure au paragraphe.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)
-  
-### Ornament
-La région Ornament regroupe l'ensemble des ornements typographiques sauf des séparateurs de texte décoratifs, ces derniers étant attribués à la région Separator. 
-
-
-
-- Exemple: bandeau, fleuron, cul-de-lampe, vignette, etc.
-
-
-
-### Other
-La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur, ainsi que nom d'éditeur, année et lieu de publication (sur la page de titre).   
-- Exemple 13: Annotation manuscrite.  
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)  
-   
-- Exemple 14: Elément date et auteur.   
-![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)  
-   
-
 ### List
 Les listes numérotées ont une région spécifique.  
 
@@ -142,6 +119,31 @@ Les poèmes ont été identifiés dans la région Linegroup.
 ![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/linegroupp50.png?raw=true)  
 
   
+
+### Marginalia
+La région Marginalia représente les marges extérieures en caractères imprimés.   
+- Exemple 12: Une marginalia extérieure au paragraphe.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/MarginaliaParagraph.png?raw=true)
+  
+### Ornament
+La région Ornament regroupe l'ensemble des ornements typographiques sauf des séparateurs de texte, ces derniers étant attribués à la région Separator. 
+
+
+
+- Exemple: bandeau, fleuron, cul-de-lampe, vignette, etc.
+- Exemple 22: Bandeau
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OrnamentBurmeister.png?raw=true)  
+
+
+### Other
+La région Other regroupe des annotations manuscrites, tampons ou des éléments mal placés de date ou d'auteur, ainsi que nom d'éditeur, année et lieu de publication (sur la page de titre).   
+- Exemple 13: Annotation manuscrite.  
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherManuscrit.png?raw=true)  
+   
+- Exemple 14: Elément date et auteur.   
+![ImageAnnotationExample](https://github.com/guillotel-nothmann/imageAnnotationGroundTruth/blob/master/img/OtherDateAuteur.png?raw=true)  
+   
+
 ### Table
 Les informations structurées en colonnes ou en lignes sont désignées comme région Table.
 - Exemple 3: La région Caption puis Table. La région Caption est de la même couleur que la Table.
