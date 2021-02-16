@@ -1,20 +1,16 @@
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:39:55</pc:Created>
         <pc:LastChange>2020-06-14T20:39:55</pc:LastChange>
-        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization"
-            value="ocrd-olena-binarize">
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
             <pc:Labels>
                 <pc:Label value="sauvola" type="impl"/>
                 <pc:Label value="0.34" type="k"/>
                 <pc:Label value="101" type="win-size"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping"
-            value="ocrd-anybaseocr-crop">
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
             <pc:Labels>
                 <pc:Label value="True" type="force"/>
                 <pc:Label value="0.04" type="colSeparator"/>
@@ -30,8 +26,7 @@
                 <pc:Label value="page" type="operation_level"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="layout/segmentation/region"
-            value="ocrd-tesserocr-segment-region">
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
                 <pc:Label value="-1" type="dpi"/>
                 <pc:Label value="True" type="overwrite_regions"/>
@@ -42,48 +37,15 @@
             </pc:Labels>
         </pc:MetadataItem>
     </pc:Metadata>
-    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-28.png" imageWidth="2232" imageHeight="2765"
-        type="content">
-        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-28-BIN_sauvola.png"
-            comments="binarized"/>
-        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-28.png"
-            comments="binarized,cropped"/>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-28.png" imageWidth="2232" imageHeight="2765" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-28-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-28.png" comments="binarized,cropped"/>
         <pc:Border>
             <pc:Coords points="229,218 1677,218 1677,2441 229,2441"/>
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="paragraph">
-            <pc:Coords points="241,211 1677,209 1674,419 248,422 241,211"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="heading">
-            <pc:Coords points="412,463 1454,448 1467,539 397,532 412,463"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="other" custom="list">
-            <pc:Coords points="215,552 221,2083 1651,2027 1674,550 215,552"/>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="heading">
-            <pc:Coords
-                points="229,2142 862,2141 897,2063 983,2067 992,2135 1648,2134 1642,2226 229,2229 229,2142"
-            />
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="paragraph">
-            <pc:Coords
-                points="232,2246 1650,2239 1658,2373 1603,2382 1566,2365 1370,2389 1229,2390 1219,2385 834,2395 600,2398 208,2398 232,2246"
-            />
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="footer">
-            <pc:Coords
-                points="988,2392 1054,2394 1314,2393 1529,2382 1536,2374 1647,2392 1640,2451 988,2457 988,2392"
-            />
-        </pc:TextRegion>
-    </pc:Page>
+        <pc:TextRegion id="region_id_0" type="paragraph"><pc:Coords points="241,211 1677,209 1674,419 248,422 241,211"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="heading"><pc:Coords points="412,463 1454,448 1467,539 397,532 412,463"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="other" custom="list"><pc:Coords points="215,552 221,2083 1651,2027 1674,550 215,552"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="heading"><pc:Coords points="229,2142 862,2141 897,2063 983,2067 992,2135 1648,2134 1642,2226 229,2229 229,2142"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="other" custom="list"><pc:Coords points="232,2246 1650,2239 1658,2373 1603,2382 1566,2365 1370,2389 1229,2390 1219,2385 834,2395 600,2398 208,2398 232,2246"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="footer"><pc:Coords points="988,2392 1054,2394 1314,2393 1529,2382 1536,2374 1647,2392 1640,2451 988,2457 988,2392"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
