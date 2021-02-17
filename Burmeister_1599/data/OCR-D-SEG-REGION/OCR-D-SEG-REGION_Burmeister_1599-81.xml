@@ -45,7 +45,7 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        </pc:Page>
+        <pc:TextRegion id="region_id_0" type="heading"><pc:Coords points="920,266 928,374 3720,343 3720,250 920,266"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_1" custom="staffNotation"><pc:Coords points="65,110 189,4207 4721,4119 4699,365 4104,263 3740,328 842,357 821,110 65,110"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:MusicRegion></pc:Page>
 </pc:PcGts>
