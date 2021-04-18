@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:45</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:45</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-051.png" imageWidth="2303" imageHeight="3580" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-051-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-051.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="477,233 2073,233 2073,3110 477,3110"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="other">
+            <pc:Coords points="1179,3086 1203,3086 1203,3110 1179,3110 1179,3086"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1179,3086 1203,3086 1203,3110 1179,3110"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="462,203 462,312 588,312 588,203 462,203"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="482,238 572,238 572,305 482,305"/>
+                <pc:TextEquiv conf="0.9521216154098511">
+                    <pc:Unicode>28</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>28</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="header">
+            <pc:Coords points="684,218 680,315 1810,333 1812,216 684,218"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="683,234 683,242 683,315 1559,329 1807,329 1807,234 683,234"/>
+                <pc:TextEquiv conf="0.8063663244247437">
+                    <pc:Unicode>EIEMENS DE MsI0vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EIEMENS DE MsI0vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="454,335 454,2526 2132,2513 2132,311 454,335"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="480,351 2040,351 2040,447 480,447"/>
+                <pc:TextEquiv conf="0.9954090118408203">
+                    <pc:Unicode>jeure, ſa quinte &amp; ſon octave; enſorte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="480,443 2037,443 2037,542 480,542"/>
+                <pc:TextEquiv conf="0.9940502643585205">
+                    <pc:Unicode>qu'en chantant, par exemple ſol, on eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="481,534 2035,534 2035,631 481,631"/>
+                <pc:TextEquiv conf="0.9863429069519043">
+                    <pc:Unicode>cenſé chanter en même tems les ſons ſol,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,625 2039,625 2039,720 477,720"/>
+                <pc:TextEquiv conf="0.9593556523323059">
+                    <pc:Unicode>ſi, re, ſol; de même le ſon ut de la baſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,717 2035,717 2035,820 478,820"/>
+                <pc:TextEquiv conf="0.9983565211296082">
+                    <pc:Unicode>fondamentale emporte avec lui ce chant ut,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,813 2040,813 2040,913 477,913"/>
+                <pc:TextEquiv conf="0.9905811548233032">
+                    <pc:Unicode>mi, ſol, ut, &amp; enfin le ſon fa emporte avec</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,904 2038,904 2038,1003 478,1003"/>
+                <pc:TextEquiv conf="0.9783560633659363">
+                    <pc:Unicode>lui fa, la, ut, fa: donc ce chant ou cette</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,995 1859,995 1859,1079 478,1079"/>
+                <pc:TextEquiv conf="0.9992602467536926">
+                    <pc:Unicode>baſſe fondamentale</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:Coords points="699,1146 1796,1146 1796,1248 699,1248"/>
+                <pc:TextEquiv conf="0.8555853962898254">
+                    <pc:Unicode>ol, u,, ol, ut, a, ut, fa,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:Coords points="477,1292 1941,1292 1941,1395 477,1395"/>
+                <pc:TextEquiv conf="0.9992960691452026">
+                    <pc:Unicode>donne le chant diatonique ſuivant,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:Coords points="697,1443 1807,1443 1807,1541 697,1541"/>
+                <pc:TextEquiv conf="0.9645366072654724">
+                    <pc:Unicode>, u, , mi, fa, ol, la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1592 2052,1592 2052,1753 491,1753"/>
+                <pc:TextEquiv conf="0.3755512237548828">
+                    <pc:Unicode>Ec:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="566,1686 2048,1686 2048,1783 566,1783"/>
+                <pc:TextEquiv conf="0.9855858683586121">
+                    <pc:Unicode>r. Nous gnorons par q els principes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,1778 2049,1778 2049,1874 490,1874"/>
+                <pc:TextEquiv conf="0.9936267733573914">
+                    <pc:Unicode>ils lavoient formée; mais il eſt viſible que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1872 2047,1872 2047,1965 491,1965"/>
+                <pc:TextEquiv conf="0.9863436222076416">
+                    <pc:Unicode>cette échelle nait de la baſſe ſol, ut, ſol, ut,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,1963 2052,1963 2052,2060 477,2060"/>
+                <pc:TextEquiv conf="0.9746995568275452">
+                    <pc:Unicode>fa, ut, fa, &amp; que par conſéquent cette baſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2053 2053,2053 2053,2151 491,2151"/>
+                <pc:TextEquiv conf="0.9891620874404907">
+                    <pc:Unicode>eſt nommée avec raiſon fondamentale, com-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2151 2058,2151 2058,2245 491,2245"/>
+                <pc:TextEquiv conf="0.9881961941719055">
+                    <pc:Unicode>me étant le véritable chant primitif, celui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,2240 2058,2240 2058,2404 489,2404"/>
+                <pc:TextEquiv conf="0.4446749985218048">
+                    <pc:Unicode>txt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_3_region_id_3_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,2333 488,2521 1099,2521 2054,2514 2054,2333 488,2333"/>
+                <pc:TextEquiv conf="0.7219769954681396">
+                    <pc:Unicode>,n roigus ', , «',e, 4,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>jeure, ſa quinte &amp; ſon octave; enſorte
+qu'en chantant, par exemple ſol, on eſt
+cenſé chanter en même tems les ſons ſol,
+ſi, re, ſol; de même le ſon ut de la baſſe
+fondamentale emporte avec lui ce chant ut,
+mi, ſol, ut, &amp; enfin le ſon fa emporte avec
+lui fa, la, ut, fa: donc ce chant ou cette
+baſſe fondamentale
+ol, u,, ol, ut, a, ut, fa,
+donne le chant diatonique ſuivant,
+, u, , mi, fa, ol, la,
+Ec:
+r. Nous gnorons par q els principes
+ils lavoient formée; mais il eſt viſible que
+cette échelle nait de la baſſe ſol, ut, ſol, ut,
+fa, ut, fa, &amp; que par conſéquent cette baſſe
+eſt nommée avec raiſon fondamentale, com-
+me étant le véritable chant primitif, celui
+txt
+,n roigus ', , «',e, 4,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" custom="tablatureNotation" type="other">
+            <pc:Coords points="674,1097 674,1257 1846,1257 1846,1097 674,1097"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="699,1146 1796,1146 1796,1248 699,1248"/>
+                <pc:TextEquiv conf="0.8555853962898254">
+                    <pc:Unicode>ol, u,, ol, ut, a, ut, fa,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ol, u,, ol, ut, a, ut, fa,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" custom="tablatureNotation" type="other">
+            <pc:Coords points="650,1400 650,1549 1834,1549 1834,1400 650,1400"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="697,1443 1807,1443 1807,1541 697,1541"/>
+                <pc:TextEquiv conf="0.9645366072654724">
+                    <pc:Unicode>, u, , mi, fa, ol, la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>, u, , mi, fa, ol, la,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footnote">
+            <pc:Coords points="453,2573 453,3073 2078,3073 2078,2573 453,2573"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2613 2063,2613 2063,2687 485,2687"/>
+                <pc:TextEquiv conf="0.9849240183830261">
+                    <pc:Unicode>(I) Rien neſt plus facile que de trouver dans cette</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,2680 2062,2680 2062,2751 488,2751"/>
+                <pc:TextEquiv conf="0.9862492084503174">
+                    <pc:Unicode>échelle la valeur de chaque ſon par rapport au ſon ut, que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,2746 2064,2746 2064,2816 487,2816"/>
+                <pc:TextEquiv conf="0.9834564924240112">
+                    <pc:Unicode>nous appellons 1; car les deux ſons ſol &amp; fa de la baſle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,2816 1255,2816 1255,2897 488,2897"/>
+                <pc:TextEquiv conf="0.9075914025306702">
+                    <pc:Unicode>ſont 4 &amp; ; d'où il senſuit,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-051_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="560,2891 2072,2891 2072,2962 560,2962"/>
+                <pc:TextEquiv conf="0.9750561714172363">
+                    <pc:Unicode>18. Que ut de léchelle eſt loctave de ut de la baſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:Coords points="486,2964 2052,2964 2052,3019 486,3019"/>
+                <pc:TextEquiv conf="0.9290586113929749">
+                    <pc:Unicode>eſt-à-dire 2.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(I) Rien neſt plus facile que de trouver dans cette
+échelle la valeur de chaque ſon par rapport au ſon ut, que
+nous appellons 1; car les deux ſons ſol &amp; fa de la baſle
+ſont 4 &amp; ; d'où il senſuit,
+18. Que ut de léchelle eſt loctave de ut de la baſſe
+eſt-à-dire 2.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" custom="list" type="other">
+            <pc:Coords points="468,2901 468,3018 2027,3018 2027,2880 468,2901"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1210,2891 560,2900 560,2962 2021,2962 2021,2891 1210,2891"/>
+                <pc:TextEquiv conf="0.9774643778800964">
+                    <pc:Unicode>18. Que ut de léchelle eſt loctave de ut de la baſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="486,2964 854,2964 854,3018 486,3018"/>
+                <pc:TextEquiv conf="0.9312268495559692">
+                    <pc:Unicode>eſt-à-dire 2.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>18. Que ut de léchelle eſt loctave de ut de la baſſe
+eſt-à-dire 2.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="marginalia">
+            <pc:Coords points="150,1400 150,1561 453,1561 453,1400 150,1400"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,93 @@
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:06</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:06</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-015.png" imageWidth="2303" imageHeight="3544" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-015-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-015.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="456,220 2048,220 2048,2947 456,2947"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="407,172 407,348 619,348 619,172 407,172"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="407,172 407,348 619,348 619,172 407,172"/><pc:TextEquiv conf="0.9701268076896667"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0001"><pc:Coords points="407,172 407,348 619,348 619,172 407,172"/><pc:TextEquiv conf="0.5659958124160767"><pc:Unicode>vii</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>
+vii</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="678,154 678,319 1827,319 1827,154 678,154"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="678,154 678,319 1827,319 1827,154 678,154"/><pc:TextEquiv conf="0.8375992774963379"><pc:Unicode>AVERTISEMENT</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AVERTISEMENT</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="413,372 449,862 596,791 2075,779 2081,308 413,372"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="413,372 449,862 596,791 2075,779 2081,308 413,372"/><pc:TextEquiv conf="0.9950546026229858"><pc:Unicode>on le juge à propos, en ſe contentant</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="413,372 449,862 596,791 2075,779 2081,308 413,372"/><pc:TextEquiv conf="0.9955017566680908"><pc:Unicode>de ſuppoſer comme vraies les propoſi-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="413,372 449,862 596,791 2075,779 2081,308 413,372"/><pc:TextEquiv conf="0.9901161193847656"><pc:Unicode>tions énoncées dans le texte, &amp; dont la</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="413,372 449,862 596,791 2075,779 2081,308 413,372"/><pc:TextEquiv conf="0.9992662668228149"><pc:Unicode>preuve ſe trouve dans les notes.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>on le juge à propos, en ſe contentant
+de ſuppoſer comme vraies les propoſi-
+tions énoncées dans le texte, &amp; dont la
+preuve ſe trouve dans les notes.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9988863468170166"><pc:Unicode>Le ſecond Livre contient les princi-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9989060163497925"><pc:Unicode>pales regles de la compoſition, ou ce</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9899739623069763"><pc:Unicode>qui eſt la même choſe, la pratique de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9762507081031799"><pc:Unicode>lharmonie. Ces regles ſont fondées ſur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9872537851333618"><pc:Unicode>les principes expoſés dans le premier</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9956018924713135"><pc:Unicode>Livre; cependant ceux qui voudront</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9984681010246277"><pc:Unicode>ſe renfermer dans la pratique, ſans en</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9989316463470459"><pc:Unicode>approfondir les raiſons, peuvent ſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0008"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9866334795951843"><pc:Unicode>borner à lire lIntroduction, &amp; le ſe-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0009"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9961689114570618"><pc:Unicode>cond Livre. Ceux qui auront lû le pre-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0010"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9939189553260803"><pc:Unicode>mier Livre, trouveront à chaque re-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0011"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9952902793884277"><pc:Unicode>gle que contient le ſecond, un renvoi</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0012"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9774003028869629"><pc:Unicode>lendroit du premier Livre, où lon</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0013"><pc:Coords points="393,878 383,2376 2057,2376 2057,773 566,795 393,878"/><pc:TextEquiv conf="0.9935478568077087"><pc:Unicode>donne la raiſon de cette regle.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Le ſecond Livre contient les princi-
+pales regles de la compoſition, ou ce
+qui eſt la même choſe, la pratique de
+l'harmonie. Ces regles ſont fondées ſur
+les principes expoſés dans le premier
+Livre; cependant ceux qui voudront
+ſe renfermer dans la pratique, ſans en
+approfondir les raiſons, peuvent ſe
+borner à lire lIntroduction, &amp; le ſe-
+cond Livre. Ceux qui auront lû le pre-
+mier Livre, trouveront à chaque re-
+gle que contient le ſecond, un renvoi
+lendroit du premier Livre, où lon
+donne la raiſon de cette regle.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="paragraph"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextEquiv conf="0.9901921153068542"><pc:Unicode>Pour ne point préſenter à la fois un</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextEquiv conf="0.9943368434906006"><pc:Unicode>trop grand nombre d'objets &amp; de pré-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0002"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextEquiv conf="0.9911512136459351"><pc:Unicode>ceptes, j'ai rejetté dans les notes de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0003"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextEquiv conf="0.9897430539131165"><pc:Unicode>cette ſeconde Partie pluſieurs obſerva-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0004"><pc:Coords points="428,2374 395,2977 2086,2924 2086,2352 428,2374"/><pc:TextEquiv conf="0.9868491291999817"><pc:Unicode>tions &amp; regles d'un uſage moins fré-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Pour ne point préſenter à la fois un
+trop grand nombre d'objets &amp; de pré-
+ceptes, j'ai rejetté dans les notes de
+cette ſeconde Partie pluſieurs obſerva-
+tions &amp; regles d'un uſage moins fré-</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
+</pc:PcGts>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:53</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:54</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-032.png" imageWidth="2303" imageHeight="3516" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-032-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-032.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="261,241 1821,241 1821,2993 261,2993"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="443,206 450,334 1589,338 1581,206 443,206"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="466,242 1576,242 1576,327 466,327"/>
+                <pc:TextEquiv conf="0.6737221479415894">
+                    <pc:Unicode>TnEonivn E PnrrivvE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TnEonivn E PnrrivvE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1729,230 1729,354 1827,354 1827,230 1729,230"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1752,244 1802,244 1802,336 1752,336"/>
+                <pc:TextEquiv conf="0.738818347454071">
+                    <pc:Unicode>9</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>9</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="413,458 413,740 1588,740 1588,458 413,458"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="578,470 1480,470 1480,592 578,592"/>
+                <pc:TextEquiv conf="0.9225962162017822">
+                    <pc:Unicode>CHAPITRE IV.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="509,645 1539,645 1539,739 509,739"/>
+                <pc:TextEquiv conf="0.9643710851669312">
+                    <pc:Unicode>Ce que ceſt que dieze &amp; bemol.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITRE IV.
+Ce que ceſt que dieze &amp; bemol.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="154,754 154,1073 1853,1073 1853,754 154,754"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,788 1803,788 1803,885 268,885"/>
+                <pc:TextEquiv conf="0.9794877767562866">
+                    <pc:Unicode>15. Leſt viſihle qu'on peut imaginer les cinq</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="463,881 1802,881 1802,1038 463,1038"/>
+                <pc:TextEquiv conf="0.529116153717041">
+                    <pc:Unicode>e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,971 1804,971 1804,1070 263,1070"/>
+                <pc:TextEquiv conf="0.9587990045547485">
+                    <pc:Unicode>partag c cun en deux emi tons, an1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>15. Leſt viſihle qu'on peut imaginer les cinq
+e
+partag c cun en deux emi tons, an1</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="drop-capital">
+            <pc:Coords points="383,764 383,969 450,969 450,764 383,764"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="384,790 450,790 450,962 384,962"/>
+                <pc:TextEquiv conf="0.5110771059989929">
+                    <pc:Unicode>J</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>J</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footnote">
+            <pc:Coords points="195,1096 200,3048 1872,3062 1881,1092 195,1096"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1115 1804,1115 1804,1183 263,1183"/>
+                <pc:TextEquiv conf="0.9858797788619995">
+                    <pc:Unicode>brations dans un même tems; par exemple, dans une heu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1183 1807,1183 1807,1246 263,1246"/>
+                <pc:TextEquiv conf="0.9591772556304932">
+                    <pc:Unicode>re, dans une minute, dans une ſeconde, &amp;c. enſorte qu une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="262,1246 1807,1246 1807,1311 262,1311"/>
+                <pc:TextEquiv conf="0.9921444058418274">
+                    <pc:Unicode>corde qui eſt le tiers d'une autre, fait trois vibrations pen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,1309 1809,1309 1809,1376 261,1376"/>
+                <pc:TextEquiv conf="0.991632342338562">
+                    <pc:Unicode>dant que la plus grande nen fait qu'une. De même une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1375 1810,1375 1810,1441 264,1441"/>
+                <pc:TextEquiv conf="0.9921666383743286">
+                    <pc:Unicode>corde qui eſt la moitié d'une autre, fait deux vibrations</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1440 1812,1440 1812,1504 264,1504"/>
+                <pc:TextEquiv conf="0.9949541687965393">
+                    <pc:Unicode>pendant que cette autre en fait une; &amp; une corde qui nen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1503 1812,1503 1812,1571 265,1571"/>
+                <pc:TextEquiv conf="0.9818949699401855">
+                    <pc:Unicode>ſeroit que la cinquieme partie, feroit cinq vibrations dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1566 1506,1566 1506,1620 266,1620"/>
+                <pc:TextEquiv conf="0.9757400751113892">
+                    <pc:Unicode>le même tems.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="340,1632 1814,1632 1814,1699 340,1699"/>
+                <pc:TextEquiv conf="0.9659045934677124">
+                    <pc:Unicode>De--là il s'enſuit que le ſon dune corde eſt d'autant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1695 1814,1695 1814,1763 265,1763"/>
+                <pc:TextEquiv conf="0.9860697984695435">
+                    <pc:Unicode>plus ou d'autant moins aigu, que cette corde fait plus ou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,1763 1815,1763 1815,1831 267,1831"/>
+                <pc:TextEquiv conf="0.9954423308372498">
+                    <pc:Unicode>moins de vibrations dans un certain tems fixe; par exem-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1826 1797,1826 1797,1891 269,1891"/>
+                <pc:TextEquiv conf="0.9965017437934875">
+                    <pc:Unicode>ple, dans une ſeconde.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,1890 1819,1890 1819,1974 271,1974"/>
+                <pc:TextEquiv conf="0.9943369030952454">
+                    <pc:Unicode>Ceſt pourquoi, ſi on repréſente un ſon quelconque par 1,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1957 1814,1957 1814,2022 269,2022"/>
+                <pc:TextEquiv conf="0.9814218878746033">
+                    <pc:Unicode>on peut repreſenter loctave au-deſſus par 2, c eſt- à-dire,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="307,2019 1816,2019 1816,2085 307,2085"/>
+                <pc:TextEquiv conf="0.9977521896362305">
+                    <pc:Unicode>r le nombre de vibrations que fait la corde qui donn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2036 1816,2036 1816,2150 267,2150"/>
+                <pc:TextEquiv conf="0.37270545959472656">
+                    <pc:Unicode>e.e m m</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2146 1811,2146 1811,2215 270,2215"/>
+                <pc:TextEquiv conf="0.9629287719726562">
+                    <pc:Unicode>même, on repréſentera la douziéme au -deſſus du ſon 1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,2211 1817,2211 1817,2278 269,2278"/>
+                <pc:TextEquiv conf="0.9745182991027832">
+                    <pc:Unicode>par 3, la dix-ſeptiéme majeure au-deſſus par 5, cc. Mais</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2274 1815,2274 1815,2346 272,2346"/>
+                <pc:TextEquiv conf="0.9832123517990112">
+                    <pc:Unicode>il faut bien remarquer que par ces expreſſions numériques,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2341 1817,2341 1817,2410 270,2410"/>
+                <pc:TextEquiv conf="0.9715591669082642">
+                    <pc:Unicode>on ne prétend point comparer les ſons en eux- memes; car</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2404 1816,2404 1816,2470 270,2470"/>
+                <pc:TextEquiv conf="0.984222412109375">
+                    <pc:Unicode>les ſons, en eux-mèmes, ne ſont que des ſenſations, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2466 1818,2466 1818,2537 272,2537"/>
+                <pc:TextEquiv conf="0.9920221567153931">
+                    <pc:Unicode>on ne peut pas dire qu'une ſenſation ſoit triple ou double</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2530 1820,2530 1820,2605 272,2605"/>
+                <pc:TextEquiv conf="0.9543330073356628">
+                    <pc:Unicode>d' une autre: ainſi les expreſſions , 2,, cc. employées</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,2595 1817,2595 1817,2666 268,2666"/>
+                <pc:TextEquiv conf="0.9682201743125916">
+                    <pc:Unicode>pour déſigner un ſon, ſon octave au- deſſus, ſa douziéme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,2659 1820,2659 1820,2729 271,2729"/>
+                <pc:TextEquiv conf="0.9849576950073242">
+                    <pc:Unicode>au-deſſus, cc. ſignifient ſeulement que ſi une corde fait un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,2726 1818,2726 1818,2789 271,2789"/>
+                <pc:TextEquiv conf="0.9976229667663574">
+                    <pc:Unicode>certain nombre de vibrations dans une ſeconde, par exem-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2788 1819,2788 1819,2859 272,2859"/>
+                <pc:TextEquiv conf="0.9881946444511414">
+                    <pc:Unicode>ple, la corde qui eſt à loctave au- deſſus en fera le double</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2850 1820,2850 1820,2927 261,2927"/>
+                <pc:TextEquiv conf="0.9343960881233215">
+                    <pc:Unicode>dans le même tems, la corde qui eſt à la douzieme aun</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0028">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_6_region_id_6_line0028.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,2921 1320,2921 1320,2993 276,2993"/>
+                <pc:TextEquiv conf="0.9404799938201904">
+                    <pc:Unicode>deſlus en fera le iriple, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>brations dans un même tems; par exemple, dans une heu-
+re, dans une minute, dans une ſeconde, &amp;c. enſorte qu une
+corde qui eſt le tiers d'une autre, fait trois vibrations pen-
+dant que la plus grande nen fait qu'une. De même une
+corde qui eſt la moitié d'une autre, fait deux vibrations
+pendant que cette autre en fait une; &amp; une corde qui nen
+ſeroit que la cinquieme partie, feroit cinq vibrations dans
+le même tems.
+De--là il s'enſuit que le ſon dune corde eſt d'autant
+plus ou d'autant moins aigu, que cette corde fait plus ou
+moins de vibrations dans un certain tems fixe; par exem-
+ple, dans une ſeconde.
+Ceſt pourquoi, ſi on repréſente un ſon quelconque par 1,
+on peut repreſenter loctave au-deſſus par 2, c eſt- à-dire,
+r le nombre de vibrations que fait la corde qui donn
+e.e m m
+même, on repréſentera la douziéme au -deſſus du ſon 1
+par 3, la dix-ſeptiéme majeure au-deſſus par 5, cc. Mais
+il faut bien remarquer que par ces expreſſions numériques,
+on ne prétend point comparer les ſons en eux- memes; car
+les ſons, en eux-mèmes, ne ſont que des ſenſations, &amp;
+on ne peut pas dire qu'une ſenſation ſoit triple ou double
+d' une autre: ainſi les expreſſions , 2,, cc. employées
+pour déſigner un ſon, ſon octave au- deſſus, ſa douziéme
+au-deſſus, cc. ſignifient ſeulement que ſi une corde fait un
+certain nombre de vibrations dans une ſeconde, par exem-
+ple, la corde qui eſt à loctave au- deſſus en fera le double
+dans le même tems, la corde qui eſt à la douzieme aun
+deſlus en fera le iriple, &amp;c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="231,1088 230,1630 1934,1613 1933,1088 231,1088"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1115 1804,1115 1804,1183 263,1183"/>
+                <pc:TextEquiv conf="0.9858797788619995">
+                    <pc:Unicode>brations dans un même tems; par exemple, dans une heu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1183 1807,1183 1807,1246 263,1246"/>
+                <pc:TextEquiv conf="0.9591772556304932">
+                    <pc:Unicode>re, dans une minute, dans une ſeconde, &amp;c. enſorte qu une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="262,1246 1807,1246 1807,1311 262,1311"/>
+                <pc:TextEquiv conf="0.9921444058418274">
+                    <pc:Unicode>corde qui eſt le tiers d'une autre, fait trois vibrations pen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,1309 1809,1309 1809,1376 261,1376"/>
+                <pc:TextEquiv conf="0.991632342338562">
+                    <pc:Unicode>dant que la plus grande nen fait qu'une. De même une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1375 1810,1375 1810,1441 264,1441"/>
+                <pc:TextEquiv conf="0.9921666383743286">
+                    <pc:Unicode>corde qui eſt la moitié d'une autre, fait deux vibrations</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,1440 1812,1440 1812,1504 264,1504"/>
+                <pc:TextEquiv conf="0.9949541687965393">
+                    <pc:Unicode>pendant que cette autre en fait une; &amp; une corde qui nen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1503 1812,1503 1812,1571 265,1571"/>
+                <pc:TextEquiv conf="0.9818949699401855">
+                    <pc:Unicode>ſeroit que la cinquieme partie, feroit cinq vibrations dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1566 266,1620 1232,1620 1506,1617 1506,1566 266,1566"/>
+                <pc:TextEquiv conf="0.9757400751113892">
+                    <pc:Unicode>le même tems.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>brations dans un même tems; par exemple, dans une heu-
+re, dans une minute, dans une ſeconde, &amp;c. enſorte qu une
+corde qui eſt le tiers d'une autre, fait trois vibrations pen-
+dant que la plus grande nen fait qu'une. De même une
+corde qui eſt la moitié d'une autre, fait deux vibrations
+pendant que cette autre en fait une; &amp; une corde qui nen
+ſeroit que la cinquieme partie, feroit cinq vibrations dans
+le même tems.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="243,1625 216,1889 1923,1875 1916,1611 243,1625"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="340,1632 1814,1632 1814,1699 340,1699"/>
+                <pc:TextEquiv conf="0.9659045934677124">
+                    <pc:Unicode>De--là il s'enſuit que le ſon dune corde eſt d'autant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1695 1814,1695 1814,1763 265,1763"/>
+                <pc:TextEquiv conf="0.9860697984695435">
+                    <pc:Unicode>plus ou d'autant moins aigu, que cette corde fait plus ou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,1763 1815,1763 1815,1831 267,1831"/>
+                <pc:TextEquiv conf="0.9954423308372498">
+                    <pc:Unicode>moins de vibrations dans un certain tems fixe; par exem-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1826 269,1889 1797,1876 1797,1826 269,1826"/>
+                <pc:TextEquiv conf="0.9963899850845337">
+                    <pc:Unicode>ple, dans une ſeconde.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>De--là il s'enſuit que le ſon dune corde eſt d'autant
+plus ou d'autant moins aigu, que cette corde fait plus ou
+moins de vibrations dans un certain tems fixe; par exem-
+ple, dans une ſeconde.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="226,1883 226,3035 1851,3035 1851,1883 226,1883"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,1890 1819,1890 1819,1974 271,1974"/>
+                <pc:TextEquiv conf="0.9943270683288574">
+                    <pc:Unicode>Ceſt pourquoi, ſi on repréſente un ſon quelconque par 1,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1957 1814,1957 1814,2022 269,2022"/>
+                <pc:TextEquiv conf="0.9814218878746033">
+                    <pc:Unicode>on peut repreſenter loctave au-deſſus par 2, c eſt- à-dire,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2019 1816,2019 1816,2137 267,2137"/>
+                <pc:TextEquiv conf="0.5448878407478333">
+                    <pc:Unicode>ec</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="288,2082 1816,2082 1816,2150 288,2150"/>
+                <pc:TextEquiv conf="0.9832211136817932">
+                    <pc:Unicode>octave, tandis que l'autre corde fait une vibration: de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2146 1811,2146 1811,2215 270,2215"/>
+                <pc:TextEquiv conf="0.9629287719726562">
+                    <pc:Unicode>même, on repréſentera la douziéme au -deſſus du ſon 1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,2211 1817,2211 1817,2278 269,2278"/>
+                <pc:TextEquiv conf="0.9745182991027832">
+                    <pc:Unicode>par 3, la dix-ſeptiéme majeure au-deſſus par 5, cc. Mais</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2274 1815,2274 1815,2346 272,2346"/>
+                <pc:TextEquiv conf="0.9832123517990112">
+                    <pc:Unicode>il faut bien remarquer que par ces expreſſions numériques,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2341 1817,2341 1817,2410 270,2410"/>
+                <pc:TextEquiv conf="0.9715591669082642">
+                    <pc:Unicode>on ne prétend point comparer les ſons en eux- memes; car</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2404 1816,2404 1816,2470 270,2470"/>
+                <pc:TextEquiv conf="0.984222412109375">
+                    <pc:Unicode>les ſons, en eux-mèmes, ne ſont que des ſenſations, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2466 1818,2466 1818,2537 272,2537"/>
+                <pc:TextEquiv conf="0.9920221567153931">
+                    <pc:Unicode>on ne peut pas dire qu'une ſenſation ſoit triple ou double</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2530 1820,2530 1820,2605 272,2605"/>
+                <pc:TextEquiv conf="0.9543330073356628">
+                    <pc:Unicode>d' une autre: ainſi les expreſſions , 2,, cc. employées</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,2595 1817,2595 1817,2666 268,2666"/>
+                <pc:TextEquiv conf="0.9682201743125916">
+                    <pc:Unicode>pour déſigner un ſon, ſon octave au- deſſus, ſa douziéme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,2659 1820,2659 1820,2729 271,2729"/>
+                <pc:TextEquiv conf="0.9849576950073242">
+                    <pc:Unicode>au-deſſus, cc. ſignifient ſeulement que ſi une corde fait un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,2726 1818,2726 1818,2789 271,2789"/>
+                <pc:TextEquiv conf="0.9976229667663574">
+                    <pc:Unicode>certain nombre de vibrations dans une ſeconde, par exem-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2788 1819,2788 1819,2859 272,2859"/>
+                <pc:TextEquiv conf="0.9881946444511414">
+                    <pc:Unicode>ple, la corde qui eſt à loctave au- deſſus en fera le double</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2850 1820,2850 1820,2927 261,2927"/>
+                <pc:TextEquiv conf="0.9343960881233215">
+                    <pc:Unicode>dans le même tems, la corde qui eſt à la douzieme aun</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-032_region_id_9_region_id_9_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,2921 1320,2921 1320,2993 276,2993"/>
+                <pc:TextEquiv conf="0.9404799938201904">
+                    <pc:Unicode>deſlus en fera le iriple, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ceſt pourquoi, ſi on repréſente un ſon quelconque par 1,
+on peut repreſenter loctave au-deſſus par 2, c eſt- à-dire,
+ec
+octave, tandis que l'autre corde fait une vibration: de
+même, on repréſentera la douziéme au -deſſus du ſon 1
+par 3, la dix-ſeptiéme majeure au-deſſus par 5, cc. Mais
+il faut bien remarquer que par ces expreſſions numériques,
+on ne prétend point comparer les ſons en eux- memes; car
+les ſons, en eux-mèmes, ne ſont que des ſenſations, &amp;
+on ne peut pas dire qu'une ſenſation ſoit triple ou double
+d' une autre: ainſi les expreſſions , 2,, cc. employées
+pour déſigner un ſon, ſon octave au- deſſus, ſa douziéme
+au-deſſus, cc. ſignifient ſeulement que ſi une corde fait un
+certain nombre de vibrations dans une ſeconde, par exem-
+ple, la corde qui eſt à loctave au- deſſus en fera le double
+dans le même tems, la corde qui eſt à la douzieme aun
+deſlus en fera le iriple, &amp;c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_2">
+            <pc:Coords points="168,357 168,438 1756,438 1756,357 168,357"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

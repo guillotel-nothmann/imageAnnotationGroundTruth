@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:11</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:11</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-106.png" imageWidth="2303" imageHeight="3549" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-106-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-106.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="228,296 1817,296 1817,3180 228,3180"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="465,270 423,390 1562,390 1564,292 465,270"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="474,296 1556,296 1556,390 474,390"/>
+                <pc:TextEquiv conf="0.8078323602676392">
+                    <pc:Unicode>Tutontovt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tutontovt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1680,254 1680,402 1840,402 1840,254 1680,254"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1713,307 1816,307 1816,402 1713,402"/>
+                <pc:TextEquiv conf="0.48238760232925415">
+                    <pc:Unicode>8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="187,402 187,1317 1852,1317 1852,402 187,402"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="238,402 1801,402 1801,513 238,513"/>
+                <pc:TextEquiv conf="0.9589676260948181">
+                    <pc:Unicode>deſcendre de laccord ſol ſi re fa à laccord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,506 1798,506 1798,606 244,606"/>
+                <pc:TextEquiv conf="0.9969577193260193">
+                    <pc:Unicode>ut mi ſol la, en rendant la tonique ut ſous-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,599 1802,599 1802,696 239,696"/>
+                <pc:TextEquiv conf="0.9788210391998291">
+                    <pc:Unicode>dominante, ceſt à dire, en paſſant tout dun</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,691 1803,691 1803,791 242,791"/>
+                <pc:TextEquiv conf="0.9948952794075012">
+                    <pc:Unicode>coup du mode d'ut dans le mode de ſol; or</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,782 1800,782 1800,881 241,881"/>
+                <pc:TextEquiv conf="0.9672288298606873">
+                    <pc:Unicode>deſcendre de ſol ſi re fa à ut mi ſol la, ceſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,875 1798,875 1798,969 240,969"/>
+                <pc:TextEquiv conf="0.9815147519111633">
+                    <pc:Unicode>la même choſe que de monter de l'accord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="228,965 1803,965 1803,1083 228,1083"/>
+                <pc:TextEquiv conf="0.9628064632415771">
+                    <pc:Unicode>ſol ſi fa à laccord la ut mi ſol, en chan-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="238,1058 1796,1058 1796,1158 238,1158"/>
+                <pc:TextEquiv conf="0.9747670888900757">
+                    <pc:Unicode>geant l accord de ſous dominante ut mi ſol la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="236,1151 1795,1151 1795,1249 236,1249"/>
+                <pc:TextEquiv conf="0.9978091716766357">
+                    <pc:Unicode>en accord de dominante imparfaite, ſuivant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1242 1790,1242 1790,1317 239,1317"/>
+                <pc:TextEquiv conf="0.9824769496917725">
+                    <pc:Unicode>les loix du double emploi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>deſcendre de laccord ſol ſi re fa à laccord
+ut mi ſol la, en rendant la tonique ut ſous-
+dominante, ceſt à dire, en paſſant tout dun
+coup du mode d'ut dans le mode de ſol; or
+deſcendre de ſol ſi re fa à ut mi ſol la, ceſt
+la même choſe que de monter de l'accord
+ſol ſi fa à laccord la ut mi ſol, en chan-
+geant l accord de ſous dominante ut mi ſol la,
+en accord de dominante imparfaite, ſuivant
+les loix du double emploi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="211,1305 199,1983 829,1978 934,1972 857,1884 1808,1884 1828,1329 211,1305"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,1335 1796,1335 1796,1429 276,1429"/>
+                <pc:TextEquiv conf="0.997092068195343">
+                    <pc:Unicode>135. Dans cette ſorte de cadence, la diſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="236,1424 1793,1424 1793,1524 236,1524"/>
+                <pc:TextEquiv conf="0.9987033009529114">
+                    <pc:Unicode>ſonance du premier accord ſe ſauve en deſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="237,1519 1797,1519 1797,1619 237,1619"/>
+                <pc:TextEquiv conf="0.9942435622215271">
+                    <pc:Unicode>cendant diatoniquement ſur la quinte de l'ac-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="235,1610 1795,1610 1795,1714 235,1714"/>
+                <pc:TextEquiv conf="0.9991772174835205">
+                    <pc:Unicode>cord ſuivant. Par exemple, dans la cadence</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="231,1702 1795,1702 1795,1798 231,1798"/>
+                <pc:TextEquiv conf="0.9398602247238159">
+                    <pc:Unicode>rompuë ſol ſi r fa, la ut mi ſol, la diſſonan-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="231,1729 231,1888 860,1888 1796,1884 1796,1729 231,1729"/>
+                <pc:TextEquiv conf="0.3830747604370117">
+                    <pc:Unicode>tXXXRXXärX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="231,1885 231,1980 577,1980 817,1978 817,1885 231,1885"/>
+                <pc:TextEquiv conf="0.9957923889160156">
+                    <pc:Unicode>ſur la quinte mi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>135. Dans cette ſorte de cadence, la diſ-
+ſonance du premier accord ſe ſauve en deſ-
+cendant diatoniquement ſur la quinte de l'ac-
+cord ſuivant. Par exemple, dans la cadence
+rompuë ſol ſi r fa, la ut mi ſol, la diſſonan-
+tXXXRXXärX
+ſur la quinte mi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="193,1978 193,2987 1798,2987 1798,1978 863,1966 193,1978"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,1973 237,1977 237,2083 1795,2083 1795,1978 1408,1973 472,1973"/>
+                <pc:TextEquiv conf="0.9803147315979004">
+                    <pc:Unicode>136. Il eſt encore une autre eſpece de ca-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,2063 1796,2063 1796,2168 230,2168"/>
+                <pc:TextEquiv conf="0.9751078486442566">
+                    <pc:Unicode>dence appellée cadence interrompuë, ou la do-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2157 1794,2157 1794,2240 229,2240"/>
+                <pc:TextEquiv conf="0.9985660314559937">
+                    <pc:Unicode>minante deſcend de tierce ſur une autre do-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2255 1794,2255 1794,2354 229,2354"/>
+                <pc:TextEquiv conf="0.9981458783149719">
+                    <pc:Unicode>minante, au lieu de deſcendre de quinte ſur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,2348 1793,2348 1793,2439 230,2439"/>
+                <pc:TextEquiv conf="0.9951218962669373">
+                    <pc:Unicode>la tonique, comme dans cette marche de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="228,2436 1791,2436 1791,2534 228,2534"/>
+                <pc:TextEquiv conf="0.9538029432296753">
+                    <pc:Unicode>baſſe ſol ſi re fa, mi ſol ſi e; dans le cas de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2530 1790,2530 1790,2625 229,2625"/>
+                <pc:TextEquiv conf="0.9739998579025269">
+                    <pc:Unicode>la cadence interrompuë, la diſſonance du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2623 1786,2623 1786,2717 229,2717"/>
+                <pc:TextEquiv conf="0.9926609396934509">
+                    <pc:Unicode>premier accord ſe ſauve en deſcendant diato-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="228,2715 1787,2715 1787,2807 228,2807"/>
+                <pc:TextEquiv conf="0.9872497320175171">
+                    <pc:Unicode>niquement ſur loctave de la note fondamen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="228,2801 1782,2801 1782,2920 228,2920"/>
+                <pc:TextEquiv conf="0.9695761799812317">
+                    <pc:Unicode>tale de laccord ſuivant, comme on voit ici,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-106_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2896 1773,2896 1773,2987 229,2987"/>
+                <pc:TextEquiv conf="0.9698161482810974">
+                    <pc:Unicode>où fa ſe ſauve ſur loctave de mi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>136. Il eſt encore une autre eſpece de ca-
+dence appellée cadence interrompuë, ou la do-
+minante deſcend de tierce ſur une autre do-
+minante, au lieu de deſcendre de quinte ſur
+la tonique, comme dans cette marche de
+baſſe ſol ſi re fa, mi ſol ſi e; dans le cas de
+la cadence interrompuë, la diſſonance du
+premier accord ſe ſauve en deſcendant diato-
+niquement ſur loctave de la note fondamen-
+tale de laccord ſuivant, comme on voit ici,
+où fa ſe ſauve ſur loctave de mi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="312,3005 294,3087 1810,3087 1811,2981 312,3005"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1749,2982 312,3005 309,3019 309,3087 1787,3087 1787,2982 1749,2982"/>
+                <pc:TextEquiv conf="0.9720787405967712">
+                    <pc:Unicode>137. La cadence interrompuë a auſſi, ce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>137. La cadence interrompuë a auſſi, ce</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footer">
+            <pc:Coords points="1398,3076 1421,3164 1598,3182 1592,3064 1398,3076"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1445,3085 1445,3166 1559,3178 1563,3178 1563,3085 1445,3085"/>
+                <pc:TextEquiv conf="0.8824687004089355">
+                    <pc:Unicode>Fij</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fij</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:53</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:53</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-054.png" imageWidth="2303" imageHeight="3606" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-054-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-054.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="221,247 1824,247 1824,3095 221,3095"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="465,248 1622,229 1593,336 465,346 465,248"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="465,248 465,337 1480,337 1579,336 1579,248 465,248"/>
+                <pc:TextEquiv conf="0.7715219855308533">
+                    <pc:Unicode>Tuxonrour Er PnArtovE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tuxonrour Er PnArtovE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1683,212 1683,347 1834,347 1834,212 1683,212"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1723,269 1821,269 1821,346 1723,346"/>
+                <pc:TextEquiv conf="0.8818386793136597">
+                    <pc:Unicode>3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>3</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="221,364 1823,364 1841,2234 190,2234 221,364"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,364 1821,364 1821,461 244,461"/>
+                <pc:TextEquiv conf="0.9949469566345215">
+                    <pc:Unicode>48. De plus, cette échelle diatonique ne</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="225,457 1809,457 1809,554 225,554"/>
+                <pc:TextEquiv conf="0.9972251057624817">
+                    <pc:Unicode>renferme que ſept ſons, &amp; ne va pas juſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="226,551 1812,551 1812,648 226,648"/>
+                <pc:TextEquiv conf="0.9873659610748291">
+                    <pc:Unicode>qu'au ſi en haut, qui ſeroit loctave du pre-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="223,646 1811,646 1811,741 223,741"/>
+                <pc:TextEquiv conf="0.9952002167701721">
+                    <pc:Unicode>mier: nouvelle ſingularité dont on peut ren-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="222,739 1809,739 1809,835 222,835"/>
+                <pc:TextEquiv conf="0.9766879081726074">
+                    <pc:Unicode>dre raiſon par les principes établis ci- deſſus.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="223,826 1805,826 1805,930 223,930"/>
+                <pc:TextEquiv conf="0.9754936695098877">
+                    <pc:Unicode>En effet, pour que le ſon ſi ſuccédât immé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="221,926 1808,926 1808,1015 221,1015"/>
+                <pc:TextEquiv conf="0.9932538866996765">
+                    <pc:Unicode>diatement dans léchelle au ſon la, il fau-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="223,1019 1814,1019 1814,1117 223,1117"/>
+                <pc:TextEquiv conf="0.9745919704437256">
+                    <pc:Unicode>droit que le ſon ſol, qui eſt le ſeul d'où ſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="225,1114 1809,1114 1809,1210 225,1210"/>
+                <pc:TextEquiv conf="0.9749393463134766">
+                    <pc:Unicode>puiſſe être tiré, ſuccédât immédiatement</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="222,1207 1811,1207 1811,1307 222,1307"/>
+                <pc:TextEquiv conf="0.9971691966056824">
+                    <pc:Unicode>dans la baſſe fondamentale au ſon fa, qui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="225,1300 1813,1300 1813,1397 225,1397"/>
+                <pc:TextEquiv conf="0.9780788421630859">
+                    <pc:Unicode>eſt le ſeul d'ou la puiſſe être tiré. Or la ſuc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="225,1394 1812,1394 1812,1493 225,1493"/>
+                <pc:TextEquiv conf="0.9943903088569641">
+                    <pc:Unicode>ceſſion diatonique de fa à ſol ne peut avoir</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="224,1489 1815,1489 1815,1580 224,1580"/>
+                <pc:TextEquiv conf="0.9981139302253723">
+                    <pc:Unicode>lieu dans la baſſe fondamentale, ſuivant ce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="226,1583 1818,1583 1818,1680 226,1680"/>
+                <pc:TextEquiv conf="0.9511115550994873">
+                    <pc:Unicode>qu'on a démontré dans le Chapitre III. Art.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="225,1677 1817,1677 1817,1774 225,1774"/>
+                <pc:TextEquiv conf="0.9752551317214966">
+                    <pc:Unicode>36. Done les ſons la &amp; ſi ne ſcauroient ſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="227,1771 1817,1771 1817,1843 227,1843"/>
+                <pc:TextEquiv conf="0.9819860458374023">
+                    <pc:Unicode>ſuccéder immédiatement dans l'échelle: nous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,1865 1812,1865 1812,1963 229,1963"/>
+                <pc:TextEquiv conf="0.9890053868293762">
+                    <pc:Unicode>verrons dans la ſuite pourquoi cela n eſt pas</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="227,1960 1809,1960 1809,2056 227,2056"/>
+                <pc:TextEquiv conf="0.9633026719093323">
+                    <pc:Unicode>ainſi dans la gamme ut, ré, mi, fa, ſol, la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="221,2051 1813,2051 1813,2148 221,2148"/>
+                <pc:TextEquiv conf="0.9924356341362">
+                    <pc:Unicode>ſi, T, qui commence par ut; au lieu que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,2144 1816,2144 1816,2234 230,2234"/>
+                <pc:TextEquiv conf="0.9829273223876953">
+                    <pc:Unicode>léchelle dont il s'agit ici commence par ſi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>48. De plus, cette échelle diatonique ne
+renferme que ſept ſons, &amp; ne va pas juſ-
+qu'au ſi en haut, qui ſeroit loctave du pre-
+mier: nouvelle ſingularité dont on peut ren-
+dre raiſon par les principes établis ci- deſſus.
+En effet, pour que le ſon ſi ſuccédât immé-
+diatement dans léchelle au ſon la, il fau-
+droit que le ſon ſol, qui eſt le ſeul d'où ſi
+puiſſe être tiré, ſuccédât immédiatement
+dans la baſſe fondamentale au ſon fa, qui
+eſt le ſeul d'ou la puiſſe être tiré. Or la ſuc-
+ceſſion diatonique de fa à ſol ne peut avoir
+lieu dans la baſſe fondamentale, ſuivant ce
+qu'on a démontré dans le Chapitre III. Art.
+36. Done les ſons la &amp; ſi ne ſcauroient ſe
+ſuccéder immédiatement dans l'échelle: nous
+verrons dans la ſuite pourquoi cela n eſt pas
+ainſi dans la gamme ut, ré, mi, fa, ſol, la,
+ſi, T, qui commence par ut; au lieu que
+léchelle dont il s'agit ici commence par ſi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="200,2222 200,2890 1879,2890 1879,2222 200,2222"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="330,2222 1813,2222 1813,2333 330,2333"/>
+                <pc:TextEquiv conf="0.9779813885688782">
+                    <pc:Unicode>49. Auſſi les Grees, pour former loctave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="226,2332 1821,2332 1821,2429 226,2429"/>
+                <pc:TextEquiv conf="0.9816437363624573">
+                    <pc:Unicode>entiere, ajoùtoient au-deſſous du premier ſi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2428 1816,2428 1816,2525 229,2525"/>
+                <pc:TextEquiv conf="0.9587653279304504">
+                    <pc:Unicode>le ſon la, qu'ils diſtinguoient &amp; ſéparoient</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="228,2521 1815,2521 1815,2617 228,2617"/>
+                <pc:TextEquiv conf="0.9788841009140015">
+                    <pc:Unicode>du reſte de léchelle, &amp; qu'ils appelloient</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,2612 1818,2612 1818,2716 230,2716"/>
+                <pc:TextEquiv conf="0.9755123853683472">
+                    <pc:Unicode>par cette raiſon proſlambanomene, c'eſt à-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,2706 1821,2706 1821,2808 230,2808"/>
+                <pc:TextEquiv conf="0.948656439781189">
+                    <pc:Unicode>dire corde ou ſon ſur-ajolté au-devant de lé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="232,2806 478,2806 478,2880 232,2880"/>
+                <pc:TextEquiv conf="0.9995542764663696">
+                    <pc:Unicode>chelle.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>49. Auſſi les Grees, pour former loctave
+entiere, ajoùtoient au-deſſous du premier ſi,
+le ſon la, qu'ils diſtinguoient &amp; ſéparoient
+du reſte de léchelle, &amp; qu'ils appelloient
+par cette raiſon proſlambanomene, c'eſt à-
+dire corde ou ſon ſur-ajolté au-devant de lé-
+chelle.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="161,2879 161,3121 1829,3121 1829,2879 161,2879"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="233,2892 1823,2892 1823,3004 233,3004"/>
+                <pc:TextEquiv conf="0.9628382325172424">
+                    <pc:Unicode>5o. Léchelle diatonique ſi, ut, e, mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-054_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="221,2993 1821,2993 1821,3095 221,3095"/>
+                <pc:TextEquiv conf="0.9475100040435791">
+                    <pc:Unicode>fa, ſol, la, eſt compoſée de deux tétracor-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>5o. Léchelle diatonique ſi, ut, e, mi,
+fa, ſol, la, eſt compoſée de deux tétracor-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

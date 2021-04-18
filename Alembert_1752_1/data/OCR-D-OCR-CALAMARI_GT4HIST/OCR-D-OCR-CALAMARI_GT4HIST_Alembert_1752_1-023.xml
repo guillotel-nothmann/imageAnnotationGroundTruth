@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:28</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:28</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-023.png" imageWidth="2303" imageHeight="3447" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-023-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-023.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="511,240 2049,240 2049,3024 511,3024"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="484,213 484,347 677,347 677,213 484,213"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="523,279 642,279 642,345 523,345"/>
+                <pc:TextEquiv conf="0.3830253481864929">
+                    <pc:Unicode>x/</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>x/</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="709,176 709,331 1879,331 1879,176 709,176"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="745,241 1817,241 1817,321 745,321"/>
+                <pc:TextEquiv conf="0.8051297664642334">
+                    <pc:Unicode>TABLE DES CEIApts.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TABLE DES CEIApts.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" custom="list" type="other">
+            <pc:Coords points="505,321 505,2516 2078,2516 2078,321 505,321"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="530,360 2045,360 2045,451 530,451"/>
+                <pc:TextEquiv conf="0.9720914959907532">
+                    <pc:Unicode>ARTICLE I. De quelques outes particulie-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="559,446 2040,446 2040,541 559,541"/>
+                <pc:TextEquiv conf="0.9572444558143616">
+                    <pc:Unicode>es de la baſſe fondamentale,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1916,561 1992,561 1992,608 1916,608"/>
+                <pc:TextEquiv conf="0.893886923789978">
+                    <pc:Unicode>12</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,564 2048,564 2048,718 525,718"/>
+                <pc:TextEquiv conf="0.85599285364151">
+                    <pc:Unicode>A r1c1EII. De la cadence rwmpue c ime.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="844,744 2041,744 2041,810 844,810"/>
+                <pc:TextEquiv conf="0.9440073370933533">
+                    <pc:Unicode>ompue, 129</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,807 2043,807 2043,899 523,899"/>
+                <pc:TextEquiv conf="0.899584174156189">
+                    <pc:Unicode>AnricE III. De la ſuppoſition, 130</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="528,898 2042,898 2042,990 528,990"/>
+                <pc:TextEquiv conf="0.9294829964637756">
+                    <pc:Unicode>ARrIcLE IV. De l'accord de ſeptieme dimi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="683,993 2027,993 2027,1080 683,1080"/>
+                <pc:TextEquiv conf="0.9506762623786926">
+                    <pc:Unicode>nuee, 135</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,1077 2035,1077 2035,1171 525,1171"/>
+                <pc:TextEquiv conf="0.9488814473152161">
+                    <pc:Unicode>CAP. X. De quelques licences du deſus,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="1167,1104 2035,1104 2035,1260 1167,1260"/>
+                <pc:TextEquiv conf="0.2824878394603729">
+                    <pc:Unicode>zri ei</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1254 2036,1254 2036,1347 514,1347"/>
+                <pc:TextEquiv conf="0.8877848386764526">
+                    <pc:Unicode>CnAP. XI. Ou l'on enſeigne à touνer la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="1157,1343 2044,1343 2044,1439 1157,1439"/>
+                <pc:TextEquiv conf="0.9885646104812622">
+                    <pc:Unicode>baſſe fondamentale, quand</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="1156,1434 2032,1434 2032,1528 1156,1528"/>
+                <pc:TextEquiv conf="0.9328551888465881">
+                    <pc:Unicode>la baſſe continue eſt cliree,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="1902,1554 1926,1554 1926,1595 1902,1595"/>
+                <pc:TextEquiv conf="0.5784690380096436">
+                    <pc:Unicode>I</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1554 2038,1554 2038,1707 514,1707"/>
+                <pc:TextEquiv conf="0.7063903212547302">
+                    <pc:Unicode>CnAr. XII. ce ue c'et g''ee da</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1704 2033,1704 2033,1790 514,1790"/>
+                <pc:TextEquiv conf="0.9224568605422974">
+                    <pc:Unicode>— mode ou ton, 144</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,1790 2034,1790 2034,1885 511,1885"/>
+                <pc:TextEquiv conf="0.882694661617279">
+                    <pc:Unicode>CnA XIII. Touver la baſſe fondamentale</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1883 2031,1883 2031,1975 514,1975"/>
+                <pc:TextEquiv conf="0.9411130547523499">
+                    <pc:Unicode>d'un chant donne, 15I</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,1971 2036,1971 2036,2064 512,2064"/>
+                <pc:TextEquiv conf="0.945281445980072">
+                    <pc:Unicode>CAP. XIV. Du cromatique e l'enar-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="1154,2064 2032,2064 2032,2146 1154,2146"/>
+                <pc:TextEquiv conf="0.9749731421470642">
+                    <pc:Unicode>monique, 164</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2088 2036,2088 2036,2241 513,2241"/>
+                <pc:TextEquiv conf="0.8734434247016907">
+                    <pc:Unicode>Cnv. XV. Du ſſein, de limitation</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,2237 2032,2237 2032,2330 524,2330"/>
+                <pc:TextEquiv conf="0.9741541743278503">
+                    <pc:Unicode>de la fugue, 167</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,2326 2027,2326 2027,2418 512,2418"/>
+                <pc:TextEquiv conf="0.9088138937950134">
+                    <pc:Unicode>CAr. XVI. Definition des difeens ais,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-023_region_id_2_region_id_2_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="1907,2418 2033,2418 2033,2487 1907,2487"/>
+                <pc:TextEquiv conf="0.9954712390899658">
+                    <pc:Unicode>168</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ARTICLE I. De quelques outes particulie-
+es de la baſſe fondamentale,
+12
+A r1c1EII. De la cadence rwmpue c ime.
+ompue, 129
+AnricE III. De la ſuppoſition, 130
+ARrIcLE IV. De l'accord de ſeptieme dimi-
+nuee, 135
+CAP. X. De quelques licences du deſus,
+zri ei
+CnAP. XI. Ou l'on enſeigne à touνer la
+baſſe fondamentale, quand
+la baſſe continue eſt cliree,
+I
+CnAr. XII. ce ue c'et g''ee da
+— mode ou ton, 144
+CnA XIII. Touver la baſſe fondamentale
+d'un chant donne, 15I
+CAP. XIV. Du cromatique e l'enar-
+monique, 164
+Cnv. XV. Du ſſein, de limitation
+de la fugue, 167
+CAr. XVI. Definition des difeens ais,
+168</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="other">
+            <pc:Coords points="699,2548 699,2704 1885,2704 1885,2548 699,2548"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="739,2548 1796,2548 1796,2693 739,2693"/>
+                <pc:TextEquiv conf="0.9972673654556274">
+                    <pc:Unicode>Fin de la Table des Chapitres.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fin de la Table des Chapitres.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footer">
+            <pc:Coords points="1563,2902 1563,3047 2100,3047 2100,2902 1563,2902"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1615,2947 2038,2947 2038,3024 1615,3024"/>
+                <pc:TextEquiv conf="0.9367852807044983">
+                    <pc:Unicode>ELEMENs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ELEMENs</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

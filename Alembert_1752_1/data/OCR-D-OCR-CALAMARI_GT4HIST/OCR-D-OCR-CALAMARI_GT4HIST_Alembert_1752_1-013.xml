@@ -1,0 +1,92 @@
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:01</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:01</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-013.png" imageWidth="2303" imageHeight="3516" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-013-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-013.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="501,245 2066,245 2066,2918 501,2918"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="431,212 431,375 612,375 612,212 431,212"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="431,212 431,375 612,375 612,212 431,212"/><pc:TextEquiv conf="0.6678990721702576"><pc:Unicode>j</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>j</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="694,206 642,347 1898,352 1898,206 694,206"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="694,206 642,347 1898,352 1898,206 694,206"/><pc:TextEquiv conf="0.8230015635490417"><pc:Unicode>AVERTISEMEVT.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AVERTISEMEVT.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9969316720962524"><pc:Unicode>ſique de la reſonnance des corps ſono-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9924179315567017"><pc:Unicode>res, encore moins du principe méta-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9727566838264465"><pc:Unicode>h ſue d ſentiment de lharmonie ;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.3904664218425751"><pc:Unicode>XmXX5rrm</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9976789355278015"><pc:Unicode>connus, &amp; ſelon toutes les apparences</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0005"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.982194185256958"><pc:Unicode>le ſeront toûjours à peu près autant</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0006"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9844589233398438"><pc:Unicode>qu'ils létoient du tems de Pythagore.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0007"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.982475757598877"><pc:Unicode>Il s'agit uniquement de faire voir com-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0008"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9946505427360535"><pc:Unicode>ment on peut déduire d'un ſeul prin-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0009"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9849888682365417"><pc:Unicode>cipe d'expérience les loix de lharmo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0010"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.990526556968689"><pc:Unicode>nie, que les Artiſtes n'ont trouvées,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0011"><pc:Coords points="460,364 466,1761 577,1697 2085,1691 2085,364 460,364"/><pc:TextEquiv conf="0.9768138527870178"><pc:Unicode>pour ainſi dire, qu à tâtons.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ſique de la reſonnance des corps ſono-
+res, encore moins du principe méta-
+h ſue d ſentiment de lharmonie ;
+XmXX5rrm
+connus, &amp; ſelon toutes les apparences
+le ſeront toûjours à peu près autant
+qu'ils létoient du tems de Pythagore.
+Il s'agit uniquement de faire voir com-
+ment on peut déduire d'un ſeul prin-
+cipe d'expérience les loix de lharmo-
+nie, que les Artiſtes n'ont trouvées,
+pour ainſi dire, qu à tâtons.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.9967156648635864"><pc:Unicode>Dans le deſſein de rendre cet Ou-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.9785810708999634"><pc:Unicode>vrage d'une utilité preſque générale,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.979128897190094"><pc:Unicode>jai tâché de le mettre à la portée des</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.9877153635025024"><pc:Unicode>perſonnes même qui n'ont aucune tein-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.9859051704406738"><pc:Unicode>ture de Muſique: voici le plan que jai</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="483,1697 483,2369 2091,2369 2091,1697 483,1697"/><pc:TextEquiv conf="0.9933656454086304"><pc:Unicode>ſuivi pour cela.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Dans le deſſein de rendre cet Ou-
+vrage d'une utilité preſque générale,
+jai tâché de le mettre à la portée des
+perſonnes même qui n'ont aucune tein-
+ture de Muſique: voici le plan que jai
+ſuivi pour cela.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="paragraph"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextEquiv conf="0.9868027567863464"><pc:Unicode>Je commence par une courte intro-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextEquiv conf="0.9907891750335693"><pc:Unicode>duction, où je définis les termes les</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0002"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextEquiv conf="0.9710789918899536"><pc:Unicode>plus uſités dans cet Art ,accord, hiar-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0003"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextEquiv conf="0.981565535068512"><pc:Unicode>monie, ton, tierce, quinte, octave,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0004"><pc:Coords points="454,2381 454,2960 2079,2960 2079,2381 454,2381"/><pc:TextEquiv conf="0.9118706583976746"><pc:Unicode>&amp;e.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Je commence par une courte intro-
+duction, où je définis les termes les
+plus uſités dans cet Art ,accord, hiar-
+monie, ton, tierce, quinte, octave,
+&amp;e.</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
+</pc:PcGts>

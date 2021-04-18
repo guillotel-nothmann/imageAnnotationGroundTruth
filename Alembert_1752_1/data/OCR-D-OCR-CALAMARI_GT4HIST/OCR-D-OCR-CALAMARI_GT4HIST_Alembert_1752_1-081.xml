@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:04</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:04</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-081.png" imageWidth="2303" imageHeight="3579" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-081-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-081.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="504,256 2126,256 2126,2981 504,2981"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="464,221 476,367 642,378 642,221 464,221"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="504,269 607,269 607,365 504,365"/>
+                <pc:TextEquiv conf="0.7467948198318481">
+                    <pc:Unicode>ʒ8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ʒ8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="731,199 731,344 1896,344 1896,199 731,199"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="750,257 1852,257 1852,343 750,343"/>
+                <pc:TextEquiv conf="0.733062207698822">
+                    <pc:Unicode>E1EMENSDE MvsI0vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E1EMENSDE MvsI0vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="464,372 464,835 2114,835 2120,339 464,372"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="715,367 517,371 517,468 2093,468 2093,367 715,367"/>
+                <pc:TextEquiv conf="0.9785496592521667">
+                    <pc:Unicode>ut, n'eſt nullement analogue au mode ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,395 2093,395 2093,568 518,568"/>
+                <pc:TextEquiv conf="0.5319992899894714">
+                    <pc:Unicode>Xrr X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,552 2089,552 2089,635 517,635"/>
+                <pc:TextEquiv conf="0.9804768562316895">
+                    <pc:Unicode>abandonnons enſuite nous · mêmes ce mode</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,646 2090,646 2090,755 506,755"/>
+                <pc:TextEquiv conf="0.9837144017219543">
+                    <pc:Unicode>fl ur y ſubſtituer celui de la, la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="521,679 1751,679 1751,835 521,835"/>
+                <pc:TextEquiv conf="0.488355815410614">
+                    <pc:Unicode>etXXXX—</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ut, n'eſt nullement analogue au mode ma-
+Xrr X
+abandonnons enſuite nous · mêmes ce mode
+fl ur y ſubſtituer celui de la, la
+etXXXX—</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="487,829 486,2601 2136,2601 2136,807 487,829"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1611,814 547,828 547,933 2097,933 2097,814 1611,814"/>
+                <pc:TextEquiv conf="0.9921445846557617">
+                    <pc:Unicode>Voici la réponſe à ces deux obſervations.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,923 2092,923 2092,1022 520,1022"/>
+                <pc:TextEquiv conf="0.9713611602783203">
+                    <pc:Unicode>1ꝰ. Le mode mineur de fa n'eſt pas ſi étran-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="521,1015 2095,1015 2095,1186 521,1186"/>
+                <pc:TextEquiv conf="0.3752062916755676">
+                    <pc:Unicode>XEiRctir</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1109 2097,1109 2097,1212 522,1212"/>
+                <pc:TextEquiv conf="0.973217785358429">
+                    <pc:Unicode>ẽſt très - poſſible de faire ſuivre immédiate-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1202 2101,1202 2101,1307 522,1307"/>
+                <pc:TextEquiv conf="0.9847628474235535">
+                    <pc:Unicode>ment, &amp; agréablement pour l'oreille, deux airs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1293 2102,1293 2102,1398 520,1398"/>
+                <pc:TextEquiv conf="0.9920657277107239">
+                    <pc:Unicode>dont lun appartienne au mode majeur d'u,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1389 2102,1389 2102,1485 522,1485"/>
+                <pc:TextEquiv conf="0.9828972220420837">
+                    <pc:Unicode>Tautre au mode mineur de fa. M. Rameau</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,1479 2101,1479 2101,1562 524,1562"/>
+                <pc:TextEquiv conf="0.9717549681663513">
+                    <pc:Unicode>la exécuté dans la belle Sarabande de Pig-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1504 2102,1504 2102,1674 522,1674"/>
+                <pc:TextEquiv conf="0.364118367433548">
+                    <pc:Unicode>zr i e e 5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,1665 2106,1665 2106,1767 524,1767"/>
+                <pc:TextEquiv conf="0.9986539483070374">
+                    <pc:Unicode>nature ne fait que nous indiquer le mode mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,1757 2104,1757 2104,1855 524,1855"/>
+                <pc:TextEquiv conf="0.9794986844062805">
+                    <pc:Unicode>n ar le f émiſſement des cordes fa &amp; la h</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="526,1794 2106,1794 2106,1954 526,1954"/>
+                <pc:TextEquiv conf="0.4368847906589508">
+                    <pc:Unicode>XXXXX:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="526,1944 2105,1944 2105,2034 526,2034"/>
+                <pc:TextEquiv conf="0.9907594919204712">
+                    <pc:Unicode>niere dont ces cordes frémiſſent, elle nous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,2037 2104,2037 2104,2137 525,2137"/>
+                <pc:TextEquiv conf="0.9841077923774719">
+                    <pc:Unicode>ramene, autant qu'il eſt poſſible, au ſon ut,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2128 2109,2128 2109,2224 527,2224"/>
+                <pc:TextEquiv conf="0.9613409042358398">
+                    <pc:Unicode>comme nvus lavons déjà obſervé; de ſorte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2222 2111,2222 2111,2324 527,2324"/>
+                <pc:TextEquiv conf="0.9897499084472656">
+                    <pc:Unicode>qu'elle nous force, pour ainſi dire, à donner</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="532,2315 2114,2315 2114,2411 532,2411"/>
+                <pc:TextEquiv conf="0.9935643076896667">
+                    <pc:Unicode>u dans le nouveau mode, la place de tier-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_3_region_id_3_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="531,2408 2114,2408 2114,2507 531,2507"/>
+                <pc:TextEquiv conf="0.9985106587409973">
+                    <pc:Unicode>ce mineure, qui eſt la principale de toutes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0018">
+                <pc:Coords points="525,2508 2067,2508 2067,2601 525,2601"/>
+                <pc:TextEquiv conf="0.9837949872016907">
+                    <pc:Unicode>celles qu'il y peut occuper.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Voici la réponſe à ces deux obſervations.
+1ꝰ. Le mode mineur de fa n'eſt pas ſi étran-
+XEiRctir
+ẽſt très - poſſible de faire ſuivre immédiate-
+ment, &amp; agréablement pour l'oreille, deux airs
+dont lun appartienne au mode majeur d'u,
+Tautre au mode mineur de fa. M. Rameau
+la exécuté dans la belle Sarabande de Pig-
+zr i e e 5
+nature ne fait que nous indiquer le mode mi-
+n ar le f émiſſement des cordes fa &amp; la h
+XXXXX:
+niere dont ces cordes frémiſſent, elle nous
+ramene, autant qu'il eſt poſſible, au ſon ut,
+comme nvus lavons déjà obſervé; de ſorte
+qu'elle nous force, pour ainſi dire, à donner
+u dans le nouveau mode, la place de tier-
+ce mineure, qui eſt la principale de toutes
+celles qu'il y peut occuper.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="447,2607 447,2975 2153,2975 2147,2574 447,2607"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1374,2589 627,2604 627,2690 2113,2690 2113,2589 1374,2589"/>
+                <pc:TextEquiv conf="0.9942342042922974">
+                    <pc:Unicode>84. Dans tout mode majeur ou mineur, le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="534,2688 2115,2688 2115,2788 534,2788"/>
+                <pc:TextEquiv conf="0.9869711995124817">
+                    <pc:Unicode>ſon principal portant l accord parfait majeur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="535,2776 2115,2776 2115,2880 535,2880"/>
+                <pc:TextEquiv conf="0.9847990274429321">
+                    <pc:Unicode>ou mineur, eſt appellè tonique; ainſi ut eſt toni-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-081_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="538,2871 2125,2871 2125,2975 538,2975"/>
+                <pc:TextEquiv conf="0.9735592603683472">
+                    <pc:Unicode>que dans le mode d'ut, la dans celui de la, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>84. Dans tout mode majeur ou mineur, le
+ſon principal portant l accord parfait majeur
+ou mineur, eſt appellè tonique; ainſi ut eſt toni-
+que dans le mode d'ut, la dans celui de la, &amp;c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

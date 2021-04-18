@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:42</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:42</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-028.png" imageWidth="2303" imageHeight="3572" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-028-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-028.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="272,242 2168,242 2168,3480 272,3480"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="480,220 480,335 1641,335 1641,220 480,220"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="504,243 1610,243 1610,331 504,331"/>
+                <pc:TextEquiv conf="0.7851171493530273">
+                    <pc:Unicode>TuroovEEr PArIovE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TuroovEEr PArIovE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1772,229 1772,345 1896,345 1896,229 1772,229"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1804,265 1858,265 1858,339 1804,339"/>
+                <pc:TextEquiv conf="0.7541564106941223">
+                    <pc:Unicode>5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>5</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="228,326 228,639 1850,639 1860,345 228,326"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,350 272,452 1856,452 1859,374 1859,350 272,350"/>
+                <pc:TextEquiv conf="0.9681666493415833">
+                    <pc:Unicode>lintervalle du mi au fa, ou du ſi à lut; &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,450 274,548 1853,548 1854,521 1854,450 274,450"/>
+                <pc:TextEquiv conf="0.9760687351226807">
+                    <pc:Unicode>ton lintervalle d'ut à re, celui de re à mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,539 1660,539 1660,639 276,639"/>
+                <pc:TextEquiv conf="0.9255452752113342">
+                    <pc:Unicode>de fa à ſol, de ſol à la, de la à ſi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>lintervalle du mi au fa, ou du ſi à lut; &amp;
+ton lintervalle d'ut à re, celui de re à mi,
+de fa à ſol, de ſol à la, de la à ſi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="262,620 262,805 650,812 829,830 893,815 1853,805 1853,620 262,620"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,635 1845,635 1845,730 294,730"/>
+                <pc:TextEquiv conf="0.9800533056259155">
+                    <pc:Unicode>Le ton s'appelle encore ſeconde majeure,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,726 276,805 720,819 876,819 1818,805 1818,726 276,726"/>
+                <pc:TextEquiv conf="0.9937887191772461">
+                    <pc:Unicode>&amp; le demi-ton, ſeconde mineue.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Le ton s'appelle encore ſeconde majeure,
+&amp; le demi-ton, ſeconde mineue.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="228,805 228,1400 1935,1400 1935,805 962,821 650,803 228,805"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="291,814 291,913 1865,913 1865,814 291,814"/>
+                <pc:TextEquiv conf="0.9769285321235657">
+                    <pc:Unicode>8. Deſcendre ou monterdiatoniquement, c' eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,910 1851,910 1851,1007 276,1007"/>
+                <pc:TextEquiv conf="0.997917115688324">
+                    <pc:Unicode>deſcendre ou monter d'un ſon à un autre par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1003 1852,1003 1852,1091 277,1091"/>
+                <pc:TextEquiv conf="0.9918733239173889">
+                    <pc:Unicode>lintervalle d'un ton ou d'un demi-ton, ou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1097 1850,1097 1850,1192 277,1192"/>
+                <pc:TextEquiv conf="0.9862995147705078">
+                    <pc:Unicode>en général de ſeconde, ſoit majeure ſoit mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1188 1849,1188 1849,1282 277,1282"/>
+                <pc:TextEquiv conf="0.9550462365150452">
+                    <pc:Unicode>neure, comme de re à ut, ou de ut à ré; de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,1280 1125,1280 1125,1375 272,1375"/>
+                <pc:TextEquiv conf="0.9925804734230042">
+                    <pc:Unicode>fa à mi, ou de mi à fa.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8. Deſcendre ou monterdiatoniquement, c' eſt
+deſcendre ou monter d'un ſon à un autre par
+lintervalle d'un ton ou d'un demi-ton, ou
+en général de ſeconde, ſoit majeure ſoit mi-
+neure, comme de re à ut, ou de ut à ré; de
+fa à mi, ou de mi à fa.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="259,1522 259,1890 1863,1944 1880,1522 259,1522"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="548,1537 1844,1537 1844,1645 548,1645"/>
+                <pc:TextEquiv conf="0.9251393675804138">
+                    <pc:Unicode>CHAPITREII.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="284,1713 284,1815 1868,1815 1871,1745 1871,1713 284,1713"/>
+                <pc:TextEquiv conf="0.9102879762649536">
+                    <pc:Unicode>Noms par leſquels on déſigne les diffrens</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="649,1814 649,1903 794,1908 1838,1908 1838,1814 649,1814"/>
+                <pc:TextEquiv conf="0.9921795129776001">
+                    <pc:Unicode>interalles de la gamme.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITREII.
+Noms par leſquels on déſigne les diffrens
+interalles de la gamme.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="194,1920 194,2258 1946,2258 1946,1920 194,1920"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1972 1856,1972 1856,2142 277,2142"/>
+                <pc:TextEquiv conf="0.290809690952301">
+                    <pc:Unicode>rX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="577,2071 1894,2071 1894,2163 577,2163"/>
+                <pc:TextEquiv conf="0.9771208763122559">
+                    <pc:Unicode>mi, comme mi ſol, ou la ut, ou re fa,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="276,2164 1856,2164 1856,2258 276,2258"/>
+                <pc:TextEquiv conf="0.9674494862556458">
+                    <pc:Unicode>Sappelle tierce mineure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>rX
+mi, comme mi ſol, ou la ut, ou re fa,
+Sappelle tierce mineure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="drop-capital">
+            <pc:Coords points="372,1932 372,2145 556,2145 556,1932 372,1932"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="383,1972 556,1972 556,2145 383,2145"/>
+                <pc:TextEquiv conf="0.44981008768081665">
+                    <pc:Unicode>U</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>U</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="259,2246 253,2520 1869,2508 1869,2246 259,2246"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,2246 1856,2246 1856,2349 276,2349"/>
+                <pc:TextEquiv conf="0.9872211813926697">
+                    <pc:Unicode>Un intervalle compoſé de deux tons,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="278,2347 1853,2347 1853,2445 278,2445"/>
+                <pc:TextEquiv conf="0.9749796390533447">
+                    <pc:Unicode>comme ut mi, ou fa la, ou ſol ſi, s'appelle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="279,2463 279,2518 522,2518 1829,2508 1829,2463 279,2463"/>
+                <pc:TextEquiv conf="0.7599412202835083">
+                    <pc:Unicode>tMerce maei/re.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de deux tons,
+comme ut mi, ou fa la, ou ſol ſi, s'appelle
+tMerce maei/re.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="324,2502 324,2632 1916,2632 1916,2502 324,2502"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="324,2502 1201,2502 1201,2557 324,2557"/>
+                <pc:TextEquiv conf="0.4762096107006073">
+                    <pc:Unicode>r</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="376,2529 1857,2529 1857,2632 376,2632"/>
+                <pc:TextEquiv conf="0.993259847164154">
+                    <pc:Unicode>Un intervalle compoſe de deux tons &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>r
+Un intervalle compoſe de deux tons &amp;</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footnote">
+            <pc:Coords points="199,2668 206,3049 1910,3025 1910,2668 199,2668"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,2701 1859,2701 1859,2776 274,2776"/>
+                <pc:TextEquiv conf="0.9753414392471313">
+                    <pc:Unicode>re, de re à mi, &amp; de fa à ſol, ſont égaux, il senſuit que les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="284,2768 1860,2768 1860,2836 284,2836"/>
+                <pc:TextEquiv conf="0.981753945350647">
+                    <pc:Unicode>intervalles de ſol à la &amp; de la à ſi ſont encore égaux à cha-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2832 1861,2832 1861,2951 285,2951"/>
+                <pc:TextEquiv conf="0.3826395273208618">
+                    <pc:Unicode>etritt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_11_region_id_11_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,2898 1865,2898 1865,2981 283,2981"/>
+                <pc:TextEquiv conf="0.953296959400177">
+                    <pc:Unicode>&amp; que les untervalles de mi à f &amp; eſ uſſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_11_region_id_11_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2968 272,3038 987,3038 1834,3026 1834,2968 272,2968"/>
+                <pc:TextEquiv conf="0.9293985962867737">
+                    <pc:Unicode>Kgaux, mais ne ſont qus la motié des autres.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>re, de re à mi, &amp; de fa à ſol, ſont égaux, il senſuit que les
+intervalles de ſol à la &amp; de la à ſi ſont encore égaux à cha-
+etritt
+&amp; que les untervalles de mi à f &amp; eſ uſſi
+Kgaux, mais ne ſont qus la motié des autres.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="footer">
+            <pc:Coords points="1393,3019 1393,3125 1625,3125 1625,3019 1393,3019"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1437,3024 1584,3024 1584,3121 1437,3121"/>
+                <pc:TextEquiv conf="0.851399838924408">
+                    <pc:Unicode>Aij</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Aij</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="marginalia">
+            <pc:Coords points="1845,399 1845,672 2183,672 2183,399 1845,399"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_13_region_id_13_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1851,400 2164,400 2164,509 1851,509"/>
+                <pc:TextEquiv conf="0.8136515021324158">
+                    <pc:Unicode>oyer /a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_13_region_id_13_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1851,505 2156,505 2156,572 1851,572"/>
+                <pc:TextEquiv conf="0.9468483924865723">
+                    <pc:Unicode>figure ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-028_region_id_13_region_id_13_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1881,572 2071,572 2071,638 1881,638"/>
+                <pc:TextEquiv conf="0.8275347948074341">
+                    <pc:Unicode>quee As</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>oyer /a
+figure ma-
+quee As</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_5">
+            <pc:Coords points="281,1410 281,1519 1888,1519 1888,1410 281,1410"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

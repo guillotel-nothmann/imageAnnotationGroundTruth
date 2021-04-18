@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:56</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:56</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-055.png" imageWidth="2303" imageHeight="3554" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-055-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-055.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="533,251 2170,251 2170,3039 533,3039"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="491,226 491,364 663,364 663,226 491,226"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="533,281 625,281 625,356 533,356"/>
+                <pc:TextEquiv conf="0.9680856466293335">
+                    <pc:Unicode>32</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>32</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="730,232 735,337 1869,337 1886,238 730,232"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="764,252 1855,252 1855,337 764,337"/>
+                <pc:TextEquiv conf="0.7349408864974976">
+                    <pc:Unicode>E1.EMENS DE MSs1vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E1.EMENS DE MSs1vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="525,375 2129,348 2174,1360 540,1377 525,375"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1416,360 534,375 534,458 2101,458 2101,360 1416,360"/>
+                <pc:TextEquiv conf="0.9766119122505188">
+                    <pc:Unicode>des, c'eſt-à- dire de deux échelles diatoni-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="540,456 2100,456 2100,554 540,554"/>
+                <pc:TextEquiv conf="0.9620265364646912">
+                    <pc:Unicode>q d atre ſons chacune ſi ut re mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,488 2108,488 2108,647 547,647"/>
+                <pc:TextEquiv conf="0.30669695138931274">
+                    <pc:Unicode>ei r ri ci Er:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,637 2107,637 2107,744 547,744"/>
+                <pc:TextEquiv conf="0.9968189001083374">
+                    <pc:Unicode>parfaitement ſemblables; car du mi au fa,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,729 2115,729 2115,834 550,834"/>
+                <pc:TextEquiv conf="0.9739426374435425">
+                    <pc:Unicode>il y a même intervalle que du ſi à lut; du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="540,820 2127,820 2127,929 540,929"/>
+                <pc:TextEquiv conf="0.9599736332893372">
+                    <pc:Unicode>fa au ſol, le même que de lut au ré; du ſol</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="558,914 2119,914 2119,1011 558,1011"/>
+                <pc:TextEquiv conf="0.9687470197677612">
+                    <pc:Unicode>au la, le même que du re au m (n); voilà</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="561,1006 2121,1006 2121,1110 561,1110"/>
+                <pc:TextEquiv conf="0.9921979904174805">
+                    <pc:Unicode>pourquoi les Grecs diſtinguoient ces deux</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="565,1100 2126,1100 2126,1195 565,1195"/>
+                <pc:TextEquiv conf="0.990563690662384">
+                    <pc:Unicode>tétracordes, &amp; les joignoient cependant par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="569,1191 2128,1191 2128,1288 569,1288"/>
+                <pc:TextEquiv conf="0.9975360631942749">
+                    <pc:Unicode>le ſon mi, qui leur eſt commun, ce qui leur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="567,1284 567,1363 1886,1363 2132,1360 2132,1284 567,1284"/>
+                <pc:TextEquiv conf="0.9856402277946472">
+                    <pc:Unicode>a fait donner le nom de tetracordes conjoints.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>des, c'eſt-à- dire de deux échelles diatoni-
+q d atre ſons chacune ſi ut re mi
+ei r ri ci Er:
+parfaitement ſemblables; car du mi au fa,
+il y a même intervalle que du ſi à lut; du
+fa au ſol, le même que de lut au ré; du ſol
+au la, le même que du re au m (n); voilà
+pourquoi les Grecs diſtinguoient ces deux
+tétracordes, &amp; les joignoient cependant par
+le ſon mi, qui leur eſt commun, ce qui leur
+a fait donner le nom de tetracordes conjoints.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="552,1377 2157,1355 2163,2130 552,2130 552,1377"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1646,1362 671,1375 671,1476 2131,1476 2131,1362 1646,1362"/>
+                <pc:TextEquiv conf="0.9929007291793823">
+                    <pc:Unicode>51. De plus, les intervalles de deux ſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="570,1466 2134,1466 2134,1630 570,1630"/>
+                <pc:TextEquiv conf="0.4316907823085785">
+                    <pc:Unicode>eXXX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="570,1557 2137,1557 2137,1661 570,1661"/>
+                <pc:TextEquiv conf="0.9990398287773132">
+                    <pc:Unicode>en particulier, ſont parfaitement juſtes: ainſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="571,1652 2141,1652 2141,1750 571,1750"/>
+                <pc:TextEquiv conf="0.9943152666091919">
+                    <pc:Unicode>dans le premier tétracorde les intervalles ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="573,1747 2138,1747 2138,1844 573,1844"/>
+                <pc:TextEquiv conf="0.961185097694397">
+                    <pc:Unicode>mi &amp; ſi ré, ſont des tierces, l'una majeure,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="577,1835 2143,1835 2143,1931 577,1931"/>
+                <pc:TextEquiv conf="0.9970254898071289">
+                    <pc:Unicode>lautre mineure, parfaitement juſtes, auſſi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="582,1928 2145,1928 2145,2026 582,2026"/>
+                <pc:TextEquiv conf="0.9866809844970703">
+                    <pc:Unicode>bien que la quarte ſi mi (o); il en eſt de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="586,2020 2147,2020 2147,2115 586,2115"/>
+                <pc:TextEquiv conf="0.9737703204154968">
+                    <pc:Unicode>même dans le tétracorde mi, fa, ſol, la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>51. De plus, les intervalles de deux ſon
+eXXX
+en particulier, ſont parfaitement juſtes: ainſi
+dans le premier tétracorde les intervalles ut
+mi &amp; ſi ré, ſont des tierces, l'una majeure,
+lautre mineure, parfaitement juſtes, auſſi-
+bien que la quarte ſi mi (o); il en eſt de
+même dans le tétracorde mi, fa, ſol, la,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="608,2229 573,3049 2000,3037 2186,3042 2174,2168 608,2229"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1301,2202 661,2227 661,2284 2154,2284 2154,2202 1301,2202"/>
+                <pc:TextEquiv conf="0.951263427734375">
+                    <pc:Unicode>n) Le rapport du ſi à lut eſt de à1, ceſt-à dire de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="605,2290 603,2346 603,2374 2157,2374 2157,2290 605,2290"/>
+                <pc:TextEquiv conf="0.9452109336853027">
+                    <pc:Unicode>15 à 16; celui du mi au ſa eſt de à , ceſt- à · dire ( Mo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="602,2374 600,2416 600,2443 2157,2443 2157,2374 602,2374"/>
+                <pc:TextEquiv conf="0.9686278104782104">
+                    <pc:Unicode>te d) de 5 fois 3 à 4 fois 4, ou de 15 à 16: donc ces deux</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="599,2440 598,2463 598,2512 2160,2512 2160,2440 599,2440"/>
+                <pc:TextEquiv conf="0.9816515445709229">
+                    <pc:Unicode>rapports ſont égaux. De même le rapport de ut à e eſt ce-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="599,2505 2160,2505 2160,2588 599,2588"/>
+                <pc:TextEquiv conf="0.9487282633781433">
+                    <pc:Unicode>lui de 1 à? ou de 8 à 9: celui de fa à ſol eſt de à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="600,2585 2163,2585 2163,2655 600,2655"/>
+                <pc:TextEquiv conf="0.968026876449585">
+                    <pc:Unicode>ceſt- à- dire (Note d) de 8 à 9. Le rapport de mi à ut eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="603,2652 2166,2652 2166,2739 603,2739"/>
+                <pc:TextEquiv conf="0.9371517300605774">
+                    <pc:Unicode>de à 1ou de 5 à 4; celui de la à fa eſt de à , ceſt-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2734 1329,2734 1329,2804 606,2804"/>
+                <pc:TextEquiv conf="0.9328522086143494">
+                    <pc:Unicode>à-dire de 5 à 4: donc, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="676,2802 2168,2802 2168,2889 676,2889"/>
+                <pc:TextEquiv conf="0.9738486409187317">
+                    <pc:Unicode>(o) Lintervalle de mi à ut eſt de à 1ou de 5 à 4, tier-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="594,2886 2168,2886 2168,2969 594,2969"/>
+                <pc:TextEquiv conf="0.9512708783149719">
+                    <pc:Unicode>ce majeure juſte; celui de re à eſt de? à , ceſt à · dire</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2969 606,3039 2170,3039 2170,2969 606,2969"/>
+                <pc:TextEquiv conf="0.950395941734314">
+                    <pc:Unicode>de 9 fois 16 à 15 fois 8, ou de 9 fois 2 à 15,ou de 6 à 5,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>n) Le rapport du ſi à lut eſt de à1, ceſt-à dire de
+15 à 16; celui du mi au ſa eſt de à , ceſt- à · dire ( Mo-
+te d) de 5 fois 3 à 4 fois 4, ou de 15 à 16: donc ces deux
+rapports ſont égaux. De même le rapport de ut à e eſt ce-
+lui de 1 à? ou de 8 à 9: celui de fa à ſol eſt de à
+ceſt- à- dire (Note d) de 8 à 9. Le rapport de mi à ut eſt
+de à 1ou de 5 à 4; celui de la à fa eſt de à , ceſt-
+à-dire de 5 à 4: donc, &amp;c.
+(o) Lintervalle de mi à ut eſt de à 1ou de 5 à 4, tier-
+ce majeure juſte; celui de re à eſt de? à , ceſt à · dire
+de 9 fois 16 à 15 fois 8, ou de 9 fois 2 à 15,ou de 6 à 5,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="598,2202 2157,2202 2182,2774 587,2797 598,2202"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="661,2202 2154,2202 2154,2284 661,2284"/>
+                <pc:TextEquiv conf="0.9264522194862366">
+                    <pc:Unicode>(n) Le rapport du à lut eſt de à1, ceſt- à dire de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="602,2290 2157,2290 2157,2374 602,2374"/>
+                <pc:TextEquiv conf="0.9466267228126526">
+                    <pc:Unicode>15 à 16; celui du mi au ſa eſt de à , ceſt- à · dire (Mo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="598,2374 2157,2374 2157,2443 598,2443"/>
+                <pc:TextEquiv conf="0.9676874279975891">
+                    <pc:Unicode>te d) de fois 3 à 4 fois 4, ou de 15 à 16: donc ces deux</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="598,2440 2160,2440 2160,2512 598,2512"/>
+                <pc:TextEquiv conf="0.9816515445709229">
+                    <pc:Unicode>rapports ſont égaux. De même le rapport de ut à e eſt ce-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="599,2505 2160,2505 2160,2588 599,2588"/>
+                <pc:TextEquiv conf="0.9487282633781433">
+                    <pc:Unicode>lui de 1 à? ou de 8 à 9: celui de fa à ſol eſt de à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="600,2585 2163,2585 2163,2655 600,2655"/>
+                <pc:TextEquiv conf="0.968026876449585">
+                    <pc:Unicode>ceſt- à- dire (Note d) de 8 à 9. Le rapport de mi à ut eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="603,2652 2166,2652 2166,2739 603,2739"/>
+                <pc:TextEquiv conf="0.9371517300605774">
+                    <pc:Unicode>de à 1ou de 5 à 4; celui de la à fa eſt de à , ceſt-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2734 606,2793 864,2793 1329,2786 1329,2734 606,2734"/>
+                <pc:TextEquiv conf="0.9142758846282959">
+                    <pc:Unicode>à-dire de à a: donc. cc.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(n) Le rapport du à lut eſt de à1, ceſt- à dire de
+15 à 16; celui du mi au ſa eſt de à , ceſt- à · dire (Mo-
+te d) de fois 3 à 4 fois 4, ou de 15 à 16: donc ces deux
+rapports ſont égaux. De même le rapport de ut à e eſt ce-
+lui de 1 à? ou de 8 à 9: celui de fa à ſol eſt de à
+ceſt- à- dire (Note d) de 8 à 9. Le rapport de mi à ut eſt
+de à 1ou de 5 à 4; celui de la à fa eſt de à , ceſt-
+à-dire de à a: donc. cc.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="656,2876 611,2890 569,3054 1890,3048 2036,3022 2039,3029 2190,3054 2190,2799 682,2793 656,2876"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="682,2794 676,2812 676,2889 2168,2889 2168,2799 933,2794 682,2794"/>
+                <pc:TextEquiv conf="0.9624082446098328">
+                    <pc:Unicode>(o) Lintervalle de mi à ut eſt de à 1 ou de5 à 4, tier-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="624,2886 611,2890 609,2898 609,2969 2168,2969 2168,2886 624,2886"/>
+                <pc:TextEquiv conf="0.9600942730903625">
+                    <pc:Unicode>ce majeure juſte; celui de re à eſt de à , ceſt à- dire</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-055_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2969 606,3039 2170,3039 2170,2969 606,2969"/>
+                <pc:TextEquiv conf="0.9519197940826416">
+                    <pc:Unicode>de 9 fois 16 à 15 fois 8, ou de 9 fois 2 à 15,ou de 6 à 5,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(o) Lintervalle de mi à ut eſt de à 1 ou de5 à 4, tier-
+ce majeure juſte; celui de re à eſt de à , ceſt à- dire
+de 9 fois 16 à 15 fois 8, ou de 9 fois 2 à 15,ou de 6 à 5,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footer">
+            <pc:Coords points="1889,3053 1889,3135 2176,3135 2176,3053 2053,3028 2039,3029 2000,3037 2002,3032 1889,3053"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:44</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:44</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-096.png" imageWidth="2303" imageHeight="3593" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-096-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-096.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="261,246 1858,246 1858,3049 261,3049"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="450,222 450,341 1562,341 1562,222 450,222"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="469,247 1559,247 1559,338 469,338"/>
+                <pc:TextEquiv conf="0.699669599533081">
+                    <pc:Unicode>Turoiovrer PAriov.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Turoiovrer PAriov.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1753,216 1753,353 1872,353 1872,216 1753,216"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1756,260 1851,260 1851,338 1756,338"/>
+                <pc:TextEquiv conf="0.9090532064437866">
+                    <pc:Unicode>73</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>73</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="248,348 235,437 1687,437 1687,323 248,348"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="275,361 1674,361 1674,437 275,437"/>
+                <pc:TextEquiv conf="0.9938220381736755">
+                    <pc:Unicode>tierces mineures ſuivies d'une majeure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>tierces mineures ſuivies d'une majeure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" custom="list" type="other">
+            <pc:Coords points="215,357 215,441 1703,441 1703,357 215,357"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="275,361 1674,361 1674,441 275,441"/>
+                <pc:TextEquiv conf="0.9913578629493713">
+                    <pc:Unicode>tierces mineures ſuivies d'une majeure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>tierces mineures ſuivies d'une majeure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="259,461 212,1471 1908,1453 1873,431 259,461"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="851,450 285,461 285,553 1848,553 1848,450 851,450"/>
+                <pc:TextEquiv conf="0.9698212146759033">
+                    <pc:Unicode>114. Il y a encore deux eſpeces d'accords</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,547 1847,547 1847,647 272,647"/>
+                <pc:TextEquiv conf="0.9592607021331787">
+                    <pc:Unicode>de ſeptiéme qu' on employe dans l'harmonie;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,643 1851,643 1851,738 273,738"/>
+                <pc:TextEquiv conf="0.987204909324646">
+                    <pc:Unicode>l'un eſt compoſé d'une tierce mineure entre</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,732 1849,732 1849,829 273,829"/>
+                <pc:TextEquiv conf="0.9833507537841797">
+                    <pc:Unicode>deux majeures, ut mi ſol ſi, ou fa la ut mi;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,827 1852,827 1852,921 274,921"/>
+                <pc:TextEquiv conf="0.9794367551803589">
+                    <pc:Unicode>l'autre eſt tout compoſé de tjerces mineu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="276,917 1854,917 1854,1021 276,1021"/>
+                <pc:TextEquiv conf="0.959029495716095">
+                    <pc:Unicode>res ſol ſi re fa. Ces deux accords, qui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="275,1009 1853,1009 1853,1111 275,1111"/>
+                <pc:TextEquiv conf="0.9922947883605957">
+                    <pc:Unicode>d'abord ne paroiſſent point devoir entrer dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,1104 1854,1104 1854,1199 271,1199"/>
+                <pc:TextEquiv conf="0.9842234253883362">
+                    <pc:Unicode>lharmonie, ſi on s'en tient aux regles précé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,1196 1853,1196 1853,1289 273,1289"/>
+                <pc:TextEquiv conf="0.9862374067306519">
+                    <pc:Unicode>dentes, ſont néanmoins ſouvent pratiqués</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,1289 1852,1289 1852,1371 270,1371"/>
+                <pc:TextEquiv conf="0.9798789024353027">
+                    <pc:Unicode>avee ſuccès dans la haſſe fondamentale. En</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:Coords points="271,1390 271,1466 683,1466 1612,1456 1612,1390 271,1390"/>
+                <pc:TextEquiv conf="0.9967703223228455">
+                    <pc:Unicode>voici la raiſon.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>114. Il y a encore deux eſpeces d'accords
+de ſeptiéme qu' on employe dans l'harmonie;
+l'un eſt compoſé d'une tierce mineure entre
+deux majeures, ut mi ſol ſi, ou fa la ut mi;
+l'autre eſt tout compoſé de tjerces mineu-
+res ſol ſi re fa. Ces deux accords, qui
+d'abord ne paroiſſent point devoir entrer dans
+lharmonie, ſi on s'en tient aux regles précé-
+dentes, ſont néanmoins ſouvent pratiqués
+avee ſuccès dans la haſſe fondamentale. En
+voici la raiſon.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="248,1465 247,2970 720,2959 702,2893 1909,2875 1915,1453 248,1465"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="377,1471 1853,1471 1853,1575 377,1575"/>
+                <pc:TextEquiv conf="0.9866179823875427">
+                    <pc:Unicode>115. Suivant ce qui a été dit ci- deſſus, ſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,1567 1856,1567 1856,1667 273,1667"/>
+                <pc:TextEquiv conf="0.9800214171409607">
+                    <pc:Unicode>on veut ajoûter une ſeptiéme à l'accord ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,1664 1854,1664 1854,1762 270,1762"/>
+                <pc:TextEquiv conf="0.9959831237792969">
+                    <pc:Unicode>mi ſol, pour faire de ut une dominante, on</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,1758 1857,1758 1857,1855 270,1855"/>
+                <pc:TextEquiv conf="0.9656273722648621">
+                    <pc:Unicode>ne peut y ajoûter que ſih, &amp; en ce cas ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,1849 1853,1849 1853,1948 268,1948"/>
+                <pc:TextEquiv conf="0.9806394577026367">
+                    <pc:Unicode>mi ſol ſi , ſeroit l'accord de dominante to-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,1937 1851,1937 1851,2040 267,2040"/>
+                <pc:TextEquiv conf="0.9794151186943054">
+                    <pc:Unicode>nique dans le mode de fa, comme ſol ſi re fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2032 1852,2032 1852,2110 270,2110"/>
+                <pc:TextEquiv conf="0.9986627101898193">
+                    <pc:Unicode>eſt accord de dominante tonique dans le mo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,2060 1854,2060 1854,2214 269,2214"/>
+                <pc:TextEquiv conf="0.3951338827610016">
+                    <pc:Unicode>H  : XN</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:Coords points="264,2216 1849,2216 1849,2301 264,2301"/>
+                <pc:TextEquiv conf="0.9940521121025085">
+                    <pc:Unicode>ſion du mode d'ut dans l'harmonie, alors on</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2306 1850,2306 1850,2414 261,2414"/>
+                <pc:TextEquiv conf="0.9722915887832642">
+                    <pc:Unicode>change ce ſi en ſi naturel, &amp; l'accord ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2399 1846,2399 1846,2506 261,2506"/>
+                <pc:TextEquiv conf="0.9830004572868347">
+                    <pc:Unicode>mi ſol ſi devient ut mi ſol ſi. Il en eſt de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,2492 1847,2492 1847,2591 269,2591"/>
+                <pc:TextEquiv conf="0.9827465415000916">
+                    <pc:Unicode>même de l'accord fa la ut mi, qui n'eſt au-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2584 1849,2584 1849,2687 270,2687"/>
+                <pc:TextEquiv conf="0.976818323135376">
+                    <pc:Unicode>tre choſe que laccord fa la ut mih, dans le-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2678 1846,2678 1846,2783 270,2783"/>
+                <pc:TextEquiv conf="0.9943466186523438">
+                    <pc:Unicode>quel on ſubſtitue au mi , le mi naturel pour</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2769 1842,2769 1842,2875 272,2875"/>
+                <pc:TextEquiv conf="0.9902600049972534">
+                    <pc:Unicode>conſerver l'impreſſion du mode d'ut, ou du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-096_region_id_5_region_id_5_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2873 270,2963 548,2963 690,2960 690,2873 270,2873"/>
+                <pc:TextEquiv conf="0.9854221940040588">
+                    <pc:Unicode>mode de fa.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>115. Suivant ce qui a été dit ci- deſſus, ſi
+on veut ajoûter une ſeptiéme à l'accord ut
+mi ſol, pour faire de ut une dominante, on
+ne peut y ajoûter que ſih, &amp; en ce cas ut
+mi ſol ſi , ſeroit l'accord de dominante to-
+nique dans le mode de fa, comme ſol ſi re fa
+eſt accord de dominante tonique dans le mo-
+H  : XN
+ſion du mode d'ut dans l'harmonie, alors on
+change ce ſi en ſi naturel, &amp; l'accord ut
+mi ſol ſi devient ut mi ſol ſi. Il en eſt de
+même de l'accord fa la ut mi, qui n'eſt au-
+tre choſe que laccord fa la ut mih, dans le-
+quel on ſubſtitue au mi , le mi naturel pour
+conſerver l'impreſſion du mode d'ut, ou du
+mode de fa.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="325,2959 331,3066 1902,3066 1843,2929 720,2959 325,2959"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="907,2954 371,2959 371,3049 1854,3049 1854,2955 1854,2954 907,2954"/>
+                <pc:TextEquiv conf="0.9506338834762573">
+                    <pc:Unicode>116. A légard de laccord de ſeptiéme ſol</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>116. A légard de laccord de ſeptiéme ſol</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

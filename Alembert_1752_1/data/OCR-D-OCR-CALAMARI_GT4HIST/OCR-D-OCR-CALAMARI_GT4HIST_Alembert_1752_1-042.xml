@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:21</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:21</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-042.png" imageWidth="2303" imageHeight="3587" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-042-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-042.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="272,257 1915,257 1915,3484 272,3484"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="485,211 485,337 1634,337 1634,211 485,211"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="512,257 1630,257 1630,334 512,334"/>
+                <pc:TextEquiv conf="0.7926653027534485">
+                    <pc:Unicode>TEontovE Er PRArIovE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TEontovE Er PRArIovE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1760,222 1760,353 1876,353 1876,222 1760,222"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1767,257 1866,257 1866,347 1767,347"/>
+                <pc:TextEquiv conf="0.9899356365203857">
+                    <pc:Unicode>19</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>19</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="263,353 282,1423 399,1374 1888,1386 1897,353 263,353"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="309,361 1859,361 1859,452 309,452"/>
+                <pc:TextEquiv conf="0.9875965714454651">
+                    <pc:Unicode>27. Par la même raiſon le chant formé</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,452 1857,452 1857,547 272,547"/>
+                <pc:TextEquiv conf="0.9784544706344604">
+                    <pc:Unicode>'ut, de loctave de ſol &amp; de la double oc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,549 1860,549 1860,643 280,643"/>
+                <pc:TextEquiv conf="0.9730084538459778">
+                    <pc:Unicode>tave de mi, entonnées l'une après l'autre,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,641 1857,641 1857,738 280,738"/>
+                <pc:TextEquiv conf="0.9989752769470215">
+                    <pc:Unicode>ſeroit auſſi le chant le plus ſimple &amp; le plus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,734 1862,734 1862,823 280,823"/>
+                <pc:TextEquiv conf="0.990393877029419">
+                    <pc:Unicode>naturel de tous, ſi notre voix avoit aſſez</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,827 1862,827 1862,925 280,925"/>
+                <pc:TextEquiv conf="0.9793161153793335">
+                    <pc:Unicode>d'étenduë pour former ſans peine d'auſſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,923 1863,923 1863,1019 283,1019"/>
+                <pc:TextEquiv conf="0.9962795376777649">
+                    <pc:Unicode>grands intervalles: mais la liberté &amp; la fa-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="284,1015 1866,1015 1866,1109 284,1109"/>
+                <pc:TextEquiv conf="0.9910158514976501">
+                    <pc:Unicode>cilité que nous avons de ſubſtituer à un ſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="287,1109 1868,1109 1868,1203 287,1203"/>
+                <pc:TextEquiv conf="0.9985718131065369">
+                    <pc:Unicode>ſon octave, lorſque cela eſt plus commode</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1201 1871,1201 1871,1297 290,1297"/>
+                <pc:TextEquiv conf="0.9947769641876221">
+                    <pc:Unicode>à notre voix, nous fournit un moyen de re-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="293,1296 293,1394 351,1394 1559,1383 1559,1296 293,1296"/>
+                <pc:TextEquiv conf="0.9833697080612183">
+                    <pc:Unicode>préſenter ce chant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>27. Par la même raiſon le chant formé
+'ut, de loctave de ſol &amp; de la double oc-
+tave de mi, entonnées l'une après l'autre,
+ſeroit auſſi le chant le plus ſimple &amp; le plus
+naturel de tous, ſi notre voix avoit aſſez
+d'étenduë pour former ſans peine d'auſſi
+grands intervalles: mais la liberté &amp; la fa-
+cilité que nous avons de ſubſtituer à un ſon
+ſon octave, lorſque cela eſt plus commode
+à notre voix, nous fournit un moyen de re-
+préſenter ce chant.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="393,1374 226,1487 285,2227 1895,2208 1895,1349 393,1374"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="388,1390 1874,1390 1874,1484 388,1484"/>
+                <pc:TextEquiv conf="0.9825743436813354">
+                    <pc:Unicode>Ceſt pour cela qu'après avoir entonné le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,1484 1878,1484 1878,1564 294,1564"/>
+                <pc:TextEquiv conf="0.9940565228462219">
+                    <pc:Unicode>ſon ut, nous entonnons naturellemen la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="300,1576 1881,1576 1881,1670 300,1670"/>
+                <pc:TextEquiv conf="0.9951746463775635">
+                    <pc:Unicode>tierce mi &amp; la quinte ſol, au lieu de la dou-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="297,1668 1882,1668 1882,1761 297,1761"/>
+                <pc:TextEquiv conf="0.9923688769340515">
+                    <pc:Unicode>ble octave de mi, &amp; de loctave de ſol;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="300,1761 1885,1761 1885,1857 300,1857"/>
+                <pc:TextEquiv conf="0.9822024703025818">
+                    <pc:Unicode>d'où nous formons, en y joignant l'octave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="304,1789 1887,1789 1887,1951 304,1951"/>
+                <pc:TextEquiv conf="0.32371029257774353">
+                    <pc:Unicode>XR:uX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="305,1949 1890,1949 1890,2043 305,2043"/>
+                <pc:TextEquiv conf="0.9971671104431152">
+                    <pc:Unicode>en effet le plus ſimple &amp; le plus facile de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="318,2042 1895,2042 1895,2134 318,2134"/>
+                <pc:TextEquiv conf="0.9984637498855591">
+                    <pc:Unicode>tous; auſſi a-t-il ſon origine dans la reſon-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="315,2133 315,2219 963,2219 1400,2214 1400,2133 315,2133"/>
+                <pc:TextEquiv conf="0.9876909852027893">
+                    <pc:Unicode>nance même du corps ſonore.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ceſt pour cela qu'après avoir entonné le
+ſon ut, nous entonnons naturellemen la
+tierce mi &amp; la quinte ſol, au lieu de la dou-
+ble octave de mi, &amp; de loctave de ſol;
+d'où nous formons, en y joignant l'octave
+XR:uX
+en effet le plus ſimple &amp; le plus facile de
+tous; auſſi a-t-il ſon origine dans la reſon-
+nance même du corps ſonore.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="262,2215 255,2411 1937,2411 1932,2209 262,2215"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="320,2221 1891,2221 1891,2324 320,2324"/>
+                <pc:TextEquiv conf="0.9890201091766357">
+                    <pc:Unicode>28. Ce chant ut, mi, ſol, ut, dans lequel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="318,2319 1898,2319 1898,2411 318,2411"/>
+                <pc:TextEquiv conf="0.9882380962371826">
+                    <pc:Unicode>la tierce ut mi eſt majeure, conſtitue ce qu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>28. Ce chant ut, mi, ſol, ut, dans lequel
+la tierce ut mi eſt majeure, conſtitue ce qu-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footnote">
+            <pc:Coords points="291,2435 291,3091 1443,3109 1496,3026 1962,3014 1955,2435 291,2435"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="319,2480 1898,2480 1898,2548 319,2548"/>
+                <pc:TextEquiv conf="0.9891856908798218">
+                    <pc:Unicode>mens d'une maniere propre à donner à cet accord tout ſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="321,2501 1898,2501 1898,2613 321,2613"/>
+                <pc:TextEquiv conf="0.4610058069229126">
+                    <pc:Unicode>XtX5XXX:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="323,2614 1895,2614 1895,2683 323,2683"/>
+                <pc:TextEquiv conf="0.9839948415756226">
+                    <pc:Unicode>dans lActe de Pygmalion, page 34. où Pygmalion chante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="323,2681 1899,2681 1899,2746 323,2746"/>
+                <pc:TextEquiv conf="0.9859287142753601">
+                    <pc:Unicode>avec le Chœur, l' Amour triompe, &amp;c. Dans cet endroit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="326,2745 1904,2745 1904,2811 326,2811"/>
+                <pc:TextEquiv conf="0.9989197254180908">
+                    <pc:Unicode>du Chœur, les deux parties de baſſe vocale &amp; inſtrumen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="330,2811 1907,2811 1907,2881 330,2881"/>
+                <pc:TextEquiv conf="0.9969410300254822">
+                    <pc:Unicode>tale rendent le ſon principal &amp; ſon octave; le premier deſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="322,2877 1905,2877 1905,2948 322,2948"/>
+                <pc:TextEquiv conf="0.9645843505859375">
+                    <pc:Unicode>ſus &amp; la partie de liaute - contre rendent la dix- ſeptiéme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="330,2944 330,3067 1470,3067 1915,3015 1915,2944 330,2944"/>
+                <pc:TextEquiv conf="0.36947259306907654">
+                    <pc:Unicode>5KttkXt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-042_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="332,3011 1407,3011 1407,3083 332,3083"/>
+                <pc:TextEquiv conf="0.9311302900314331">
+                    <pc:Unicode>nfin, le ſecond aeſſus rend la douzieme.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>mens d'une maniere propre à donner à cet accord tout ſon
+XtX5XXX:
+dans lActe de Pygmalion, page 34. où Pygmalion chante
+avec le Chœur, l' Amour triompe, &amp;c. Dans cet endroit
+du Chœur, les deux parties de baſſe vocale &amp; inſtrumen-
+tale rendent le ſon principal &amp; ſon octave; le premier deſ-
+ſus &amp; la partie de liaute - contre rendent la dix- ſeptiéme
+5KttkXt
+nfin, le ſecond aeſſus rend la douzieme.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footer">
+            <pc:Coords points="1503,3054 1503,3184 1648,3184 1648,3054 1503,3054"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1508,3074 1638,3074 1638,3172 1508,3172"/>
+                <pc:TextEquiv conf="0.9320264458656311">
+                    <pc:Unicode>Bij</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Bij</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:14:22</pc:Created>
+        <pc:LastChange>2021-01-15T15:14:22</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-065.png" imageWidth="2303" imageHeight="3533" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-065-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-065.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="498,244 2107,244 2107,3004 498,3004"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="473,224 473,340 605,340 605,224 473,224"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="498,262 592,262 592,334 498,334"/>
+                <pc:TextEquiv conf="0.9809337854385376">
+                    <pc:Unicode>42</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>42</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="704,202 704,340 1909,340 1931,274 1909,202 704,202"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="734,245 1860,245 1860,334 734,334"/>
+                <pc:TextEquiv conf="0.8185946345329285">
+                    <pc:Unicode>EIEMENSDE MSI0vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EIEMENSDE MSI0vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="440,356 440,648 2096,648 2096,356 1937,318 440,356"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1701,324 503,354 503,449 2064,449 2064,348 1962,324 1701,324"/>
+                <pc:TextEquiv conf="0.947677493095398">
+                    <pc:Unicode>dant ce ſ ſur le cla ec dt ot</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,385 2057,385 2057,538 506,538"/>
+                <pc:TextEquiv conf="0.3762599229812622">
+                    <pc:Unicode>iXii —</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="510,541 2059,541 2059,641 510,641"/>
+                <pc:TextEquiv conf="0.9535788297653198">
+                    <pc:Unicode>car tous les ſ X &amp; les VT ſont la même</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>dant ce ſ ſur le cla ec dt ot
+iXii —
+car tous les ſ X &amp; les VT ſont la même</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footnote">
+            <pc:Coords points="430,704 485,2998 2135,3075 2097,698 430,704"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,744 2064,744 2064,814 503,814"/>
+                <pc:TextEquiv conf="0.9530337452888489">
+                    <pc:Unicode>le &amp; 1T ſoient confondus. Cette fraction ſurpaſle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,811 2073,811 2073,896 511,896"/>
+                <pc:TextEquiv conf="0.927011251449585">
+                    <pc:Unicode>lunité deceſt à-dire d environ ,&amp; cette dif-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,893 2072,893 2072,963 511,963"/>
+                <pc:TextEquiv conf="0.9528728723526001">
+                    <pc:Unicode>férence a été nommée comma de Pytiagore. Il eſt viſible</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,959 2074,959 2074,1042 512,1042"/>
+                <pc:TextEquiv conf="0.9861766695976257">
+                    <pc:Unicode>que ce comma eſt beaucoup plus conſidérable que celuĩ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1024 2074,1024 2074,1093 514,1093"/>
+                <pc:TextEquiv conf="0.9551218152046204">
+                    <pc:Unicode>dont nous avons deja parle Mote p), &amp; qui neſt que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:Coords points="545,1094 560,1094 560,1117 545,1117"/>
+                <pc:TextEquiv conf="0.6026656627655029">
+                    <pc:Unicode>1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:Coords points="518,1122 602,1122 602,1169 518,1169"/>
+                <pc:TextEquiv conf="0.4645939767360687">
+                    <pc:Unicode>ẽõõ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="584,1188 2079,1188 2079,1306 584,1306"/>
+                <pc:TextEquiv conf="0.2996922731399536">
+                    <pc:Unicode>Xn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1256 2077,1256 2077,1329 517,1329"/>
+                <pc:TextEquiv conf="0.9682087302207947">
+                    <pc:Unicode>ne un ſi diftérent de lut. La progreſſion des tierces ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1320 2078,1320 2078,1388 520,1388"/>
+                <pc:TextEquiv conf="0.9744960069656372">
+                    <pc:Unicode>jeures en donne un autre encore plus différent. Car ſuppo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1383 2080,1383 2080,1451 518,1451"/>
+                <pc:TextEquiv conf="0.9780793190002441">
+                    <pc:Unicode>ſons cette progreſſion ut, mi, ſol , ſi X, on aura mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1447 2080,1447 2080,1532 514,1532"/>
+                <pc:TextEquiv conf="0.9425936341285706">
+                    <pc:Unicode>égal à, ſol à &amp; à , dont loctave au- deſſous eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,1529 2079,1529 2079,1626 523,1626"/>
+                <pc:TextEquiv conf="0.9810333251953125">
+                    <pc:Unicode>; doù lon voit que ce dernier ſi eſt plus petit que lu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1611 2081,1611 2081,1700 517,1700"/>
+                <pc:TextEquiv conf="0.9217334389686584">
+                    <pc:Unicode>mté (ceſt·à- dire que CT) de ʒ ou de à peu-près.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1696 2081,1696 2081,1772 522,1772"/>
+                <pc:TextEquiv conf="0.9831454157829285">
+                    <pc:Unicode>Nouveau comma beaucoup plus fort que le précédent, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1762 1617,1762 1617,1831 520,1831"/>
+                <pc:TextEquiv conf="0.9628982543945312">
+                    <pc:Unicode>que les Grecs ont nommé apotome majeur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:Coords points="587,1844 2084,1844 2084,1923 587,1923"/>
+                <pc:TextEquiv conf="0.9688740968704224">
+                    <pc:Unicode>De plus, ſi après avoir trouvé le ſol &amp; , on accorde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,1926 2086,1926 2086,1994 525,1994"/>
+                <pc:TextEquiv conf="0.9700337648391724">
+                    <pc:Unicode>enſuite par quintes &amp; par quartes, ſol , re , la X,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="528,1992 2082,1992 2082,2059 528,2059"/>
+                <pc:TextEquiv conf="0.9722636342048645">
+                    <pc:Unicode>mi , ſi &amp;, comme nous avons fait pour la premiere</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2058 2085,2058 2085,2140 527,2140"/>
+                <pc:TextEquiv conf="0.952812135219574">
+                    <pc:Unicode>progreſſion des quintes, on trouve que le i &amp; ſera ;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,2138 2090,2138 2090,2204 533,2204"/>
+                <pc:TextEquiv conf="0.9666740894317627">
+                    <pc:Unicode>donc ſa différence avec lunité, ceſt-à-dire avec T, eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,2207 1808,2207 1808,2241 574,2241"/>
+                <pc:TextEquiv conf="0.6422173976898193">
+                    <pc:Unicode>23 ſ i I rr li</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="536,2205 2091,2205 2091,2303 536,2303"/>
+                <pc:TextEquiv conf="0.9339107871055603">
+                    <pc:Unicode>4 Ceſt à dire environ comma plus petit que tous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="536,2284 2095,2284 2095,2354 536,2354"/>
+                <pc:TextEquiv conf="0.979063868522644">
+                    <pc:Unicode>les precédens, &amp; que les Grecs ont nomme apotome mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0024">
+                <pc:Coords points="540,2366 662,2366 662,2410 540,2410"/>
+                <pc:TextEquiv conf="0.8723066449165344">
+                    <pc:Unicode>neur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,2430 2097,2430 2097,2517 542,2517"/>
+                <pc:TextEquiv conf="0.9618056416511536">
+                    <pc:Unicode>Enfin, ſi après avoir trouvé mi égal à dans Ia pro-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="540,2515 2095,2515 2095,2592 540,2592"/>
+                <pc:TextEquiv conf="0.9992618560791016">
+                    <pc:Unicode>greſſion des tierces, on accorde enſuite par quintes &amp; par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="539,2582 2095,2582 2095,2661 539,2661"/>
+                <pc:TextEquiv conf="0.9867426753044128">
+                    <pc:Unicode>quartes, mi, ſi, fa , ut , &amp;c. on parviendra à un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0028">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0028.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,2644 2098,2644 2098,2730 542,2730"/>
+                <pc:TextEquiv conf="0.9579651355743408">
+                    <pc:Unicode>nouveau , qui ſera , &amp; qui ne differera de lu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0029">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0029.png" comments="binarized,clipped"/>
+                <pc:Coords points="544,2725 2095,2725 2095,2810 544,2810"/>
+                <pc:TextEquiv conf="0.974943220615387">
+                    <pc:Unicode>nité que d'environ dernier comma, le plus petit de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0030">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0030.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,2809 2100,2809 2100,2883 547,2883"/>
+                <pc:TextEquiv conf="0.997626006603241">
+                    <pc:Unicode>tous: mais il faut obſerver que dans ce cas, les tierces</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0031">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0031.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,2874 2106,2874 2106,2955 550,2955"/>
+                <pc:TextEquiv conf="0.9570408463478088">
+                    <pc:Unicode>majeures de mi à ſol , de ſol X à ſi Xou ut, &amp;c. ſont</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0032">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_3_region_id_3_line0032.png" comments="binarized,clipped"/>
+                <pc:Coords points="553,2937 553,3001 614,3004 1784,3004 1784,2937 553,2937"/>
+                <pc:TextEquiv conf="0.9455178380012512">
+                    <pc:Unicode>tres-fauſſes, &amp; tres-alterées.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>le &amp; 1T ſoient confondus. Cette fraction ſurpaſle
+lunité deceſt à-dire d environ ,&amp; cette dif-
+férence a été nommée comma de Pytiagore. Il eſt viſible
+que ce comma eſt beaucoup plus conſidérable que celuĩ
+dont nous avons deja parle Mote p), &amp; qui neſt que
+1
+ẽõõ
+Xn
+ne un ſi diftérent de lut. La progreſſion des tierces ma-
+jeures en donne un autre encore plus différent. Car ſuppo-
+ſons cette progreſſion ut, mi, ſol , ſi X, on aura mi
+égal à, ſol à &amp; à , dont loctave au- deſſous eſt
+; doù lon voit que ce dernier ſi eſt plus petit que lu-
+mté (ceſt·à- dire que CT) de ʒ ou de à peu-près.
+Nouveau comma beaucoup plus fort que le précédent, &amp;
+que les Grecs ont nommé apotome majeur.
+De plus, ſi après avoir trouvé le ſol &amp; , on accorde
+enſuite par quintes &amp; par quartes, ſol , re , la X,
+mi , ſi &amp;, comme nous avons fait pour la premiere
+progreſſion des quintes, on trouve que le i &amp; ſera ;
+donc ſa différence avec lunité, ceſt-à-dire avec T, eſt
+23 ſ i I rr li
+4 Ceſt à dire environ comma plus petit que tous
+les precédens, &amp; que les Grecs ont nomme apotome mi-
+neur.
+Enfin, ſi après avoir trouvé mi égal à dans Ia pro-
+greſſion des tierces, on accorde enſuite par quintes &amp; par
+quartes, mi, ſi, fa , ut , &amp;c. on parviendra à un
+nouveau , qui ſera , &amp; qui ne differera de lu-
+nité que d'environ dernier comma, le plus petit de
+tous: mais il faut obſerver que dans ce cas, les tierces
+majeures de mi à ſol , de ſol X à ſi Xou ut, &amp;c. ſont
+tres-fauſſes, &amp; tres-alterées.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="467,703 462,1171 2085,1143 2085,703 467,703"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,744 2064,744 2064,814 503,814"/>
+                <pc:TextEquiv conf="0.9530337452888489">
+                    <pc:Unicode>le &amp; 1T ſoient confondus. Cette fraction ſurpaſle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,811 2073,811 2073,896 511,896"/>
+                <pc:TextEquiv conf="0.927011251449585">
+                    <pc:Unicode>lunité deceſt à-dire d environ ,&amp; cette dif-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,893 2072,893 2072,963 511,963"/>
+                <pc:TextEquiv conf="0.9528728723526001">
+                    <pc:Unicode>férence a été nommée comma de Pytiagore. Il eſt viſible</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,959 2074,959 2074,1042 512,1042"/>
+                <pc:TextEquiv conf="0.9861766695976257">
+                    <pc:Unicode>que ce comma eſt beaucoup plus conſidérable que celuĩ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1024 2074,1024 2074,1093 514,1093"/>
+                <pc:TextEquiv conf="0.9551218152046204">
+                    <pc:Unicode>dont nous avons deja parle Mote p), &amp; qui neſt que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:Coords points="545,1094 560,1094 560,1117 545,1117"/>
+                <pc:TextEquiv conf="0.6026656627655029">
+                    <pc:Unicode>1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:Coords points="518,1122 518,1169 578,1169 602,1169 602,1122 518,1122"/>
+                <pc:TextEquiv conf="0.4645939767360687">
+                    <pc:Unicode>ẽõõ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>le &amp; 1T ſoient confondus. Cette fraction ſurpaſle
+lunité deceſt à-dire d environ ,&amp; cette dif-
+férence a été nommée comma de Pytiagore. Il eſt viſible
+que ce comma eſt beaucoup plus conſidérable que celuĩ
+dont nous avons deja parle Mote p), &amp; qui neſt que
+1
+ẽõõ</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="489,1181 490,1815 535,1832 1526,1834 1557,1822 2096,1825 2096,1181 1502,1143 489,1181"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="584,1188 2079,1188 2079,1306 584,1306"/>
+                <pc:TextEquiv conf="0.2996922731399536">
+                    <pc:Unicode>Xn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1256 2077,1256 2077,1329 517,1329"/>
+                <pc:TextEquiv conf="0.9682087302207947">
+                    <pc:Unicode>ne un ſi diftérent de lut. La progreſſion des tierces ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1320 2078,1320 2078,1388 520,1388"/>
+                <pc:TextEquiv conf="0.9744960069656372">
+                    <pc:Unicode>jeures en donne un autre encore plus différent. Car ſuppo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1383 2080,1383 2080,1451 518,1451"/>
+                <pc:TextEquiv conf="0.9780793190002441">
+                    <pc:Unicode>ſons cette progreſſion ut, mi, ſol , ſi X, on aura mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1447 2080,1447 2080,1532 514,1532"/>
+                <pc:TextEquiv conf="0.9425936341285706">
+                    <pc:Unicode>égal à, ſol à &amp; à , dont loctave au- deſſous eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="592,1529 2015,1529 2015,1562 592,1562"/>
+                <pc:TextEquiv conf="0.5486730933189392">
+                    <pc:Unicode>.N lR I . ſ ſ 1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,1531 2079,1531 2079,1626 523,1626"/>
+                <pc:TextEquiv conf="0.9707208871841431">
+                    <pc:Unicode>H, d ou lon voit que ce dermer ſi eſt plus petit que l u-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1611 2081,1611 2081,1700 517,1700"/>
+                <pc:TextEquiv conf="0.9217334389686584">
+                    <pc:Unicode>mté (ceſt·à- dire que CT) de ʒ ou de à peu-près.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,1696 2081,1696 2081,1765 522,1765"/>
+                <pc:TextEquiv conf="0.9813416004180908">
+                    <pc:Unicode>Nouveau comma beaucoup plus fort que le precédent, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1762 520,1826 532,1831 1534,1831 1617,1822 1617,1762 520,1762"/>
+                <pc:TextEquiv conf="0.9687501788139343">
+                    <pc:Unicode>que les Grecs ont nommé apotome majeur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Xn
+ne un ſi diftérent de lut. La progreſſion des tierces ma-
+jeures en donne un autre encore plus différent. Car ſuppo-
+ſons cette progreſſion ut, mi, ſol , ſi X, on aura mi
+égal à, ſol à &amp; à , dont loctave au- deſſous eſt
+.N lR I . ſ ſ 1
+H, d ou lon voit que ce dermer ſi eſt plus petit que l u-
+mté (ceſt·à- dire que CT) de ʒ ou de à peu-près.
+Nouveau comma beaucoup plus fort que le precédent, &amp;
+que les Grecs ont nommé apotome majeur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="506,1836 537,2411 719,2398 705,2365 2123,2373 2108,1834 506,1836"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="587,1844 2084,1844 2084,1923 587,1923"/>
+                <pc:TextEquiv conf="0.9688740968704224">
+                    <pc:Unicode>De plus, ſi après avoir trouvé le ſol &amp; , on accorde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,1926 2086,1926 2086,1994 525,1994"/>
+                <pc:TextEquiv conf="0.9700337648391724">
+                    <pc:Unicode>enſuite par quintes &amp; par quartes, ſol , re , la X,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="528,1992 2082,1992 2082,2059 528,2059"/>
+                <pc:TextEquiv conf="0.9722636342048645">
+                    <pc:Unicode>mi , ſi &amp;, comme nous avons fait pour la premiere</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2058 2085,2058 2085,2140 527,2140"/>
+                <pc:TextEquiv conf="0.952812135219574">
+                    <pc:Unicode>progreſſion des quintes, on trouve que le i &amp; ſera ;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,2138 2090,2138 2090,2204 533,2204"/>
+                <pc:TextEquiv conf="0.9666740894317627">
+                    <pc:Unicode>donc ſa différence avec lunité, ceſt-à-dire avec T, eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,2207 1808,2207 1808,2241 574,2241"/>
+                <pc:TextEquiv conf="0.6422173976898193">
+                    <pc:Unicode>23 ſ i I rr li</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="536,2205 2091,2205 2091,2303 536,2303"/>
+                <pc:TextEquiv conf="0.9339107871055603">
+                    <pc:Unicode>4 Ceſt à dire environ comma plus petit que tous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="536,2284 2095,2284 2095,2354 536,2354"/>
+                <pc:TextEquiv conf="0.979063868522644">
+                    <pc:Unicode>les precédens, &amp; que les Grecs ont nomme apotome mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:Coords points="540,2366 540,2409 565,2409 662,2402 662,2366 540,2366"/>
+                <pc:TextEquiv conf="0.9482870101928711">
+                    <pc:Unicode>neur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>De plus, ſi après avoir trouvé le ſol &amp; , on accorde
+enſuite par quintes &amp; par quartes, ſol , re , la X,
+mi , ſi &amp;, comme nous avons fait pour la premiere
+progreſſion des quintes, on trouve que le i &amp; ſera ;
+donc ſa différence avec lunité, ceſt-à-dire avec T, eſt
+23 ſ i I rr li
+4 Ceſt à dire environ comma plus petit que tous
+les precédens, &amp; que les Grecs ont nomme apotome mi-
+neur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="522,2415 512,3003 2036,3036 2135,2943 2112,2408 719,2398 522,2415"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,2430 2097,2430 2097,2517 542,2517"/>
+                <pc:TextEquiv conf="0.9618056416511536">
+                    <pc:Unicode>Enfin, ſi après avoir trouvé mi égal à dans Ia pro-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="540,2515 2095,2515 2095,2592 540,2592"/>
+                <pc:TextEquiv conf="0.9992618560791016">
+                    <pc:Unicode>greſſion des tierces, on accorde enſuite par quintes &amp; par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="539,2582 2095,2582 2095,2661 539,2661"/>
+                <pc:TextEquiv conf="0.9867426753044128">
+                    <pc:Unicode>quartes, mi, ſi, fa , ut , &amp;c. on parviendra à un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,2644 2098,2644 2098,2730 542,2730"/>
+                <pc:TextEquiv conf="0.9579651355743408">
+                    <pc:Unicode>nouveau , qui ſera , &amp; qui ne differera de lu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="544,2725 2095,2725 2095,2810 544,2810"/>
+                <pc:TextEquiv conf="0.974943220615387">
+                    <pc:Unicode>nité que d'environ dernier comma, le plus petit de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,2809 2100,2809 2100,2878 547,2878"/>
+                <pc:TextEquiv conf="0.9965305924415588">
+                    <pc:Unicode>tous: mais il faut obſerver que dans ce cas, les tierces</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,2874 2106,2874 2106,2946 550,2946"/>
+                <pc:TextEquiv conf="0.9569032788276672">
+                    <pc:Unicode>majeures de mi à ſol , de ſol X à ſi ou ut, &amp;c. ſont</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-065_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="553,2937 553,3004 558,3004 1784,3004 1784,2937 553,2937"/>
+                <pc:TextEquiv conf="0.9214540123939514">
+                    <pc:Unicode>très- fauſles, &amp; très alterées.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Enfin, ſi après avoir trouvé mi égal à dans Ia pro-
+greſſion des tierces, on accorde enſuite par quintes &amp; par
+quartes, mi, ſi, fa , ut , &amp;c. on parviendra à un
+nouveau , qui ſera , &amp; qui ne differera de lu-
+nité que d'environ dernier comma, le plus petit de
+tous: mais il faut obſerver que dans ce cas, les tierces
+majeures de mi à ſol , de ſol X à ſi ou ut, &amp;c. ſont
+très- fauſles, &amp; très alterées.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

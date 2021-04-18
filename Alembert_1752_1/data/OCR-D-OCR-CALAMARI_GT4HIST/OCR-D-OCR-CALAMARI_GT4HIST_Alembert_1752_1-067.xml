@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:14:27</pc:Created>
+        <pc:LastChange>2021-01-15T15:14:27</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-067.png" imageWidth="2303" imageHeight="3573" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-067-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-067.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="485,272 2076,272 2076,3080 485,3080"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="487,249 487,366 626,366 626,249 487,249"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="502,278 603,278 603,358 502,358"/>
+                <pc:TextEquiv conf="0.9992344379425049">
+                    <pc:Unicode>44</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>44</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="682,221 682,394 1862,394 1862,221 682,221"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="718,273 1836,273 1836,374 718,374"/>
+                <pc:TextEquiv conf="0.724400520324707">
+                    <pc:Unicode>ELEMENSDE MvsIOvE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ELEMENSDE MvsIOvE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="482,375 477,1329 571,1320 824,1311 821,1233 1235,1231 1823,1255 1885,1233 2096,1233 2084,388 482,375"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="507,383 507,491 2075,491 2075,388 1468,383 507,383"/>
+                <pc:TextEquiv conf="0.9799928665161133">
+                    <pc:Unicode>raiſon pour altérer l'une préférablement</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,474 2065,474 2065,577 504,577"/>
+                <pc:TextEquiv conf="0.9821421504020691">
+                    <pc:Unicode>Tautre, il s'enſuit que nous devons les alté-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,574 2070,574 2070,679 504,679"/>
+                <pc:TextEquiv conf="0.9897106885910034">
+                    <pc:Unicode>rer toutes également. Par ce moyen l'alté-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,663 2068,663 2068,770 503,770"/>
+                <pc:TextEquiv conf="0.9741848111152649">
+                    <pc:Unicode>ration ſe trouvant également répanduë ſur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,755 2074,755 2074,866 503,866"/>
+                <pc:TextEquiv conf="0.9995002746582031">
+                    <pc:Unicode>toutes les quintes, ſera preſque impercepti-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,842 2066,842 2066,958 500,958"/>
+                <pc:TextEquiv conf="0.9990635514259338">
+                    <pc:Unicode>ble pour chacune, &amp; ainſi la quinte qui eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,938 2069,938 2069,1042 501,1042"/>
+                <pc:TextEquiv conf="0.9918113350868225">
+                    <pc:Unicode>apres l'octave, la plus parfaite de toutes les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,1031 2068,1031 2068,1131 501,1131"/>
+                <pc:TextEquiv conf="0.9945347905158997">
+                    <pc:Unicode>conſonances, &amp; que nous ſommes forcés</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,1119 500,1234 1882,1234 2070,1233 2070,1119 500,1119"/>
+                <pc:TextEquiv conf="0.9806628823280334">
+                    <pc:Unicode>d'altérer, ne le ſera que le moins quil eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,1214 504,1314 740,1314 807,1312 807,1214 504,1214"/>
+                <pc:TextEquiv conf="0.9938489198684692">
+                    <pc:Unicode>poſſible.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>raiſon pour altérer l'une préférablement
+Tautre, il s'enſuit que nous devons les alté-
+rer toutes également. Par ce moyen l'alté-
+ration ſe trouvant également répanduë ſur
+toutes les quintes, ſera preſque impercepti-
+ble pour chacune, &amp; ainſi la quinte qui eſt
+apres l'octave, la plus parfaite de toutes les
+conſonances, &amp; que nous ſommes forcés
+d'altérer, ne le ſera que le moins quil eſt
+poſſible.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="500,1325 449,1897 472,2038 560,2048 696,2050 716,2048 731,2035 2090,2040 2080,1323 609,1298 500,1325"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="596,1309 596,1409 2066,1409 2066,1323 1256,1309 596,1309"/>
+                <pc:TextEquiv conf="0.9962993860244751">
+                    <pc:Unicode>67. Il eſt vrai que les tierces ſeront un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,1399 2066,1399 2066,1493 503,1493"/>
+                <pc:TextEquiv conf="0.9924677610397339">
+                    <pc:Unicode>peu dures, mais la tierce étant un intervalle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="502,1494 2070,1494 2070,1597 502,1597"/>
+                <pc:TextEquiv conf="0.9957234859466553">
+                    <pc:Unicode>moins conſonant que la quinte, il eſt néceſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,1581 2067,1581 2067,1695 501,1695"/>
+                <pc:TextEquiv conf="0.9926044940948486">
+                    <pc:Unicode>ſaire, dit M. Rameau, d'en ſacrifier la juſteſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,1676 2067,1676 2067,1781 500,1781"/>
+                <pc:TextEquiv conf="0.9979264140129089">
+                    <pc:Unicode>à celle de la quinte; car plus un intervalle eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,1769 2066,1769 2066,1879 497,1879"/>
+                <pc:TextEquiv conf="0.9751564264297485">
+                    <pc:Unicode>conſonant, plus laltération en déplait à l'o-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,1859 2061,1859 2061,1956 497,1956"/>
+                <pc:TextEquiv conf="0.9860153794288635">
+                    <pc:Unicode>reille: la moindre altération dans l'octave eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,1950 500,2041 534,2045 719,2045 999,2036 999,1950 500,1950"/>
+                <pc:TextEquiv conf="0.9991698861122131">
+                    <pc:Unicode>inſupportable.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>67. Il eſt vrai que les tierces ſeront un
+peu dures, mais la tierce étant un intervalle
+moins conſonant que la quinte, il eſt néceſ-
+ſaire, dit M. Rameau, d'en ſacrifier la juſteſſe
+à celle de la quinte; car plus un intervalle eſt
+conſonant, plus laltération en déplait à l'o-
+reille: la moindre altération dans l'octave eſt
+inſupportable.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="481,2048 474,2362 454,2419 636,2415 666,2392 898,2410 969,2392 977,2314 2071,2362 2095,2057 755,2030 716,2055 587,2045 481,2048"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="586,2046 586,2141 2059,2141 2059,2056 1549,2046 586,2046"/>
+                <pc:TextEquiv conf="0.9957164525985718">
+                    <pc:Unicode>68. Cette altération des intervalles dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2134 2055,2134 2055,2232 492,2232"/>
+                <pc:TextEquiv conf="0.9968858957290649">
+                    <pc:Unicode>les inſtrumens à touche, &amp; même dans les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2228 490,2347 2057,2347 2057,2228 490,2228"/>
+                <pc:TextEquiv conf="0.9948979020118713">
+                    <pc:Unicode>inſtrumens ſans touche, eſt ce qu'on appelle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2326 493,2411 641,2411 898,2410 924,2403 924,2326 493,2326"/>
+                <pc:TextEquiv conf="0.9002321362495422">
+                    <pc:Unicode>temperament.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>68. Cette altération des intervalles dans
+les inſtrumens à touche, &amp; même dans les
+inſtrumens ſans touche, eſt ce qu'on appelle
+temperament.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="489,2463 438,2676 1733,2711 1791,2706 1716,2618 2069,2641 2087,2630 2059,2423 737,2409 592,2420 552,2463 489,2463"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="658,2415 592,2420 568,2446 568,2528 2055,2528 2055,2423 1304,2415 658,2415"/>
+                <pc:TextEquiv conf="0.9852726459503174">
+                    <pc:Unicode>69. Il réſulte donc de tout ce que nous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2506 493,2623 2054,2623 2054,2506 493,2506"/>
+                <pc:TextEquiv conf="0.9847102165222168">
+                    <pc:Unicode>venons de dire, que la théorie du tempé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2600 492,2677 1437,2703 1700,2703 1700,2600 492,2600"/>
+                <pc:TextEquiv conf="0.9960409998893738">
+                    <pc:Unicode>rament ſe reduit à cette queſtion.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>69. Il réſulte donc de tout ce que nous
+venons de dire, que la théorie du tempé-
+rament ſe reduit à cette queſtion.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="483,2698 433,3099 2084,3092 2055,2700 568,2682 483,2698"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="584,2689 584,2804 2052,2804 2052,2700 1146,2689 584,2689"/>
+                <pc:TextEquiv conf="0.9964708685874939">
+                    <pc:Unicode>Etant donnée la ſuite alternative des quin-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2781 2041,2781 2041,2893 490,2893"/>
+                <pc:TextEquiv conf="0.9599612355232239">
+                    <pc:Unicode>tes &amp; des quartes VT, SOL, , LA, mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2868 2047,2868 2047,2986 485,2986"/>
+                <pc:TextEquiv conf="0.8524506688117981">
+                    <pc:Unicode>ſi, fa , u , 0, é, a X, mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-067_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2963 2043,2963 2043,3080 485,3080"/>
+                <pc:TextEquiv conf="0.9247649312019348">
+                    <pc:Unicode>, X, dans laquelle ſi ou ut, n'eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Etant donnée la ſuite alternative des quin-
+tes &amp; des quartes VT, SOL, , LA, mi,
+ſi, fa , u , 0, é, a X, mi
+, X, dans laquelle ſi ou ut, n'eſt</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

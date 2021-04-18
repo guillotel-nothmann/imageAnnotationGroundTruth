@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:06</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:06</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-082.png" imageWidth="2303" imageHeight="3560" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-082-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-082.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="270,245 1858,245 1858,3048 270,3048"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="468,198 468,353 1643,353 1643,198 468,198"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="517,246 1620,246 1620,338 517,338"/>
+                <pc:TextEquiv conf="0.7375637888908386">
+                    <pc:Unicode>Tnxoniqun nr PRArevE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tnxoniqun nr PRArevE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1720,231 1720,364 1865,364 1865,231 1720,231"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1723,256 1857,256 1857,350 1723,350"/>
+                <pc:TextEquiv conf="0.9787079095840454">
+                    <pc:Unicode>59</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>59</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="334,497 334,825 1770,825 1770,497 334,497"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="571,563 1573,563 1573,648 571,648"/>
+                <pc:TextEquiv conf="0.9145174622535706">
+                    <pc:Unicode>CHAPITRE X.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="388,697 1743,697 1743,825 388,825"/>
+                <pc:TextEquiv conf="0.9447850584983826">
+                    <pc:Unicode>De lechelle diatonique du mode mineur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITRE X.
+De lechelle diatonique du mode mineur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="235,858 235,3064 1909,3064 1865,864 235,858"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="288,896 1844,896 1844,1072 288,1072"/>
+                <pc:TextEquiv conf="0.4241439402103424">
+                    <pc:Unicode>Neckx :</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="632,992 1844,992 1844,1086 632,1086"/>
+                <pc:TextEquiv conf="0.9654244184494019">
+                    <pc:Unicode>trois ſons fa, ut, ſol, donnent l'e:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,1079 1839,1079 1839,1181 286,1181"/>
+                <pc:TextEquiv conf="0.956692099571228">
+                    <pc:Unicode>chelle ſi, ut, re, mi, fa, ſol, la, du mode majeur,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="281,1173 1836,1173 1836,1279 281,1279"/>
+                <pc:TextEquiv conf="0.9933006763458252">
+                    <pc:Unicode>par le moyen de la baſſe fondamentale ſol,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,1265 1837,1265 1837,1382 270,1382"/>
+                <pc:TextEquiv conf="0.941938579082489">
+                    <pc:Unicode>ut, ſol, ut, fa, ut, fa: prenons de meme les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="279,1358 1838,1358 1838,1465 279,1465"/>
+                <pc:TextEquiv conf="0.949766218662262">
+                    <pc:Unicode>trois ſons re, la, me, qui conſtituent le mo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="278,1449 1840,1449 1840,1538 278,1538"/>
+                <pc:TextEquiv conf="0.9901561141014099">
+                    <pc:Unicode>de de la, &amp; formons-en cette baſſe fonda-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="284,1544 1842,1544 1842,1642 284,1642"/>
+                <pc:TextEquiv conf="0.9891005158424377">
+                    <pc:Unicode>mentale toute ſemblable à la précédente; mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,1634 1844,1634 1844,1721 282,1721"/>
+                <pc:TextEquiv conf="0.9637773633003235">
+                    <pc:Unicode>la, mi, la, re, la, r: mettons enſuite au deſſus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:Coords points="278,1725 1845,1725 1845,1807 278,1807"/>
+                <pc:TextEquiv conf="0.9964824914932251">
+                    <pc:Unicode>de chacun de ees ſons un de leurs ſons harmo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="281,1820 1843,1820 1843,1922 281,1922"/>
+                <pc:TextEquiv conf="0.9968284964561462">
+                    <pc:Unicode>niques, comme nous avons fait (Cap. V.)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="275,1911 1844,1911 1844,2015 275,2015"/>
+                <pc:TextEquiv conf="0.9916757345199585">
+                    <pc:Unicode>pour la premiere éehelle du mode majeur,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,2006 1849,2006 1849,2105 280,2105"/>
+                <pc:TextEquiv conf="0.9769195914268494">
+                    <pc:Unicode>avee cette différence que nous ferons porter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,2034 1847,2034 1847,2176 282,2176"/>
+                <pc:TextEquiv conf="0.29931288957595825">
+                    <pc:Unicode>rX X X Xr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,2185 1849,2185 1849,2285 280,2285"/>
+                <pc:TextEquiv conf="0.9845938682556152">
+                    <pc:Unicode>fondamentale pour caractériſer le mode mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,2283 1848,2283 1848,2383 282,2383"/>
+                <pc:TextEquiv conf="0.9829901456832886">
+                    <pc:Unicode>neur; &amp; nous aurons léchelle diatonique du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,2371 1162,2371 1162,2465 282,2465"/>
+                <pc:TextEquiv conf="0.9975585341453552">
+                    <pc:Unicode>mode mineur,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:Coords points="306,2518 1599,2518 1599,2620 306,2620"/>
+                <pc:TextEquiv conf="0.8115174174308777">
+                    <pc:Unicode>ſol X, ua, i, mi, fa.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2666 1838,2666 1838,2762 285,2762"/>
+                <pc:TextEquiv conf="0.9609861969947815">
+                    <pc:Unicode>Le ſo&amp; qui repond au mi de la baſſe fonda-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2759 1834,2759 1834,2862 285,2862"/>
+                <pc:TextEquiv conf="0.9968926310539246">
+                    <pc:Unicode>mentale fait avec ce mi une tierce majeure,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="287,2852 1836,2852 1836,2953 287,2953"/>
+                <pc:TextEquiv conf="0.9991275072097778">
+                    <pc:Unicode>quoique le mode ſoit mineur, par la raiſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-082_region_id_4_region_id_4_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="288,2943 1837,2943 1837,3048 288,3048"/>
+                <pc:TextEquiv conf="0.9893402457237244">
+                    <pc:Unicode>que la tierce de la quinte du ſon fondamen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Neckx :
+trois ſons fa, ut, ſol, donnent l'e:
+chelle ſi, ut, re, mi, fa, ſol, la, du mode majeur,
+par le moyen de la baſſe fondamentale ſol,
+ut, ſol, ut, fa, ut, fa: prenons de meme les
+trois ſons re, la, me, qui conſtituent le mo-
+de de la, &amp; formons-en cette baſſe fonda-
+mentale toute ſemblable à la précédente; mi,
+la, mi, la, re, la, r: mettons enſuite au deſſus
+de chacun de ees ſons un de leurs ſons harmo-
+niques, comme nous avons fait (Cap. V.)
+pour la premiere éehelle du mode majeur,
+avee cette différence que nous ferons porter
+rX X X Xr
+fondamentale pour caractériſer le mode mi-
+neur; &amp; nous aurons léchelle diatonique du
+mode mineur,
+ſol X, ua, i, mi, fa.
+Le ſo&amp; qui repond au mi de la baſſe fonda-
+mentale fait avec ce mi une tierce majeure,
+quoique le mode ſoit mineur, par la raiſon
+que la tierce de la quinte du ſon fondamen-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="drop-capital">
+            <pc:Coords points="423,858 423,1080 601,1080 601,858 423,858"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="430,896 601,896 601,1072 430,1072"/>
+                <pc:TextEquiv conf="0.9820782542228699">
+                    <pc:Unicode>N</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>N</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="marginalia">
+            <pc:Coords points="1909,1035 1909,1179 2181,1179 2181,1035 1909,1035"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="marginalia">
+            <pc:Coords points="1892,1529 1892,1673 2203,1673 2203,1529 1892,1529"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_2">
+            <pc:Coords points="318,381 318,470 1815,470 1832,409 318,381"/>
+        </pc:SeparatorRegion>
+        <pc:MusicRegion id="region_id_6" custom="tablatureNotation">
+            <pc:Coords points="456,2471 456,2643 1610,2643 1610,2471 456,2471"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

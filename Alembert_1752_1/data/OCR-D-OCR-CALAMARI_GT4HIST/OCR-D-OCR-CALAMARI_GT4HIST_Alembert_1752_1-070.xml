@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:14:35</pc:Created>
+        <pc:LastChange>2021-01-15T15:14:35</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-070.png" imageWidth="2303" imageHeight="3513" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-070-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-070.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="236,268 1852,268 1852,3029 236,3029"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="449,228 449,360 1565,360 1565,228 449,228"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="470,269 1551,269 1551,358 470,358"/>
+                <pc:TextEquiv conf="0.7541976571083069">
+                    <pc:Unicode>Tuxoniovr Er PRriov.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tuxoniovr Er PRriov.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1675,261 1675,376 1806,376 1806,261 1675,261"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1687,291 1785,291 1785,367 1687,367"/>
+                <pc:TextEquiv conf="0.9835773706436157">
+                    <pc:Unicode>47</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>47</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="208,349 291,3035 1904,3078 1817,371 208,349"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="236,381 1788,381 1788,545 236,545"/>
+                <pc:TextEquiv conf="0.49766984581947327">
+                    <pc:Unicode>Xrti i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="238,473 1784,473 1784,568 238,568"/>
+                <pc:TextEquiv conf="0.92992103099823">
+                    <pc:Unicode>exemple VT accordez ·en la quinte SOL</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,563 1790,563 1790,661 242,661"/>
+                <pc:TextEquiv conf="0.9846972227096558">
+                    <pc:Unicode>d'abord fort juſte, puis diminuez-la imper-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,655 1791,655 1791,752 244,752"/>
+                <pc:TextEquiv conf="0.9957140684127808">
+                    <pc:Unicode>ceptiblement; accordez enſuite la quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="246,746 1793,746 1793,842 246,842"/>
+                <pc:TextEquiv conf="0.9868923425674438">
+                    <pc:Unicode>juſte de cette quinte ainſi diminuée, puis di-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="248,839 1792,839 1792,997 248,997"/>
+                <pc:TextEquiv conf="0.4020678400993347">
+                    <pc:Unicode>XcXX.m:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="251,930 1797,930 1797,1024 251,1024"/>
+                <pc:TextEquiv conf="0.9845069646835327">
+                    <pc:Unicode>quinte, &amp; procedez ainſi d'une quinte à l'au-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="253,1023 1799,1023 1799,1117 253,1117"/>
+                <pc:TextEquiv conf="0.9849093556404114">
+                    <pc:Unicode>tre en montant; &amp; comme l'oreille nap-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="255,1111 1806,1111 1806,1210 255,1210"/>
+                <pc:TextEquiv conf="0.9894653558731079">
+                    <pc:Unicode>prétie pas ſi exactement les ſons trop aigus,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="259,1202 1804,1202 1804,1297 259,1297"/>
+                <pc:TextEquiv conf="0.9985402822494507">
+                    <pc:Unicode>il faut, quand vos quintes commenceront à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,1293 1806,1293 1806,1388 261,1388"/>
+                <pc:TextEquiv conf="0.989626407623291">
+                    <pc:Unicode>devenir trop aigues, accorder juſte loctave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="263,1384 1805,1384 1805,1480 263,1480"/>
+                <pc:TextEquiv conf="0.9984915852546692">
+                    <pc:Unicode>au-deſſous de la derniere quinte que vous</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,1475 1811,1475 1811,1570 266,1570"/>
+                <pc:TextEquiv conf="0.9884118437767029">
+                    <pc:Unicode>venez daccorder, puis vous continuerez</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,1566 1814,1566 1814,1656 270,1656"/>
+                <pc:TextEquiv conf="0.9862998127937317">
+                    <pc:Unicode>toûjours de même; &amp; vous arriverez enfin</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,1656 1816,1656 1816,1754 272,1754"/>
+                <pc:TextEquiv conf="0.9871394038200378">
+                    <pc:Unicode>à une derniere quinte mi , ſi , qui doit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,1748 1821,1748 1821,1839 272,1839"/>
+                <pc:TextEquiv conf="0.9705070853233337">
+                    <pc:Unicode>ſe trouver d'accord d'elle -même, c'eſt- à-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="275,1838 1826,1838 1826,1937 275,1937"/>
+                <pc:TextEquiv conf="0.9635006785392761">
+                    <pc:Unicode>dire, qui doit être telle que ſi X le plus aigu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1930 1825,1930 1825,2024 277,2024"/>
+                <pc:TextEquiv conf="0.9906182885169983">
+                    <pc:Unicode>des deux ſons qui la forment, ſoit le ſon mê-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="281,2020 1829,2020 1829,2114 281,2114"/>
+                <pc:TextEquiv conf="0.9762687683105469">
+                    <pc:Unicode>me T, par lequel vous avez commencé,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,2111 1828,2111 1828,2205 283,2205"/>
+                <pc:TextEquiv conf="0.9972754716873169">
+                    <pc:Unicode>ou du moins l'octave parfaitement juſte de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,2202 1830,2202 1830,2295 286,2295"/>
+                <pc:TextEquiv conf="0.9906138777732849">
+                    <pc:Unicode>ce ſon; il faudra donc eſſayer ſi cet Tou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,2293 1832,2293 1832,2383 290,2383"/>
+                <pc:TextEquiv conf="0.9981666803359985">
+                    <pc:Unicode>ſon octave fait une quinte juſte avec le der-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="292,2319 1836,2319 1836,2477 292,2477"/>
+                <pc:TextEquiv conf="0.4147931635379791">
+                    <pc:Unicode>XXee</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="297,2472 1840,2472 1840,2569 297,2569"/>
+                <pc:TextEquiv conf="0.99540776014328">
+                    <pc:Unicode>cela eſt, on peut être aſſuré que le clavecin</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="298,2564 1841,2564 1841,2637 298,2637"/>
+                <pc:TextEquiv conf="0.9955081343650818">
+                    <pc:Unicode>eſt bien d'accord: mais ſi cette derniere</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="303,2656 1843,2656 1843,2749 303,2749"/>
+                <pc:TextEquiv conf="0.9968233704566956">
+                    <pc:Unicode>quinte n'eſt pas juſte, en ce cas, ou elle ſe-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="302,2746 1846,2746 1846,2843 302,2843"/>
+                <pc:TextEquiv conf="0.9890896081924438">
+                    <pc:Unicode>ra trop forte, &amp; c'eſt une marque que l'on</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="306,2839 1850,2839 1850,2933 306,2933"/>
+                <pc:TextEquiv conf="0.993527889251709">
+                    <pc:Unicode>a trop diminué les autres quintes, ou du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0028">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-070_region_id_2_region_id_2_line0028.png" comments="binarized,clipped"/>
+                <pc:Coords points="307,2931 1852,2931 1852,3029 307,3029"/>
+                <pc:TextEquiv conf="0.9878993630409241">
+                    <pc:Unicode>moins quelques unes; ou la quinte ſera trop</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Xrti i
+exemple VT accordez ·en la quinte SOL
+d'abord fort juſte, puis diminuez-la imper-
+ceptiblement; accordez enſuite la quinte
+juſte de cette quinte ainſi diminuée, puis di-
+XcXX.m:
+quinte, &amp; procedez ainſi d'une quinte à l'au-
+tre en montant; &amp; comme l'oreille nap-
+prétie pas ſi exactement les ſons trop aigus,
+il faut, quand vos quintes commenceront à
+devenir trop aigues, accorder juſte loctave
+au-deſſous de la derniere quinte que vous
+venez daccorder, puis vous continuerez
+toûjours de même; &amp; vous arriverez enfin
+à une derniere quinte mi , ſi , qui doit
+ſe trouver d'accord d'elle -même, c'eſt- à-
+dire, qui doit être telle que ſi X le plus aigu
+des deux ſons qui la forment, ſoit le ſon mê-
+me T, par lequel vous avez commencé,
+ou du moins l'octave parfaitement juſte de
+ce ſon; il faudra donc eſſayer ſi cet Tou
+ſon octave fait une quinte juſte avec le der-
+XXee
+cela eſt, on peut être aſſuré que le clavecin
+eſt bien d'accord: mais ſi cette derniere
+quinte n'eſt pas juſte, en ce cas, ou elle ſe-
+ra trop forte, &amp; c'eſt une marque que l'on
+a trop diminué les autres quintes, ou du
+moins quelques unes; ou la quinte ſera trop</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

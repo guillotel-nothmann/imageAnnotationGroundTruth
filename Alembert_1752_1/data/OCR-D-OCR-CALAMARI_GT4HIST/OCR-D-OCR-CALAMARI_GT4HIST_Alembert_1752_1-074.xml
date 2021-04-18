@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:14:45</pc:Created>
+        <pc:LastChange>2021-01-15T15:14:45</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-074.png" imageWidth="2303" imageHeight="3549" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-074-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-074.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="267,253 1847,253 1847,3145 267,3145"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="other">
+            <pc:Coords points="509,254 1614,259 1598,364 509,371 509,254"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="509,255 509,360 1599,360 1601,344 1601,259 730,255 509,255"/>
+                <pc:TextEquiv conf="0.8431635499000549">
+                    <pc:Unicode>Turontovr Er PAriovr.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Turontovr Er PAriovr.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1719,264 1719,402 1863,358 1841,253 1719,264"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1752,272 1752,371 1820,371 1846,363 1846,277 1845,272 1752,272"/>
+                <pc:TextEquiv conf="0.4696175456047058">
+                    <pc:Unicode>5r</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>5r</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="499,545 1639,545 1639,857 499,857 499,545"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="499,545 1639,545 1639,678 499,678"/>
+                <pc:TextEquiv conf="0.9315921068191528">
+                    <pc:Unicode>CHAPITREVIII.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="538,746 1449,746 1449,857 538,857"/>
+                <pc:TextEquiv conf="0.9492450952529907">
+                    <pc:Unicode>Des epos otu radences.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITREVIII.
+Des epos otu radences.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="267,925 1847,925 1863,2856 266,2873 267,925"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="275,925 1834,925 1834,1102 275,1102"/>
+                <pc:TextEquiv conf="0.49882668256759644">
+                    <pc:Unicode>De : :</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="644,1025 1834,1025 1834,1125 644,1125"/>
+                <pc:TextEquiv conf="0.9742172956466675">
+                    <pc:Unicode>marche par quintes, il y a toû-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,1106 1835,1106 1835,1217 272,1217"/>
+                <pc:TextEquiv conf="0.9848660230636597">
+                    <pc:Unicode>jours, ou il peut y avoir toûjours repos d'un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,1200 1831,1200 1831,1306 273,1306"/>
+                <pc:TextEquiv conf="0.9932045936584473">
+                    <pc:Unicode>ſon à l'autre: mais le repos eſt plus ou moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,1297 1831,1297 1831,1399 272,1399"/>
+                <pc:TextEquiv conf="0.9676714539527893">
+                    <pc:Unicode>marqué, &amp; par conſequent plus ou moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,1386 1831,1386 1831,1491 271,1491"/>
+                <pc:TextEquiv conf="0.9969508647918701">
+                    <pc:Unicode>parfait. Si on monte de quinte, ſi on va,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,1474 1832,1474 1832,1586 268,1586"/>
+                <pc:TextEquiv conf="0.9395728707313538">
+                    <pc:Unicode>par exemple dut à ſol, c'eſt le généra-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,1571 1847,1571 1847,1675 271,1675"/>
+                <pc:TextEquiv conf="0.9936659932136536">
+                    <pc:Unicode>teur qui paſſe à l'une de ſes quintes, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1668 1831,1668 1831,1771 269,1771"/>
+                <pc:TextEquiv conf="0.961669385433197">
+                    <pc:Unicode>cette quinte préexiſtoit déjà dans le gené-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,1760 1838,1760 1838,1861 268,1861"/>
+                <pc:TextEquiv conf="0.9649832844734192">
+                    <pc:Unicode>rateur: mais le générateur n exiſte plus dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1852 1847,1852 1847,1957 269,1957"/>
+                <pc:TextEquiv conf="0.9626648426055908">
+                    <pc:Unicode>cette quinte; &amp; loreille, pour qui ce géné-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,1940 1842,1940 1842,2039 269,2039"/>
+                <pc:TextEquiv conf="0.9962087869644165">
+                    <pc:Unicode>rateur eſt le principe de toute lharmonie &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2031 1830,2031 1830,2130 267,2130"/>
+                <pc:TextEquiv conf="0.9938711524009705">
+                    <pc:Unicode>de toute la mélodie, deſire dy revenir. Ainſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,2122 1836,2122 1836,2221 268,2221"/>
+                <pc:TextEquiv conf="0.9938945174217224">
+                    <pc:Unicode>le paſſage d'un ſon à ſa quinte en montant,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,2217 1841,2217 1841,2318 268,2318"/>
+                <pc:TextEquiv conf="0.9766020774841309">
+                    <pc:Unicode>eſt appellé repos imparfait ou cadence impar-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2308 1842,2308 1842,2409 267,2409"/>
+                <pc:TextEquiv conf="0.9869108200073242">
+                    <pc:Unicode>faite: mais le paſſage d'un ſon à ſa quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,2400 1835,2400 1835,2501 270,2501"/>
+                <pc:TextEquiv conf="0.9747796654701233">
+                    <pc:Unicode>en deſcendant, comme de ſol à utz eſt appellé</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2492 1837,2492 1837,2590 272,2590"/>
+                <pc:TextEquiv conf="0.9816926717758179">
+                    <pc:Unicode>cadence parfaite ou epos abſolu; ceſt le pro-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,2585 1839,2585 1839,2683 271,2683"/>
+                <pc:TextEquiv conf="0.981155514717102">
+                    <pc:Unicode>duit qui retourne au générateur, &amp; qui ſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,2614 1836,2614 1836,2775 273,2775"/>
+                <pc:TextEquiv conf="0.4176368713378906">
+                    <pc:Unicode>XXXXX:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_4_region_id_4_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,2771 274,2871 454,2871 1837,2856 1837,2771 274,2771"/>
+                <pc:TextEquiv conf="0.9480272531509399">
+                    <pc:Unicode>quel il reſonne (Ciap. I).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>De : :
+marche par quintes, il y a toû-
+jours, ou il peut y avoir toûjours repos d'un
+ſon à l'autre: mais le repos eſt plus ou moins
+marqué, &amp; par conſequent plus ou moins
+parfait. Si on monte de quinte, ſi on va,
+par exemple dut à ſol, c'eſt le généra-
+teur qui paſſe à l'une de ſes quintes, &amp;
+cette quinte préexiſtoit déjà dans le gené-
+rateur: mais le générateur n exiſte plus dans
+cette quinte; &amp; loreille, pour qui ce géné-
+rateur eſt le principe de toute lharmonie &amp;
+de toute la mélodie, deſire dy revenir. Ainſi
+le paſſage d'un ſon à ſa quinte en montant,
+eſt appellé repos imparfait ou cadence impar-
+faite: mais le paſſage d'un ſon à ſa quinte
+en deſcendant, comme de ſol à utz eſt appellé
+cadence parfaite ou epos abſolu; ceſt le pro-
+duit qui retourne au générateur, &amp; qui ſe
+XXXXX:
+quel il reſonne (Ciap. I).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="drop-capital">
+            <pc:Coords points="420,888 420,1109 624,1109 624,888 420,888"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="427,923 617,923 617,1102 427,1102"/>
+                <pc:TextEquiv conf="0.9987544417381287">
+                    <pc:Unicode>D</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>D</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="326,2891 352,2960 266,2966 270,3073 1460,3036 1852,3040 1840,2856 365,2852 326,2891"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="368,2854 368,2959 1835,2959 1835,2856 1102,2854 368,2854"/>
+                <pc:TextEquiv conf="0.9871890544891357">
+                    <pc:Unicode>74. Parmi les repos abſolus, il y en a,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-074_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="350,2954 273,2966 273,3052 945,3052 1836,3040 1836,2954 350,2954"/>
+                <pc:TextEquiv conf="0.978342592716217">
+                    <pc:Unicode>pour ainſi dire, de plus abſolus, c eſt-dire</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>74. Parmi les repos abſolus, il y en a,
+pour ainſi dire, de plus abſolus, c eſt-dire</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footer">
+            <pc:Coords points="1450,3039 1450,3159 1619,3159 1619,3039 1450,3039"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1462,3049 1602,3049 1602,3145 1462,3145"/>
+                <pc:TextEquiv conf="0.9677268862724304">
+                    <pc:Unicode>Di</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Di</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_2">
+            <pc:Coords points="283,409 260,524 1824,524 1763,447 283,409"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

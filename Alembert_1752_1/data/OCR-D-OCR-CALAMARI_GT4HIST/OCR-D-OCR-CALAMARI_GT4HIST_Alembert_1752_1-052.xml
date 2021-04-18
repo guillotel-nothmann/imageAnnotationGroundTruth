@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:47</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:47</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-052.png" imageWidth="2303" imageHeight="3507" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-052-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-052.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="226,220 1822,220 1822,2968 226,2968"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="502,187 502,321 1610,321 1610,187 502,187"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="523,221 1593,221 1593,316 523,316"/>
+                <pc:TextEquiv conf="0.8480041027069092">
+                    <pc:Unicode>TuroniovE ET PnATiQvE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TuroniovE ET PnATiQvE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1698,199 1698,316 1815,357 1849,199 1698,199"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="245,310 260,497 576,498 617,526 645,505 1029,500 1059,519 1120,528 1167,500 1931,520 1885,334 245,310"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="367,332 367,423 1815,423 1815,333 1748,332 367,332"/>
+                <pc:TextEquiv conf="0.9957166910171509">
+                    <pc:Unicode>46. On ſe convaincra de nouveau de cet-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="271,424 271,497 610,521 1132,521 1578,511 1578,424 271,424"/>
+                <pc:TextEquiv conf="0.9818484783172607">
+                    <pc:Unicode>te vérité par les remarques ſuivantes.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>46. On ſe convaincra de nouveau de cet-
+te vérité par les remarques ſuivantes.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="370,502 363,614 1849,625 1816,526 632,514 370,502"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="370,511 370,614 1714,624 1812,624 1812,526 566,511 370,511"/>
+                <pc:TextEquiv conf="0.9468885660171509">
+                    <pc:Unicode>Dans le chant ſi, ut, é, mi, fa, ſol, a,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dans le chant ſi, ut, é, mi, fa, ſol, a,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="206,614 193,3007 1797,2991 1879,660 206,614"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="340,661 1809,661 1809,746 340,746"/>
+                <pc:TextEquiv conf="0.962583601474762">
+                    <pc:Unicode>2. Que eſt la tierce majeure de ſol, ceſt à dire de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,739 1725,739 1725,839 269,839"/>
+                <pc:TextEquiv conf="0.9352309107780457">
+                    <pc:Unicode>,(Note ) &amp; par conſequent .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,834 1806,834 1806,927 267,927"/>
+                <pc:TextEquiv conf="0.9494953751564026">
+                    <pc:Unicode>3. Que re eſt la quinte de ſol, ceſt à-dire les de 3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="260,912 847,912 847,1003 260,1003"/>
+                <pc:TextEquiv conf="0.9343788623809814">
+                    <pc:Unicode>&amp; par conſcquent?.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="330,995 1804,995 1804,1077 330,1077"/>
+                <pc:TextEquiv conf="0.9956692457199097">
+                    <pc:Unicode>4. Que mi eſt la tierce majeure de loctave dut, &amp; par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1057 1766,1057 1766,1145 265,1145"/>
+                <pc:TextEquiv conf="0.9508773684501648">
+                    <pc:Unicode>conſéquent le double de , ceſt-àà-dire .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="335,1117 1800,1117 1800,1218 335,1218"/>
+                <pc:TextEquiv conf="0.9863929748535156">
+                    <pc:Unicode>5. Que ſa eſt la double octave de fa de la baſſe, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="255,1208 718,1208 718,1293 255,1293"/>
+                <pc:TextEquiv conf="0.8920882344245911">
+                    <pc:Unicode>ꝓar conéquent ?.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="324,1289 1799,1289 1799,1367 324,1367"/>
+                <pc:TextEquiv conf="0.9540006518363953">
+                    <pc:Unicode>6ꝰ. Que ſol de lechelle eſt loctave de ſol de la baſſe,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="256,1356 798,1356 798,1429 256,1429"/>
+                <pc:TextEquiv conf="0.9518036246299744">
+                    <pc:Unicode>&amp; par conſéquent 3.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="324,1419 1798,1419 1798,1496 324,1496"/>
+                <pc:TextEquiv conf="0.9751472473144531">
+                    <pc:Unicode>7. Entn, que la de léchelle eſt la tierce majeure du fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="256,1481 1311,1481 1311,1573 256,1573"/>
+                <pc:TextEquiv conf="0.9263873100280762">
+                    <pc:Unicode>de léchelle, ceſt -à - dire de , ou .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="322,1567 1798,1567 1798,1643 322,1643"/>
+                <pc:TextEquiv conf="0.9756128787994385">
+                    <pc:Unicode>On aura donc la table ſuivante, dans laquelle chaque ſotn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="250,1631 1316,1631 1316,1699 250,1699"/>
+                <pc:TextEquiv conf="0.9659675359725952">
+                    <pc:Unicode>a ſa valeur numerique au · deſſous de lui.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:Coords points="290,1784 1333,1784 1333,1861 290,1861"/>
+                <pc:TextEquiv conf="0.9361993670463562">
+                    <pc:Unicode>Echelle diatonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="542,1912 1184,1912 1184,1951 542,1951"/>
+                <pc:TextEquiv conf="0.9397454857826233">
+                    <pc:Unicode>5 2 9 5 8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="353,1916 1594,1916 1594,2016 353,2016"/>
+                <pc:TextEquiv conf="0.3707924783229828">
+                    <pc:Unicode>,7273</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:Coords points="336,2017 1542,2017 1542,2085 336,2085"/>
+                <pc:TextEquiv conf="0.8738768100738525">
+                    <pc:Unicode>, ut, re, mi, fa, ſol, la.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:Coords points="503,2134 1665,2134 1665,2210 503,2210"/>
+                <pc:TextEquiv conf="0.8965010046958923">
+                    <pc:Unicode>ſol, ut, ſol, ut, fa, ue, ſa.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,2226 1649,2226 1649,2280 516,2280"/>
+                <pc:TextEquiv conf="0.5821952819824219">
+                    <pc:Unicode>2121 1 .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,2272 1495,2272 1495,2306 523,2306"/>
+                <pc:TextEquiv conf="0.6700632572174072">
+                    <pc:Unicode>a 2 3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0021">
+                <pc:Coords points="244,2373 1704,2373 1704,2455 244,2455"/>
+                <pc:TextEquiv conf="0.9591853022575378">
+                    <pc:Unicode>Baſſe fondamentale.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2517 1768,2517 1768,2587 229,2587"/>
+                <pc:TextEquiv conf="0.9790334105491638">
+                    <pc:Unicode>&amp; ſi, pour la commodité du calcul, on veut appeller r le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2583 1769,2583 1769,2665 229,2665"/>
+                <pc:TextEquiv conf="0.975922703742981">
+                    <pc:Unicode>ſon us de léchelle, il n'y a quà en ce cas diviſer par 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="226,2648 1773,2648 1773,2724 226,2724"/>
+                <pc:TextEquiv conf="0.9723912477493286">
+                    <pc:Unicode>chacun des nombres qui reprelentent l echelle diatomque</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="232,2718 712,2718 712,2780 232,2780"/>
+                <pc:TextEquiv conf="0.9924622774124146">
+                    <pc:Unicode>&amp; on aura</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,2782 1542,2782 1542,2852 506,2852"/>
+                <pc:TextEquiv conf="0.5744425654411316">
+                    <pc:Unicode>12122.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_4_region_id_4_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="509,2841 1515,2841 1515,2881 509,2881"/>
+                <pc:TextEquiv conf="0.9265027046203613">
+                    <pc:Unicode>16 84 3 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0028">
+                <pc:Coords points="236,2897 1545,2897 1545,2968 236,2968"/>
+                <pc:TextEquiv conf="0.5826268792152405">
+                    <pc:Unicode>. u c. mi⸗ ſ ſol la.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2. Que eſt la tierce majeure de ſol, ceſt à dire de
+,(Note ) &amp; par conſequent .
+3. Que re eſt la quinte de ſol, ceſt à-dire les de 3
+&amp; par conſcquent?.
+4. Que mi eſt la tierce majeure de loctave dut, &amp; par
+conſéquent le double de , ceſt-àà-dire .
+5. Que ſa eſt la double octave de fa de la baſſe, &amp;
+ꝓar conéquent ?.
+6ꝰ. Que ſol de lechelle eſt loctave de ſol de la baſſe,
+&amp; par conſéquent 3.
+7. Entn, que la de léchelle eſt la tierce majeure du fa
+de léchelle, ceſt -à - dire de , ou .
+On aura donc la table ſuivante, dans laquelle chaque ſotn
+a ſa valeur numerique au · deſſous de lui.
+Echelle diatonique.
+5 2 9 5 8
+,7273
+, ut, re, mi, fa, ſol, la.
+ſol, ut, ſol, ut, fa, ue, ſa.
+2121 1 .
+a 2 3
+Baſſe fondamentale.
+&amp; ſi, pour la commodité du calcul, on veut appeller r le
+ſon us de léchelle, il n'y a quà en ce cas diviſer par 2
+chacun des nombres qui reprelentent l echelle diatomque
+&amp; on aura
+12122.
+16 84 3 2
+. u c. mi⸗ ſ ſol la.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" custom="list" type="other">
+            <pc:Coords points="228,630 232,1560 1221,1576 1814,1564 1814,630 228,630"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="340,661 1809,661 1809,777 340,777"/>
+                <pc:TextEquiv conf="0.959968090057373">
+                    <pc:Unicode>2. Que eſt la tierce majeure de ſol, ceſt -à dire ᷓ de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="269,744 1213,744 1213,839 269,839"/>
+                <pc:TextEquiv conf="0.9028648734092712">
+                    <pc:Unicode>,(Moie d) &amp; par conſéquent .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,834 1806,834 1806,927 267,927"/>
+                <pc:TextEquiv conf="0.9494953751564026">
+                    <pc:Unicode>3. Que re eſt la quinte de ſol, ceſt à-dire les de 3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="260,912 847,912 847,1003 260,1003"/>
+                <pc:TextEquiv conf="0.9343788623809814">
+                    <pc:Unicode>&amp; par conſcquent?.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="330,995 1804,995 1804,1077 330,1077"/>
+                <pc:TextEquiv conf="0.9956692457199097">
+                    <pc:Unicode>4. Que mi eſt la tierce majeure de loctave dut, &amp; par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="265,1057 1766,1057 1766,1145 265,1145"/>
+                <pc:TextEquiv conf="0.9508773684501648">
+                    <pc:Unicode>conſéquent le double de , ceſt-àà-dire .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="335,1117 1800,1117 1800,1218 335,1218"/>
+                <pc:TextEquiv conf="0.9863929748535156">
+                    <pc:Unicode>5. Que ſa eſt la double octave de fa de la baſſe, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="255,1208 718,1208 718,1293 255,1293"/>
+                <pc:TextEquiv conf="0.8920882344245911">
+                    <pc:Unicode>ꝓar conéquent ?.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="324,1289 1799,1289 1799,1367 324,1367"/>
+                <pc:TextEquiv conf="0.9540006518363953">
+                    <pc:Unicode>6ꝰ. Que ſol de lechelle eſt loctave de ſol de la baſſe,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="256,1356 798,1356 798,1422 256,1422"/>
+                <pc:TextEquiv conf="0.9667569398880005">
+                    <pc:Unicode>&amp; par conſéquent 3.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="324,1419 1798,1419 1798,1496 324,1496"/>
+                <pc:TextEquiv conf="0.9729521870613098">
+                    <pc:Unicode>7. Enfin, que la de léchelle eſt la tierce majeure du fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="256,1481 256,1560 1159,1575 1270,1575 1311,1574 1311,1481 256,1481"/>
+                <pc:TextEquiv conf="0.9242628812789917">
+                    <pc:Unicode>de léchelle, ceſt- à -dire de , ou .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2. Que eſt la tierce majeure de ſol, ceſt -à dire ᷓ de
+,(Moie d) &amp; par conſéquent .
+3. Que re eſt la quinte de ſol, ceſt à-dire les de 3
+&amp; par conſcquent?.
+4. Que mi eſt la tierce majeure de loctave dut, &amp; par
+conſéquent le double de , ceſt-àà-dire .
+5. Que ſa eſt la double octave de fa de la baſſe, &amp;
+ꝓar conéquent ?.
+6ꝰ. Que ſol de lechelle eſt loctave de ſol de la baſſe,
+&amp; par conſéquent 3.
+7. Enfin, que la de léchelle eſt la tierce majeure du fa
+de léchelle, ceſt- à -dire de , ou .</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="227,1564 227,1699 1816,1727 1813,1564 1235,1574 227,1564"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="322,1568 322,1643 1798,1643 1798,1568 322,1568"/>
+                <pc:TextEquiv conf="0.9736700057983398">
+                    <pc:Unicode>On aura done la table ſuivante, dans laquelle chaque ſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="250,1631 1316,1631 1316,1699 250,1699"/>
+                <pc:TextEquiv conf="0.9659675359725952">
+                    <pc:Unicode>a ſa valeur numerique au · deſſous de lui.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>On aura done la table ſuivante, dans laquelle chaque ſon
+a ſa valeur numerique au · deſſous de lui.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="caption">
+            <pc:Coords points="740,1758 740,1866 1360,1866 1360,1758 740,1758"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="764,1784 1333,1784 1333,1861 764,1861"/>
+                <pc:TextEquiv conf="0.9511118531227112">
+                    <pc:Unicode>Echelle diatonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Echelle diatonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="caption">
+            <pc:Coords points="701,2347 701,2468 1310,2468 1310,2347 701,2347"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="718,2373 1295,2373 1295,2455 718,2455"/>
+                <pc:TextEquiv conf="0.9448836445808411">
+                    <pc:Unicode>Baſſe fondamentale.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Baſſe fondamentale.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="197,2500 197,2791 1784,2759 1792,2500 197,2500"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2517 1768,2517 1768,2587 229,2587"/>
+                <pc:TextEquiv conf="0.9790334105491638">
+                    <pc:Unicode>&amp; ſi, pour la commodité du calcul, on veut appeller r le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="229,2583 1769,2583 1769,2665 229,2665"/>
+                <pc:TextEquiv conf="0.975922703742981">
+                    <pc:Unicode>ſon us de léchelle, il n'y a quà en ce cas diviſer par 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="226,2648 1773,2648 1773,2724 226,2724"/>
+                <pc:TextEquiv conf="0.9822759032249451">
+                    <pc:Unicode>chacun des nombres qui reprelentent l echelle diatomque</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-052_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="232,2718 232,2780 743,2780 1762,2759 1762,2718 232,2718"/>
+                <pc:TextEquiv conf="0.9921091794967651">
+                    <pc:Unicode>&amp; on aura</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>&amp; ſi, pour la commodité du calcul, on veut appeller r le
+ſon us de léchelle, il n'y a quà en ce cas diviſer par 2
+chacun des nombres qui reprelentent l echelle diatomque
+&amp; on aura</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_8" custom="tablatureNotation">
+            <pc:Coords points="465,1882 489,2329 1564,2340 1587,1882 465,1882"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_11" custom="tablatureNotation">
+            <pc:Coords points="447,2791 444,3004 1581,3004 1576,2794 447,2791"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

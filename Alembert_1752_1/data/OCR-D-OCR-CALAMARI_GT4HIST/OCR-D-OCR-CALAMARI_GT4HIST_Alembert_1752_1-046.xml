@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:31</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:31</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-046.png" imageWidth="2303" imageHeight="3549" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-046-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-046.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="286,243 1874,243 1874,3131 286,3131"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="521,217 521,343 1659,343 1659,217 521,217"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="543,243 1644,243 1644,334 543,334"/>
+                <pc:TextEquiv conf="0.7589480876922607">
+                    <pc:Unicode>TuronQE Er PRArIovE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>TuronQE Er PRArIovE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1770,235 1770,355 1887,355 1887,235 1770,235"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1782,273 1870,273 1870,351 1782,351"/>
+                <pc:TextEquiv conf="0.972646176815033">
+                    <pc:Unicode>23</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>23</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="266,343 266,1496 1914,1496 1914,343 266,343"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="305,351 1868,351 1868,456 305,456"/>
+                <pc:TextEquiv conf="0.9640825390815735">
+                    <pc:Unicode>ſonne avec re, par la premiere expérience,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="306,444 1870,444 1870,545 306,545"/>
+                <pc:TextEquiv conf="0.9714977741241455">
+                    <pc:Unicode>(Art. 20): par conſéquent en paſſant d'ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="306,537 1867,537 1867,633 306,633"/>
+                <pc:TextEquiv conf="0.952583909034729">
+                    <pc:Unicode>à re, ou de re à ut, on paſſe néceſſairement</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="301,625 1866,625 1866,735 301,735"/>
+                <pc:TextEquiv conf="0.9938791990280151">
+                    <pc:Unicode>de ut à la, ou de la à ut. Or ce dernier paſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="301,718 1866,718 1866,823 301,823"/>
+                <pc:TextEquiv conf="0.9913544058799744">
+                    <pc:Unicode>ſage eſt contre les regles indiquées par la na-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="301,815 1864,815 1864,898 301,898"/>
+                <pc:TextEquiv conf="0.9888725280761719">
+                    <pc:Unicode>ture; car la étant conſidéré dans la ſuite des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="299,906 1866,906 1866,1006 299,1006"/>
+                <pc:TextEquiv conf="0.9718379974365234">
+                    <pc:Unicode>quintes comme quinte de ré, &amp; par conſé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="298,999 1860,999 1860,1152 298,1152"/>
+                <pc:TextEquiv conf="0.4048595130443573">
+                    <pc:Unicode>:r e ::</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="299,1090 1861,1090 1861,1177 299,1177"/>
+                <pc:TextEquiv conf="0.9825169444084167">
+                    <pc:Unicode>Cauroit faire avec ut une tierce mineure</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="297,1178 1859,1178 1859,1279 297,1279"/>
+                <pc:TextEquiv conf="0.9985435605049133">
+                    <pc:Unicode>juſte &amp; harmonique: ceſt dequoi tous les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="295,1269 1862,1269 1862,1373 295,1373"/>
+                <pc:TextEquiv conf="0.9974000453948975">
+                    <pc:Unicode>Muſiciens conviennent, &amp; on peut le dé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="295,1365 1861,1365 1861,1461 295,1461"/>
+                <pc:TextEquiv conf="0.9807253479957581">
+                    <pc:Unicode>montrer aiſément (g). Ainſi les ſons ut &amp; la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſonne avec re, par la premiere expérience,
+(Art. 20): par conſéquent en paſſant d'ut
+à re, ou de re à ut, on paſſe néceſſairement
+de ut à la, ou de la à ut. Or ce dernier paſ-
+ſage eſt contre les regles indiquées par la na-
+ture; car la étant conſidéré dans la ſuite des
+quintes comme quinte de ré, &amp; par conſé-
+:r e ::
+Cauroit faire avec ut une tierce mineure
+juſte &amp; harmonique: ceſt dequoi tous les
+Muſiciens conviennent, &amp; on peut le dé-
+montrer aiſément (g). Ainſi les ſons ut &amp; la</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footnote">
+            <pc:Coords points="217,1503 231,3043 1571,3038 1610,3041 1908,3045 1897,1503 217,1503"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="292,1518 1858,1518 1858,1599 292,1599"/>
+                <pc:TextEquiv conf="0.9878504276275635">
+                    <pc:Unicode>(g) Suppoſons que le ſon ut ſoit appellé 1, ſa quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1586 1857,1586 1857,1665 290,1665"/>
+                <pc:TextEquiv conf="0.9815720915794373">
+                    <pc:Unicode>ſol ſera , la quinte re de cette quinte ſera 2, &amp; la quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="418,1641 1490,1641 1490,1692 418,1692"/>
+                <pc:TextEquiv conf="0.5205798149108887">
+                    <pc:Unicode>, J575</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,1671 1860,1671 1860,1756 294,1756"/>
+                <pc:TextEquiv conf="0.9654961228370667">
+                    <pc:Unicode>de re, c eſt- à- dire la, fera : ce re &amp; ce la ſe trouveront</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1753 1859,1753 1859,1816 290,1816"/>
+                <pc:TextEquiv conf="0.9826791286468506">
+                    <pc:Unicode>dans la ſeconde octave au- deſſus d'ut. Donc la double oc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="293,1819 1857,1819 1857,1896 293,1896"/>
+                <pc:TextEquiv conf="0.9897947907447815">
+                    <pc:Unicode>tave au- deſſous de ce la, devroit naturellement être la tier-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1886 1857,1886 1857,1952 290,1952"/>
+                <pc:TextEquiv conf="0.9773443937301636">
+                    <pc:Unicode>ce mineure au- deſſous d'ut, comme on le verra aiſément</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="291,1950 843,1950 843,2016 291,2016"/>
+                <pc:TextEquiv conf="0.9861493706703186">
+                    <pc:Unicode>par cette figure</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="776,2071 1376,2071 1376,2108 776,2108"/>
+                <pc:TextEquiv conf="0.9585468173027039">
+                    <pc:Unicode>3 9 27</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,2088 1784,2088 1784,2156 550,2156"/>
+                <pc:TextEquiv conf="0.4194446802139282">
+                    <pc:Unicode>12.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:Coords points="528,2173 1629,2173 1629,2237 528,2237"/>
+                <pc:TextEquiv conf="0.9551773071289062">
+                    <pc:Unicode>ut, ſol, ut, re, la, ut.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,2260 1635,2260 1635,2299 468,2299"/>
+                <pc:TextEquiv conf="0.5361403822898865">
+                    <pc:Unicode>a a u eumn m nt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="840,2286 1636,2286 1636,2322 840,2322"/>
+                <pc:TextEquiv conf="0.4895040988922119">
+                    <pc:Unicode>m mg</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:Coords points="578,2340 1539,2340 1539,2394 578,2394"/>
+                <pc:TextEquiv conf="0.943711519241333">
+                    <pc:Unicode>Premiere Octave. Seconde Octave.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,2487 1849,2487 1849,2563 286,2563"/>
+                <pc:TextEquiv conf="0.9611977338790894">
+                    <pc:Unicode>où lon voit au deſſus de chaque ſon ſa valeur numérique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="350,2555 1841,2555 1841,2644 350,2644"/>
+                <pc:TextEquiv conf="0.9680320620536804">
+                    <pc:Unicode>Cela poſé, la double octave au- deſſous de la eſt Z</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="289,2638 1847,2638 1847,2724 289,2724"/>
+                <pc:TextEquiv conf="0.9574717879295349">
+                    <pc:Unicode>(Note c), parce quil faut diviſer par 4 la fraction ?: donc</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="287,2722 1845,2722 1845,2806 287,2806"/>
+                <pc:TextEquiv conf="0.9801052212715149">
+                    <pc:Unicode>la tierce mineure de la à ut ſera ?Z; or la tierce mineure</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_3_region_id_3_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,2803 1848,2803 1848,2887 294,2887"/>
+                <pc:TextEquiv conf="0.9705233573913574">
+                    <pc:Unicode>harmonique au- deſſous d'ut, eſt (Moie d): donc pour com-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0019">
+                <pc:Coords points="290,2888 1851,2888 1851,2953 290,2953"/>
+                <pc:TextEquiv conf="0.989022970199585">
+                    <pc:Unicode>parer la tierce mineure la ut avec la tierce mineure harmo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0020">
+                <pc:Coords points="289,2954 289,3039 1854,3039 1854,2954 289,2954"/>
+                <pc:TextEquiv conf="0.9792343378067017">
+                    <pc:Unicode>nique, il faut comparer enſemble les intervalles &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(g) Suppoſons que le ſon ut ſoit appellé 1, ſa quinte
+ſol ſera , la quinte re de cette quinte ſera 2, &amp; la quinte
+, J575
+de re, c eſt- à- dire la, fera : ce re &amp; ce la ſe trouveront
+dans la ſeconde octave au- deſſus d'ut. Donc la double oc-
+tave au- deſſous de ce la, devroit naturellement être la tier-
+ce mineure au- deſſous d'ut, comme on le verra aiſément
+par cette figure
+3 9 27
+12.
+ut, ſol, ut, re, la, ut.
+a a u eumn m nt
+m mg
+Premiere Octave. Seconde Octave.
+où lon voit au deſſus de chaque ſon ſa valeur numérique.
+Cela poſé, la double octave au- deſſous de la eſt Z
+(Note c), parce quil faut diviſer par 4 la fraction ?: donc
+la tierce mineure de la à ut ſera ?Z; or la tierce mineure
+harmonique au- deſſous d'ut, eſt (Moie d): donc pour com-
+parer la tierce mineure la ut avec la tierce mineure harmo-
+nique, il faut comparer enſemble les intervalles &amp;</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="270,1506 274,2546 1893,2568 1893,1506 270,1506"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="292,1518 1858,1518 1858,1599 292,1599"/>
+                <pc:TextEquiv conf="0.9878504276275635">
+                    <pc:Unicode>(g) Suppoſons que le ſon ut ſoit appellé 1, ſa quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1586 1857,1586 1857,1681 290,1681"/>
+                <pc:TextEquiv conf="0.970497190952301">
+                    <pc:Unicode>ſol ſera Z, la quinte re de cette quinte ſera , &amp; la quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,1671 1860,1671 1860,1756 294,1756"/>
+                <pc:TextEquiv conf="0.9753705263137817">
+                    <pc:Unicode>de re, ceſt- à-dire la, fera : ce re &amp; ce la ſe trouveront</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1753 1859,1753 1859,1816 290,1816"/>
+                <pc:TextEquiv conf="0.9826791286468506">
+                    <pc:Unicode>dans la ſeconde octave au- deſſus d'ut. Donc la double oc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:Coords points="293,1819 1857,1819 1857,1882 293,1882"/>
+                <pc:TextEquiv conf="0.9892444014549255">
+                    <pc:Unicode>tave au-deſſous de ce la, devroit naturellement être la tier-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="290,1886 1857,1886 1857,1952 290,1952"/>
+                <pc:TextEquiv conf="0.9780443906784058">
+                    <pc:Unicode>ce mineure au- deſſous d'ut, comme on le verra aiſément</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="291,1950 843,1950 843,2016 291,2016"/>
+                <pc:TextEquiv conf="0.9861493706703186">
+                    <pc:Unicode>par cette figure</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="776,2071 1376,2071 1376,2108 776,2108"/>
+                <pc:TextEquiv conf="0.9585468173027039">
+                    <pc:Unicode>3 9 27</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,2088 1784,2088 1784,2156 550,2156"/>
+                <pc:TextEquiv conf="0.4194446802139282">
+                    <pc:Unicode>12.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:Coords points="528,2173 1629,2173 1629,2237 528,2237"/>
+                <pc:TextEquiv conf="0.9551773071289062">
+                    <pc:Unicode>ut, ſol, ut, re, la, ut.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,2260 1635,2260 1635,2299 468,2299"/>
+                <pc:TextEquiv conf="0.5361403822898865">
+                    <pc:Unicode>a a u eumn m nt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="840,2286 1636,2286 1636,2322 840,2322"/>
+                <pc:TextEquiv conf="0.4895040988922119">
+                    <pc:Unicode>m mg</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:Coords points="578,2340 1539,2340 1539,2394 578,2394"/>
+                <pc:TextEquiv conf="0.943711519241333">
+                    <pc:Unicode>Premiere Octave. Seconde Octave.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:Coords points="286,2487 286,2546 1599,2564 1849,2564 1849,2487 286,2487"/>
+                <pc:TextEquiv conf="0.9779051542282104">
+                    <pc:Unicode>où lon voit au- deſſus de chaque ſon ſa valeur numérique</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(g) Suppoſons que le ſon ut ſoit appellé 1, ſa quinte
+ſol ſera Z, la quinte re de cette quinte ſera , &amp; la quinte
+de re, ceſt- à-dire la, fera : ce re &amp; ce la ſe trouveront
+dans la ſeconde octave au- deſſus d'ut. Donc la double oc-
+tave au-deſſous de ce la, devroit naturellement être la tier-
+ce mineure au- deſſous d'ut, comme on le verra aiſément
+par cette figure
+3 9 27
+12.
+ut, ſol, ut, re, la, ut.
+a a u eumn m nt
+m mg
+Premiere Octave. Seconde Octave.
+où lon voit au- deſſus de chaque ſon ſa valeur numérique</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="270,2553 279,3034 1400,3028 1520,3028 1603,3017 1613,3050 1899,3052 1896,2568 270,2553"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="350,2556 350,2644 1841,2644 1841,2567 595,2556 350,2556"/>
+                <pc:TextEquiv conf="0.950439989566803">
+                    <pc:Unicode>Cela poſé, la double octave au- deſlous de la eſt Z</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="289,2638 1847,2638 1847,2724 289,2724"/>
+                <pc:TextEquiv conf="0.9574717879295349">
+                    <pc:Unicode>(Note c), parce quil faut diviſer par 4 la fraction ?: donc</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="287,2722 1845,2722 1845,2806 287,2806"/>
+                <pc:TextEquiv conf="0.9801052212715149">
+                    <pc:Unicode>la tierce mineure de la à ut ſera ?Z; or la tierce mineure</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-046_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="294,2803 1848,2803 1848,2887 294,2887"/>
+                <pc:TextEquiv conf="0.9705233573913574">
+                    <pc:Unicode>harmonique au- deſſous d'ut, eſt (Moie d): donc pour com-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:Coords points="290,2888 1851,2888 1851,2953 290,2953"/>
+                <pc:TextEquiv conf="0.989022970199585">
+                    <pc:Unicode>parer la tierce mineure la ut avec la tierce mineure harmo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:Coords points="289,2954 289,3034 1610,3039 1854,3039 1854,2954 289,2954"/>
+                <pc:TextEquiv conf="0.9707803130149841">
+                    <pc:Unicode>nique, il faut comparer enſemble les intervalles &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Cela poſé, la double octave au- deſlous de la eſt Z
+(Note c), parce quil faut diviſer par 4 la fraction ?: donc
+la tierce mineure de la à ut ſera ?Z; or la tierce mineure
+harmonique au- deſſous d'ut, eſt (Moie d): donc pour com-
+parer la tierce mineure la ut avec la tierce mineure harmo-
+nique, il faut comparer enſemble les intervalles &amp;</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footer">
+            <pc:Coords points="1442,3028 1447,3128 1623,3151 1623,3042 1442,3028"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1455,3036 1455,3129 1470,3131 1613,3131 1613,3041 1545,3036 1455,3036"/>
+                <pc:TextEquiv conf="0.9287590980529785">
+                    <pc:Unicode>Biij</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Biij</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_5">
+            <pc:Coords points="412,2037 412,2420 1651,2420 1651,2037 412,2037"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

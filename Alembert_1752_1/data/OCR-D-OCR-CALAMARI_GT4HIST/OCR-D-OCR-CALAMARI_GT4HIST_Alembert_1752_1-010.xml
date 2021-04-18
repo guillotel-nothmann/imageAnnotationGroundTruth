@@ -1,0 +1,81 @@
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:11:52</pc:Created>
+        <pc:LastChange>2021-01-15T15:11:53</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-010.png" imageWidth="2303" imageHeight="3507" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-010-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-010.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="220,156 2125,156 2125,3301 220,3301"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/></pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="heading"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.8997102379798889"><pc:Unicode>ELEMENS</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0001"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.9506140351295471"><pc:Unicode>D E</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0002"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.7865909934043884"><pc:Unicode>M USIOUE,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0003"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.7799404859542847"><pc:Unicode>THEORIOE ED PRAIIQUE,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0004"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.765308678150177"><pc:Unicode>S IVAVT</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_0_line0005"><pc:Coords points="272,158 2124,158 2146,1430 225,1374 272,158"/><pc:TextEquiv conf="0.8771008253097534"><pc:Unicode>LES PRINCIPES DE M. RAMEAV.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ELEMENS
+D E
+M USIOUE,
+THEORIOE ED PRAIIQUE,
+S IVAVT
+LES PRINCIPES DE M. RAMEAV.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:GraphicRegion id="region_id_1" type="decoration"><pc:Coords points="687,1649 1663,1616 1663,1708 1691,1829 1756,1921 1734,2123 1488,2167 1308,2249 1161,2353 997,2189 839,2167 631,2118 687,1649"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:GraphicRegion><pc:TextRegion id="region_id_2" type="other"><pc:Coords points="781,2513 1526,2513 1526,2624 781,2624 781,2513"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="781,2513 1526,2513 1526,2624 781,2624 781,2513"/><pc:TextEquiv conf="0.9712267518043518"><pc:Unicode>APARIS,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>APARIS,</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="other"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextEquiv conf="0.9371989965438843"><pc:Unicode>DAvIDlainé, rue S. Iacques, à la Plume d'Or.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextEquiv conf="0.9736803770065308"><pc:Unicode>LE BETON Imprimeur ordinaire du Roi, au</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextEquiv conf="0.8866692781448364"><pc:Unicode>Che R1 N, Imprime</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextEquiv conf="0.998073935508728"><pc:Unicode>bas de la rue de la Harpe.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="232,2639 2132,2639 2124,2985 211,2998 232,2639"/><pc:TextEquiv conf="0.9431201219558716"><pc:Unicode>DvnaAiD, rue S. Iacques, à S. Landry, &amp; au Griffon.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>DAvIDlainé, rue S. Iacques, à la Plume d'Or.
+LE BETON Imprimeur ordinaire du Roi, au
+Che R1 N, Imprime
+bas de la rue de la Harpe.
+DvnaAiD, rue S. Iacques, à S. Landry, &amp; au Griffon.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:SeparatorRegion id="region_id_4"><pc:Coords points="588,2996 588,3081 1700,3081 1700,2996 588,2996"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:SeparatorRegion><pc:TextRegion id="region_id_5" type="other"><pc:Coords points="807,3095 807,3176 1467,3176 1467,3095 807,3095"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="807,3095 807,3176 1467,3176 1467,3095 807,3095"/><pc:TextEquiv conf="0.9425920248031616"><pc:Unicode>M. DCCLII.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>M. DCCLII.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="other"><pc:Coords points="220,3221 2073,3221 2073,3301 220,3301 220,3221"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="220,3221 2073,3221 2073,3301 220,3301 220,3221"/><pc:TextEquiv conf="0.7544307112693787"><pc:Unicode>AEc APPRoBooETPRIVILEEO ROI.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AEc APPRoBooETPRIVILEEO ROI.</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
+</pc:PcGts>

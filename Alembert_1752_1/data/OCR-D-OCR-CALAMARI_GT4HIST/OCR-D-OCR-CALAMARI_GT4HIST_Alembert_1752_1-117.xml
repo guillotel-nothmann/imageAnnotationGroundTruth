@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:41</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:41</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-117.png" imageWidth="2303" imageHeight="3594" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-117-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-117.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="468,282 2084,282 2084,3115 468,3115"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="432,258 445,372 594,383 594,258 432,258"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="468,309 468,374 513,377 593,377 593,309 468,309"/>
+                <pc:TextEquiv conf="0.8659846186637878">
+                    <pc:Unicode>94</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>94</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="683,228 683,365 1890,365 1890,228 683,228"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="714,282 1852,282 1852,365 714,365"/>
+                <pc:TextEquiv conf="0.6826784014701843">
+                    <pc:Unicode>ELEMESSD Mvs1OiE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ELEMESSD Mvs1OiE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="438,401 438,688 2117,688 2117,401 438,401"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="479,401 2072,401 2072,498 479,498"/>
+                <pc:TextEquiv conf="0.9849148988723755">
+                    <pc:Unicode>de deux ſons qui ne ſont pas voiſins lun de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="482,496 2076,496 2076,592 482,592"/>
+                <pc:TextEquiv conf="0.9715509414672852">
+                    <pc:Unicode>lautre dans la progreſſion des tierces (Art.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="491,597 2070,597 2070,682 491,682"/>
+                <pc:TextEquiv conf="0.9183471202850342">
+                    <pc:Unicode>144.).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>de deux ſons qui ne ſont pas voiſins lun de
+lautre dans la progreſſion des tierces (Art.
+144.).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="670,875 1867,875 1867,980 670,980 670,875"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="670,875 1867,875 1867,980 670,980"/>
+                <pc:TextEquiv conf="0.9406050443649292">
+                    <pc:Unicode>CAPITRE XXII.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CAPITRE XXII.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="631,1059 1927,1059 1927,1161 631,1161 631,1059"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="631,1059 1927,1059 1927,1161 631,1161"/>
+                <pc:TextEquiv conf="0.9396316409111023">
+                    <pc:Unicode>Que la melodie nait de larmonie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Que la melodie nait de larmonie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="462,1196 462,1877 2100,1877 2100,1196 462,1196"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1225 2075,1225 2075,1417 486,1417"/>
+                <pc:TextEquiv conf="0.4985968768596649">
+                    <pc:Unicode>,TXXXXX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="875,1333 2072,1333 2072,1429 875,1429"/>
+                <pc:TextEquiv conf="0.9863173365592957">
+                    <pc:Unicode>qu ici eſt, ce me ſemble, plus que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,1425 2075,1425 2075,1521 490,1521"/>
+                <pc:TextEquiv conf="0.9822064638137817">
+                    <pc:Unicode>ſuffiſant pour nous convaincre que la mélo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1518 2076,1518 2076,1615 487,1615"/>
+                <pc:TextEquiv conf="0.9919055700302124">
+                    <pc:Unicode>die a ſon principe dans lharmonie, &amp; que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1613 2078,1613 2078,1708 487,1708"/>
+                <pc:TextEquiv conf="0.9855595231056213">
+                    <pc:Unicode>c'eſt dans lharmonie exprimée ou ſous-en-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,1701 2078,1701 2078,1804 488,1804"/>
+                <pc:TextEquiv conf="0.9871686697006226">
+                    <pc:Unicode>tendue, qu'on doit chercher les effets de la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,1799 801,1799 801,1870 488,1870"/>
+                <pc:TextEquiv conf="0.9183117151260376">
+                    <pc:Unicode>melodie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>,TXXXXX
+qu ici eſt, ce me ſemble, plus que
+ſuffiſant pour nous convaincre que la mélo-
+die a ſon principe dans lharmonie, &amp; que
+c'eſt dans lharmonie exprimée ou ſous-en-
+tendue, qu'on doit chercher les effets de la
+melodie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="drop-capital">
+            <pc:Coords points="659,1208 659,1417 856,1417 856,1208 659,1208"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="683,1237 845,1237 845,1417 683,1417"/>
+                <pc:TextEquiv conf="0.7135815620422363">
+                    <pc:Unicode>T</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>T</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="456,1901 474,2535 2129,2535 2142,1866 456,1901"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="986,1890 587,1898 587,1985 2077,1985 2077,1890 986,1890"/>
+                <pc:TextEquiv conf="0.9978502988815308">
+                    <pc:Unicode>154. Si on en doutoit encore, il ne fau-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1982 2075,1982 2075,2081 485,2081"/>
+                <pc:TextEquiv conf="0.987180769443512">
+                    <pc:Unicode>droit que faire attention à lexpérience pre-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2078 2075,2078 2075,2174 485,2174"/>
+                <pc:TextEquiv conf="0.9851047992706299">
+                    <pc:Unicode>miere (Art. 20.), où l'on voit que le ſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2173 2079,2173 2079,2335 486,2335"/>
+                <pc:TextEquiv conf="0.3395422399044037">
+                    <pc:Unicode>cXiXrrXte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,2265 2075,2265 2075,2363 512,2363"/>
+                <pc:TextEquiv conf="0.9888189435005188">
+                    <pc:Unicode>es ſons aigus qu'il engendre ſont par rapport</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2359 2082,2359 2082,2455 492,2455"/>
+                <pc:TextEquiv conf="0.9898859262466431">
+                    <pc:Unicode>à lui ce que le deſſus d'un chant eſt par rap-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2450 1031,2450 1031,2535 496,2535"/>
+                <pc:TextEquiv conf="0.998339056968689">
+                    <pc:Unicode>port à ſa baſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>154. Si on en doutoit encore, il ne fau-
+droit que faire attention à lexpérience pre-
+miere (Art. 20.), où l'on voit que le ſon
+cXiXrrXte
+es ſons aigus qu'il engendre ſont par rapport
+à lui ce que le deſſus d'un chant eſt par rap-
+port à ſa baſſe.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="480,2535 486,3007 2153,3007 2148,2529 480,2535"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2535 2083,2535 2083,2644 494,2644"/>
+                <pc:TextEquiv conf="0.986027181148529">
+                    <pc:Unicode>155. De plus, nous avons prouvé à l'oc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2639 2082,2639 2082,2736 492,2736"/>
+                <pc:TextEquiv conf="0.9884774088859558">
+                    <pc:Unicode>caſion de la cadence rompue, que la diffé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2733 2082,2733 2082,2828 493,2828"/>
+                <pc:TextEquiv conf="0.9964103698730469">
+                    <pc:Unicode>rence des baſſes produit des effets tout dif-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2824 2081,2824 2081,2925 494,2925"/>
+                <pc:TextEquiv conf="0.9845466017723083">
+                    <pc:Unicode>férens dans un chant qui d'ailleurs reſte le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-117_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2924 2065,2924 2065,3002 496,3002"/>
+                <pc:TextEquiv conf="0.9003893733024597">
+                    <pc:Unicode>même.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>155. De plus, nous avons prouvé à l'oc-
+caſion de la cadence rompue, que la diffé-
+rence des baſſes produit des effets tout dif-
+férens dans un chant qui d'ailleurs reſte le
+même.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="576,3007 576,3114 2111,3114 2111,3007 576,3007"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="597,3009 2081,3009 2081,3114 597,3114"/>
+                <pc:TextEquiv conf="0.971235990524292">
+                    <pc:Unicode>156. En deſire-t-on dautres preuves ? I</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>156. En deſire-t-on dautres preuves ? I</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_3">
+            <pc:Coords points="474,724 469,814 2100,832 2040,724 474,724"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

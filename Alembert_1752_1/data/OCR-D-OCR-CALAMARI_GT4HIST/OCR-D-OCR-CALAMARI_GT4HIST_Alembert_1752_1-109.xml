@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:19</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:19</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-109.png" imageWidth="2303" imageHeight="3553" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-109-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-109.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="513,223 2134,223 2134,3535 513,3535"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="452,190 488,302 623,308 623,190 452,190"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="514,242 514,303 600,307 606,307 606,242 514,242"/>
+                <pc:TextEquiv conf="0.976650595664978">
+                    <pc:Unicode>86</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>86</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="700,184 700,296 1894,296 1894,184 700,184"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="744,224 1847,224 1847,296 744,296"/>
+                <pc:TextEquiv conf="0.817023515701294">
+                    <pc:Unicode>E1EMENSDE M jSIOVE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E1EMENSDE M jSIOVE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="494,320 494,692 2077,692 2083,320 494,320"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,337 515,435 2081,435 2083,337 515,337"/>
+                <pc:TextEquiv conf="0.9844898581504822">
+                    <pc:Unicode>ſucceſſion qui eſt permiſe dès qu'on a recon-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,427 2075,427 2075,530 514,530"/>
+                <pc:TextEquiv conf="0.9863235354423523">
+                    <pc:Unicode>nu l'origine du mode mineur (Cap. IA.),</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,518 2078,518 2078,615 516,615"/>
+                <pc:TextEquiv conf="0.9916595816612244">
+                    <pc:Unicode>on trouveroit ce chant ſol, ſol h, qui don-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:Coords points="516,616 1977,616 1977,692 516,692"/>
+                <pc:TextEquiv conf="0.9945084452629089">
+                    <pc:Unicode>neroit encore un demi-ton mineur (aa).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſucceſſion qui eſt permiſe dès qu'on a recon-
+nu l'origine du mode mineur (Cap. IA.),
+on trouveroit ce chant ſol, ſol h, qui don-
+neroit encore un demi-ton mineur (aa).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="506,704 494,2542 1546,2542 1581,2494 2101,2465 2089,704 506,704"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,707 2083,707 2083,797 520,797"/>
+                <pc:TextEquiv conf="0.9576646089553833">
+                    <pc:Unicode>141. Le demi-ton mineur s entonne avec</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,796 2082,796 2082,899 517,899"/>
+                <pc:TextEquiv conf="0.9896117448806763">
+                    <pc:Unicode>beaucoup moins de facilité que le demi-ton</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,889 2084,889 2084,991 518,991"/>
+                <pc:TextEquiv conf="0.9917519092559814">
+                    <pc:Unicode>majeur: nos principes en donnent la raiſon.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,981 2084,981 2084,1080 516,1080"/>
+                <pc:TextEquiv conf="0.9918826818466187">
+                    <pc:Unicode>Le demi-ton majeur, qui ſe trouve dans l'é-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1072 2085,1072 2085,1174 517,1174"/>
+                <pc:TextEquiv conf="0.9822757840156555">
+                    <pc:Unicode>chelle diatonique, comme mi fa, vient d'une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1166 2087,1166 2087,1267 518,1267"/>
+                <pc:TextEquiv conf="0.982798159122467">
+                    <pc:Unicode>baſſe fondamentale par quintes ut fa, c'eſt-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1259 2087,1259 2087,1356 520,1356"/>
+                <pc:TextEquiv conf="0.9863640069961548">
+                    <pc:Unicode>à-dire de la ſucceſſion la plus naturelle, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,1351 2086,1351 2086,1457 519,1457"/>
+                <pc:TextEquiv conf="0.9879739284515381">
+                    <pc:Unicode>par cette raiſon la plus agréable à l'oreille.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1443 2086,1443 2086,1536 518,1536"/>
+                <pc:TextEquiv conf="0.9821541905403137">
+                    <pc:Unicode>Au contraire, le demi-ton mineur vient da</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1538 2088,1538 2088,1632 517,1632"/>
+                <pc:TextEquiv conf="0.999174952507019">
+                    <pc:Unicode>la ſucceſſion fondamentale par tierces, moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1631 2090,1631 2090,1729 518,1729"/>
+                <pc:TextEquiv conf="0.9962874054908752">
+                    <pc:Unicode>naturelle que la premiere; auſſi pour enton-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1721 2086,1721 2086,1815 518,1815"/>
+                <pc:TextEquiv conf="0.9888178110122681">
+                    <pc:Unicode>ner juſte le demi- ton mineur, on employe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,1815 2090,1815 2090,1921 517,1921"/>
+                <pc:TextEquiv conf="0.9824075102806091">
+                    <pc:Unicode>preſque toujours l'artifice ſuivant. Suppo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1904 2088,1904 2088,2005 518,2005"/>
+                <pc:TextEquiv conf="0.9829332232475281">
+                    <pc:Unicode>ſons, par exemple, qu' on veuille monter du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,1998 2087,1998 2087,2096 513,2096"/>
+                <pc:TextEquiv conf="0.9577490091323853">
+                    <pc:Unicode>ſol au ſo , on monte d'abord du ſol au la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,2091 2087,2091 2087,2191 515,2191"/>
+                <pc:TextEquiv conf="0.976595401763916">
+                    <pc:Unicode>puis on deſcend du la au ſol X par l'inter-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,2181 2088,2181 2088,2279 516,2279"/>
+                <pc:TextEquiv conf="0.9782599806785583">
+                    <pc:Unicode>valle d'un demi· ton majeur; car ce ſol dieze,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2274 2087,2274 2087,2372 518,2372"/>
+                <pc:TextEquiv conf="0.9983584880828857">
+                    <pc:Unicode>qui eſt un demi-ton majeur au-deſſous de la,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_3_region_id_3_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,2367 2090,2367 2090,2448 517,2448"/>
+                <pc:TextEquiv conf="0.9952496886253357">
+                    <pc:Unicode>ſe trouve un demi-ton mineur au-deſſus de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0019">
+                <pc:Coords points="518,2465 1534,2465 1534,2542 518,2542"/>
+                <pc:TextEquiv conf="0.9499804973602295">
+                    <pc:Unicode>ol (Voyez les notes &amp; 7).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>141. Le demi-ton mineur s entonne avec
+beaucoup moins de facilité que le demi-ton
+majeur: nos principes en donnent la raiſon.
+Le demi-ton majeur, qui ſe trouve dans l'é-
+chelle diatonique, comme mi fa, vient d'une
+baſſe fondamentale par quintes ut fa, c'eſt-
+à-dire de la ſucceſſion la plus naturelle, &amp;
+par cette raiſon la plus agréable à l'oreille.
+Au contraire, le demi-ton mineur vient da
+la ſucceſſion fondamentale par tierces, moins
+naturelle que la premiere; auſſi pour enton-
+ner juſte le demi- ton mineur, on employe
+preſque toujours l'artifice ſuivant. Suppo-
+ſons, par exemple, qu' on veuille monter du
+ſol au ſo , on monte d'abord du ſol au la,
+puis on deſcend du la au ſol X par l'inter-
+valle d'un demi· ton majeur; car ce ſol dieze,
+qui eſt un demi-ton majeur au-deſſous de la,
+ſe trouve un demi-ton mineur au-deſſus de
+ol (Voyez les notes &amp; 7).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="600,2565 600,2671 2095,2671 2095,2518 600,2565"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1491,2537 617,2564 617,2653 2092,2653 2092,2537 1491,2537"/>
+                <pc:TextEquiv conf="0.9834324717521667">
+                    <pc:Unicode>142. Toute progreſſion de la baſſe fonda.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>142. Toute progreſſion de la baſſe fonda.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footnote">
+            <pc:Coords points="515,2699 2097,2699 2102,2965 829,2954 851,3020 515,3018 515,2699"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="538,2703 1318,2703 1318,2769 538,2769"/>
+                <pc:TextEquiv conf="0.9249770641326904">
+                    <pc:Unicode>(aa) En effet mib étant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,2699 2089,2699 2089,2849 515,2849"/>
+                <pc:TextEquiv conf="0.3879002630710602">
+                    <pc:Unicode>am ,ae1ee</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="889,2753 1823,2753 1823,2869 889,2869"/>
+                <pc:TextEquiv conf="0.6487130522727966">
+                    <pc:Unicode>, &amp; a or ie abpon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-109_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,2848 515,3018 850,3018 2090,2965 2090,2848 515,2848"/>
+                <pc:TextEquiv conf="0.6190882325172424">
+                    <pc:Unicode>stliu s s 2zo, cel autẽ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(aa) En effet mib étant
+am ,ae1ee
+, &amp; a or ie abpon
+stliu s s 2zo, cel autẽ⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

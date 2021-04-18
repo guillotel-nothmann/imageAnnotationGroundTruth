@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:30</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:30</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-091.png" imageWidth="2303" imageHeight="3528" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-091-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-091.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="451,242 2022,242 2022,3018 451,3018"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="424,202 424,328 562,328 562,202 424,202"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="451,255 545,255 545,323 451,323"/>
+                <pc:TextEquiv conf="0.5568264722824097">
+                    <pc:Unicode>Bs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Bs</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="627,191 627,339 1776,339 1776,191 627,191"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="656,243 1769,243 1769,339 656,339"/>
+                <pc:TextEquiv conf="0.7510942816734314">
+                    <pc:Unicode>E1EMENS DE MSs10E</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E1EMENS DE MSs10E</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="413,350 413,1432 770,1461 784,1450 960,1465 1051,1443 1216,1454 2072,1432 2072,350 413,350"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,365 2010,365 2010,460 459,460"/>
+                <pc:TextEquiv conf="0.9805529117584229">
+                    <pc:Unicode>que les ſons ut &amp; re ne peuvent ſe ſuccéder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,457 2009,457 2009,548 458,548"/>
+                <pc:TextEquiv conf="0.9980736970901489">
+                    <pc:Unicode>diatoniquement dans la baſſe fondamentale;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="460,547 2014,547 2014,644 460,644"/>
+                <pc:TextEquiv conf="0.990344226360321">
+                    <pc:Unicode>car dans l'endroit cité, nous ſuppoſions que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,639 2016,639 2016,734 461,734"/>
+                <pc:TextEquiv conf="0.9604775309562683">
+                    <pc:Unicode>ut &amp; re portaſſent l'un &amp; lautre laccord par-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,728 2011,728 2011,827 461,827"/>
+                <pc:TextEquiv conf="0.9940043687820435">
+                    <pc:Unicode>fait majeur, au lieu que dans le cas préſent,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,822 2013,822 2013,919 465,919"/>
+                <pc:TextEquiv conf="0.9864038825035095">
+                    <pc:Unicode>ré porte la tierce mineure fa, &amp; de plus le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,909 2015,909 2015,1008 466,1008"/>
+                <pc:TextEquiv conf="0.9644069075584412">
+                    <pc:Unicode>ſon ut, par lequel l'accord re, fa, la, ut eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,997 2011,997 2011,1099 465,1099"/>
+                <pc:TextEquiv conf="0.9804279208183289">
+                    <pc:Unicode>lié avec celui qui le précede, ut, mi, ſol, ut,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1091 2016,1091 2016,1185 466,1185"/>
+                <pc:TextEquiv conf="0.993582010269165">
+                    <pc:Unicode>&amp; dans lequel ut ſe trouve. D'ailleurs cet ac-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1183 2014,1183 2014,1282 466,1282"/>
+                <pc:TextEquiv conf="0.9633926749229431">
+                    <pc:Unicode>cord ré, fa, la, ut, n'eſt proprement que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1275 2018,1275 2018,1375 466,1375"/>
+                <pc:TextEquiv conf="0.941560685634613">
+                    <pc:Unicode>l'accord fa, la, ut, ré renverſe, &amp;, pour</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,1365 465,1436 770,1461 977,1461 1124,1448 1124,1365 465,1365"/>
+                <pc:TextEquiv conf="0.9639782905578613">
+                    <pc:Unicode>ainſi dire, déguiſé.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>que les ſons ut &amp; re ne peuvent ſe ſuccéder
+diatoniquement dans la baſſe fondamentale;
+car dans l'endroit cité, nous ſuppoſions que
+ut &amp; re portaſſent l'un &amp; lautre laccord par-
+fait majeur, au lieu que dans le cas préſent,
+ré porte la tierce mineure fa, &amp; de plus le
+ſon ut, par lequel l'accord re, fa, la, ut eſt
+lié avec celui qui le précede, ut, mi, ſol, ut,
+&amp; dans lequel ut ſe trouve. D'ailleurs cet ac-
+cord ré, fa, la, ut, n'eſt proprement que
+l'accord fa, la, ut, ré renverſe, &amp;, pour
+ainſi dire, déguiſé.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="435,1460 435,2180 2050,2180 2050,1460 1238,1454 945,1469 792,1443 506,1458 435,1460"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="572,1460 572,1556 2016,1556 2016,1460 572,1460"/>
+                <pc:TextEquiv conf="0.9895274043083191">
+                    <pc:Unicode>105. Cette maniere de préſenter l'accord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1543 2020,1543 2020,1629 470,1629"/>
+                <pc:TextEquiv conf="0.9885692596435547">
+                    <pc:Unicode>de la ſous-dominante ſous deux formes diffé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,1642 2017,1642 2017,1738 469,1738"/>
+                <pc:TextEquiv conf="0.9897711873054504">
+                    <pc:Unicode>rentes, &amp; de l'employer ſous ces deux dif-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,1730 2018,1730 2018,1830 469,1830"/>
+                <pc:TextEquiv conf="0.9718488454818726">
+                    <pc:Unicode>férentes formes, a été nommée par M. Ra-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="471,1824 2016,1824 2016,1918 471,1918"/>
+                <pc:TextEquiv conf="0.9921382069587708">
+                    <pc:Unicode>meau, double emploi; c'eſt la ſource d'une</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1911 2018,1911 2018,2004 470,2004"/>
+                <pc:TextEquiv conf="0.9936522245407104">
+                    <pc:Unicode>des plus belles variétés de lharmonie; &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,2007 2014,2007 2014,2104 474,2104"/>
+                <pc:TextEquiv conf="0.9992235898971558">
+                    <pc:Unicode>nous verrons dans le Chapitre ſuivant, les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,2101 1408,2101 1408,2180 470,2180"/>
+                <pc:TextEquiv conf="0.990451455116272">
+                    <pc:Unicode>avantages qui en réſultent.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>105. Cette maniere de préſenter l'accord
+de la ſous-dominante ſous deux formes diffé-
+rentes, &amp; de l'employer ſous ces deux dif-
+férentes formes, a été nommée par M. Ra-
+meau, double emploi; c'eſt la ſource d'une
+des plus belles variétés de lharmonie; &amp;
+nous verrons dans le Chapitre ſuivant, les
+avantages qui en réſultent.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="459,2178 468,3053 2038,3018 2060,2178 459,2178"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2178 2016,2178 2016,2286 492,2286"/>
+                <pc:TextEquiv conf="0.9895757436752319">
+                    <pc:Unicode>Au reſte, le double emploi étant une eſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="473,2277 2017,2277 2017,2380 473,2380"/>
+                <pc:TextEquiv conf="0.9841212034225464">
+                    <pc:Unicode>pece de licence, ne doit être employé qu'a-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,2370 2017,2370 2017,2465 475,2465"/>
+                <pc:TextEquiv conf="0.9817119240760803">
+                    <pc:Unicode>vec une ſorte de précaution: nous venons de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,2461 2015,2461 2015,2558 474,2558"/>
+                <pc:TextEquiv conf="0.9505633115768433">
+                    <pc:Unicode>voir que l'accord ré, fa, la, ut, conſidéré</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,2555 2021,2555 2021,2652 472,2652"/>
+                <pc:TextEquiv conf="0.9717690348625183">
+                    <pc:Unicode>comme renverſé de fa, la, ut, /, peut ſuc-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="473,2639 2019,2639 2019,2745 473,2745"/>
+                <pc:TextEquiv conf="0.9746952056884766">
+                    <pc:Unicode>céder à ut, mi, ſol, ut, mais cela n eſt pas</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,2733 2011,2733 2011,2832 472,2832"/>
+                <pc:TextEquiv conf="0.9735568761825562">
+                    <pc:Unicode>réciproque; &amp; quoiqe l'accord fa, la, ut,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="471,2823 2016,2823 2016,2922 471,2922"/>
+                <pc:TextEquiv conf="0.9742615222930908">
+                    <pc:Unicode>re puiſſe être ſuivi de ut, mi, ſol, ut, on</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-091_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,2913 2018,2913 2018,3018 469,3018"/>
+                <pc:TextEquiv conf="0.9951705932617188">
+                    <pc:Unicode>neſt pas en droit den conclure que laccord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Au reſte, le double emploi étant une eſ-
+pece de licence, ne doit être employé qu'a-
+vec une ſorte de précaution: nous venons de
+voir que l'accord ré, fa, la, ut, conſidéré
+comme renverſé de fa, la, ut, /, peut ſuc-
+céder à ut, mi, ſol, ut, mais cela n eſt pas
+réciproque; &amp; quoiqe l'accord fa, la, ut,
+re puiſſe être ſuivi de ut, mi, ſol, ut, on
+neſt pas en droit den conclure que laccord</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

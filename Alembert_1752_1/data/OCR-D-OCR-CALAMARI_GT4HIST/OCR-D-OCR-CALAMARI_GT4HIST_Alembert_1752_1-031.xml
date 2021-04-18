@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:51</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:51</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-031.png" imageWidth="2303" imageHeight="3468" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-031-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-031.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="484,225 2021,225 2021,2963 484,2963"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="440,191 446,307 567,329 567,191 440,191"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="488,247 488,315 501,317 531,317 531,247 488,247"/>
+                <pc:TextEquiv conf="0.6493580937385559">
+                    <pc:Unicode>8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="676,162 676,306 1830,306 1830,162 676,162"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="714,226 1780,226 1780,306 714,306"/>
+                <pc:TextEquiv conf="0.8337267637252808">
+                    <pc:Unicode>EEMENS DE MvsI0E</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EEMENS DE MvsI0E</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="473,334 473,424 1771,424 1763,322 473,334"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="487,336 1750,336 1750,419 487,419"/>
+                <pc:TextEquiv conf="0.9986973404884338">
+                    <pc:Unicode>tave de mi, &amp;c. &amp; ainſi des autres.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>tave de mi, &amp;c. &amp; ainſi des autres.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="441,405 441,1045 2044,1045 2044,405 441,405"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="590,422 2008,422 2008,518 590,518"/>
+                <pc:TextEquiv conf="0.9968612790107727">
+                    <pc:Unicode>14. Comme il y a neuf ſons depuis le pre</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,511 2007,511 2007,609 486,609"/>
+                <pc:TextEquiv conf="0.991252601146698">
+                    <pc:Unicode>mier ut juſqu'au ſecond RE, lintervalle de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,605 2010,605 2010,698 488,698"/>
+                <pc:TextEquiv conf="0.972532331943512">
+                    <pc:Unicode>ces deux ſons s appelle neuieme, &amp; cette neu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,690 2008,690 2008,786 484,786"/>
+                <pc:TextEquiv conf="0.9784321784973145">
+                    <pc:Unicode>viéme eſt compoſée de ſix tons &amp; deux de-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,779 2008,779 2008,867 487,867"/>
+                <pc:TextEquiv conf="0.9815765023231506">
+                    <pc:Unicode>mi-tons Par la même raiſon lintervalle de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,869 2012,869 2012,967 490,967"/>
+                <pc:TextEquiv conf="0.9550548195838928">
+                    <pc:Unicode>ut à FA s'appelle onzieme, l'intervalle de ut</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,966 1303,966 1303,1045 489,1045"/>
+                <pc:TextEquiv conf="0.906326174736023">
+                    <pc:Unicode>à SOL, douzieme, &amp;c,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>14. Comme il y a neuf ſons depuis le pre
+mier ut juſqu'au ſecond RE, lintervalle de
+ces deux ſons s appelle neuieme, &amp; cette neu-
+viéme eſt compoſée de ſix tons &amp; deux de-
+mi-tons Par la même raiſon lintervalle de
+ut à FA s'appelle onzieme, l'intervalle de ut
+à SOL, douzieme, &amp;c,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="394,1039 394,1402 2090,1402 2090,1039 394,1039"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="582,1039 2009,1039 2009,1144 582,1144"/>
+                <pc:TextEquiv conf="0.938217282295227">
+                    <pc:Unicode>I eſt viſible que la neuvieme eſt loctave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1138 2013,1138 2013,1236 486,1236"/>
+                <pc:TextEquiv conf="0.9823925495147705">
+                    <pc:Unicode>de la ſeconde; que la onzieme eſt loctave de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1227 2011,1227 2011,1330 484,1330"/>
+                <pc:TextEquiv conf="0.9541206359863281">
+                    <pc:Unicode>la quarte; que la douzieme eſt l'octave de la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1327 2006,1327 2006,1402 491,1402"/>
+                <pc:TextEquiv conf="0.9842216968536377">
+                    <pc:Unicode>quinte, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>I eſt viſible que la neuvieme eſt loctave
+de la ſeconde; que la onzieme eſt loctave de
+la quarte; que la douzieme eſt l'octave de la
+quinte, &amp;c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="469,1385 469,1673 2119,1673 2119,1385 469,1385"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1385 2014,1385 2014,1499 491,1499"/>
+                <pc:TextEquiv conf="0.9219843149185181">
+                    <pc:Unicode>edave de loctave d'un ſon sappelle la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1497 2012,1497 2012,1586 484,1586"/>
+                <pc:TextEquiv conf="0.977694571018219">
+                    <pc:Unicode>double octave; l'octave de la double octave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="493,1587 1893,1587 1893,1673 493,1673"/>
+                <pc:TextEquiv conf="0.977833092212677">
+                    <pc:Unicode>ſe nomme triple octave, &amp; ainſi de ſuite.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>edave de loctave d'un ſon sappelle la
+double octave; l'octave de la double octave
+ſe nomme triple octave, &amp; ainſi de ſuite.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="400,1668 400,2164 2078,2164 2078,1668 400,1668"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="585,1668 2017,1668 2017,1767 585,1767"/>
+                <pc:TextEquiv conf="0.9905241131782532">
+                    <pc:Unicode>La double octave ſe nomme auſſi quinzie-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,1766 2013,1766 2013,1861 497,1861"/>
+                <pc:TextEquiv conf="0.9891971349716187">
+                    <pc:Unicode>me, &amp; par la même raiſon la double octave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="495,1855 2014,1855 2014,1946 495,1946"/>
+                <pc:TextEquiv conf="0.9784339666366577">
+                    <pc:Unicode>de la tierce eſt nommée dix-ſeptieme; la dou-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,1946 2015,1946 2015,2039 496,2039"/>
+                <pc:TextEquiv conf="0.9584531188011169">
+                    <pc:Unicode>ble octave de la quinte, dixrneuvieme, &amp;c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>La double octave ſe nomme auſſi quinzie-
+me, &amp; par la même raiſon la double octave
+de la tierce eſt nommée dix-ſeptieme; la dou-
+ble octave de la quinte, dixrneuvieme, &amp;c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footnote">
+            <pc:Coords points="420,2175 464,3034 2032,3034 2032,2158 420,2175"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="559,2186 2017,2186 2017,2257 559,2257"/>
+                <pc:TextEquiv conf="0.9757305383682251">
+                    <pc:Unicode>(b) Suppoſons deux cordes ſonores de mème matiere,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2247 2015,2247 2015,2321 494,2321"/>
+                <pc:TextEquiv conf="0.973202645778656">
+                    <pc:Unicode>de meme groſſeur &amp; également tendues, mais inegales</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2315 1616,2315 1616,2382 492,2382"/>
+                <pc:TextEquiv conf="0.9530861973762512">
+                    <pc:Unicode>en longueur, on trouvera par expérience,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,2376 2017,2376 2017,2444 503,2444"/>
+                <pc:TextEquiv conf="0.9766581654548645">
+                    <pc:Unicode>18. Que ſi la plus petite eſt exactement la moitié de la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,2440 2017,2440 2017,2513 489,2513"/>
+                <pc:TextEquiv conf="0.9883972406387329">
+                    <pc:Unicode>plus grande, le ſon qu'elle rendra ſera à loctave au- deſſus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2506 1540,2506 1540,2580 492,2580"/>
+                <pc:TextEquiv conf="0.9864875078201294">
+                    <pc:Unicode>lu ſon que rendra la plus grande.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="561,2565 2015,2565 2015,2635 561,2635"/>
+                <pc:TextEquiv conf="0.9948848485946655">
+                    <pc:Unicode>2. Que ſi la plus petite eſt le tiers de la plus grande,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2630 2015,2630 2015,2696 493,2696"/>
+                <pc:TextEquiv conf="0.9747198820114136">
+                    <pc:Unicode>elle rendra la doiziéme au· deſſus du ſon de la plus grande.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="502,2693 2020,2693 2020,2762 502,2762"/>
+                <pc:TextEquiv conf="0.9713044762611389">
+                    <pc:Unicode>z. Que ſi elle en eſt le einquiéme, elle rendra la dix</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2760 989,2760 989,2827 485,2827"/>
+                <pc:TextEquiv conf="0.9478532671928406">
+                    <pc:Unicode>ſeptiéme au- deſſus.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2817 2014,2817 2014,2891 486,2891"/>
+                <pc:TextEquiv conf="0.9849745035171509">
+                    <pc:Unicode>De plus, ceſt une vérité démontrée &amp; généralement</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_7_region_id_7_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,2880 2018,2880 2018,2963 487,2963"/>
+                <pc:TextEquiv conf="0.9364416599273682">
+                    <pc:Unicode>adiſe , que plus une corde eſt petite, plus elle fait de vi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(b) Suppoſons deux cordes ſonores de mème matiere,
+de meme groſſeur &amp; également tendues, mais inegales
+en longueur, on trouvera par expérience,
+18. Que ſi la plus petite eſt exactement la moitié de la
+plus grande, le ſon qu'elle rendra ſera à loctave au- deſſus
+lu ſon que rendra la plus grande.
+2. Que ſi la plus petite eſt le tiers de la plus grande,
+elle rendra la doiziéme au· deſſus du ſon de la plus grande.
+z. Que ſi elle en eſt le einquiéme, elle rendra la dix
+ſeptiéme au- deſſus.
+De plus, ceſt une vérité démontrée &amp; généralement
+adiſe , que plus une corde eſt petite, plus elle fait de vi-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="431,2176 431,2375 2028,2375 2028,2176 431,2176"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="559,2186 2017,2186 2017,2267 559,2267"/>
+                <pc:TextEquiv conf="0.9807278513908386">
+                    <pc:Unicode>(b) Suppoſons deux cordes ſonores de mème matiere,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2250 2015,2250 2015,2321 494,2321"/>
+                <pc:TextEquiv conf="0.9712540507316589">
+                    <pc:Unicode>de meme groſſeur &amp; egalement tendues, mais negales</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2319 1616,2319 1616,2375 492,2375"/>
+                <pc:TextEquiv conf="0.9494040608406067">
+                    <pc:Unicode>en longueur, On trouvera par experience,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(b) Suppoſons deux cordes ſonores de mème matiere,
+de meme groſſeur &amp; egalement tendues, mais negales
+en longueur, On trouvera par experience,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="470,2375 470,2565 2072,2565 2072,2375 470,2375"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="565,2375 2017,2375 2017,2446 565,2446"/>
+                <pc:TextEquiv conf="0.9710167646408081">
+                    <pc:Unicode>18. Que ſi la plus petite eſt exactement la moitié de la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,2439 2017,2439 2017,2517 489,2517"/>
+                <pc:TextEquiv conf="0.9767768979072571">
+                    <pc:Unicode>plus grande, le ſon qu elle rendra ſera à loctave au- deſſus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2502 1969,2502 1969,2565 492,2565"/>
+                <pc:TextEquiv conf="0.9812352657318115">
+                    <pc:Unicode>tlu ſon que rendra la plus grande.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>18. Que ſi la plus petite eſt exactement la moitié de la
+plus grande, le ſon qu elle rendra ſera à loctave au- deſſus
+tlu ſon que rendra la plus grande.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="454,2567 454,2689 2021,2689 2021,2567 454,2567"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2567 2015,2567 2015,2635 496,2635"/>
+                <pc:TextEquiv conf="0.9900863766670227">
+                    <pc:Unicode>2. Que ſi la plus petite eſt le tiers de la plus grande,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2630 2015,2630 2015,2689 493,2689"/>
+                <pc:TextEquiv conf="0.973969042301178">
+                    <pc:Unicode>elle rendra la doiziéme au- deſſus du ſon de la plus grande.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2. Que ſi la plus petite eſt le tiers de la plus grande,
+elle rendra la doiziéme au- deſſus du ſon de la plus grande.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="475,2687 475,2821 2060,2821 2060,2687 475,2687"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2687 2020,2687 2020,2767 496,2767"/>
+                <pc:TextEquiv conf="0.9723187685012817">
+                    <pc:Unicode>3. Que ſi elle en eſt le cinquiéme, elle rendra la dix</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2762 1849,2762 1849,2821 485,2821"/>
+                <pc:TextEquiv conf="0.9402583241462708">
+                    <pc:Unicode>ſeptiéme au-deſſus.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>3. Que ſi elle en eſt le cinquiéme, elle rendra la dix
+ſeptiéme au-deſſus.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="465,2814 465,2969 2039,2969 2039,2814 465,2814"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2814 2014,2814 2014,2896 486,2896"/>
+                <pc:TextEquiv conf="0.9743819236755371">
+                    <pc:Unicode>De plus, ceſt une vérité démontrée &amp; généralement</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-031_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,2880 2018,2880 2018,2963 487,2963"/>
+                <pc:TextEquiv conf="0.9221941828727722">
+                    <pc:Unicode>adniie , que plus une corde eſt petite, plus elle fait de vi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>De plus, ceſt une vérité démontrée &amp; généralement
+adniie , que plus une corde eſt petite, plus elle fait de vi-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

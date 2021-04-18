@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:59</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:59</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-034.png" imageWidth="2303" imageHeight="3540" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-034-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-034.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="271,248 1843,248 1843,3379 271,3379"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="489,207 489,348 1616,348 1616,207 489,207"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="503,249 1613,249 1613,342 503,342"/>
+                <pc:TextEquiv conf="0.7368152141571045">
+                    <pc:Unicode>Tutonrovr r PrI0vE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tutonrovr r PrI0vE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1724,220 1724,374 1891,374 1891,220 1724,220"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1746,263 1836,263 1836,335 1746,335"/>
+                <pc:TextEquiv conf="0.8394124507904053">
+                    <pc:Unicode>ir</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ir</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="246,342 246,534 1878,534 1878,342 246,342"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,363 1840,363 1840,471 271,471"/>
+                <pc:TextEquiv conf="0.9836940765380859">
+                    <pc:Unicode>ſuite la quinte, puis la tierce, &amp;c. Ceſt un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,456 892,456 892,534 273,534"/>
+                <pc:TextEquiv conf="0.9734469652175903">
+                    <pc:Unicode>fait d'expérience.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſuite la quinte, puis la tierce, &amp;c. Ceſt un
+fait d'expérience.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="210,537 210,1280 1872,1280 1872,537 210,537"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="344,537 1835,537 1835,643 344,643"/>
+                <pc:TextEquiv conf="0.9839430451393127">
+                    <pc:Unicode>18. Un accord compoſé de ſons dont l'union</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,641 1834,641 1834,739 272,739"/>
+                <pc:TextEquiv conf="0.9706738591194153">
+                    <pc:Unicode>déplait à loreille s appelle accod diſſonant,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,733 1830,733 1830,831 274,831"/>
+                <pc:TextEquiv conf="0.9918026328086853">
+                    <pc:Unicode>&amp; les ſons qui le forment ſont appellés diſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="271,826 1834,826 1834,921 271,921"/>
+                <pc:TextEquiv conf="0.998498797416687">
+                    <pc:Unicode>ſonances les uns par rapport aux autres. La</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,918 1834,918 1834,1014 273,1014"/>
+                <pc:TextEquiv conf="0.9919416904449463">
+                    <pc:Unicode>ſeconde, le triton, &amp; la ſeptiéme d'un ſon,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,1009 1832,1009 1832,1106 273,1106"/>
+                <pc:TextEquiv conf="0.9974666833877563">
+                    <pc:Unicode>ſont des diſſonances par rapport à lui. Ainſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="273,1101 1828,1101 1828,1201 273,1201"/>
+                <pc:TextEquiv conf="0.9537944197654724">
+                    <pc:Unicode>un accord compoſé des ſons ut re, ou ut ſi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1192 1616,1192 1616,1280 277,1280"/>
+                <pc:TextEquiv conf="0.9926630258560181">
+                    <pc:Unicode>ou fa ſi, &amp;c. eſt un accord diſſonant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>18. Un accord compoſé de ſons dont l'union
+déplait à loreille s appelle accod diſſonant,
+&amp; les ſons qui le forment ſont appellés diſ-
+ſonances les uns par rapport aux autres. La
+ſeconde, le triton, &amp; la ſeptiéme d'un ſon,
+ſont des diſſonances par rapport à lui. Ainſi
+un accord compoſé des ſons ut re, ou ut ſi,
+ou fa ſi, &amp;c. eſt un accord diſſonant.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="262,1286 262,1939 1875,1939 1875,1286 262,1286"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="381,1286 1831,1286 1831,1383 381,1383"/>
+                <pc:TextEquiv conf="0.9924642443656921">
+                    <pc:Unicode>19. Le terme de diſſonance vient de deux</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="277,1378 1830,1378 1830,1475 277,1475"/>
+                <pc:TextEquiv conf="0.974676251411438">
+                    <pc:Unicode>mots, l'un grec, l'autre latin, qui ſignifient ſon-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="281,1471 1829,1471 1829,1566 281,1566"/>
+                <pc:TextEquiv conf="0.9949169754981995">
+                    <pc:Unicode>ner deux fois; en effet, la raiſon qui rend la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="280,1559 1830,1559 1830,1657 280,1657"/>
+                <pc:TextEquiv conf="0.9911433458328247">
+                    <pc:Unicode>diſſonance deſagréable, c'eſt que les ſons qui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,1650 1838,1650 1838,1743 283,1743"/>
+                <pc:TextEquiv conf="0.9848476052284241">
+                    <pc:Unicode>la forment ne ſe confondent nullement à lo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,1745 1842,1745 1842,1843 283,1843"/>
+                <pc:TextEquiv conf="0.9982425570487976">
+                    <pc:Unicode>reille, &amp; ſont entendus par elle comme deux</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-034_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,1834 1708,1834 1708,1939 282,1939"/>
+                <pc:TextEquiv conf="0.9698591232299805">
+                    <pc:Unicode>ſons diſtincts, quoique frappés à la- fois.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>19. Le terme de diſſonance vient de deux
+mots, l'un grec, l'autre latin, qui ſignifient ſon-
+ner deux fois; en effet, la raiſon qui rend la
+diſſonance deſagréable, c'eſt que les ſons qui
+la forment ne ſe confondent nullement à lo-
+reille, &amp; ſont entendus par elle comme deux
+ſons diſtincts, quoique frappés à la- fois.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_5" type="decoration">
+            <pc:Coords points="685,2032 685,2568 1438,2568 1438,2032 685,2032"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

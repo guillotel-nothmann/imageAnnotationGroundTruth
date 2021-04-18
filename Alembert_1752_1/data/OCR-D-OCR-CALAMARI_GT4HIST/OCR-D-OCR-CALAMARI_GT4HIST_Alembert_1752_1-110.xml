@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:21</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:21</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-110.png" imageWidth="2303" imageHeight="3556" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-110-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-110.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="264,224 1850,224 1850,3091 264,3091"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="479,170 479,320 1615,320 1615,170 479,170"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="509,226 1606,226 1606,311 509,311"/>
+                <pc:TextEquiv conf="0.7086040377616882">
+                    <pc:Unicode>Turonrvv r PAriovt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Turonrvv r PAriovt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1725,170 1725,331 1858,331 1858,170 1725,170"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1742,225 1837,225 1837,316 1742,316"/>
+                <pc:TextEquiv conf="0.9352506399154663">
+                    <pc:Unicode>8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="214,303 214,1067 1858,1067 1858,303 214,303"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,334 1837,334 1837,435 264,435"/>
+                <pc:TextEquiv conf="0.9967555999755859">
+                    <pc:Unicode>mentale par tierces, ſoit majeures, ſoit mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,433 1837,433 1837,521 274,521"/>
+                <pc:TextEquiv conf="0.9855852723121643">
+                    <pc:Unicode>neures, en montant ou en deſcendant, don-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,526 1841,526 1841,621 264,621"/>
+                <pc:TextEquiv conf="0.983397364616394">
+                    <pc:Unicode>ne le demi-ton mineur: nous l'avons déjà vû</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="270,618 1843,618 1843,717 270,717"/>
+                <pc:TextEquiv conf="0.9993388652801514">
+                    <pc:Unicode>de la progreſſion des tierces en montant. La</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,711 1844,711 1844,809 267,809"/>
+                <pc:TextEquiv conf="0.9922001361846924">
+                    <pc:Unicode>progreſſion de tierces mineures en deſcen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,804 1845,804 1845,896 283,896"/>
+                <pc:TextEquiv conf="0.9560313820838928">
+                    <pc:Unicode>dant, ut, la, donne ut, ut (bb), &amp; la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,895 1845,895 1845,995 267,995"/>
+                <pc:TextEquiv conf="0.9993259906768799">
+                    <pc:Unicode>progreſſion de tierces majeures en deſcen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,990 1788,990 1788,1067 286,1067"/>
+                <pc:TextEquiv conf="0.9514071941375732">
+                    <pc:Unicode>dant, ut, la , · donne ut, ut (cc).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>mentale par tierces, ſoit majeures, ſoit mi-
+neures, en montant ou en deſcendant, don-
+ne le demi-ton mineur: nous l'avons déjà vû
+de la progreſſion des tierces en montant. La
+progreſſion de tierces mineures en deſcen-
+dant, ut, la, donne ut, ut (bb), &amp; la
+progreſſion de tierces majeures en deſcen-
+dant, ut, la , · donne ut, ut (cc).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="269,1089 242,1533 519,1538 524,1461 1864,1472 1842,1062 269,1089"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="677,1082 389,1087 389,1177 1845,1177 1845,1118 1843,1082 677,1082"/>
+                <pc:TextEquiv conf="0.9954319596290588">
+                    <pc:Unicode>143. Le demi-ton mineur conſtitue le gen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="278,1175 278,1270 1849,1270 1849,1192 1848,1175 278,1175"/>
+                <pc:TextEquiv conf="0.9727576971054077">
+                    <pc:Unicode>re appellé comatique; &amp; avec le genre dia-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="274,1267 1846,1267 1846,1427 274,1427"/>
+                <pc:TextEquiv conf="0.2805367708206177">
+                    <pc:Unicode>r/xt e K</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,1292 285,1524 520,1524 1850,1472 1850,1292 285,1292"/>
+                <pc:TextEquiv conf="0.4262997806072235">
+                    <pc:Unicode>tX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="315,1478 482,1478 482,1523 315,1523"/>
+                <pc:TextEquiv conf="0.7058683037757874">
+                    <pc:Unicode>Oie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>143. Le demi-ton mineur conſtitue le gen-
+re appellé comatique; &amp; avec le genre dia-
+r/xt e K
+tX
+Oie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="558,1740 1559,1740 1559,1853 558,1853 558,1740"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="558,1740 1559,1740 1559,1853 558,1853"/>
+                <pc:TextEquiv conf="0.942615807056427">
+                    <pc:Unicode>CHAPITRE XIX.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITRE XIX.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="627,1901 1468,1901 1468,1997 627,1997 627,1901"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="627,1901 1468,1901 1468,1997 627,1997"/>
+                <pc:TextEquiv conf="0.9475761651992798">
+                    <pc:Unicode>Du genre enhamonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Du genre enhamonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="282,2068 1850,2068 1864,2568 275,2574 282,2068"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2068 1847,2068 1847,2250 285,2250"/>
+                <pc:TextEquiv conf="0.3802863359451294">
+                    <pc:Unicode>*L  XXAX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="653,2162 1849,2162 1849,2257 653,2257"/>
+                <pc:TextEquiv conf="0.9947127103805542">
+                    <pc:Unicode>haſſe fondamentale par tierces ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,2254 1850,2254 1850,2354 282,2354"/>
+                <pc:TextEquiv conf="0.9723588824272156">
+                    <pc:Unicode>jeures, ut mi ſol X, donnent ce chant ut ſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="288,2347 1846,2347 1846,2443 288,2443"/>
+                <pc:TextEquiv conf="0.9608073234558105">
+                    <pc:Unicode>X, &amp; ces deux ſons ut ſ different en-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="283,2441 1849,2441 1849,2539 283,2539"/>
+                <pc:TextEquiv conf="0.9660050272941589">
+                    <pc:Unicode>tr eux d'un petit intervalle appellé quart de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>*L  XXAX
+haſſe fondamentale par tierces ma-
+jeures, ut mi ſol X, donnent ce chant ut ſi
+X, &amp; ces deux ſons ut ſ different en-
+tr eux d'un petit intervalle appellé quart de</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="drop-capital">
+            <pc:Coords points="463,2042 463,2263 634,2263 634,2042 463,2042"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="485,2075 630,2075 630,2250 485,2250"/>
+                <pc:TextEquiv conf="0.7937508821487427">
+                    <pc:Unicode>L</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>L</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footnote">
+            <pc:Coords points="252,2601 252,3011 1338,3006 1342,2998 1320,2949 1860,2942 1842,2601 252,2601"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="353,2611 353,2704 1845,2704 1845,2658 1843,2611 353,2611"/>
+                <pc:TextEquiv conf="0.7235593795776367">
+                    <pc:Unicode>(i)La étant , eſt ee, ceſt-à - iiee, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,2697 1842,2697 1842,2785 286,2785"/>
+                <pc:TextEquiv conf="0.963600754737854">
+                    <pc:Unicode>ut eſt 1: donc le rapport de ut à ut eſt celui de 1 à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="287,2790 687,2790 687,2855 287,2855"/>
+                <pc:TextEquiv conf="0.9575382471084595">
+                    <pc:Unicode>ou de 24 à 25.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="355,2848 1847,2848 1847,2941 355,2941"/>
+                <pc:TextEquiv conf="0.876161515712738">
+                    <pc:Unicode>(cc) Lab etant , u b eſtZ de Z, ceſt à · dire : done</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2932 285,3011 1315,3006 1315,2932 285,2932"/>
+                <pc:TextEquiv conf="0.9629733562469482">
+                    <pc:Unicode>le rapport de ut à ut h eſt de 24 à 25.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(i)La étant , eſt ee, ceſt-à - iiee, &amp;
+ut eſt 1: donc le rapport de ut à ut eſt celui de 1 à
+ou de 24 à 25.
+(cc) Lab etant , u b eſtZ de Z, ceſt à · dire : done
+le rapport de ut à ut h eſt de 24 à 25.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="274,2611 274,2845 1875,2845 1875,2611 274,2611"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="353,2611 1849,2611 1849,2704 353,2704"/>
+                <pc:TextEquiv conf="0.7258323431015015">
+                    <pc:Unicode>(i)La étant , eſt ee, ceſt-à - iiee, &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="286,2697 1842,2697 1842,2785 286,2785"/>
+                <pc:TextEquiv conf="0.963600754737854">
+                    <pc:Unicode>ut eſt 1: donc le rapport de ut à ut eſt celui de 1 à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="287,2790 687,2790 687,2845 287,2845"/>
+                <pc:TextEquiv conf="0.8671586513519287">
+                    <pc:Unicode>ou de 24 àA 25.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(i)La étant , eſt ee, ceſt-à - iiee, &amp;
+ut eſt 1: donc le rapport de ut à ut eſt celui de 1 à
+ou de 24 àA 25.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="277,2857 277,3004 1342,2998 1325,2940 1859,2942 1859,2839 277,2857"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1068,2848 355,2856 355,2941 1847,2941 1847,2848 1068,2848"/>
+                <pc:TextEquiv conf="0.8741545081138611">
+                    <pc:Unicode>(cc) Lab etant , u b eſtZ de Z, ceſt à · dire : done</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-110_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="285,2932 285,3004 1315,2998 1315,2932 285,2932"/>
+                <pc:TextEquiv conf="0.9643861651420593">
+                    <pc:Unicode>le rapport de ut à ut b eſt de 24 à 25.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(cc) Lab etant , u b eſtZ de Z, ceſt à · dire : done
+le rapport de ut à ut b eſt de 24 à 25.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="footer">
+            <pc:Coords points="1462,2977 1462,3105 1626,3100 1643,2991 1462,2977"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1476,2998 1476,3091 1627,3091 1628,3087 1628,2998 1476,2998"/>
+                <pc:TextEquiv conf="0.7946239709854126">
+                    <pc:Unicode>Fiij</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fiij</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="marginalia">
+            <pc:Coords points="1925,2037 1925,2164 2174,2164 2174,2037 1925,2037"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_4">
+            <pc:Coords points="341,1615 1806,1615 1806,1666 341,1666 341,1615"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

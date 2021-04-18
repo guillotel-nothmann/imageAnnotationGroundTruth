@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:45</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:45</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-029.png" imageWidth="2303" imageHeight="3513" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-029-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-029.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="455,245 2062,245 2062,3018 455,3018"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="427,234 427,347 542,347 542,234 427,234"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="455,265 510,265 510,334 455,334"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="644,210 644,338 1813,338 1813,210 644,210"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="678,246 1781,246 1781,329 678,329"/>
+                <pc:TextEquiv conf="0.7384228706359863">
+                    <pc:Unicode>E1EMENS DE MvsIVE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E1EMENS DE MvsIVE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="416,352 444,558 496,566 507,566 535,539 2054,517 2060,342 416,352"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="463,353 2017,353 2017,456 463,456"/>
+                <pc:TextEquiv conf="0.9710923433303833">
+                    <pc:Unicode>demi, comme ut fa, ou ſol ut, sappelle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="464,464 464,557 516,557 878,534 878,464 464,464"/>
+                <pc:TextEquiv conf="0.8505430221557617">
+                    <pc:Unicode>qua/te.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>demi, comme ut fa, ou ſol ut, sappelle
+qua/te.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="392,544 392,851 578,835 598,807 2088,739 2052,531 392,544"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1030,539 466,543 466,633 2014,633 2014,539 1030,539"/>
+                <pc:TextEquiv conf="0.9875667095184326">
+                    <pc:Unicode>Un intervalle compoſé de trois tons,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,629 2016,629 2016,733 477,733"/>
+                <pc:TextEquiv conf="0.9591055512428284">
+                    <pc:Unicode>comme fa ſi, sappelle triton ou quarte ſu-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:Coords points="465,736 465,842 497,842 578,835 711,802 711,736 465,736"/>
+                <pc:TextEquiv conf="0.9493082165718079">
+                    <pc:Unicode>pelue.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de trois tons,
+comme fa ſi, sappelle triton ou quarte ſu-
+pelue.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="441,911 414,1098 2046,1078 2046,793 598,807 565,838 441,911"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="594,811 576,828 576,911 2021,911 2021,811 594,811"/>
+                <pc:TextEquiv conf="0.9848183393478394">
+                    <pc:Unicode>Un intervalle compoſé de trois tons &amp; de-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,904 2021,904 2021,1002 478,1002"/>
+                <pc:TextEquiv conf="0.9630033373832703">
+                    <pc:Unicode>mi, comme ut ſol, ou fa ut, ou ré la, ou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="481,1001 481,1097 496,1097 1441,1085 1441,1001 481,1001"/>
+                <pc:TextEquiv conf="0.9738545417785645">
+                    <pc:Unicode>mi ſi, &amp;c. s'appelle quinte.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de trois tons &amp; de-
+mi, comme ut ſol, ou fa ut, ou ré la, ou
+mi ſi, &amp;c. s'appelle quinte.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="469,1095 466,1383 532,1380 573,1366 2074,1352 2074,1081 469,1095"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1615,1085 576,1094 576,1183 2029,1183 2029,1085 1615,1085"/>
+                <pc:TextEquiv conf="0.9743580222129822">
+                    <pc:Unicode>Un intervalle compoſé de trois tons &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1179 2032,1179 2032,1278 485,1278"/>
+                <pc:TextEquiv conf="0.9778871536254883">
+                    <pc:Unicode>de deux demi-tons, comme mi T, sap-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1277 487,1382 488,1382 1145,1361 1145,1277 487,1277"/>
+                <pc:TextEquiv conf="0.9840990900993347">
+                    <pc:Unicode>pelle ſixte mineure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de trois tons &amp;
+de deux demi-tons, comme mi T, sap-
+pelle ſixte mineure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="472,1421 436,1643 2054,1615 2054,1355 556,1363 472,1421"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1305,1359 584,1363 584,1457 2053,1457 2053,1359 1305,1359"/>
+                <pc:TextEquiv conf="0.9835549592971802">
+                    <pc:Unicode>Un intervalle compoſé de quatre tons &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,1449 2037,1449 2037,1546 493,1546"/>
+                <pc:TextEquiv conf="0.9740725755691528">
+                    <pc:Unicode>un demi-ton, comme ut la, Sappelle ſixte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:Coords points="489,1581 489,1641 552,1641 1041,1633 1041,1581 489,1581"/>
+                <pc:TextEquiv conf="0.7660576701164246">
+                    <pc:Unicode>M /eure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de quatre tons &amp;
+un demi-ton, comme ut la, Sappelle ſixte
+M /eure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="460,1641 480,1931 567,1935 589,1901 589,1899 2101,1881 2109,1607 460,1641"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="800,1634 586,1638 586,1730 2041,1730 2041,1634 800,1634"/>
+                <pc:TextEquiv conf="0.984330415725708">
+                    <pc:Unicode>Un intervalle compoſé de quatre tons &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,1724 2040,1724 2040,1818 497,1818"/>
+                <pc:TextEquiv conf="0.9807494282722473">
+                    <pc:Unicode>deux demi-tons, comme re T, sappelle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="483,1827 483,1929 571,1929 1057,1893 1057,1827 483,1827"/>
+                <pc:TextEquiv conf="0.9618871212005615">
+                    <pc:Unicode>ſeptieme mineure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de quatre tons &amp;
+deux demi-tons, comme re T, sappelle
+ſeptieme mineure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="470,1983 480,2232 549,2176 687,2180 788,2152 2076,2152 2076,1894 589,1901 593,1987 470,1983"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="589,1906 500,1984 500,2010 2045,2010 2045,1906 589,1906"/>
+                <pc:TextEquiv conf="0.9843246936798096">
+                    <pc:Unicode>Un intervalle compoſé de cinq tons &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,2000 2048,2000 2048,2097 504,2097"/>
+                <pc:TextEquiv conf="0.9684975743293762">
+                    <pc:Unicode>demi, comme ut ſi, sappelle ſepuéme ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="493,2103 493,2203 516,2203 1322,2152 1322,2103 493,2103"/>
+                <pc:TextEquiv conf="0.9272121787071228">
+                    <pc:Unicode>jeure.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Un intervalle compoſé de cinq tons &amp;
+demi, comme ut ſi, sappelle ſepuéme ma-
+jeure.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="582,2170 587,2251 482,2281 512,2518 601,2467 2062,2437 2062,2170 582,2170"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2181 2051,2181 2051,2274 606,2274"/>
+                <pc:TextEquiv conf="0.9916823506355286">
+                    <pc:Unicode>Enfin, un intervalle compoſé de cinq tons</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2270 513,2272 513,2367 2056,2367 2056,2270 520,2270"/>
+                <pc:TextEquiv conf="0.9799948930740356">
+                    <pc:Unicode>&amp; deux demi-tons, comme ut T, eſt ap-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="516,2374 516,2480 578,2480 939,2460 939,2374 516,2374"/>
+                <pc:TextEquiv conf="0.9420356154441833">
+                    <pc:Unicode>pellé octave.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Enfin, un intervalle compoſé de cinq tons
+&amp; deux demi-tons, comme ut T, eſt ap-
+pellé octave.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="607,2460 484,2584 479,2829 2108,2800 2143,2414 607,2460"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="941,2450 623,2460 623,2551 2055,2551 2055,2450 941,2450"/>
+                <pc:TextEquiv conf="0.9806984663009644">
+                    <pc:Unicode>1o. Deux ſons également aigus, ou égale-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,2544 519,2549 519,2648 2056,2648 2056,2544 524,2544"/>
+                <pc:TextEquiv conf="0.9794695973396301">
+                    <pc:Unicode>ment graves, quelque inégalité qu'il y ait</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="521,2630 2057,2630 2057,2726 521,2726"/>
+                <pc:TextEquiv conf="0.9748831391334534">
+                    <pc:Unicode>d ailleurs dans leur force, ſont dits à l'unſſon</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="520,2730 520,2818 1097,2818 1951,2803 1951,2730 520,2730"/>
+                <pc:TextEquiv conf="0.9858826994895935">
+                    <pc:Unicode>Pun de l'autre.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1o. Deux ſons également aigus, ou égale-
+ment graves, quelque inégalité qu'il y ait
+d ailleurs dans leur force, ſont dits à l'unſſon
+Pun de l'autre.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="499,2826 499,3019 2085,3019 2093,2794 499,2826"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="848,2819 507,2826 507,2915 2060,2915 2060,2819 848,2819"/>
+                <pc:TextEquiv conf="0.9768503904342651">
+                    <pc:Unicode>11. Quand deux ſons forment entr'eux un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-029_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2909 2061,2909 2061,3018 519,3018"/>
+                <pc:TextEquiv conf="0.9760786294937134">
+                    <pc:Unicode>intervalle quelconque, on dit que le plus ai-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>11. Quand deux ſons forment entr'eux un
+intervalle quelconque, on dit que le plus ai-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

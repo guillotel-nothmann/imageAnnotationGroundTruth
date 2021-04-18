@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:13:50</pc:Created>
+        <pc:LastChange>2021-01-15T15:13:50</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-053.png" imageWidth="2303" imageHeight="3551" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-053-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-053.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="493,223 2104,223 2104,3020 493,3020"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="493,224 591,209 625,320 493,327 493,224"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="493,257 493,327 585,322 585,257 493,257"/>
+                <pc:TextEquiv conf="0.5598019957542419">
+                    <pc:Unicode>30</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>30</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="690,170 690,341 1852,341 1852,170 690,170"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="725,224 1818,224 1818,318 725,318"/>
+                <pc:TextEquiv conf="0.760063648223877">
+                    <pc:Unicode>EIEMES DE MSs10vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EIEMES DE MSs10vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="496,341 2081,341 2101,1641 497,1619 496,341"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="496,341 496,433 2067,433 2067,341 496,341"/>
+                <pc:TextEquiv conf="0.9771506786346436">
+                    <pc:Unicode>les ſons re &amp; fa forment entr'eux une tierce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,434 2065,434 2065,529 497,529"/>
+                <pc:TextEquiv conf="0.9935896396636963">
+                    <pc:Unicode>mineure qui n'eſt pas parfaitement juſte com-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="498,526 2062,526 2062,623 498,623"/>
+                <pc:TextEquiv conf="0.9820307493209839">
+                    <pc:Unicode>me l'eſt celle de mi à ſol (m). Cependant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,618 2066,618 2066,692 501,692"/>
+                <pc:TextEquiv conf="0.9814557433128357">
+                    <pc:Unicode>cette altération dans la tierce mineure de re</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,709 2065,709 2065,808 503,808"/>
+                <pc:TextEquiv conf="0.9860341548919678">
+                    <pc:Unicode>à fa ne fait aucune peine à l'oreille, parce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="499,798 2070,798 2070,901 499,901"/>
+                <pc:TextEquiv conf="0.9828805923461914">
+                    <pc:Unicode>que ce re &amp; ce fa, qui ne forment pas en-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,898 2073,898 2073,990 506,990"/>
+                <pc:TextEquiv conf="0.9941704869270325">
+                    <pc:Unicode>tr'eux une tierce mineure juſte, forment cha-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,989 2072,989 2072,1078 504,1078"/>
+                <pc:TextEquiv conf="0.9993308782577515">
+                    <pc:Unicode>cun en particulier des conſonances parfaite-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="505,1016 2075,1016 2075,1168 505,1168"/>
+                <pc:TextEquiv conf="0.555275559425354">
+                    <pc:Unicode>XXiXX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="505,1172 2076,1172 2076,1267 505,1267"/>
+                <pc:TextEquiv conf="0.9737637042999268">
+                    <pc:Unicode>mentale qui leur répondent; car re de l'é-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="509,1265 2080,1265 2080,1363 509,1363"/>
+                <pc:TextEquiv conf="0.9939889311790466">
+                    <pc:Unicode>chelle eſt la quinte juſte du ſol qui lui répond</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,1355 2081,1355 2081,1453 508,1453"/>
+                <pc:TextEquiv conf="0.9813258647918701">
+                    <pc:Unicode>dans la baſſe fondamentale, &amp; fa de lé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,1449 2080,1449 2080,1548 510,1548"/>
+                <pc:TextEquiv conf="0.9795446991920471">
+                    <pc:Unicode>chelle eſt l'octave juſte du fa qui lui répond</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,1542 1338,1542 1338,1613 512,1613"/>
+                <pc:TextEquiv conf="0.9872129559516907">
+                    <pc:Unicode>dans cette même baſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>les ſons re &amp; fa forment entr'eux une tierce
+mineure qui n'eſt pas parfaitement juſte com-
+me l'eſt celle de mi à ſol (m). Cependant
+cette altération dans la tierce mineure de re
+à fa ne fait aucune peine à l'oreille, parce
+que ce re &amp; ce fa, qui ne forment pas en-
+tr'eux une tierce mineure juſte, forment cha-
+cun en particulier des conſonances parfaite-
+XXiXX
+mentale qui leur répondent; car re de l'é-
+chelle eſt la quinte juſte du ſol qui lui répond
+dans la baſſe fondamentale, &amp; fa de lé-
+chelle eſt l'octave juſte du fa qui lui répond
+dans cette même baſſe.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="518,1635 2118,1608 2129,2543 508,2554 518,1635"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,1635 2087,1635 2087,1730 519,1730"/>
+                <pc:TextEquiv conf="0.9737189412117004">
+                    <pc:Unicode>47. Donc, pourvù que les ſons de lé-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,1661 2085,1661 2085,1823 518,1823"/>
+                <pc:TextEquiv conf="0.29675567150115967">
+                    <pc:Unicode>XX XXX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,1819 2085,1819 2085,1915 519,1915"/>
+                <pc:TextEquiv conf="0.9901953339576721">
+                    <pc:Unicode>juſtes avec les ſons qui leur répondent dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,1909 2091,1909 2091,2014 524,2014"/>
+                <pc:TextEquiv conf="0.9946925044059753">
+                    <pc:Unicode>la baſſe fondamentale, l'oreille ſe met peu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,2001 2090,2001 2090,2100 522,2100"/>
+                <pc:TextEquiv conf="0.9820433259010315">
+                    <pc:Unicode>en peine de l'altération qu'il peut y avoir</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="522,2094 2090,2094 2090,2188 522,2188"/>
+                <pc:TextEquiv conf="0.9947852492332458">
+                    <pc:Unicode>dans les intervalles que ces ſons de léchelle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,2187 2093,2187 2093,2286 525,2286"/>
+                <pc:TextEquiv conf="0.9944696426391602">
+                    <pc:Unicode>forment entr'eux. Nouvelle preuve que la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="526,2275 2092,2275 2092,2377 526,2377"/>
+                <pc:TextEquiv conf="0.9951123595237732">
+                    <pc:Unicode>baſſe fondamentale eſt le vrai guide de l'o-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="528,2366 2095,2366 2095,2468 528,2468"/>
+                <pc:TextEquiv conf="0.9933046102523804">
+                    <pc:Unicode>reille &amp; la véritable origine du chant dia-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="529,2463 529,2552 803,2552 817,2552 817,2463 529,2463"/>
+                <pc:TextEquiv conf="0.9973887205123901">
+                    <pc:Unicode>tonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>47. Donc, pourvù que les ſons de lé-
+XX XXX
+juſtes avec les ſons qui leur répondent dans
+la baſſe fondamentale, l'oreille ſe met peu
+en peine de l'altération qu'il peut y avoir
+dans les intervalles que ces ſons de léchelle
+forment entr'eux. Nouvelle preuve que la
+baſſe fondamentale eſt le vrai guide de l'o-
+reille &amp; la véritable origine du chant dia-
+tonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="532,2590 2103,2590 2118,3024 536,3007 532,2590"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="599,2590 2103,2590 2103,2671 599,2671"/>
+                <pc:TextEquiv conf="0.9840760231018066">
+                    <pc:Unicode>(m) Pour comparer le re au fa, il ny a quà comparer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,2654 533,2694 533,2738 2100,2738 2100,2654 533,2654"/>
+                <pc:TextEquiv conf="0.9524859189987183">
+                    <pc:Unicode>à; le rapport de ces fractions ſera (Note d) celui de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="534,2736 534,2798 534,2819 2101,2819 2101,2736 534,2736"/>
+                <pc:TextEquiv conf="0.9713082313537598">
+                    <pc:Unicode>9 fois z à 8 fois 4, ceſt- à- dire de 27 à 32: donc la tierce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="537,2806 2094,2806 2094,2888 537,2888"/>
+                <pc:TextEquiv conf="0.9831215739250183">
+                    <pc:Unicode>mineure de re à fa neſt pas juſte, puiſque le rapport de 27</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="537,2867 2103,2867 2103,2956 537,2956"/>
+                <pc:TextEquiv conf="0.9494886994361877">
+                    <pc:Unicode>à 32neſt pas le même que celui de 5 à 6, (ote g) ce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-053_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="540,2931 540,3007 1741,3020 1741,2931 540,2931"/>
+                <pc:TextEquiv conf="0.9149845838546753">
+                    <pc:Unicode>deux rapports Etant entr eux comme d1 à do.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(m) Pour comparer le re au fa, il ny a quà comparer
+à; le rapport de ces fractions ſera (Note d) celui de
+9 fois z à 8 fois 4, ceſt- à- dire de 27 à 32: donc la tierce
+mineure de re à fa neſt pas juſte, puiſque le rapport de 27
+à 32neſt pas le même que celui de 5 à 6, (ote g) ce
+deux rapports Etant entr eux comme d1 à do.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

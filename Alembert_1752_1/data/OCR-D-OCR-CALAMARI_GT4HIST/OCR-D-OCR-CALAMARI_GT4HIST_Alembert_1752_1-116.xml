@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:38</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:38</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-116.png" imageWidth="2303" imageHeight="3560" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-116-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-116.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="235,280 1831,280 1831,3064 235,3064"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="407,226 407,376 1587,376 1587,226 407,226"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="443,280 1570,280 1570,372 443,372"/>
+                <pc:TextEquiv conf="0.7171227335929871">
+                    <pc:Unicode>Tutoniov E PAriovE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tutoniov E PAriovE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1654,259 1654,403 1820,403 1820,259 1654,259"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1699,301 1804,301 1804,381 1699,381"/>
+                <pc:TextEquiv conf="0.6642275452613831">
+                    <pc:Unicode>95</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>95</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="190,376 190,741 1859,741 1859,376 190,376"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="252,397 1797,397 1797,494 252,494"/>
+                <pc:TextEquiv conf="0.9822622537612915">
+                    <pc:Unicode>Ce genre eſt appellé cromatique enarmo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="235,487 1795,487 1795,585 235,585"/>
+                <pc:TextEquiv conf="0.9951785802841187">
+                    <pc:Unicode>nique, parce que deux demi-tons mineurs de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="235,574 1794,574 1794,677 235,677"/>
+                <pc:TextEquiv conf="0.995827317237854">
+                    <pc:Unicode>ſuite forment un ton trop foible d'un quart</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="236,673 1011,673 1011,741 236,741"/>
+                <pc:TextEquiv conf="0.9690520167350769">
+                    <pc:Unicode>de ton enharmonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ce genre eſt appellé cromatique enarmo-
+nique, parce que deux demi-tons mineurs de
+ſuite forment un ton trop foible d'un quart
+de ton enharmonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="218,764 218,1096 1831,1096 1831,764 218,764"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="341,765 1797,765 1797,860 341,860"/>
+                <pc:TextEquiv conf="0.9981290102005005">
+                    <pc:Unicode>149. Ces nouveaux genres confirment ce</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="235,859 1798,859 1798,1019 235,1019"/>
+                <pc:TextEquiv conf="0.44038206338882446">
+                    <pc:Unicode>Xxtt:5i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="293,951 1803,951 1803,1040 293,1040"/>
+                <pc:TextEquiv conf="0.9853640198707581">
+                    <pc:Unicode>e lharmonie, &amp; de la mélodie, réſide dans</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:Coords points="247,1043 1448,1043 1448,1096 247,1096"/>
+                <pc:TextEquiv conf="0.611972451210022">
+                    <pc:Unicode>2 ſſ fnarmmntalo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>149. Ces nouveaux genres confirment ce
+Xxtt:5i
+e lharmonie, &amp; de la mélodie, réſide dans
+2 ſſ fnarmmntalo</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="201,1135 219,1496 1831,1484 1831,1135 201,1135"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="349,1135 1812,1135 1812,1296 349,1296"/>
+                <pc:TextEquiv conf="0.3064146935939789">
+                    <pc:Unicode>EX:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="246,1227 1809,1227 1809,1323 246,1323"/>
+                <pc:TextEquiv conf="0.9928708672523499">
+                    <pc:Unicode>ble, parce que la baſſe fondamentale qui le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="250,1319 1810,1319 1810,1416 250,1416"/>
+                <pc:TextEquiv conf="0.9957669973373413">
+                    <pc:Unicode>produit eſt formée de la ſeule progreſſion des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="250,1412 250,1496 1813,1484 1813,1412 250,1412"/>
+                <pc:TextEquiv conf="0.9977781772613525">
+                    <pc:Unicode>quintes, qui eſt la plus naturelle de toutes.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EX:
+ble, parce que la baſſe fondamentale qui le
+produit eſt formée de la ſeule progreſſion des
+quintes, qui eſt la plus naturelle de toutes.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="213,1512 219,1767 1848,1767 1821,1496 213,1512"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1017,1504 360,1511 360,1663 1815,1663 1815,1504 1017,1504"/>
+                <pc:TextEquiv conf="0.41705477237701416">
+                    <pc:Unicode>XtXiXX5X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="253,1594 1814,1594 1814,1754 253,1754"/>
+                <pc:TextEquiv conf="0.9957171082496643">
+                    <pc:Unicode>greſſion des tierces eſt le plus naturel après</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="282,1687 1147,1687 1147,1767 282,1767"/>
+                <pc:TextEquiv conf="0.9540834426879883">
+                    <pc:Unicode>e précédent.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>XtXiXX5X
+greſſion des tierces eſt le plus naturel après
+e précédent.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="224,1778 224,2687 1837,2710 1848,1778 224,1778"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="357,1778 1823,1778 1823,1877 357,1877"/>
+                <pc:TextEquiv conf="0.9863367080688477">
+                    <pc:Unicode>152. Enfin, l'enharmonique eſt le moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="235,1871 1823,1871 1823,1968 235,1968"/>
+                <pc:TextEquiv conf="0.9890230894088745">
+                    <pc:Unicode>agréable de tous, parce que la baſſe fonda-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="257,1964 1823,1964 1823,2058 257,2058"/>
+                <pc:TextEquiv conf="0.9839732050895691">
+                    <pc:Unicode>mentale qui le donne, n'eſt point immédia-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="259,2056 1822,2056 1822,2147 259,2147"/>
+                <pc:TextEquiv conf="0.9907000660896301">
+                    <pc:Unicode>tement indiquée par la nature. Le quart de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="259,2146 1820,2146 1820,2242 259,2242"/>
+                <pc:TextEquiv conf="0.999125599861145">
+                    <pc:Unicode>ton qui conſtitue ce genre, &amp; qui eſt par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="261,2239 1821,2239 1821,2332 261,2332"/>
+                <pc:TextEquiv conf="0.9821085333824158">
+                    <pc:Unicode>lui- même inapprétiable à l'oreille, ne pro-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="257,2329 1823,2329 1823,2424 257,2424"/>
+                <pc:TextEquiv conf="0.9846194386482239">
+                    <pc:Unicode>duit &amp; ne peut produire d'effet qu'autant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="264,2421 1824,2421 1824,2517 264,2517"/>
+                <pc:TextEquiv conf="0.9889112114906311">
+                    <pc:Unicode>qu'on y ſous-entend la baſſe fondamentale</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="266,2512 1826,2512 1826,2608 266,2608"/>
+                <pc:TextEquiv conf="0.9881266355514526">
+                    <pc:Unicode>qui la donne, baſſe dont la progreſſion n'eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_6_region_id_6_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2605 267,2688 1136,2700 1825,2700 1825,2605 267,2605"/>
+                <pc:TextEquiv conf="0.9840657711029053">
+                    <pc:Unicode>nullement naturelle, puiſqu'elle eſt formée</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>152. Enfin, l'enharmonique eſt le moins
+agréable de tous, parce que la baſſe fonda-
+mentale qui le donne, n'eſt point immédia-
+tement indiquée par la nature. Le quart de
+ton qui conſtitue ce genre, &amp; qui eſt par
+lui- même inapprétiable à l'oreille, ne pro-
+duit &amp; ne peut produire d'effet qu'autant
+qu'on y ſous-entend la baſſe fondamentale
+qui la donne, baſſe dont la progreſſion n'eſt
+nullement naturelle, puiſqu'elle eſt formée</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footnote">
+            <pc:Coords points="224,2749 218,3109 1882,3070 1821,2749 224,2749"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="268,2749 268,2849 1828,2849 1828,2786 1821,2749 268,2749"/>
+                <pc:TextEquiv conf="0.9613727927207947">
+                    <pc:Unicode>de la baſſe eſt , &amp; ut X eſt les de ou : donc le</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="267,2848 1830,2848 1830,2934 267,2934"/>
+                <pc:TextEquiv conf="0.9533524513244629">
+                    <pc:Unicode>mi X eſt les de : donc le mi de léchele eſt encore</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,2932 1830,2932 1830,3007 272,3007"/>
+                <pc:TextEquiv conf="0.9903194308280945">
+                    <pc:Unicode>au mi qui le ſuit, comme 24 à 25: donc tous les demi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-116_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="256,2995 1718,2995 1718,3064 256,3064"/>
+                <pc:TextEquiv conf="0.9348688125610352">
+                    <pc:Unicode>tons ſont uneurs dans cette échelle.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>de la baſſe eſt , &amp; ut X eſt les de ou : donc le
+mi X eſt les de : donc le mi de léchele eſt encore
+au mi qui le ſuit, comme 24 à 25: donc tous les demi-
+tons ſont uneurs dans cette échelle.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

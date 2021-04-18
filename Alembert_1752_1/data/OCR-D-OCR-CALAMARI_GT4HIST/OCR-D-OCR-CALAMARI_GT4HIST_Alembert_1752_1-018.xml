@@ -1,0 +1,80 @@
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:12:14</pc:Created>
+        <pc:LastChange>2021-01-15T15:12:14</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-018.png" imageWidth="2303" imageHeight="3533" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-018-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-018.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="322,230 1889,230 1889,2162 322,2162"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="500,169 500,356 1711,356 1711,169 500,169"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="500,169 500,356 1711,356 1711,169 500,169"/><pc:TextEquiv conf="0.7608993649482727"><pc:Unicode>AVERTISEMENr</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AVERTISEMENr</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="page-number"><pc:Coords points="1755,202 1755,345 1942,345 1942,202 1755,202"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="1755,202 1755,345 1942,345 1942,202 1755,202"/><pc:TextEquiv conf="0.6985316276550293"><pc:Unicode>xj</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>xj</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="269,334 269,565 1958,565 1958,334 269,334"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="269,334 269,565 1958,565 1958,334 269,334"/><pc:TextEquiv conf="0.9784907102584839"><pc:Unicode>mens de Génie que je prétends don-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="269,334 269,565 1958,565 1958,334 269,334"/><pc:TextEquiv conf="0.9649637937545776"><pc:Unicode>ner.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>mens de Génie que je prétends don-
+ner.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9794576168060303"><pc:Unicode>Tel eſt Pobjet pour lequel jai com-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9739071726799011"><pc:Unicode>oſé, &amp; tel eſt leſprit dans lequel il</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.47911500930786133"><pc:Unicode>XiXiXX</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9872924089431763"><pc:Unicode>fois, le fonds ne m appartient en au-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9821402430534363"><pc:Unicode>cune maniere. Mon unique but a été</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.972363293170929"><pc:Unicode>de me rendre utile; je n'ai rien oublié</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9761723279953003"><pc:Unicode>pour y parvenir, &amp; je ſouhaite y</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="291,549 291,1489 1964,1489 1964,549 291,549"/><pc:TextEquiv conf="0.9863901734352112"><pc:Unicode>avoir reuſſi.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Tel eſt l'objet pour lequel jai com-
+oſé, &amp; tel eſt leſprit dans lequel il
+faut lire ces Elémens, donc encore une
+fois, le fonds ne m appartient en au-
+cune maniere. Mon unique but a été
+de me rendre utile; je n'ai rien oublié
+pour y parvenir, &amp; je ſouhaite y
+avoir reuſſi.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:GraphicRegion id="region_id_4" type="decoration"><pc:Coords points="716,1660 704,2159 1500,2147 1500,1647 716,1660"/><pc:TextEquiv><pc:Unicode></pc:Unicode></pc:TextEquiv></pc:GraphicRegion></pc:Page>
+</pc:PcGts>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:14</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:14</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-085.png" imageWidth="2303" imageHeight="3554" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-085-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-085.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="499,246 2076,246 2076,3057 499,3057"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="480,231 480,342 607,342 607,231 480,231"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="499,266 590,266 590,335 499,335"/>
+                <pc:TextEquiv conf="0.6862783432006836">
+                    <pc:Unicode>62</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>62</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="696,214 696,347 1830,347 1830,214 696,214"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="731,247 1809,247 1809,345 731,345"/>
+                <pc:TextEquiv conf="0.695899486541748">
+                    <pc:Unicode>EtEEsr Mvs10vE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EtEEsr Mvs10vE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="458,369 458,624 2090,624 2090,369 458,369"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,370 2063,370 2063,532 501,532"/>
+                <pc:TextEquiv conf="0.3644912540912628">
+                    <pc:Unicode>Xx X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="505,463 2062,463 2062,554 505,554"/>
+                <pc:TextEquiv conf="0.987720251083374">
+                    <pc:Unicode>la valeur du la dans les deux échelles, mais</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="502,554 1865,554 1865,624 502,624"/>
+                <pc:TextEquiv conf="0.9915497899055481">
+                    <pc:Unicode>elle eſt bien au-deſſous d'un demi-ton.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Xx X
+la valeur du la dans les deux échelles, mais
+elle eſt bien au-deſſous d'un demi-ton.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="485,646 485,1205 2085,1205 2085,646 485,646"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="598,649 2073,649 2073,745 598,745"/>
+                <pc:TextEquiv conf="0.9847844839096069">
+                    <pc:Unicode>90. De-là on voit pourquoi le fa &amp; le ſol</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,733 2061,733 2061,830 506,830"/>
+                <pc:TextEquiv conf="0.9865373969078064">
+                    <pc:Unicode>ſont diézes en montant dans le mode mineur;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,832 2068,832 2068,928 503,928"/>
+                <pc:TextEquiv conf="0.9866408705711365">
+                    <pc:Unicode>auſſi le fa n'eſt- il naturel dans la premiere</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,923 2067,923 2067,1022 506,1022"/>
+                <pc:TextEquiv conf="0.9414501786231995">
+                    <pc:Unicode>échelle ſol , a, ſi, ut, e, mi, fa, que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="507,1017 2066,1017 2066,1116 507,1116"/>
+                <pc:TextEquiv conf="0.9718724489212036">
+                    <pc:Unicode>parce que ce fa ne ſcautoit monter au ſol X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,1112 1840,1112 1840,1205 513,1205"/>
+                <pc:TextEquiv conf="0.9527968168258667">
+                    <pc:Unicode>(Art. 48).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>90. De-là on voit pourquoi le fa &amp; le ſol
+ſont diézes en montant dans le mode mineur;
+auſſi le fa n'eſt- il naturel dans la premiere
+échelle ſol , a, ſi, ut, e, mi, fa, que
+parce que ce fa ne ſcautoit monter au ſol X
+(Art. 48).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="469,1206 430,2212 2101,2212 2135,1211 469,1206"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="603,1207 603,1296 2069,1296 2069,1211 802,1207 603,1207"/>
+                <pc:TextEquiv conf="0.970599353313446">
+                    <pc:Unicode>91. Il nen n eſt pas de même en deſcen-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,1294 2068,1294 2068,1388 510,1388"/>
+                <pc:TextEquiv conf="0.9815248847007751">
+                    <pc:Unicode>dant; car la quinte mi du générateur ne doit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,1320 2070,1320 2070,1483 508,1483"/>
+                <pc:TextEquiv conf="0.33114534616470337">
+                    <pc:Unicode>XXX—</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,1479 2071,1479 2071,1576 510,1576"/>
+                <pc:TextEquiv conf="0.9770933389663696">
+                    <pc:Unicode>cas où cette quinte mi deſcend au générateur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,1570 2066,1570 2066,1667 511,1667"/>
+                <pc:TextEquiv conf="0.9869607090950012">
+                    <pc:Unicode>la pour former un repos parfait (Art. 77),</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1665 2071,1665 2071,1756 514,1756"/>
+                <pc:TextEquiv conf="0.9909693002700806">
+                    <pc:Unicode>&amp; en ce cas la tierce majeure ſol monte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,1755 2068,1755 2068,1854 510,1854"/>
+                <pc:TextEquiv conf="0.9611405730247498">
+                    <pc:Unicode>au génerateur la. Mais la baſſe fondamenta-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,1847 2073,1847 2073,1943 511,1943"/>
+                <pc:TextEquiv conf="0.9893726706504822">
+                    <pc:Unicode>le la mi, peut donner en deſcendant, léchel-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="509,1940 2069,1940 2069,2035 509,2035"/>
+                <pc:TextEquiv conf="0.9903056621551514">
+                    <pc:Unicode>le la ſol naturel, pourvû que ſol ne remonte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,2032 2071,2032 2071,2128 510,2128"/>
+                <pc:TextEquiv conf="0.9763803482055664">
+                    <pc:Unicode>point au la. De même la baſſe / la, donne</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="499,2123 1266,2123 1266,2212 499,2212"/>
+                <pc:TextEquiv conf="0.9944969415664673">
+                    <pc:Unicode>fa mi en deſcendant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>91. Il nen n eſt pas de même en deſcen-
+dant; car la quinte mi du générateur ne doit
+XXX—
+cas où cette quinte mi deſcend au générateur
+la pour former un repos parfait (Art. 77),
+&amp; en ce cas la tierce majeure ſol monte
+au génerateur la. Mais la baſſe fondamenta-
+le la mi, peut donner en deſcendant, léchel-
+le la ſol naturel, pourvû que ſol ne remonte
+point au la. De même la baſſe / la, donne
+fa mi en deſcendant.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="485,2218 485,2489 2129,2489 2129,2218 485,2218"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="499,2218 2071,2218 2071,2312 499,2312"/>
+                <pc:TextEquiv conf="0.9784051775932312">
+                    <pc:Unicode>92. On voit par-là pourquoi le ſol &amp; le fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2310 2072,2310 2072,2400 513,2400"/>
+                <pc:TextEquiv conf="0.9758725166320801">
+                    <pc:Unicode>peuvent être naturels &amp; non dièzes en deſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,2394 1560,2394 1560,2472 514,2472"/>
+                <pc:TextEquiv conf="0.9993186593055725">
+                    <pc:Unicode>cendant dans le mode mineur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>92. On voit par-là pourquoi le ſol &amp; le fa
+peuvent être naturels &amp; non dièzes en deſ-
+cendant dans le mode mineur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="453,2489 508,3065 2140,3059 2124,2478 453,2489"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="606,2493 2073,2493 2073,2588 606,2588"/>
+                <pc:TextEquiv conf="0.9856866002082825">
+                    <pc:Unicode>93. Au reſte, dans léchelle diatonique du</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,2586 2073,2586 2073,2680 511,2680"/>
+                <pc:TextEquiv conf="0.993095874786377">
+                    <pc:Unicode>mode mineur en deſcendant la, ſol, fa, mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2678 2075,2678 2075,2776 513,2776"/>
+                <pc:TextEquiv conf="0.9603958129882812">
+                    <pc:Unicode>re, ut, ſi, la, on peut regarder ſol comme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,2770 2075,2770 2075,2868 512,2868"/>
+                <pc:TextEquiv conf="0.9469699859619141">
+                    <pc:Unicode>une note de ſſutée ſm l ment pour</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2799 2075,2799 2075,2961 513,2961"/>
+                <pc:TextEquiv conf="0.5444937348365784">
+                    <pc:Unicode>XXtcrXXX.XX</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-085_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2956 2073,2956 2073,3057 513,3057"/>
+                <pc:TextEquiv conf="0.972842812538147">
+                    <pc:Unicode>niquement au fa naturel: on le voit aiſe-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>93. Au reſte, dans léchelle diatonique du
+mode mineur en deſcendant la, ſol, fa, mi,
+re, ut, ſi, la, on peut regarder ſol comme
+une note de ſſutée ſm l ment pour
+XXtcrXXX.XX
+niquement au fa naturel: on le voit aiſe-</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

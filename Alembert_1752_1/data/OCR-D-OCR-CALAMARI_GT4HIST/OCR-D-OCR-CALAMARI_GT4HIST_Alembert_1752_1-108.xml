@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:16:16</pc:Created>
+        <pc:LastChange>2021-01-15T15:16:16</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-108.png" imageWidth="2303" imageHeight="3560" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-108-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-108.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="230,232 1819,232 1819,3109 230,3109"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="484,187 484,331 1604,331 1604,187 484,187"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="492,233 1587,233 1587,328 492,328"/>
+                <pc:TextEquiv conf="0.6950399279594421">
+                    <pc:Unicode>Tuxonrvr Er PArIQvE.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tuxonrvr Er PArIQvE.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="1699,232 1699,315 1798,365 1843,232 1699,232"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1716,246 1716,324 1747,339 1807,339 1818,306 1818,246 1716,246"/>
+                <pc:TextEquiv conf="0.9228484630584717">
+                    <pc:Unicode>85</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>85</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="218,309 196,975 1842,985 1843,365 218,309"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="237,345 237,450 1816,450 1816,364 1263,345 237,345"/>
+                <pc:TextEquiv conf="0.9848004579544067">
+                    <pc:Unicode>mi donnera ſol : or le demi -ton qui ſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,444 1811,444 1811,543 241,543"/>
+                <pc:TextEquiv conf="0.9873906970024109">
+                    <pc:Unicode>trouve entre ce ſol &amp; ce ſol eſt beaucoup</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,534 1808,534 1808,691 242,691"/>
+                <pc:TextEquiv conf="0.32227039337158203">
+                    <pc:Unicode>krt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="272,625 1809,625 1809,725 272,725"/>
+                <pc:TextEquiv conf="0.9856241941452026">
+                    <pc:Unicode>e diatonique entre mi &amp; fa, ou entre</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,713 1806,713 1806,819 230,819"/>
+                <pc:TextEquiv conf="0.9769526720046997">
+                    <pc:Unicode>ſi &amp; ut: on peut s en aſſurer par le calcul ();</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,807 1809,807 1809,910 244,910"/>
+                <pc:TextEquiv conf="0.9852213263511658">
+                    <pc:Unicode>c'eſt pour cela que le demi- ton du mi au fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,900 240,975 1677,984 1705,984 1705,900 240,900"/>
+                <pc:TextEquiv conf="0.970429539680481">
+                    <pc:Unicode>eſt appellé majeur, &amp; lautre mineur (7).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>mi donnera ſol : or le demi -ton qui ſe
+trouve entre ce ſol &amp; ce ſol eſt beaucoup
+krt:
+e diatonique entre mi &amp; fa, ou entre
+ſi &amp; ut: on peut s en aſſurer par le calcul ();
+c'eſt pour cela que le demi- ton du mi au fa
+eſt appellé majeur, &amp; lautre mineur (7).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="321,986 317,1054 195,1100 220,1168 321,1193 1824,1193 1824,986 321,986"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="346,986 1807,986 1807,1093 346,1093"/>
+                <pc:TextEquiv conf="0.983197808265686">
+                    <pc:Unicode>140. Si la baſſe fondamentale procédoit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1089 239,1173 293,1186 1807,1186 1807,1089 239,1089"/>
+                <pc:TextEquiv conf="0.9777718186378479">
+                    <pc:Unicode>par tierces mineures, en cette ſorte, ut mi h,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>140. Si la baſſe fondamentale procédoit
+par tierces mineures, en cette ſorte, ut mi h,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="235,1257 203,3014 564,3015 596,2954 1829,2984 1820,1239 235,1257"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="251,1269 1808,1269 1808,1343 251,1343"/>
+                <pc:TextEquiv conf="0.9578288793563843">
+                    <pc:Unicode>(y) En eſſet ut étant 1, comme nous le ſuppoſons toû-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1335 1807,1335 1807,1422 239,1422"/>
+                <pc:TextEquiv conf="0.9120347499847412">
+                    <pc:Unicode>jours, mi eſt , &amp; ſol X : or ſol étant, donc /ol X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,1418 1804,1418 1804,1500 242,1500"/>
+                <pc:TextEquiv conf="0.9801317453384399">
+                    <pc:Unicode>ſera à ſol comme eſt à, ceſt-à- dire comme 25 fois 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,1501 1810,1501 1810,1575 244,1575"/>
+                <pc:TextEquiv conf="0.9750880002975464">
+                    <pc:Unicode>à 3 fois 16, ou comme 25 à 24: donc le rappoit de ſol</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,1568 1811,1568 1811,1640 242,1640"/>
+                <pc:TextEquiv conf="0.9912176728248596">
+                    <pc:Unicode>à ſol eſt de 25 à 24, intervalle beaucoup plus petit que ce-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,1631 1808,1631 1808,1707 240,1707"/>
+                <pc:TextEquiv conf="0.9856630563735962">
+                    <pc:Unicode>lui de 16 à 15, qui conſtitue le demi-ton de ut à ſi, ou de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,1696 1518,1696 1518,1766 230,1766"/>
+                <pc:TextEquiv conf="0.9330278635025024">
+                    <pc:Unicode>a à mi (Moie n).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="253,1762 1812,1762 1812,1836 253,1836"/>
+                <pc:TextEquiv conf="0.9813931584358215">
+                    <pc:Unicode>() On peut obſerver que le demi-ton mineur, joint</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,1828 1809,1828 1809,1895 241,1895"/>
+                <pc:TextEquiv conf="0.9927301406860352">
+                    <pc:Unicode>avec le demi-ton majeur, forme le ton mineur, ceſt-à-dire</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1892 1811,1892 1811,1965 239,1965"/>
+                <pc:TextEquiv conf="0.9949392080307007">
+                    <pc:Unicode>que ſi on monte, par exemple, du mi au fa par l'interval-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,1949 1810,1949 1810,2031 240,2031"/>
+                <pc:TextEquiv conf="0.974212110042572">
+                    <pc:Unicode>le du demi- ton majeur, &amp; enſuite du fa au fa X par lin-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2024 1809,2024 1809,2103 242,2103"/>
+                <pc:TextEquiv conf="0.9911229014396667">
+                    <pc:Unicode>tervalle du demi-ton mineur, l'intervalle du mi au fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2089 1810,2089 1810,2167 242,2167"/>
+                <pc:TextEquiv conf="0.9851459860801697">
+                    <pc:Unicode>ſera un ton mineur; car ſuppoſons que mi ſoit 1, fa ſera</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="245,2155 1809,2155 1809,2239 245,2239"/>
+                <pc:TextEquiv conf="0.8748717904090881">
+                    <pc:Unicode>?,&amp; a lera de , ceſt à-dire 25 fois 16 diviſ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2235 1811,2235 1811,2326 242,2326"/>
+                <pc:TextEquiv conf="0.982688307762146">
+                    <pc:Unicode>par 24 fois 15, ou ; intervalle qui conſtitue le ton mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2318 1341,2318 1341,2400 242,2400"/>
+                <pc:TextEquiv conf="0.9366081953048706">
+                    <pc:Unicode>neur (Note p).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="251,2385 1812,2385 1812,2456 251,2456"/>
+                <pc:TextEquiv conf="0.985254168510437">
+                    <pc:Unicode>A l'egard du ton majeur, on ne ſcauroit le former exac-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,2450 1810,2450 1810,2522 241,2522"/>
+                <pc:TextEquiv conf="0.9825071692466736">
+                    <pc:Unicode>tement par deux demi-tons; car 1ꝰ. deux demi tons ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,2513 1812,2513 1812,2595 244,2595"/>
+                <pc:TextEquiv conf="0.9774846434593201">
+                    <pc:Unicode>jeurs conlécutifs donneroient plus qu'un ton majeur: en</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2580 1809,2580 1809,2666 247,2666"/>
+                <pc:TextEquiv conf="0.9578628540039062">
+                    <pc:Unicode>effet multiplié par donne ?, qui eſt plus grand</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="246,2663 1809,2663 1809,2742 246,2742"/>
+                <pc:TextEquiv conf="0.9828387498855591">
+                    <pc:Unicode>que , intervalle qui conſtitue le ton majeur: 2ꝰ. un de-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="249,2748 1811,2748 1811,2818 249,2818"/>
+                <pc:TextEquiv conf="0.9920133352279663">
+                    <pc:Unicode>mi ton mineur &amp; un demi-ton majeur donneroient moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2810 1806,2810 1806,2885 247,2885"/>
+                <pc:TextEquiv conf="0.9894419312477112">
+                    <pc:Unicode>que le ton majeur, puiſqu ils donnent le ton mineur: 3. à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_4_region_id_4_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2874 1812,2874 1812,2951 247,2951"/>
+                <pc:TextEquiv conf="0.9691951274871826">
+                    <pc:Unicode>plus forte raiſon deux demi-tons mineurs donneroient en</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0024">
+                <pc:Coords points="250,2957 558,2957 558,3004 250,3004"/>
+                <pc:TextEquiv conf="0.686582088470459">
+                    <pc:Unicode>Cre moi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(y) En eſſet ut étant 1, comme nous le ſuppoſons toû-
+jours, mi eſt , &amp; ſol X : or ſol étant, donc /ol X
+ſera à ſol comme eſt à, ceſt-à- dire comme 25 fois 2
+à 3 fois 16, ou comme 25 à 24: donc le rappoit de ſol
+à ſol eſt de 25 à 24, intervalle beaucoup plus petit que ce-
+lui de 16 à 15, qui conſtitue le demi-ton de ut à ſi, ou de
+a à mi (Moie n).
+() On peut obſerver que le demi-ton mineur, joint
+avec le demi-ton majeur, forme le ton mineur, ceſt-à-dire
+que ſi on monte, par exemple, du mi au fa par l'interval-
+le du demi- ton majeur, &amp; enſuite du fa au fa X par lin-
+tervalle du demi-ton mineur, l'intervalle du mi au fa
+ſera un ton mineur; car ſuppoſons que mi ſoit 1, fa ſera
+?,&amp; a lera de , ceſt à-dire 25 fois 16 diviſ
+par 24 fois 15, ou ; intervalle qui conſtitue le ton mi-
+neur (Note p).
+A l'egard du ton majeur, on ne ſcauroit le former exac-
+tement par deux demi-tons; car 1ꝰ. deux demi tons ma-
+jeurs conlécutifs donneroient plus qu'un ton majeur: en
+effet multiplié par donne ?, qui eſt plus grand
+que , intervalle qui conſtitue le ton majeur: 2ꝰ. un de-
+mi ton mineur &amp; un demi-ton majeur donneroient moins
+que le ton majeur, puiſqu ils donnent le ton mineur: 3. à
+plus forte raiſon deux demi-tons mineurs donneroient en
+Cre moi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="220,1248 220,1751 1841,1750 1841,1248 220,1248"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="251,1269 1808,1269 1808,1343 251,1343"/>
+                <pc:TextEquiv conf="0.9578288793563843">
+                    <pc:Unicode>(y) En eſſet ut étant 1, comme nous le ſuppoſons toû-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1335 1807,1335 1807,1422 239,1422"/>
+                <pc:TextEquiv conf="0.9120347499847412">
+                    <pc:Unicode>jours, mi eſt , &amp; ſol X : or ſol étant, donc /ol X</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,1418 1804,1418 1804,1500 242,1500"/>
+                <pc:TextEquiv conf="0.9801317453384399">
+                    <pc:Unicode>ſera à ſol comme eſt à, ceſt-à- dire comme 25 fois 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,1501 1810,1501 1810,1575 244,1575"/>
+                <pc:TextEquiv conf="0.9750880002975464">
+                    <pc:Unicode>à 3 fois 16, ou comme 25 à 24: donc le rappoit de ſol</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,1568 1811,1568 1811,1640 242,1640"/>
+                <pc:TextEquiv conf="0.9912176728248596">
+                    <pc:Unicode>à ſol eſt de 25 à 24, intervalle beaucoup plus petit que ce-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,1631 1808,1631 1808,1707 240,1707"/>
+                <pc:TextEquiv conf="0.9856630563735962">
+                    <pc:Unicode>lui de 16 à 15, qui conſtitue le demi-ton de ut à ſi, ou de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,1696 242,1751 1010,1751 1010,1696 242,1696"/>
+                <pc:TextEquiv conf="0.9008649587631226">
+                    <pc:Unicode>fa à mi l Note n.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(y) En eſſet ut étant 1, comme nous le ſuppoſons toû-
+jours, mi eſt , &amp; ſol X : or ſol étant, donc /ol X
+ſera à ſol comme eſt à, ceſt-à- dire comme 25 fois 2
+à 3 fois 16, ou comme 25 à 24: donc le rappoit de ſol
+à ſol eſt de 25 à 24, intervalle beaucoup plus petit que ce-
+lui de 16 à 15, qui conſtitue le demi-ton de ut à ſi, ou de
+fa à mi l Note n.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="220,1747 195,2380 309,2378 1816,2367 1816,1776 220,1747"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="230,1748 230,1836 1812,1836 1812,1776 275,1748 230,1748"/>
+                <pc:TextEquiv conf="0.9893305897712708">
+                    <pc:Unicode>() On peut obſerver que le demi-ton mineur, joint</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,1828 1809,1828 1809,1895 241,1895"/>
+                <pc:TextEquiv conf="0.9927301406860352">
+                    <pc:Unicode>avec le demi-ton majeur, forme le ton mineur, ceſt-à-dire</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="239,1892 1811,1892 1811,1965 239,1965"/>
+                <pc:TextEquiv conf="0.9949392080307007">
+                    <pc:Unicode>que ſi on monte, par exemple, du mi au fa par l'interval-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="240,1949 1810,1949 1810,2031 240,2031"/>
+                <pc:TextEquiv conf="0.974212110042572">
+                    <pc:Unicode>le du demi- ton majeur, &amp; enſuite du fa au fa X par lin-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2024 1809,2024 1809,2094 242,2094"/>
+                <pc:TextEquiv conf="0.9942461848258972">
+                    <pc:Unicode>tervalle du demi-ton mineur, l'intervalle du mi au fa</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2089 1810,2089 1810,2167 242,2167"/>
+                <pc:TextEquiv conf="0.9921950101852417">
+                    <pc:Unicode>ſera un ton mineur; car ſuppoſons que mi ſoit 1, fa ſera</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="245,2155 1809,2155 1809,2239 245,2239"/>
+                <pc:TextEquiv conf="0.8748717904090881">
+                    <pc:Unicode>?,&amp; a lera de , ceſt à-dire 25 fois 16 diviſ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2235 1811,2235 1811,2326 242,2326"/>
+                <pc:TextEquiv conf="0.982688307762146">
+                    <pc:Unicode>par 24 fois 15, ou ; intervalle qui conſtitue le ton mi-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_6_region_id_6_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="242,2318 242,2378 309,2378 661,2375 661,2318 242,2318"/>
+                <pc:TextEquiv conf="0.9493498206138611">
+                    <pc:Unicode>neur (Note p).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>() On peut obſerver que le demi-ton mineur, joint
+avec le demi-ton majeur, forme le ton mineur, ceſt-à-dire
+que ſi on monte, par exemple, du mi au fa par l'interval-
+le du demi- ton majeur, &amp; enſuite du fa au fa X par lin-
+tervalle du demi-ton mineur, l'intervalle du mi au fa
+ſera un ton mineur; car ſuppoſons que mi ſoit 1, fa ſera
+?,&amp; a lera de , ceſt à-dire 25 fois 16 diviſ
+par 24 fois 15, ou ; intervalle qui conſtitue le ton mi-
+neur (Note p).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="295,2443 229,2445 237,3003 567,3010 566,2945 1825,2977 1825,2392 329,2381 295,2443"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="328,2382 276,2444 276,2456 1812,2456 1812,2392 465,2382 328,2382"/>
+                <pc:TextEquiv conf="0.9814444780349731">
+                    <pc:Unicode>A légard du ton majeur, on ne ſcauroit le former exac-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="241,2450 1810,2450 1810,2522 241,2522"/>
+                <pc:TextEquiv conf="0.9825071692466736">
+                    <pc:Unicode>tement par deux demi-tons; car 1ꝰ. deux demi tons ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="244,2513 1812,2513 1812,2584 244,2584"/>
+                <pc:TextEquiv conf="0.9763352274894714">
+                    <pc:Unicode>jeurs conlécutifs donneroient plus qu'un ton majeur: en</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2580 1809,2580 1809,2666 247,2666"/>
+                <pc:TextEquiv conf="0.9708862900733948">
+                    <pc:Unicode>effet multiplié par donne qui eſt plus grand</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="246,2663 1809,2663 1809,2742 246,2742"/>
+                <pc:TextEquiv conf="0.9828387498855591">
+                    <pc:Unicode>que , intervalle qui conſtitue le ton majeur: 2ꝰ. un de-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="249,2748 1811,2748 1811,2818 249,2818"/>
+                <pc:TextEquiv conf="0.9920133352279663">
+                    <pc:Unicode>mi ton mineur &amp; un demi-ton majeur donneroient moins</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2810 1806,2810 1806,2885 247,2885"/>
+                <pc:TextEquiv conf="0.9894419312477112">
+                    <pc:Unicode>que le ton majeur, puiſqu ils donnent le ton mineur: 3. à</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-108_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="247,2874 247,2951 1812,2951 1812,2874 247,2874"/>
+                <pc:TextEquiv conf="0.9691951274871826">
+                    <pc:Unicode>plus forte raiſon deux demi-tons mineurs donneroient en</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:Coords points="250,2957 250,3003 284,3004 558,3004 558,2957 250,2957"/>
+                <pc:TextEquiv conf="0.686582088470459">
+                    <pc:Unicode>Cre moi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>A légard du ton majeur, on ne ſcauroit le former exac-
+tement par deux demi-tons; car 1ꝰ. deux demi tons ma-
+jeurs conlécutifs donneroient plus qu'un ton majeur: en
+effet multiplié par donne qui eſt plus grand
+que , intervalle qui conſtitue le ton majeur: 2ꝰ. un de-
+mi ton mineur &amp; un demi-ton majeur donneroient moins
+que le ton majeur, puiſqu ils donnent le ton mineur: 3. à
+plus forte raiſon deux demi-tons mineurs donneroient en
+Cre moi.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="1386,2990 1386,3118 1540,3118 1540,2990 1386,2990"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1401,3010 1530,3010 1530,3109 1401,3109"/>
+                <pc:TextEquiv conf="0.8654902577400208">
+                    <pc:Unicode>Füj</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Füj</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

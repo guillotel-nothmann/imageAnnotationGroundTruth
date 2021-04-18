@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-15T15:15:57</pc:Created>
+        <pc:LastChange>2021-01-15T15:15:57</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Alembert_1752_1-101.png" imageWidth="2303" imageHeight="3558" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Alembert_1752_1-101-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Alembert_1752_1-101.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="510,230 2093,230 2093,3033 510,3033"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="469,196 469,344 629,344 629,196 469,196"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="513,237 619,237 619,328 513,328"/>
+                <pc:TextEquiv conf="0.8612411022186279">
+                    <pc:Unicode>78</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>78</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="717,160 717,326 1865,326 1865,160 717,160"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="749,231 1834,231 1834,326 749,326"/>
+                <pc:TextEquiv conf="0.6015022397041321">
+                    <pc:Unicode>EtEMEs DE Ms00E</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>EtEMEs DE Ms00E</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="499,362 499,752 2102,752 2096,309 499,362"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="710,355 510,362 510,454 2087,454 2087,355 710,355"/>
+                <pc:TextEquiv conf="0.9961854219436646">
+                    <pc:Unicode>que toute tonique portant laccord parfait</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,442 2089,442 2089,542 510,542"/>
+                <pc:TextEquiv conf="0.9864512085914612">
+                    <pc:Unicode>majeur, peut être changée en dominante to-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,538 2092,538 2092,638 512,638"/>
+                <pc:TextEquiv conf="0.9769734144210815">
+                    <pc:Unicode>nique, ou en ſous-dominante, en y ajoûtant</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,627 1558,627 1558,723 514,723"/>
+                <pc:TextEquiv conf="0.9929885864257812">
+                    <pc:Unicode>tout d'un coup la diſſonance.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>que toute tonique portant laccord parfait
+majeur, peut être changée en dominante to-
+nique, ou en ſous-dominante, en y ajoûtant
+tout d'un coup la diſſonance.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footnote">
+            <pc:Coords points="504,770 504,870 2108,870 2108,770 504,770"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="521,795 2078,795 2078,852 521,852"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="587,894 587,1208 1984,1208 1984,894 587,894"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="749,916 1846,916 1846,997 749,997"/>
+                <pc:TextEquiv conf="0.9301835298538208">
+                    <pc:Unicode>CHAPITRE XVI.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="600,1085 1971,1085 1971,1192 600,1192"/>
+                <pc:TextEquiv conf="0.9619836211204529">
+                    <pc:Unicode>De la regle de ſauνer les diſſonances.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITRE XVI.
+De la regle de ſauνer les diſſonances.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="451,1214 451,2373 2120,2373 2120,1214 451,1214"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,1268 2083,1268 2083,1452 519,1452"/>
+                <pc:TextEquiv conf="0.4900456964969635">
+                    <pc:Unicode>Nt Xt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="911,1362 2085,1362 2085,1457 911,1457"/>
+                <pc:TextEquiv conf="0.9773968458175659">
+                    <pc:Unicode>comment l'échelle diatonique, ſi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,1454 2090,1454 2090,1548 513,1548"/>
+                <pc:TextEquiv conf="0.99906325340271">
+                    <pc:Unicode>naturelle à la voix, ſe forme par les harmo-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,1547 2086,1547 2086,1645 516,1645"/>
+                <pc:TextEquiv conf="0.9775623679161072">
+                    <pc:Unicode>niques des ſons fondamentaux; d'où il s'en-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,1640 2085,1640 2085,1737 516,1737"/>
+                <pc:TextEquiv conf="0.999193012714386">
+                    <pc:Unicode>ſuit que la ſucceſſion la plus naturelle des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,1732 2086,1732 2086,1825 516,1825"/>
+                <pc:TextEquiv conf="0.9908872246742249">
+                    <pc:Unicode>ſons harmoniques eſt d'être diatonique: donc</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1825 2084,1825 2084,1921 514,1921"/>
+                <pc:TextEquiv conf="0.9992494583129883">
+                    <pc:Unicode>pour faire en quelque ſorte de la diſſonance</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,1917 2081,1917 2081,2017 516,2017"/>
+                <pc:TextEquiv conf="0.9870802760124207">
+                    <pc:Unicode>un ſon harmonique le plus qu'il eſt poſſible,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,2010 2081,2010 2081,2105 516,2105"/>
+                <pc:TextEquiv conf="0.996258020401001">
+                    <pc:Unicode>il faut que cette diſſonance, dans la partie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,2101 2084,2101 2084,2190 517,2190"/>
+                <pc:TextEquiv conf="0.9923328757286072">
+                    <pc:Unicode>de chant où elle ſe trouve, deſcende ou mon-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2196 2082,2196 2082,2291 519,2291"/>
+                <pc:TextEquiv conf="0.9966208338737488">
+                    <pc:Unicode>te diatoniquement ſur une autre note, qui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2288 2084,2288 2084,2362 519,2362"/>
+                <pc:TextEquiv conf="0.9963206648826599">
+                    <pc:Unicode>ſoit lune des conſonances de laccord ſuivant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Nt Xt
+comment l'échelle diatonique, ſi
+naturelle à la voix, ſe forme par les harmo-
+niques des ſons fondamentaux; d'où il s'en-
+ſuit que la ſucceſſion la plus naturelle des
+ſons harmoniques eſt d'être diatonique: donc
+pour faire en quelque ſorte de la diſſonance
+un ſon harmonique le plus qu'il eſt poſſible,
+il faut que cette diſſonance, dans la partie
+de chant où elle ſe trouve, deſcende ou mon-
+te diatoniquement ſur une autre note, qui
+ſoit lune des conſonances de laccord ſuivant.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="drop-capital">
+            <pc:Coords points="690,1245 690,1450 895,1450 895,1245 690,1245"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="705,1272 880,1272 880,1450 705,1450"/>
+                <pc:TextEquiv conf="0.9625158905982971">
+                    <pc:Unicode>N</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>N</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="475,2368 487,3042 2108,3042 2132,2368 475,2368"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="625,2381 2081,2381 2081,2476 625,2476"/>
+                <pc:TextEquiv conf="0.9860018491744995">
+                    <pc:Unicode>126. Or elle doit plûtôt deſcendre que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2475 2083,2475 2083,2567 518,2567"/>
+                <pc:TextEquiv conf="0.9942800402641296">
+                    <pc:Unicode>monter: en voici la raiſon. Prenons, par</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,2565 2084,2565 2084,2661 516,2661"/>
+                <pc:TextEquiv conf="0.9486472010612488">
+                    <pc:Unicode>exemple, l'accord ſol ſi re fa ſuivi de l'ac-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2658 2078,2658 2078,2752 519,2752"/>
+                <pc:TextEquiv conf="0.9927377104759216">
+                    <pc:Unicode>cord ut mi ſol ut; la partie qui a fait la diſ-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="516,2749 2087,2749 2087,2847 516,2847"/>
+                <pc:TextEquiv conf="0.9821929931640625">
+                    <pc:Unicode>ſonance fa doit deſcendre au mi plûtôt que</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,2841 2077,2841 2077,2937 517,2937"/>
+                <pc:TextEquiv conf="0.9871780872344971">
+                    <pc:Unicode>monter au ſol, quoique l'un &amp; l'autre de ces</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-101_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,2932 2083,2932 2083,3033 512,3033"/>
+                <pc:TextEquiv conf="0.9781114459037781">
+                    <pc:Unicode>ſons mi &amp; ſol ſe trouvent dans l'accord ſui</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>126. Or elle doit plûtôt deſcendre que
+monter: en voici la raiſon. Prenons, par
+exemple, l'accord ſol ſi re fa ſuivi de l'ac-
+cord ut mi ſol ut; la partie qui a fait la diſ-
+ſonance fa doit deſcendre au mi plûtôt que
+monter au ſol, quoique l'un &amp; l'autre de ces
+ſons mi &amp; ſol ſe trouvent dans l'accord ſui</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>
