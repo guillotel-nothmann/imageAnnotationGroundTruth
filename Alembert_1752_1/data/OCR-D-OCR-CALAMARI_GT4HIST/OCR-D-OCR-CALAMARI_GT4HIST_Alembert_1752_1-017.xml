@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:12:12</pc:Created>
@@ -67,227 +66,28 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number">
-            <pc:Coords points="442,151 442,325 589,325 589,151 442,151"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="476,216 573,216 573,284 476,284"/>
-                <pc:TextEquiv conf="0.7097674012184143">
-                    <pc:Unicode>x</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>x</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="header">
-            <pc:Coords points="714,140 714,303 1862,303 1862,140 714,140"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="720,203 1815,203 1815,287 720,287"/>
-                <pc:TextEquiv conf="0.7377826571464539">
-                    <pc:Unicode>AVERTIEMEM.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>AVERTIEMEM.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="473,331 2001,331 2001,446 473,446"/>
-                <pc:TextEquiv conf="0.991552472114563">
-                    <pc:Unicode>que à pluſieurs parties, &amp; qui étant</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="471,445 2001,445 2001,557 471,557"/>
-                <pc:TextEquiv conf="0.9849515557289124">
-                    <pc:Unicode>moins rigoureuſes, s'apprennent prin-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="470,554 1999,554 1999,666 470,666"/>
-                <pc:TextEquiv conf="0.9840488433837891">
-                    <pc:Unicode>cipalement par l'uſage, létude des</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="470,664 2001,664 2001,773 470,773"/>
-                <pc:TextEquiv conf="0.9985092282295227">
-                    <pc:Unicode>des grands modeles, le ſecours d'un</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="470,773 1997,773 1997,889 470,889"/>
-                <pc:TextEquiv conf="0.9860630035400391">
-                    <pc:Unicode>bon Maitre, &amp; ſur-tout par loreille,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,889 2000,889 2000,1000 475,1000"/>
-                <pc:TextEquiv conf="0.973453938961029">
-                    <pc:Unicode>&amp; par le goût. Cet Ouvrage n'eſt pro-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="470,997 1999,997 1999,1112 470,1112"/>
-                <pc:TextEquiv conf="0.9925546646118164">
-                    <pc:Unicode>prement, ſi je puis m'exprimer ainſi,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="480,1109 2005,1109 2005,1221 480,1221"/>
-                <pc:TextEquiv conf="0.9830702543258667">
-                    <pc:Unicode>qu'un Rudiment de Muſique deſtiné à</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="473,1218 2000,1218 2000,1333 473,1333"/>
-                <pc:TextEquiv conf="0.9904181361198425">
-                    <pc:Unicode>développer aux Commencans les prin-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="471,1331 2016,1331 2016,1440 471,1440"/>
-                <pc:TextEquiv conf="0.9963391423225403">
-                    <pc:Unicode>cipes fondamentaux, &amp; non les dé-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0010">
-                <pc:Coords points="480,1441 672,1441 672,1522 480,1522"/>
-                <pc:TextEquiv conf="0.9991430640220642">
-                    <pc:Unicode>tails.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>que à pluſieurs parties, &amp; qui étant
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="442,151 442,325 589,325 589,151 442,151"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="442,151 442,325 589,325 589,151 442,151"/><pc:TextEquiv conf="0.7097674012184143"><pc:Unicode>x</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>x</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="714,140 714,303 1862,303 1862,140 714,140"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="714,140 714,303 1862,303 1862,140 714,140"/><pc:TextEquiv conf="0.7377826571464539"><pc:Unicode>AVERTIEMEM.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AVERTISSEMENT.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.991552472114563"><pc:Unicode>que à pluſieurs parties, &amp; qui étant</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9849515557289124"><pc:Unicode>moins rigoureuſes, s'apprennent prin-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9840488433837891"><pc:Unicode>cipalement par l'uſage, létude des</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9985092282295227"><pc:Unicode>des grands modeles, le ſecours d'un</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9860630035400391"><pc:Unicode>bon Maitre, &amp; ſur-tout par loreille,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0005"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.973453938961029"><pc:Unicode>&amp; par le goût. Cet Ouvrage n'eſt pro-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0006"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9925546646118164"><pc:Unicode>prement, ſi je puis m'exprimer ainſi,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0007"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9830702543258667"><pc:Unicode>qu'un Rudiment de Muſique deſtiné à</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0008"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9904181361198425"><pc:Unicode>développer aux Commencans les prin-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0009"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9963391423225403"><pc:Unicode>cipes fondamentaux, &amp; non les dé-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0010"><pc:Coords points="404,330 404,1538 2096,1538 2086,309 404,330"/><pc:TextEquiv conf="0.9991430640220642"><pc:Unicode>tails.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>que à pluſieurs parties, &amp; qui étant
 moins rigoureuſes, s'apprennent prin-
-cipalement par l'uſage, létude des
+cipalement par l'uſage, l'étude des
 des grands modeles, le ſecours d'un
-bon Maitre, &amp; ſur-tout par loreille,
+bon Maître, &amp; ſur-tout par l'oreille,
 &amp; par le goût. Cet Ouvrage n'eſt pro-
 prement, ſi je puis m'exprimer ainſi,
 qu'un Rudiment de Muſique deſtiné à
-développer aux Commencans les prin-
+développer aux Commençans les prin-
 cipes fondamentaux, &amp; non les dé-
-tails.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="paragraph">
-            <pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="582,1556 2000,1556 2000,1667 582,1667"/>
-                <pc:TextEquiv conf="0.9991718530654907">
-                    <pc:Unicode>On doit encore moins ſe perſuader</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="474,1666 2007,1666 2007,1779 474,1779"/>
-                <pc:TextEquiv conf="0.9861226081848145">
-                    <pc:Unicode>qu'il ſuffiſe, pour faire de bonne Mu-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="474,1774 2003,1774 2003,1885 474,1885"/>
-                <pc:TextEquiv conf="0.9760790467262268">
-                    <pc:Unicode>ſique, de s'être bien familiariſé avec</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="474,1883 2008,1883 2008,2000 474,2000"/>
-                <pc:TextEquiv conf="0.9948704242706299">
-                    <pc:Unicode>les principes expoſés dans ce Livre. On</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="472,1996 2004,1996 2004,2111 472,2111"/>
-                <pc:TextEquiv conf="0.9793650507926941">
-                    <pc:Unicode>pourra ſeulement y apprendre juſqu'à</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="472,2107 2006,2107 2006,2220 472,2220"/>
-                <pc:TextEquiv conf="0.9967728853225708">
-                    <pc:Unicode>un certain point la méchanique de</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="472,2215 2002,2215 2002,2311 472,2311"/>
-                <pc:TextEquiv conf="0.9794017672538757">
-                    <pc:Unicode>lArt; c'eſt à la nature à faire le reſte:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="472,2323 2006,2323 2006,2440 472,2440"/>
-                <pc:TextEquiv conf="0.9984707236289978">
-                    <pc:Unicode>ſans elle on ne compoſera pas de meil-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="476,2436 2010,2436 2010,2548 476,2548"/>
-                <pc:TextEquiv conf="0.987073540687561">
-                    <pc:Unicode>leure Muſique pour avoir lû cet Ou-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="477,2548 2012,2548 2012,2659 477,2659"/>
-                <pc:TextEquiv conf="0.9854576587677002">
-                    <pc:Unicode>vrage, qu'on ne fera de bons Vers avec</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0010">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-017_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
-                <pc:Coords points="479,2655 2015,2655 2015,2756 479,2756"/>
-                <pc:TextEquiv conf="0.9990501403808594">
-                    <pc:Unicode>Richelet. Ce ſont, en un mot, des</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0011">
-                <pc:Coords points="481,2764 2012,2764 2012,2868 481,2868"/>
-                <pc:TextEquiv conf="0.987769603729248">
-                    <pc:Unicode>Elémens de Muſique, &amp; non des Elé-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>On doit encore moins ſe perſuader
+tails.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9991718530654907"><pc:Unicode>On doit encore moins ſe perſuader</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9861226081848145"><pc:Unicode>qu'il ſuffiſe, pour faire de bonne Mu-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9760790467262268"><pc:Unicode>ſique, de s'être bien familiariſé avec</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9948704242706299"><pc:Unicode>les principes expoſés dans ce Livre. On</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9793650507926941"><pc:Unicode>pourra ſeulement y apprendre juſqu'à</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9967728853225708"><pc:Unicode>un certain point la méchanique de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9794017672538757"><pc:Unicode>lArt; c'eſt à la nature à faire le reſte:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9984707236289978"><pc:Unicode>ſans elle on ne compoſera pas de meil-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0008"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.987073540687561"><pc:Unicode>leure Muſique pour avoir lû cet Ou-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0009"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9854576587677002"><pc:Unicode>vrage, qu'on ne fera de bons Vers avec</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0010"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.9990501403808594"><pc:Unicode>Richelet. Ce ſont, en un mot, des</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0011"><pc:Coords points="448,1528 410,2910 2075,2926 2048,1523 448,1528"/><pc:TextEquiv conf="0.987769603729248"><pc:Unicode>Elémens de Muſique, &amp; non des Elé-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>On doit encore moins ſe perſuader
 qu'il ſuffiſe, pour faire de bonne Mu-
 ſique, de s'être bien familiariſé avec
 les principes expoſés dans ce Livre. On
 pourra ſeulement y apprendre juſqu'à
 un certain point la méchanique de
-lArt; c'eſt à la nature à faire le reſte:
+l'Art; c'eſt à la nature à faire le reſte :
 ſans elle on ne compoſera pas de meil-
 leure Muſique pour avoir lû cet Ou-
 vrage, qu'on ne fera de bons Vers avec
 Richelet. Ce ſont, en un mot, des
-Elémens de Muſique, &amp; non des Elé-</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-    </pc:Page>
+Elémens de Muſique, &amp; non des Elé-</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:12:09</pc:Created>
@@ -67,235 +66,27 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="header">
-            <pc:Coords points="463,141 463,329 1613,329 1613,141 463,141"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="513,211 1610,211 1610,302 513,302"/>
-                <pc:TextEquiv conf="0.7993746399879456">
-                    <pc:Unicode>AERTIEMENr.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>AERTIEMENr.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="page-number">
-            <pc:Coords points="1706,159 1706,323 1894,323 1894,159 1706,159"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="1753,219 1850,219 1850,301 1753,301"/>
-                <pc:TextEquiv conf="0.7527647018432617">
-                    <pc:Unicode>iæ</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>iæ</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="295,348 1845,348 1845,547 295,547"/>
-                <pc:TextEquiv conf="0.3633679747581482">
-                    <pc:Unicode>ec XX</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="326,460 1845,460 1845,578 326,578"/>
-                <pc:TextEquiv conf="0.9958590865135193">
-                    <pc:Unicode>erver pour une ſeconde lecture, quand</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="295,573 1840,573 1840,684 295,684"/>
-                <pc:TextEquiv conf="0.9991073608398438">
-                    <pc:Unicode>on ſe ſera bien inſtruit des regles eſſen-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="290,684 1846,684 1846,803 290,803"/>
-                <pc:TextEquiv conf="0.9933851361274719">
-                    <pc:Unicode>tielles &amp; fondamentales expliquées dans</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="291,802 1854,802 1854,886 291,886"/>
-                <pc:TextEquiv conf="0.9851465225219727">
-                    <pc:Unicode>le texte.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ec XX
-erver pour une ſeconde lecture, quand
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="463,141 463,329 1613,329 1613,141 463,141"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="463,141 463,329 1613,329 1613,141 463,141"/><pc:TextEquiv conf="0.7993746399879456"><pc:Unicode>AERTIEMENr.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>AVERTISSEMENT.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="page-number"><pc:Coords points="1706,159 1706,323 1894,323 1894,159 1706,159"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="1706,159 1706,323 1894,323 1894,159 1706,159"/><pc:TextEquiv conf="0.7527647018432617"><pc:Unicode>iæ</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ix</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextEquiv conf="0.3633679747581482"><pc:Unicode>ec XX</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextEquiv conf="0.9958590865135193"><pc:Unicode>erver pour une ſeconde lecture, quand</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextEquiv conf="0.9991073608398438"><pc:Unicode>on ſe ſera bien inſtruit des regles eſſen-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextEquiv conf="0.9933851361274719"><pc:Unicode>tielles &amp; fondamentales expliquées dans</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="246,323 194,904 1882,898 1882,323 246,323"/><pc:TextEquiv conf="0.9851465225219727"><pc:Unicode>le texte.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>quent, qu'il sera peut-être bon de re-
+ſerver pour une ſeconde lecture, quand
 on ſe ſera bien inſtruit des regles eſſen-
 tielles &amp; fondamentales expliquées dans
-le texte.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="paragraph">
-            <pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="333,909 1846,909 1846,1028 333,1028"/>
-                <pc:TextEquiv conf="0.9993975162506104">
-                    <pc:Unicode>Ce ſecond Livre ne ſuppoſe non plus</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="292,1024 1859,1024 1859,1140 292,1140"/>
-                <pc:TextEquiv conf="0.9871140718460083">
-                    <pc:Unicode>àla rigueur, aucune habitude de chant,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="291,1135 1847,1135 1847,1223 291,1223"/>
-                <pc:TextEquiv conf="0.9857981204986572">
-                    <pc:Unicode>ni même aucune connoiſſance de Mu-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="292,1245 1847,1245 1847,1363 292,1363"/>
-                <pc:TextEquiv conf="0.9906336665153503">
-                    <pc:Unicode>ſique; il demande ſeulement qu' on ſca-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="293,1359 1847,1359 1847,1469 293,1469"/>
-                <pc:TextEquiv conf="0.9969063997268677">
-                    <pc:Unicode>che, non lintonnation, mais ſimple-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="293,1467 1858,1467 1858,1587 293,1587"/>
-                <pc:TextEquiv conf="0.9991238713264465">
-                    <pc:Unicode>ment la poſition des notes dans la clef</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="301,1580 1847,1580 1847,1779 301,1779"/>
-                <pc:TextEquiv conf="0.3470267355442047">
-                    <pc:Unicode>i t: —</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="301,1619 1851,1619 1851,1812 301,1812"/>
-                <pc:TextEquiv conf="0.3445226848125458">
-                    <pc:Unicode>ei: —</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="302,1806 1849,1806 1849,1922 302,1922"/>
-                <pc:TextEquiv conf="0.9804388284683228">
-                    <pc:Unicode>pourra-t-on acquérir cette connoiſſan-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="302,1921 1850,1921 1850,2034 302,2034"/>
-                <pc:TextEquiv conf="0.9906699061393738">
-                    <pc:Unicode>ce dans mon Ouvrage même; car jex-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0010">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
-                <pc:Coords points="305,2025 1855,2025 1855,2147 305,2147"/>
-                <pc:TextEquiv conf="0.9992490410804749">
-                    <pc:Unicode>plique au commencement du ſecond</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0011">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
-                <pc:Coords points="305,2140 1854,2140 1854,2259 305,2259"/>
-                <pc:TextEquiv conf="0.9963760375976562">
-                    <pc:Unicode>Livre, la poſition des clefs &amp; des no-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0012">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0012.png" comments="binarized,clipped"/>
-                <pc:Coords points="304,2253 1850,2253 1850,2371 304,2371"/>
-                <pc:TextEquiv conf="0.9862884283065796">
-                    <pc:Unicode>tes. Il n'eſt queſtion que de ſe la ren-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0013">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0013.png" comments="binarized,clipped"/>
-                <pc:Coords points="306,2364 1850,2364 1850,2483 306,2483"/>
-                <pc:TextEquiv conf="0.9819301962852478">
-                    <pc:Unicode>dre un peu familiere, &amp; on n'aura plus</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0014">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_3_region_id_3_line0014.png" comments="binarized,clipped"/>
-                <pc:Coords points="305,2482 1663,2482 1663,2564 305,2564"/>
-                <pc:TextEquiv conf="0.9862297177314758">
-                    <pc:Unicode>de difficulté.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Ce ſecond Livre ne ſuppoſe non plus
-àla rigueur, aucune habitude de chant,
+le texte.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9993975162506104"><pc:Unicode>Ce ſecond Livre ne ſuppoſe non plus</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9871140718460083"><pc:Unicode>àla rigueur, aucune habitude de chant,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9857981204986572"><pc:Unicode>ni même aucune connoiſſance de Mu-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9906336665153503"><pc:Unicode>ſique; il demande ſeulement qu' on ſca-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9969063997268677"><pc:Unicode>che, non lintonnation, mais ſimple-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9991238713264465"><pc:Unicode>ment la poſition des notes dans la clef</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.3470267355442047"><pc:Unicode>i t: —</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.3445226848125458"><pc:Unicode>ei: —</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0008"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9804388284683228"><pc:Unicode>pourra-t-on acquérir cette connoiſſan-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0009"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9906699061393738"><pc:Unicode>ce dans mon Ouvrage même; car jex-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0010"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9992490410804749"><pc:Unicode>plique au commencement du ſecond</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0011"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9963760375976562"><pc:Unicode>Livre, la poſition des clefs &amp; des no-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0012"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9862884283065796"><pc:Unicode>tes. Il n'eſt queſtion que de ſe la ren-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0013"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9819301962852478"><pc:Unicode>dre un peu familiere, &amp; on n'aura plus</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0014"><pc:Coords points="258,898 264,2570 1906,2593 1918,898 258,898"/><pc:TextEquiv conf="0.9862297177314758"><pc:Unicode>de difficulté.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Ce ſecond Livre ne ſuppoſe non plus
+à la rigueur, aucune habitude de chant,
 ni même aucune connoiſſance de Mu-
-ſique; il demande ſeulement qu' on ſca-
-che, non lintonnation, mais ſimple-
+ſique; il demande ſeulement qu'on ſca-
+che, non l'intonnation, mais ſimple-
 ment la poſition des notes dans la clef
-i t: —
-ei: —
+de fa sur la quatriéme ligne, &amp; dans
+celle de sol sur la seconde ; encore 
 pourra-t-on acquérir cette connoiſſan-
-ce dans mon Ouvrage même; car jex-
+ce dans mon Ouvrage même ; car j'ex-
 plique au commencement du ſecond
 Livre, la poſition des clefs &amp; des no-
 tes. Il n'eſt queſtion que de ſe la ren-
 dre un peu familiere, &amp; on n'aura plus
-de difficulté.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="paragraph">
-            <pc:Coords points="293,2575 293,2962 1941,2962 1941,2575 293,2575"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="312,2593 1848,2593 1848,2706 312,2706"/>
-                <pc:TextEquiv conf="0.9805396795272827">
-                    <pc:Unicode>On ne doit pas s'attendre à trouver</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_4_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="306,2704 1848,2704 1848,2818 306,2818"/>
-                <pc:TextEquiv conf="0.9979296922683716">
-                    <pc:Unicode>ici toutes les regles de la compoſition,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_4_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-016_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="309,2814 1851,2814 1851,2935 309,2935"/>
-                <pc:TextEquiv conf="0.9904322624206543">
-                    <pc:Unicode>ſur- tout celles qui concernent la Muſi-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>On ne doit pas s'attendre à trouver
+de difficulté.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="paragraph"><pc:Coords points="293,2575 293,2962 1941,2962 1941,2575 293,2575"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="293,2575 293,2962 1941,2962 1941,2575 293,2575"/><pc:TextEquiv conf="0.9805396795272827"><pc:Unicode>On ne doit pas s'attendre à trouver</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="293,2575 293,2962 1941,2962 1941,2575 293,2575"/><pc:TextEquiv conf="0.9979296922683716"><pc:Unicode>ici toutes les regles de la compoſition,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0002"><pc:Coords points="293,2575 293,2962 1941,2962 1941,2575 293,2575"/><pc:TextEquiv conf="0.9904322624206543"><pc:Unicode>ſur- tout celles qui concernent la Muſi-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>On ne doit pas s'attendre à trouver
 ici toutes les regles de la compoſition,
-ſur- tout celles qui concernent la Muſi-</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-    </pc:Page>
+ſur-tout celles qui concernent la Muſi-</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
