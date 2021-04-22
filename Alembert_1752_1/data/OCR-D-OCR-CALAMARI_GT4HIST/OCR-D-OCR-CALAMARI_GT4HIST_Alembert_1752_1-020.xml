@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:12:20</pc:Created>
@@ -67,245 +66,26 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="header">
-            <pc:Coords points="417,210 417,349 1637,349 1637,210 417,210"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="434,251 1621,251 1621,334 434,334"/>
-                <pc:TextEquiv conf="0.9566510319709778">
-                    <pc:Unicode>DES CHAPITRES.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>DES CHAPITRES.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="page-number">
-            <pc:Coords points="1695,198 1695,361 1910,361 1910,198 1695,198"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="1716,252 1857,252 1857,344 1716,344"/>
-                <pc:TextEquiv conf="0.9575750827789307">
-                    <pc:Unicode>xii</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>xii</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" custom="list" type="other">
-            <pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:Coords points="300,338 1848,338 1848,457 300,457"/>
-                <pc:TextEquiv conf="0.918280839920044">
-                    <pc:Unicode>CnAe. IV. Ce que c'eſt que dieze &amp; bemol,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="602,481 1839,481 1839,546 602,546"/>
-                <pc:TextEquiv conf="0.9847455024719238">
-                    <pc:Unicode>9</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="307,544 1852,544 1852,639 307,639"/>
-                <pc:TextEquiv conf="0.960857629776001">
-                    <pc:Unicode>CnV Ce ue c'eſt ue conſnac</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="455,573 1850,573 1850,732 455,732"/>
-                <pc:TextEquiv conf="0.41515684127807617">
-                    <pc:Unicode>. e z iev</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>CnAe. IV. Ce que c'eſt que dieze &amp; bemol,
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="417,210 417,349 1637,349 1637,210 417,210"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="417,210 417,349 1637,349 1637,210 417,210"/><pc:TextEquiv conf="0.9566510319709778"><pc:Unicode>DES CHAPITRES.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>DES CHAPITRES.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="page-number"><pc:Coords points="1695,198 1695,361 1910,361 1910,198 1695,198"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="1695,198 1695,361 1910,361 1910,198 1695,198"/><pc:TextEquiv conf="0.9575750827789307"><pc:Unicode>xii</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>xiij</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="other" custom="list"><pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/><pc:TextEquiv conf="0.918280839920044"><pc:Unicode>CnAe. IV. Ce que c'eſt que dieze &amp; bemol,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/><pc:TextEquiv conf="0.9847455024719238"><pc:Unicode>9</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/><pc:TextEquiv conf="0.960857629776001"><pc:Unicode>CnV Ce ue c'eſt ue conſnac</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="243,338 243,750 1887,750 1887,338 243,338"/><pc:TextEquiv conf="0.41515684127807617"><pc:Unicode>. e z iev</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>CHAP. IV. Ce que c'eſt que diéze &amp; bemol,
 9
-CnV Ce ue c'eſt ue conſnac
-. e z iev</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" custom="list" type="other">
-            <pc:Coords points="272,907 272,1238 1893,1238 1893,907 272,907"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:Coords points="357,948 1850,948 1850,1068 357,1068"/>
-                <pc:TextEquiv conf="0.9861624836921692">
-                    <pc:Unicode>LIVRE PREMIER.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_4_line0001">
-                <pc:Coords points="317,1107 1853,1107 1853,1234 317,1234"/>
-                <pc:TextEquiv conf="0.9664098620414734">
-                    <pc:Unicode>Qui contient la theorie de lharmonie, 12</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>LIVRE PREMIER.
-Qui contient la theorie de lharmonie, 12</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" custom="list" type="other">
-            <pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="326,1427 1865,1427 1865,1603 326,1603"/>
-                <pc:TextEquiv conf="0.6647167205810547">
-                    <pc:Unicode>curras rninaie,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="863,1518 1862,1518 1862,1611 863,1611"/>
-                <pc:TextEquiv conf="0.8909213542938232">
-                    <pc:Unicode>L 6 fondamentales, 12</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="329,1611 1868,1611 1868,1703 329,1703"/>
-                <pc:TextEquiv conf="0.9562591910362244">
-                    <pc:Unicode>C HAP. II. Origines des deux modes, au</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="973,1701 1869,1701 1869,1793 973,1793"/>
-                <pc:TextEquiv conf="0.9673202037811279">
-                    <pc:Unicode>chant le plus naturel, &amp; de</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="819,1789 1867,1789 1867,1885 819,1885"/>
-                <pc:TextEquiv conf="0.9593713879585266">
-                    <pc:Unicode>plus parfaite armonie, 18</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="328,1819 1870,1819 1870,1976 328,1976"/>
-                <pc:TextEquiv conf="0.4980843961238861">
-                    <pc:Unicode>css. m..XXXre</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="977,1973 1876,1973 1876,2066 977,2066"/>
-                <pc:TextEquiv conf="0.9400733709335327">
-                    <pc:Unicode>loix qu elle doit obſerνer, 21</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="334,2064 1858,2064 1858,2159 334,2159"/>
-                <pc:TextEquiv conf="0.9318640828132629">
-                    <pc:Unicode>CAP. IV. Du mode en general, 25</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="335,2154 1870,2154 1870,2233 335,2233"/>
-                <pc:TextEquiv conf="0.9543248414993286">
-                    <pc:Unicode>CHAP. V. Formation de lechelle diatoni-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="328,2244 1869,2244 1869,2339 328,2339"/>
-                <pc:TextEquiv conf="0.9671494960784912">
-                    <pc:Unicode>que des Grecs, 27</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0010">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0010.png" comments="binarized,clipped"/>
-                <pc:Coords points="338,2336 1871,2336 1871,2421 338,2421"/>
-                <pc:TextEquiv conf="0.9268942475318909">
-                    <pc:Unicode>C AP. VI. Fomation de lchelle diatoni-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0011">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0011.png" comments="binarized,clipped"/>
-                <pc:Coords points="404,2424 1874,2424 1874,2521 404,2521"/>
-                <pc:TextEquiv conf="0.9535701274871826">
-                    <pc:Unicode>que des Modernes, ou gam-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0012">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0012.png" comments="binarized,clipped"/>
-                <pc:Coords points="989,2517 1873,2517 1873,2613 989,2613"/>
-                <pc:TextEquiv conf="0.9625411629676819">
-                    <pc:Unicode>me ordinaire, 34</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0013">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0013.png" comments="binarized,clipped"/>
-                <pc:Coords points="344,2607 1873,2607 1873,2706 344,2706"/>
-                <pc:TextEquiv conf="0.9184848070144653">
-                    <pc:Unicode>CAP. VIJ. Du temperament, 39</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0014">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0014.png" comments="binarized,clipped"/>
-                <pc:Coords points="350,2698 1863,2698 1863,2796 350,2796"/>
-                <pc:TextEquiv conf="0.9234373569488525">
-                    <pc:Unicode>CnAP. VIII. Des repos ou cadences, 51</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0015">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-020_region_id_6_region_id_6_line0015.png" comments="binarized,clipped"/>
-                <pc:Coords points="347,2787 1875,2787 1875,2887 347,2887"/>
-                <pc:TextEquiv conf="0.9613824486732483">
-                    <pc:Unicode>CnAP. IX. Du mode mineur, 4</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>curras rninaie,
-L 6 fondamentales, 12
-C HAP. II. Origines des deux modes, au
+CHAP. V. Ce que c'eſt que conſonance &amp;
+dissonance, 10</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:SeparatorRegion id="region_id_3"><pc:Coords points="295,762 295,913 1922,913 1922,762 295,762"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:SeparatorRegion><pc:TextRegion id="region_id_4" type="other" custom="list"><pc:Coords points="272,907 272,1238 1893,1238 1893,907 272,907"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="272,907 272,1238 1893,1238 1893,907 272,907"/><pc:TextEquiv conf="0.9861624836921692"><pc:Unicode>LIVRE PREMIER.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="272,907 272,1238 1893,1238 1893,907 272,907"/><pc:TextEquiv conf="0.9664098620414734"><pc:Unicode>Qui contient la theorie de lharmonie, 12</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>LIVRE PREMIER.
+Qui contient la théorie de l'harmonie, 12</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:SeparatorRegion id="region_id_5"><pc:Coords points="289,1261 289,1389 1893,1389 1893,1261 289,1261"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:SeparatorRegion><pc:TextRegion id="region_id_6" type="other" custom="list"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.6647167205810547"><pc:Unicode>curras rninaie,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.8909213542938232"><pc:Unicode>L 6 fondamentales, 12</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0002"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9562591910362244"><pc:Unicode>C HAP. II. Origines des deux modes, au</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0003"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9673202037811279"><pc:Unicode>chant le plus naturel, &amp; de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0004"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9593713879585266"><pc:Unicode>plus parfaite armonie, 18</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0005"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.4980843961238861"><pc:Unicode>css. m..XXXre</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0006"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9400733709335327"><pc:Unicode>loix qu elle doit obſerνer, 21</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0007"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9318640828132629"><pc:Unicode>CAP. IV. Du mode en general, 25</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0008"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9543248414993286"><pc:Unicode>CHAP. V. Formation de lechelle diatoni-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0009"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9671494960784912"><pc:Unicode>que des Grecs, 27</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0010"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9268942475318909"><pc:Unicode>C AP. VI. Fomation de lchelle diatoni-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0011"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9535701274871826"><pc:Unicode>que des Modernes, ou gam-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0012"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9625411629676819"><pc:Unicode>me ordinaire, 34</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0013"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9184848070144653"><pc:Unicode>CAP. VIJ. Du temperament, 39</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0014"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9234373569488525"><pc:Unicode>CnAP. VIII. Des repos ou cadences, 51</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0015"><pc:Coords points="260,1401 260,2929 1940,2929 1940,1401 260,1401"/><pc:TextEquiv conf="0.9613824486732483"><pc:Unicode>CnAP. IX. Du mode mineur, 4</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>CHAP. I. Expériences préliminaires 
+&amp; fondamentales, 12
+CHAP. II. Origines des deux modes, au
 chant le plus naturel, &amp; de
-plus parfaite armonie, 18
-css. m..XXXre
+plus parfaite harmonie, 18
+CHAP. III. De la ſuite des quintes, &amp; des
 loix qu elle doit obſerνer, 21
-CAP. IV. Du mode en general, 25
-CHAP. V. Formation de lechelle diatoni-
+CHAP. IV. Du mode en général, 25
+CHAP. V. Formation de l'echelle diatoni-
 que des Grecs, 27
-C AP. VI. Fomation de lchelle diatoni-
+CHAP. VI. Formation de l'échelle diatoni-
 que des Modernes, ou gam-
 me ordinaire, 34
-CAP. VIJ. Du temperament, 39
-CnAP. VIII. Des repos ou cadences, 51
-CnAP. IX. Du mode mineur, 4</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_7" type="drop-capital">
-            <pc:Coords points="876,1407 876,1604 1068,1604 1068,1407 876,1407"/>
-            <pc:TextLine id="region_id_7_line0000">
-                <pc:Coords points="882,1427 1068,1427 1068,1603 882,1603"/>
-                <pc:TextEquiv conf="0.888035237789154">
-                    <pc:Unicode>E</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>E</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:SeparatorRegion id="region_id_3">
-            <pc:Coords points="295,762 295,913 1922,913 1922,762 295,762"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region_id_5">
-            <pc:Coords points="289,1261 289,1389 1893,1389 1893,1261 289,1261"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+CHAP. VII. Du tempérament, 39
+CHAP. VIII. Des repos ou cadences, 51
+CHAP. IX. Du mode mineur, 4</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="drop-capital"><pc:Coords points="876,1407 876,1604 1068,1604 1068,1407 876,1407"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="876,1407 876,1604 1068,1604 1068,1407 876,1407"/><pc:TextEquiv conf="0.888035237789154"><pc:Unicode>E</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>E</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>

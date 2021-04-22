@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:12:23</pc:Created>
@@ -67,222 +66,29 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number">
-            <pc:Coords points="453,230 453,326 596,326 596,230 453,230"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="475,244 582,244 582,315 475,315"/>
-                <pc:TextEquiv conf="0.6124922633171082">
-                    <pc:Unicode>xiυ</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>xiυ</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="header">
-            <pc:Coords points="931,221 925,323 1539,332 1524,232 931,221"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="953,245 953,323 993,324 1458,324 1458,245 953,245"/>
-                <pc:TextEquiv conf="0.9757081866264343">
-                    <pc:Unicode>TABLE</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>TABLE</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" custom="list" type="other">
-            <pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="484,353 2003,353 2003,459 484,459"/>
-                <pc:TextEquiv conf="0.9650748372077942">
-                    <pc:Unicode>CAP. X. De lecelle diatonique du mo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="772,449 1987,449 1987,550 772,550"/>
-                <pc:TextEquiv conf="0.9701536297798157">
-                    <pc:Unicode>de mineur, 59</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,534 1988,534 1988,693 485,693"/>
-                <pc:TextEquiv conf="0.5411660075187683">
-                    <pc:Unicode>8:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="486,623 1996,623 1996,729 486,729"/>
-                <pc:TextEquiv conf="0.8934578895568848">
-                    <pc:Unicode>CnAP. XII. Du double emploi de la diſſo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="782,725 1996,725 1996,808 782,808"/>
-                <pc:TextEquiv conf="0.9815261960029602">
-                    <pc:Unicode>nance, 66</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,800 1999,800 1999,901 485,901"/>
-                <pc:TextEquiv conf="0.8931135535240173">
-                    <pc:Unicode>CAA. XIII. ſages &amp; regles du double em-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="1156,897 1941,897 1941,974 1156,974"/>
-                <pc:TextEquiv conf="0.9339908957481384">
-                    <pc:Unicode>loi, 6</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,920 1996,920 1996,1078 485,1078"/>
-                <pc:TextEquiv conf="0.7057240605354309">
-                    <pc:Unicode>Cnr. XIV. D-iinenes /ores acro</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="496,1072 1989,1072 1989,1164 496,1164"/>
-                <pc:TextEquiv conf="0.9331130385398865">
-                    <pc:Unicode>de ſeptieme, 72</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="488,1154 1995,1154 1995,1261 488,1261"/>
-                <pc:TextEquiv conf="0.9194158315658569">
-                    <pc:Unicode>CnAP. XV. De la preparation des diſo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0010">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
-                <pc:Coords points="493,1275 1979,1275 1979,1349 493,1349"/>
-                <pc:TextEquiv conf="0.9256889224052429">
-                    <pc:Unicode>nances, 75</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0011">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
-                <pc:Coords points="489,1334 1996,1334 1996,1439 489,1439"/>
-                <pc:TextEquiv conf="0.9297471046447754">
-                    <pc:Unicode>CnAP. XVI. De la egle de ſauνer les diſſo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0012">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,1437 1987,1437 1987,1520 475,1520"/>
-                <pc:TextEquiv conf="0.9714469909667969">
-                    <pc:Unicode>nances, 78</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0013">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
-                <pc:Coords points="479,1516 1995,1516 1995,1615 479,1615"/>
-                <pc:TextEquiv conf="0.9399281740188599">
-                    <pc:Unicode>CAP. XVJJ. De la cadence rompue, ou in-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0014">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,1619 1980,1619 1980,1700 475,1700"/>
-                <pc:TextEquiv conf="0.9554228782653809">
-                    <pc:Unicode>terrompue, 81</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0015">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,1694 1992,1694 1992,1793 475,1793"/>
-                <pc:TextEquiv conf="0.9000070095062256">
-                    <pc:Unicode>CuA. XVJJJ. Du genre ciromatique, 84</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0016">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,1783 1992,1783 1992,1881 475,1881"/>
-                <pc:TextEquiv conf="0.9409332871437073">
-                    <pc:Unicode>CAP. XX. Du genre enarmonique, 87</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0017">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,1870 1995,1870 1995,1970 475,1970"/>
-                <pc:TextEquiv conf="0.9628947377204895">
-                    <pc:Unicode>CAP. XX. Du gene diatonique enarmo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0018">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
-                <pc:Coords points="481,1976 1978,1976 1978,2056 481,2056"/>
-                <pc:TextEquiv conf="0.8918691873550415">
-                    <pc:Unicode>que, 2I</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0019">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
-                <pc:Coords points="480,2049 1994,2049 1994,2148 480,2148"/>
-                <pc:TextEquiv conf="0.9234603047370911">
-                    <pc:Unicode>CAA. XXI. Du genre cromatique enar-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0020">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0020.png" comments="binarized,clipped"/>
-                <pc:Coords points="475,2148 1986,2148 1986,2235 475,2235"/>
-                <pc:TextEquiv conf="0.9742555618286133">
-                    <pc:Unicode>monique, 92</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0021">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-021_region_id_2_region_id_2_line0021.png" comments="binarized,clipped"/>
-                <pc:Coords points="476,2225 1993,2225 1993,2322 476,2322"/>
-                <pc:TextEquiv conf="0.8882256746292114">
-                    <pc:Unicode>CnAP. XXll. Que la melodie nait de llar-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0022">
-                <pc:Coords points="475,2323 1989,2323 1989,2415 475,2415"/>
-                <pc:TextEquiv conf="0.9883027076721191">
-                    <pc:Unicode>monie, 94</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>CAP. X. De lecelle diatonique du mo-
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="453,230 453,326 596,326 596,230 453,230"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="453,230 453,326 596,326 596,230 453,230"/><pc:TextEquiv conf="0.6124922633171082"><pc:Unicode>xiυ</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>xiυ</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="931,221 925,323 1539,332 1524,232 931,221"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="931,221 925,323 1539,332 1524,232 931,221"/><pc:TextEquiv conf="0.9757081866264343"><pc:Unicode>TABLE</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>TABLE</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="other" custom="list"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9650748372077942"><pc:Unicode>CAP. X. De lecelle diatonique du mo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9701536297798157"><pc:Unicode>de mineur, 59</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.5411660075187683"><pc:Unicode>8:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.8934578895568848"><pc:Unicode>CnAP. XII. Du double emploi de la diſſo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9815261960029602"><pc:Unicode>nance, 66</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0005"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.8931135535240173"><pc:Unicode>CAA. XIII. ſages &amp; regles du double em-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0006"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9339908957481384"><pc:Unicode>loi, 6</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0007"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.7057240605354309"><pc:Unicode>Cnr. XIV. D-iinenes /ores acro</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0008"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9331130385398865"><pc:Unicode>de ſeptieme, 72</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0009"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9194158315658569"><pc:Unicode>CnAP. XV. De la preparation des diſo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0010"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9256889224052429"><pc:Unicode>nances, 75</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0011"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9297471046447754"><pc:Unicode>CnAP. XVI. De la egle de ſauνer les diſſo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0012"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9714469909667969"><pc:Unicode>nances, 78</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0013"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9399281740188599"><pc:Unicode>CAP. XVJJ. De la cadence rompue, ou in-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0014"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9554228782653809"><pc:Unicode>terrompue, 81</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0015"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9000070095062256"><pc:Unicode>CuA. XVJJJ. Du genre ciromatique, 84</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0016"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9409332871437073"><pc:Unicode>CAP. XX. Du genre enarmonique, 87</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0017"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9628947377204895"><pc:Unicode>CAP. XX. Du gene diatonique enarmo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0018"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.8918691873550415"><pc:Unicode>que, 2I</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0019"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9234603047370911"><pc:Unicode>CAA. XXI. Du genre cromatique enar-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0020"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9742555618286133"><pc:Unicode>monique, 92</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0021"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.8882256746292114"><pc:Unicode>CnAP. XXll. Que la melodie nait de llar-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0022"><pc:Coords points="464,337 467,2438 2041,2438 2034,339 464,337"/><pc:TextEquiv conf="0.9883027076721191"><pc:Unicode>monie, 94</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>CHAP. X. De l'échelle diatonique du mo-
 de mineur, 59
-8:
-CnAP. XII. Du double emploi de la diſſo-
+CHAP. XI. De la diſſonance, 63
+CHAP. XII. Du double emploi de la diſſo-
 nance, 66
-CAA. XIII. ſages &amp; regles du double em-
-loi, 6
-Cnr. XIV. D-iinenes /ores acro
-de ſeptieme, 72
-CnAP. XV. De la preparation des diſo-
+CHAP. XIII. Uſages &amp; regles du double em-
+ploi, 6
+CHAP. XIV. Des différentes ſortes d'accords
+de ſeptiéme, 72
+CHAP. XV. De la préparation des diſſo-
 nances, 75
-CnAP. XVI. De la egle de ſauνer les diſſo-
+CHAP. XVI. De la regle de ſauνer les diſſo-
 nances, 78
-CAP. XVJJ. De la cadence rompue, ou in-
+CHAP. XVII. De la cadence rompue, ou in-
 terrompue, 81
-CuA. XVJJJ. Du genre ciromatique, 84
-CAP. XX. Du genre enarmonique, 87
-CAP. XX. Du gene diatonique enarmo-
+CHAP. XVIII. Du genre chromatique, 84
+CHAP. XX. Du genre enarmonique, 87
+CHAP. XX. Du genre diatonique enharmo-
 que, 2I
-CAA. XXI. Du genre cromatique enar-
+CHAP. XXI. Du genre chromatique enhar-
 monique, 92
-CnAP. XXll. Que la melodie nait de llar-
-monie, 94</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-    </pc:Page>
+CHAP. XXII. Que la melodie naît de l'har-
+monie, 94</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
