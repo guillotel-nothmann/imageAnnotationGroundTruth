@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:13:37</pc:Created>
@@ -67,278 +66,27 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="header">
-            <pc:Coords points="448,241 448,375 1589,375 1589,241 448,241"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="473,276 1564,276 1564,364 473,364"/>
-                <pc:TextEquiv conf="0.7548694610595703">
-                    <pc:Unicode>Tuxonrovr r PrIovx.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Tuxonrovr r PrIovx.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="page-number">
-            <pc:Coords points="1720,266 1720,375 1856,375 1856,266 1720,266"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="1748,283 1845,283 1845,375 1748,375"/>
-                <pc:TextEquiv conf="0.9604508280754089">
-                    <pc:Unicode>25</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>25</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="276,389 1844,389 1844,484 276,484"/>
-                <pc:TextEquiv conf="0.9499061107635498">
-                    <pc:Unicode>ceſt- àdire que dans une baſſe fondamentale</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="276,482 1841,482 1841,578 276,578"/>
-                <pc:TextEquiv conf="0.9816688299179077">
-                    <pc:Unicode>on ne ſcauroit faire ſuccéder diatoniquement</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="279,574 1838,574 1838,670 279,670"/>
-                <pc:TextEquiv conf="0.9975932240486145">
-                    <pc:Unicode>deux ſons portant chacun laccord parfait,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="276,666 1840,666 1840,762 276,762"/>
-                <pc:TextEquiv conf="0.9771786332130432">
-                    <pc:Unicode>ſur- tout ſi l'accord parfait eſt majeur dans</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="275,761 763,761 763,832 275,832"/>
-                <pc:TextEquiv conf="0.9991051554679871">
-                    <pc:Unicode>tous les deux.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ceſt- àdire que dans une baſſe fondamentale
-on ne ſcauroit faire ſuccéder diatoniquement
-deux ſons portant chacun laccord parfait,
-ſur- tout ſi l'accord parfait eſt majeur dans
-tous les deux.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="heading">
-            <pc:Coords points="518,1020 518,1323 1594,1323 1594,1020 518,1020"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:Coords points="530,1037 1583,1037 1583,1128 530,1128"/>
-                <pc:TextEquiv conf="0.9476603865623474">
-                    <pc:Unicode>CHAPITRE IV.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_4_line0001">
-                <pc:Coords points="633,1212 1375,1212 1375,1308 633,1308"/>
-                <pc:TextEquiv conf="0.9365634918212891">
-                    <pc:Unicode>Du mode en general.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>CHAPITRE IV.
-Du mode en general.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            <pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/>
-            <pc:TextLine id="region_id_5_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="274,1384 1840,1384 1840,1559 274,1559"/>
-                <pc:TextEquiv conf="0.5102353096008301">
-                    <pc:Unicode>*LEia:::</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="597,1477 1835,1477 1835,1572 597,1572"/>
-                <pc:TextEquiv conf="0.9961788058280945">
-                    <pc:Unicode>ſe que lordre preſcrit entre les ſons,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="271,1570 1837,1570 1837,1663 271,1663"/>
-                <pc:TextEquiv conf="0.9885665774345398">
-                    <pc:Unicode>tant en harmonie qu'en mélodie, par la pro-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="269,1659 1834,1659 1834,1756 269,1756"/>
-                <pc:TextEquiv conf="0.9979828596115112">
-                    <pc:Unicode>greſſion des quintes. Ainſi les trois ſons fa,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="268,1752 1836,1752 1836,1848 268,1848"/>
-                <pc:TextEquiv conf="0.9861743450164795">
-                    <pc:Unicode>ut, ſol, &amp; les harmoniques de chacun de</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="267,1848 1839,1848 1839,1934 267,1934"/>
-                <pc:TextEquiv conf="0.9938521981239319">
-                    <pc:Unicode>ces trois ſons, ceſt- à-dire leurs tierces ma-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="253,1935 1839,1935 1839,2039 253,2039"/>
-                <pc:TextEquiv conf="0.9946912527084351">
-                    <pc:Unicode>eures &amp; leurs quintes, compoſent tout le</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="269,2030 889,2030 889,2121 269,2121"/>
-                <pc:TextEquiv conf="0.9917704463005066">
-                    <pc:Unicode>mode majeur d'ut.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>*LEia:::
-ſe que lordre preſcrit entre les ſons,
+        <pc:TextRegion id="region_id_0" type="header"><pc:Coords points="448,241 448,375 1589,375 1589,241 448,241"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="448,241 448,375 1589,375 1589,241 448,241"/><pc:TextEquiv conf="0.7548694610595703"><pc:Unicode>Tuxonrovr r PrIovx.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>THEORIQUE ET PRATIQUE.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="page-number"><pc:Coords points="1720,266 1720,375 1856,375 1856,266 1720,266"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="1720,266 1720,375 1856,375 1856,266 1720,266"/><pc:TextEquiv conf="0.9604508280754089"><pc:Unicode>25</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>25</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextEquiv conf="0.9499061107635498"><pc:Unicode>ceſt- àdire que dans une baſſe fondamentale</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextEquiv conf="0.9816688299179077"><pc:Unicode>on ne ſcauroit faire ſuccéder diatoniquement</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextEquiv conf="0.9975932240486145"><pc:Unicode>deux ſons portant chacun laccord parfait,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextEquiv conf="0.9771786332130432"><pc:Unicode>ſur- tout ſi l'accord parfait eſt majeur dans</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0004"><pc:Coords points="248,372 248,842 1859,842 1859,372 248,372"/><pc:TextEquiv conf="0.9991051554679871"><pc:Unicode>tous les deux.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>c'eſt-à-dire que dans une baſſe fondamentale
+on ne ſçauroit faire ſuccéder diatoniquement
+deux ſons portant chacun l'accord parfait,
+ſur-tout ſi l'accord parfait eſt majeur dans
+tous les deux.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:SeparatorRegion id="region_id_3"><pc:Coords points="312,895 312,1004 1834,1004 1834,895 312,895"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:SeparatorRegion><pc:TextRegion id="region_id_4" type="heading"><pc:Coords points="518,1020 518,1323 1594,1323 1594,1020 518,1020"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="518,1020 518,1323 1594,1323 1594,1020 518,1020"/><pc:TextEquiv conf="0.9476603865623474"><pc:Unicode>CHAPITRE IV.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="518,1020 518,1323 1594,1323 1594,1020 518,1020"/><pc:TextEquiv conf="0.9365634918212891"><pc:Unicode>Du mode en general.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>CHAPITRE IV.
+Du mode en general.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.5102353096008301"><pc:Unicode>*LEia:::</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9961788058280945"><pc:Unicode>ſe que lordre preſcrit entre les ſons,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0002"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9885665774345398"><pc:Unicode>tant en harmonie qu'en mélodie, par la pro-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0003"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9979828596115112"><pc:Unicode>greſſion des quintes. Ainſi les trois ſons fa,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0004"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9861743450164795"><pc:Unicode>ut, ſol, &amp; les harmoniques de chacun de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0005"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9938521981239319"><pc:Unicode>ces trois ſons, ceſt- à-dire leurs tierces ma-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0006"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9946912527084351"><pc:Unicode>eures &amp; leurs quintes, compoſent tout le</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0007"><pc:Coords points="239,1338 239,2121 1861,2121 1861,1338 239,1338"/><pc:TextEquiv conf="0.9917704463005066"><pc:Unicode>mode majeur d'ut.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>38. LE mode en muſique d'est autre cho-
+ſe que l'ordre preſcrit entre les ſons,
 tant en harmonie qu'en mélodie, par la pro-
 greſſion des quintes. Ainſi les trois ſons fa,
 ut, ſol, &amp; les harmoniques de chacun de
-ces trois ſons, ceſt- à-dire leurs tierces ma-
-eures &amp; leurs quintes, compoſent tout le
-mode majeur d'ut.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" type="drop-capital">
-            <pc:Coords points="408,1353 408,1569 585,1569 585,1353 408,1353"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:Coords points="425,1384 565,1384 565,1559 425,1559"/>
-                <pc:TextEquiv conf="0.4682139456272125">
-                    <pc:Unicode>L</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>L</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_7" type="paragraph">
-            <pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/>
-            <pc:TextLine id="region_id_7_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="368,2127 1832,2127 1832,2217 368,2217"/>
-                <pc:TextEquiv conf="0.9964547753334045">
-                    <pc:Unicode>39. Donc la progreſſion ou baſſe fonda-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="263,2214 1829,2214 1829,2309 263,2309"/>
-                <pc:TextEquiv conf="0.9919607639312744">
-                    <pc:Unicode>mentale fa, ut, ſol, dans laquelle ut tient</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="268,2307 1829,2307 1829,2402 268,2402"/>
-                <pc:TextEquiv conf="0.9815037250518799">
-                    <pc:Unicode>le milieu, peut être regardée comme repré-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="266,2398 1831,2398 1831,2494 266,2494"/>
-                <pc:TextEquiv conf="0.991159200668335">
-                    <pc:Unicode>ſentant le mode d'ut. On pourra de même</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="317,2491 1828,2491 1828,2587 317,2587"/>
-                <pc:TextEquiv conf="0.9988176226615906">
-                    <pc:Unicode>rendre la progreſſion ou baſſe fondamenta-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="265,2515 1826,2515 1826,2676 265,2676"/>
-                <pc:TextEquiv conf="0.4425317049026489">
-                    <pc:Unicode>raX</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="265,2612 1830,2612 1830,2772 265,2772"/>
-                <pc:TextEquiv conf="0.4783349633216858">
-                    <pc:Unicode>X5XXXXX</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="265,2767 265,2847 676,2862 724,2862 789,2854 789,2767 265,2767"/>
-                <pc:TextEquiv conf="0.9909010529518127">
-                    <pc:Unicode>le mode de fa.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>39. Donc la progreſſion ou baſſe fonda-
+ces trois ſons, ceſt-à-dire leurs tierces ma-
+jeures &amp; leurs quintes, compoſent tout le
+mode majeur d'ut.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="drop-capital"><pc:Coords points="408,1353 408,1569 585,1569 585,1353 408,1353"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="408,1353 408,1569 585,1569 585,1353 408,1353"/><pc:TextEquiv conf="0.4682139456272125"><pc:Unicode>L</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>L</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="paragraph"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.9964547753334045"><pc:Unicode>39. Donc la progreſſion ou baſſe fonda-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0001"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.9919607639312744"><pc:Unicode>mentale fa, ut, ſol, dans laquelle ut tient</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0002"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.9815037250518799"><pc:Unicode>le milieu, peut être regardée comme repré-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0003"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.991159200668335"><pc:Unicode>ſentant le mode d'ut. On pourra de même</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0004"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.9988176226615906"><pc:Unicode>rendre la progreſſion ou baſſe fondamenta-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0005"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.4425317049026489"><pc:Unicode>raX</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0006"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.4783349633216858"><pc:Unicode>X5XXXXX</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0007"><pc:Coords points="228,2127 228,2847 656,2848 686,2869 768,2854 1846,2847 1846,2127 228,2127"/><pc:TextEquiv conf="0.9909010529518127"><pc:Unicode>le mode de fa.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>39. Donc la progreſſion ou baſſe fonda-
 mentale fa, ut, ſol, dans laquelle ut tient
 le milieu, peut être regardée comme repré-
 ſentant le mode d'ut. On pourra de même
-rendre la progreſſion ou baſſe fondamenta-
-raX
-X5XXXXX
-le mode de fa.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_8" type="paragraph">
-            <pc:Coords points="248,2847 248,3063 1870,3063 1870,2847 248,2847"/>
-            <pc:TextLine id="region_id_8_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="366,2847 1825,2847 1825,2957 366,2957"/>
-                <pc:TextEquiv conf="0.9860248565673828">
-                    <pc:Unicode>On voit par -là que le mode de ſol, ou</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-048_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="263,2949 1846,2949 1846,3057 263,3057"/>
-                <pc:TextEquiv conf="0.9781039357185364">
-                    <pc:Unicode>plutôt la haſſe fondamentale de ce mode, a</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>On voit par -là que le mode de ſol, ou
-plutôt la haſſe fondamentale de ce mode, a</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:SeparatorRegion id="region_id_3">
-            <pc:Coords points="312,895 312,1004 1834,1004 1834,895 312,895"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+prendre la progreſſion ou baſſe fondamenta-
+le ut, sol, ré, comme repréſentant le mode
+de ſol ; de même ſi [b], fa, ut, repréſentera 
+le mode de fa.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="paragraph"><pc:Coords points="248,2847 248,3063 1870,3063 1870,2847 248,2847"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="248,2847 248,3063 1870,3063 1870,2847 248,2847"/><pc:TextEquiv conf="0.9860248565673828"><pc:Unicode>On voit par -là que le mode de ſol, ou</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0001"><pc:Coords points="248,2847 248,3063 1870,3063 1870,2847 248,2847"/><pc:TextEquiv conf="0.9781039357185364"><pc:Unicode>plutôt la haſſe fondamentale de ce mode, a</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>On voit par-là que le mode de ſol, ou
+plutôt la baſſe fondamentale de ce mode, a</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
