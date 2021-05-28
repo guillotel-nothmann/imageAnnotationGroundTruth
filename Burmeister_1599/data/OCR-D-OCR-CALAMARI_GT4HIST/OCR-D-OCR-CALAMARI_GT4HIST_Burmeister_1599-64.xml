@@ -1,22 +1,16 @@
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
-   
-    
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2020-06-14T20:41:25</pc:Created>
         <pc:LastChange>2020-06-14T20:41:25</pc:LastChange>
-        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization"
-            value="ocrd-olena-binarize">
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
             <pc:Labels>
                 <pc:Label value="sauvola" type="impl"/>
                 <pc:Label value="0.34" type="k"/>
                 <pc:Label value="101" type="win-size"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping"
-            value="ocrd-anybaseocr-crop">
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
             <pc:Labels>
                 <pc:Label value="True" type="force"/>
                 <pc:Label value="0.04" type="colSeparator"/>
@@ -32,8 +26,7 @@
                 <pc:Label value="page" type="operation_level"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="layout/segmentation/region"
-            value="ocrd-tesserocr-segment-region">
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
                 <pc:Label value="-1" type="dpi"/>
                 <pc:Label value="True" type="overwrite_regions"/>
@@ -43,23 +36,20 @@
                 <pc:Label value="False" type="sparse_text"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="layout/segmentation/line"
-            value="ocrd-tesserocr-segment-line">
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
                 <pc:Label value="-1" type="dpi"/>
                 <pc:Label value="True" type="overwrite_lines"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="layout/segmentation/region"
-            value="ocrd-cis-ocropy-clip">
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
                 <pc:Label value="line" type="level-of-operation"/>
                 <pc:Label value="-1" type="dpi"/>
                 <pc:Label value="0.7" type="min_fraction"/>
             </pc:Labels>
         </pc:MetadataItem>
-        <pc:MetadataItem type="processingStep" name="recognition/text-recognition"
-            value="ocrd-calamari-recognize">
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
                 <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
                 <pc:Label value="confidence_voter_default_ctc" type="voter"/>
@@ -68,279 +58,26 @@
             </pc:Labels>
         </pc:MetadataItem>
     </pc:Metadata>
-    
-  
-    
-   
-    
-    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-64.png" imageWidth="2202" imageHeight="2767"
-        type="content">
-        
-        
-       
-        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-64-BIN_sauvola.png"
-            comments="binarized"/>
-        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-64.png"
-            comments="binarized,cropped"/>
+    <pc:Page imageFilename="OCR-D-IMG/Burmeister_1599-64.png" imageWidth="2202" imageHeight="2767" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Burmeister_1599-64-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Burmeister_1599-64.png" comments="binarized,cropped"/>
         <pc:Border>
             <pc:Coords points="241,210 1672,210 1672,2433 241,2433"/>
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
-                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
-                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="caption">
-            <pc:Coords
-                points="351,205 1462,191 1457,269 1206,267 1168,285 1130,279 1118,269 596,270 537,293 342,273 351,205"/>
-            <pc:TextLine id="region_id_0_line0000" >
-                
-                
-                <pc:Coords
-                    points="351,205 1462,191 1457,269 1206,267 1168,285 1130,279 1118,269 596,270 537,293 342,273 351,205"/>
-                <pc:TextEquiv conf="0.9740108251571655">
-                    <pc:Unicode>Aut ad portionem ſemitactus. qualiter hic:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-             
-            
-          
-            
-            <pc:TextEquiv>
-                <pc:Unicode>Aut ad portionem ſemitactus. qualiter hîc :</pc:Unicode>
-            </pc:TextEquiv>
-        
-        
-        </pc:TextRegion>
-        <pc:MusicRegion id="region_id_1" custom="tablatureNotation">
-            <pc:Coords points="592,279 592,542 1355,542 1355,279 1250,279 1163,305 1103,270 592,279"/>
-            <pc:TextEquiv>
-                <pc:Unicode/>
-            </pc:TextEquiv>
-        </pc:MusicRegion>
-        <pc:TextRegion id="region_id_2" type="paragraph">
-            <pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/>
-                <pc:TextEquiv conf="0.992905855178833">
-                    <pc:Unicode>In illo exemplo ſub integro tactu diſſonantiarum cum</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/>
-                <pc:TextEquiv conf="0.9958392977714539">
-                    <pc:Unicode>conſonantiis commixtio fieri poteſt ita, ut priori parti aſ-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/>
-                <pc:TextEquiv conf="0.9848812818527222">
-                    <pc:Unicode>ſervetur concordia, poſteriori diſcordia Rolativa, Abſolu-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0003">
-                <pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/>
-                <pc:TextEquiv conf="0.9627798199653625">
-                    <pc:Unicode>ta nunqua.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>In illo exemplo ſub integro tactu diſſonantiarum cum
+        <pc:TextRegion id="region_id_0" type="caption"><pc:Coords points="351,205 1462,191 1457,269 1206,267 1168,285 1130,279 1118,269 596,270 537,293 342,273 351,205"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="351,205 1462,191 1457,269 1206,267 1168,285 1130,279 1118,269 596,270 537,293 342,273 351,205"/><pc:TextEquiv conf="0.9740108251571655"><pc:Unicode>Aut ad portionem ſemitactus. qualiter hic:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Aut ad portionem ſemitactus. qualiter hîc :</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_1" custom="tablatureNotation"><pc:Coords points="592,279 592,542 1355,542 1355,279 1250,279 1163,305 1103,270 592,279"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:MusicRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/><pc:TextEquiv conf="0.992905855178833"><pc:Unicode>In illo exemplo ſub integro tactu diſſonantiarum cum</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/><pc:TextEquiv conf="0.9958392977714539"><pc:Unicode>conſonantiis commixtio fieri poteſt ita, ut priori parti aſ-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/><pc:TextEquiv conf="0.9848812818527222"><pc:Unicode>ſervetur concordia, poſteriori diſcordia Rolativa, Abſolu-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="227,548 242,822 593,830 639,770 1676,754 1679,551 227,548"/><pc:TextEquiv conf="0.9627798199653625"><pc:Unicode>ta nunqua.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>In illo exemplo ſub integro tactu diſſonantiarum cum
 conſonantiis commixtio fieri poteſt ita, ut priori parti aſ-
 ſervetur concordia, poſteriori diſcordia Relativa, Abſolu-
-ta nunquam.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="caption">
-            <pc:Coords points="792,810 792,885 934,883 973,910 1007,884 1173,881 1173,810 792,810"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:Coords
-                    points="792,810 792,885 934,883 973,910 1007,884 1173,881 1173,810 792,810"/>
-                <pc:TextEquiv conf="0.7785219550132751">
-                    <pc:Unicode>Exemplum.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Exemplum.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:MusicRegion id="region_id_4" custom="tablatureNotation">
-            <pc:Coords points="588,901 913,899 973,930 1037,896 1326,897 1332,1165 577,1171 588,901"/>
-            <pc:TextEquiv>
-                <pc:Unicode/>
-            </pc:TextEquiv>
-        </pc:MusicRegion>
-        
-        
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            
-            
-       
-            
-            <pc:Coords
-                points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-            
-            
-            
-            <pc:TextLine id="region_id_5_line0000" >
-                
-              
-               
-              
-    
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9392793774604797">
-                   
-                    <pc:Unicode>(Diſcordia ſeu Diſſonantia Abſoluta eſt, quando in ſyntaxi</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9737160205841064">
-                    <pc:Unicode>Harmoniæ ſub ſimili motu &amp; conſonantiæ &amp; concordantiæ ita per-</pc:Unicode>
-                </pc:TextEquiv>
-  
-            </pc:TextLine>
-            
-            <pc:TextLine id="region_id_5_line0002">
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9755330085754395">
-                    <pc:Unicode>miſcentur, ut conſonantia diſſonantiæ; &amp; diſſonantia concordantiæ in</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0003">
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9766199588775635">
-                    <pc:Unicode>motu directo reſpondcat. elativa eſt quando qudam copulantur, quæ</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0004">
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9664174914360046">
-                    <pc:Unicode>quidem diſſonare videntur, ſed in re verâ propter diverſum planè</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0005">
-                <pc:Coords
-                    points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/>
-                <pc:TextEquiv conf="0.9672750234603882">
-                    <pc:Unicode>diſimilem motum non diſſonant.)</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(Diſcordia ſeu Diſſonantia Abſoluta est, quando in ſyntaxi
+ta nunquam.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="caption"><pc:Coords points="792,810 792,885 934,883 973,910 1007,884 1173,881 1173,810 792,810"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="792,810 792,885 934,883 973,910 1007,884 1173,881 1173,810 792,810"/><pc:TextEquiv conf="0.7785219550132751"><pc:Unicode>Exemplum.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Exemplum.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_4" custom="tablatureNotation"><pc:Coords points="588,901 913,899 973,930 1037,896 1326,897 1332,1165 577,1171 588,901"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:MusicRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9392793774604797"><pc:Unicode>(Diſcordia ſeu Diſſonantia Abſoluta eſt, quando in ſyntaxi</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9737160205841064"><pc:Unicode>Harmoniæ ſub ſimili motu &amp; conſonantiæ &amp; concordantiæ ita per-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0002"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9755330085754395"><pc:Unicode>miſcentur, ut conſonantia diſſonantiæ; &amp; diſſonantia concordantiæ in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0003"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9766199588775635"><pc:Unicode>motu directo reſpondcat. elativa eſt quando qudam copulantur, quæ</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0004"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9664174914360046"><pc:Unicode>quidem diſſonare videntur, ſed in re verâ propter diverſum planè</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0005"><pc:Coords points="249,1227 1678,1212 1678,1562 1015,1562 954,1615 806,1609 751,1632 728,1611 335,1611 232,1637 249,1227"/><pc:TextEquiv conf="0.9672750234603882"><pc:Unicode>diſimilem motum non diſſonant.)</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(Diſcordia ſeu Diſſonantia Abſoluta est, quando in ſyntaxi
 Harmoniæ ſub ſimili motu &amp; conſonantiæ &amp; concordantiæ ita per-
 miſcentur, ut conſonantia diſſonantiæ ; &amp; diſſonantia concordantiæ in
 motu directo reſpondeat. Relativa eſt quando quædam copulantur, quæ
 quidem diſſonare videntur, ſed in re verâ propter diverſum &amp; planè
-dißimilem motum non diſſonant.)</pc:Unicode>
-            </pc:TextEquiv>
-            
-            
-       
-        </pc:TextRegion>
-        
-        <pc:TextRegion id="region_id_6" type="caption">
-            <pc:Coords
-                points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:Coords
-                    points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/>
-                <pc:TextEquiv conf="0.9953996539115906">
-                    <pc:Unicode>In hoc ad portionem ſemitactus, diſſonantiarum &amp;</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0001">
-                <pc:Coords
-                    points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/>
-                <pc:TextEquiv conf="0.9806962013244629">
-                    <pc:Unicode>concordantiarum commixtio hoc pacto perficitur</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>In hoc ad portionem ſemitactus, diſſonantiarum &amp;
-concordantiarum commixtio hoc pacto perficitur</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:MusicRegion id="region_id_7" custom="tablatureNotation">
-            <pc:Coords
-                points="484,1767 1187,1749 1270,1761 1337,1732 1358,1732 1400,1781 1395,2051 487,2054 484,1767"/>
-            <pc:TextEquiv>
-                <pc:Unicode/>
-            </pc:TextEquiv>
-        </pc:MusicRegion>
-        <pc:TextRegion id="region_id_8" type="heading">
-            <pc:Coords
-                points="430,2066 1478,2063 1496,2155 691,2154 615,2170 572,2155 446,2155 430,2066"/>
-            <pc:TextLine id="region_id_8_line0000">
-                <pc:Coords
-                    points="430,2066 1478,2063 1496,2155 691,2154 615,2170 572,2155 446,2155 430,2066"/>
-                <pc:TextEquiv conf="0.990506112575531">
-                    <pc:Unicode>De Symblemate obiter notanda.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>De Symblemate obiter notanda.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_9" type="paragraph">
-            <pc:Coords
-                points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/>
-            <pc:TextLine id="region_id_9_line0000">
-                <pc:Coords
-                    points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/>
-                <pc:TextEquiv conf="0.9482088685035706">
-                    <pc:Unicode>(oncordantiarum cum Diſſnantis illa commiſum ſive permiſio,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_9_line0001">
-                <pc:Coords
-                    points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/>
-                <pc:TextEquiv conf="0.9536749720573425">
-                    <pc:Unicode>quæ ornamenti vices expleat, oprtet adeò mænifeſla ſit, ut aures illam</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_9_line0002">
-                <pc:Coords
-                    points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/>
-                <pc:TextEquiv conf="0.9066151976585388">
-                    <pc:Unicode>pro /ornamentò, quo Hdarmonia videatur exculta reddi, lucem ſibi ac-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Concordantiarum cum Diſſonantiis illa commiſſura ſive permiſtio,
+dißimilem motum non diſſonant.)</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="caption"><pc:Coords points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/><pc:TextEquiv conf="0.9953996539115906"><pc:Unicode>In hoc ad portionem ſemitactus, diſſonantiarum &amp;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="260,1648 237,1743 1071,1748 1110,1748 1201,1743 1258,1754 1334,1730 1489,1731 1674,1669 1674,1606 804,1622 750,1637 729,1614 366,1618 260,1648"/><pc:TextEquiv conf="0.9806962013244629"><pc:Unicode>concordantiarum commixtio hoc pacto perficitur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>In hoc ad portionem ſemitactus, diſſonantiarum &amp;
+concordantiarum commixtio hoc pacto perficitur</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_7" custom="tablatureNotation"><pc:Coords points="484,1767 1187,1749 1270,1761 1337,1732 1358,1732 1400,1781 1395,2051 487,2054 484,1767"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:MusicRegion><pc:TextRegion id="region_id_8" type="heading"><pc:Coords points="430,2066 1478,2063 1496,2155 691,2154 615,2170 572,2155 446,2155 430,2066"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="430,2066 1478,2063 1496,2155 691,2154 615,2170 572,2155 446,2155 430,2066"/><pc:TextEquiv conf="0.990506112575531"><pc:Unicode>De Symblemate obiter notanda.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>De Symblemate obiter notanda.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_9" type="paragraph"><pc:Coords points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/><pc:TextLine id="region_id_9_line0000"><pc:Coords points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/><pc:TextEquiv conf="0.9482088685035706"><pc:Unicode>(oncordantiarum cum Diſſnantis illa commiſum ſive permiſio,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0001"><pc:Coords points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/><pc:TextEquiv conf="0.9536749720573425"><pc:Unicode>quæ ornamenti vices expleat, oprtet adeò mænifeſla ſit, ut aures illam</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0002"><pc:Coords points="232,2196 230,2403 1128,2361 1296,2373 1517,2373 1678,2355 1675,2164 797,2180 386,2173 232,2196"/><pc:TextEquiv conf="0.9066151976585388"><pc:Unicode>pro /ornamentò, quo Hdarmonia videatur exculta reddi, lucem ſibi ac-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Concordantiarum cum Diſſonantiis illa commiſſura ſive permiſtio,
 quæ ornamenti vices expleat, oprtet adeò mænifeſta ſit, ut aures illam
-pro ornamentô, quô Harmonia videatur exculta reddi, lucem[+aigu] ſibi ac-</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_10" type="footer">
-            <pc:Coords
-                points="1037,2373 1038,2437 1675,2444 1669,2360 1526,2375 1156,2384 1105,2366 1037,2373"/>
-            <pc:TextLine id="region_id_10_line0000">
-                <pc:Coords
-                    points="1037,2373 1038,2437 1675,2444 1669,2360 1526,2375 1156,2384 1105,2366 1037,2373"/>
-                <pc:TextEquiv conf="0.8891044855117798">
-                    <pc:Unicode>Hz uirere,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>H 3 quirere,</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-    </pc:Page>
+pro ornamentô, quô Harmonia videatur exculta reddi, lucem[+aigu] ſibi ac-</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_10" type="footer"><pc:Coords points="1037,2373 1038,2437 1675,2444 1669,2360 1526,2375 1156,2384 1105,2366 1037,2373"/><pc:TextLine id="region_id_10_line0000"><pc:Coords points="1037,2373 1038,2437 1675,2444 1669,2360 1526,2375 1156,2384 1105,2366 1037,2373"/><pc:TextEquiv conf="0.8891044855117798"><pc:Unicode>Hz uirere,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>H 3 quirere,</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
