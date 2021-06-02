@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:16:30</pc:Created>
@@ -67,142 +66,11 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number">
-            <pc:Coords points="524,205 524,303 649,303 649,205 524,205"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="537,223 638,223 638,297 537,297"/>
-                <pc:TextEquiv conf="0.783327043056488">
-                    <pc:Unicode>90</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>90</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="header">
-            <pc:Coords points="744,188 1873,193 1875,277 736,282 744,188"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="753,193 753,279 1419,279 1873,277 1873,193 753,193"/>
-                <pc:TextEquiv conf="0.821732759475708">
-                    <pc:Unicode>ELEMENSDE MvsI0vE</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ELEMENSDE MvsI0vE</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" custom="list" type="other">
-            <pc:Coords points="531,301 2119,301 2114,541 1539,572 1517,588 526,584 531,301"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="531,301 2115,301 2115,405 531,405"/>
-                <pc:TextEquiv conf="0.952339231967926">
-                    <pc:Unicode>mi-ton mineur. Donc (Art. 244.) il s'en faut</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="542,399 542,494 2115,494 2117,399 542,399"/>
-                <pc:TextEquiv conf="0.9856827855110168">
-                    <pc:Unicode>un quart · de ton enharmonique, que la tierce</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="541,492 541,584 774,585 1521,585 1674,565 1674,492 541,492"/>
-                <pc:TextEquiv conf="0.9852561354637146">
-                    <pc:Unicode>mineure fa ſol X ne ſoit juſte.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>mi-ton mineur. Donc (Art. 244.) il s'en faut
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="524,205 524,303 649,303 649,205 524,205"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="524,205 524,303 649,303 649,205 524,205"/><pc:TextEquiv conf="0.783327043056488"><pc:Unicode>90</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>90</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="744,188 1873,193 1875,277 736,282 744,188"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="744,188 1873,193 1875,277 736,282 744,188"/><pc:TextEquiv conf="0.821732759475708"><pc:Unicode>ELEMENSDE MvsI0vE</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ELEMENSDE MvsI0vE</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="other" custom="list"><pc:Coords points="531,301 2119,301 2114,541 1539,572 1517,588 526,584 531,301"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="531,301 2119,301 2114,541 1539,572 1517,588 526,584 531,301"/><pc:TextEquiv conf="0.952339231967926"><pc:Unicode>mi-ton mineur. Donc (Art. 244.) il s'en faut</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="531,301 2119,301 2114,541 1539,572 1517,588 526,584 531,301"/><pc:TextEquiv conf="0.9856827855110168"><pc:Unicode>un quart · de ton enharmonique, que la tierce</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="531,301 2119,301 2114,541 1539,572 1517,588 526,584 531,301"/><pc:TextEquiv conf="0.9852561354637146"><pc:Unicode>mineure fa ſol X ne ſoit juſte.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>mi-ton mineur. Donc (Art. 244.) il s'en faut
 un quart · de ton enharmonique, que la tierce
-mineure fa ſol X ne ſoit juſte.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" custom="list" type="other">
-            <pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="1770,583 545,592 545,680 2118,680 2118,627 2117,583 1770,583"/>
-                <pc:TextEquiv conf="0.9966353178024292">
-                    <pc:Unicode>2. Mais comme ce quart de ton eſt incon-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="543,677 2115,677 2115,842 543,842"/>
-                <pc:TextEquiv conf="0.44383305311203003">
-                    <pc:Unicode>XXicXXXt.2—</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="542,768 2119,768 2119,867 542,867"/>
-                <pc:TextEquiv conf="0.9628329873085022">
-                    <pc:Unicode>loreille, loreille prend les trois differens ac-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,864 777,864 777,954 544,954"/>
-                <pc:TextEquiv conf="0.9966561794281006">
-                    <pc:Unicode>cords,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="1007,1016 1026,1016 1026,1041 1007,1041"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="813,1010 1698,1010 1698,1109 813,1109"/>
-                <pc:TextEquiv conf="0.725276529788971">
-                    <pc:Unicode>e 4X,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="552,1102 1996,1102 1996,1199 552,1199"/>
-                <pc:TextEquiv conf="0.558904230594635">
-                    <pc:Unicode>4a oa Xo ,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="802,1195 1544,1195 1544,1291 802,1291"/>
-                <pc:TextEquiv conf="0.6883425116539001">
-                    <pc:Unicode>a ⸗ Xſ ,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,1339 2123,1339 2123,1438 544,1438"/>
-                <pc:TextEquiv conf="0.9887257814407349">
-                    <pc:Unicode>qui ne ſont que le même, pour des accords</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="545,1433 545,1519 2119,1524 2119,1433 545,1433"/>
-                <pc:TextEquiv conf="0.9852745532989502">
-                    <pc:Unicode>compoſés chacun de tierces mineures juſtes.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>2. Mais comme ce quart de ton eſt incon-
+mineure fa ſol X ne ſoit juſte.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="other" custom="list"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.9966353178024292"><pc:Unicode>2. Mais comme ce quart de ton eſt incon-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.44383305311203003"><pc:Unicode>XXicXXXt.2—</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.9628329873085022"><pc:Unicode>loreille, loreille prend les trois differens ac-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.9966561794281006"><pc:Unicode>cords,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.725276529788971"><pc:Unicode>e 4X,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.558904230594635"><pc:Unicode>4a oa Xo ,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.6883425116539001"><pc:Unicode>a ⸗ Xſ ,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0008"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.9887257814407349"><pc:Unicode>qui ne ſont que le même, pour des accords</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0009"><pc:Coords points="516,592 1765,586 1801,564 2117,580 2137,1524 529,1519 516,592"/><pc:TextEquiv conf="0.9852745532989502"><pc:Unicode>compoſés chacun de tierces mineures juſtes.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>2. Mais comme ce quart de ton eſt incon-
 XXicXXXt.2—
 loreille, loreille prend les trois differens ac-
 cords,
@@ -211,149 +79,19 @@ e 4X,
 4a oa Xo ,
 a ⸗ Xſ ,
 qui ne ſont que le même, pour des accords
-compoſés chacun de tierces mineures juſtes.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            <pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/>
-            <pc:TextLine id="region_id_5_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="638,1523 2118,1523 2118,1624 638,1624"/>
-                <pc:TextEquiv conf="0.9547514915466309">
-                    <pc:Unicode>Or laccord ſol X ſi r fa, appartenant</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="542,1619 2121,1619 2121,1712 542,1712"/>
-                <pc:TextEquiv conf="0.9935315847396851">
-                    <pc:Unicode>au mode mineur de la, où ſol eſt la note</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,1708 2121,1708 2121,1807 544,1807"/>
-                <pc:TextEquiv conf="0.9355491995811462">
-                    <pc:Unicode>ſenſible; accord ſi r fa ſol X, ou ſi re fa</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,1803 2119,1803 2119,1899 544,1899"/>
-                <pc:TextEquiv conf="0.9792903065681458">
-                    <pc:Unicode>la h, appartiendra par la même raiſon au</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,1893 2119,1893 2119,1990 544,1990"/>
-                <pc:TextEquiv conf="0.9929265379905701">
-                    <pc:Unicode>mode mineur d'ut, où ſi eſt la note ſenſible.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="543,1986 2122,1986 2122,2082 543,2082"/>
-                <pc:TextEquiv conf="0.9460077881813049">
-                    <pc:Unicode>De même laccord re fa ſol ſi, appar-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="546,2077 2118,2077 2118,2172 546,2172"/>
-                <pc:TextEquiv conf="0.996537446975708">
-                    <pc:Unicode>tiendra au mode mineur de mi, &amp; laccord</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="531,2169 531,2267 2118,2255 2118,2169 531,2169"/>
-                <pc:TextEquiv conf="0.9485843777656555">
-                    <pc:Unicode>fa ſol ſi re, au mode mineur de ſol .</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Or laccord ſol X ſi r fa, appartenant
+compoſés chacun de tierces mineures juſtes.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_4" custom="tablatureNotation"><pc:Coords points="743,1010 1698,1010 1698,1291 743,1291 743,1010"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:MusicRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9547514915466309"><pc:Unicode>Or laccord ſol X ſi r fa, appartenant</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9935315847396851"><pc:Unicode>au mode mineur de la, où ſol eſt la note</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0002"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9355491995811462"><pc:Unicode>ſenſible; accord ſi r fa ſol X, ou ſi re fa</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0003"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9792903065681458"><pc:Unicode>la h, appartiendra par la même raiſon au</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0004"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9929265379905701"><pc:Unicode>mode mineur d'ut, où ſi eſt la note ſenſible.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0005"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9460077881813049"><pc:Unicode>De même laccord re fa ſol ſi, appar-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0006"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.996537446975708"><pc:Unicode>tiendra au mode mineur de mi, &amp; laccord</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0007"><pc:Coords points="506,1523 523,2267 2131,2255 2131,1523 506,1523"/><pc:TextEquiv conf="0.9485843777656555"><pc:Unicode>fa ſol ſi re, au mode mineur de ſol .</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Or laccord ſol X ſi ré fa, appartenant
 au mode mineur de la, où ſol eſt la note
-ſenſible; accord ſi r fa ſol X, ou ſi re fa
-la h, appartiendra par la même raiſon au
+ſenſible; accord ſi ré fa ſol X, ou ſi ré fa
+la [b], appartiendra par la même raiſon au
 mode mineur d'ut, où ſi eſt la note ſenſible.
-De même laccord re fa ſol ſi, appar-
-tiendra au mode mineur de mi, &amp; laccord
-fa ſol ſi re, au mode mineur de ſol .</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" type="paragraph">
-            <pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="1137,2264 621,2279 621,2361 2119,2361 2119,2264 1137,2264"/>
-                <pc:TextEquiv conf="0.9782593250274658">
-                    <pc:Unicode>Donc après avoir paſſé par le mode de la à</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="547,2357 2122,2357 2122,2455 547,2455"/>
-                <pc:TextEquiv conf="0.9042693376541138">
-                    <pc:Unicode>Taccord ſol X ſi re fa (Article 127.), on</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="544,2448 2122,2448 2122,2545 544,2545"/>
-                <pc:TextEquiv conf="0.9965196847915649">
-                    <pc:Unicode>peut, au moyen de ce dernier accord, &amp;</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="545,2543 2124,2543 2124,2639 545,2639"/>
-                <pc:TextEquiv conf="0.996837317943573">
-                    <pc:Unicode>en ſe contentant ſimplement de le renver-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="547,2637 2122,2637 2122,2730 547,2730"/>
-                <pc:TextEquiv conf="0.9985788464546204">
-                    <pc:Unicode>ſer, paſſer enſuite tout d'un coup aux mo-</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="548,2725 2122,2725 2122,2821 548,2821"/>
-                <pc:TextEquiv conf="0.9762579202651978">
-                    <pc:Unicode>des d'ut mineur, ou de mi mineur, ou ds</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="538,2816 2115,2816 2115,2918 538,2918"/>
-                <pc:TextEquiv conf="0.9692295789718628">
-                    <pc:Unicode>ſol mineur, c'eſt-à · dire dans des modes</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_6_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-113_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="550,2914 2121,2914 2121,3010 550,3010"/>
-                <pc:TextEquiv conf="0.9868887662887573">
-                    <pc:Unicode>qui nont rien ou preſque rien de commun</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Donc après avoir paſſé par le mode de la à
+De même laccord re fa ſol [#] ſi, appar-
+tiendra au mode mineur de mi, &amp; l'accord
+fa ſol ſi re, au mode mineur de ſol .</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="paragraph"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9782593250274658"><pc:Unicode>Donc après avoir paſſé par le mode de la à</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9042693376541138"><pc:Unicode>Taccord ſol X ſi re fa (Article 127.), on</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0002"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9965196847915649"><pc:Unicode>peut, au moyen de ce dernier accord, &amp;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0003"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.996837317943573"><pc:Unicode>en ſe contentant ſimplement de le renver-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0004"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9985788464546204"><pc:Unicode>ſer, paſſer enſuite tout d'un coup aux mo-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0005"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9762579202651978"><pc:Unicode>des d'ut mineur, ou de mi mineur, ou ds</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0006"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9692295789718628"><pc:Unicode>ſol mineur, c'eſt-à · dire dans des modes</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0007"><pc:Coords points="490,2283 490,3010 2153,3010 2159,2234 490,2283"/><pc:TextEquiv conf="0.9868887662887573"><pc:Unicode>qui nont rien ou preſque rien de commun</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Donc après avoir paſſé par le mode de la à
 Taccord ſol X ſi re fa (Article 127.), on
 peut, au moyen de ce dernier accord, &amp;
 en ſe contentant ſimplement de le renver-
 ſer, paſſer enſuite tout d'un coup aux mo-
 des d'ut mineur, ou de mi mineur, ou ds
 ſol mineur, c'eſt-à · dire dans des modes
-qui nont rien ou preſque rien de commun</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:MusicRegion id="region_id_4" custom="tablatureNotation">
-            <pc:Coords points="743,1010 1698,1010 1698,1291 743,1291 743,1010"/>
-        </pc:MusicRegion>
-    </pc:Page>
+qui nont rien ou preſque rien de commun</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
