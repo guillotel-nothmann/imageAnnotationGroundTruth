@@ -1,4 +1,5 @@
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-15T15:16:35</pc:Created>
@@ -66,19 +67,273 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/><pc:RegionRefIndexed index="11" regionRef="region_id_11"/></pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="497,198 497,314 629,314 629,198 497,198"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="497,198 497,314 629,314 629,198 497,198"/><pc:TextEquiv conf="0.9510416388511658"><pc:Unicode>92</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>92</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="729,181 729,286 1913,286 1913,181 729,181"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="729,181 729,286 1913,286 1913,181 729,181"/><pc:TextEquiv conf="0.8005948662757874"><pc:Unicode>ELEMENSDE Mvs1OvE</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ELEMENSDE Mvs1OvE</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="497,297 497,397 1808,397 1808,297 497,297"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="497,297 497,397 1808,397 1808,297 497,297"/><pc:TextEquiv conf="0.933789074420929"><pc:Unicode>reX, ſont égaux (ff) &amp; maieurs.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>reX, ſont égaux (ff) &amp; maieurs.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextEquiv conf="0.9963244795799255"><pc:Unicode>Ce genre de chant, dans lequel tous les</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextEquiv conf="0.9813543558120728"><pc:Unicode>demi-tons ſont majeurs, s appelle diatonique</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextEquiv conf="0.9747546315193176"><pc:Unicode>enharmonique, parce que deux demi-tons ma-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextEquiv conf="0.996907651424408"><pc:Unicode>jeurs de ſuite forment un ton trop grand d'un</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/><pc:TextEquiv conf="0.9805503487586975"><pc:Unicode>quart de ton enharmonique.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Ce genre de chant, dans lequel tous les
-demi-tons ſont majeurs, s'appelle diatonique
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="497,198 497,314 629,314 629,198 497,198"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="527,226 620,226 620,301 527,301"/>
+                <pc:TextEquiv conf="0.9510416388511658">
+                    <pc:Unicode>92</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>92</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="729,181 729,286 1913,286 1913,181 729,181"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="747,207 1869,207 1869,286 747,286"/>
+                <pc:TextEquiv conf="0.8005948662757874">
+                    <pc:Unicode>ELEMENSDE Mvs1OvE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ELEMENSDE Mvs1OvE</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="497,297 497,397 1808,397 1808,297 497,297"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="527,297 1806,297 1806,397 527,397"/>
+                <pc:TextEquiv conf="0.933789074420929">
+                    <pc:Unicode>reX, ſont égaux (ff) &amp; maieurs.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>reX, ſont égaux (ff) &amp; maieurs.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="523,412 2096,412 2113,790 1532,801 1515,873 508,884 523,412"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="618,412 2096,412 2096,509 618,509"/>
+                <pc:TextEquiv conf="0.9963244795799255">
+                    <pc:Unicode>Ce genre de chant, dans lequel tous les</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,502 2095,502 2095,603 523,603"/>
+                <pc:TextEquiv conf="0.9813543558120728">
+                    <pc:Unicode>demi-tons ſont majeurs, s appelle diatonique</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,595 2090,595 2090,690 525,690"/>
+                <pc:TextEquiv conf="0.9747546315193176">
+                    <pc:Unicode>enharmonique, parce que deux demi-tons ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="524,687 524,794 1902,794 2089,790 2089,687 524,687"/>
+                <pc:TextEquiv conf="0.996907651424408">
+                    <pc:Unicode>jeurs de ſuite forment un ton trop grand d'un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,778 523,875 1332,875 1504,873 1504,778 523,778"/>
+                <pc:TextEquiv conf="0.9805503487586975">
+                    <pc:Unicode>quart de ton enharmonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ce genre de chant, dans lequel tous les
+demi-tons ſont majeurs, s appelle diatonique
 enharmonique, parce que deux demi-tons ma-
 jeurs de ſuite forment un ton trop grand d'un
-quart de ton enharmonique.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:SeparatorRegion id="region_id_4"><pc:Coords points="599,958 2046,958 2046,1017 586,1023 599,958"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:SeparatorRegion><pc:TextRegion id="region_id_5" type="heading"><pc:Coords points="652,1039 1913,1072 1946,1352 658,1352 652,1039"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="652,1039 1913,1072 1946,1352 658,1352 652,1039"/><pc:TextEquiv conf="0.9528611302375793"><pc:Unicode>CHAPITRE XXI.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="652,1039 1913,1072 1946,1352 658,1352 652,1039"/><pc:TextEquiv conf="0.9596975445747375"><pc:Unicode>Du genre cromatique enarmonique.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>CHAPITRE XXI.
-Du genre cromatique enarmonique.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="paragraph"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.4587884545326233"><pc:Unicode>S:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.9960495829582214"><pc:Unicode>ce mineure en deſcendant à une ma-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0002"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.9715656042098999"><pc:Unicode>jeure en montant, comme ut, ut, la, ut ,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0003"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.9809492230415344"><pc:Unicode>ut , on formera ce chant mi , mi, mi,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0004"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.9902328252792358"><pc:Unicode>mi, mi , dans lequel tous les demi- tons</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0005"><pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/><pc:TextEquiv conf="0.9628419876098633"><pc:Unicode>ſont mineurs ).</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>S:
+quart de ton enharmonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="652,1039 1913,1072 1946,1352 658,1352 652,1039"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="703,1094 1886,1094 1886,1172 703,1172"/>
+                <pc:TextEquiv conf="0.9528611302375793">
+                    <pc:Unicode>CHAPITRE XXI.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="658,1249 658,1352 1943,1352 1943,1327 1934,1249 658,1249"/>
+                <pc:TextEquiv conf="0.9596975445747375">
+                    <pc:Unicode>Du genre cromatique enarmonique.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>CHAPITRE XXI.
+Du genre cromatique enarmonique.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="512,1425 2084,1425 2084,1981 512,1981 512,1425"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="532,1425 2084,1425 2084,1596 532,1596"/>
+                <pc:TextEquiv conf="0.4587884545326233">
+                    <pc:Unicode>S:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="521,1520 2081,1520 2081,1592 521,1592"/>
+                <pc:TextEquiv conf="0.9960495829582214">
+                    <pc:Unicode>ce mineure en deſcendant à une ma-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,1608 2084,1608 2084,1704 515,1704"/>
+                <pc:TextEquiv conf="0.9715656042098999">
+                    <pc:Unicode>jeure en montant, comme ut, ut, la, ut ,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,1701 2078,1701 2078,1795 514,1795"/>
+                <pc:TextEquiv conf="0.9809492230415344">
+                    <pc:Unicode>ut , on formera ce chant mi , mi, mi,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="512,1792 2081,1792 2081,1888 512,1888"/>
+                <pc:TextEquiv conf="0.9902328252792358">
+                    <pc:Unicode>mi, mi , dans lequel tous les demi- tons</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,1885 1771,1885 1771,1981 520,1981"/>
+                <pc:TextEquiv conf="0.9628419876098633">
+                    <pc:Unicode>ſont mineurs ).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>S:
 ce mineure en deſcendant à une ma-
 jeure en montant, comme ut, ut, la, ut ,
 ut , on formera ce chant mi , mi, mi,
 mi, mi , dans lequel tous les demi- tons
-ſont mineurs ).</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="drop-capital"><pc:Coords points="685,1404 685,1592 812,1592 812,1404 685,1404"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="685,1404 685,1592 812,1592 812,1404 685,1404"/><pc:TextEquiv conf="0.6509177088737488"><pc:Unicode>S</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>S</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="footnote"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9538529515266418"><pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0001"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.960626482963562"><pc:Unicode>ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0002"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9525581002235413"><pc:Unicode>le,? de, ceſt-à dire : donc le rapport de fa à mi eſt</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0003"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9465709924697876"><pc:Unicode>celui ds 2à , ou de 1 à: or mi de la baſſe étant ?</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0004"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9292789101600647"><pc:Unicode>de ,ou , de la baſſe eſt de , &amp; r eſt de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0005"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9366649985313416"><pc:Unicode>i. Donc mi eſt à re comme eſt à 4 de , ceſt à-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0006"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9770020842552185"><pc:Unicode>dire, comme 16 eſt à 15: donc les demi-tons de fa à mi &amp;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0007"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9886313080787659"><pc:Unicode>de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0008"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9119362235069275"><pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0009"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9783825874328613"><pc:Unicode>eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0010"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9635101556777954"><pc:Unicode>à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0011"><pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/><pc:TextEquiv conf="0.9574728012084961"><pc:Unicode>tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,
+ſont mineurs ).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="drop-capital">
+            <pc:Coords points="685,1404 685,1592 812,1592 812,1404 685,1404"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="712,1430 812,1430 812,1592 712,1592"/>
+                <pc:TextEquiv conf="0.6509177088737488">
+                    <pc:Unicode>S</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>S</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footnote">
+            <pc:Coords points="508,2055 2083,2055 2083,2999 508,2999 508,2055"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="585,2055 2081,2055 2081,2130 585,2130"/>
+                <pc:TextEquiv conf="0.9538529515266418">
+                    <pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2119 2080,2119 2080,2189 508,2189"/>
+                <pc:TextEquiv conf="0.960626482963562">
+                    <pc:Unicode>ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2199 2081,2199 2081,2288 519,2288"/>
+                <pc:TextEquiv conf="0.9525581002235413">
+                    <pc:Unicode>le,? de, ceſt-à dire : donc le rapport de fa à mi eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2288 2078,2288 2078,2376 520,2376"/>
+                <pc:TextEquiv conf="0.9465709924697876">
+                    <pc:Unicode>celui ds 2à , ou de 1 à: or mi de la baſſe étant ?</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2367 2081,2367 2081,2461 520,2461"/>
+                <pc:TextEquiv conf="0.9292789101600647">
+                    <pc:Unicode>de ,ou , de la baſſe eſt de , &amp; r eſt de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,2450 2083,2450 2083,2541 510,2541"/>
+                <pc:TextEquiv conf="0.9366649985313416">
+                    <pc:Unicode>i. Donc mi eſt à re comme eſt à 4 de , ceſt à-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2535 2083,2535 2083,2609 508,2609"/>
+                <pc:TextEquiv conf="0.9770020842552185">
+                    <pc:Unicode>dire, comme 16 eſt à 15: donc les demi-tons de fa à mi &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2602 1612,2602 1612,2667 518,2667"/>
+                <pc:TextEquiv conf="0.9886313080787659">
+                    <pc:Unicode>de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="587,2683 2081,2683 2081,2774 587,2774"/>
+                <pc:TextEquiv conf="0.9119362235069275">
+                    <pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,2766 2078,2766 2078,2860 517,2860"/>
+                <pc:TextEquiv conf="0.9783825874328613">
+                    <pc:Unicode>eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2849 2076,2849 2076,2925 518,2925"/>
+                <pc:TextEquiv conf="0.9635101556777954">
+                    <pc:Unicode>à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_8_region_id_8_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,2916 2076,2916 2076,2999 514,2999"/>
+                <pc:TextEquiv conf="0.9574728012084961">
+                    <pc:Unicode>tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,
 ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-
 le,? de, ceſt-à dire : donc le rapport de fa à mi eſt
 celui ds 2à , ou de 1 à: or mi de la baſſe étant ?
@@ -89,15 +344,123 @@ de mi à re ſont majeurs lun &amp; lautre.
 gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi
 eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-
 à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-
-tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_9" type="paragraph"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextLine id="region_id_9_line0000"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9580740332603455"><pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0001"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.961314857006073"><pc:Unicode>ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0002"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9573464393615723"><pc:Unicode>le, de , ceſt-à · dire : donc le rapport de fa à mi eſt</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0003"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9465709924697876"><pc:Unicode>celui ds 2à , ou de 1 à: or mi de la baſſe étant ?</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0004"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9292789101600647"><pc:Unicode>de ,ou , de la baſſe eſt de , &amp; r eſt de</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0005"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9366649985313416"><pc:Unicode>i. Donc mi eſt à re comme eſt à 4 de , ceſt à-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0006"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9770020842552185"><pc:Unicode>dire, comme 16 eſt à 15: donc les demi-tons de fa à mi &amp;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_9_line0007"><pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/><pc:TextEquiv conf="0.9873188138008118"><pc:Unicode>de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,
+tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="497,2040 497,2665 2095,2665 2095,2040 497,2040"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="515,2055 2081,2055 2081,2130 515,2130"/>
+                <pc:TextEquiv conf="0.9580740332603455">
+                    <pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2123 2080,2123 2080,2189 508,2189"/>
+                <pc:TextEquiv conf="0.961314857006073">
+                    <pc:Unicode>ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,2204 2081,2204 2081,2288 519,2288"/>
+                <pc:TextEquiv conf="0.9573464393615723">
+                    <pc:Unicode>le, de , ceſt-à · dire : donc le rapport de fa à mi eſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2288 2078,2288 2078,2376 520,2376"/>
+                <pc:TextEquiv conf="0.9465709924697876">
+                    <pc:Unicode>celui ds 2à , ou de 1 à: or mi de la baſſe étant ?</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2367 2081,2367 2081,2461 520,2461"/>
+                <pc:TextEquiv conf="0.9292789101600647">
+                    <pc:Unicode>de ,ou , de la baſſe eſt de , &amp; r eſt de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="510,2450 2083,2450 2083,2541 510,2541"/>
+                <pc:TextEquiv conf="0.9366649985313416">
+                    <pc:Unicode>i. Donc mi eſt à re comme eſt à 4 de , ceſt à-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2535 2083,2535 2083,2609 508,2609"/>
+                <pc:TextEquiv conf="0.9770020842552185">
+                    <pc:Unicode>dire, comme 16 eſt à 15: donc les demi-tons de fa à mi &amp;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_9_region_id_9_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2602 1612,2602 1612,2665 518,2665"/>
+                <pc:TextEquiv conf="0.9873188138008118">
+                    <pc:Unicode>de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>() Il eſt viſible que ſa de la baſſe étant ſuppoſé 1,
 ſa de léchelle eſt 2, ut de la baſſe eſt 2, &amp; mi de léchel-
 le, de , ceſt-à · dire : donc le rapport de fa à mi eſt
 celui ds 2à , ou de 1 à: or mi de la baſſe étant ?
 de ,ou , de la baſſe eſt de , &amp; r eſt de
 i. Donc mi eſt à re comme eſt à 4 de , ceſt à-
 dire, comme 16 eſt à 15: donc les demi-tons de fa à mi &amp;
-de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_10" type="paragraph"><pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/><pc:TextLine id="region_id_10_line0000"><pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/><pc:TextEquiv conf="0.9119362235069275"><pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_10_line0001"><pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/><pc:TextEquiv conf="0.9783825874328613"><pc:Unicode>eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_10_line0002"><pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/><pc:TextEquiv conf="0.9635101556777954"><pc:Unicode>à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_10_line0003"><pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/><pc:TextEquiv conf="0.9574728012084961"><pc:Unicode>tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi
+de mi à re ſont majeurs lun &amp; lautre.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="480,2682 519,2998 2107,3009 2112,2682 480,2682"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="587,2683 2081,2683 2081,2774 587,2774"/>
+                <pc:TextEquiv conf="0.9119362235069275">
+                    <pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="517,2766 2078,2766 2078,2860 517,2860"/>
+                <pc:TextEquiv conf="0.9783825874328613">
+                    <pc:Unicode>eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="518,2849 2076,2849 2076,2925 518,2925"/>
+                <pc:TextEquiv conf="0.9635101556777954">
+                    <pc:Unicode>à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Alembert_1752_1-115_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="514,2916 514,2957 519,2998 663,2999 2076,2999 2076,2916 514,2916"/>
+                <pc:TextEquiv conf="0.9574728012084961">
+                    <pc:Unicode>tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gg) Il eſt clair que mi b eſt (Noie d), &amp; que mi
 eſt ?: donc ces deux mi ſont entr eux comme à , ceſt-
 à-dire comme 6 fois ꝓ à5 fois 5, ou comme 24 à 25, in-
-tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_11" type="marginalia"><pc:Coords points="187,1564 187,1686 497,1686 497,1564 187,1564"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:TextRegion></pc:Page>
+tervalle qui conſtitue le demi-ton mineur. De plus, le la</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="marginalia">
+            <pc:Coords points="187,1564 187,1686 497,1686 497,1564 187,1564"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_4">
+            <pc:Coords points="599,958 2046,958 2046,1017 586,1023 599,958"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
 </pc:PcGts>
