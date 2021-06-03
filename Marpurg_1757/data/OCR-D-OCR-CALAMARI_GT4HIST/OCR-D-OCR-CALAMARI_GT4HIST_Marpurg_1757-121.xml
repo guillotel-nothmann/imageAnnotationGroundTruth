@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:58</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:58</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-121.png" imageWidth="2973" imageHeight="3690" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-121-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-121.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="459,166 2620,166 2620,3235 459,3235"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="429,145 429,261 597,261 597,145 429,145"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="465,185 573,185 573,241 465,241"/>
+                <pc:TextEquiv conf="0.8352414965629578">
+                    <pc:Unicode>102</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>102</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="899,139 893,268 2175,287 2175,139 899,139"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="915,167 915,268 1095,271 2170,271 2170,167 915,167"/>
+                <pc:TextEquiv conf="0.967325747013092">
+                    <pc:Unicode>n Buch. IX Cap. Den Grundbaß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>n Buch. IX Cap. Den Grundbaß</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" custom="list" type="other">
+            <pc:Coords points="526,306 520,2297 945,2284 977,2201 2632,2226 2632,306 526,306"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="552,327 2616,327 2616,431 552,431"/>
+                <pc:TextEquiv conf="0.992109477519989">
+                    <pc:Unicode>4) Jede mit 7, oder 7 und 3, oder 7 und 5, bezeichnete Note bleibet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="642,416 2152,416 2152,502 642,502"/>
+                <pc:TextEquiv conf="0.9985654950141907">
+                    <pc:Unicode>eben dieſelbe in dem Grundbaſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="551,533 2607,533 2607,621 551,621"/>
+                <pc:TextEquiv conf="0.983377993106842">
+                    <pc:Unicode>5) Von einer mit 6 und 5, ingleichen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,646 2619,646 2619,746 550,746"/>
+                <pc:TextEquiv conf="0.9918407201766968">
+                    <pc:Unicode>6) Von einer mit 6, 4 und 3, oder ſchlechtweg mit 4 und 3 bezif⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="636,735 2618,735 2618,832 636,832"/>
+                <pc:TextEquiv conf="0.9997099041938782">
+                    <pc:Unicode>ferten Generalbaßnote wird in der auf dieſe Regeln folgenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="632,825 1783,825 1783,909 632,909"/>
+                <pc:TextEquiv conf="0.9988725185394287">
+                    <pc:Unicode>Anmerkung §. 228 gehandelt werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,937 2615,937 2615,1032 547,1032"/>
+                <pc:TextEquiv conf="0.9973973631858826">
+                    <pc:Unicode>7) Jede mit 2, oder 4 und 2, oder 6, 4 und 2 bezifferte Note hat</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="635,1025 2615,1025 2615,1124 635,1124"/>
+                <pc:TextEquiv conf="0.9984881281852722">
+                    <pc:Unicode>die Unterſeptime oder die Oberſecunde zu ihrem Grundbaſſe, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="637,1117 2578,1117 2578,1217 637,1217"/>
+                <pc:TextEquiv conf="0.9998138546943665">
+                    <pc:Unicode>die Septime zur Harmonie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="552,1228 2617,1228 2617,1330 552,1330"/>
+                <pc:TextEquiv conf="0.9953566789627075">
+                    <pc:Unicode>8) Jede mit 9, oder 9 und 7 bezeichnete Note hat die Oberterz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="636,1317 2448,1317 2448,1428 636,1428"/>
+                <pc:TextEquiv conf="0.9991856217384338">
+                    <pc:Unicode>zum Grundbaſſe, und die Septime zur Harmonie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="550,1433 2612,1433 2612,1525 550,1525"/>
+                <pc:TextEquiv conf="0.9951086640357971">
+                    <pc:Unicode>9) Jede mit 9, 7, 4, oder 9 und 4, oder 7 und 4, oder 5 und 4,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="634,1521 2614,1521 2614,1615 634,1615"/>
+                <pc:TextEquiv conf="0.9991931915283203">
+                    <pc:Unicode>oder mit der bloſſen 4 bezifferte Note hat die Oberquinte, mit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="597,1610 2620,1610 2620,1712 597,1712"/>
+                <pc:TextEquiv conf="0.9987092614173889">
+                    <pc:Unicode>der Harmonie der Septime, zum Grundbaſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="523,1714 2612,1714 2612,1815 523,1815"/>
+                <pc:TextEquiv conf="0.9796128869056702">
+                    <pc:Unicode>10) Jede mit 9, 5tt und 4 beziſferte Note hat die uͤbermaͤßige</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="631,1812 2613,1812 2613,1907 631,1907"/>
+                <pc:TextEquiv conf="0.9994872808456421">
+                    <pc:Unicode>Oberquinte, mit der Harmonie der verminderten Septime, zum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="633,1899 2493,1899 2493,2003 633,2003"/>
+                <pc:TextEquiv conf="0.9989696741104126">
+                    <pc:Unicode>Grundbaſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="552,2003 2611,2003 2611,2098 552,2098"/>
+                <pc:TextEquiv conf="0.9863142371177673">
+                    <pc:Unicode>n) Jede mit 74t und 6 bezifferte Note hat die kleine Unterſe⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="525,2101 2609,2101 2609,2194 525,2194"/>
+                <pc:TextEquiv conf="0.9986711740493774">
+                    <pc:Unicode>cunde, mit der Harmonie der verminderten Septime, zum Grund⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="634,2186 634,2271 950,2271 2179,2219 2179,2186 634,2186"/>
+                <pc:TextEquiv conf="0.9914790391921997">
+                    <pc:Unicode>baſſe ).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4) Jede mit 7, oder 7 und 3, oder 7 und 5, bezeichnete Note bleibet
+eben dieſelbe in dem Grundbaſſe.
+5) Von einer mit 6 und 5, ingleichen
+6) Von einer mit 6, 4 und 3, oder ſchlechtweg mit 4 und 3 bezif⸗
+ferten Generalbaßnote wird in der auf dieſe Regeln folgenden
+Anmerkung §. 228 gehandelt werden.
+7) Jede mit 2, oder 4 und 2, oder 6, 4 und 2 bezifferte Note hat
+die Unterſeptime oder die Oberſecunde zu ihrem Grundbaſſe, und
+die Septime zur Harmonie.
+8) Jede mit 9, oder 9 und 7 bezeichnete Note hat die Oberterz
+zum Grundbaſſe, und die Septime zur Harmonie.
+9) Jede mit 9, 7, 4, oder 9 und 4, oder 7 und 4, oder 5 und 4,
+oder mit der bloſſen 4 bezifferte Note hat die Oberquinte, mit
+der Harmonie der Septime, zum Grundbaſſe.
+10) Jede mit 9, 5tt und 4 beziſferte Note hat die uͤbermaͤßige
+Oberquinte, mit der Harmonie der verminderten Septime, zum
+Grundbaſſe.
+n) Jede mit 74t und 6 bezifferte Note hat die kleine Unterſe⸗
+cunde, mit der Harmonie der verminderten Septime, zum Grund⸗
+baſſe ).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1164,2239 1177,2374 1860,2387 1866,2259 1164,2239"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1230,2272 1230,2375 1545,2381 1844,2381 1844,2272 1230,2272"/>
+                <pc:TextEquiv conf="0.9992979764938354">
+                    <pc:Unicode>Anmerkung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1376,2516 1376,2400 1692,2400 1692,2516 1376,2516"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1403,2403 1677,2403 1677,2500 1403,2500"/>
+                <pc:TextEquiv conf="0.9971978068351746">
+                    <pc:Unicode>§. 228.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 228.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="423,2509 423,2709 2638,2709 2638,2509 423,2509"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="636,2524 2606,2524 2606,2625 636,2625"/>
+                <pc:TextEquiv conf="0.9978017807006836">
+                    <pc:Unicode>Wir ſind zween Faͤlle uͤbergangen, die einige Ungewißheit verur⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,2620 1975,2620 1975,2709 465,2709"/>
+                <pc:TextEquiv conf="0.9950841665267944">
+                    <pc:Unicode>ſachen koͤnnen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir ſind zween Faͤlle uͤbergangen, die einige Ungewißheit verur⸗
+ſachen koͤnnen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footer">
+            <pc:Coords points="2465,2806 2465,2696 2606,2696 2606,2806 2465,2806"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="2474,2722 2605,2722 2605,2794 2474,2794"/>
+                <pc:TextEquiv conf="0.9998142719268799">
+                    <pc:Unicode>Der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footnote">
+            <pc:Coords points="423,2825 423,3263 2626,3263 2626,2825 423,2825"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="538,2842 2603,2842 2603,2920 538,2920"/>
+                <pc:TextEquiv conf="0.99211186170578">
+                    <pc:Unicode>ii) Wir ſupponiren hier einen/ auf ſpieler oͤfters in Verlegenheit ſetzet. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="460,2926 2604,2926 2604,3005 460,3005"/>
+                <pc:TextEquiv conf="0.999221920967102">
+                    <pc:Unicode>dieſe Weiſe bezifferten Generalbaß. Denn ſehe davon den vom Herrn ouſſeau</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,3003 2603,3003 2603,3086 459,3086"/>
+                <pc:TextEquiv conf="0.9901670217514038">
+                    <pc:Unicode>es iſt wohl zu merken, daß in der Art der zu Genf ausgearbeiteten Artikel Ciiffrer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-121_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="464,3078 2431,3078 2431,3159 464,3159"/>
+                <pc:TextEquiv conf="0.9876159429550171">
+                    <pc:Unicode>Bezifferung wenig Muſici uͤbereinkom⸗ in dem 3 Bande der Encyelopedie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="460,3160 2319,3160 2319,3235 460,3235"/>
+                <pc:TextEquiv conf="0.9992602467536926">
+                    <pc:Unicode>men, welches den Begleiter oder Grund⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ii) Wir ſupponiren hier einen/ auf ſpieler oͤfters in Verlegenheit ſetzet. Man
+dieſe Weiſe bezifferten Generalbaß. Denn ſehe davon den vom Herrn ouſſeau
+es iſt wohl zu merken, daß in der Art der zu Genf ausgearbeiteten Artikel Ciiffrer
+Bezifferung wenig Muſici uͤbereinkom⸗ in dem 3 Bande der Encyelopedie.
+men, welches den Begleiter oder Grund⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="1511,3244 1511,2831 448,2831 448,3244 1511,3244"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="538,2842 1497,2842 1497,2913 538,2913"/>
+                <pc:TextEquiv conf="0.9916545152664185">
+                    <pc:Unicode>iii) Wir ſupponiren hier einen/ auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="460,2926 1493,2926 1493,2992 460,2992"/>
+                <pc:TextEquiv conf="0.998295783996582">
+                    <pc:Unicode>dieſe Weiſe bezifferten Generalbaß. Denn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="459,3003 1493,3003 1493,3073 459,3073"/>
+                <pc:TextEquiv conf="0.998305082321167">
+                    <pc:Unicode>es iſt wohl zu merken, daß in der Art der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="464,3078 1494,3078 1494,3153 464,3153"/>
+                <pc:TextEquiv conf="0.9980635643005371">
+                    <pc:Unicode>Bezifferung wenig Muſici uͤbereinkom⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="460,3160 1493,3160 1493,3235 460,3235"/>
+                <pc:TextEquiv conf="0.9984769225120544">
+                    <pc:Unicode>men, welches den Begleiter oder Grund⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>iii) Wir ſupponiren hier einen/ auf
+dieſe Weiſe bezifferten Generalbaß. Denn
+es iſt wohl zu merken, daß in der Art der
+Bezifferung wenig Muſici uͤbereinkom⸗
+men, welches den Begleiter oder Grund⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="1537,3153 1537,2831 2619,2831 2619,3153 1537,3153"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1571,2846 2603,2846 2603,2920 1571,2920"/>
+                <pc:TextEquiv conf="0.9960870742797852">
+                    <pc:Unicode>ſpieler oͤfters in Verlegenheit ſetzet. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="1570,2929 2604,2929 2604,3005 1570,3005"/>
+                <pc:TextEquiv conf="0.9975534081459045">
+                    <pc:Unicode>ſehe davon den vom Herrn Rouſſeau</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="1571,3008 2603,3008 2603,3086 1571,3086"/>
+                <pc:TextEquiv conf="0.9877889752388">
+                    <pc:Unicode>zu Genf ausgearbeiteten Artikel Cliffrer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="1572,3087 2431,3087 2431,3153 1572,3153"/>
+                <pc:TextEquiv conf="0.984994113445282">
+                    <pc:Unicode>in dem 3 Bande der Encyclopedie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſpieler oͤfters in Verlegenheit ſetzet. Man
+ſehe davon den vom Herrn Rouſſeau
+zu Genf ausgearbeiteten Artikel Cliffrer
+in dem 3 Bande der Encyclopedie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

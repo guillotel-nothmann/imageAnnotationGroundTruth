@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:43:57</pc:Created>
+        <pc:LastChange>2021-01-10T21:43:57</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-140.png" imageWidth="2973" imageHeight="3570" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-140-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-140.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="417,161 2549,161 2549,3267 417,3267"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="893,141 893,247 1990,247 1990,141 893,141"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="893,162 1990,162 1990,247 893,247"/>
+                <pc:TextEquiv conf="0.9770830273628235">
+                    <pc:Unicode>Anmerkungen des Ueberſetzers</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkungen des Ueberſetzers</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2395,259 2395,153 2545,153 2545,259 2395,259"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2464,175 2481,175 2481,183 2464,183"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" custom="list" type="other">
+            <pc:Coords points="371,291 415,3189 1592,3176 1604,3107 2589,3138 2589,290 371,291"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="417,306 2357,306 2357,409 417,409"/>
+                <pc:TextEquiv conf="0.9989928007125854">
+                    <pc:Unicode>machet, wie folget:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="429,405 2505,405 2505,482 429,482"/>
+                <pc:TextEquiv conf="0.4009169936180115">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="418,859 2520,859 2520,945 418,945"/>
+                <pc:TextEquiv conf="0.9968493580818176">
+                    <pc:Unicode>Eine Secundenfortſchreitung in dem Grundbaſſe iſt alſo eine elliptiſche Fort⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="421,943 2510,943 2510,1040 421,1040"/>
+                <pc:TextEquiv conf="0.9875370264053345">
+                    <pc:Unicode>ſchreitung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="435,1037 2522,1037 2522,1125 435,1125"/>
+                <pc:TextEquiv conf="0.9932591915130615">
+                    <pc:Unicode>Die Fortſchreitung von c zu a iſt noch entfernter, als die von c zu d, weil</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="423,1115 2512,1115 2512,1206 423,1206"/>
+                <pc:TextEquiv conf="0.9990161061286926">
+                    <pc:Unicode>daſelbſt zwo Quintenfortſchreitungen uͤberſprungen werden, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:Coords points="917,1227 1951,1227 1951,1458 917,1458"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="535,1541 2363,1541 2363,1645 535,1645"/>
+                <pc:TextEquiv conf="0.5685015916824341">
+                    <pc:Unicode>pt t</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="918,1612 2516,1612 2516,1685 918,1685"/>
+                <pc:TextEquiv conf="0.6085345149040222">
+                    <pc:Unicode>tEt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="935,1679 2013,1679 2013,1719 935,1719"/>
+                <pc:TextEquiv conf="0.3766685128211975">
+                    <pc:Unicode>—</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="430,1744 2534,1744 2534,1838 430,1838"/>
+                <pc:TextEquiv conf="0.9916448593139648">
+                    <pc:Unicode>Die Quintenfortſchreitungen haben vor den uͤbrigen nichts mehr, als einen Grab</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="430,1828 2536,1828 2536,1915 430,1915"/>
+                <pc:TextEquiv conf="0.9992130994796753">
+                    <pc:Unicode>der Vollkommenheit voraus. Dieſe Grade ſind nach der Anzahl der ausgelaſ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="431,1906 2539,1906 2539,1997 431,1997"/>
+                <pc:TextEquiv conf="0.998134195804596">
+                    <pc:Unicode>ſenen Fortſchreitungen leicht zu beſtimmen, und darnach iſt die Vollkommenheit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="434,1981 2541,1981 2541,2070 434,2070"/>
+                <pc:TextEquiv conf="0.9927863478660583">
+                    <pc:Unicode>einer Progreßion leicht zu beurtheilen. Bey den Secundenfortſchreitungen im</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="437,2057 2540,2057 2540,2147 437,2147"/>
+                <pc:TextEquiv conf="0.9930543899536133">
+                    <pc:Unicode>Grundbaſſe ſind uͤbrigens die Geſetze der harmoniſchen Relation zu Rathe zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="435,2156 2520,2156 2520,2232 435,2232"/>
+                <pc:TextEquiv conf="0.7049439549446106">
+                    <pc:Unicode>ehen. 1 2 222c2e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,2204 2544,2204 2544,2302 470,2302"/>
+                <pc:TextEquiv conf="0.9871937036514282">
+                    <pc:Unicode>(u) Dieſer Ausweichungen wegen ſind die Regeln der Modulation zu beob</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="441,2287 2545,2287 2545,2376 441,2376"/>
+                <pc:TextEquiv conf="0.996068000793457">
+                    <pc:Unicode>achten. Man kann aus dem c dur in d moll gehen, und darinnen cadenziren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="439,2360 2543,2360 2543,2455 439,2455"/>
+                <pc:TextEquiv conf="0.9971712231636047">
+                    <pc:Unicode>Der Ton d dur aber kann in einem aus dem c dur gehenden Stuͤcke, nur im</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="441,2436 2543,2436 2543,2532 441,2532"/>
+                <pc:TextEquiv conf="0.9945230484008789">
+                    <pc:Unicode>Vorbeygehen, vermittelſt einer vorhergehenden Modulation in g dur beruhret</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,2516 2542,2516 2542,2598 443,2598"/>
+                <pc:TextEquiv conf="0.9963796138763428">
+                    <pc:Unicode>werden. Eben alſo muß man den Ton b dur, in einem aus c dur gehenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,2593 2521,2593 2521,2686 443,2686"/>
+                <pc:TextEquiv conf="0.9941990971565247">
+                    <pc:Unicode>Stuͤcke, nur zufaͤlliger Weiſe, vermittelſt des Tons f, beruͤhren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2689 2545,2689 2545,2783 513,2783"/>
+                <pc:TextEquiv conf="0.9923405647277832">
+                    <pc:Unicode>(2) Von der Muſik der Griechen, und ihrer Benennung der Toͤne kann</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="448,2771 1978,2771 1978,2861 448,2861"/>
+                <pc:TextEquiv conf="0.9876779913902283">
+                    <pc:Unicode>man die hiſtor. krit. Beytraͤge, I Band 4 St. nachſehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="604,2861 2543,2861 2543,2961 604,2961"/>
+                <pc:TextEquiv conf="0.9932459592819214">
+                    <pc:Unicode>(13) Comma iſt ein allgemeines Wort, und giebet es mehr als eine Art</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,2945 2540,2945 2540,3032 451,3032"/>
+                <pc:TextEquiv conf="0.9897312521934509">
+                    <pc:Unicode>von Commaten, wie in den Anfangsgruͤnden gelehret iſt. Das Comma 81: 80</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="435,3022 435,3120 2546,3120 2546,3022 435,3022"/>
+                <pc:TextEquiv conf="0.9959524273872375">
+                    <pc:Unicode>wird entweder vorzuͤglicher Weiſe ein Comma, oder zum Unterſcheide der an⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-140_region_id_2_region_id_2_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,3103 450,3187 596,3187 1592,3176 2396,3132 2396,3103 450,3103"/>
+                <pc:TextEquiv conf="0.9944618940353394">
+                    <pc:Unicode>dern ein ſyntoniſches Comma genennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>machet, wie folget:
+
+Eine Secundenfortſchreitung in dem Grundbaſſe iſt alſo eine elliptiſche Fort⸗
+ſchreitung.
+Die Fortſchreitung von c zu a iſt noch entfernter, als die von c zu d, weil
+daſelbſt zwo Quintenfortſchreitungen uͤberſprungen werden, als:
+
+pt t
+tEt
+—
+Die Quintenfortſchreitungen haben vor den uͤbrigen nichts mehr, als einen Grab
+der Vollkommenheit voraus. Dieſe Grade ſind nach der Anzahl der ausgelaſ⸗
+ſenen Fortſchreitungen leicht zu beſtimmen, und darnach iſt die Vollkommenheit
+einer Progreßion leicht zu beurtheilen. Bey den Secundenfortſchreitungen im
+Grundbaſſe ſind uͤbrigens die Geſetze der harmoniſchen Relation zu Rathe zu
+ehen. 1 2 222c2e
+(u) Dieſer Ausweichungen wegen ſind die Regeln der Modulation zu beob
+achten. Man kann aus dem c dur in d moll gehen, und darinnen cadenziren.
+Der Ton d dur aber kann in einem aus dem c dur gehenden Stuͤcke, nur im
+Vorbeygehen, vermittelſt einer vorhergehenden Modulation in g dur beruhret
+werden. Eben alſo muß man den Ton b dur, in einem aus c dur gehenden
+Stuͤcke, nur zufaͤlliger Weiſe, vermittelſt des Tons f, beruͤhren.
+(2) Von der Muſik der Griechen, und ihrer Benennung der Toͤne kann
+man die hiſtor. krit. Beytraͤge, I Band 4 St. nachſehen.
+(13) Comma iſt ein allgemeines Wort, und giebet es mehr als eine Art
+von Commaten, wie in den Anfangsgruͤnden gelehret iſt. Das Comma 81: 80
+wird entweder vorzuͤglicher Weiſe ein Comma, oder zum Unterſcheide der an⸗
+dern ein ſyntoniſches Comma genennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="495,3269 497,3196 2570,3150 2570,3269 495,3269"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1669,3170 528,3195 528,3267 2548,3267 2548,3170 1669,3170"/>
+                <pc:TextEquiv conf="0.9557833075523376">
+                    <pc:Unicode>Einleit. in die muſic. Setzk. i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleit. in die muſic. Setzk. i</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_3" custom="staffNotation">
+            <pc:Coords points="1205,851 1205,309 1710,309 1710,851 1205,851"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_4" custom="staffNotation">
+            <pc:Coords points="856,1206 856,1742 2102,1742 2102,1206 856,1206"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

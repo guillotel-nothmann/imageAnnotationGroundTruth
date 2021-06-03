@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:09</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:09</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-028.png" imageWidth="2973" imageHeight="3599" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-028-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-028.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="379,433 2492,433 2492,3257 379,3257"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="2439,142 2439,285 2538,285 2538,142 2439,142"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="411,420 411,911 2460,911 2460,420 411,420"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="530,434 2156,434 2156,580 530,580"/>
+                <pc:TextEquiv conf="0.9894368052482605">
+                    <pc:Unicode>Erſtes Buch,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="854,608 2409,608 2409,686 854,686"/>
+                <pc:TextEquiv conf="0.9989274740219116">
+                    <pc:Unicode>welches</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="466,714 2423,714 2423,888 466,888"/>
+                <pc:TextEquiv conf="0.9798779487609863">
+                    <pc:Unicode>die Theorie der Harmonie enthaͤlt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſtes Buch,
+welches
+die Theorie der Harmonie enthaͤlt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="546,1010 546,1423 2289,1423 2289,1010 546,1010"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1133,1020 2031,1020 2031,1106 1133,1106"/>
+                <pc:TextEquiv conf="0.9980139136314392">
+                    <pc:Unicode>Erſtes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="602,1142 2276,1142 2276,1277 602,1277"/>
+                <pc:TextEquiv conf="0.9887768030166626">
+                    <pc:Unicode>Vorlaͤuſige und Grunderfahrungen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="1021,1317 1853,1317 1853,1419 1021,1419"/>
+                <pc:TextEquiv conf="0.9987770915031433">
+                    <pc:Unicode>Erſte Erfahrung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſtes Capitel.
+Vorlaͤuſige und Grunderfahrungen.
+Erſte Erfahrung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1289,1447 1289,1548 1572,1548 1572,1447 1289,1447"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1313,1466 1553,1466 1553,1543 1313,1543"/>
+                <pc:TextEquiv conf="0.9977052807807922">
+                    <pc:Unicode>§. 20.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 20.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="drop-capital">
+            <pc:Coords points="356,1539 356,1798 633,1798 633,1539 356,1539"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="385,1569 630,1569 630,1789 385,1789"/>
+                <pc:TextEquiv conf="0.9449989795684814">
+                    <pc:Unicode>W</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>W</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="631,1799 362,1814 332,2186 2487,2186 2487,1554 631,1551 631,1799"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="636,1567 2487,1567 2487,1646 636,1646"/>
+                <pc:TextEquiv conf="0.9943897724151611">
+                    <pc:Unicode>enn man einen klingenden Koͤrper in Bewegung ſetzet: ſo wird</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-028_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="681,1652 2479,1652 2479,1739 681,1739"/>
+                <pc:TextEquiv conf="0.9972019195556641">
+                    <pc:Unicode>man außer ſeinem Haupttone, und deſſen Oberoctave,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-028_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="676,1739 2482,1739 2482,1828 676,1828"/>
+                <pc:TextEquiv conf="0.9951701164245605">
+                    <pc:Unicode>zween andere ſehr feine Klaͤnge zugleich mit vernehmen, wo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-028_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="382,1824 2475,1824 2475,1911 382,1911"/>
+                <pc:TextEquiv conf="0.9985948801040649">
+                    <pc:Unicode>von der eine die Oberduodecime, und der andere die große De⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="383,1915 2479,1915 2479,1994 383,1994"/>
+                <pc:TextEquiv conf="0.996307909488678">
+                    <pc:Unicode>cime⸗Septime des Haupttons iſt. Durch Oberduodecime wird be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:Coords points="382,2000 2475,2000 2475,2077 382,2077"/>
+                <pc:TextEquiv conf="0.9978340864181519">
+                    <pc:Unicode>kanntermaßen die Oberoctave der Quinte, und durch die große De⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:Coords points="384,2086 2426,2086 2426,2170 384,2170"/>
+                <pc:TextEquiv conf="0.9938366413116455">
+                    <pc:Unicode>cime⸗Septime die zweyfache Oberoctave der großen Terz verſtanden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>enn man einen klingenden Koͤrper in Bewegung ſetzet: ſo wird
+man außer ſeinem Haupttone, und deſſen Oberoctave,
+zween andere ſehr feine Klaͤnge zugleich mit vernehmen, wo⸗
+von der eine die Oberduodecime, und der andere die große De⸗
+cime⸗Septime des Haupttons iſt. Durch Oberduodecime wird be⸗
+kanntermaßen die Oberoctave der Quinte, und durch die große De⸗
+cime⸗Septime die zweyfache Oberoctave der großen Terz verſtanden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1298,2180 1301,2282 1546,2276 1545,2180 1298,2180"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1312,2195 1535,2195 1535,2274 1312,2274"/>
+                <pc:TextEquiv conf="0.9636061191558838">
+                    <pc:Unicode>§. 21.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 21.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="356,2266 356,2652 2491,2607 2481,2266 356,2266"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="547,2278 2472,2278 2472,2361 547,2361"/>
+                <pc:TextEquiv conf="0.9971582293510437">
+                    <pc:Unicode>Dieſe Erfahrung laͤſſet ſich beſonders auf den dicken Seyten ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="384,2363 2470,2363 2470,2446 384,2446"/>
+                <pc:TextEquiv conf="0.998903214931488">
+                    <pc:Unicode>nes Violoncello ſehr fuͤhlbar machen, allwo ein nur wenig geuͤbtes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-028_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="382,2451 2469,2451 2469,2538 382,2538"/>
+                <pc:TextEquiv conf="0.9965436458587646">
+                    <pc:Unicode>Ohr, die Duodecime und Decime⸗Septime, wovon die Rede iſt, mit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-028_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="382,2537 1458,2537 1458,2627 382,2627"/>
+                <pc:TextEquiv conf="0.994384765625">
+                    <pc:Unicode>geringer Muͤhe empfinden wird ).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſe Erfahrung laͤſſet ſich beſonders auf den dicken Seyten ei⸗
+nes Violoncello ſehr fuͤhlbar machen, allwo ein nur wenig geuͤbtes
+Ohr, die Duodecime und Decime⸗Septime, wovon die Rede iſt, mit
+geringer Muͤhe empfinden wird ).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="heading">
+            <pc:Coords points="2264,2618 2264,2711 2481,2711 2481,2618 2264,2618"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2281,2630 2466,2630 2466,2708 2281,2708"/>
+                <pc:TextEquiv conf="0.9949092864990234">
+                    <pc:Unicode>§. 22.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 22.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footnote">
+            <pc:Coords points="358,2695 351,3176 1396,3178 1394,3113 2492,3095 2509,2732 358,2695"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="457,2726 457,2796 2464,2796 2464,2731 2160,2726 457,2726"/>
+                <pc:TextEquiv conf="0.9790774583816528">
+                    <pc:Unicode>c) Weil die Oberoctave des Tons 1 haben, muß man die Zahl, die dieſen Ton</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="379,2805 2461,2805 2461,2872 379,2872"/>
+                <pc:TextEquiv conf="0.9971889853477478">
+                    <pc:Unicode>durch 2 vorgeſtellet wird: ſo wird es die bezeichnet, mit 2 multipliciren; und um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:Coords points="380,2880 2460,2880 2460,2948 380,2948"/>
+                <pc:TextEquiv conf="0.996593713760376">
+                    <pc:Unicode>Unteroctave durch , das iſt, wenn der die Unteroctave zu haben, muß man Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="379,2958 2461,2958 2461,3027 379,3027"/>
+                <pc:TextEquiv conf="0.9940123558044434">
+                    <pc:Unicode>Ton 1 einmal vibrirt, ſo machet die Un⸗ gentheils eben dieſelbe Zahl mit 2 divi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:Coords points="379,3033 1796,3033 1796,3098 379,3098"/>
+                <pc:TextEquiv conf="0.9836112856864929">
+                    <pc:Unicode>teroctave nur eine halbe Vibration. diren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:Coords points="381,3111 381,3176 1383,3178 1383,3111 381,3111"/>
+                <pc:TextEquiv conf="0.9980475902557373">
+                    <pc:Unicode>Um alſo die Oberoctave eines Tons zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>c) Weil die Oberoctave des Tons 1 haben, muß man die Zahl, die dieſen Ton
+durch 2 vorgeſtellet wird: ſo wird es die bezeichnet, mit 2 multipliciren; und um
+Unteroctave durch , das iſt, wenn der die Unteroctave zu haben, muß man Ge⸗
+Ton 1 einmal vibrirt, ſo machet die Un⸗ gentheils eben dieſelbe Zahl mit 2 divi⸗
+teroctave nur eine halbe Vibration. diren.
+Um alſo die Oberoctave eines Tons zu</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="346,2705 346,3178 1396,3178 1396,2705 346,2705"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="457,2726 1388,2726 1388,2789 457,2789"/>
+                <pc:TextEquiv conf="0.9884146451950073">
+                    <pc:Unicode>c) Weil die Oberoctave des Tons</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="379,2805 1389,2805 1389,2871 379,2871"/>
+                <pc:TextEquiv conf="0.9971731901168823">
+                    <pc:Unicode>durch 2 vorgeſtellet wird: ſo wird es die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:Coords points="380,2880 1389,2880 1389,2948 380,2948"/>
+                <pc:TextEquiv conf="0.9946162104606628">
+                    <pc:Unicode>Unteroctave durch , das iſt, wenn der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:Coords points="379,2958 1385,2958 1385,3021 379,3021"/>
+                <pc:TextEquiv conf="0.9881874322891235">
+                    <pc:Unicode>Ton 1 einmal vibrirt, ſo machet die Un⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:Coords points="379,3034 1384,3034 1384,3098 379,3098"/>
+                <pc:TextEquiv conf="0.9822417497634888">
+                    <pc:Unicode>teroctave nur eine halbe Vibration.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:Coords points="381,3111 1383,3111 1383,3178 381,3178"/>
+                <pc:TextEquiv conf="0.9980475902557373">
+                    <pc:Unicode>Um alſo die Oberoctave eines Tons zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>c) Weil die Oberoctave des Tons
+durch 2 vorgeſtellet wird: ſo wird es die
+Unteroctave durch , das iſt, wenn der
+Ton 1 einmal vibrirt, ſo machet die Un⸗
+teroctave nur eine halbe Vibration.
+Um alſo die Oberoctave eines Tons zu</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="paragraph">
+            <pc:Coords points="1432,2698 1432,3115 2506,3115 2504,2727 1432,2698"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="1452,2726 2464,2726 2464,2796 1452,2796"/>
+                <pc:TextEquiv conf="0.9949667453765869">
+                    <pc:Unicode>haben, muß man die Zahl, die dieſen Ton</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:Coords points="1451,2806 2461,2806 2461,2872 1451,2872"/>
+                <pc:TextEquiv conf="0.9936059713363647">
+                    <pc:Unicode>bezeichnet, mit 2 multipliciren; und um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0002">
+                <pc:Coords points="1450,2883 2460,2883 2460,2947 1450,2947"/>
+                <pc:TextEquiv conf="0.9986661076545715">
+                    <pc:Unicode>die Unteroctave zu haben, muß man Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0003">
+                <pc:Coords points="1450,2959 2461,2959 2461,3027 1450,3027"/>
+                <pc:TextEquiv conf="0.9950636029243469">
+                    <pc:Unicode>gentheils eben dieſelbe Zahl mit 2 divi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0004">
+                <pc:Coords points="1449,3033 1796,3033 1796,3093 1449,3093"/>
+                <pc:TextEquiv conf="0.999666154384613">
+                    <pc:Unicode>diren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>haben, muß man die Zahl, die dieſen Ton
+bezeichnet, mit 2 multipliciren; und um
+die Unteroctave zu haben, muß man Ge⸗
+gentheils eben dieſelbe Zahl mit 2 divi⸗
+diren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="footer">
+            <pc:Coords points="438,3182 438,3279 2508,3279 2516,3159 1491,3169 1447,3167 438,3182"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:Coords points="1312,3169 451,3182 451,3257 2461,3257 2461,3169 1312,3169"/>
+                <pc:TextEquiv conf="0.9813341498374939">
+                    <pc:Unicode>Einleit. in die muſic. Setzk. B Wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleit. in die muſic. Setzk. B Wenn</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_15" type="marginalia">
+            <pc:Coords points="2548,1813 2548,2170 2769,2170 2769,1813 2548,1813"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_1">
+            <pc:Coords points="347,285 347,399 2503,399 2503,285 347,285"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region_id_3">
+            <pc:Coords points="632,925 632,975 2261,975 2261,925 632,925"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

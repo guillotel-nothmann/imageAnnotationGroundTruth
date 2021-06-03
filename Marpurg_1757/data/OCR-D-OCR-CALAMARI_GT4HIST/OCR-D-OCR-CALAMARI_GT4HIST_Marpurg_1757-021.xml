@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:47</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:47</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-021.png" imageWidth="2973" imageHeight="3695" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-021-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-021.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="483,199 2642,199 2642,3419 483,3419"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="448,194 448,293 522,271 551,194 448,194"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="483,212 520,212 520,266 483,266"/>
+                <pc:TextEquiv conf="0.975368082523346">
+                    <pc:Unicode>2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="1238,191 1868,200 1868,293 1267,286 1238,191"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1293,200 1293,286 1782,292 1868,292 1868,200 1293,200"/>
+                <pc:TextEquiv conf="0.9998423457145691">
+                    <pc:Unicode>Vorbereitung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbereitung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1424,324 1733,351 1733,446 1409,438 1424,324"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1463,352 1653,352 1653,433 1463,433"/>
+                <pc:TextEquiv conf="0.9770767092704773">
+                    <pc:Unicode>§. 3.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 3.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="463,432 2713,432 2684,643 434,622 463,432"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="665,432 2637,432 2637,540 665,540"/>
+                <pc:TextEquiv conf="0.9968270659446716">
+                    <pc:Unicode>Sowohl in der Melodie als Harmonie, wird der Unterſcheid</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,534 486,622 755,625 2509,625 2509,534 486,534"/>
+                <pc:TextEquiv conf="0.9981421828269958">
+                    <pc:Unicode>zwiſchen einem hoͤhern und tiefern Tone ein Jntervall genennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Sowohl in der Melodie als Harmonie, wird der Unterſcheid
+zwiſchen einem hoͤhern und tiefern Tone ein Jntervall genennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1432,622 1725,644 1720,767 1424,744 1432,622"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1456,662 1456,746 1720,767 1721,742 1721,662 1456,662"/>
+                <pc:TextEquiv conf="0.9988079071044922">
+                    <pc:Unicode>§. 4.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 4.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="441,729 441,1114 2669,1114 2669,729 441,729"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="612,742 2637,742 2637,847 612,847"/>
+                <pc:TextEquiv conf="0.9981575012207031">
+                    <pc:Unicode>Die Jntervalle kennen und unterſcheiden zu lernen, wollen wir</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,844 2638,844 2638,936 486,936"/>
+                <pc:TextEquiv conf="0.9807723760604858">
+                    <pc:Unicode>die gewoͤhnliche Tonleiter c. d. e. f. g. a. h. c. vor uns nehmen, welche</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,933 2639,933 2639,1020 486,1020"/>
+                <pc:TextEquiv conf="0.9987653493881226">
+                    <pc:Unicode>jedermann natuͤrlicher Weiſe anſtimmet, woferne Ohr und Stimme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:Coords points="486,1021 2531,1021 2531,1111 486,1111"/>
+                <pc:TextEquiv conf="0.999439537525177">
+                    <pc:Unicode>nicht gar zu traͤge oder falſch ſind. Wir bemerken bey derſelben:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Jntervalle kennen und unterſcheiden zu lernen, wollen wir
+die gewoͤhnliche Tonleiter c. d. e. f. g. a. h. c. vor uns nehmen, welche
+jedermann natuͤrlicher Weiſe anſtimmet, woferne Ohr und Stimme
+nicht gar zu traͤge oder falſch ſind. Wir bemerken bey derſelben:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="464,1117 464,1275 2666,1275 2666,1117 464,1117"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="562,1121 2638,1121 2638,1217 562,1217"/>
+                <pc:TextEquiv conf="0.9948862195014954">
+                    <pc:Unicode>Daß der Ton d hoͤher oder feiner, als der Ton c iſt; daß e hoͤher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="549,1210 2622,1210 2622,1275 549,1275"/>
+                <pc:TextEquiv conf="0.9744800925254822">
+                    <pc:Unicode>als d, und f hoͤher als e iſt, u. ſ. w.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Daß der Ton d hoͤher oder feiner, als der Ton c iſt; daß e hoͤher
+als d, und f hoͤher als e iſt, u. ſ. w.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="548,1289 548,1560 2663,1560 2663,1289 548,1289"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="573,1289 2636,1289 2636,1390 573,1390"/>
+                <pc:TextEquiv conf="0.9979804754257202">
+                    <pc:Unicode>Daß folglich der Unterſcheid zwiſchen c und d geringer, als der zwi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="667,1386 2639,1386 2639,1483 667,1483"/>
+                <pc:TextEquiv conf="0.9940969347953796">
+                    <pc:Unicode>ſchen c und e iſt; daß der Unterſcheid zwiſchen c und e geringer,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="669,1472 1736,1472 1736,1558 669,1558"/>
+                <pc:TextEquiv conf="0.9824545979499817">
+                    <pc:Unicode>als der zwiſchen c und f iſt, u. ſ. w.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Daß folglich der Unterſcheid zwiſchen c und d geringer, als der zwi⸗
+ſchen c und e iſt; daß der Unterſcheid zwiſchen c und e geringer,
+als der zwiſchen c und f iſt, u. ſ. w.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="575,1562 2640,1562 2640,1735 575,1735 575,1562"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="575,1562 2640,1562 2640,1657 575,1657"/>
+                <pc:TextEquiv conf="0.9998450875282288">
+                    <pc:Unicode>Kurz, daß endlich der Unterſcheid zwiſchen dem erſten und letzten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="662,1651 2632,1651 2632,1735 662,1735"/>
+                <pc:TextEquiv conf="0.9953808784484863">
+                    <pc:Unicode>c der groͤßte Unterſcheid von allen iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Kurz, daß endlich der Unterſcheid zwiſchen dem erſten und letzten
+c der groͤßte Unterſcheid von allen iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1441,1770 1446,1859 1613,1859 1665,1853 1665,1777 1441,1770"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1452,1778 1452,1858 1622,1858 1662,1853 1662,1778 1452,1778"/>
+                <pc:TextEquiv conf="0.9661300778388977">
+                    <pc:Unicode>§. 5.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 5.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="462,1844 462,2775 2671,2775 2671,1844 1715,1845 1651,1870 462,1844"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="582,1867 582,1965 2635,1965 2635,1867 582,1867"/>
+                <pc:TextEquiv conf="0.9990742802619934">
+                    <pc:Unicode>Ueberhaupt iſt ein Jntervall oder der Unterſcheid zwiſchen zweenen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,1961 2640,1961 2640,2054 490,2054"/>
+                <pc:TextEquiv conf="0.9938017725944519">
+                    <pc:Unicode>Toͤnen um ſo viel groͤßer, als einer von dieſen Toͤnen feiner oder groͤ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2050 2638,2050 2638,2143 492,2143"/>
+                <pc:TextEquiv conf="0.9996503591537476">
+                    <pc:Unicode>ber in Anſehung des andern iſt. Aber es iſt wohl zu merken, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2138 2639,2138 2639,2227 491,2227"/>
+                <pc:TextEquiv conf="0.9991258382797241">
+                    <pc:Unicode>zween Toͤne gleich hoch oder gleich tief ſeyn koͤnnen, wenn ſie ſchon von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,2224 2641,2224 2641,2324 484,2324"/>
+                <pc:TextEquiv conf="0.9996004700660706">
+                    <pc:Unicode>ungleicher Staͤrke ſind. Eine Seyte auf der Violine klinget allezeit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2314 2641,2314 2641,2411 491,2411"/>
+                <pc:TextEquiv conf="0.9991983771324158">
+                    <pc:Unicode>gleich hoch oder gleich tief, man mag ſie ſtark oder ſchwach beruͤhren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2398 2639,2398 2639,2493 491,2493"/>
+                <pc:TextEquiv conf="0.9968236088752747">
+                    <pc:Unicode>Der Ton wird nur mehr oder weniger ſtark ſeyn. Eben ſo verhaͤlt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2492 2637,2492 2637,2578 493,2578"/>
+                <pc:TextEquiv conf="0.9994936585426331">
+                    <pc:Unicode>es ſich mit der Stimme. Man gebe einen Ton an, und dehne die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2576 2637,2576 2637,2676 496,2676"/>
+                <pc:TextEquiv conf="0.9991799592971802">
+                    <pc:Unicode>Stimme allmaͤhlich aus. Man wird befinden, daß der Ton zwar</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_10_region_id_10_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,2666 2462,2666 2462,2757 484,2757"/>
+                <pc:TextEquiv conf="0.9992412328720093">
+                    <pc:Unicode>an Staͤrke wachſen, aber allezeit gleich hoch oder tief ſeyn wird.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ueberhaupt iſt ein Jntervall oder der Unterſcheid zwiſchen zweenen
+Toͤnen um ſo viel groͤßer, als einer von dieſen Toͤnen feiner oder groͤ⸗
+ber in Anſehung des andern iſt. Aber es iſt wohl zu merken, daß
+zween Toͤne gleich hoch oder gleich tief ſeyn koͤnnen, wenn ſie ſchon von
+ungleicher Staͤrke ſind. Eine Seyte auf der Violine klinget allezeit
+gleich hoch oder gleich tief, man mag ſie ſtark oder ſchwach beruͤhren.
+Der Ton wird nur mehr oder weniger ſtark ſeyn. Eben ſo verhaͤlt
+es ſich mit der Stimme. Man gebe einen Ton an, und dehne die
+Stimme allmaͤhlich aus. Man wird befinden, daß der Ton zwar
+an Staͤrke wachſen, aber allezeit gleich hoch oder tief ſeyn wird.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="heading">
+            <pc:Coords points="1434,2779 1434,2867 1696,2867 1696,2779 1434,2779"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1460,2794 1664,2794 1664,2867 1460,2867"/>
+                <pc:TextEquiv conf="0.9970999956130981">
+                    <pc:Unicode>§. 6.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 6.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="481,2882 481,3353 2664,3353 2664,2882 481,2882"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="673,2888 2637,2888 2637,2979 673,2979"/>
+                <pc:TextEquiv conf="0.9978674650192261">
+                    <pc:Unicode>Wir wollen bey der Tonleiter annoch bemerken, daß die Jnter⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2977 2636,2977 2636,3072 494,3072"/>
+                <pc:TextEquiv conf="0.9672471284866333">
+                    <pc:Unicode>vallec: d, d: e, f: g, g: a, a: h, einander gleich oder beynahe gleich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_12_region_id_12_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,3065 2639,3065 2639,3163 488,3163"/>
+                <pc:TextEquiv conf="0.99111407995224">
+                    <pc:Unicode>ſind; und daß die Jntervalle e: f, und h: c, auch einander gleich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_12_region_id_12_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,3154 2638,3154 2638,3245 489,3245"/>
+                <pc:TextEquiv conf="0.9997440576553345">
+                    <pc:Unicode>ſind; daß dieſe aber nur ohngefaͤhr halb ſo viel als die vorhergehenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-021_region_id_12_region_id_12_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,3244 2633,3244 2633,3339 496,3339"/>
+                <pc:TextEquiv conf="0.9971429705619812">
+                    <pc:Unicode>betragen. Dieſer Umſtand iſt aller Welt bekannt. Wir werden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir wollen bey der Tonleiter annoch bemerken, daß die Jnter⸗
+vallec: d, d: e, f: g, g: a, a: h, einander gleich oder beynahe gleich
+ſind; und daß die Jntervalle e: f, und h: c, auch einander gleich
+ſind; daß dieſe aber nur ohngefaͤhr halb ſo viel als die vorhergehenden
+betragen. Dieſer Umſtand iſt aller Welt bekannt. Wir werden</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2550,3353 2550,3445 2664,3445 2664,3353 2550,3353"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2575,3353 2635,3353 2635,3419 2575,3419"/>
+                <pc:TextEquiv conf="0.9965527057647705">
+                    <pc:Unicode>in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>in</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

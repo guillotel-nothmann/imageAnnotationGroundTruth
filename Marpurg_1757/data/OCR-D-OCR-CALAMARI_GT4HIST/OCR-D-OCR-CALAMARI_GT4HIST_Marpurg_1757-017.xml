@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:35</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:35</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-017.png" imageWidth="2973" imageHeight="3685" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-017-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-017.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="471,182 2651,182 2651,3390 471,3390"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="1042,182 2085,182 2085,284 1042,284 1042,182"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1042,182 2085,182 2085,284 1042,284"/>
+                <pc:TextEquiv conf="0.998783528804779">
+                    <pc:Unicode>Vorbericht des Ueberſetzers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbericht des Ueberſetzers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="paragraph">
+            <pc:Coords points="470,306 2650,342 2676,873 450,860 470,306"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_1_region_id_1_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="662,342 2650,342 2650,453 662,453"/>
+                <pc:TextEquiv conf="0.9959259033203125">
+                    <pc:Unicode>Daß ich in Anſehung der Ableitung der Harmonien nicht einer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_1_region_id_1_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,447 2646,447 2646,560 494,560"/>
+                <pc:TextEquiv conf="0.9805681109428406">
+                    <pc:Unicode>ley Glaubens bin mit den Herren Rameau und d'Alembert, wirh</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_1_region_id_1_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,554 2645,554 2645,667 494,667"/>
+                <pc:TextEquiv conf="0.999207615852356">
+                    <pc:Unicode>denjenigen ſogleich beyfallen, die mein Handbuch bey der Compoſi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_1_region_id_1_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,658 2647,658 2647,768 496,768"/>
+                <pc:TextEquiv conf="0.9839608669281006">
+                    <pc:Unicode>tion rc. geleſen haben. Es haͤnget von der Ueberzeugung eines je⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_1_region_id_1_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="495,763 2511,763 2511,852 495,852"/>
+                <pc:TextEquiv conf="0.9990680813789368">
+                    <pc:Unicode>den ab, welche Meynung er ergreifen will.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Daß ich in Anſehung der Ableitung der Harmonien nicht einer⸗
+ley Glaubens bin mit den Herren Rameau und d'Alembert, wirh
+denjenigen ſogleich beyfallen, die mein Handbuch bey der Compoſi⸗
+tion rc. geleſen haben. Es haͤnget von der Ueberzeugung eines je⸗
+den ab, welche Meynung er ergreifen will.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="446,865 444,2198 2676,2198 2675,865 446,865"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="652,868 2645,868 2645,968 652,968"/>
+                <pc:TextEquiv conf="0.9892547130584717">
+                    <pc:Unicode>Einem harmoniſchen Mißverſtaͤndniſſe vorzubeugen, wird es noͤ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,970 2643,970 2643,1080 491,1080"/>
+                <pc:TextEquiv conf="0.9994694590568542">
+                    <pc:Unicode>thig ſeyn, gewiſſen Perſonen zum Beſten, die Art zu erklaͤren, wie man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,1074 2642,1074 2642,1185 489,1185"/>
+                <pc:TextEquiv conf="0.9922414422035217">
+                    <pc:Unicode>verſchiedene von dem Herrn dAlembert in Buchſtaben gegebene Ex⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,1180 2639,1180 2639,1288 490,1288"/>
+                <pc:TextEquiv conf="0.9994954466819763">
+                    <pc:Unicode>empel verſtehen muß. Zum Exempel, wenn es in der Anmerkung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1274 2639,1274 2639,1392 486,1392"/>
+                <pc:TextEquiv conf="0.9644347429275513">
+                    <pc:Unicode>() heißt: daß folgende Accorde c, e/ g, c, und d, f, a, e, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,1384 2640,1384 2640,1489 489,1489"/>
+                <pc:TextEquiv conf="0.9708279371261597">
+                    <pc:Unicode>c,e, g/ a und b, d, f, b, oͤfters in diatoniſcher Folge hinter ein⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1490 2636,1490 2636,1598 487,1598"/>
+                <pc:TextEquiv conf="0.9985380172729492">
+                    <pc:Unicode>ander gebrauchet werden: ſo muß ich dieſer Sorte von Leſern zu ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,1591 2636,1591 2636,1698 483,1698"/>
+                <pc:TextEquiv conf="0.9996889233589172">
+                    <pc:Unicode>fallen bemerken, daß hier nur von der Beſchaffenheit der Harmonien</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1696 2633,1696 2633,1804 485,1804"/>
+                <pc:TextEquiv conf="0.9971768856048584">
+                    <pc:Unicode>an ſich, nicht aber von der Stellung der Jntervalle dieſer Harmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="482,1804 2631,1804 2631,1911 482,1911"/>
+                <pc:TextEquiv conf="0.9991024732589722">
+                    <pc:Unicode>nien, die Rede iſt. Man wird es nun ſchon einſehen, daß Herr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="480,1904 2627,1904 2627,2014 480,2014"/>
+                <pc:TextEquiv conf="0.9874481558799744">
+                    <pc:Unicode>dAlembert keine Quinten und Octaven zu machen erlaubet. Jch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,2008 2628,2008 2628,2119 477,2119"/>
+                <pc:TextEquiv conf="0.9992464780807495">
+                    <pc:Unicode>mache dieſe Bemerkung nicht zum Scherze. Es giebt in der That</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,2113 1642,2113 1642,2198 483,2198"/>
+                <pc:TextEquiv conf="0.9917874932289124">
+                    <pc:Unicode>Leute, die ſie gebrauchen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einem harmoniſchen Mißverſtaͤndniſſe vorzubeugen, wird es noͤ⸗
+thig ſeyn, gewiſſen Perſonen zum Beſten, die Art zu erklaͤren, wie man
+verſchiedene von dem Herrn dAlembert in Buchſtaben gegebene Ex⸗
+empel verſtehen muß. Zum Exempel, wenn es in der Anmerkung
+() heißt: daß folgende Accorde c, e/ g, c, und d, f, a, e, oder
+c,e, g/ a und b, d, f, b, oͤfters in diatoniſcher Folge hinter ein⸗
+ander gebrauchet werden: ſo muß ich dieſer Sorte von Leſern zu ge⸗
+fallen bemerken, daß hier nur von der Beſchaffenheit der Harmonien
+an ſich, nicht aber von der Stellung der Jntervalle dieſer Harmo⸗
+nien, die Rede iſt. Man wird es nun ſchon einſehen, daß Herr
+dAlembert keine Quinten und Octaven zu machen erlaubet. Jch
+mache dieſe Bemerkung nicht zum Scherze. Es giebt in der That
+Leute, die ſie gebrauchen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="488,2184 425,2416 2688,2461 2688,2184 488,2184"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="635,2184 2622,2184 2622,2328 635,2328"/>
+                <pc:TextEquiv conf="0.9933318495750427">
+                    <pc:Unicode>Jch empfehle meine Bemuͤhungen der geneigten Beurtheilung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-017_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="471,2316 471,2417 2606,2459 2606,2316 471,2316"/>
+                <pc:TextEquiv conf="0.9912908673286438">
+                    <pc:Unicode>vernuͤnftiger Kenner.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jch empfehle meine Bemuͤhungen der geneigten Beurtheilung
+vernuͤnftiger Kenner.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footer">
+            <pc:Coords points="2328,3265 2328,3426 2675,3426 2675,3265 2328,3265"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="2344,3291 2604,3291 2604,3390 2344,3390"/>
+                <pc:TextEquiv conf="0.9548587203025818">
+                    <pc:Unicode>Jnhalt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jnhalt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_4" type="decoration">
+            <pc:Coords points="1143,2552 2025,2552 2025,3220 1143,3220 1143,2552"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

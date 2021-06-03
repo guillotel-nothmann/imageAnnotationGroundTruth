@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:39:21</pc:Created>
+        <pc:LastChange>2021-01-10T21:39:21</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-051.png" imageWidth="2973" imageHeight="3707" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-051-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-051.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="473,174 2661,174 2661,3313 473,3313"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="455,167 455,268 561,268 561,167 455,167"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="473,200 549,200 549,266 473,266"/>
+                <pc:TextEquiv conf="0.9322224855422974">
+                    <pc:Unicode>32</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>32</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="754,157 754,263 2352,263 2352,157 754,157"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="794,175 2324,175 2324,263 794,263"/>
+                <pc:TextEquiv conf="0.9675489068031311">
+                    <pc:Unicode>1Buch. vII Cap. Von der Temperatur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. vII Cap. Von der Temperatur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="648,314 648,1314 2697,1314 2697,314 648,314"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="658,329 2657,329 2657,412 658,412"/>
+                <pc:TextEquiv conf="0.9930001497268677">
+                    <pc:Unicode>oder, welches einerley iſt, in der abwechſelnden Quinten⸗ und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="663,416 2656,416 2656,512 663,512"/>
+                <pc:TextEquiv conf="0.9847280979156494">
+                    <pc:Unicode>Quartenfolge C, G, d, A, e, h, ſis, cis, gis, dis, ais, eis,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="665,506 2657,506 2657,599 665,599"/>
+                <pc:TextEquiv conf="0.9976898431777954">
+                    <pc:Unicode>his, nothwendig entweder alle Quinten, oder wenigſtens ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="664,597 2651,597 2651,686 664,686"/>
+                <pc:TextEquiv conf="0.9996207356452942">
+                    <pc:Unicode>nige, etwas von ihrer arithmetiſchen Reinigkeit verlieren muͤſſen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="664,686 2654,686 2654,776 664,776"/>
+                <pc:TextEquiv conf="0.9957833886146545">
+                    <pc:Unicode>Da nun keine Urſache vorhanden iſt, warum man die eine eher, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="664,771 2654,771 2654,870 664,870"/>
+                <pc:TextEquiv conf="0.9996401071548462">
+                    <pc:Unicode>die andre veraͤndern ſollte: ſo folget daraus, daß wir ſie alle gleich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="659,861 2655,861 2655,953 659,953"/>
+                <pc:TextEquiv conf="0.9990527033805847">
+                    <pc:Unicode>viel veraͤndern muͤſſen. Da vermittelſt dieſes Verfahrens ſich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="660,950 2655,950 2655,1038 660,1038"/>
+                <pc:TextEquiv conf="0.9980342388153076">
+                    <pc:Unicode>die Alteration uͤber alle Quinten in gleicher Maaße ausbreitet:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:Coords points="662,1042 2653,1042 2653,1132 662,1132"/>
+                <pc:TextEquiv conf="0.999423086643219">
+                    <pc:Unicode>ſo wird ſolche deswegen, bey jeder beſonders, faſt unmerklich,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="662,1133 2655,1133 2655,1225 662,1225"/>
+                <pc:TextEquiv conf="0.9991827607154846">
+                    <pc:Unicode>und alſo die Quinte, das vollkommenſte Jntervall nach der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_2_region_id_2_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="653,1221 2175,1221 2175,1312 653,1312"/>
+                <pc:TextEquiv conf="0.9900125861167908">
+                    <pc:Unicode>Octave, nur ſo wenig als moͤglich, alterirt ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>oder, welches einerley iſt, in der abwechſelnden Quinten⸗ und
+Quartenfolge C, G, d, A, e, h, ſis, cis, gis, dis, ais, eis,
+his, nothwendig entweder alle Quinten, oder wenigſtens ei⸗
+nige, etwas von ihrer arithmetiſchen Reinigkeit verlieren muͤſſen.
+Da nun keine Urſache vorhanden iſt, warum man die eine eher, als
+die andre veraͤndern ſollte: ſo folget daraus, daß wir ſie alle gleich
+viel veraͤndern muͤſſen. Da vermittelſt dieſes Verfahrens ſich
+die Alteration uͤber alle Quinten in gleicher Maaße ausbreitet:
+ſo wird ſolche deswegen, bey jeder beſonders, faſt unmerklich,
+und alſo die Quinte, das vollkommenſte Jntervall nach der
+Octave, nur ſo wenig als moͤglich, alterirt ſeyn.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1429,1359 1429,1461 1708,1461 1708,1359 1429,1359"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1460,1376 1685,1376 1685,1458 1460,1458"/>
+                <pc:TextEquiv conf="0.9305880069732666">
+                    <pc:Unicode>§. 67.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 67.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="465,2110 471,1456 2682,1481 2682,2014 993,2024 1003,2105 465,2110"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,1482 2658,1482 2658,1576 494,1576"/>
+                <pc:TextEquiv conf="0.9994478821754456">
+                    <pc:Unicode>Es iſt wahr, daß wir dadurch etwas harte Terzen bekommen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="481,1574 2654,1574 2654,1664 481,1664"/>
+                <pc:TextEquiv conf="0.9992014765739441">
+                    <pc:Unicode>werden. Da aber die Terz ein weniger conſonirendes Jntervall, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,1663 2660,1663 2660,1752 483,1752"/>
+                <pc:TextEquiv conf="0.9987255334854126">
+                    <pc:Unicode>die Quinte iſt: ſo iſt es noͤthig, ſagt der Hr. Rameau, die Reinig⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1752 2657,1752 2657,1838 486,1838"/>
+                <pc:TextEquiv conf="0.999660074710846">
+                    <pc:Unicode>keit der Terzen den Quinten aufzuopfern; denn, je conſonirender ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1839 2658,1839 2658,1927 487,1927"/>
+                <pc:TextEquiv conf="0.9996746778488159">
+                    <pc:Unicode>Jntervall iſt, deſto mehr misfaͤllet die Veraͤnderung deſſelben dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,1923 2657,1923 2657,2014 488,2014"/>
+                <pc:TextEquiv conf="0.9978134036064148">
+                    <pc:Unicode>Gehore; und wuͤrde die allergeringſte Veraͤnderung der Octave un⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,2010 965,2010 965,2103 483,2103"/>
+                <pc:TextEquiv conf="0.9941524267196655">
+                    <pc:Unicode>ertraͤglich ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es iſt wahr, daß wir dadurch etwas harte Terzen bekommen
+werden. Da aber die Terz ein weniger conſonirendes Jntervall, als
+die Quinte iſt: ſo iſt es noͤthig, ſagt der Hr. Rameau, die Reinig⸗
+keit der Terzen den Quinten aufzuopfern; denn, je conſonirender ein
+Jntervall iſt, deſto mehr misfaͤllet die Veraͤnderung deſſelben dem
+Gehore; und wuͤrde die allergeringſte Veraͤnderung der Octave un⸗
+ertraͤglich ſeyn.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1439,2080 1439,2191 1693,2191 1693,2080 1439,2080"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1471,2109 1677,2109 1677,2190 1471,2190"/>
+                <pc:TextEquiv conf="0.9633392095565796">
+                    <pc:Unicode>§ 68.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§ 68.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="460,2399 460,2206 2702,2206 2703,2334 1348,2329 1308,2384 460,2399"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="661,2214 2653,2214 2653,2312 661,2312"/>
+                <pc:TextEquiv conf="0.9974602460861206">
+                    <pc:Unicode>Dieſe Veraͤnderung der Jntervallen auf einem Jnſtrumente</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2305 492,2394 743,2394 1279,2385 1279,2305 492,2305"/>
+                <pc:TextEquiv conf="0.9739016890525818">
+                    <pc:Unicode>heißt eine Teimperatur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſe Veraͤnderung der Jntervallen auf einem Jnſtrumente
+heißt eine Teimperatur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1454,2399 1454,2496 1718,2496 1718,2399 1454,2399"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1466,2409 1705,2409 1705,2492 1466,2492"/>
+                <pc:TextEquiv conf="0.9890131950378418">
+                    <pc:Unicode>§. 69.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 69.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="475,2511 475,2688 2733,2688 2733,2511 475,2511"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="667,2511 2658,2511 2658,2612 667,2612"/>
+                <pc:TextEquiv conf="0.9993389844894409">
+                    <pc:Unicode>Aus allem dieſen folget, daß es bey der Theorie der Tempera⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2609 1620,2609 1620,2688 493,2688"/>
+                <pc:TextEquiv conf="0.9886525273323059">
+                    <pc:Unicode>tur auf folgende Aufgabe ankoͤmmt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Aus allem dieſen folget, daß es bey der Theorie der Tempera⸗
+tur auf folgende Aufgabe ankoͤmmt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="637,3160 637,2704 2687,2704 2687,3160 637,3160"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="676,2709 2659,2709 2659,2801 676,2801"/>
+                <pc:TextEquiv conf="0.9959635734558105">
+                    <pc:Unicode>Jn der gegebenen abwechſelnden Quinten⸗ und Quartenfolge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="760,2794 2655,2794 2655,2893 760,2893"/>
+                <pc:TextEquiv conf="0.9841439127922058">
+                    <pc:Unicode>C, G, d, A, e, h, fis, cis, gis, dis, ais, eis und his,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="762,2887 2657,2887 2657,2977 762,2977"/>
+                <pc:TextEquiv conf="0.99062579870224">
+                    <pc:Unicode>worinnen das his nicht mit dem c uͤbereinſtimmet, ſollen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="754,2974 2656,2974 2656,3074 754,3074"/>
+                <pc:TextEquiv conf="0.9893304109573364">
+                    <pc:Unicode>alle Quinten dergeſtalt veraͤndert werden, daß die beyden c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-051_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="761,3065 2296,3065 2296,3157 761,3157"/>
+                <pc:TextEquiv conf="0.9986889362335205">
+                    <pc:Unicode>eine vollkommen reine Octave unter ſich machen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jn der gegebenen abwechſelnden Quinten⸗ und Quartenfolge
+C, G, d, A, e, h, fis, cis, gis, dis, ais, eis und his,
+worinnen das his nicht mit dem c uͤbereinſtimmet, ſollen
+alle Quinten dergeſtalt veraͤndert werden, daß die beyden c
+eine vollkommen reine Octave unter ſich machen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="2448,3226 2448,3328 2672,3328 2672,3226 2448,3226"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2461,3231 2659,3231 2659,3313 2461,3313"/>
+                <pc:TextEquiv conf="0.9914173483848572">
+                    <pc:Unicode>§. 70.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 70.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

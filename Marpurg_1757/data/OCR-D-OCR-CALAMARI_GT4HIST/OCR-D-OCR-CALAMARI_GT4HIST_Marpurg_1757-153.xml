@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:38</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:38</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-153.png" imageWidth="2973" imageHeight="3638" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-153-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-153.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="437,182 2584,182 2584,3267 437,3267"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="453,183 2065,183 2065,281 453,281"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="453,183 2065,183 2065,281 453,281"/>
+                <pc:TextEquiv conf="0.9708340764045715">
+                    <pc:Unicode>4 Anmerkungen des Ueberſetzers</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4 Anmerkungen des Ueberſetzers</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="454,329 2583,329 2583,500 454,500"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0001_region0001_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="612,329 2583,329 2583,425 612,425"/>
+                <pc:TextEquiv conf="0.9883793592453003">
+                    <pc:Unicode>(35) Zum §. 179. Man kann wegen des Gebrauchs der Septimenac⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0001_region0001_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,405 2342,405 2342,500 454,500"/>
+                <pc:TextEquiv conf="0.9927544593811035">
+                    <pc:Unicode>corde mein Handbuch bey der Compoſition zu Rathe ziehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(35) Zum §. 179. Man kann wegen des Gebrauchs der Septimenac⸗
+corde mein Handbuch bey der Compoſition zu Rathe ziehen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="457,542 2579,542 2579,701 457,701"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0002_region0002_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="609,542 1820,542 1820,618 609,618"/>
+                <pc:TextEquiv conf="0.9725737571716309">
+                    <pc:Unicode>(6) (37) Zum §. 185. 186. Man kann di</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0002_region0002_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,545 2579,545 2579,701 457,701"/>
+                <pc:TextEquiv conf="0.6212121248245239">
+                    <pc:Unicode>z.aklAfl/ze ies. n tun e umrtuns by ( (o</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(6) (37) Zum §. 185. 186. Man kann di
+z.aklAfl/ze ies. n tun e umrtuns by ( (o</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="446,705 2582,705 2582,1213 446,1213"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,705 2582,705 2582,822 452,822"/>
+                <pc:TextEquiv conf="0.9500522613525391">
+                    <pc:Unicode>(s) Zum §. i87. Der Verfaſſer iſt der erſte, der ſo vielerley Arten von Domi.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,822 2581,822 2581,899 456,899"/>
+                <pc:TextEquiv conf="0.999101996421814">
+                    <pc:Unicode>nanten unterſcheidet. Ehedeſſen ward, ſo wie annoch bey allen andern Scriben⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,898 2581,898 2581,977 457,977"/>
+                <pc:TextEquiv conf="0.998468816280365">
+                    <pc:Unicode>ten, nur die Quinta Toni, die der Verfaſſer toniſche Dominante nennet, eine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,979 2580,979 2580,1060 457,1060"/>
+                <pc:TextEquiv conf="0.9972151517868042">
+                    <pc:Unicode>Dominante genennet. Man muß hier alſo toniſche Dominanten, ſimple Do⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,1060 2581,1060 2581,1210 456,1210"/>
+                <pc:TextEquiv conf="0.983573317527771">
+                    <pc:Unicode>minanten, und Unterdominanten merken, wenn man den Verfaſſer gehoͤrig ver⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0003_region0003_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,1133 2576,1133 2576,1213 446,1213"/>
+                <pc:TextEquiv conf="0.9996505379676819">
+                    <pc:Unicode>ſtehen will.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(s) Zum §. i87. Der Verfaſſer iſt der erſte, der ſo vielerley Arten von Domi.
+nanten unterſcheidet. Ehedeſſen ward, ſo wie annoch bey allen andern Scriben⸗
+ten, nur die Quinta Toni, die der Verfaſſer toniſche Dominante nennet, eine
+Dominante genennet. Man muß hier alſo toniſche Dominanten, ſimple Do⸗
+minanten, und Unterdominanten merken, wenn man den Verfaſſer gehoͤrig ver⸗
+ſtehen will.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="455,1232 2577,1232 2577,1431 455,1431"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0004_region0004_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="610,1232 2577,1232 2577,1344 610,1344"/>
+                <pc:TextEquiv conf="0.9829788208007812">
+                    <pc:Unicode>(39) Zum §. 189. Man kann aus dieſem Grundbaſſe auch die Diſſo.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0004_region0004_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1337 2150,1337 2150,1431 455,1431"/>
+                <pc:TextEquiv conf="0.9996476769447327">
+                    <pc:Unicode>nanzen ganz wohl weglaſſen, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(39) Zum §. 189. Man kann aus dieſem Grundbaſſe auch die Diſſo.
+nanzen ganz wohl weglaſſen, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="1042,1457 2026,1457 2026,1621 1042,1621"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="1042,1457 2026,1457 2026,1539 1042,1539"/>
+                <pc:TextEquiv conf="0.9349290132522583">
+                    <pc:Unicode>Geſang.cdef g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0001">
+                <pc:Coords points="1087,1543 1933,1543 1933,1621 1087,1621"/>
+                <pc:TextEquiv conf="0.9498847126960754">
+                    <pc:Unicode>Grundbaß.egef c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Geſang.cdef g
+Grundbaß.egef c</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="444,1647 2576,1647 2576,1746 444,1746"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:Coords points="444,1647 2576,1647 2576,1746 444,1746"/>
+                <pc:TextEquiv conf="0.999438464641571">
+                    <pc:Unicode>Es koͤnnen naͤmlich auf den Noten des Grundbaſſes lauter vollkommene Accorde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es koͤnnen naͤmlich auf den Noten des Grundbaſſes lauter vollkommene Accorde</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="441,1836 2584,1836 2584,2078 441,2078"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0007_region0007_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="441,1836 2549,1836 2549,1933 441,1933"/>
+                <pc:TextEquiv conf="0.992296040058136">
+                    <pc:Unicode>(40) Die zweyte Note kann entweder eine toniſche Note ſeyn, als bey (a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0007_region0007_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1864 2584,1864 2584,2022 451,2022"/>
+                <pc:TextEquiv conf="0.45882219076156616">
+                    <pc:Unicode>.»RreXr:ere t:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0007_region0007_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,2004 2346,2004 2346,2078 451,2078"/>
+                <pc:TextEquiv conf="0.9819756746292114">
+                    <pc:Unicode>eine Unterdominante, als bey (c).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(40) Die zweyte Note kann entweder eine toniſche Note ſeyn, als bey (a
+.»RreXr:ere t:
+eine Unterdominante, als bey (c).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008" type="caption">
+            <pc:Coords points="465,2563 1035,2563 1035,2602 465,2602"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="465,2563 1035,2563 1035,2602 465,2602"/>
+                <pc:TextEquiv conf="0.23520644009113312">
+                    <pc:Unicode>R</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>R</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009" type="caption">
+            <pc:Coords points="465,2598 815,2598 815,2697 465,2697"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="465,2598 815,2598 815,2697 465,2697"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0011">
+            <pc:Coords points="453,2795 2579,2795 2579,3267 453,3267"/>
+            <pc:TextLine id="region0011_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0011_region0011_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,2795 2569,2795 2569,2881 458,2881"/>
+                <pc:TextEquiv conf="0.9967792630195618">
+                    <pc:Unicode>Die Exempel bey (a) ſind gut. Die bey (b) ſind verſchiedener Art. Die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0011_region0011_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,2873 2569,2873 2569,2963 453,2963"/>
+                <pc:TextEquiv conf="0.9937547445297241">
+                    <pc:Unicode>ohne Vorbereitung anſchlagenden Septimenſaͤtze werden in der galanten Schreib⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0011_region0011_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2954 2567,2954 2567,3046 456,3046"/>
+                <pc:TextEquiv conf="0.9995942115783691">
+                    <pc:Unicode>art zwar auf dieſe Art; in der ſtrengern Schreibart aber dergeſtalt ausgeuͤbet,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0011_region0011_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,3028 2566,3028 2566,3118 455,3118"/>
+                <pc:TextEquiv conf="0.9929175972938538">
+                    <pc:Unicode>daß die Septime im Durchgange vorkoͤmmt. Bey dem erſtern Falle findet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-153_region0011_region0011_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,3108 2568,3108 2568,3203 456,3203"/>
+                <pc:TextEquiv conf="0.9876694679260254">
+                    <pc:Unicode>eine Vorausnehmung dieſes Durchganges (anticipatio tranſitus) ſtatt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0005">
+                <pc:Coords points="1263,3204 2569,3204 2569,3267 1263,3267"/>
+                <pc:TextEquiv conf="0.9473716616630554">
+                    <pc:Unicode>. Die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Exempel bey (a) ſind gut. Die bey (b) ſind verſchiedener Art. Die
+ohne Vorbereitung anſchlagenden Septimenſaͤtze werden in der galanten Schreib⸗
+art zwar auf dieſe Art; in der ſtrengern Schreibart aber dergeſtalt ausgeuͤbet,
+daß die Septime im Durchgange vorkoͤmmt. Bey dem erſtern Falle findet
+eine Vorausnehmung dieſes Durchganges (anticipatio tranſitus) ſtatt.
+. Die</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0010">
+            <pc:Coords points="453,2123 2576,2123 2576,2736 453,2736"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

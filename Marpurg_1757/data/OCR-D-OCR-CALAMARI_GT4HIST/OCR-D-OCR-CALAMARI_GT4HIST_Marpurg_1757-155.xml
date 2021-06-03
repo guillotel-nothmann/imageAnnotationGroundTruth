@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:44</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:44</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-155.png" imageWidth="2973" imageHeight="3712" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-155-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-155.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="457,182 2687,182 2687,3263 457,3263"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="457,183 2114,183 2114,284 457,284"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0000_region0000_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="2032,194 2114,194 2114,273 2032,273"/>
+                <pc:TextEquiv conf="0.9864678382873535">
+                    <pc:Unicode>s.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0000_region0000_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1887,190 2050,190 2050,284 1887,284"/>
+                <pc:TextEquiv conf="0.9998736381530762">
+                    <pc:Unicode>ſetzer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0002">
+                <pc:Coords points="1426,183 1886,183 1886,277 1426,277"/>
+                <pc:TextEquiv conf="0.9918997883796692">
+                    <pc:Unicode>en des Ueber</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0000_region0000_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1379,200 1422,200 1422,280 1379,280"/>
+                <pc:TextEquiv conf="0.9731559157371521">
+                    <pc:Unicode>g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0000_region0000_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="1255,188 1379,188 1379,264 1255,264"/>
+                <pc:TextEquiv conf="0.9998354911804199">
+                    <pc:Unicode>kun</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0005">
+                <pc:Coords points="999,186 1253,186 1253,267 999,267"/>
+                <pc:TextEquiv conf="0.9998993873596191">
+                    <pc:Unicode>Anmer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0000_line0006">
+                <pc:Coords points="457,193 566,193 566,283 457,283"/>
+                <pc:TextEquiv conf="0.7912718653678894">
+                    <pc:Unicode>136</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>s.
+ſetzer
+en des Ueber
+g
+kun
+Anmer
+136</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="621,344 2645,344 2645,432 621,432"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="621,344 2645,344 2645,432 621,432"/>
+                <pc:TextEquiv conf="0.978155791759491">
+                    <pc:Unicode>(4z) Jn meiner Anleitung zum Clavierſpielen, ingleichen in dem Hand⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(4z) Jn meiner Anleitung zum Clavierſpielen, ingleichen in dem Hand⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="461,397 2643,397 2643,587 461,587"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0002_region0002_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,397 2643,397 2643,432 475,432"/>
+                <pc:TextEquiv conf="0.6930012702941895">
+                    <pc:Unicode>— V vv v vv8 ¶ j s</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0002_region0002_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,397 2643,397 2643,513 461,513"/>
+                <pc:TextEquiv conf="0.9985219240188599">
+                    <pc:Unicode>buche bey der Compoſition, findet man genugſamen Unterricht von den Wechſel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0002_region0002_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,509 1527,509 1527,587 466,587"/>
+                <pc:TextEquiv conf="0.9981487393379211">
+                    <pc:Unicode>und durchgehenden Noten.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>— V vv v vv8 ¶ j s
+buche bey der Compoſition, findet man genugſamen Unterricht von den Wechſel⸗
+und durchgehenden Noten.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="635,600 2031,600 2031,715 635,715"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="635,600 2031,600 2031,715 635,715"/>
+                <pc:TextEquiv conf="0.9746643900871277">
+                    <pc:Unicode>(44 Erempel einer Vorbereitung der Diſſonanz:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(44 Erempel einer Vorbereitung der Diſſonanz:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="1493,714 1636,714 1636,751 1493,751"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:Coords points="1493,714 1636,714 1636,751 1493,751"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="1176,994 1965,994 1965,1210 1176,1210"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="1176,994 1965,994 1965,1210 1176,1210"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="635,1193 2430,1193 2430,1299 635,1299"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:Coords points="635,1193 2430,1193 2430,1299 635,1299"/>
+                <pc:TextEquiv conf="0.9911826252937317">
+                    <pc:Unicode>(4) Exempel einer Aufloͤſung der Diſſonanz im Herunterſteigen:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(4) Exempel einer Aufloͤſung der Diſſonanz im Herunterſteigen:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="480,1837 2655,1837 2655,1920 480,1920"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="480,1837 2655,1837 2655,1920 480,1920"/>
+                <pc:TextEquiv conf="0.9958594441413879">
+                    <pc:Unicode>und im Heraufſteigen nach dem Sinne des Verfaſſers, in Anſehung des Sert⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>und im Heraufſteigen nach dem Sinne des Verfaſſers, in Anſehung des Sert⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="480,1925 1942,1925 1942,2252 480,2252"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="480,1925 1395,1925 1395,1993 480,1993"/>
+                <pc:TextEquiv conf="0.9868429899215698">
+                    <pc:Unicode>quintenaccordst</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0001">
+                <pc:Coords points="514,1997 1942,1997 1942,2252 514,2252"/>
+                <pc:TextEquiv conf="0.5402620434761047">
+                    <pc:Unicode>s</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>quintenaccordst
+s</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="488,2232 2649,2232 2649,2744 488,2744"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:Coords points="492,2232 1783,2232 1783,2315 492,2315"/>
+                <pc:TextEquiv conf="0.7133845686912537">
+                    <pc:Unicode>53. .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0010_region0010_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="643,2493 2649,2493 2649,2605 643,2605"/>
+                <pc:TextEquiv conf="0.9932965636253357">
+                    <pc:Unicode>(46) Dieſe Folge von Saͤtzen iſt nicht gar zu aͤcht; in der Umkehrung iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0010_region0010_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,2596 1617,2596 1617,2744 488,2744"/>
+                <pc:TextEquiv conf="0.964330792427063">
+                    <pc:Unicode>ſie beſſer, z. E. 5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-155_region0010_region0010_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1227,2702 1903,2702 1903,2744 1227,2744"/>
+                <pc:TextEquiv conf="0.6860460042953491">
+                    <pc:Unicode>7 5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>53. .
+(46) Dieſe Folge von Saͤtzen iſt nicht gar zu aͤcht; in der Umkehrung iſt
+ſie beſſer, z. E. 5
+7 5</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0007">
+            <pc:Coords points="1062,1312 2041,1312 2041,1807 1062,1807"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

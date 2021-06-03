@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:13</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:13</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-145.png" imageWidth="2973" imageHeight="3662" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-145-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-145.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="427,190 2612,190 2612,3312 427,3312"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="427,191 2046,191 2046,283 427,283"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="427,191 2046,191 2046,283 427,283"/>
+                <pc:TextEquiv conf="0.9930201172828674">
+                    <pc:Unicode>126 Anmerkungen des Ueberſetzers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>126 Anmerkungen des Ueberſetzers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="431,334 2571,334 2571,512 431,512"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="431,334 2571,334 2571,430 431,430"/>
+                <pc:TextEquiv conf="0.9814045429229736">
+                    <pc:Unicode>dem reinen Verhalte der Quinte 4 differiret: ſo brauchet man dieſe beyden Bruͤ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="436,432 2537,432 2537,512 436,512"/>
+                <pc:TextEquiv conf="0.999627947807312">
+                    <pc:Unicode>che nur folgendergeſtalt zu vergleichen, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>dem reinen Verhalte der Quinte 4 differiret: ſo brauchet man dieſe beyden Bruͤ⸗
+che nur folgendergeſtalt zu vergleichen, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="706,532 1485,532 1485,615 706,615"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0002_region0002_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1437,532 1457,532 1457,564 1437,564"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0002_region0002_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="706,536 1485,536 1485,615 706,615"/>
+                <pc:TextEquiv conf="0.5317064523696899">
+                    <pc:Unicode>1, 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>
+1, 2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="442,552 2611,552 2611,1520 442,1520"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="706,552 2177,552 2177,598 706,598"/>
+                <pc:TextEquiv conf="0.5927248597145081">
+                    <pc:Unicode>II 2 3 C</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="695,583 2315,583 2315,646 695,646"/>
+                <pc:TextEquiv conf="0.921672523021698">
+                    <pc:Unicode>— &amp; —l 2 2— — die gefundene Differenz.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="699,552 2299,552 2299,730 699,730"/>
+                <pc:TextEquiv conf="0.6006651520729065">
+                    <pc:Unicode>z3 *7 ue ofindene Dſeem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="600,727 2577,727 2577,819 600,819"/>
+                <pc:TextEquiv conf="0.9807151556015015">
+                    <pc:Unicode>(21) Die Schwebung der großen Terzen uͤber ſich betrift nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="442,815 2577,815 2577,895 442,895"/>
+                <pc:TextEquiv conf="0.9820693731307983">
+                    <pc:Unicode>einmal ſo viel, ſondern nur ungefaͤhr aus 4, das iſt ſo viel als 3 mal 4a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,891 2580,891 2580,980 443,980"/>
+                <pc:TextEquiv conf="0.9956216812133789">
+                    <pc:Unicode>gegen 1, oder . Die kleinen Terzen aber ſchweben etwas mehr un⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="445,969 2580,969 2580,1056 445,1056"/>
+                <pc:TextEquiv conf="0.9823525547981262">
+                    <pc:Unicode>ter ſich, naͤmlich aus oder rr. Vier kleine Terzen naͤmlich geben</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,1049 2584,1049 2584,1132 443,1132"/>
+                <pc:TextEquiv conf="0.9797729253768921">
+                    <pc:Unicode>ein his, welches um 8z die Einheit uͤbertrift. Dieſer Bruch unter ſich di⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="445,1126 2587,1126 2587,1212 445,1212"/>
+                <pc:TextEquiv conf="0.9846001267433167">
+                    <pc:Unicode>vidiret giebt r, und wenn dieſer Bruch wieder dividiret wird: ſo koͤmmt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,1203 2587,1203 2587,1290 446,1290"/>
+                <pc:TextEquiv conf="0.9955877661705017">
+                    <pc:Unicode>27. Dieſer letzte Bruch bleibt weg, und die Ration, um welche vier klei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,1282 2587,1282 2587,1367 449,1367"/>
+                <pc:TextEquiv conf="0.9970362782478333">
+                    <pc:Unicode>ne Terzen groͤßer als die Octave ſind, iſt ungefaͤhr . Eine jede kleine Terz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0004_region0004_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1359 2611,1359 2611,1441 451,1441"/>
+                <pc:TextEquiv conf="0.9934206604957581">
+                    <pc:Unicode>wird nun in der gleichſchwebenden Temperatur um aus , das iſt folglich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0012">
+                <pc:Coords points="452,1442 2327,1442 2327,1520 452,1520"/>
+                <pc:TextEquiv conf="0.9873788952827454">
+                    <pc:Unicode>um 4 mal 27 gegen 1, oder um erniedriget.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>II 2 3 C
+— &amp; —l 2 2— — die gefundene Differenz.
+z3 *7 ue ofindene Dſeem
+(21) Die Schwebung der großen Terzen uͤber ſich betrift nicht
+einmal ſo viel, ſondern nur ungefaͤhr aus 4, das iſt ſo viel als 3 mal 4a
+gegen 1, oder . Die kleinen Terzen aber ſchweben etwas mehr un⸗
+ter ſich, naͤmlich aus oder rr. Vier kleine Terzen naͤmlich geben
+ein his, welches um 8z die Einheit uͤbertrift. Dieſer Bruch unter ſich di⸗
+vidiret giebt r, und wenn dieſer Bruch wieder dividiret wird: ſo koͤmmt
+27. Dieſer letzte Bruch bleibt weg, und die Ration, um welche vier klei⸗
+ne Terzen groͤßer als die Octave ſind, iſt ungefaͤhr . Eine jede kleine Terz
+wird nun in der gleichſchwebenden Temperatur um aus , das iſt folglich
+um 4 mal 27 gegen 1, oder um erniedriget.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="449,1533 2591,1533 2591,1862 449,1862"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0005_region0005_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="609,1533 2590,1533 2590,1623 609,1623"/>
+                <pc:TextEquiv conf="0.9664946794509888">
+                    <pc:Unicode>Um zu wiſſen, wie viel die Schwebung der großen Terz Hr von dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0005_region0005_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1614 2591,1614 2591,1702 450,1702"/>
+                <pc:TextEquiv conf="0.9859798550605774">
+                    <pc:Unicode>reinen Verhalte der großen Terz , und die Schwebung der kleinen Terz br</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0005_region0005_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1695 2591,1695 2591,1777 450,1777"/>
+                <pc:TextEquiv conf="0.9956927299499512">
+                    <pc:Unicode>von dem reinen Verhalte differiret, brauchet man ſolche nur zu vergleichen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0003">
+                <pc:Coords points="449,1790 1305,1790 1305,1862 449,1862"/>
+                <pc:TextEquiv conf="0.9750925898551941">
+                    <pc:Unicode>wie folget:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Um zu wiſſen, wie viel die Schwebung der großen Terz Hr von dem
+reinen Verhalte der großen Terz , und die Schwebung der kleinen Terz br
+von dem reinen Verhalte differiret, brauchet man ſolche nur zu vergleichen,
+wie folget:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="646,1855 2398,1855 2398,2040 646,2040"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:Coords points="646,1855 2398,1855 2398,2040 646,2040"/>
+                <pc:TextEquiv conf="0.6271488070487976">
+                    <pc:Unicode>z i oefudee i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>z i oefudee i</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="1146,2136 2582,2136 2582,2326 1146,2326"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0007_region0007_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1146,2136 2582,2136 2582,2196 1146,2196"/>
+                <pc:TextEquiv conf="0.8868062496185303">
+                    <pc:Unicode>6 1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0007_region0007_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1146,2184 2107,2184 2107,2252 1146,2252"/>
+                <pc:TextEquiv conf="0.9686259031295776">
+                    <pc:Unicode>2 — die gefundene Differen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0007_region0007_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1155,2187 2582,2187 2582,2326 1155,2326"/>
+                <pc:TextEquiv conf="0.8996169567108154">
+                    <pc:Unicode>5  die gefundene Diferez.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>6 1
+2 — die gefundene Differen
+5  die gefundene Diferez.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="458,2338 2437,2338 2437,2425 458,2425"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="458,2338 2437,2338 2437,2425 458,2425"/>
+                <pc:TextEquiv conf="0.9996708035469055">
+                    <pc:Unicode>Der Proceß der Comparation iſt in meinen Anfangsgruͤnden beſchrieben.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der Proceß der Comparation iſt in meinen Anfangsgruͤnden beſchrieben.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="465,2440 2612,2440 2612,3004 465,3004"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="614,2440 2612,2440 2612,2539 614,2539"/>
+                <pc:TextEquiv conf="0.9708930850028992">
+                    <pc:Unicode>Das Comma 4 , um welches vier kleine Terzen die Octave uͤberſteigen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,2520 2597,2520 2597,2599 465,2599"/>
+                <pc:TextEquiv conf="0.9978905916213989">
+                    <pc:Unicode>wird ein Drittheilston genennet. Daß dieſe Benennung ihren Grund habe,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,2598 2599,2598 2599,2683 469,2683"/>
+                <pc:TextEquiv conf="0.9989250898361206">
+                    <pc:Unicode>naͤmlich in Abſicht auf den kleinern ganzen Ton , ſiehet man daraus, weil</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,2678 2600,2678 2600,2765 468,2765"/>
+                <pc:TextEquiv conf="0.9846949577331543">
+                    <pc:Unicode>die Differenz deſſelben von der Einheit 5, ein Drittheil aus aber ſo viel, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,2755 2599,2755 2599,2842 474,2842"/>
+                <pc:TextEquiv conf="0.997107982635498">
+                    <pc:Unicode>iſt. Nun iſt der Bruch ungefaͤhr eben ſo viel, als , wie man vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0009_region0009_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,2834 2601,2834 2601,2926 474,2926"/>
+                <pc:TextEquiv conf="0.9890100359916687">
+                    <pc:Unicode>her geſehen hat; ſolglich kann das Comma mit Recht ein Drittheilston</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0006">
+                <pc:Coords points="476,2930 929,2930 929,3004 476,3004"/>
+                <pc:TextEquiv conf="0.9993004202842712">
+                    <pc:Unicode>genennet werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Das Comma 4 , um welches vier kleine Terzen die Octave uͤberſteigen.
+wird ein Drittheilston genennet. Daß dieſe Benennung ihren Grund habe,
+naͤmlich in Abſicht auf den kleinern ganzen Ton , ſiehet man daraus, weil
+die Differenz deſſelben von der Einheit 5, ein Drittheil aus aber ſo viel, als
+iſt. Nun iſt der Bruch ungefaͤhr eben ſo viel, als , wie man vor⸗
+her geſehen hat; ſolglich kann das Comma mit Recht ein Drittheilston
+genennet werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="477,3014 2611,3014 2611,3312 477,3312"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0010_region0010_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="632,3014 2606,3014 2606,3101 632,3101"/>
+                <pc:TextEquiv conf="0.9938624501228333">
+                    <pc:Unicode>(22) (23) Die Beſchaͤfftigung des Ohrs mit dem Grundbaſſe achtet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0010_region0010_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,3094 2606,3094 2606,3183 477,3183"/>
+                <pc:TextEquiv conf="0.9992054104804993">
+                    <pc:Unicode>ohne Zweifel nicht die ſehr geringe Veraͤnderung eines, nach den Regeln der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0010_region0010_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,3172 2609,3172 2609,3312 477,3312"/>
+                <pc:TextEquiv conf="0.9877920746803284">
+                    <pc:Unicode>gleichſchwebenden Temperatur, von ſeiner arithmetiſchen Reinigkeit entfernten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-145_region0010_region0010_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="2226,3260 2611,3260 2611,3312 2226,3312"/>
+                <pc:TextEquiv conf="0.9568818211555481">
+                    <pc:Unicode>Tons.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(22) (23) Die Beſchaͤfftigung des Ohrs mit dem Grundbaſſe achtet
+ohne Zweifel nicht die ſehr geringe Veraͤnderung eines, nach den Regeln der
+gleichſchwebenden Temperatur, von ſeiner arithmetiſchen Reinigkeit entfernten
+Tons.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region0003">
+            <pc:Coords points="1252,614 1408,614 1408,624 1252,624"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0011">
+            <pc:Coords points="994,2140 1008,2140 1008,2315 994,2315"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

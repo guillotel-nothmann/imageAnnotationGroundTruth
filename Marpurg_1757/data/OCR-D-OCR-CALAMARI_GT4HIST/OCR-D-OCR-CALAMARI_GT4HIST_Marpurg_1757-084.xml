@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:41:04</pc:Created>
+        <pc:LastChange>2021-01-10T21:41:04</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-084.png" imageWidth="2973" imageHeight="3636" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-084-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-084.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="389,213 2538,213 2538,3348 389,3348"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="451,321 451,207 2406,207 2406,321 451,321"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="479,214 2402,214 2402,313 479,313"/>
+                <pc:TextEquiv conf="0.9842996001243591">
+                    <pc:Unicode>1Buch. XX Cap. Von dem enharmon. Klanggeſchlechte.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XX Cap. Von dem enharmon. Klanggeſchlechte.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2444,321 2444,200 2533,200 2533,321 2444,321"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2444,230 2527,230 2527,309 2444,309"/>
+                <pc:TextEquiv conf="0.8254112601280212">
+                    <pc:Unicode>65</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>65</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="368,816 368,359 2552,359 2552,728 1492,810 368,816"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="420,368 2522,368 2522,462 420,462"/>
+                <pc:TextEquiv conf="0.9865207076072693">
+                    <pc:Unicode>ſch dem großen und kleinen halben Toneee) Er kann von un</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="389,393 2521,393 2521,548 389,548"/>
+                <pc:TextEquiv conf="0.5115664601325989">
+                    <pc:Unicode>r XXX XXr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="389,544 2517,544 2517,637 389,637"/>
+                <pc:TextEquiv conf="0.9988060593605042">
+                    <pc:Unicode>ſern Jnſtrumenten nicht gebraucht. Man bedienet ſich gleichwohl ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="398,635 2523,635 2523,721 398,721"/>
+                <pc:TextEquiv conf="0.9991020560264587">
+                    <pc:Unicode>nes Mittels, ſich deſſelben zu bedienen, oder vielmehr die Wirkung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,721 392,811 1305,811 1492,810 2240,752 2240,721 392,721"/>
+                <pc:TextEquiv conf="0.9983648061752319">
+                    <pc:Unicode>deſſelben in dem Gehoͤre zu erſetzen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſch dem großen und kleinen halben Toneee) Er kann von un
+r XXX XXr
+ſern Jnſtrumenten nicht gebraucht. Man bedienet ſich gleichwohl ei⸗
+nes Mittels, ſich deſſelben zu bedienen, oder vielmehr die Wirkung
+deſſelben in dem Gehoͤre zu erſetzen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footer">
+            <pc:Coords points="2285,905 2285,810 2539,810 2539,905 2285,905"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="2302,810 2526,810 2526,893 2302,893"/>
+                <pc:TextEquiv conf="0.966447651386261">
+                    <pc:Unicode>§. 145.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 145.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="337,918 337,3253 2590,3253 2590,918 337,918"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="393,937 2531,937 2531,1018 393,1018"/>
+                <pc:TextEquiv conf="0.9896388649940491">
+                    <pc:Unicode>iſt: ſo wird his (Anmerk. d) ſeyn wie 4 Die Haͤlfte des kleinern hal⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="394,1022 2526,1022 2526,1100 394,1100"/>
+                <pc:TextEquiv conf="0.9826034307479858">
+                    <pc:Unicode>, und die Unteroctave wie H, ein ben Tons. Derſelbe iſt um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="391,1101 2525,1101 2525,1173 391,1173"/>
+                <pc:TextEquiv conf="0.9934958815574646">
+                    <pc:Unicode>um oder ungefaͤhr, kleiner Jn⸗ von der Einheit unterſchieden;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:Coords points="390,1175 2525,1175 2525,1246 390,1246"/>
+                <pc:TextEquiv conf="0.9967790842056274">
+                    <pc:Unicode>tervall als die Einheit. Das his iſt folglich wird die Haͤlfte ſeyn wie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:Coords points="390,1253 2526,1253 2526,1330 390,1330"/>
+                <pc:TextEquiv conf="0.9933466911315918">
+                    <pc:Unicode>alſo um r ungefaͤhr kleiner als die . Das iſt der kleinſte Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:Coords points="389,1331 1929,1331 1929,1400 389,1400"/>
+                <pc:TextEquiv conf="0.9762031435966492">
+                    <pc:Unicode>Octave c. theilston.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:Coords points="471,1411 2528,1411 2528,1483 471,1483"/>
+                <pc:TextEquiv conf="0.9967581629753113">
+                    <pc:Unicode>Man hat dieſes Jntervall einen Vier⸗ Wenn nun das Jntervall, woraus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:Coords points="393,1490 2530,1490 2530,1562 393,1562"/>
+                <pc:TextEquiv conf="0.9910391569137573">
+                    <pc:Unicode>theilston genennet, und dieſe Benen⸗ der enharmoniſche Viertheilston beſtehet,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:Coords points="396,1567 2528,1567 2528,1638 396,1638"/>
+                <pc:TextEquiv conf="0.9956968426704407">
+                    <pc:Unicode>nung hat ihren Grund. Man kann naͤm⸗ nur um von der Einheit unterſchieden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,1640 2525,1640 2525,1714 396,1714"/>
+                <pc:TextEquiv conf="0.9966040849685669">
+                    <pc:Unicode>lich in der Muſik wirklich viererley iſt: ſo kann es mit Recht ein enharmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,1710 2525,1710 2525,1788 395,1788"/>
+                <pc:TextEquiv conf="0.9909725189208984">
+                    <pc:Unicode>Arten von Viertheilstoͤnen unter⸗ niſcher Viertheilston genennet wer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,1797 2523,1797 2523,1871 395,1871"/>
+                <pc:TextEquiv conf="0.9979907870292664">
+                    <pc:Unicode>ſcheiden. den, weil es weniger als der groͤßte, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,1868 2524,1868 2524,1950 474,1950"/>
+                <pc:TextEquiv conf="0.9934028387069702">
+                    <pc:Unicode>1) Der groͤßere Viertheilston. mehr als der kleinſte Biertheilston von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:Coords points="423,1952 2020,1952 2020,2020 423,2020"/>
+                <pc:TextEquiv conf="0.9875630736351013">
+                    <pc:Unicode>Da der große ganze Ton und ſei⸗ der Einheit differiret.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:Coords points="554,2027 2537,2027 2537,2102 554,2102"/>
+                <pc:TextEquiv conf="0.9951732158660889">
+                    <pc:Unicode>ne Differenz von der Einheit iſt: ee) Das iſt, wenn man von e zu f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:Coords points="552,2103 2526,2103 2526,2175 552,2175"/>
+                <pc:TextEquiv conf="0.9981858134269714">
+                    <pc:Unicode>ſo wird die Differenz dieſes Vier⸗ hinaufſteiget, z. E. wenn man einen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:Coords points="552,2180 2524,2180 2524,2254 552,2254"/>
+                <pc:TextEquiv conf="0.998655378818512">
+                    <pc:Unicode>theilstons von der Einheit unge⸗ großen halben Ton aufwaͤrts gehet, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:Coords points="554,2259 2527,2259 2527,2330 554,2330"/>
+                <pc:TextEquiv conf="0.9908401370048523">
+                    <pc:Unicode>faͤhr ein Viertheil ausF, das iſt hernach, bey der Wiederkehr zu e, vermit⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="553,2337 2525,2337 2525,2411 553,2411"/>
+                <pc:TextEquiv conf="0.9981181621551514">
+                    <pc:Unicode>ſeyn (32. telſt eines kleinen halben Tons zu einem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="479,2408 2525,2408 2525,2482 479,2482"/>
+                <pc:TextEquiv conf="0.9968793392181396">
+                    <pc:Unicode>2) Der kleinere Viertheilston. andern Tone hinaufſteiget, der nicht in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0020">
+                <pc:Coords points="546,2489 2524,2489 2524,2559 546,2559"/>
+                <pc:TextEquiv conf="0.9979956150054932">
+                    <pc:Unicode>So wie der kleine ganze Ton um der Leiter enthalten iſt, und den ich durch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="560,2562 2523,2562 2523,2644 560,2644"/>
+                <pc:TextEquiv conf="0.9882276058197021">
+                    <pc:Unicode>von der Einheit differiret: ſo f4 anzeigen will: ſo werden die beyden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="560,2641 2522,2641 2522,2714 560,2714"/>
+                <pc:TextEquiv conf="0.9896798133850098">
+                    <pc:Unicode>wird dieſer Viertheilston um Toͤne f und f einen enharmoniſchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="556,2724 2522,2724 2522,2796 556,2796"/>
+                <pc:TextEquiv conf="0.9978802800178528">
+                    <pc:Unicode>davon unterſchieden ſeyn. Viertheilston zuſammen machen; denn,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2791 2521,2791 2521,2876 486,2876"/>
+                <pc:TextEquiv conf="0.9482755064964294">
+                    <pc:Unicode>3 Die aͤlfte des groͤßern hal⸗ wenn e 1 iſt, ſo wird f 45 und f4 44</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="564,2876 2520,2876 2520,2947 564,2947"/>
+                <pc:TextEquiv conf="0.9865980744361877">
+                    <pc:Unicode>ben Tons. Da derſelbe um ſeyn. Die Differenz zwiſchen f4- und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0026">
+                <pc:Coords points="561,2950 2517,2950 2517,3023 561,3023"/>
+                <pc:TextEquiv conf="0.9922030568122864">
+                    <pc:Unicode>von der Einheit differiret: ſo wird f wird alſo ſeyn wie gegen 4, (S.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="438,3024 2520,3024 2520,3105 438,3105"/>
+                <pc:TextEquiv conf="0.9881619811058044">
+                    <pc:Unicode>.die Haͤlfte davon ſolches um Anmerk. d) das iſt, wie 25 mal 15 ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0028">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_4_region_id_4_line0028.png" comments="binarized,clipped"/>
+                <pc:Coords points="560,3103 2519,3103 2519,3185 560,3185"/>
+                <pc:TextEquiv conf="0.9828833341598511">
+                    <pc:Unicode>thun. Das iſt der groͤßte Vier⸗ gen i6 mal 24, das iſt, wie 25 mal 5 ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0029">
+                <pc:Coords points="561,3188 2483,3188 2483,3253 561,3253"/>
+                <pc:TextEquiv conf="0.9758822917938232">
+                    <pc:Unicode>theilston. gen 16 mal 8, oder wie 125 gegen 128.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>iſt: ſo wird his (Anmerk. d) ſeyn wie 4 Die Haͤlfte des kleinern hal⸗
+, und die Unteroctave wie H, ein ben Tons. Derſelbe iſt um
+um oder ungefaͤhr, kleiner Jn⸗ von der Einheit unterſchieden;
+tervall als die Einheit. Das his iſt folglich wird die Haͤlfte ſeyn wie
+alſo um r ungefaͤhr kleiner als die . Das iſt der kleinſte Vier⸗
+Octave c. theilston.
+Man hat dieſes Jntervall einen Vier⸗ Wenn nun das Jntervall, woraus
+theilston genennet, und dieſe Benen⸗ der enharmoniſche Viertheilston beſtehet,
+nung hat ihren Grund. Man kann naͤm⸗ nur um von der Einheit unterſchieden
+lich in der Muſik wirklich viererley iſt: ſo kann es mit Recht ein enharmo⸗
+Arten von Viertheilstoͤnen unter⸗ niſcher Viertheilston genennet wer⸗
+ſcheiden. den, weil es weniger als der groͤßte, und
+1) Der groͤßere Viertheilston. mehr als der kleinſte Biertheilston von
+Da der große ganze Ton und ſei⸗ der Einheit differiret.
+ne Differenz von der Einheit iſt: ee) Das iſt, wenn man von e zu f
+ſo wird die Differenz dieſes Vier⸗ hinaufſteiget, z. E. wenn man einen
+theilstons von der Einheit unge⸗ großen halben Ton aufwaͤrts gehet, und
+faͤhr ein Viertheil ausF, das iſt hernach, bey der Wiederkehr zu e, vermit⸗
+ſeyn (32. telſt eines kleinen halben Tons zu einem
+2) Der kleinere Viertheilston. andern Tone hinaufſteiget, der nicht in
+So wie der kleine ganze Ton um der Leiter enthalten iſt, und den ich durch
+von der Einheit differiret: ſo f4 anzeigen will: ſo werden die beyden
+wird dieſer Viertheilston um Toͤne f und f einen enharmoniſchen
+davon unterſchieden ſeyn. Viertheilston zuſammen machen; denn,
+3 Die aͤlfte des groͤßern hal⸗ wenn e 1 iſt, ſo wird f 45 und f4 44
+ben Tons. Da derſelbe um ſeyn. Die Differenz zwiſchen f4- und
+von der Einheit differiret: ſo wird f wird alſo ſeyn wie gegen 4, (S.
+.die Haͤlfte davon ſolches um Anmerk. d) das iſt, wie 25 mal 15 ge⸗
+thun. Das iſt der groͤßte Vier⸗ gen i6 mal 24, das iſt, wie 25 mal 5 ge⸗
+theilston. gen 16 mal 8, oder wie 125 gegen 128.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="375,1406 375,937 1447,937 1447,1406 375,1406"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="393,942 1428,942 1428,1018 393,1018"/>
+                <pc:TextEquiv conf="0.9972001910209656">
+                    <pc:Unicode>iſt: ſo wird his (Anmerk. d) ſeyn wie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="394,1027 1427,1027 1427,1100 394,1100"/>
+                <pc:TextEquiv conf="0.9456618428230286">
+                    <pc:Unicode>, und die Unteroctave wie Hz, ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="391,1101 1430,1101 1430,1173 391,1173"/>
+                <pc:TextEquiv conf="0.9542635679244995">
+                    <pc:Unicode>um vi oder ungefaͤhr, kleiner Jn⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:Coords points="390,1177 1428,1177 1428,1246 390,1246"/>
+                <pc:TextEquiv conf="0.9959871768951416">
+                    <pc:Unicode>tervall als die Einheit. Das his iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:Coords points="390,1256 1428,1256 1428,1330 390,1330"/>
+                <pc:TextEquiv conf="0.9969286322593689">
+                    <pc:Unicode>alſo um r ungefaͤhr kleiner als die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:Coords points="389,1342 644,1342 644,1400 389,1400"/>
+                <pc:TextEquiv conf="0.9631764888763428">
+                    <pc:Unicode>Oetave c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>iſt: ſo wird his (Anmerk. d) ſeyn wie
+, und die Unteroctave wie Hz, ein
+um vi oder ungefaͤhr, kleiner Jn⸗
+tervall als die Einheit. Das his iſt
+alſo um r ungefaͤhr kleiner als die
+Oetave c.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="375,1870 375,1406 1460,1406 1460,1870 375,1870"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="471,1411 1431,1411 1431,1483 471,1483"/>
+                <pc:TextEquiv conf="0.9976341724395752">
+                    <pc:Unicode>Man hat dieſes Jntervall einen Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:Coords points="393,1493 1429,1493 1429,1562 393,1562"/>
+                <pc:TextEquiv conf="0.9972715377807617">
+                    <pc:Unicode>theilston genennet, und dieſe Benen⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:Coords points="396,1567 1429,1567 1429,1638 396,1638"/>
+                <pc:TextEquiv conf="0.993947446346283">
+                    <pc:Unicode>nung hat ihren Grund. Man kann naͤm⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,1643 1430,1643 1430,1714 396,1714"/>
+                <pc:TextEquiv conf="0.9897239208221436">
+                    <pc:Unicode>lich in der Muſik wirklich viererley</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,1710 1430,1710 1430,1788 395,1788"/>
+                <pc:TextEquiv conf="0.9903133511543274">
+                    <pc:Unicode>Arten von Viertheilstoͤnen unter⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:Coords points="395,1807 822,1807 822,1870 395,1870"/>
+                <pc:TextEquiv conf="0.9994009733200073">
+                    <pc:Unicode>ſcheiden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man hat dieſes Jntervall einen Vier⸗
+theilston genennet, und dieſe Benen⸗
+nung hat ihren Grund. Man kann naͤm⸗
+lich in der Muſik wirklich viererley
+Arten von Viertheilstoͤnen unter⸗
+ſcheiden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" custom="list" type="other">
+            <pc:Coords points="1464,3250 1460,1863 451,1863 452,3253 1464,3250"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="474,1868 1428,1868 1428,1950 474,1950"/>
+                <pc:TextEquiv conf="0.9870467185974121">
+                    <pc:Unicode>1 Der groͤßere Viertheilston.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="551,1954 1430,1954 1430,2020 551,2020"/>
+                <pc:TextEquiv conf="0.9723440408706665">
+                    <pc:Unicode>Da der große ganze Ton Z und ſei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="554,2029 1429,2029 1429,2096 554,2096"/>
+                <pc:TextEquiv conf="0.9813295602798462">
+                    <pc:Unicode>ne Differenz von der Einheit S iſt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="552,2107 1430,2107 1430,2175 552,2175"/>
+                <pc:TextEquiv conf="0.9994349479675293">
+                    <pc:Unicode>ſo wird die Differenz dieſes Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="552,2184 1430,2184 1430,2250 552,2250"/>
+                <pc:TextEquiv conf="0.9979720115661621">
+                    <pc:Unicode>theilstons von der Einheit unge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:Coords points="554,2259 1433,2259 1433,2330 554,2330"/>
+                <pc:TextEquiv conf="0.9700323939323425">
+                    <pc:Unicode>faͤhr ein Viertheil aus F, das iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="553,2343 918,2343 918,2411 553,2411"/>
+                <pc:TextEquiv conf="0.9820313453674316">
+                    <pc:Unicode>ſeyn (32.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="479,2408 1432,2408 1432,2478 479,2478"/>
+                <pc:TextEquiv conf="0.9938071370124817">
+                    <pc:Unicode>2) Der kleinere Viertheilston.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:Coords points="546,2492 1433,2492 1433,2558 546,2558"/>
+                <pc:TextEquiv conf="0.994976818561554">
+                    <pc:Unicode>So wie der kleine ganze Ton um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0009">
+                <pc:Coords points="560,2569 1432,2569 1432,2644 560,2644"/>
+                <pc:TextEquiv conf="0.9986234903335571">
+                    <pc:Unicode>von der Einheit differiret: ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0010">
+                <pc:Coords points="560,2647 1434,2647 1434,2711 560,2711"/>
+                <pc:TextEquiv conf="0.971565842628479">
+                    <pc:Unicode>wird dieſer Viertheilston um i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0011">
+                <pc:Coords points="556,2725 1184,2725 1184,2788 556,2788"/>
+                <pc:TextEquiv conf="0.9941139817237854">
+                    <pc:Unicode>davon unterſchieden ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0012">
+                <pc:Coords points="486,2791 1434,2791 1434,2876 486,2876"/>
+                <pc:TextEquiv conf="0.9812951683998108">
+                    <pc:Unicode>3 Die Haͤlfte des groͤßern hal⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0013">
+                <pc:Coords points="564,2878 1434,2878 1434,2944 564,2944"/>
+                <pc:TextEquiv conf="0.9854033589363098">
+                    <pc:Unicode>ben Tons. Da derſelbe um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0014">
+                <pc:Coords points="561,2957 1434,2957 1434,3021 561,3021"/>
+                <pc:TextEquiv conf="0.9966497421264648">
+                    <pc:Unicode>von der Einheit differiret: ſo wird</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0015">
+                <pc:Coords points="559,3031 1433,3031 1433,3102 559,3102"/>
+                <pc:TextEquiv conf="0.9985770583152771">
+                    <pc:Unicode>die Haͤlfte davon ſolches um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0016">
+                <pc:Coords points="560,3103 1435,3103 1435,3185 560,3185"/>
+                <pc:TextEquiv conf="0.9945071935653687">
+                    <pc:Unicode>thun. Das iſt der groͤßte Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0017">
+                <pc:Coords points="561,3191 561,3253 1451,3250 1451,3191 561,3191"/>
+                <pc:TextEquiv conf="0.9991887211799622">
+                    <pc:Unicode>theilston.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1 Der groͤßere Viertheilston.
+Da der große ganze Ton Z und ſei⸗
+ne Differenz von der Einheit S iſt:
+ſo wird die Differenz dieſes Vier⸗
+theilstons von der Einheit unge⸗
+faͤhr ein Viertheil aus F, das iſt
+ſeyn (32.
+2) Der kleinere Viertheilston.
+So wie der kleine ganze Ton um
+von der Einheit differiret: ſo
+wird dieſer Viertheilston um i
+davon unterſchieden ſeyn.
+3 Die Haͤlfte des groͤßern hal⸗
+ben Tons. Da derſelbe um
+von der Einheit differiret: ſo wird
+die Haͤlfte davon ſolches um
+thun. Das iſt der groͤßte Vier⸗
+theilston.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" custom="list" type="other">
+            <pc:Coords points="1562,1394 1562,924 2545,924 2545,1394 1562,1394"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1569,937 2531,937 2531,1017 1569,1017"/>
+                <pc:TextEquiv conf="0.9677125215530396">
+                    <pc:Unicode>4 Die Zaͤlfte des kleinern hal⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="1646,1022 2526,1022 2526,1095 1646,1095"/>
+                <pc:TextEquiv conf="0.998012125492096">
+                    <pc:Unicode>ben Tons. Derſelbe iſt um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="1645,1103 2525,1103 2525,1166 1645,1166"/>
+                <pc:TextEquiv conf="0.9981766939163208">
+                    <pc:Unicode>von der Einheit unterſchieden;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="1645,1175 2525,1175 2525,1244 1645,1244"/>
+                <pc:TextEquiv conf="0.9996014833450317">
+                    <pc:Unicode>folglich wird die Haͤlfte ſeyn wie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="1648,1253 2526,1253 2526,1328 1648,1328"/>
+                <pc:TextEquiv conf="0.9944764375686646">
+                    <pc:Unicode>. Das iſt der kleinſte Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="1647,1331 1929,1331 1929,1394 1647,1394"/>
+                <pc:TextEquiv conf="0.9910516738891602">
+                    <pc:Unicode>theilston.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4 Die Zaͤlfte des kleinern hal⸗
+ben Tons. Derſelbe iſt um
+von der Einheit unterſchieden;
+folglich wird die Haͤlfte ſeyn wie
+. Das iſt der kleinſte Vier⸗
+theilston.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="1479,2016 1479,1394 2545,1394 2545,2016 1479,2016"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1572,1411 2528,1411 2528,1476 1572,1476"/>
+                <pc:TextEquiv conf="0.9937692284584045">
+                    <pc:Unicode>Wenn nun das Jntervall, woraus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="1490,1490 2530,1490 2530,1561 1490,1561"/>
+                <pc:TextEquiv conf="0.995460033416748">
+                    <pc:Unicode>der enharmoniſche Viertheilston beſtehet,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="1494,1568 2528,1568 2528,1630 1494,1630"/>
+                <pc:TextEquiv conf="0.9978442788124084">
+                    <pc:Unicode>nur um von der Einheit unterſchieden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="1492,1640 2525,1640 2525,1706 1492,1706"/>
+                <pc:TextEquiv conf="0.9959734678268433">
+                    <pc:Unicode>iſt: ſo kann es mit Recht ein enharmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:Coords points="1493,1715 2525,1715 2525,1788 1493,1788"/>
+                <pc:TextEquiv conf="0.9933479428291321">
+                    <pc:Unicode>niſcher Viertheilston genennet wer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:Coords points="1491,1797 2523,1797 2523,1865 1491,1865"/>
+                <pc:TextEquiv conf="0.9958849549293518">
+                    <pc:Unicode>den, weil es weniger als der groͤßte, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:Coords points="1492,1873 2524,1873 2524,1942 1492,1942"/>
+                <pc:TextEquiv conf="0.9958600997924805">
+                    <pc:Unicode>mehr als der kleinſte Biertheilston von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:Coords points="1491,1952 2020,1952 2020,2015 1491,2015"/>
+                <pc:TextEquiv conf="0.9945152997970581">
+                    <pc:Unicode>der Einheit differiret.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn nun das Jntervall, woraus
+der enharmoniſche Viertheilston beſtehet,
+nur um von der Einheit unterſchieden
+iſt: ſo kann es mit Recht ein enharmo⸗
+niſcher Viertheilston genennet wer⸗
+den, weil es weniger als der groͤßte, und
+mehr als der kleinſte Biertheilston von
+der Einheit differiret.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="1479,3253 1479,2016 2552,2016 2552,3253 1479,3253"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="1569,2027 2537,2027 2537,2102 1569,2102"/>
+                <pc:TextEquiv conf="0.9964803457260132">
+                    <pc:Unicode>ee) Das iſt, wenn man von e zu f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="1494,2103 2526,2103 2526,2174 1494,2174"/>
+                <pc:TextEquiv conf="0.997449517250061">
+                    <pc:Unicode>hinaufſteiget, z. E. wenn man einen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="1496,2180 2524,2180 2524,2254 1496,2254"/>
+                <pc:TextEquiv conf="0.9983121752738953">
+                    <pc:Unicode>großen halben Ton aufwaͤrts gehet, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="1492,2261 2527,2261 2527,2330 1492,2330"/>
+                <pc:TextEquiv conf="0.9990646839141846">
+                    <pc:Unicode>hernach, bey der Wiederkehr zu e, vermit⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="1494,2337 2525,2337 2525,2403 1494,2403"/>
+                <pc:TextEquiv conf="0.999100387096405">
+                    <pc:Unicode>telſt eines kleinen halben Tons zu einem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:Coords points="1495,2411 2525,2411 2525,2482 1495,2482"/>
+                <pc:TextEquiv conf="0.9989741444587708">
+                    <pc:Unicode>andern Tone hinaufſteiget, der nicht in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:Coords points="1495,2489 2524,2489 2524,2559 1495,2559"/>
+                <pc:TextEquiv conf="0.9978588223457336">
+                    <pc:Unicode>der Leiter enthalten iſt, und den ich durch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:Coords points="1496,2562 2523,2562 2523,2636 1496,2636"/>
+                <pc:TextEquiv conf="0.9815595746040344">
+                    <pc:Unicode>f anzeigen will: ſo werden die beyden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:Coords points="1498,2641 2522,2641 2522,2714 1498,2714"/>
+                <pc:TextEquiv conf="0.9889253973960876">
+                    <pc:Unicode>Toͤne f4- und f einen enharmoniſchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_10_region_id_10_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="1496,2724 2522,2724 2522,2796 1496,2796"/>
+                <pc:TextEquiv conf="0.9987773895263672">
+                    <pc:Unicode>Viertheilston zuſammen machen; denn,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-084_region_id_10_region_id_10_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="1497,2795 2521,2795 2521,2870 1497,2870"/>
+                <pc:TextEquiv conf="0.9351130723953247">
+                    <pc:Unicode>wenn e 1 iſt, ſo wird f 15 und f4 4</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0011">
+                <pc:Coords points="1496,2876 2520,2876 2520,2947 1496,2947"/>
+                <pc:TextEquiv conf="0.984215259552002">
+                    <pc:Unicode>ſeyn. Die Differenz zwiſchen f und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0012">
+                <pc:Coords points="1497,2950 2517,2950 2517,3023 1497,3023"/>
+                <pc:TextEquiv conf="0.9796826839447021">
+                    <pc:Unicode>f wird alſo ſeyn wie gegen 4, (S.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0013">
+                <pc:Coords points="1497,3024 2520,3024 2520,3105 1497,3105"/>
+                <pc:TextEquiv conf="0.9772260785102844">
+                    <pc:Unicode>Anmerk. d) das iſt, wie 25 mal 15 ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0014">
+                <pc:Coords points="1495,3108 2519,3108 2519,3180 1495,3180"/>
+                <pc:TextEquiv conf="0.9802252650260925">
+                    <pc:Unicode>gen i6 mal 24, das iſt, wie 25 mal 5 ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0015">
+                <pc:Coords points="1495,3188 2483,3188 2483,3253 1495,3253"/>
+                <pc:TextEquiv conf="0.967078447341919">
+                    <pc:Unicode>gen 16 mal 8, oder wie 125 gegen 128.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ee) Das iſt, wenn man von e zu f
+hinaufſteiget, z. E. wenn man einen
+großen halben Ton aufwaͤrts gehet, und
+hernach, bey der Wiederkehr zu e, vermit⸗
+telſt eines kleinen halben Tons zu einem
+andern Tone hinaufſteiget, der nicht in
+der Leiter enthalten iſt, und den ich durch
+f anzeigen will: ſo werden die beyden
+Toͤne f4- und f einen enharmoniſchen
+Viertheilston zuſammen machen; denn,
+wenn e 1 iſt, ſo wird f 15 und f4 4
+ſeyn. Die Differenz zwiſchen f und
+f wird alſo ſeyn wie gegen 4, (S.
+Anmerk. d) das iſt, wie 25 mal 15 ge⸗
+gen i6 mal 24, das iſt, wie 25 mal 5 ge⸗
+gen 16 mal 8, oder wie 125 gegen 128.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footer">
+            <pc:Coords points="476,3361 476,3260 1809,3260 1809,3361 476,3361"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="488,3262 1787,3262 1787,3348 488,3348"/>
+                <pc:TextEquiv conf="0.9778377413749695">
+                    <pc:Unicode>Einleit. in die muſic. Setzk. J</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleit. in die muſic. Setzk. J</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

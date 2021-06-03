@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:43:45</pc:Created>
+        <pc:LastChange>2021-01-10T21:43:45</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-136.png" imageWidth="2973" imageHeight="3648" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-136-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-136.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="406,208 2554,208 2554,3269 406,3269"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="2428,290 2428,195 2562,195 2562,290 2428,290"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="2454,209 2553,209 2553,275 2454,275"/>
+                <pc:TextEquiv conf="0.7152827978134155">
+                    <pc:Unicode>n7</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>n7</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="690,800 690,468 2294,468 2294,800 690,800"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="737,468 1868,468 1868,584 737,584"/>
+                <pc:TextEquiv conf="0.9975951313972473">
+                    <pc:Unicode>Vierzehntes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="717,641 2268,641 2268,776 717,776"/>
+                <pc:TextEquiv conf="0.9993889927864075">
+                    <pc:Unicode>Von dem chromatiſchen Geſange.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vierzehntes Capitel.
+Von dem chromatiſchen Geſange.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1339,940 1339,825 1651,825 1651,940 1339,940"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1369,841 1618,841 1618,923 1369,923"/>
+                <pc:TextEquiv conf="0.9783596396446228">
+                    <pc:Unicode>§. 245.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 245.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="drop-capital">
+            <pc:Coords points="670,1220 670,959 409,959 409,1220 670,1220"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="429,969 670,969 670,1197 429,1197"/>
+                <pc:TextEquiv conf="0.9979273676872253">
+                    <pc:Unicode>M</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>M</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="675,1232 672,953 2568,959 2568,1233 675,1232"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="673,963 673,1046 673,1058 2546,1058 2546,963 673,963"/>
+                <pc:TextEquiv conf="0.9996572732925415">
+                    <pc:Unicode>an nennet denjenigen Geſang einen chromatiſchen Geſang,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="712,1060 2547,1060 2547,1150 712,1150"/>
+                <pc:TextEquiv conf="0.9937034845352173">
+                    <pc:Unicode>der aus verſchiedenen auf⸗ oder abwaͤrts hinter einander fol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="709,1150 709,1232 1816,1233 1816,1150 709,1150"/>
+                <pc:TextEquiv conf="0.985616147518158">
+                    <pc:Unicode>genden halben Toͤnen beſtehet, z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>an nennet denjenigen Geſang einen chromatiſchen Geſang,
+der aus verſchiedenen auf⸗ oder abwaͤrts hinter einander fol⸗
+genden halben Toͤnen beſtehet, z. E.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1308,1653 1308,1539 1639,1539 1639,1653 1308,1653"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1339,1559 1623,1559 1623,1649 1339,1649"/>
+                <pc:TextEquiv conf="0.9559863805770874">
+                    <pc:Unicode>§. 246.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 246.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="391,2035 391,1647 2569,1647 2569,2035 391,2035"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="595,1674 2541,1674 2541,1760 595,1760"/>
+                <pc:TextEquiv conf="0.9828935265541077">
+                    <pc:Unicode>Wenn der chromatiſche Geſang herunterſteigt: ſo iſt der ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="422,1765 2542,1765 2542,1851 422,1851"/>
+                <pc:TextEquiv conf="0.9993792176246643">
+                    <pc:Unicode>woͤhnlichſte und natuͤrlichſte Grundbaß dazu eine Reihe auf einander</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="420,1855 2538,1855 2538,1951 420,1951"/>
+                <pc:TextEquiv conf="0.9945623874664307">
+                    <pc:Unicode>folgenden toniſchen Dominanten, die Quartenweiſe ſteigen, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="420,1943 1261,1943 1261,2026 420,2026"/>
+                <pc:TextEquiv conf="0.9925364255905151">
+                    <pc:Unicode>Quintenweiſe fallen, z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn der chromatiſche Geſang herunterſteigt: ſo iſt der ge⸗
+woͤhnlichſte und natuͤrlichſte Grundbaß dazu eine Reihe auf einander
+folgenden toniſchen Dominanten, die Quartenweiſe ſteigen, oder
+Quintenweiſe fallen, z. E.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="heading">
+            <pc:Coords points="1301,2806 1301,2698 1594,2698 1594,2806 1301,2806"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="1324,2713 1594,2713 1594,2797 1324,2797"/>
+                <pc:TextEquiv conf="0.9754908084869385">
+                    <pc:Unicode>§. 247</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 247</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="384,3105 384,2819 2575,2819 2575,3105 384,3105"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="579,2819 2519,2819 2519,2924 579,2924"/>
+                <pc:TextEquiv conf="0.9988033175468445">
+                    <pc:Unicode>Wenn der chromatiſche Geſang hinaufſteigt: ſo kann man den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="410,2927 2519,2927 2519,3025 410,3025"/>
+                <pc:TextEquiv conf="0.9972290396690369">
+                    <pc:Unicode>Grundbaß aus einer abwechſelnden Folge von toniſchen Noten, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-136_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="406,3013 2471,3013 2471,3105 406,3105"/>
+                <pc:TextEquiv conf="0.9926099181175232">
+                    <pc:Unicode>toniſchen Dominanten zuſammenſetzen, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn der chromatiſche Geſang hinaufſteigt: ſo kann man den
+Grundbaß aus einer abwechſelnden Folge von toniſchen Noten, und
+toniſchen Dominanten zuſammenſetzen, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="footer">
+            <pc:Coords points="1582,3277 1582,3175 1766,3175 1766,3277 1582,3277"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1606,3182 1750,3182 1750,3269 1606,3269"/>
+                <pc:TextEquiv conf="0.7485501170158386">
+                    <pc:Unicode>P3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>P3</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_1" type="decoration">
+            <pc:Coords points="409,424 409,303 2574,303 2574,424 409,424"/>
+        </pc:GraphicRegion>
+        <pc:TableRegion id="region_id_6">
+            <pc:Coords points="645,1520 645,1259 2377,1259 2377,1520 645,1520"/>
+        </pc:TableRegion>
+        <pc:MusicRegion id="region_id_9" custom="staffNotation">
+            <pc:Coords points="811,2659 811,2055 2097,2055 2097,2659 811,2659"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

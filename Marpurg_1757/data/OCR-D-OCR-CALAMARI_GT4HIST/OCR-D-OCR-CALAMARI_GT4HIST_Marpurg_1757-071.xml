@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:23</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:23</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-071.png" imageWidth="2973" imageHeight="3681" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-071-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-071.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="448,158 2634,158 2634,3328 448,3328"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="406,145 406,261 547,261 547,145 406,145"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="448,186 520,186 520,260 448,260"/>
+                <pc:TextEquiv conf="0.7403555512428284">
+                    <pc:Unicode>52</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>52</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="612,261 612,132 2443,145 2469,287 612,261"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="627,159 627,261 1683,276 2463,276 2463,254 2446,159 627,159"/>
+                <pc:TextEquiv conf="0.955357015132904">
+                    <pc:Unicode>1Buch. XIII Cap. Regeln vom Doppelgebrauche ꝛc.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XIII Cap. Regeln vom Doppelgebrauche ꝛc.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="432,293 432,852 2649,852 2649,293 432,293"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,306 2614,306 2614,413 520,413"/>
+                <pc:TextEquiv conf="0.991290271282196">
+                    <pc:Unicode>igen, und man wird oben, uͤber d f, a den Ton h hinzufuͤgen, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,325 2631,325 2631,505 453,505"/>
+                <pc:TextEquiv conf="0.3905138671398163">
+                    <pc:Unicode>e:ee eeaer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,485 2626,485 2626,592 457,592"/>
+                <pc:TextEquiv conf="0.9777570366859436">
+                    <pc:Unicode>und ſo wie man aus dem Accorde f, a, c,d den folgenden d, f, a, c. ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,573 2628,573 2628,684 455,684"/>
+                <pc:TextEquiv conf="0.9863927364349365">
+                    <pc:Unicode>zogen hat: ſo wird man aus dem Accorde d, f, a, h einen neuen Accord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,658 2616,658 2616,772 457,772"/>
+                <pc:TextEquiv conf="0.9933515787124634">
+                    <pc:Unicode>der Septime, namlich den folgenden h, d,f,a ziehen, welcher zum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,751 2542,751 2542,846 457,846"/>
+                <pc:TextEquiv conf="0.9993532299995422">
+                    <pc:Unicode>Doppelgebrauche der Diſſonanz in der kleinen Tonart dienen wird.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>igen, und man wird oben, uͤber d f, a den Ton h hinzufuͤgen, als:
+e:ee eeaer
+und ſo wie man aus dem Accorde f, a, c,d den folgenden d, f, a, c. ge⸗
+zogen hat: ſo wird man aus dem Accorde d, f, a, h einen neuen Accord
+der Septime, namlich den folgenden h, d,f,a ziehen, welcher zum
+Doppelgebrauche der Diſſonanz in der kleinen Tonart dienen wird.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1402,974 1402,877 1678,877 1678,974 1402,974"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1425,888 1668,888 1668,966 1425,966"/>
+                <pc:TextEquiv conf="0.9166533350944519">
+                    <pc:Unicode>§. 110.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 110.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="400,1501 406,974 2661,974 2661,1507 400,1501"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="620,975 2618,975 2618,1082 620,1082"/>
+                <pc:TextEquiv conf="0.9931784272193909">
+                    <pc:Unicode>Man kann dieſen Accord h, d, f, a dazu anwenden, den Eindruck</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1065 2615,1065 2615,1176 455,1176"/>
+                <pc:TextEquiv conf="0.9926174879074097">
+                    <pc:Unicode>des Tons a in der diatoniſchen Leiter der weichen Tonart zu erhalten,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1157 2621,1157 2621,1258 455,1258"/>
+                <pc:TextEquiv conf="0.9922680258750916">
+                    <pc:Unicode>und um den Ton e nicht zweymal wiederholen zu duͤrfen. Aber in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1240 2622,1240 2622,1352 457,1352"/>
+                <pc:TextEquiv conf="0.9899560213088989">
+                    <pc:Unicode>dieſem Falle wird man das f in fis, und den Accord in h, d, fis, a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1324 2625,1324 2625,1440 455,1440"/>
+                <pc:TextEquiv conf="0.9928470253944397">
+                    <pc:Unicode>verandern muſſen, weil fis die Quinte von h iſt, wie wir oben geſe⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1417 2624,1417 2624,1501 457,1501"/>
+                <pc:TextEquiv conf="0.9998512268066406">
+                    <pc:Unicode>hen haben.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man kann dieſen Accord h, d, f, a dazu anwenden, den Eindruck
+des Tons a in der diatoniſchen Leiter der weichen Tonart zu erhalten,
+und um den Ton e nicht zweymal wiederholen zu duͤrfen. Aber in
+dieſem Falle wird man das f in fis, und den Accord in h, d, fis, a
+verandern muſſen, weil fis die Quinte von h iſt, wie wir oben geſe⸗
+hen haben.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="425,2034 439,1501 2668,1507 2662,2067 425,2034"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="636,1505 636,1614 2618,1614 2618,1507 1925,1505 636,1505"/>
+                <pc:TextEquiv conf="0.9954137206077576">
+                    <pc:Unicode>Dieſer Accord zeiget ſich alsdenn in einer umgekehrten Geſtalt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1595 2633,1595 2633,1693 451,1693"/>
+                <pc:TextEquiv conf="0.9918402433395386">
+                    <pc:Unicode>gegen den Accord d, fis, a, h worinnen die Unterdominante d die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1680 2622,1680 2622,1793 453,1793"/>
+                <pc:TextEquiv conf="0.9981723427772522">
+                    <pc:Unicode>große Terz uͤber ſich hat, welches gar nicht fremde ſcheinen muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1773 2618,1773 2618,1885 453,1885"/>
+                <pc:TextEquiv conf="0.9907203316688538">
+                    <pc:Unicode>Denn in der kleinen Tonart a iſt das zweyte Tetrachord e, fis, gis, a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1858 2618,1858 2618,1965 453,1965"/>
+                <pc:TextEquiv conf="0.9980137944221497">
+                    <pc:Unicode>eben ſo beſchaffen, als es in der großen Tonart a ſeyn wuͤrde, allwo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1944 455,2034 2618,2066 2618,1944 455,1944"/>
+                <pc:TextEquiv conf="0.9813462495803833">
+                    <pc:Unicode>namlich die Unterdominante d die große Terz fis uͤber ſich haben muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſer Accord zeiget ſich alsdenn in einer umgekehrten Geſtalt
+gegen den Accord d, fis, a, h worinnen die Unterdominante d die
+große Terz uͤber ſich hat, welches gar nicht fremde ſcheinen muß.
+Denn in der kleinen Tonart a iſt das zweyte Tetrachord e, fis, gis, a
+eben ſo beſchaffen, als es in der großen Tonart a ſeyn wuͤrde, allwo
+namlich die Unterdominante d die große Terz fis uͤber ſich haben muß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1402,2175 1402,2085 1672,2085 1672,2175 1402,2175"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1425,2087 1654,2087 1654,2168 1425,2168"/>
+                <pc:TextEquiv conf="0.8270638585090637">
+                    <pc:Unicode>§. II.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. II.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="425,2734 425,2175 2636,2175 2636,2734 425,2734"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="636,2187 2617,2187 2617,2298 636,2298"/>
+                <pc:TextEquiv conf="0.9995461106300354">
+                    <pc:Unicode>Man wird hieraus ſehen, daß die kleine Tonart weit mehrer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,2268 2615,2268 2615,2380 452,2380"/>
+                <pc:TextEquiv conf="0.9991063475608826">
+                    <pc:Unicode>Veraͤnderungen, als die große Tonart faͤhig iſt. Es iſt auch dieſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2363 2618,2363 2618,2474 456,2474"/>
+                <pc:TextEquiv conf="0.998555600643158">
+                    <pc:Unicode>letztere ein Werk der Natur ſelber, anſtatt daß an der erſtern die Kunſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,2451 2618,2451 2618,2559 452,2559"/>
+                <pc:TextEquiv conf="0.9984960556030273">
+                    <pc:Unicode>ihren Antheil hat. Gegentheils hat die von der Natur unmittelbar</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2537 2630,2537 2630,2649 455,2649"/>
+                <pc:TextEquiv conf="0.9985829591751099">
+                    <pc:Unicode>formirte große Tonart von derſelben eine gewiſſe Kraft und eine Art</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-071_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,2624 2423,2624 2423,2734 454,2734"/>
+                <pc:TextEquiv conf="0.9974879026412964">
+                    <pc:Unicode>von Staͤrke erhalten, die der kleinen Tonart mangelt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man wird hieraus ſehen, daß die kleine Tonart weit mehrer
+Veraͤnderungen, als die große Tonart faͤhig iſt. Es iſt auch dieſe
+letztere ein Werk der Natur ſelber, anſtatt daß an der erſtern die Kunſt
+ihren Antheil hat. Gegentheils hat die von der Natur unmittelbar
+formirte große Tonart von derſelben eine gewiſſe Kraft und eine Art
+von Staͤrke erhalten, die der kleinen Tonart mangelt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footer">
+            <pc:Coords points="2379,3358 2379,3223 2604,3223 2604,3358 2379,3358"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="2409,3225 2604,3225 2604,3328 2409,3328"/>
+                <pc:TextEquiv conf="0.9945810437202454">
+                    <pc:Unicode>Vier⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vier⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_8" type="decoration">
+            <pc:Coords points="1254,3139 1254,2805 1794,2805 1794,3139 1254,3139"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

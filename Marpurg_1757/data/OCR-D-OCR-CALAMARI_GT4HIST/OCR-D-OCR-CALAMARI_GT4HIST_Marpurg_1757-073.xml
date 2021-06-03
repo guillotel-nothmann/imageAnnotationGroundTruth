@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:29</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:29</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-073.png" imageWidth="2973" imageHeight="3697" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-073-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-073.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="456,206 2626,206 2626,3373 456,3373"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="434,320 434,210 550,210 550,320 434,320"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="467,218 548,218 548,307 467,307"/>
+                <pc:TextEquiv conf="0.8457641005516052">
+                    <pc:Unicode>4</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="576,307 576,178 2595,178 2595,307 576,307"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="590,207 2576,207 2576,305 590,305"/>
+                <pc:TextEquiv conf="0.987998902797699">
+                    <pc:Unicode>1Buch. XIVCap. Verſchied. Arten des Septimenaccords.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XIVCap. Verſchied. Arten des Septimenaccords.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1408,442 1408,339 1692,339 1692,442 1408,442"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1418,351 1669,351 1669,440 1418,440"/>
+                <pc:TextEquiv conf="0.9213564395904541">
+                    <pc:Unicode>§. 15.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 15.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="440,1436 440,442 2647,442 2641,1366 944,1366 950,1437 440,1436"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="660,448 2622,448 2622,534 660,534"/>
+                <pc:TextEquiv conf="0.9880520105361938">
+                    <pc:Unicode>Wenn man dem Accorde c, e, g, eine Septime hinzuſetzen will,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,533 2625,533 2625,620 476,620"/>
+                <pc:TextEquiv conf="0.9943208694458008">
+                    <pc:Unicode>um c in eine Dominante zu veraͤndern: ſo kann man vorher gelehr⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,621 2623,621 2623,714 476,714"/>
+                <pc:TextEquiv conf="0.9939163327217102">
+                    <pc:Unicode>termaßen nichts anders als b hinzufuͤgen, und in dieſem Falle wuͤrde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,711 2621,711 2621,799 477,799"/>
+                <pc:TextEquiv conf="0.9941186308860779">
+                    <pc:Unicode>der Accord von der toniſchen Dominante in dem Tone f ſeyn c, e,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,797 2623,797 2623,907 477,907"/>
+                <pc:TextEquiv conf="0.9851200580596924">
+                    <pc:Unicode>g, b ſo wie die Toͤne g, h, d, f den Accord von der toniſchen Dominan⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,891 2620,891 2620,977 472,977"/>
+                <pc:TextEquiv conf="0.9951848387718201">
+                    <pc:Unicode>te in dem Tone c ausmachen. Wenn man aber den Eindruck des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,977 2617,977 2617,1068 466,1068"/>
+                <pc:TextEquiv conf="0.9860495328903198">
+                    <pc:Unicode>Tons c in der Harmonie erhalten will, ſo veraͤndert man dieſes h</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1071 2619,1071 2619,1159 466,1159"/>
+                <pc:TextEquiv conf="0.9765220880508423">
+                    <pc:Unicode>alsdenn in h, und folglich den Accord c, e, g, b in c, e g, h. Eben</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="467,1155 2618,1155 2618,1258 467,1258"/>
+                <pc:TextEquiv conf="0.9875096082687378">
+                    <pc:Unicode>ſo verhaͤlt es ſich mit dem Accorde f, , c, e, der aus der Veraͤnderung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1249 2621,1249 2621,1338 470,1338"/>
+                <pc:TextEquiv conf="0.9885786771774292">
+                    <pc:Unicode>des es in e beſtehet, um vermittelſt dieſes e den Eindruck des Tons</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:Coords points="471,1347 471,1436 910,1437 910,1347 471,1347"/>
+                <pc:TextEquiv conf="0.9984602332115173">
+                    <pc:Unicode>f zu erhalten.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn man dem Accorde c, e, g, eine Septime hinzuſetzen will,
+um c in eine Dominante zu veraͤndern: ſo kann man vorher gelehr⸗
+termaßen nichts anders als b hinzufuͤgen, und in dieſem Falle wuͤrde
+der Accord von der toniſchen Dominante in dem Tone f ſeyn c, e,
+g, b ſo wie die Toͤne g, h, d, f den Accord von der toniſchen Dominan⸗
+te in dem Tone c ausmachen. Wenn man aber den Eindruck des
+Tons c in der Harmonie erhalten will, ſo veraͤndert man dieſes h
+alsdenn in h, und folglich den Accord c, e, g, b in c, e g, h. Eben
+ſo verhaͤlt es ſich mit dem Accorde f, , c, e, der aus der Veraͤnderung
+des es in e beſtehet, um vermittelſt dieſes e den Eindruck des Tons
+f zu erhalten.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1395,1501 1395,1417 1692,1417 1692,1501 1395,1501"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1416,1426 1676,1426 1676,1501 1416,1501"/>
+                <pc:TextEquiv conf="0.9256771206855774">
+                    <pc:Unicode>§. 116.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 116.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="440,1507 441,3321 1473,3282 1505,3231 2648,3237 2654,1507 440,1507"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,1508 2618,1508 2618,1613 465,1613"/>
+                <pc:TextEquiv conf="0.9965691566467285">
+                    <pc:Unicode>Was den Septimenaccord gis, h, d, f betrift, der aus lauter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="467,1598 2619,1598 2619,1693 467,1693"/>
+                <pc:TextEquiv conf="0.9992750883102417">
+                    <pc:Unicode>kleinen Terzen beſtehet: ſo kann man ſolchen ſo betrachten, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,1691 2618,1691 2618,1777 472,1777"/>
+                <pc:TextEquiv conf="0.9993906021118164">
+                    <pc:Unicode>wenn er aus der Vereinigung der beyden Accorde von der Dominan⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1778 2618,1778 2618,1879 466,1879"/>
+                <pc:TextEquiv conf="0.9957590699195862">
+                    <pc:Unicode>te und Unterdominante in der weichen Tonart formiret iſt. Dieſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,1863 2622,1863 2622,1964 472,1964"/>
+                <pc:TextEquiv conf="0.9830567240715027">
+                    <pc:Unicode>beyden Accorde ſind e, gis, h, d und d, f, a, h, aus deren Vereinigung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,1961 2513,1961 2513,2058 461,2058"/>
+                <pc:TextEquiv conf="0.9631847739219666">
+                    <pc:Unicode>der Satz entſtehetꝛ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="520,2041 2022,2041 2022,2148 520,2148"/>
+                <pc:TextEquiv conf="0.9438803791999817">
+                    <pc:Unicode>e, gis, h, d, f a.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,2126 2618,2126 2618,2227 466,2227"/>
+                <pc:TextEquiv conf="0.9936180710792542">
+                    <pc:Unicode>Wenn man aber alle dieſe Toͤne beybehielte: ſo wuͤrde wegen der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,2223 2622,2223 2622,2312 472,2312"/>
+                <pc:TextEquiv conf="0.9993137121200562">
+                    <pc:Unicode>darinnen vervielfaͤltigten Diſſonanzen eine unangenehme Harmonie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,2307 2623,2307 2623,2418 466,2418"/>
+                <pc:TextEquiv conf="0.9954171180725098">
+                    <pc:Unicode>daraus entſtehen. Um ſolche zu verhuͤten, ſchneidet man alſo zufoͤr⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2399 2616,2399 2616,2495 456,2495"/>
+                <pc:TextEquiv conf="0.9797883033752441">
+                    <pc:Unicode>derſt den Zeuge⸗ oder Stammton a ab, welcher (nach dem Cap. I.)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,2488 2618,2488 2618,2593 457,2593"/>
+                <pc:TextEquiv conf="0.9903209209442139">
+                    <pc:Unicode>gleichſam in d mitvorhanden iſt; und hernach thut man die Quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,2576 2619,2576 2619,2666 466,2666"/>
+                <pc:TextEquiv conf="0.9951369166374207">
+                    <pc:Unicode>oder die Dominante e weg, deren Stelle durch die tonbezeichnende</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,2666 2618,2666 2618,2788 461,2788"/>
+                <pc:TextEquiv conf="0.9952293634414673">
+                    <pc:Unicode>Note gis gleichſam erſetzet wird. Alſo bleibet nichts mehr, als gis, h,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="471,2753 2620,2753 2620,2860 471,2860"/>
+                <pc:TextEquiv conf="0.9838718771934509">
+                    <pc:Unicode>d, f ubrig, ein aus lauter kleinen Terzen zuſammengeſetzter Ac⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="460,2840 2619,2840 2619,2942 460,2942"/>
+                <pc:TextEquiv conf="0.9713567495346069">
+                    <pc:Unicode>cord worinnen man ſich die Dounante e als mitbegriffen vorſtel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,2930 2617,2930 2617,3102 461,3102"/>
+                <pc:TextEquiv conf="0.42883366346359253">
+                    <pc:Unicode>.ateeeXre</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,3023 2615,3023 2615,3201 457,3201"/>
+                <pc:TextEquiv conf="0.4045809209346771">
+                    <pc:Unicode>Xee ::Xr—</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,3111 2617,3111 2617,3204 470,3204"/>
+                <pc:TextEquiv conf="0.9897664189338684">
+                    <pc:Unicode>Unterdominante d,f, a, h vor. Es wird aber allezeit die Dominante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-073_region_id_5_region_id_5_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,3198 469,3318 520,3318 1473,3282 2387,3236 2387,3198 469,3198"/>
+                <pc:TextEquiv conf="0.9931622743606567">
+                    <pc:Unicode>e als die Hauptnote angeſehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Was den Septimenaccord gis, h, d, f betrift, der aus lauter
+kleinen Terzen beſtehet: ſo kann man ſolchen ſo betrachten, als
+wenn er aus der Vereinigung der beyden Accorde von der Dominan⸗
+te und Unterdominante in der weichen Tonart formiret iſt. Dieſe
+beyden Accorde ſind e, gis, h, d und d, f, a, h, aus deren Vereinigung
+der Satz entſtehetꝛ
+e, gis, h, d, f a.
+Wenn man aber alle dieſe Toͤne beybehielte: ſo wuͤrde wegen der
+darinnen vervielfaͤltigten Diſſonanzen eine unangenehme Harmonie
+daraus entſtehen. Um ſolche zu verhuͤten, ſchneidet man alſo zufoͤr⸗
+derſt den Zeuge⸗ oder Stammton a ab, welcher (nach dem Cap. I.)
+gleichſam in d mitvorhanden iſt; und hernach thut man die Quinte
+oder die Dominante e weg, deren Stelle durch die tonbezeichnende
+Note gis gleichſam erſetzet wird. Alſo bleibet nichts mehr, als gis, h,
+d, f ubrig, ein aus lauter kleinen Terzen zuſammengeſetzter Ac⸗
+cord worinnen man ſich die Dounante e als mitbegriffen vorſtel⸗
+.ateeeXre
+Xee ::Xr—
+Unterdominante d,f, a, h vor. Es wird aber allezeit die Dominante
+e als die Hauptnote angeſehen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footer">
+            <pc:Coords points="2383,3405 2383,3282 2628,3282 2628,3405 2383,3405"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="2409,3293 2619,3293 2619,3373 2409,3373"/>
+                <pc:TextEquiv conf="0.8698006868362427">
+                    <pc:Unicode>§. 1n7.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 1n7.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_6" custom="tablatureNotation">
+            <pc:Coords points="1247,2127 1247,2017 1892,2017 1892,2127 1247,2127"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

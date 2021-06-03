@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:56</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:56</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-159.png" imageWidth="2973" imageHeight="3745" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-159-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-159.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="17,0 2972,0 2972,3728 17,3728"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
+                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
+                <pc:RegionRefIndexed index="13" regionRef="region0013"/>
+                <pc:RegionRefIndexed index="14" regionRef="region0014"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="2284,1475 2290,1475 2290,1483 2284,1483"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="2284,1475 2290,1475 2290,1483 2284,1483"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="1693,1515 2873,1515 2873,1591 1693,1591"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0004_region0004_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1697,1515 2873,1515 2873,1558 1697,1558"/>
+                <pc:TextEquiv conf="0.5986418724060059">
+                    <pc:Unicode>2 5A Vi . .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0004_region0004_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1829,1529 2477,1529 2477,1575 1829,1575"/>
+                <pc:TextEquiv conf="0.7443932890892029">
+                    <pc:Unicode>, Xe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0004_region0004_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1693,1530 2860,1530 2860,1591 1693,1591"/>
+                <pc:TextEquiv conf="0.6410797834396362">
+                    <pc:Unicode>e e 5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2 5A Vi . .
+, Xe
+e e 5</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="2043,1561 2812,1561 2812,1641 2043,1641"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0005_region0005_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="2043,1561 2812,1561 2812,1603 2043,1603"/>
+                <pc:TextEquiv conf="0.8565130233764648">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0005_region0005_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="2043,1592 2812,1592 2812,1641 2043,1641"/>
+                <pc:TextEquiv conf="0.6672015190124512">
+                    <pc:Unicode>.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>
+.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="2512,1527 2971,1527 2971,1682 2512,1682"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0006_region0006_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="2512,1527 2971,1527 2971,1561 2512,1561"/>
+                <pc:TextEquiv conf="0.547117292881012">
+                    <pc:Unicode>S.2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0006_region0006_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="2514,1561 2966,1561 2966,1606 2514,1606"/>
+                <pc:TextEquiv conf="0.4494990110397339">
+                    <pc:Unicode>4c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0006_region0006_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="2512,1592 2960,1592 2960,1634 2512,1634"/>
+                <pc:TextEquiv conf="0.6483115553855896">
+                    <pc:Unicode>.. . .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0006_region0006_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="2512,1627 2966,1627 2966,1663 2512,1663"/>
+                <pc:TextEquiv conf="0.40362364053726196">
+                    <pc:Unicode>.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0006_region0006_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="2537,1652 2955,1652 2955,1682 2537,1682"/>
+                <pc:TextEquiv conf="0.4570598304271698">
+                    <pc:Unicode>. 5*..</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>S.2
+4c
+.. . .
+.
+. 5*..</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="2571,1631 2769,1631 2769,1665 2571,1665"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0008_region0008_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="2571,1631 2769,1631 2769,1654 2571,1654"/>
+                <pc:TextEquiv conf="0.6264243721961975">
+                    <pc:Unicode>'</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0008_region0008_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="2655,1652 2722,1652 2722,1665 2655,1665"/>
+                <pc:TextEquiv conf="0.4823545515537262">
+                    <pc:Unicode>.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>'
+.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="1808,3137 2972,3137 2972,3281 1808,3281"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0010_region0010_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1808,3154 2972,3154 2972,3203 1808,3203"/>
+                <pc:TextEquiv conf="0.6952662467956543">
+                    <pc:Unicode>- .,'.. ,,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0010_region0010_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="2015,3191 2700,3191 2700,3206 2015,3206"/>
+                <pc:TextEquiv conf="0.6048288345336914">
+                    <pc:Unicode>e1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0010_region0010_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1909,3201 2790,3201 2790,3238 1909,3238"/>
+                <pc:TextEquiv conf="0.5487274527549744">
+                    <pc:Unicode>* -e.t *</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0010_region0010_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1808,3236 2261,3236 2261,3256 1808,3256"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0010_region0010_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="1808,3247 2763,3247 2763,3281 1808,3281"/>
+                <pc:TextEquiv conf="0.7021194100379944">
+                    <pc:Unicode>2. Tx. . .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>- .,'.. ,,
+e1
+* -e.t *
+
+2. Tx. . .</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0011">
+            <pc:Coords points="1788,3260 2763,3260 2763,3318 1788,3318"/>
+            <pc:TextLine id="region0011_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0011_region0011_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1788,3260 2763,3260 2763,3283 1788,3283"/>
+                <pc:TextEquiv conf="0.4857316315174103">
+                    <pc:Unicode>t</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0011_region0011_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1854,3267 2593,3267 2593,3298 1854,3298"/>
+                <pc:TextEquiv conf="0.6087380647659302">
+                    <pc:Unicode>,v —.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-159_region0011_region0011_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1825,3265 2573,3265 2573,3318 1825,3318"/>
+                <pc:TextEquiv conf="0.4130653738975525">
+                    <pc:Unicode>2. 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>t
+,v —.
+2. 2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0012">
+            <pc:Coords points="2782,3021 2965,3021 2965,3084 2782,3084"/>
+            <pc:TextLine id="region0012_line0000">
+                <pc:Coords points="2782,3021 2965,3021 2965,3084 2782,3084"/>
+                <pc:TextEquiv conf="0.38789239525794983">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0013">
+            <pc:Coords points="1807,3155 2057,3155 2057,3175 1807,3175"/>
+            <pc:TextLine id="region0013_line0000">
+                <pc:Coords points="1807,3155 2029,3155 2029,3165 1807,3165"/>
+                <pc:TextEquiv conf="0.5438477993011475">
+                    <pc:Unicode>*0</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0001">
+                <pc:Coords points="2039,3167 2057,3167 2057,3175 2039,3175"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>*0
+</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0000">
+            <pc:Coords points="17,1435 2972,1435 2972,2997 17,2997"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0001">
+            <pc:Coords points="2519,1435 2972,1435 2972,1481 2519,1481"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0003">
+            <pc:Coords points="2290,1471 2379,1471 2379,1487 2290,1487"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0007">
+            <pc:Coords points="2688,1642 2972,1642 2972,1662 2688,1662"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0009">
+            <pc:Coords points="17,2906 2972,2906 2972,3728 17,3728"/>
+        </pc:ImageRegion>
+        <pc:TableRegion id="region0014">
+            <pc:Coords points="1815,3294 2972,3294 2972,3674 1815,3674"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

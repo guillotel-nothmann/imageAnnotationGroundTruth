@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:44</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:44</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-020.png" imageWidth="2973" imageHeight="3594" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-020-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-020.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="396,215 2528,215 2528,3347 396,3347"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_1" type="heading">
+            <pc:Coords points="357,889 2538,861 2531,1514 400,1521 357,889"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="399,900 2115,900 2115,1080 399,1080"/>
+                <pc:TextEquiv conf="0.9996469020843506">
+                    <pc:Unicode>Einleitung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:Coords points="397,1137 2496,1137 2496,1379 397,1379"/>
+                <pc:TextEquiv conf="0.9179133772850037">
+                    <pc:Unicode>Muſic aliſche Setzkunſt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:Coords points="396,1399 396,1462 399,1506 2273,1506 2273,1399 396,1399"/>
+                <pc:TextEquiv conf="0.9989820718765259">
+                    <pc:Unicode>nach den Lehrſaͤtzen des Herrn Rameau.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleitung
+Muſic aliſche Setzkunſt,
+nach den Lehrſaͤtzen des Herrn Rameau.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="414,1585 2431,1578 2438,2005 400,2040 414,1585"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1017,1588 2394,1588 2394,1750 1017,1750"/>
+                <pc:TextEquiv conf="0.9997662901878357">
+                    <pc:Unicode>Vorbereitung,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="410,1723 405,1878 405,1891 2418,1891 2418,1723 410,1723"/>
+                <pc:TextEquiv conf="0.9875640869140625">
+                    <pc:Unicode>worinnen verſchiedene Kunſtwoͤrter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="1197,1917 1197,2011 2089,2011 2251,2008 2251,1917 1197,1917"/>
+                <pc:TextEquiv conf="0.9977020025253296">
+                    <pc:Unicode>erklaͤret werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbereitung,
+worinnen verſchiedene Kunſtwoͤrter
+erklaͤret werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="392,2097 2492,2125 2488,2481 385,2509 392,2097"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,2125 2465,2125 2465,2232 396,2232"/>
+                <pc:TextEquiv conf="0.9670538306236267">
+                    <pc:Unicode>. Erſt es Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="400,2229 400,2381 2489,2381 2491,2229 400,2229"/>
+                <pc:TextEquiv conf="0.9985076785087585">
+                    <pc:Unicode>Was man durch Melodie, Accord, Har⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:Coords points="396,2384 2472,2384 2472,2477 396,2477"/>
+                <pc:TextEquiv conf="0.9902241230010986">
+                    <pc:Unicode>monie, Jntervall, verſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>. Erſt es Capitel.
+Was man durch Melodie, Accord, Har⸗
+monie, Jntervall, verſtehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1322,2503 1322,2598 1572,2598 1572,2503 1322,2503"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1358,2518 1542,2518 1542,2598 1358,2598"/>
+                <pc:TextEquiv conf="0.9703496694564819">
+                    <pc:Unicode>§. 1.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 1.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="658,2622 2527,2625 2489,2891 780,2887 773,2707 734,2698 652,2695 658,2622"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="658,2623 657,2634 657,2695 773,2711 2489,2711 2489,2625 1281,2623 658,2623"/>
+                <pc:TextEquiv conf="0.999183714389801">
+                    <pc:Unicode>Der Geſang oder die Melodie iſt nichts anders, als eine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="797,2712 2488,2712 2488,2802 797,2802"/>
+                <pc:TextEquiv conf="0.9970498085021973">
+                    <pc:Unicode>Reihe von Toͤnen, die auf eine das Gehoͤr ergotzende Art</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="795,2796 2267,2796 2267,2887 795,2887"/>
+                <pc:TextEquiv conf="0.9958841800689697">
+                    <pc:Unicode>hinter einander folgen ().</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der Geſang oder die Melodie iſt nichts anders, als eine
+Reihe von Toͤnen, die auf eine das Gehoͤr ergotzende Art
+hinter einander folgen ().</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1324,2896 1324,2988 1553,2988 1553,2896 1324,2896"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1334,2909 1542,2909 1542,2988 1334,2988"/>
+                <pc:TextEquiv conf="0.9967104196548462">
+                    <pc:Unicode>§. 2.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 2.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="396,2999 2485,2999 2499,3259 381,3255 396,2999"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="572,2999 2485,2999 2485,3101 572,3101"/>
+                <pc:TextEquiv conf="0.999291181564331">
+                    <pc:Unicode>Wenn einige Toͤne zuſammen angeſchlagen werden, ſo nennet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,3083 2485,3083 2485,3189 396,3189"/>
+                <pc:TextEquiv conf="0.9966720938682556">
+                    <pc:Unicode>man ſolches einen Accord, und eine Reihe von Accorden, die in ihrer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-020_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,3171 402,3255 2464,3259 2464,3171 402,3171"/>
+                <pc:TextEquiv conf="0.9854750633239746">
+                    <pc:Unicode>Folge das Ohr vergnugen, heißt eine Harmonie (2).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn einige Toͤne zuſammen angeſchlagen werden, ſo nennet
+man ſolches einen Accord, und eine Reihe von Accorden, die in ihrer
+Folge das Ohr vergnugen, heißt eine Harmonie (2).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footer">
+            <pc:Coords points="448,3257 425,3370 2501,3361 2501,3261 448,3257"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="479,3260 479,3347 2484,3347 2484,3261 1988,3260 479,3260"/>
+                <pc:TextEquiv conf="0.9727318286895752">
+                    <pc:Unicode>Einleit. in die muſic. Setzk. A §. 3.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleit. in die muſic. Setzk. A §. 3.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_0" type="decoration">
+            <pc:Coords points="396,215 2522,215 2522,811 396,811 396,215"/>
+        </pc:GraphicRegion>
+        <pc:GraphicRegion id="region_id_5" type="decoration">
+            <pc:Coords points="417,2562 657,2568 650,2695 755,2726 765,2987 379,2989 417,2562"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

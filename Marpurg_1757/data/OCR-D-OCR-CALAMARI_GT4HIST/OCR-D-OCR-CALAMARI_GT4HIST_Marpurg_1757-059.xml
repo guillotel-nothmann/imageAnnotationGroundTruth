@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:39:46</pc:Created>
+        <pc:LastChange>2021-01-10T21:39:46</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-059.png" imageWidth="2973" imageHeight="3719" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-059-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-059.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="492,203 2676,203 2676,3381 492,3381"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="494,203 616,197 607,295 494,302 494,203"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="494,234 494,301 510,301 588,296 588,234 494,234"/>
+                <pc:TextEquiv conf="0.9821810722351074">
+                    <pc:Unicode>40</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>40</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="732,187 732,294 2404,294 2404,187 732,187"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="774,203 2379,203 2379,294 774,294"/>
+                <pc:TextEquiv conf="0.9862290620803833">
+                    <pc:Unicode>1Buch. X Cap. Von der kleinen Tonart.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. X Cap. Von der kleinen Tonart.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="492,356 2691,358 2696,620 480,620 492,356"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="499,357 499,452 2672,452 2672,358 1592,357 499,357"/>
+                <pc:TextEquiv conf="0.9804191589355469">
+                    <pc:Unicode>gebracht wuͤrde, die drey Theile CXD, DHE, und EG F, einerley</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="502,446 2673,446 2673,542 502,542"/>
+                <pc:TextEquiv conf="0.9996930956840515">
+                    <pc:Unicode>Ton hervorbringen wuͤrden, nicht anders, als wenn dieſe drey Theile</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,541 2659,541 2659,620 501,620"/>
+                <pc:TextEquiv conf="0.9956849813461304">
+                    <pc:Unicode>drey verſchiedene bey C, D, E, und F befeſtigte Seyten waͤren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gebracht wuͤrde, die drey Theile CXD, DHE, und EG F, einerley
+Ton hervorbringen wuͤrden, nicht anders, als wenn dieſe drey Theile
+drey verſchiedene bey C, D, E, und F befeſtigte Seyten waͤren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="490,897 489,624 2691,624 2686,882 490,897"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="601,624 2671,624 2671,719 601,719"/>
+                <pc:TextEquiv conf="0.9880529046058655">
+                    <pc:Unicode>Nun weis man durch die Erfahrung, daß die bey C und D be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,722 2671,722 2671,809 501,809"/>
+                <pc:TextEquiv conf="0.9980486035346985">
+                    <pc:Unicode>feſtigte, und einen Drittheil von CF enthaltende Seyte CD, die Ober</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="502,808 502,895 783,895 2148,886 2148,808 502,808"/>
+                <pc:TextEquiv conf="0.9983327984809875">
+                    <pc:Unicode>duodecime gegen die ganze Seyte CF machen wuͤrde.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Nun weis man durch die Erfahrung, daß die bey C und D be⸗
+feſtigte, und einen Drittheil von CF enthaltende Seyte CD, die Ober
+duodecime gegen die ganze Seyte CF machen wuͤrde.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="494,1256 494,887 2676,887 2696,1247 494,1256"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="673,897 2669,897 2669,989 673,989"/>
+                <pc:TextEquiv conf="0.9987515211105347">
+                    <pc:Unicode>Folglich muͤßte der Ton, den die drey Theile der Seyte CD</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,988 2673,988 2673,1080 504,1080"/>
+                <pc:TextEquiv conf="0.999714732170105">
+                    <pc:Unicode>erklingen ließen, der Hauptton ſelber ſeyn, weil der von der ganzen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="504,1081 2669,1081 2669,1167 504,1167"/>
+                <pc:TextEquiv conf="0.9922720193862915">
+                    <pc:Unicode>Seyte CF hervorgebrachte Ton, nach der feſtgeſtellten Meynung, die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:Coords points="505,1170 505,1254 983,1254 2662,1247 2662,1170 505,1170"/>
+                <pc:TextEquiv conf="0.9996837377548218">
+                    <pc:Unicode>Unterduodecime des Haupttons iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Folglich muͤßte der Ton, den die drey Theile der Seyte CD
+erklingen ließen, der Hauptton ſelber ſeyn, weil der von der ganzen
+Seyte CF hervorgebrachte Ton, nach der feſtgeſtellten Meynung, die
+Unterduodecime des Haupttons iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="480,1718 480,1246 2691,1246 2691,1645 801,1621 786,1704 480,1718"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="678,1256 2670,1256 2670,1346 678,1346"/>
+                <pc:TextEquiv conf="0.9990182518959045">
+                    <pc:Unicode>Folglich wuͤrde die Seyte CF, die ſich bey ihrer Erzitterung in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,1346 2675,1346 2675,1434 492,1434"/>
+                <pc:TextEquiv conf="0.9988385438919067">
+                    <pc:Unicode>die drey Theile CD, DE, EFzerfaͤllet, nichts anders, als den Einklang</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="504,1438 2673,1438 2673,1525 504,1525"/>
+                <pc:TextEquiv conf="0.9991252422332764">
+                    <pc:Unicode>des Haupttons machen, wenn ſolche erklingen ſollte. Gleiche Be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:Coords points="505,1529 2672,1529 2672,1616 505,1616"/>
+                <pc:TextEquiv conf="0.9975536465644836">
+                    <pc:Unicode>wandniß hat es mit der Decime⸗Septime. (Man ſehe den §. 23</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:Coords points="493,1618 493,1711 633,1711 759,1705 759,1618 493,1618"/>
+                <pc:TextEquiv conf="0.9936227798461914">
+                    <pc:Unicode>zuruͤck.)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Folglich wuͤrde die Seyte CF, die ſich bey ihrer Erzitterung in
+die drey Theile CD, DE, EFzerfaͤllet, nichts anders, als den Einklang
+des Haupttons machen, wenn ſolche erklingen ſollte. Gleiche Be⸗
+wandniß hat es mit der Decime⸗Septime. (Man ſehe den §. 23
+zuruͤck.)</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1408,1684 1408,1800 1743,1800 1743,1684 1408,1684"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1465,1709 1716,1709 1716,1792 1465,1792"/>
+                <pc:TextEquiv conf="0.9863036274909973">
+                    <pc:Unicode>§. 79.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 79.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="475,1801 499,2345 2681,2345 2681,1815 475,1801"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="680,1806 680,1898 2672,1898 2672,1815 1263,1806 680,1806"/>
+                <pc:TextEquiv conf="0.9972413778305054">
+                    <pc:Unicode>Folglich fuͤhret uns die Natur, indem ſie durch die Erzitterung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="507,1901 2671,1901 2671,1985 507,1985"/>
+                <pc:TextEquiv conf="0.989973247051239">
+                    <pc:Unicode>dieſer Duodecime und Decime⸗ Septime die kleine Tonart anzeiget,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,1983 2671,1983 2671,2080 506,2080"/>
+                <pc:TextEquiv conf="0.9973571300506592">
+                    <pc:Unicode>zu gleicher Zeit ſo viel als moͤglich, zu dem Haupttone C zuruͤck, um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2072 2670,2072 2670,2164 508,2164"/>
+                <pc:TextEquiv conf="0.998661994934082">
+                    <pc:Unicode>die weiche oder kleine Tonart zu formiren; weil naͤmlich dieſe Duode⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,2164 2669,2164 2669,2252 511,2252"/>
+                <pc:TextEquiv conf="0.9906342625617981">
+                    <pc:Unicode>cime und Decime⸗ Septime, wenn ſie waͤhrender Erzitterung erklin⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:Coords points="509,2255 2609,2255 2609,2345 509,2345"/>
+                <pc:TextEquiv conf="0.9948140978813171">
+                    <pc:Unicode>gen ſollten, nichts anders, als den Ton c hervorbringen wuͤrden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Folglich fuͤhret uns die Natur, indem ſie durch die Erzitterung
+dieſer Duodecime und Decime⸗ Septime die kleine Tonart anzeiget,
+zu gleicher Zeit ſo viel als moͤglich, zu dem Haupttone C zuruͤck, um
+die weiche oder kleine Tonart zu formiren; weil naͤmlich dieſe Duode⸗
+cime und Decime⸗ Septime, wenn ſie waͤhrender Erzitterung erklin⸗
+gen ſollten, nichts anders, als den Ton c hervorbringen wuͤrden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1437,2369 1437,2476 1719,2476 1719,2369 1437,2369"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1475,2384 1693,2384 1693,2469 1475,2469"/>
+                <pc:TextEquiv conf="0.976102352142334">
+                    <pc:Unicode>§. 80.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 80.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="495,2501 2686,2496 2681,3297 500,3317 495,2501"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1810,2498 686,2501 686,2587 2666,2587 2666,2498 1810,2498"/>
+                <pc:TextEquiv conf="0.9916132688522339">
+                    <pc:Unicode>Es iſt zwar gewiß, daß der Hauptton in dieſer nenen Tonart</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="509,2588 2666,2588 2666,2676 509,2676"/>
+                <pc:TextEquiv conf="0.9964155554771423">
+                    <pc:Unicode>nicht der Hauptton ſeyn wird, indem in C nur die große Terz e, nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="511,2678 2663,2678 2663,2765 511,2765"/>
+                <pc:TextEquiv conf="0.999341607093811">
+                    <pc:Unicode>aber die kleine Terz es erklinget. Aber in Ermangelung dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="509,2769 2664,2769 2664,2855 509,2855"/>
+                <pc:TextEquiv conf="0.9962266087532043">
+                    <pc:Unicode>Platzes, nimmt er denjenigen ein, der hier gewiſſermaßen der vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:Coords points="509,2857 2664,2857 2664,2943 509,2943"/>
+                <pc:TextEquiv conf="0.9985809326171875">
+                    <pc:Unicode>nehmſte iſt, weil er die neue Tonart ausmachet, und ſolche von der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="507,2945 2665,2945 2665,3037 507,3037"/>
+                <pc:TextEquiv conf="0.9986335635185242">
+                    <pc:Unicode>großen unterſcheidet. Das C wird naͤmlich zur kleinen Terz des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_9_region_id_9_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,3035 2664,3035 2664,3125 508,3125"/>
+                <pc:TextEquiv conf="0.9989125728607178">
+                    <pc:Unicode>Grundtons, und dieſer Grundton wird a ſeyn. Noch mehr, die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_9_region_id_9_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="507,3126 2662,3126 2662,3216 507,3216"/>
+                <pc:TextEquiv conf="0.996453583240509">
+                    <pc:Unicode>große Terz e von c wird zur Quinte des Grundtons; und die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-059_region_id_9_region_id_9_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="511,3215 511,3310 1263,3310 2665,3297 2665,3215 511,3215"/>
+                <pc:TextEquiv conf="0.9984288811683655">
+                    <pc:Unicode>Quinte iſt es, wie wir geſehen haben, die ſowohl der Harmonie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es iſt zwar gewiß, daß der Hauptton in dieſer nenen Tonart
+nicht der Hauptton ſeyn wird, indem in C nur die große Terz e, nicht
+aber die kleine Terz es erklinget. Aber in Ermangelung dieſes
+Platzes, nimmt er denjenigen ein, der hier gewiſſermaßen der vor⸗
+nehmſte iſt, weil er die neue Tonart ausmachet, und ſolche von der
+großen unterſcheidet. Das C wird naͤmlich zur kleinen Terz des
+Grundtons, und dieſer Grundton wird a ſeyn. Noch mehr, die
+große Terz e von c wird zur Quinte des Grundtons; und die
+Quinte iſt es, wie wir geſehen haben, die ſowohl der Harmonie</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="2540,3297 2540,3380 2676,3380 2676,3297 2540,3297"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2569,3312 2664,3312 2664,3380 2569,3380"/>
+                <pc:TextEquiv conf="0.9969528317451477">
+                    <pc:Unicode>als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>als</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

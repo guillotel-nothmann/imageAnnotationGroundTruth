@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:00</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:00</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-141.png" imageWidth="2973" imageHeight="3658" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-141-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-141.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="443,172 2586,172 2586,3358 443,3358"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="413,176 413,265 566,265 566,176 413,176"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="445,201 544,201 544,257 445,257"/>
+                <pc:TextEquiv conf="0.4273870587348938">
+                    <pc:Unicode>a2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>a2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="936,157 936,259 2079,259 2079,157 936,157"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="969,173 2055,173 2055,259 969,259"/>
+                <pc:TextEquiv conf="0.9995312094688416">
+                    <pc:Unicode>Anmerkungen des Ueberſetzers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkungen des Ueberſetzers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" custom="list" type="other">
+            <pc:Coords points="419,304 419,3203 2609,3203 2609,304 419,304"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="602,327 2577,327 2577,410 602,410"/>
+                <pc:TextEquiv conf="0.9828115105628967">
+                    <pc:Unicode>(i4) Unempfindbar. Der Verfaſſer verſtehet dieſes ſo, daß die Diffe⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,407 2575,407 2575,493 450,493"/>
+                <pc:TextEquiv conf="0.9989450573921204">
+                    <pc:Unicode>renz des groͤßern und kleinern ganzen Tons, in dem Laufe eines Stuͤcks, nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,487 2577,487 2577,567 450,567"/>
+                <pc:TextEquiv conf="0.9994786381721497">
+                    <pc:Unicode>gemerket wird. Denn, wenn man auf einem Monochorde, auf der einen Seyte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,563 2575,563 2575,645 451,645"/>
+                <pc:TextEquiv conf="0.9938700795173645">
+                    <pc:Unicode>9 gegen 8, und auf der andern 10 gegen 9 anſchlaͤget: ſo findet ſich alsdenn ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,642 1899,642 1899,723 450,723"/>
+                <pc:TextEquiv conf="0.9985833764076233">
+                    <pc:Unicode>den Ohren ſehr fuͤhlbarer Unterſcheid zwiſchen beyden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:Coords points="614,797 2578,797 2578,874 614,874"/>
+                <pc:TextEquiv conf="0.9607828259468079">
+                    <pc:Unicode>(15) Wenn man in den oberſten Terminum 5z1a44t mit dem unterſten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:Coords points="451,879 2577,879 2577,954 451,954"/>
+                <pc:TextEquiv conf="0.9621725082397461">
+                    <pc:Unicode>5a4a88 dividiret: ſo krieget man zum Quotienten 1zr, und wenn man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,956 2581,956 2581,1031 452,1031"/>
+                <pc:TextEquiv conf="0.9849855303764343">
+                    <pc:Unicode>in 524288 mit 7153 dividiret: ſo bekoͤmmt man die ganze Zahl 73 nebſt einem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1031 2580,1031 2580,1109 450,1109"/>
+                <pc:TextEquiv conf="0.988789975643158">
+                    <pc:Unicode>Bruche, den man aber weglaͤſſet, um die Groͤße des Bruchs 4 ungefaͤhr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:Coords points="446,1114 2578,1114 2578,1187 446,1187"/>
+                <pc:TextEquiv conf="0.9980984926223755">
+                    <pc:Unicode>in kleinern Zahlen, naͤmlich in abzubilden. Wer den Unterſcheid des his</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:Coords points="450,1191 2579,1191 2579,1266 450,1266"/>
+                <pc:TextEquiv conf="0.998986542224884">
+                    <pc:Unicode>und c durch einen kurzen Weg aufs genaueſte haben, und auf dem Monochorde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:Coords points="452,1270 2579,1270 2579,1345 452,1345"/>
+                <pc:TextEquiv conf="0.9978761672973633">
+                    <pc:Unicode>ſehen und hoͤren will, der ſteche den groͤßern ganzen Ton 9:8 ſechsmal hinter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:Coords points="449,1347 2585,1347 2585,1421 449,1421"/>
+                <pc:TextEquiv conf="0.9953607320785522">
+                    <pc:Unicode>einander ab, und halte die durch die Halbirung der einen Seyte gefundene Octave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:Coords points="450,1423 2582,1423 2582,1499 450,1499"/>
+                <pc:TextEquiv conf="0.994674563407898">
+                    <pc:Unicode>c gegen das his der andern Seyte. Sechs ganze Toͤne in der Ration 9: 8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:Coords points="451,1501 2581,1501 2581,1576 451,1576"/>
+                <pc:TextEquiv conf="0.99704909324646">
+                    <pc:Unicode>bringen naͤmlich eben diejenige Ration fuͤr das his hervor, welche zwoͤlf Quin⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1577 2581,1577 2581,1654 450,1654"/>
+                <pc:TextEquiv conf="0.9518954753875732">
+                    <pc:Unicode>ten in der Ration 3: 2 geben, naͤmlich 44H4. Um c d zu haben, theilet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1654 2582,1654 2582,1732 451,1732"/>
+                <pc:TextEquiv conf="0.9963123798370361">
+                    <pc:Unicode>man die ganze Seyte in neun Theile, und ſchlaͤget einen Theil davon fuͤr d zu⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1734 2581,1734 2581,1811 451,1811"/>
+                <pc:TextEquiv conf="0.9943413734436035">
+                    <pc:Unicode>ruͤck. Von dem Puncte d theilet man die Seyte wieder in 9 Theile, um e zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1810 2582,1810 2582,1892 450,1892"/>
+                <pc:TextEquiv conf="0.9960455298423767">
+                    <pc:Unicode>haben. Von e theilet man die Seyte wieder in 9 Theile, um fis zu haben,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1888 1125,1888 1125,1962 450,1962"/>
+                <pc:TextEquiv conf="0.951690137386322">
+                    <pc:Unicode>u. f. w. bis zu ais - his.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0020">
+                <pc:Coords points="443,2025 2581,2025 2581,2102 443,2102"/>
+                <pc:TextEquiv conf="0.9740922451019287">
+                    <pc:Unicode>.(6) Es hat mit dieſer ungefaͤhren Vorſtellung des Commatis 444 eben</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0021">
+                <pc:Coords points="446,2105 2582,2105 2582,2181 446,2181"/>
+                <pc:TextEquiv conf="0.9726060628890991">
+                    <pc:Unicode>dNe Bewandtniß, wie in der vorigen Nummer. Wenn man 128 mit 125 divi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0022">
+                <pc:Coords points="454,2186 2581,2186 2581,2260 454,2260"/>
+                <pc:TextEquiv conf="0.9593194723129272">
+                    <pc:Unicode>diret, ſo koͤmmt 1H, und wenn man 125 mit 3 dividiret, ſo koͤmmt 413. Weil</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,2262 2582,2262 2582,2341 443,2341"/>
+                <pc:TextEquiv conf="0.9537018537521362">
+                    <pc:Unicode>,nun 3 bald ein Ganzes iſt: ſo wird aus 41 gemacht 4a, und daher entſtehet r.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2339 2510,2339 2510,2416 456,2416"/>
+                <pc:TextEquiv conf="0.998320460319519">
+                    <pc:Unicode>Dieſes Comma heißt ſonſt die kleinere Dieſis.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0025">
+                <pc:Coords points="609,2492 2582,2492 2582,2569 609,2569"/>
+                <pc:TextEquiv conf="0.9681221842765808">
+                    <pc:Unicode>(7) Das Comma zz heißt das Diaſchiſma. Aus der Diviſion des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0026">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0026.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,2573 2583,2573 2583,2651 457,2651"/>
+                <pc:TextEquiv conf="0.982086718082428">
+                    <pc:Unicode>groͤßern Termini mit dem kleinern entſtehet irr, und aus der Diviſion der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0027">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0027.png" comments="binarized,clipped"/>
+                <pc:Coords points="460,2650 2253,2650 2253,2729 460,2729"/>
+                <pc:TextEquiv conf="0.9435722827911377">
+                    <pc:Unicode>Zahl 2048 mit z entſtehet 89r. Daher koͤmmt vs.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0028">
+                <pc:Coords points="612,2804 2583,2804 2583,2882 612,2882"/>
+                <pc:TextEquiv conf="0.9894217252731323">
+                    <pc:Unicode>(i8) Dieſes Comma heißt das Schiſma. Wenn man die Terminos</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0029">
+                <pc:Coords points="447,2885 2076,2885 2076,2968 447,2968"/>
+                <pc:TextEquiv conf="0.9777292609214783">
+                    <pc:Unicode>auf vorhergehende Art unter ſich dividiret: ſo entſtehet Hr.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0030">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0030.png" comments="binarized,clipped"/>
+                <pc:Coords points="615,3039 2581,3039 2581,3117 615,3117"/>
+                <pc:TextEquiv conf="0.9876900315284729">
+                    <pc:Unicode>i9) Jn etwas deutlichern Zahlen kann der Proceß der gleichſchwebenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0031">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-141_region_id_2_region_id_2_line0031.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,3115 2561,3115 2561,3203 461,3203"/>
+                <pc:TextEquiv conf="0.9898008108139038">
+                    <pc:Unicode>Temperatur auf folgende Art vorgeſtellet werden:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(i4) Unempfindbar. Der Verfaſſer verſtehet dieſes ſo, daß die Diffe⸗
+renz des groͤßern und kleinern ganzen Tons, in dem Laufe eines Stuͤcks, nicht
+gemerket wird. Denn, wenn man auf einem Monochorde, auf der einen Seyte
+9 gegen 8, und auf der andern 10 gegen 9 anſchlaͤget: ſo findet ſich alsdenn ein
+den Ohren ſehr fuͤhlbarer Unterſcheid zwiſchen beyden.
+(15) Wenn man in den oberſten Terminum 5z1a44t mit dem unterſten
+5a4a88 dividiret: ſo krieget man zum Quotienten 1zr, und wenn man
+in 524288 mit 7153 dividiret: ſo bekoͤmmt man die ganze Zahl 73 nebſt einem
+Bruche, den man aber weglaͤſſet, um die Groͤße des Bruchs 4 ungefaͤhr
+in kleinern Zahlen, naͤmlich in abzubilden. Wer den Unterſcheid des his
+und c durch einen kurzen Weg aufs genaueſte haben, und auf dem Monochorde
+ſehen und hoͤren will, der ſteche den groͤßern ganzen Ton 9:8 ſechsmal hinter
+einander ab, und halte die durch die Halbirung der einen Seyte gefundene Octave
+c gegen das his der andern Seyte. Sechs ganze Toͤne in der Ration 9: 8
+bringen naͤmlich eben diejenige Ration fuͤr das his hervor, welche zwoͤlf Quin⸗
+ten in der Ration 3: 2 geben, naͤmlich 44H4. Um c d zu haben, theilet
+man die ganze Seyte in neun Theile, und ſchlaͤget einen Theil davon fuͤr d zu⸗
+ruͤck. Von dem Puncte d theilet man die Seyte wieder in 9 Theile, um e zu
+haben. Von e theilet man die Seyte wieder in 9 Theile, um fis zu haben,
+u. f. w. bis zu ais - his.
+.(6) Es hat mit dieſer ungefaͤhren Vorſtellung des Commatis 444 eben
+dNe Bewandtniß, wie in der vorigen Nummer. Wenn man 128 mit 125 divi⸗
+diret, ſo koͤmmt 1H, und wenn man 125 mit 3 dividiret, ſo koͤmmt 413. Weil
+,nun 3 bald ein Ganzes iſt: ſo wird aus 41 gemacht 4a, und daher entſtehet r.
+Dieſes Comma heißt ſonſt die kleinere Dieſis.
+(7) Das Comma zz heißt das Diaſchiſma. Aus der Diviſion des
+groͤßern Termini mit dem kleinern entſtehet irr, und aus der Diviſion der
+Zahl 2048 mit z entſtehet 89r. Daher koͤmmt vs.
+(i8) Dieſes Comma heißt das Schiſma. Wenn man die Terminos
+auf vorhergehende Art unter ſich dividiret: ſo entſtehet Hr.
+i9) Jn etwas deutlichern Zahlen kann der Proceß der gleichſchwebenden
+Temperatur auf folgende Art vorgeſtellet werden:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

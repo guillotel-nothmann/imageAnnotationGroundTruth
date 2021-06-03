@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:07</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:07</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-066.png" imageWidth="2973" imageHeight="3622" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-066-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-066.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="389,213 2505,213 2505,3307 389,3307"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="727,313 727,200 2143,200 2143,313 727,313"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="758,214 2122,214 2122,306 758,306"/>
+                <pc:TextEquiv conf="0.9632933735847473">
+                    <pc:Unicode>1Buch. XI Cap. Von der Diſſonanz.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XI Cap. Von der Diſſonanz.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2415,320 2415,206 2522,206 2522,320 2415,320"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2420,239 2504,239 2504,305 2420,305"/>
+                <pc:TextEquiv conf="0.9317895174026489">
+                    <pc:Unicode>47</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>47</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1296,440 1296,351 1593,351 1593,440 1296,440"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1325,363 1569,363 1569,440 1325,440"/>
+                <pc:TextEquiv conf="0.9687278270721436">
+                    <pc:Unicode>§. 95.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 95.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="360,1578 354,440 2523,447 2510,1578 360,1578"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="577,447 2499,447 2499,534 577,534"/>
+                <pc:TextEquiv conf="0.9953834414482117">
+                    <pc:Unicode>Man wird zu dieſem Vortheile gelangen, wenn man die Toͤne</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="399,534 2498,534 2498,621 399,621"/>
+                <pc:TextEquiv conf="0.9986143112182617">
+                    <pc:Unicode>g und f in einer Harmonie zuſammenbringet, das iſt, wenn man zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="397,621 2499,621 2499,709 397,709"/>
+                <pc:TextEquiv conf="0.9957271814346313">
+                    <pc:Unicode>der Harmonie von der Quinte g, naͤmlich zu g, h, d die zweyte Quinte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,705 2502,705 2502,795 396,795"/>
+                <pc:TextEquiv conf="0.9895738959312439">
+                    <pc:Unicode>f auf dieſe Weiſe hinzuthut g, h,d, f. Da dieſes hinzugefuͤgte f die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="398,796 2499,796 2499,883 398,883"/>
+                <pc:TextEquiv conf="0.9936404228210449">
+                    <pc:Unicode>Septime von g iſt, und dagegen diſſoniret (§. 18); ſo wird der Accord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,879 2500,879 2500,966 393,966"/>
+                <pc:TextEquiv conf="0.9947455525398254">
+                    <pc:Unicode>g,h, d, f aus dieſer Urſache ein Accord der Septime genennet. Sel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,971 2499,971 2499,1057 393,1057"/>
+                <pc:TextEquiv conf="0.9965147376060486">
+                    <pc:Unicode>biger dient dazu, die Quinte g von dem Stammtone zu unterſcheiden,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,1055 2496,1055 2496,1141 395,1141"/>
+                <pc:TextEquiv conf="0.9997179508209229">
+                    <pc:Unicode>als welcher allezeit ohne Vermiſchung und Veraͤnderung den von der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:Coords points="393,1143 2499,1143 2499,1232 393,1232"/>
+                <pc:TextEquiv conf="0.9859462380409241">
+                    <pc:Unicode>Natur ſelbſt gegebenen Accord c, e, g, c uͤber ſich hat. Hieraus ſiehet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,1233 2498,1233 2498,1320 394,1320"/>
+                <pc:TextEquiv conf="0.9867221117019653">
+                    <pc:Unicode>man, daß, wenn man von c zu g gehet, man zu gleicher Zeit von e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,1317 2496,1317 2496,1407 392,1407"/>
+                <pc:TextEquiv conf="0.9895029664039612">
+                    <pc:Unicode>zu f gehet, weil f zu dem Accorde von g gehoͤret, und der Ton e iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_3_region_id_3_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="389,1403 2498,1403 2498,1492 389,1492"/>
+                <pc:TextEquiv conf="0.9986486434936523">
+                    <pc:Unicode>vermittelſt dieſes Umſtands gaͤnzlich beſtimmt, weil die Toͤne f und g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0012">
+                <pc:Coords points="390,1493 1904,1493 1904,1578 390,1578"/>
+                <pc:TextEquiv conf="0.9979506134986877">
+                    <pc:Unicode>dieſem Tone nur allein zu gleicher Zeit zugehoͤren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man wird zu dieſem Vortheile gelangen, wenn man die Toͤne
+g und f in einer Harmonie zuſammenbringet, das iſt, wenn man zu
+der Harmonie von der Quinte g, naͤmlich zu g, h, d die zweyte Quinte
+f auf dieſe Weiſe hinzuthut g, h,d, f. Da dieſes hinzugefuͤgte f die
+Septime von g iſt, und dagegen diſſoniret (§. 18); ſo wird der Accord
+g,h, d, f aus dieſer Urſache ein Accord der Septime genennet. Sel
+biger dient dazu, die Quinte g von dem Stammtone zu unterſcheiden,
+als welcher allezeit ohne Vermiſchung und Veraͤnderung den von der
+Natur ſelbſt gegebenen Accord c, e, g, c uͤber ſich hat. Hieraus ſiehet
+man, daß, wenn man von c zu g gehet, man zu gleicher Zeit von e
+zu f gehet, weil f zu dem Accorde von g gehoͤret, und der Ton e iſt
+vermittelſt dieſes Umſtands gaͤnzlich beſtimmt, weil die Toͤne f und g
+dieſem Tone nur allein zu gleicher Zeit zugehoͤren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1327,1666 1327,1584 1593,1584 1593,1666 1327,1666"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1348,1594 1572,1594 1572,1666 1348,1666"/>
+                <pc:TextEquiv conf="0.9856302738189697">
+                    <pc:Unicode>§. 96.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 96.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="366,2792 366,1673 2535,1673 2510,2723 784,2799 366,2792"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="568,1673 2500,1673 2500,1760 568,1760"/>
+                <pc:TextEquiv conf="0.9916311502456665">
+                    <pc:Unicode>Laßt uns itzo ſehen, was wir zu der Harmonie von der Unter⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,1759 2496,1759 2496,1848 395,1848"/>
+                <pc:TextEquiv conf="0.9912737607955933">
+                    <pc:Unicode>quinte des Stammtons, naͤmlich zu f, a, c hinzufuͤgen werden, um</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="393,1850 2496,1850 2496,1933 393,1933"/>
+                <pc:TextEquiv conf="0.9905298948287964">
+                    <pc:Unicode>ſolche von der Harmonie des Stammtons zn unterſcheiden. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="390,1935 2494,1935 2494,2021 390,2021"/>
+                <pc:TextEquiv conf="0.9992585182189941">
+                    <pc:Unicode>ſollte anfaͤnglich glauben, daß man die zweyte Quinte, naͤmlich g der⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,2021 2493,2021 2493,2107 391,2107"/>
+                <pc:TextEquiv conf="0.9925277829170227">
+                    <pc:Unicode>ſelben zuſetzen muͤßte, damit der Stammton c, wenn er zu f gehet,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,2107 2491,2107 2491,2195 392,2195"/>
+                <pc:TextEquiv conf="0.9982733130455017">
+                    <pc:Unicode>auch zugleich zu g gienge, und daß der Ton dadurch beſtimmt wuͤr⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,2195 2491,2195 2491,2283 391,2283"/>
+                <pc:TextEquiv conf="0.9960052967071533">
+                    <pc:Unicode>de. Aber dieſe Einfuͤhrung des g in den Accord f, a,c wuͤrde zwo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,2281 2494,2281 2494,2369 393,2369"/>
+                <pc:TextEquiv conf="0.9901101589202881">
+                    <pc:Unicode>Secunden hinter einander verurſachen, naͤmlich f g und g, a, und die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,2367 2493,2367 2493,2452 392,2452"/>
+                <pc:TextEquiv conf="0.9936489462852478">
+                    <pc:Unicode>Vereinigung dieſer beyden Diſſonanzen wuͤrde dem Gehoͤre zu unan⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="390,2456 2489,2456 2489,2539 390,2539"/>
+                <pc:TextEquiv conf="0.9984766840934753">
+                    <pc:Unicode>genehm ſeyn; eine Ungleichheit, die man vermeiden muß. Denn,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,2538 2489,2538 2489,2625 392,2625"/>
+                <pc:TextEquiv conf="0.9975404739379883">
+                    <pc:Unicode>wenn wir, den Ton zu unterſcheiden, die Harmonie dieſer Quinte f in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,2624 2487,2624 2487,2715 391,2715"/>
+                <pc:TextEquiv conf="0.9962996244430542">
+                    <pc:Unicode>dem Grundbaße veraͤndern, ſo muß ſolches ſo wenig geſchehen, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0012">
+                <pc:Coords points="394,2721 394,2792 724,2798 730,2798 730,2721 394,2721"/>
+                <pc:TextEquiv conf="0.9948638081550598">
+                    <pc:Unicode>moͤglich iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Laßt uns itzo ſehen, was wir zu der Harmonie von der Unter⸗
+quinte des Stammtons, naͤmlich zu f, a, c hinzufuͤgen werden, um
+ſolche von der Harmonie des Stammtons zn unterſcheiden. Man
+ſollte anfaͤnglich glauben, daß man die zweyte Quinte, naͤmlich g der⸗
+ſelben zuſetzen muͤßte, damit der Stammton c, wenn er zu f gehet,
+auch zugleich zu g gienge, und daß der Ton dadurch beſtimmt wuͤr⸗
+de. Aber dieſe Einfuͤhrung des g in den Accord f, a,c wuͤrde zwo
+Secunden hinter einander verurſachen, naͤmlich f g und g, a, und die
+Vereinigung dieſer beyden Diſſonanzen wuͤrde dem Gehoͤre zu unan⸗
+genehm ſeyn; eine Ungleichheit, die man vermeiden muß. Denn,
+wenn wir, den Ton zu unterſcheiden, die Harmonie dieſer Quinte f in
+dem Grundbaße veraͤndern, ſo muß ſolches ſo wenig geſchehen, als
+moͤglich iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1308,2893 1308,2785 1561,2785 1561,2893 1308,2893"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1308,2804 1547,2804 1547,2893 1308,2893"/>
+                <pc:TextEquiv conf="0.9542899131774902">
+                    <pc:Unicode>§. 97.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 97.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="366,3247 366,2887 2522,2887 2517,3228 366,3247"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="570,2887 2484,2887 2484,2978 570,2978"/>
+                <pc:TextEquiv conf="0.997799277305603">
+                    <pc:Unicode>Wir werden aus dieſer Urſache, anſtatt des g, die Quinte da⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="390,2976 2484,2976 2484,3063 390,3063"/>
+                <pc:TextEquiv conf="0.995294451713562">
+                    <pc:Unicode>von, naͤmlich d nehmen, welches der Ton iſt, der am meiſten damit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,3063 2483,3063 2483,3149 392,3149"/>
+                <pc:TextEquiv conf="0.9885696768760681">
+                    <pc:Unicode>uͤbereinſtimmet, und wir bekommen alsdenn den Accord f, a, c, d zur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-066_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,3148 394,3243 819,3243 2465,3228 2465,3148 394,3148"/>
+                <pc:TextEquiv conf="0.989543616771698">
+                    <pc:Unicode>Harmonie fuͤr f. Dieſer Accord heißt der Sextquintenaccord.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir werden aus dieſer Urſache, anſtatt des g, die Quinte da⸗
+von, naͤmlich d nehmen, welches der Ton iſt, der am meiſten damit
+uͤbereinſtimmet, und wir bekommen alsdenn den Accord f, a, c, d zur
+Harmonie fuͤr f. Dieſer Accord heißt der Sextquintenaccord.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="2314,3317 2314,3215 2497,3215 2497,3317 2314,3317"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="2314,3215 2485,3215 2485,3307 2314,3307"/>
+                <pc:TextEquiv conf="0.9402694702148438">
+                    <pc:Unicode>Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:15</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:15</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-107.png" imageWidth="2973" imageHeight="3662" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-107-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-107.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="476,188 2644,188 2644,3249 476,3249"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+                <pc:RegionRefIndexed index="16" regionRef="region_id_16"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="450,176 450,298 584,298 584,176 450,176"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="476,202 563,202 563,278 476,278"/>
+                <pc:TextEquiv conf="0.7932708263397217">
+                    <pc:Unicode>88</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>88</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="1032,176 1032,285 2042,285 2042,176 1032,176"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1083,189 2013,189 2013,285 1083,285"/>
+                <pc:TextEquiv conf="0.9007843732833862">
+                    <pc:Unicode>I Buch. vII Cap. Regeln</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>I Buch. vII Cap. Regeln</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="949,310 949,457 2157,457 2157,310 949,310"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="993,345 2132,345 2132,455 993,455"/>
+                <pc:TextEquiv conf="0.9988182783126831">
+                    <pc:Unicode>Erſte Regel der Oberſtimme.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſte Regel der Oberſtimme.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1415,483 1415,579 1716,579 1716,483 1415,483"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1438,496 1697,496 1697,578 1438,578"/>
+                <pc:TextEquiv conf="0.9956283569335938">
+                    <pc:Unicode>§. 200.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 200.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="439,570 444,1302 2681,1302 2678,563 1749,565 1726,583 1416,584 1392,575 439,570"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,578 508,669 2635,669 2635,578 508,578"/>
+                <pc:TextEquiv conf="0.9992955923080444">
+                    <pc:Unicode>Wenn die Note, die in dem Accorde einer ſimpeln Dominante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,669 2637,669 2637,757 489,757"/>
+                <pc:TextEquiv conf="0.9993407726287842">
+                    <pc:Unicode>die Septime macht, in der Oberſtimme iſt: ſo muß ſolche in dem vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,760 2637,760 2637,847 488,847"/>
+                <pc:TextEquiv conf="0.9991319179534912">
+                    <pc:Unicode>hergehenden Accorde in eben derſelben Stimme als Conſonanz vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,846 2636,846 2636,937 486,937"/>
+                <pc:TextEquiv conf="0.9962066411972046">
+                    <pc:Unicode>hergehen. Man nennet dieſes eine Diſſonanz vorbereiten (§. 122).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,934 2636,934 2636,1024 492,1024"/>
+                <pc:TextEquiv conf="0.9971574544906616">
+                    <pc:Unicode>Z. E. ſetzet, daß die Grundbaßnote d iſt, und ſolche den Accord d, f,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1026 2638,1026 2638,1113 491,1113"/>
+                <pc:TextEquiv conf="0.9917568564414978">
+                    <pc:Unicode>a, c, uͤber ſich hat: ſo muß dieſes c, welches die Diſſonanz macht, in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1112 2639,1112 2639,1203 491,1203"/>
+                <pc:TextEquiv conf="0.9923731684684753">
+                    <pc:Unicode>dem vorhergehenden Accorde als eine Conſonanz gehoret worden ſeyn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:Coords points="486,1207 1456,1207 1456,1290 486,1290"/>
+                <pc:TextEquiv conf="0.9539816975593567">
+                    <pc:Unicode>(§. n8). S. Anmerk. (44).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn die Note, die in dem Accorde einer ſimpeln Dominante
+die Septime macht, in der Oberſtimme iſt: ſo muß ſolche in dem vor⸗
+hergehenden Accorde in eben derſelben Stimme als Conſonanz vor⸗
+hergehen. Man nennet dieſes eine Diſſonanz vorbereiten (§. 122).
+Z. E. ſetzet, daß die Grundbaßnote d iſt, und ſolche den Accord d, f,
+a, c, uͤber ſich hat: ſo muß dieſes c, welches die Diſſonanz macht, in
+dem vorhergehenden Accorde als eine Conſonanz gehoret worden ſeyn
+(§. n8). S. Anmerk. (44).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1406,1326 1410,1421 1684,1415 1681,1324 1406,1326"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1432,1328 1432,1417 1593,1417 1680,1415 1680,1328 1432,1328"/>
+                <pc:TextEquiv conf="0.9282122850418091">
+                    <pc:Unicode>§. 201.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 201.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="457,1404 457,1698 2694,1698 2694,1404 1729,1410 1677,1427 1398,1432 1349,1410 457,1404"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="677,1417 677,1505 2639,1505 2639,1417 677,1417"/>
+                <pc:TextEquiv conf="0.9996077418327332">
+                    <pc:Unicode>Es iſt gut zu merken, daß, nach denen vom Grundbaſſe von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,1504 2641,1504 2641,1597 490,1597"/>
+                <pc:TextEquiv conf="0.9907476305961609">
+                    <pc:Unicode>uns gegebenen Regeln, die Note c in dem Accorde der vor d herge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,1594 2545,1594 2545,1683 489,1683"/>
+                <pc:TextEquiv conf="0.98220294713974">
+                    <pc:Unicode>henden Grundbaßnote allezeit vorhanden ſeyn wird r).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es iſt gut zu merken, daß, nach denen vom Grundbaſſe von
+uns gegebenen Regeln, die Note c in dem Accorde der vor d herge⸗
+henden Grundbaßnote allezeit vorhanden ſeyn wird r).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1243,1717 1243,1839 1870,1839 1870,1717 1243,1717"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1276,1728 1853,1728 1853,1833 1276,1833"/>
+                <pc:TextEquiv conf="0.9990164637565613">
+                    <pc:Unicode>Zweyte Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zweyte Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1384,1858 1384,1935 1703,1935 1703,1858 1384,1858"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1417,1860 1692,1860 1692,1935 1417,1935"/>
+                <pc:TextEquiv conf="0.9972613453865051">
+                    <pc:Unicode>§. 202.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 202.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="451,1925 453,2136 2683,2118 2681,1915 1757,1925 1724,1942 1369,1945 1333,1925 451,1925"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="496,1941 496,2027 2642,2027 2642,1941 496,1941"/>
+                <pc:TextEquiv conf="0.9945948719978333">
+                    <pc:Unicode>Wenn im Grundbaſſe eine toniſche Dominante, oder ſimple Do⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="489,2033 489,2136 2642,2118 2642,2033 489,2033"/>
+                <pc:TextEquiv conf="0.9990944266319275">
+                    <pc:Unicode>minante vorhanden iſt, und die Diſſonanz in der Oberſtimme enthal⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn im Grundbaſſe eine toniſche Dominante, oder ſimple Do⸗
+minante vorhanden iſt, und die Diſſonanz in der Oberſtimme enthal⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="2532,2127 2532,2202 2651,2202 2651,2127 2532,2127"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2535,2133 2639,2133 2639,2189 2535,2189"/>
+                <pc:TextEquiv conf="0.9961532950401306">
+                    <pc:Unicode>ten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ten</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footnote">
+            <pc:Coords points="470,2216 470,3277 2656,3277 2656,2216 470,2216"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="491,2231 2641,2231 2641,2306 491,2306"/>
+                <pc:TextEquiv conf="0.9965049624443054">
+                    <pc:Unicode>fenweiſe, oder in diatoniſcher Ordnung ſolche ordentlicher Weiſe alle zu dem dar⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="492,2310 2599,2310 2599,2383 492,2383"/>
+                <pc:TextEquiv conf="0.9940574169158936">
+                    <pc:Unicode>fortgehen: ſo muͤſſen die Noten, die auf unter befindlichen Accorde gehoͤren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2392 2640,2392 2640,2482 490,2482"/>
+                <pc:TextEquiv conf="0.9963193535804749">
+                    <pc:Unicode>einen guten Tacttheil fallen, mit einer rr) Es iſt gleichwohl ein Fall, wo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="494,2473 2642,2473 2642,2562 494,2562"/>
+                <pc:TextEquiv conf="0.9904139637947083">
+                    <pc:Unicode>Harmonie begleitet werden; diejenigen, die Septime einer ſimpeln Dominante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2549 2643,2549 2643,2640 492,2640"/>
+                <pc:TextEquiv conf="0.9965002536773682">
+                    <pc:Unicode>die auf einen ſchlechten Tacttheil fallen, ſind ohne Vorbereitung in einem Geſange</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2623 2643,2623 2643,2722 496,2722"/>
+                <pc:TextEquiv conf="0.991537868976593">
+                    <pc:Unicode>durchgehende Noten. Doch muß vorkommen kann, naͤmlich wenn bey lie⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,2705 2641,2705 2641,2799 497,2799"/>
+                <pc:TextEquiv conf="0.9911771416664124">
+                    <pc:Unicode>man unterweilen auch die Harmonte der gendem Baſſe die Septime im Durch⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2784 2373,2784 2373,2888 496,2888"/>
+                <pc:TextEquiv conf="0.9938391447067261">
+                    <pc:Unicode>auf den ſchlechten Tacttheil fallenden No⸗ gange gebraucht wird, z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2863 2634,2863 2634,2994 496,2994"/>
+                <pc:TextEquiv conf="0.5116766095161438">
+                    <pc:Unicode>Xti cer:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2939 1692,2939 1692,3009 496,3009"/>
+                <pc:TextEquiv conf="0.9957610368728638">
+                    <pc:Unicode>vorhergehende Note heißt alsdenn eine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2922 2431,2922 2431,3089 496,3089"/>
+                <pc:TextEquiv conf="0.739892303943634">
+                    <pc:Unicode>et ain —</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,3026 2628,3026 2628,3238 574,3238"/>
+                <pc:TextEquiv conf="0.7044622898101807">
+                    <pc:Unicode>an ie n imite f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-107_region_id_11_region_id_11_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="497,3169 2348,3169 2348,3249 497,3249"/>
+                <pc:TextEquiv conf="0.9972258806228638">
+                    <pc:Unicode>Ordnung auf einander folgen: ſo muͤſſen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>fenweiſe, oder in diatoniſcher Ordnung ſolche ordentlicher Weiſe alle zu dem dar⸗
+fortgehen: ſo muͤſſen die Noten, die auf unter befindlichen Accorde gehoͤren.
+einen guten Tacttheil fallen, mit einer rr) Es iſt gleichwohl ein Fall, wo
+Harmonie begleitet werden; diejenigen, die Septime einer ſimpeln Dominante
+die auf einen ſchlechten Tacttheil fallen, ſind ohne Vorbereitung in einem Geſange
+durchgehende Noten. Doch muß vorkommen kann, naͤmlich wenn bey lie⸗
+man unterweilen auch die Harmonte der gendem Baſſe die Septime im Durch⸗
+auf den ſchlechten Tacttheil fallenden No⸗ gange gebraucht wird, z. E.
+Xti cer:
+vorhergehende Note heißt alsdenn eine
+et ain —
+an ie n imite f
+Ordnung auf einander folgen: ſo muͤſſen</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="1549,3085 1549,2241 469,2241 469,3085 1549,3085"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="491,2241 1528,2241 1528,2306 491,2306"/>
+                <pc:TextEquiv conf="0.9929073452949524">
+                    <pc:Unicode>fenweiſe, oder in diatoniſcher Ordnung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="492,2310 1533,2310 1533,2383 492,2383"/>
+                <pc:TextEquiv conf="0.9973281621932983">
+                    <pc:Unicode>fortgehen: ſo muͤſſen die Noten, die auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:Coords points="490,2392 1528,2392 1528,2460 490,2460"/>
+                <pc:TextEquiv conf="0.9973524808883667">
+                    <pc:Unicode>einen guten Tacttheil fallen, mit einer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:Coords points="494,2471 1527,2471 1527,2540 494,2540"/>
+                <pc:TextEquiv conf="0.993757963180542">
+                    <pc:Unicode>Harmonie begleitet werden; diejenigen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:Coords points="492,2549 1525,2549 1525,2618 492,2618"/>
+                <pc:TextEquiv conf="0.9895520210266113">
+                    <pc:Unicode>die auf einen ſchlechten Tacttheil fallen, ſind</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:Coords points="496,2623 1528,2623 1528,2702 496,2702"/>
+                <pc:TextEquiv conf="0.9984135627746582">
+                    <pc:Unicode>durchgehende Noten. Doch muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0006">
+                <pc:Coords points="497,2705 1528,2705 1528,2771 497,2771"/>
+                <pc:TextEquiv conf="0.9987736344337463">
+                    <pc:Unicode>man unterweilen auch die Harmonie der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0007">
+                <pc:Coords points="496,2784 1528,2784 1528,2852 496,2852"/>
+                <pc:TextEquiv conf="0.9982908964157104">
+                    <pc:Unicode>auf den ſchlechten Tacttheil fallenden No⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0008">
+                <pc:Coords points="496,2863 1531,2863 1531,2928 496,2928"/>
+                <pc:TextEquiv conf="0.9966028928756714">
+                    <pc:Unicode>te geben. Die auf dem guten Tacttheile</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0009">
+                <pc:Coords points="496,2939 1529,2939 1529,3009 496,3009"/>
+                <pc:TextEquiv conf="0.9958345293998718">
+                    <pc:Unicode>vorhergehende Note heißt alsdenn eine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0010">
+                <pc:Coords points="496,3013 1073,3013 1073,3085 496,3085"/>
+                <pc:TextEquiv conf="0.9893127083778381">
+                    <pc:Unicode>Wechſelnote (43.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>fenweiſe, oder in diatoniſcher Ordnung
+fortgehen: ſo muͤſſen die Noten, die auf
+einen guten Tacttheil fallen, mit einer
+Harmonie begleitet werden; diejenigen,
+die auf einen ſchlechten Tacttheil fallen, ſind
+durchgehende Noten. Doch muß
+man unterweilen auch die Harmonie der
+auf den ſchlechten Tacttheil fallenden No⸗
+te geben. Die auf dem guten Tacttheile
+vorhergehende Note heißt alsdenn eine
+Wechſelnote (43.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="paragraph">
+            <pc:Coords points="1562,3251 1562,3097 488,3097 488,3251 1562,3251"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="574,3097 1530,3097 1530,3163 574,3163"/>
+                <pc:TextEquiv conf="0.9996122717857361">
+                    <pc:Unicode>Wenn die Noten nicht in diatoniſcher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:Coords points="497,3169 1528,3169 1528,3249 497,3249"/>
+                <pc:TextEquiv conf="0.9958736896514893">
+                    <pc:Unicode>Ordnung auf einander folgen: ſo muͤſſen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn die Noten nicht in diatoniſcher
+Ordnung auf einander folgen: ſo muͤſſen</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="paragraph">
+            <pc:Coords points="1581,2388 1581,2228 2636,2228 2636,2388 1581,2388"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:Coords points="1606,2235 2636,2235 2636,2304 1606,2304"/>
+                <pc:TextEquiv conf="0.9945085644721985">
+                    <pc:Unicode>ſolche ordentlicher Weiſe alle zu dem dar⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0001">
+                <pc:Coords points="1606,2317 2599,2317 2599,2382 1606,2382"/>
+                <pc:TextEquiv conf="0.9819104671478271">
+                    <pc:Unicode>unter befindlichen Accorde gehoͤren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſolche ordentlicher Weiſe alle zu dem dar⸗
+unter befindlichen Accorde gehoͤren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_15" type="paragraph">
+            <pc:Coords points="1581,2887 1581,2394 2649,2394 2649,2887 1581,2887"/>
+            <pc:TextLine id="region_id_15_line0000">
+                <pc:Coords points="1683,2414 2640,2414 2640,2482 1683,2482"/>
+                <pc:TextEquiv conf="0.9982730746269226">
+                    <pc:Unicode>rr) Es iſt gleichwohl ein Fall, wo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0001">
+                <pc:Coords points="1603,2494 2642,2494 2642,2562 1603,2562"/>
+                <pc:TextEquiv conf="0.9966771602630615">
+                    <pc:Unicode>die Septime einer ſimpeln Dominante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0002">
+                <pc:Coords points="1604,2573 2643,2573 2643,2640 1604,2640"/>
+                <pc:TextEquiv conf="0.9990434050559998">
+                    <pc:Unicode>ohne Vorbereitung in einem Geſange</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0003">
+                <pc:Coords points="1603,2647 2643,2647 2643,2722 1603,2722"/>
+                <pc:TextEquiv conf="0.9931851625442505">
+                    <pc:Unicode>vorkommen kann, naͤmlich wenn bey lie⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0004">
+                <pc:Coords points="1604,2723 2641,2723 2641,2799 1604,2799"/>
+                <pc:TextEquiv conf="0.9994247555732727">
+                    <pc:Unicode>gendem Baſſe die Septime im Durch⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0005">
+                <pc:Coords points="1604,2808 2373,2808 2373,2887 1604,2887"/>
+                <pc:TextEquiv conf="0.9965806007385254">
+                    <pc:Unicode>gange gebraucht wird, z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>rr) Es iſt gleichwohl ein Fall, wo
+die Septime einer ſimpeln Dominante
+ohne Vorbereitung in einem Geſange
+vorkommen kann, naͤmlich wenn bey lie⸗
+gendem Baſſe die Septime im Durch⸗
+gange gebraucht wird, z. E.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_16" custom="staffNotation">
+            <pc:Coords points="1703,2900 1703,3251 2509,3251 2509,2900 1703,2900"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

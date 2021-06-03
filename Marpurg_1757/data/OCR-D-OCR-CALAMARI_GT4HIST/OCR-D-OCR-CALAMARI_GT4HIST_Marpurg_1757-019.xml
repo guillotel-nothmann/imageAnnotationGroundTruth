@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:41</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:41</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-019.png" imageWidth="2973" imageHeight="3679" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-019-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-019.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="440,181 2638,181 2638,3272 440,3272"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="1311,175 1726,168 1741,306 1341,292 1311,175"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1345,182 1345,292 1655,303 1725,303 1725,182 1345,182"/>
+                <pc:TextEquiv conf="0.9957703351974487">
+                    <pc:Unicode>Jnhalt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jnhalt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" custom="list" type="other">
+            <pc:Coords points="402,328 2657,306 2650,2619 446,2655 402,328"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="710,325 513,327 513,425 2598,425 2598,325 710,325"/>
+                <pc:TextEquiv conf="0.9711053371429443">
+                    <pc:Unicode>ig. Capitel, von dem chromatiſchen Klanggeſchlechte. 6i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:Coords points="493,426 2604,426 2604,517 493,517"/>
+                <pc:TextEquiv conf="0.9969250559806824">
+                    <pc:Unicode>19. Capitel, von dem enharmoniſchen Klanggeſchlechte. 64</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:Coords points="504,524 2605,524 2605,606 504,606"/>
+                <pc:TextEquiv conf="0.9965274930000305">
+                    <pc:Unicode>20. Capitel, von dem diatoniſch⸗ enharmoniſchen Klanggeſchlechte. 68</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0003">
+                <pc:Coords points="520,611 2601,611 2601,691 520,691"/>
+                <pc:TextEquiv conf="0.9851141571998596">
+                    <pc:Unicode>2i. Capitel, von dem chromatiſch⸗ enharmoniſchen Klanggeſchlechte. 69</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="519,701 2604,701 2604,798 519,798"/>
+                <pc:TextEquiv conf="0.9970547556877136">
+                    <pc:Unicode>22. Capitel, daß die Melodie aus der Harmonie entſpringet. 70</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="440,784 2608,784 2608,875 440,875"/>
+                <pc:TextEquiv conf="0.9795649647712708">
+                    <pc:Unicode>I. Buch, welches die vornehmſten Regeln der muſtcaliſchen Setzkunſt enthaͤlt. 72</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0006">
+                <pc:Coords points="450,891 2613,891 2613,961 450,961"/>
+                <pc:TextEquiv conf="0.9708452224731445">
+                    <pc:Unicode>Vorbereitung.72</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,969 2613,969 2613,1064 453,1064"/>
+                <pc:TextEquiv conf="0.9904057383537292">
+                    <pc:Unicode>,1. Capitel, von den verſchiedenen Benennungen eines Jntervalls. 72</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="526,1060 2614,1060 2614,1145 526,1145"/>
+                <pc:TextEquiv conf="0.9949607253074646">
+                    <pc:Unicode>2. Capitel, Vergleichung verſchiedener Jntervalle. 74</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,1143 2617,1143 2617,1242 500,1242"/>
+                <pc:TextEquiv conf="0.9990777373313904">
+                    <pc:Unicode>3. Capitel, von den verſchiedenen Schluͤſſeln, dem Werthe der Noten, dem Tacte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="602,1229 2615,1229 2615,1299 602,1299"/>
+                <pc:TextEquiv conf="0.9862731099128723">
+                    <pc:Unicode>und der Ruͤckung. 75</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="532,1314 2613,1314 2613,1406 532,1406"/>
+                <pc:TextEquiv conf="0.9973030686378479">
+                    <pc:Unicode>4. Capitel, worinnen die vornehmſten Accorde erklaͤret werden. 79</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1406 2615,1406 2615,1497 453,1497"/>
+                <pc:TextEquiv conf="0.9779777526855469">
+                    <pc:Unicode>5. Capitel, von dem Grundbaſſe. 82</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,1479 2614,1479 2614,1579 533,1579"/>
+                <pc:TextEquiv conf="0.9982889294624329">
+                    <pc:Unicode>6. Capitel, Regeln des Grundbaſſes.83</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="533,1577 2621,1577 2621,1672 533,1672"/>
+                <pc:TextEquiv conf="0.9969692826271057">
+                    <pc:Unicode>7. Capitel, Regeln, die man in der Oberſtimme gegen den Grundbaß in Obacht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="712,1661 2621,1661 2621,1742 712,1742"/>
+                <pc:TextEquiv conf="0.9971953630447388">
+                    <pc:Unicode>nehmen muß.87</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="537,1744 2621,1744 2621,1841 537,1841"/>
+                <pc:TextEquiv conf="0.994706392288208">
+                    <pc:Unicode>g. Capitel, von dem Generalbaſſe und deſſen Regeln. 89</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1837 2622,1837 2622,1939 485,1939"/>
+                <pc:TextEquiv conf="0.9859188199043274">
+                    <pc:Unicode>9. Capitel, von einigen Freyheiten des Grundbaſſes. 94</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1920 2623,1920 2623,2014 455,2014"/>
+                <pc:TextEquiv conf="0.997260332107544">
+                    <pc:Unicode>10. Capitel, von einigen Freyheiten in der Oberſtimme und in dem General⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0019">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0019.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2004 2623,2004 2623,2088 455,2088"/>
+                <pc:TextEquiv conf="0.9673683047294617">
+                    <pc:Unicode>baſſe.100</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0020">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0020.png" comments="binarized,clipped"/>
+                <pc:Coords points="546,2090 2625,2090 2625,2185 546,2185"/>
+                <pc:TextEquiv conf="0.9853526949882507">
+                    <pc:Unicode>n. Capitel, den Grundbaß zu einem bezifferten Generalbaſſe zu finden. 101</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0021">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0021.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,2182 2628,2182 2628,2280 475,2280"/>
+                <pc:TextEquiv conf="0.9947479367256165">
+                    <pc:Unicode>,12. Capitel, was es heißt: in einem Tone ſeyn, oder aus einem Tone gehen. 104</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0022">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0022.png" comments="binarized,clipped"/>
+                <pc:Coords points="551,2271 2626,2271 2626,2365 551,2365"/>
+                <pc:TextEquiv conf="0.9901689887046814">
+                    <pc:Unicode>13. Capitel, den Grundbaß zu einem gegebenen Geſange zu ſinden. 109</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0023">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0023.png" comments="binarized,clipped"/>
+                <pc:Coords points="552,2357 2628,2357 2628,2458 552,2458"/>
+                <pc:TextEquiv conf="0.9783005714416504">
+                    <pc:Unicode>14. Capitel, von dem chromatiſchen Geſange.117</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0024">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0024.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,2443 2628,2443 2628,2547 476,2547"/>
+                <pc:TextEquiv conf="0.9881404638290405">
+                    <pc:Unicode>Anmerkungen des Ueberſetzers, uͤber einige Oerter der vorhergehenden dAlem⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0025">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-019_region_id_1_region_id_1_line0025.png" comments="binarized,clipped"/>
+                <pc:Coords points="729,2514 2628,2514 2628,2616 729,2616"/>
+                <pc:TextEquiv conf="0.992354691028595">
+                    <pc:Unicode>bertiſchen Einleitung in die muſicaliſche Setzkunſt. 119</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ig. Capitel, von dem chromatiſchen Klanggeſchlechte. 6i
+19. Capitel, von dem enharmoniſchen Klanggeſchlechte. 64
+20. Capitel, von dem diatoniſch⸗ enharmoniſchen Klanggeſchlechte. 68
+2i. Capitel, von dem chromatiſch⸗ enharmoniſchen Klanggeſchlechte. 69
+22. Capitel, daß die Melodie aus der Harmonie entſpringet. 70
+I. Buch, welches die vornehmſten Regeln der muſtcaliſchen Setzkunſt enthaͤlt. 72
+Vorbereitung.72
+,1. Capitel, von den verſchiedenen Benennungen eines Jntervalls. 72
+2. Capitel, Vergleichung verſchiedener Jntervalle. 74
+3. Capitel, von den verſchiedenen Schluͤſſeln, dem Werthe der Noten, dem Tacte
+und der Ruͤckung. 75
+4. Capitel, worinnen die vornehmſten Accorde erklaͤret werden. 79
+5. Capitel, von dem Grundbaſſe. 82
+6. Capitel, Regeln des Grundbaſſes.83
+7. Capitel, Regeln, die man in der Oberſtimme gegen den Grundbaß in Obacht
+nehmen muß.87
+g. Capitel, von dem Generalbaſſe und deſſen Regeln. 89
+9. Capitel, von einigen Freyheiten des Grundbaſſes. 94
+10. Capitel, von einigen Freyheiten in der Oberſtimme und in dem General⸗
+baſſe.100
+n. Capitel, den Grundbaß zu einem bezifferten Generalbaſſe zu finden. 101
+,12. Capitel, was es heißt: in einem Tone ſeyn, oder aus einem Tone gehen. 104
+13. Capitel, den Grundbaß zu einem gegebenen Geſange zu ſinden. 109
+14. Capitel, von dem chromatiſchen Geſange.117
+Anmerkungen des Ueberſetzers, uͤber einige Oerter der vorhergehenden dAlem⸗
+bertiſchen Einleitung in die muſicaliſche Setzkunſt. 119</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footer">
+            <pc:Coords points="2372,3164 2637,3164 2637,3272 2372,3272 2372,3164"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="2372,3164 2637,3164 2637,3272 2372,3272"/>
+                <pc:TextEquiv conf="0.9957371950149536">
+                    <pc:Unicode>Einlei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einlei⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_2" type="decoration">
+            <pc:Coords points="1428,2808 1685,2808 1685,3010 1428,3010 1428,2808"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

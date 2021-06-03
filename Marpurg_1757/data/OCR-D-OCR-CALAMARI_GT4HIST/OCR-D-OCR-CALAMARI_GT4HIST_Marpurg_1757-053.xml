@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:39:27</pc:Created>
+        <pc:LastChange>2021-01-10T21:39:27</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-053.png" imageWidth="2973" imageHeight="3700" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-053-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-053.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="432,175 2626,175 2626,3382 432,3382"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="416,177 416,278 538,278 538,177 416,177"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="447,201 526,201 526,271 447,271"/>
+                <pc:TextEquiv conf="0.999794602394104">
+                    <pc:Unicode>34</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>34</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="735,146 735,268 2320,268 2320,146 735,146"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="756,176 2299,176 2299,268 756,268"/>
+                <pc:TextEquiv conf="0.9522694945335388">
+                    <pc:Unicode>1Buch. VI Cap. Von der Temperatur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. VI Cap. Von der Temperatur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="447,314 447,521 2685,521 2685,314 447,314"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,323 2618,323 2618,425 454,425"/>
+                <pc:TextEquiv conf="0.9994202852249146">
+                    <pc:Unicode>Quinten, eine jede etwas, veraͤndert, und daß ſie alle gleich, eine ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,417 2122,417 2122,507 455,507"/>
+                <pc:TextEquiv conf="0.9994949102401733">
+                    <pc:Unicode>viel als die andre, werden veraͤndert werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Quinten, eine jede etwas, veraͤndert, und daß ſie alle gleich, eine ſo
+viel als die andre, werden veraͤndert werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1388,536 1388,633 1642,633 1642,536 1388,536"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1424,553 1619,553 1619,633 1424,633"/>
+                <pc:TextEquiv conf="0.9294281005859375">
+                    <pc:Unicode>§. 71.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 71.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="431,1119 431,638 2654,638 2650,1104 431,1119"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="634,649 2625,649 2625,733 634,733"/>
+                <pc:TextEquiv conf="0.9994306564331055">
+                    <pc:Unicode>Hierinnen beſtehet die Theorie der Temperatur. Weil es aber</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="457,735 2624,735 2624,828 457,828"/>
+                <pc:TextEquiv conf="0.9992313385009766">
+                    <pc:Unicode>in der Ausuͤbung ſehr ſchwer fallen wuͤrde, die Gleichheit der halben</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,829 2622,829 2622,917 457,917"/>
+                <pc:TextEquiv conf="0.9994015693664551">
+                    <pc:Unicode>Toͤne bey der Abſtimmung einer Orgel oder eines Claviers zu treffen:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,910 2623,910 2623,1015 454,1015"/>
+                <pc:TextEquiv conf="0.9849592447280884">
+                    <pc:Unicode>ſo hat der Hr. Rameau in ſeinem Tractate Génération barmonique</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="450,1004 2618,1004 2618,1099 450,1099"/>
+                <pc:TextEquiv conf="0.9997871518135071">
+                    <pc:Unicode>folgendes Mittel zur gleichen Abaͤnderung der Quinten vorgeſchlagen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Hierinnen beſtehet die Theorie der Temperatur. Weil es aber
+in der Ausuͤbung ſehr ſchwer fallen wuͤrde, die Gleichheit der halben
+Toͤne bey der Abſtimmung einer Orgel oder eines Claviers zu treffen:
+ſo hat der Hr. Rameau in ſeinem Tractate Génération barmonique
+folgendes Mittel zur gleichen Abaͤnderung der Quinten vorgeſchlagen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1399,1230 1399,1129 1642,1129 1642,1230 1399,1230"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1426,1141 1640,1141 1640,1222 1426,1222"/>
+                <pc:TextEquiv conf="0.9971819519996643">
+                    <pc:Unicode>§. 72.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 72.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="431,2298 431,1240 2614,1240 2614,2298 431,2298"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="629,1240 2614,1240 2614,1327 629,1327"/>
+                <pc:TextEquiv conf="0.9993022680282593">
+                    <pc:Unicode>Man nehme in der Mitte des Griffbrets eine Taſte, welche</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1322 2614,1322 2614,1418 451,1418"/>
+                <pc:TextEquiv conf="0.9950895309448242">
+                    <pc:Unicode>man will, z. E. C; ſtimme die Quinte G dazu zufoͤrderſt ganz rein,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,1413 2614,1413 2614,1502 452,1502"/>
+                <pc:TextEquiv conf="0.9977805018424988">
+                    <pc:Unicode>und erniedrige ſolche hernach um ein weniges, ſo daß es faſt gar nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,1503 2614,1503 2614,1594 449,1594"/>
+                <pc:TextEquiv conf="0.9992226362228394">
+                    <pc:Unicode>zu merken iſt. Man ſtimme weiter die Quinte D von der vorherge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1589 2614,1589 2614,1681 451,1681"/>
+                <pc:TextEquiv conf="0.9994021058082581">
+                    <pc:Unicode>henden erniedrigten Quinte G, erniedrige dieſe zweyte Quinte D</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:Coords points="450,1683 2614,1683 2614,1769 450,1769"/>
+                <pc:TextEquiv conf="0.9993575811386108">
+                    <pc:Unicode>ebenfalls um ein geringes, ſo wie die erſte, und fahre auf ſolche Art</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,1775 2614,1775 2614,1862 449,1862"/>
+                <pc:TextEquiv conf="0.999708354473114">
+                    <pc:Unicode>von einer Quinte zur andern aufſteigend fort. Weil das Ohr die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,1860 2614,1860 2614,1951 449,1951"/>
+                <pc:TextEquiv conf="0.9969395995140076">
+                    <pc:Unicode>Toͤne in der Hoͤhe nicht aufs genaueſte zu pruͤfen im Stande iſt, ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,1951 2614,1951 2614,2034 451,2034"/>
+                <pc:TextEquiv conf="0.9968144297599792">
+                    <pc:Unicode>iſt noͤthig, wenn die Quinten zu hoch werden, die Unteroctave der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0009">
+                <pc:Coords points="450,2039 2613,2039 2613,2124 450,2124"/>
+                <pc:TextEquiv conf="0.9994356036186218">
+                    <pc:Unicode>letzten Quinte zu nehmen, und ſolche ganz rein zu ſtimmen. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,2127 2612,2127 2612,2219 446,2219"/>
+                <pc:TextEquiv conf="0.9979560971260071">
+                    <pc:Unicode>ſetzet den Proceß auf dieſe Art fort, und koͤmmt endlich zur letzten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-053_region_id_6_region_id_6_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,2217 2609,2217 2609,2298 446,2298"/>
+                <pc:TextEquiv conf="0.9943330883979797">
+                    <pc:Unicode>Quinte eis: his, welche ſchon ihre gehoͤrige Stimmung haben muß,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man nehme in der Mitte des Griffbrets eine Taſte, welche
+man will, z. E. C; ſtimme die Quinte G dazu zufoͤrderſt ganz rein,
+und erniedrige ſolche hernach um ein weniges, ſo daß es faſt gar nicht
+zu merken iſt. Man ſtimme weiter die Quinte D von der vorherge
+henden erniedrigten Quinte G, erniedrige dieſe zweyte Quinte D
+ebenfalls um ein geringes, ſo wie die erſte, und fahre auf ſolche Art
+von einer Quinte zur andern aufſteigend fort. Weil das Ohr die
+Toͤne in der Hoͤhe nicht aufs genaueſte zu pruͤfen im Stande iſt, ſo
+iſt noͤthig, wenn die Quinten zu hoch werden, die Unteroctave der
+letzten Quinte zu nehmen, und ſolche ganz rein zu ſtimmen. Man
+ſetzet den Proceß auf dieſe Art fort, und koͤmmt endlich zur letzten
+Quinte eis: his, welche ſchon ihre gehoͤrige Stimmung haben muß,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footer">
+            <pc:Coords points="2462,2395 2462,2314 2634,2314 2634,2395 2462,2395"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="2500,2325 2609,2325 2609,2385 2500,2385"/>
+                <pc:TextEquiv conf="0.9997004866600037">
+                    <pc:Unicode>das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>das</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footnote">
+            <pc:Coords points="366,2405 366,3412 2644,3412 2644,2405 366,2405"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="442,2438 2609,2438 2609,2510 442,2510"/>
+                <pc:TextEquiv conf="0.9960509538650513">
+                    <pc:Unicode>Oetave, die Quinte das vollkommenſte gleich viel verlieren muͤßen, eine ſo viel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="440,2513 2608,2513 2608,2588 440,2588"/>
+                <pc:TextEquiv conf="0.9990377426147461">
+                    <pc:Unicode>Jntervall iſt, und wan ſolche, ſo wenig wie die andre. Dieſes geſchieht in der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="443,2597 2609,2597 2609,2671 443,2671"/>
+                <pc:TextEquiv conf="0.9997094869613647">
+                    <pc:Unicode>als moͤglich, von ihrer arithmetiſchen von uns vorgeſchlagenen Temperatur, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="444,2677 2609,2677 2609,2745 444,2745"/>
+                <pc:TextEquiv conf="0.9981040358543396">
+                    <pc:Unicode>Reinigkeit entfernen muß. wenn die Terz darinnen mehr leidet, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="519,2756 2609,2756 2609,2828 519,2828"/>
+                <pc:TextEquiv conf="0.9995993375778198">
+                    <pc:Unicode>Ferner hat man aus der Progreßion die Quinte, ſo geſchieht dieſes zu Folge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="440,2833 2606,2833 2606,2908 440,2908"/>
+                <pc:TextEquiv conf="0.9935541152954102">
+                    <pc:Unicode>der großen Terzen c, e, gis und his, der Differenz, die ſich zwiſchen dem Gra⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:Coords points="438,2912 2604,2912 2604,2984 438,2984"/>
+                <pc:TextEquiv conf="0.9975631833076477">
+                    <pc:Unicode>geſehen, daß dieſes lezte his ſehr viel von c de der Vollkommenheit dieſer Jntervallen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:Coords points="438,2990 2604,2990 2604,3061 438,3061"/>
+                <pc:TextEquiv conf="0.9887968301773071">
+                    <pc:Unicode>unterſchieden iſt ( Anmerk. r). Hieraus ereignet, und dieſer Differenz iſt die vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:Coords points="435,3071 2604,3071 2604,3142 435,3142"/>
+                <pc:TextEquiv conf="0.9918535351753235">
+                    <pc:Unicode>folget, daß, wenn dieſes lezte his mit der geſchlagene Temperatur vollkommen ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:Coords points="436,3147 2602,3147 2602,3217 436,3217"/>
+                <pc:TextEquiv conf="0.9856935739517212">
+                    <pc:Unicode>Octave von c im Einklange gehen ſoll, maͤß. Dieſer Unterſcheid der Veraͤn⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:Coords points="434,3226 2604,3226 2604,3305 434,3305"/>
+                <pc:TextEquiv conf="0.9992459416389465">
+                    <pc:Unicode>und zu dem Ende eine jede Terz um ein derung iſt alſo vielmehr ein Vortheil, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:Coords points="432,3307 2539,3307 2539,3382 432,3382"/>
+                <pc:TextEquiv conf="0.9946535229682922">
+                    <pc:Unicode>geringes veraͤndert werden muß, ſie alle eine Ungleichheit.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Oetave, die Quinte das vollkommenſte gleich viel verlieren muͤßen, eine ſo viel
+Jntervall iſt, und wan ſolche, ſo wenig wie die andre. Dieſes geſchieht in der
+als moͤglich, von ihrer arithmetiſchen von uns vorgeſchlagenen Temperatur, und
+Reinigkeit entfernen muß. wenn die Terz darinnen mehr leidet, als
+Ferner hat man aus der Progreßion die Quinte, ſo geſchieht dieſes zu Folge
+der großen Terzen c, e, gis und his, der Differenz, die ſich zwiſchen dem Gra⸗
+geſehen, daß dieſes lezte his ſehr viel von c de der Vollkommenheit dieſer Jntervallen
+unterſchieden iſt ( Anmerk. r). Hieraus ereignet, und dieſer Differenz iſt die vor⸗
+folget, daß, wenn dieſes lezte his mit der geſchlagene Temperatur vollkommen ge⸗
+Octave von c im Einklange gehen ſoll, maͤß. Dieſer Unterſcheid der Veraͤn⸗
+und zu dem Ende eine jede Terz um ein derung iſt alſo vielmehr ein Vortheil, als
+geringes veraͤndert werden muß, ſie alle eine Ungleichheit.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="416,2425 416,3382 1490,3382 1505,2420 416,2425"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="442,2438 1495,2438 1495,2510 442,2510"/>
+                <pc:TextEquiv conf="0.9879087805747986">
+                    <pc:Unicode>Oetave, die Quinte das vollkommenſte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="440,2518 1492,2518 1492,2588 440,2588"/>
+                <pc:TextEquiv conf="0.9993436932563782">
+                    <pc:Unicode>Jntervall iſt, und wan ſolche, ſo wenig</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="443,2597 1490,2597 1490,2667 443,2667"/>
+                <pc:TextEquiv conf="0.9996459484100342">
+                    <pc:Unicode>als moͤglich, von ihrer arithmetiſchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="444,2677 1102,2677 1102,2745 444,2745"/>
+                <pc:TextEquiv conf="0.9978130459785461">
+                    <pc:Unicode>Reinigkeit entfernen muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:Coords points="519,2756 1489,2756 1489,2822 519,2822"/>
+                <pc:TextEquiv conf="0.9994876980781555">
+                    <pc:Unicode>Ferner hat man aus der Progreßion</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:Coords points="440,2833 1487,2833 1487,2908 440,2908"/>
+                <pc:TextEquiv conf="0.9958130717277527">
+                    <pc:Unicode>der großen Terzen c, e, gis und his,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:Coords points="438,2912 1487,2912 1487,2984 438,2984"/>
+                <pc:TextEquiv conf="0.9968248009681702">
+                    <pc:Unicode>geſehen, daß dieſes lezte his ſehr viel von c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:Coords points="438,2990 1487,2990 1487,3059 438,3059"/>
+                <pc:TextEquiv conf="0.9836919903755188">
+                    <pc:Unicode>unterſchieden iſt ( Anmerk. r). Hieraus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0008">
+                <pc:Coords points="435,3071 1488,3071 1488,3142 435,3142"/>
+                <pc:TextEquiv conf="0.9943949580192566">
+                    <pc:Unicode>folget, daß, wenn dieſes lezte his mit der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0009">
+                <pc:Coords points="436,3150 1481,3150 1481,3216 436,3216"/>
+                <pc:TextEquiv conf="0.9948288202285767">
+                    <pc:Unicode>Octave von c im Einklange gehen ſoll,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0010">
+                <pc:Coords points="434,3228 1481,3228 1481,3299 434,3299"/>
+                <pc:TextEquiv conf="0.9970136880874634">
+                    <pc:Unicode>und zu dem Ende eine jede Terz um ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0011">
+                <pc:Coords points="432,3307 1480,3307 1480,3382 432,3382"/>
+                <pc:TextEquiv conf="0.9984760284423828">
+                    <pc:Unicode>geringes veraͤndert werden muß, ſie alle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Oetave, die Quinte das vollkommenſte
+Jntervall iſt, und wan ſolche, ſo wenig
+als moͤglich, von ihrer arithmetiſchen
+Reinigkeit entfernen muß.
+Ferner hat man aus der Progreßion
+der großen Terzen c, e, gis und his,
+geſehen, daß dieſes lezte his ſehr viel von c
+unterſchieden iſt ( Anmerk. r). Hieraus
+folget, daß, wenn dieſes lezte his mit der
+Octave von c im Einklange gehen ſoll,
+und zu dem Ende eine jede Terz um ein
+geringes veraͤndert werden muß, ſie alle</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="1541,2425 1536,3398 2619,3392 2619,2430 1541,2425"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="1559,2438 2609,2438 2609,2510 1559,2510"/>
+                <pc:TextEquiv conf="0.9996400475502014">
+                    <pc:Unicode>gleich viel verlieren muͤßen, eine ſo viel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="1559,2513 2608,2513 2608,2587 1559,2587"/>
+                <pc:TextEquiv conf="0.9985677599906921">
+                    <pc:Unicode>wie die andre. Dieſes geſchieht in der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="1556,2598 2609,2598 2609,2671 1556,2671"/>
+                <pc:TextEquiv conf="0.9997947812080383">
+                    <pc:Unicode>von uns vorgeſchlagenen Temperatur, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="1556,2678 2609,2678 2609,2745 1556,2745"/>
+                <pc:TextEquiv conf="0.9985357522964478">
+                    <pc:Unicode>wenn die Terz darinnen mehr leidet, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="1553,2757 2609,2757 2609,2828 1553,2828"/>
+                <pc:TextEquiv conf="0.9989559054374695">
+                    <pc:Unicode>die Quinte, ſo geſchieht dieſes zu Folge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:Coords points="1553,2837 2606,2837 2606,2903 1553,2903"/>
+                <pc:TextEquiv conf="0.9893283247947693">
+                    <pc:Unicode>der Differenz, die ſich zwiſchen dem Gra⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:Coords points="1552,2914 2604,2914 2604,2981 1552,2981"/>
+                <pc:TextEquiv conf="0.9996159672737122">
+                    <pc:Unicode>de der Vollkommenheit dieſer Jntervallen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:Coords points="1551,2995 2604,2995 2604,3061 1551,3061"/>
+                <pc:TextEquiv conf="0.9964272379875183">
+                    <pc:Unicode>ereignet, und dieſer Differenz iſt die vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:Coords points="1550,3072 2604,3072 2604,3139 1550,3139"/>
+                <pc:TextEquiv conf="0.9991898536682129">
+                    <pc:Unicode>geſchlagene Temperatur vollkommen ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0009">
+                <pc:Coords points="1551,3147 2602,3147 2602,3217 1551,3217"/>
+                <pc:TextEquiv conf="0.9936291575431824">
+                    <pc:Unicode>maͤß. Dieſer Unterſcheid der Veraͤn⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0010">
+                <pc:Coords points="1548,3226 2604,3226 2604,3305 1548,3305"/>
+                <pc:TextEquiv conf="0.9992949366569519">
+                    <pc:Unicode>derung iſt alſo vielmehr ein Vortheil, als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0011">
+                <pc:Coords points="1546,3309 2539,3309 2539,3377 1546,3377"/>
+                <pc:TextEquiv conf="0.9724220037460327">
+                    <pc:Unicode>eine Ungleichheit.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gleich viel verlieren muͤßen, eine ſo viel
+wie die andre. Dieſes geſchieht in der
+von uns vorgeſchlagenen Temperatur, und
+wenn die Terz darinnen mehr leidet, als
+die Quinte, ſo geſchieht dieſes zu Folge
+der Differenz, die ſich zwiſchen dem Gra⸗
+de der Vollkommenheit dieſer Jntervallen
+ereignet, und dieſer Differenz iſt die vor⸗
+geſchlagene Temperatur vollkommen ge⸗
+maͤß. Dieſer Unterſcheid der Veraͤn⸗
+derung iſt alſo vielmehr ein Vortheil, als
+eine Ungleichheit.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

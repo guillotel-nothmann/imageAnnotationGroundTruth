@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:41:19</pc:Created>
+        <pc:LastChange>2021-01-10T21:41:19</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-089.png" imageWidth="2973" imageHeight="3641" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-089-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-089.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="450,166 2595,166 2595,3283 450,3283"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="424,271 424,162 551,162 551,271 424,271"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="450,176 537,176 537,263 450,263"/>
+                <pc:TextEquiv conf="0.9749298691749573">
+                    <pc:Unicode>70</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>70</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="825,258 825,150 2223,150 2223,258 825,258"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="851,166 2188,166 2188,257 851,257"/>
+                <pc:TextEquiv conf="0.9405449628829956">
+                    <pc:Unicode>1Buch. XXIl Cap. Daß die Melodie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XXIl Cap. Daß die Melodie</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1365,423 1365,309 1657,309 1657,423 1365,423"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1385,316 1442,316 1442,407 1385,407"/>
+                <pc:TextEquiv conf="0.7029004096984863">
+                    <pc:Unicode>s.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="1525,328 1638,328 1638,409 1525,409"/>
+                <pc:TextEquiv conf="0.817369818687439">
+                    <pc:Unicode>15i.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>s.
+15i.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="430,626 430,417 2572,417 2572,626 430,626"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,435 2572,435 2572,537 456,537"/>
+                <pc:TextEquiv conf="0.9994747042655945">
+                    <pc:Unicode>Das aus der Fortſchreitung der Terzen beſtehende chromati</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,522 2572,522 2572,626 457,626"/>
+                <pc:TextEquiv conf="0.9976769089698792">
+                    <pc:Unicode>ſche Klanggeſchlecht iſt nach dem vorhergehenden das natuͤrlichſte.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Das aus der Fortſchreitung der Terzen beſtehende chromati
+ſche Klanggeſchlecht iſt nach dem vorhergehenden das natuͤrlichſte.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1384,734 1384,652 1644,652 1644,734 1384,734"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1401,658 1639,658 1639,734 1401,734"/>
+                <pc:TextEquiv conf="0.9895873665809631">
+                    <pc:Unicode>§. 152.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 152.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="430,1548 430,754 2617,754 2617,1548 430,1548"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="628,759 2591,759 2591,853 628,853"/>
+                <pc:TextEquiv conf="0.9981952905654907">
+                    <pc:Unicode>Das enharmoniſche Klanggeſchlecht endlich iſt das am we⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="458,857 2591,857 2591,945 458,945"/>
+                <pc:TextEquiv conf="0.9978629946708679">
+                    <pc:Unicode>nigſten angenehmſte von allen, weil der daſſelbe hervorbringende</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="458,946 2592,946 2592,1030 458,1030"/>
+                <pc:TextEquiv conf="0.9972952008247375">
+                    <pc:Unicode>Grundbaß nicht unmittelbar von der Natur angezeiget wird. Der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:Coords points="461,1031 2591,1031 2591,1120 461,1120"/>
+                <pc:TextEquiv conf="0.9911267757415771">
+                    <pc:Unicode>Viertheilston, der daſſelbe ausmacht, und der fuͤr ſich ſelbſt von dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1121 2591,1121 2591,1209 457,1209"/>
+                <pc:TextEquiv conf="0.9989977478981018">
+                    <pc:Unicode>Gehoͤre nicht beſtimmet werden kann, bringet keine, und kann keine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1209 2591,1209 2591,1297 455,1297"/>
+                <pc:TextEquiv conf="0.9995368123054504">
+                    <pc:Unicode>Wirkung hervorbringen, als in ſo weit man den Grundbaß dabey</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,1294 2594,1294 2594,1380 455,1380"/>
+                <pc:TextEquiv conf="0.9995316863059998">
+                    <pc:Unicode>denket, und die Fortſchreitung dieſes Grundbaſſes iſt gar nicht natuͤr⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,1384 2592,1384 2592,1473 459,1473"/>
+                <pc:TextEquiv conf="0.9984022974967957">
+                    <pc:Unicode>lich, weil er von zween Toͤnen formiret wird, die in der Terzenfort⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1468 2581,1468 2581,1548 457,1548"/>
+                <pc:TextEquiv conf="0.9905937314033508">
+                    <pc:Unicode>ſchreitung gar weit von einander entfernet ſind (§. 144.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Das enharmoniſche Klanggeſchlecht endlich iſt das am we⸗
+nigſten angenehmſte von allen, weil der daſſelbe hervorbringende
+Grundbaß nicht unmittelbar von der Natur angezeiget wird. Der
+Viertheilston, der daſſelbe ausmacht, und der fuͤr ſich ſelbſt von dem
+Gehoͤre nicht beſtimmet werden kann, bringet keine, und kann keine
+Wirkung hervorbringen, als in ſo weit man den Grundbaß dabey
+denket, und die Fortſchreitung dieſes Grundbaſſes iſt gar nicht natuͤr⸗
+lich, weil er von zween Toͤnen formiret wird, die in der Terzenfort⸗
+ſchreitung gar weit von einander entfernet ſind (§. 144.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="424,2006 424,1732 2604,1732 2604,2006 424,2006"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="690,1732 2420,1732 2420,1868 690,1868"/>
+                <pc:TextEquiv conf="0.9991742968559265">
+                    <pc:Unicode>Zwey und zwanzigſtes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="454,1874 2592,1874 2592,2006 454,2006"/>
+                <pc:TextEquiv conf="0.9958786368370056">
+                    <pc:Unicode>Daß die Melodie aus der Harmonie entſpringt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zwey und zwanzigſtes Capitel.
+Daß die Melodie aus der Harmonie entſpringt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1390,2145 1390,2050 1638,2050 1638,2145 1390,2145"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1409,2060 1632,2060 1632,2139 1409,2139"/>
+                <pc:TextEquiv conf="0.9101150631904602">
+                    <pc:Unicode>§. 153.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 153.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="drop-capital">
+            <pc:Coords points="437,2400 437,2139 640,2139 640,2400 437,2400"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="455,2163 640,2163 640,2388 455,2388"/>
+                <pc:TextEquiv conf="0.9969667196273804">
+                    <pc:Unicode>A</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>A</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="2605,2521 2598,2158 653,2158 647,2432 437,2426 437,2604 1022,2591 2605,2521"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="655,2166 2590,2166 2590,2251 655,2251"/>
+                <pc:TextEquiv conf="0.9994615912437439">
+                    <pc:Unicode>lles bisher geſagte iſt, meines Erachtens, mehr als hinlaͤnglich,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="675,2253 2592,2253 2592,2341 675,2341"/>
+                <pc:TextEquiv conf="0.9966071844100952">
+                    <pc:Unicode>uns zu uͤberzeugen, daß die Melodie ihren Grund in der Har⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="676,2342 2590,2342 2590,2429 676,2429"/>
+                <pc:TextEquiv conf="0.9988163113594055">
+                    <pc:Unicode>monie hat, und daß man in der entweder wirklich vorhandenen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2428 456,2516 2589,2516 2589,2428 456,2428"/>
+                <pc:TextEquiv conf="0.9993011355400085">
+                    <pc:Unicode>oder doch dabey zu vermuthenden Harmonie, die Wirkungen der Me⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_10_region_id_10_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,2514 457,2598 707,2598 1022,2591 2117,2543 2117,2514 457,2514"/>
+                <pc:TextEquiv conf="0.998892605304718">
+                    <pc:Unicode>lodie ſuchen muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>lles bisher geſagte iſt, meines Erachtens, mehr als hinlaͤnglich,
+uns zu uͤberzeugen, daß die Melodie ihren Grund in der Har⸗
+monie hat, und daß man in der entweder wirklich vorhandenen,
+oder doch dabey zu vermuthenden Harmonie, die Wirkungen der Me⸗
+lodie ſuchen muß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="heading">
+            <pc:Coords points="1390,2686 1390,2590 1657,2590 1657,2686 1390,2686"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1414,2603 1645,2603 1645,2686 1414,2686"/>
+                <pc:TextEquiv conf="0.983779788017273">
+                    <pc:Unicode>§. 154.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 154.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="430,3150 430,2698 2604,2698 2604,3150 430,3150"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="633,2710 2589,2710 2589,2800 633,2800"/>
+                <pc:TextEquiv conf="0.998773992061615">
+                    <pc:Unicode>Wollte man noch daran zweifeln, ſo brauchte man nur die erſte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2799 2587,2799 2587,2894 456,2894"/>
+                <pc:TextEquiv conf="0.9972904920578003">
+                    <pc:Unicode>Erfahrung (§. 20) in Erwaͤgung zu ziehen, als vermittelſt welcher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_12_region_id_12_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2889 2589,2889 2589,2976 455,2976"/>
+                <pc:TextEquiv conf="0.9995010495185852">
+                    <pc:Unicode>man ſiehet, daß der Hauptton allezeit der tiefſte iſt, und daß die von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_12_region_id_12_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,2975 2587,2975 2587,3070 459,3070"/>
+                <pc:TextEquiv conf="0.9992379546165466">
+                    <pc:Unicode>ihm entſpringenden hoͤhern Toͤne ſich gegen ihn, wie die Oberſtimmen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-089_region_id_12_region_id_12_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,3063 2573,3063 2573,3150 458,3150"/>
+                <pc:TextEquiv conf="0.9992324709892273">
+                    <pc:Unicode>eines muſikaliſchen Stuͤcks gegen ihren Baß, verhalten.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wollte man noch daran zweifeln, ſo brauchte man nur die erſte
+Erfahrung (§. 20) in Erwaͤgung zu ziehen, als vermittelſt welcher
+man ſiehet, daß der Hauptton allezeit der tiefſte iſt, und daß die von
+ihm entſpringenden hoͤhern Toͤne ſich gegen ihn, wie die Oberſtimmen
+eines muſikaliſchen Stuͤcks gegen ihren Baß, verhalten.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2375,3302 2375,3188 2604,3188 2604,3302 2375,3302"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2384,3197 2592,3197 2592,3283 2384,3283"/>
+                <pc:TextEquiv conf="0.7367039322853088">
+                    <pc:Unicode>§. i55.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. i55.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_6">
+            <pc:Coords points="437,1688 437,1599 2610,1599 2610,1688 437,1688"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

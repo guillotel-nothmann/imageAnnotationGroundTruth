@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:43</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:43</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-039.png" imageWidth="2973" imageHeight="3744" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-039-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-039.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="470,184 2657,184 2657,3368 470,3368"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="429,213 429,291 585,291 585,213 429,213"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="470,227 554,227 554,280 470,280"/>
+                <pc:TextEquiv conf="0.8230040073394775">
+                    <pc:Unicode>0</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>0</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="683,179 683,291 2405,291 2405,179 683,179"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="704,185 2388,185 2388,289 704,289"/>
+                <pc:TextEquiv conf="0.9592571258544922">
+                    <pc:Unicode>1Buch. V Cap. Von der Tonart uͤberhaupt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. V Cap. Von der Tonart uͤberhaupt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1437,330 1452,419 1687,429 1691,330 1437,330"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1466,345 1466,420 1640,427 1674,427 1674,345 1466,345"/>
+                <pc:TextEquiv conf="0.9880487322807312">
+                    <pc:Unicode>§. 39.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 39.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="659,884 473,869 454,800 425,644 459,526 711,402 2461,402 2645,429 2655,556 2665,727 2655,810 1090,869 659,884"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="653,431 2635,431 2635,542 653,542"/>
+                <pc:TextEquiv conf="0.9929261207580566">
+                    <pc:Unicode>Es kann alſo durch den Grundbaß oder die Fortſchreitung f: e:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,525 2639,525 2639,620 475,620"/>
+                <pc:TextEquiv conf="0.9840102791786194">
+                    <pc:Unicode>g, worinnen das c m der Mitte ſteht, die Tonart c gleichſam abge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,607 2638,607 2638,703 475,703"/>
+                <pc:TextEquiv conf="0.9986883401870728">
+                    <pc:Unicode>bildet werden. Auf eine aͤhnliche Art kann die Tonart g durch den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,698 2639,698 2639,793 475,793"/>
+                <pc:TextEquiv conf="0.9696839451789856">
+                    <pc:Unicode>Grundbaß c: g: d, und die Tonart f durch die Toͤne b: f: e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:Coords points="475,803 475,869 609,880 774,880 1090,869 1094,869 1094,803 475,803"/>
+                <pc:TextEquiv conf="0.998053252696991">
+                    <pc:Unicode>vorgeſtellet werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es kann alſo durch den Grundbaß oder die Fortſchreitung f: e:
+g, worinnen das c m der Mitte ſteht, die Tonart c gleichſam abge⸗
+bildet werden. Auf eine aͤhnliche Art kann die Tonart g durch den
+Grundbaß c: g: d, und die Tonart f durch die Toͤne b: f: e
+vorgeſtellet werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="459,1143 458,878 2669,878 2680,1143 459,1143"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="585,878 2640,878 2640,983 585,983"/>
+                <pc:TextEquiv conf="0.9981090426445007">
+                    <pc:Unicode>Man ſiehet hieraus, daß die Tonart g, oder vielmehr der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,970 2640,970 2640,1057 475,1057"/>
+                <pc:TextEquiv conf="0.9847249388694763">
+                    <pc:Unicode>Grundbaß dieſes Modi zween Toͤne mit dem Grundbaße von c ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="476,1059 2635,1059 2635,1143 476,1143"/>
+                <pc:TextEquiv conf="0.9988477230072021">
+                    <pc:Unicode>mein hat. Eben die Bewandniß hat es mit der Tonart f.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man ſiehet hieraus, daß die Tonart g, oder vielmehr der
+Grundbaß dieſes Modi zween Toͤne mit dem Grundbaße von c ge⸗
+mein hat. Eben die Bewandniß hat es mit der Tonart f.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1412,1137 1412,1235 1696,1235 1696,1137 1412,1137"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1449,1137 1685,1137 1685,1232 1449,1232"/>
+                <pc:TextEquiv conf="0.9863882064819336">
+                    <pc:Unicode>§. 40.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 40.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="684,1480 469,1515 454,1329 615,1241 2481,1244 2665,1241 2670,1334 2645,1412 2435,1448 1475,1426 684,1480"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="631,1242 631,1326 2641,1326 2641,1242 631,1242"/>
+                <pc:TextEquiv conf="0.9897974729537964">
+                    <pc:Unicode>Die Tonartc (f: c: g) wird wegen ihrer beyden Quinten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="480,1326 480,1418 2610,1418 2640,1413 2640,1326 480,1326"/>
+                <pc:TextEquiv conf="0.9967097640037537">
+                    <pc:Unicode>eine Haupttonart genennet. F und g machen zwo Nebenton⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:Coords points="482,1428 482,1492 610,1492 693,1479 693,1428 482,1428"/>
+                <pc:TextEquiv conf="0.99576336145401">
+                    <pc:Unicode>arten.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Tonartc (f: c: g) wird wegen ihrer beyden Quinten
+eine Haupttonart genennet. F und g machen zwo Nebenton⸗
+arten.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1417,1494 1417,1587 1657,1587 1657,1494 1417,1494"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1446,1508 1650,1508 1650,1587 1446,1587"/>
+                <pc:TextEquiv conf="0.8412290215492249">
+                    <pc:Unicode>§. 4I.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 4I.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="448,2390 454,1593 2674,1597 2675,2317 1168,2307 1168,2371 448,2390"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="662,1595 662,1683 2644,1683 2644,1597 1564,1595 662,1595"/>
+                <pc:TextEquiv conf="0.9985869526863098">
+                    <pc:Unicode>Es iſt alſo auf eine gewiſſe Art dem Ohre gleichguͤltig, ob man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="481,1688 2646,1688 2646,1771 481,1771"/>
+                <pc:TextEquiv conf="0.9996978640556335">
+                    <pc:Unicode>von der Haupttonart in die eine oder andre Nebentonart geht, weil</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="482,1774 2645,1774 2645,1861 482,1861"/>
+                <pc:TextEquiv conf="0.9983930587768555">
+                    <pc:Unicode>eine jede Nebentonart ebenfalls zween Tone mit der Haupttonart ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,1864 2648,1864 2648,1953 483,1953"/>
+                <pc:TextEquiv conf="0.9954752922058105">
+                    <pc:Unicode>mein hat. Man muß aber dennoch den Modum g etwas vorzuͤgli⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1949 2649,1949 2649,2036 485,2036"/>
+                <pc:TextEquiv conf="0.9959467649459839">
+                    <pc:Unicode>cher betrachten, weil g in c erklinget, und f nur erzittert, wie ver</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="483,2040 2650,2040 2650,2125 483,2125"/>
+                <pc:TextEquiv conf="0.9991077184677124">
+                    <pc:Unicode>mittelſt der beyden erſten Erfahrungen klar iſt. Das von der Ton⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,2128 2647,2128 2647,2223 487,2223"/>
+                <pc:TextEquiv conf="0.9833866357803345">
+                    <pc:Unicode>art e geruͤhrte Ohr hat alſo etwas mehrere Neigung gegen g als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_8_region_id_8_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,2219 485,2309 2649,2309 2649,2219 485,2219"/>
+                <pc:TextEquiv conf="0.9856358170509338">
+                    <pc:Unicode>gegen f. Es iſt auch nichts gewoͤhnlicher und natuͤrlicher, als von e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:Coords points="489,2313 489,2386 600,2386 1114,2372 1114,2313 489,2313"/>
+                <pc:TextEquiv conf="0.9875514507293701">
+                    <pc:Unicode>ins g auszuweichen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es iſt alſo auf eine gewiſſe Art dem Ohre gleichguͤltig, ob man
+von der Haupttonart in die eine oder andre Nebentonart geht, weil
+eine jede Nebentonart ebenfalls zween Tone mit der Haupttonart ge⸗
+mein hat. Man muß aber dennoch den Modum g etwas vorzuͤgli⸗
+cher betrachten, weil g in c erklinget, und f nur erzittert, wie ver
+mittelſt der beyden erſten Erfahrungen klar iſt. Das von der Ton⸗
+art e geruͤhrte Ohr hat alſo etwas mehrere Neigung gegen g als
+gegen f. Es iſt auch nichts gewoͤhnlicher und natuͤrlicher, als von e
+ins g auszuweichen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1432,2390 1432,2478 1696,2478 1696,2390 1432,2390"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1462,2399 1677,2399 1677,2478 1462,2478"/>
+                <pc:TextEquiv conf="0.9987604022026062">
+                    <pc:Unicode>§. 42.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 42.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="473,2840 473,2478 2674,2497 2660,2762 1373,2772 1334,2830 473,2840"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="477,2485 477,2569 2650,2569 2650,2497 1284,2485 477,2485"/>
+                <pc:TextEquiv conf="0.9992624521255493">
+                    <pc:Unicode>Aus dieſer Urſache, und um die beyden Quinten von einander</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,2574 2648,2574 2648,2662 487,2662"/>
+                <pc:TextEquiv conf="0.9871128797531128">
+                    <pc:Unicode>zu unterſcheiden, wird die Oberquinte g von c, die dominante oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2660 2650,2660 2650,2751 493,2751"/>
+                <pc:TextEquiv conf="0.998307466506958">
+                    <pc:Unicode>herrſchende; die Unterquinte f aber die unterdominante oder un⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="495,2754 495,2839 559,2839 1298,2830 1298,2754 495,2754"/>
+                <pc:TextEquiv conf="0.9997681975364685">
+                    <pc:Unicode>terherrſchende genennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Aus dieſer Urſache, und um die beyden Quinten von einander
+zu unterſcheiden, wird die Oberquinte g von c, die dominante oder
+herrſchende; die Unterquinte f aber die unterdominante oder un⸗
+terherrſchende genennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="heading">
+            <pc:Coords points="1451,2825 1451,2928 1720,2928 1720,2825 1451,2825"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1479,2843 1683,2843 1683,2927 1479,2927"/>
+                <pc:TextEquiv conf="0.9735960364341736">
+                    <pc:Unicode>§. 43.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 43.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="473,3290 493,2923 2660,2938 2660,3290 473,3290"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="677,2928 677,3024 2653,3024 2653,2938 1215,2928 677,2928"/>
+                <pc:TextEquiv conf="0.9964428544044495">
+                    <pc:Unicode>So wie man uͤbrigens, nach Anleitung des vorhergehenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,3021 2653,3021 2653,3107 504,3107"/>
+                <pc:TextEquiv conf="0.9996657371520996">
+                    <pc:Unicode>Capitels, in der Fortſchreitung der Quinten verfaͤhrt: ſo kann</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_12_region_id_12_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,3111 2653,3111 2653,3206 503,3206"/>
+                <pc:TextEquiv conf="0.995960533618927">
+                    <pc:Unicode>man auch hier verfahren, und, nachdem man aus dem Tone c in g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-039_region_id_12_region_id_12_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,3196 2655,3196 2655,3289 486,3289"/>
+                <pc:TextEquiv conf="0.9778875112533569">
+                    <pc:Unicode>ausgewichen, alsdenn von g ins d, und von f ins b gehen (1)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>So wie man uͤbrigens, nach Anleitung des vorhergehenden
+Capitels, in der Fortſchreitung der Quinten verfaͤhrt: ſo kann
+man auch hier verfahren, und, nachdem man aus dem Tone c in g
+ausgewichen, alsdenn von g ins d, und von f ins b gehen (1)</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2636,3374 2518,3372 2494,3310 2642,3304 2636,3374"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2568,3307 2496,3310 2496,3315 2516,3368 2637,3368 2642,3307 2568,3307"/>
+                <pc:TextEquiv conf="0.9972203969955444">
+                    <pc:Unicode>Ma</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ma</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

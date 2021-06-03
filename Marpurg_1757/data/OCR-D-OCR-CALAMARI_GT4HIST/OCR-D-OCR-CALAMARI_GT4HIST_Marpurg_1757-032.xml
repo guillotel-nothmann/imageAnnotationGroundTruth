@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:21</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:21</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-032.png" imageWidth="2973" imageHeight="3638" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-032-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-032.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="372,207 2531,207 2531,3303 372,3303"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="763,150 763,311 2146,311 2146,150 763,150"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="793,208 2116,208 2116,304 793,304"/>
+                <pc:TextEquiv conf="0.9583606719970703">
+                    <pc:Unicode>1Buch. I Cap. Von Erfahrungen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. I Cap. Von Erfahrungen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2460,216 2460,307 2550,307 2550,216 2460,216"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2469,235 2530,235 2530,296 2469,296"/>
+                <pc:TextEquiv conf="0.946325957775116">
+                    <pc:Unicode>13</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>13</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="378,354 378,625 2565,611 2560,354 378,354"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="417,354 2526,354 2526,450 417,450"/>
+                <pc:TextEquiv conf="0.999252200126648">
+                    <pc:Unicode>den Toͤne vermiſchen ſich bey nahe ganz und gar im Gehoͤre, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="418,453 2521,453 2521,540 418,540"/>
+                <pc:TextEquiv conf="0.9995148181915283">
+                    <pc:Unicode>man ſie zuſammen anſchlaͤget. Man kann hiervon durch folgende zween</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,535 415,625 1934,615 1934,535 415,535"/>
+                <pc:TextEquiv conf="0.9985113739967346">
+                    <pc:Unicode>ſimple Umſtaͤnde ganz deutlich uͤberfuͤhret werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>den Toͤne vermiſchen ſich bey nahe ganz und gar im Gehoͤre, wenn
+man ſie zuſammen anſchlaͤget. Man kann hiervon durch folgende zween
+ſimple Umſtaͤnde ganz deutlich uͤberfuͤhret werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="473,1576 473,620 2541,620 2532,1505 1638,1500 1648,1586 473,1576"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="503,626 2519,626 2519,714 503,714"/>
+                <pc:TextEquiv conf="0.9987520575523376">
+                    <pc:Unicode>Erſter Umſtand. Jch ſetze, daß man ein Lied ſingen will, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="585,714 2526,714 2526,799 585,799"/>
+                <pc:TextEquiv conf="0.9995908141136169">
+                    <pc:Unicode>daß, wenn man den Ton dazu entweder zu hoch oder zu tief</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:Coords points="590,802 2518,802 2518,888 590,888"/>
+                <pc:TextEquiv conf="0.9978402256965637">
+                    <pc:Unicode>fuͤr ſeine Stimme genommen hat, man verbunden iſt, um ſich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:Coords points="590,889 2519,889 2519,975 590,975"/>
+                <pc:TextEquiv conf="0.9985321164131165">
+                    <pc:Unicode>nicht zu ſtark anzugreiffen, den Ton dieſes Liedes hoͤher oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:Coords points="586,976 2522,976 2522,1060 586,1060"/>
+                <pc:TextEquiv conf="0.9993211030960083">
+                    <pc:Unicode>tiefer, als vorher, zu nehmen. Jch ſage, daß man, ohne die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:Coords points="582,1062 2517,1062 2517,1149 582,1149"/>
+                <pc:TextEquiv conf="0.9986690282821655">
+                    <pc:Unicode>geringſte Kaͤnntniß von der Muſik zu haben, dieſen neuen Ton</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:Coords points="554,1153 2514,1153 2514,1231 554,1231"/>
+                <pc:TextEquiv conf="0.9905989766120911">
+                    <pc:Unicode>entweder in der Unter⸗ oder Oberoctave des erſtern Tons neh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="551,1240 2511,1240 2511,1327 551,1327"/>
+                <pc:TextEquiv conf="0.9935721755027771">
+                    <pc:Unicode>men wird; und daß, wenn man den Ton zu dem Liede anders,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_3_region_id_3_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="583,1326 2512,1326 2512,1410 583,1410"/>
+                <pc:TextEquiv conf="0.9950031638145447">
+                    <pc:Unicode>als eine Octave hoͤher oder tiefer nehmen will, man hiezu Ueber⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0009">
+                <pc:Coords points="578,1413 2511,1413 2511,1497 578,1497"/>
+                <pc:TextEquiv conf="0.9997221231460571">
+                    <pc:Unicode>legung gebraucht. Dieſes Umſtandes kann man ſich vermittelſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0010">
+                <pc:Coords points="570,1501 570,1577 1178,1582 1623,1582 1623,1501 570,1501"/>
+                <pc:TextEquiv conf="0.9991934895515442">
+                    <pc:Unicode>der Erfahrung leicht vergewißern.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſter Umſtand. Jch ſetze, daß man ein Lied ſingen will, und
+daß, wenn man den Ton dazu entweder zu hoch oder zu tief
+fuͤr ſeine Stimme genommen hat, man verbunden iſt, um ſich
+nicht zu ſtark anzugreiffen, den Ton dieſes Liedes hoͤher oder
+tiefer, als vorher, zu nehmen. Jch ſage, daß man, ohne die
+geringſte Kaͤnntniß von der Muſik zu haben, dieſen neuen Ton
+entweder in der Unter⸗ oder Oberoctave des erſtern Tons neh⸗
+men wird; und daß, wenn man den Ton zu dem Liede anders,
+als eine Octave hoͤher oder tiefer nehmen will, man hiezu Ueber⸗
+legung gebraucht. Dieſes Umſtandes kann man ſich vermittelſt
+der Erfahrung leicht vergewißern.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="535,2094 540,1681 450,1686 445,1576 2526,1576 2526,2113 535,2094"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1583 2507,1583 2507,1670 486,1670"/>
+                <pc:TextEquiv conf="0.9949702024459839">
+                    <pc:Unicode>Andrer Umſtand. Es ſoll eine Perſon ein Lied, und zwar ent⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="569,1668 2509,1668 2509,1756 569,1756"/>
+                <pc:TextEquiv conf="0.9995519518852234">
+                    <pc:Unicode>weder zu hoch oder zu tief fuͤr unſre Stimme, vor uns ſingen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="566,1756 2506,1756 2506,1841 566,1841"/>
+                <pc:TextEquiv conf="0.9978450536727905">
+                    <pc:Unicode>Wollen wir mit dieſer Perſon mitſingen: ſo werden wir natuͤr⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:Coords points="563,1843 2506,1843 2506,1926 563,1926"/>
+                <pc:TextEquiv conf="0.9863878488540649">
+                    <pc:Unicode>licher Weiſe ſolches entweder in der Ober- oder Unteroctave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="564,1930 2505,1930 2505,2025 564,2025"/>
+                <pc:TextEquiv conf="0.997799813747406">
+                    <pc:Unicode>thun; und oͤfters werden wir den Einklang zu ergreiffen glau⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="565,2021 565,2094 2267,2111 2267,2021 565,2021"/>
+                <pc:TextEquiv conf="0.988652765750885">
+                    <pc:Unicode>ben, wenn wir den Ton in der Octade nehmen. ()</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Andrer Umſtand. Es ſoll eine Perſon ein Lied, und zwar ent⸗
+weder zu hoch oder zu tief fuͤr unſre Stimme, vor uns ſingen.
+Wollen wir mit dieſer Perſon mitſingen: ſo werden wir natuͤr⸗
+licher Weiſe ſolches entweder in der Ober- oder Unteroctave
+thun; und oͤfters werden wir den Einklang zu ergreiffen glau⸗
+ben, wenn wir den Ton in der Octade nehmen. ()</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footer">
+            <pc:Coords points="1466,2194 1466,2089 2526,2089 2526,2194 1466,2194"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1493,2089 2510,2089 2510,2194 1493,2194"/>
+                <pc:TextEquiv conf="0.9907457828521729">
+                    <pc:Unicode>B3Zweytes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>B3Zweytes</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footnote">
+            <pc:Coords points="345,2204 326,3259 2513,3240 2546,2232 345,2204"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="386,2236 2499,2236 2499,2315 386,2315"/>
+                <pc:TextEquiv conf="0.9957361817359924">
+                    <pc:Unicode>anitzo ſehen, wie man den numeriſchen man die beyden Zaͤhler zufoͤrderſt, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:Coords points="384,2318 2501,2318 2501,2387 384,2387"/>
+                <pc:TextEquiv conf="0.991896390914917">
+                    <pc:Unicode>Ausdruck eines Tons finden kann, wenn hernach die beyden Nenner durch einander</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:Coords points="382,2393 1938,2393 1938,2464 382,2464"/>
+                <pc:TextEquiv conf="0.9897812008857727">
+                    <pc:Unicode>man ſeine Differenz oder Proportion ge⸗ multipliciret, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="378,2467 2207,2467 2207,2564 378,2564"/>
+                <pc:TextEquiv conf="0.978678286075592">
+                    <pc:Unicode>e'nen andern gegebenen und mit Zah 5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="376,2490 2080,2490 2080,2655 376,2655"/>
+                <pc:TextEquiv conf="0.4834434986114502">
+                    <pc:Unicode>zerere 24</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_6_region_id_6_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,2598 2073,2598 2073,2700 457,2700"/>
+                <pc:TextEquiv conf="0.9854168891906738">
+                    <pc:Unicode>Zum Exempel. Win ſetzen, daß man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:Coords points="376,2703 2489,2703 2489,2778 376,2778"/>
+                <pc:TextEquiv conf="0.9908840656280518">
+                    <pc:Unicode>die große Terz zu der Quinte ſuchet. Hieraus entſteht der neue Bruch .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:Coords points="376,2781 2491,2781 2491,2855 376,2855"/>
+                <pc:TextEquiv conf="0.9966176152229309">
+                    <pc:Unicode>Dieſe große Terz muß, nach dem was Man wird auf gleiche Art finden, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:Coords points="376,2857 2487,2857 2487,2929 376,2929"/>
+                <pc:TextEquiv conf="0.9939699172973633">
+                    <pc:Unicode>oben geſagt iſt, von der uinte ent⸗ die Quinte von der Quinte iſt, weil die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0009">
+                <pc:Coords points="374,2936 2456,2936 2456,3006 374,3006"/>
+                <pc:TextEquiv conf="0.9872562289237976">
+                    <pc:Unicode>halten; denn die große Terz eines jeden Quinte von der Quinte aus iſt (8).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0010">
+                <pc:Coords points="373,3010 2484,3010 2484,3084 373,3084"/>
+                <pc:TextEquiv conf="0.99586021900177">
+                    <pc:Unicode>Tons iſt ſo viel als dieſes Tons. Man e) Man kann alſo nicht ſagen, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_6_region_id_6_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="372,3088 2481,3088 2481,3163 372,3163"/>
+                <pc:TextEquiv conf="0.996944785118103">
+                    <pc:Unicode>muß alſo einen Bruch ſuchen, der die der Werth eines Tons veraͤndert wird,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-032_region_id_6_region_id_6_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="373,3163 2482,3163 2482,3238 373,3238"/>
+                <pc:TextEquiv conf="0.9904792308807373">
+                    <pc:Unicode>aus ausdruͤcke. Dieſes geſchieht, wenn wenn man die Zahl, wodurch derſelbe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>anitzo ſehen, wie man den numeriſchen man die beyden Zaͤhler zufoͤrderſt, und
+Ausdruck eines Tons finden kann, wenn hernach die beyden Nenner durch einander
+man ſeine Differenz oder Proportion ge⸗ multipliciret, als:
+e'nen andern gegebenen und mit Zah 5
+zerere 24
+Zum Exempel. Win ſetzen, daß man
+die große Terz zu der Quinte ſuchet. Hieraus entſteht der neue Bruch .
+Dieſe große Terz muß, nach dem was Man wird auf gleiche Art finden, daß
+oben geſagt iſt, von der uinte ent⸗ die Quinte von der Quinte iſt, weil die
+halten; denn die große Terz eines jeden Quinte von der Quinte aus iſt (8).
+Tons iſt ſo viel als dieſes Tons. Man e) Man kann alſo nicht ſagen, daß
+muß alſo einen Bruch ſuchen, der die der Werth eines Tons veraͤndert wird,
+aus ausdruͤcke. Dieſes geſchieht, wenn wenn man die Zahl, wodurch derſelbe</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="354,2222 354,2621 1419,2621 1419,2222 354,2222"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="386,2236 1408,2236 1408,2307 386,2307"/>
+                <pc:TextEquiv conf="0.9886355996131897">
+                    <pc:Unicode>anitzo ſehen, wie man den numeriſchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="384,2318 1407,2318 1407,2379 384,2379"/>
+                <pc:TextEquiv conf="0.981277585029602">
+                    <pc:Unicode>Ausdruck eines Tons finden kann, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="382,2393 1408,2393 1408,2459 382,2459"/>
+                <pc:TextEquiv conf="0.9864562749862671">
+                    <pc:Unicode>man feine Differenz oder Proportion ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="378,2467 1406,2467 1406,2541 378,2541"/>
+                <pc:TextEquiv conf="0.9995629787445068">
+                    <pc:Unicode>gen einen andern gegebenen und mit Zah⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="376,2546 1392,2546 1392,2608 376,2608"/>
+                <pc:TextEquiv conf="0.989810585975647">
+                    <pc:Unicode>len bemerkten Ton kennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>anitzo ſehen, wie man den numeriſchen
+Ausdruck eines Tons finden kann, wenn
+man feine Differenz oder Proportion ge⸗
+gen einen andern gegebenen und mit Zah⸗
+len bemerkten Ton kennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="349,3244 349,2621 1419,2621 1419,3244 349,3244"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="457,2626 1405,2626 1405,2700 457,2700"/>
+                <pc:TextEquiv conf="0.9951770901679993">
+                    <pc:Unicode>Zum Exempel. Wir ſetzen, daß man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="376,2703 1402,2703 1402,2773 376,2773"/>
+                <pc:TextEquiv conf="0.9894269704818726">
+                    <pc:Unicode>die große Terz zu der Quinte fuchet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="376,2781 1405,2781 1405,2848 376,2848"/>
+                <pc:TextEquiv conf="0.9981484413146973">
+                    <pc:Unicode>Dieſe große Terz muß, nach dem was</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="376,2857 1401,2857 1401,2928 376,2928"/>
+                <pc:TextEquiv conf="0.9870239496231079">
+                    <pc:Unicode>oben geſagt iſt, von der Quinte ent⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="374,2936 1398,2936 1398,3006 374,3006"/>
+                <pc:TextEquiv conf="0.9989160299301147">
+                    <pc:Unicode>halten; denn die große Terz eines jeden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="373,3010 1397,3010 1397,3077 373,3077"/>
+                <pc:TextEquiv conf="0.9911055564880371">
+                    <pc:Unicode>Tons iſt ſo viel als dieſes Tons. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:Coords points="372,3088 1396,3088 1396,3157 372,3157"/>
+                <pc:TextEquiv conf="0.9992688298225403">
+                    <pc:Unicode>muß alſo einen Bruch ſuchen, der die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:Coords points="373,3163 1396,3163 1396,3238 373,3238"/>
+                <pc:TextEquiv conf="0.9930606484413147">
+                    <pc:Unicode>aus ausdruͤcke. Dieſes geſchieht, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zum Exempel. Wir ſetzen, daß man
+die große Terz zu der Quinte fuchet.
+Dieſe große Terz muß, nach dem was
+oben geſagt iſt, von der Quinte ent⸗
+halten; denn die große Terz eines jeden
+Tons iſt ſo viel als dieſes Tons. Man
+muß alſo einen Bruch ſuchen, der die
+aus ausdruͤcke. Dieſes geſchieht, wenn</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="1466,2232 1466,2465 2507,2465 2507,2232 1466,2232"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1473,2240 2499,2240 2499,2315 1473,2315"/>
+                <pc:TextEquiv conf="0.9977698922157288">
+                    <pc:Unicode>man die beyden Zaͤhler zufoͤrderſt, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="1473,2322 2501,2322 2501,2387 1473,2387"/>
+                <pc:TextEquiv conf="0.9986206293106079">
+                    <pc:Unicode>hernach die beyden Nenner durch einander</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="1472,2396 1938,2396 1938,2464 1472,2464"/>
+                <pc:TextEquiv conf="0.9967390298843384">
+                    <pc:Unicode>multipliciret, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>man die beyden Zaͤhler zufoͤrderſt, und
+hernach die beyden Nenner durch einander
+multipliciret, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="1447,2688 1447,3006 2503,3006 2503,2688 1447,2688"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1468,2703 2489,2703 2489,2778 1468,2778"/>
+                <pc:TextEquiv conf="0.9944615364074707">
+                    <pc:Unicode>Hieraus entſteht der neue Bruch .</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="1466,2783 2491,2783 2491,2855 1466,2855"/>
+                <pc:TextEquiv conf="0.9929046630859375">
+                    <pc:Unicode>Man wird auf gleiche Art finden, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:Coords points="1466,2860 2487,2860 2487,2929 1466,2929"/>
+                <pc:TextEquiv conf="0.9917633533477783">
+                    <pc:Unicode>die Quinte von der Quinte Z iſt, weil die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="1463,2937 2456,2937 2456,3004 1463,3004"/>
+                <pc:TextEquiv conf="0.9688224792480469">
+                    <pc:Unicode>Quinte von der Quinte aus iſt (8).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Hieraus entſteht der neue Bruch .
+Man wird auf gleiche Art finden, daß
+die Quinte von der Quinte Z iſt, weil die
+Quinte von der Quinte aus iſt (8).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="1447,3244 1447,3002 2493,3002 2493,3244 1447,3244"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1540,3002 2484,3002 2484,3084 1540,3084"/>
+                <pc:TextEquiv conf="0.999279260635376">
+                    <pc:Unicode>e) Man kann alſo nicht ſagen, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="1460,3090 2481,3090 2481,3163 1460,3163"/>
+                <pc:TextEquiv conf="0.9987632036209106">
+                    <pc:Unicode>der Werth eines Tons veraͤndert wird,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:Coords points="1460,3167 2482,3167 2482,3238 1460,3238"/>
+                <pc:TextEquiv conf="0.9965695142745972">
+                    <pc:Unicode>wenn man die Zahl, wodurch derſelbe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>e) Man kann alſo nicht ſagen, daß
+der Werth eines Tons veraͤndert wird,
+wenn man die Zahl, wodurch derſelbe</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2355,3311 2355,3249 2493,3249 2493,3311 2355,3311"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2375,3261 2481,3261 2481,3303 2375,3303"/>
+                <pc:TextEquiv conf="0.8091557025909424">
+                    <pc:Unicode>vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>vor⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_10">
+            <pc:Coords points="1709,2479 1709,2669 2118,2669 2118,2479 1709,2479"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

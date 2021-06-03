@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:41:38</pc:Created>
+        <pc:LastChange>2021-01-10T21:41:38</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-095.png" imageWidth="2973" imageHeight="3704" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-095-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-095.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="477,151 2659,151 2659,3258 477,3258"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+                <pc:RegionRefIndexed index="16" regionRef="region_id_16"/>
+                <pc:RegionRefIndexed index="17" regionRef="region_id_17"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="445,146 445,256 587,256 587,146 445,146"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="477,160 561,160 561,243 477,243"/>
+                <pc:TextEquiv conf="0.9990123510360718">
+                    <pc:Unicode>76</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>76</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="632,133 632,256 2462,256 2462,133 632,133"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="650,152 2448,152 2448,256 650,256"/>
+                <pc:TextEquiv conf="0.9704740643501282">
+                    <pc:Unicode>IIBuch. IIICap. Von den verſchiedenen Schluͤſſeln,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>IIBuch. IIICap. Von den verſchiedenen Schluͤſſeln,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="451,288 451,489 2656,489 2656,288 451,288"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="662,292 2645,292 2645,417 662,417"/>
+                <pc:TextEquiv conf="0.9989371299743652">
+                    <pc:Unicode>Der CSchluͤſſel wird auf die erſte, zweyte, dritte oder vierte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,403 2246,403 2246,488 483,488"/>
+                <pc:TextEquiv conf="0.988312840461731">
+                    <pc:Unicode>Linie geſetzet, und die Linie nach ihm c benennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der CSchluͤſſel wird auf die erſte, zweyte, dritte oder vierte
+Linie geſetzet, und die Linie nach ihm c benennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="445,521 445,728 2682,728 2682,521 445,521"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="655,527 2650,527 2650,647 655,647"/>
+                <pc:TextEquiv conf="0.9973606467247009">
+                    <pc:Unicode>Der G Schluͤſſel wird auf die erſte oder zweyte Linie geſetzet,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,630 2278,630 2278,721 483,721"/>
+                <pc:TextEquiv conf="0.9825764894485474">
+                    <pc:Unicode>und heißt die Linie nach ihm g.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der G Schluͤſſel wird auf die erſte oder zweyte Linie geſetzet,
+und heißt die Linie nach ihm g.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1440,786 1443,887 1714,885 1702,789 1440,786"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1465,804 1700,804 1700,885 1465,885"/>
+                <pc:TextEquiv conf="0.9053336977958679">
+                    <pc:Unicode>§. 171.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 171.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="458,896 458,1452 2676,1452 2676,896 458,896"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="660,911 2651,911 2651,1014 660,1014"/>
+                <pc:TextEquiv conf="0.9984012246131897">
+                    <pc:Unicode>Da die Noten auf die Linien und zwiſchen die Linien geſetzet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1002 2652,1002 2652,1103 484,1103"/>
+                <pc:TextEquiv conf="0.9988932013511658">
+                    <pc:Unicode>werden: ſo kann man, bey dem Anblicke eines Schluͤſſels, ſogleich den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1093 2658,1093 2658,1196 485,1196"/>
+                <pc:TextEquiv conf="0.9985437989234924">
+                    <pc:Unicode>Namen einer jeden Note wiſſen. Alſo ſiehet man, daß in dem F</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1177 2653,1177 2653,1285 485,1285"/>
+                <pc:TextEquiv conf="0.9892954230308533">
+                    <pc:Unicode>Schluͤſſel die unterſte Liie oder die darauf geſetzte Note ein g; die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1270 2649,1270 2649,1375 485,1375"/>
+                <pc:TextEquiv conf="0.9969472885131836">
+                    <pc:Unicode>zwiſchen der erſten und zweyten Linie darauf folgende Note ein a;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1358 1926,1358 1926,1451 486,1451"/>
+                <pc:TextEquiv conf="0.9741243720054626">
+                    <pc:Unicode>die zweyte Linie ein h heißen muß, u. ſ. w. )</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Da die Noten auf die Linien und zwiſchen die Linien geſetzet
+werden: ſo kann man, bey dem Anblicke eines Schluͤſſels, ſogleich den
+Namen einer jeden Note wiſſen. Alſo ſiehet man, daß in dem F
+Schluͤſſel die unterſte Liie oder die darauf geſetzte Note ein g; die
+zwiſchen der erſten und zweyten Linie darauf folgende Note ein a;
+die zweyte Linie ein h heißen muß, u. ſ. w. )</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1415,1524 1415,1621 1719,1621 1719,1524 1415,1524"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1422,1524 1700,1524 1700,1615 1422,1615"/>
+                <pc:TextEquiv conf="0.9834433794021606">
+                    <pc:Unicode>§. 172.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 172.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="446,1644 439,1918 2663,1918 2663,1634 446,1644"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="669,1649 2656,1649 2656,1744 669,1744"/>
+                <pc:TextEquiv conf="0.9900338649749756">
+                    <pc:Unicode>Eine Note, vor welcher ein Kreuz (t) ſtehet, muß um einen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,1738 2659,1738 2659,1840 489,1840"/>
+                <pc:TextEquiv conf="0.9989209771156311">
+                    <pc:Unicode>halben Ton erhoͤhet werden; und ſtehet ein Be (b) davor, ſo muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,1827 2541,1827 2541,1916 488,1916"/>
+                <pc:TextEquiv conf="0.9981797337532043">
+                    <pc:Unicode>ſolche um einen halben Ton erniedriget werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Eine Note, vor welcher ein Kreuz (t) ſtehet, muß um einen
+halben Ton erhoͤhet werden; und ſtehet ein Be (b) davor, ſo muß
+ſolche um einen halben Ton erniedriget werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="2488,1929 2488,2007 2655,2007 2655,1929 2488,1929"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="2504,1933 2652,1933 2652,2003 2504,2003"/>
+                <pc:TextEquiv conf="0.9997028708457947">
+                    <pc:Unicode>Das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Das</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footnote">
+            <pc:Coords points="445,2041 439,3282 2714,3315 2695,2054 445,2041"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="568,2054 2650,2054 2650,2173 568,2173"/>
+                <pc:TextEquiv conf="0.983936071395874">
+                    <pc:Unicode>i) Die verſchiedenen Arten der Schluͤſ. Ein tiefer Tenor heißt Barytonus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2165 2124,2165 2124,2234 490,2234"/>
+                <pc:TextEquiv conf="0.9991309642791748">
+                    <pc:Unicode>ſel ſind des verſchiedenen Umfangs der oder Concordant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2242 2461,2242 2461,2320 490,2320"/>
+                <pc:TextEquiv conf="0.9782702922821045">
+                    <pc:Unicode>Stimmen und Jnſtrumente wegen erfun⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,2242 2649,2242 2649,2387 488,2387"/>
+                <pc:TextEquiv conf="0.7482638955116272">
+                    <pc:Unicode>JW nſrumene weun erfun ein iier ut beit ein Contralt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="572,2376 2047,2376 2047,2467 572,2467"/>
+                <pc:TextEquiv conf="0.9840041399002075">
+                    <pc:Unicode>Es giebt vier Hauptſtimmen: der vder Contraalt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="490,2474 2649,2474 2649,2579 490,2579"/>
+                <pc:TextEquiv conf="0.9810996055603027">
+                    <pc:Unicode>Diskant, Alt, Tenor und Baß. Fuͤr die Geige Floͤte Oboe re bedienet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="566,2556 2645,2556 2645,2653 566,2653"/>
+                <pc:TextEquiv conf="0.9666537046432495">
+                    <pc:Unicode>Jn Singen bedienet man ſich des C man ſich des G Scluͤſſels auf der wen⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2590 2624,2590 2624,2726 492,2726"/>
+                <pc:TextEquiv conf="0.5347317457199097">
+                    <pc:Unicode>ü z c üü ſre ssais et irwm</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2712 2089,2712 2089,2785 492,2785"/>
+                <pc:TextEquiv conf="0.9971936345100403">
+                    <pc:Unicode>Diskant oder Sopran; des CSchluͤſſels</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2788 2641,2788 2641,2875 493,2875"/>
+                <pc:TextEquiv conf="0.9971140623092651">
+                    <pc:Unicode>auf der dritten Linie fuͤr den Alt; des C Fuͤr das Clavier bedienet man ſich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2868 2640,2868 2640,2952 492,2952"/>
+                <pc:TextEquiv conf="0.9897319078445435">
+                    <pc:Unicode>Schluͤſſels auf der vierten Linie fuͤr den fuͤr die rechte Hand entweder des G</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2946 2642,2946 2642,3027 493,3027"/>
+                <pc:TextEquiv conf="0.9989172220230103">
+                    <pc:Unicode>Tenor; und des Schluͤſſels auf der Schluͤſſels auf der zweyten Linie, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,3024 2643,3024 2643,3109 488,3109"/>
+                <pc:TextEquiv conf="0.9930695295333862">
+                    <pc:Unicode>vierten Linie fuͤr den Baß. des CSchluͤſſels auf der erſten Linie;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,3107 2644,3107 2644,3192 574,3192"/>
+                <pc:TextEquiv conf="0.9913228154182434">
+                    <pc:Unicode>Ein ſehr tiefer Vocalbaß wird ein fuͤr die linke Hand aber des Schluͤſſels</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_9_region_id_9_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,3184 2610,3184 2610,3258 489,3258"/>
+                <pc:TextEquiv conf="0.9976310729980469">
+                    <pc:Unicode>Contrabaß genennet. auf der vierten Linie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>i) Die verſchiedenen Arten der Schluͤſ. Ein tiefer Tenor heißt Barytonus
+ſel ſind des verſchiedenen Umfangs der oder Concordant.
+Stimmen und Jnſtrumente wegen erfun⸗
+JW nſrumene weun erfun ein iier ut beit ein Contralt,
+Es giebt vier Hauptſtimmen: der vder Contraalt.
+Diskant, Alt, Tenor und Baß. Fuͤr die Geige Floͤte Oboe re bedienet
+Jn Singen bedienet man ſich des C man ſich des G Scluͤſſels auf der wen⸗
+ü z c üü ſre ssais et irwm
+Diskant oder Sopran; des CSchluͤſſels
+auf der dritten Linie fuͤr den Alt; des C Fuͤr das Clavier bedienet man ſich
+Schluͤſſels auf der vierten Linie fuͤr den fuͤr die rechte Hand entweder des G
+Tenor; und des Schluͤſſels auf der Schluͤſſels auf der zweyten Linie, oder
+vierten Linie fuͤr den Baß. des CSchluͤſſels auf der erſten Linie;
+Ein ſehr tiefer Vocalbaß wird ein fuͤr die linke Hand aber des Schluͤſſels
+Contrabaß genennet. auf der vierten Linie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="477,2060 477,2377 1544,2377 1544,2060 477,2060"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="568,2080 1538,2080 1538,2152 568,2152"/>
+                <pc:TextEquiv conf="0.9794220328330994">
+                    <pc:Unicode>i) Die verſchiedenen Arten der Schluͤſ.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="490,2165 1538,2165 1538,2233 490,2233"/>
+                <pc:TextEquiv conf="0.9988646507263184">
+                    <pc:Unicode>ſel ſind des verſchiedenen Umfangs der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="490,2242 1535,2242 1535,2311 490,2311"/>
+                <pc:TextEquiv conf="0.9929794669151306">
+                    <pc:Unicode>Stimmen und Jnſtrumente wegen erfun⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="488,2324 1357,2324 1357,2375 488,2375"/>
+                <pc:TextEquiv conf="0.9966374039649963">
+                    <pc:Unicode>den worden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>i) Die verſchiedenen Arten der Schluͤſ.
+ſel ſind des verſchiedenen Umfangs der
+Stimmen und Jnſtrumente wegen erfun⸗
+den worden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="470,2396 464,2558 1544,2538 1544,2396 470,2396"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="572,2399 1535,2399 1535,2467 572,2467"/>
+                <pc:TextEquiv conf="0.9993951916694641">
+                    <pc:Unicode>Es giebt vier Hauptſtimmen: der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="490,2474 490,2547 1058,2547 1473,2539 1473,2474 490,2474"/>
+                <pc:TextEquiv conf="0.9958043098449707">
+                    <pc:Unicode>Diskant, Alt, Tenor und Baß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es giebt vier Hauptſtimmen: der
+Diskant, Alt, Tenor und Baß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="477,2545 464,3082 1544,3088 1537,2545 477,2545"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="566,2556 1534,2556 1534,2623 566,2623"/>
+                <pc:TextEquiv conf="0.9985343217849731">
+                    <pc:Unicode>Jm Singen bedienet man ſich des C</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="492,2632 1532,2632 1532,2701 492,2701"/>
+                <pc:TextEquiv conf="0.998612105846405">
+                    <pc:Unicode>Schluͤſſels auf der erſten Linie fuͤr den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:Coords points="492,2712 1533,2712 1533,2782 492,2782"/>
+                <pc:TextEquiv conf="0.995725691318512">
+                    <pc:Unicode>Diskant oder Sopran; des CSchluͤſſels</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:Coords points="493,2788 1530,2788 1530,2859 493,2859"/>
+                <pc:TextEquiv conf="0.9947023391723633">
+                    <pc:Unicode>auf der dritten Linie fuͤr den Alt; des C</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:Coords points="492,2868 1530,2868 1530,2939 492,2939"/>
+                <pc:TextEquiv conf="0.9932552576065063">
+                    <pc:Unicode>Schluͤſſels auf der vierten Linie fuͤr den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:Coords points="493,2946 1531,2946 1531,3021 493,3021"/>
+                <pc:TextEquiv conf="0.987676203250885">
+                    <pc:Unicode>Tenor; und des F Schluͤſſels auf der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0006">
+                <pc:Coords points="488,3024 488,3082 1166,3086 1166,3024 488,3024"/>
+                <pc:TextEquiv conf="0.9984700083732605">
+                    <pc:Unicode>vierten Linie fuͤr den Baß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jm Singen bedienet man ſich des C
+Schluͤſſels auf der erſten Linie fuͤr den
+Diskant oder Sopran; des CSchluͤſſels
+auf der dritten Linie fuͤr den Alt; des C
+Schluͤſſels auf der vierten Linie fuͤr den
+Tenor; und des F Schluͤſſels auf der
+vierten Linie fuͤr den Baß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="paragraph">
+            <pc:Coords points="477,3262 477,3081 1557,3081 1557,3262 477,3262"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="525,3081 1535,3081 1535,3180 525,3180"/>
+                <pc:TextEquiv conf="0.9930577278137207">
+                    <pc:Unicode>Ein ſehr tiefer Vocalbaß wird ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:Coords points="489,3184 1084,3184 1084,3258 489,3258"/>
+                <pc:TextEquiv conf="0.998979389667511">
+                    <pc:Unicode>Contrabaß genennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein ſehr tiefer Vocalbaß wird ein
+Contrabaß genennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="paragraph">
+            <pc:Coords points="1589,2079 1589,2234 2662,2234 2662,2079 1589,2079"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_14_region_id_14_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1683,2089 2650,2089 2650,2173 1683,2173"/>
+                <pc:TextEquiv conf="0.9976980686187744">
+                    <pc:Unicode>Ein tiefer Tenor heißt Barytonus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_14_region_id_14_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1603,2168 2124,2168 2124,2234 1603,2234"/>
+                <pc:TextEquiv conf="0.9963804483413696">
+                    <pc:Unicode>oder Concordant.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein tiefer Tenor heißt Barytonus
+oder Concordant.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_15" type="paragraph">
+            <pc:Coords points="1576,2280 1576,2454 2662,2454 2662,2280 1576,2280"/>
+            <pc:TextLine id="region_id_15_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_15_region_id_15_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1680,2300 2649,2300 2649,2387 1680,2387"/>
+                <pc:TextEquiv conf="0.9991216063499451">
+                    <pc:Unicode>Ein tiefer Alt heißt ein Contralt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_15_region_id_15_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1599,2376 2047,2376 2047,2440 1599,2440"/>
+                <pc:TextEquiv conf="0.9991821646690369">
+                    <pc:Unicode>oder Contraalt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein tiefer Alt heißt ein Contralt,
+oder Contraalt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_16" type="paragraph">
+            <pc:Coords points="1576,2493 1576,2732 2669,2732 2669,2493 1576,2493"/>
+            <pc:TextLine id="region_id_16_line0000">
+                <pc:Coords points="1683,2501 2649,2501 2649,2584 1683,2584"/>
+                <pc:TextEquiv conf="0.9667328596115112">
+                    <pc:Unicode>Fuͤr die Geige, Floͤte Oboe ꝛe. bedienet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_16_line0001">
+                <pc:Coords points="1597,2589 2645,2589 2645,2670 1597,2670"/>
+                <pc:TextEquiv conf="0.9926535487174988">
+                    <pc:Unicode>man ſich des G Schluͤſſels auf der zwey⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_16_line0002">
+                <pc:Coords points="1598,2671 1838,2671 1838,2726 1598,2726"/>
+                <pc:TextEquiv conf="0.9903799295425415">
+                    <pc:Unicode>ten Linie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fuͤr die Geige, Floͤte Oboe ꝛe. bedienet
+man ſich des G Schluͤſſels auf der zwey⸗
+ten Linie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_17" type="paragraph">
+            <pc:Coords points="1576,2764 1576,3262 2662,3262 2662,2764 1576,2764"/>
+            <pc:TextLine id="region_id_17_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_17_region_id_17_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1675,2794 2641,2794 2641,2875 1675,2875"/>
+                <pc:TextEquiv conf="0.9990578889846802">
+                    <pc:Unicode>Fuͤr das Clavier bedienet man ſich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_17_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_17_region_id_17_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1576,2871 2640,2871 2640,2952 1576,2952"/>
+                <pc:TextEquiv conf="0.9885824918746948">
+                    <pc:Unicode>fuͤr die rechte Hand entweder des G</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_17_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_17_region_id_17_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1595,2952 2642,2952 2642,3027 1595,3027"/>
+                <pc:TextEquiv conf="0.9952624440193176">
+                    <pc:Unicode>Schluͤſſels auf der zweyten Linie, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_17_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_17_region_id_17_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1594,3032 2643,3032 2643,3109 1594,3109"/>
+                <pc:TextEquiv conf="0.9972962141036987">
+                    <pc:Unicode>des CSchluͤſſels auf der erſten inie;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_17_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-095_region_id_17_region_id_17_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="1599,3109 2644,3109 2644,3192 1599,3192"/>
+                <pc:TextEquiv conf="0.9918475151062012">
+                    <pc:Unicode>fuͤr die linke Hand aber des F Schluͤſſels</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_17_line0005">
+                <pc:Coords points="1601,3193 2610,3193 2610,3257 1601,3257"/>
+                <pc:TextEquiv conf="0.9939481616020203">
+                    <pc:Unicode>auf der vierten Linie.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fuͤr das Clavier bedienet man ſich
+fuͤr die rechte Hand entweder des G
+Schluͤſſels auf der zweyten Linie, oder
+des CSchluͤſſels auf der erſten inie;
+fuͤr die linke Hand aber des F Schluͤſſels
+auf der vierten Linie.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

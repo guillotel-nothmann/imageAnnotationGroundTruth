@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:41</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:41</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-154.png" imageWidth="2973" imageHeight="3620" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-154-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-154.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="404,154 2559,154 2559,3047 404,3047"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="931,155 2558,155 2558,279 931,279"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="931,155 2558,155 2558,279 931,279"/>
+                <pc:TextEquiv conf="0.9644330143928528">
+                    <pc:Unicode>Anmerrungen des Ueberſetzers. 135</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerrungen des Ueberſetzers. 135</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="409,313 2557,313 2557,479 409,479"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="410,313 2557,313 2557,395 410,395"/>
+                <pc:TextEquiv conf="0.9869481921195984">
+                    <pc:Unicode>Die Exempel bey (c) muͤſſen im Grunde ebenfalls auf folgende Art beſchaf⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="409,403 2496,403 2496,479 409,479"/>
+                <pc:TextEquiv conf="0.9477746486663818">
+                    <pc:Unicode>fen ſeyn:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Exempel bey (c) muͤſſen im Grunde ebenfalls auf folgende Art beſchaf⸗
+fen ſeyn:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="414,1076 2554,1076 2554,1331 414,1331"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0003_region0003_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="417,1076 2554,1076 2554,1174 417,1174"/>
+                <pc:TextEquiv conf="0.9935669898986816">
+                    <pc:Unicode>und bey allem dem iſt der Satz nicht ſonderlich. Die zuſammen anſchlagende</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0003_region0003_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,1173 2552,1173 2552,1250 415,1250"/>
+                <pc:TextEquiv conf="0.9934787154197693">
+                    <pc:Unicode>Sexte und Quinte kann mit nichts anderm, als der vorgedachten Anticipation</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:Coords points="414,1260 975,1260 975,1331 414,1331"/>
+                <pc:TextEquiv conf="0.9993653297424316">
+                    <pc:Unicode>entſchuldiget werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>und bey allem dem iſt der Satz nicht ſonderlich. Die zuſammen anſchlagende
+Sexte und Quinte kann mit nichts anderm, als der vorgedachten Anticipation
+entſchuldiget werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="415,1347 2558,1347 2558,1602 415,1602"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0004_region0004_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="569,1347 2554,1347 2554,1448 569,1448"/>
+                <pc:TextEquiv conf="0.9881280064582825">
+                    <pc:Unicode>(4) Die zweyte Note kann entweder eine toniſche Note ſeyn, als bey (a)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0004_region0004_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,1446 2558,1446 2558,1529 415,1529"/>
+                <pc:TextEquiv conf="0.9944621324539185">
+                    <pc:Unicode>in dem folgenden Exempel; oder eine toniſche Dominante, wie bey (b); oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0004_region0004_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,1517 2515,1517 2515,1602 415,1602"/>
+                <pc:TextEquiv conf="0.9900641441345215">
+                    <pc:Unicode>eine ſimple Dominante, wie bey (c); oder eine Unterdominante, wie bey (d).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(4) Die zweyte Note kann entweder eine toniſche Note ſeyn, als bey (a)
+in dem folgenden Exempel; oder eine toniſche Dominante, wie bey (b); oder
+eine ſimple Dominante, wie bey (c); oder eine Unterdominante, wie bey (d).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006" type="caption">
+            <pc:Coords points="419,2200 2555,2200 2555,2366 419,2366"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0006_region0006_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="419,2200 2555,2200 2555,2286 419,2286"/>
+                <pc:TextEquiv conf="0.9964897632598877">
+                    <pc:Unicode>Bey dem zweyten Exempel bey (b) hat auch eine Anticipatio Tranſitus ſtatt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0006_region0006_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="421,2280 2476,2280 2476,2366 421,2366"/>
+                <pc:TextEquiv conf="0.9924361109733582">
+                    <pc:Unicode>obgleich die Folge der Saͤtze auf dieſe Art im galanten Styl ausgeuͤbet wird.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Bey dem zweyten Exempel bey (b) hat auch eine Anticipatio Tranſitus ſtatt,
+obgleich die Folge der Saͤtze auf dieſe Art im galanten Styl ausgeuͤbet wird.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007" type="caption">
+            <pc:Coords points="419,2395 2556,2395 2556,2556 419,2556"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0007_region0007_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="569,2395 2556,2395 2556,2480 569,2480"/>
+                <pc:TextEquiv conf="0.9972361326217651">
+                    <pc:Unicode>(42) Wenn der Baß eine Secunde aufwaͤrts gehet, ſo kann die folgende</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-154_region0007_region0007_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="419,2474 2555,2474 2555,2556 419,2556"/>
+                <pc:TextEquiv conf="0.9941359758377075">
+                    <pc:Unicode>Note eine toniſche Dominante werden, wie bey (a); oder eine ſimple Domi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(42) Wenn der Baß eine Secunde aufwaͤrts gehet, ſo kann die folgende
+Note eine toniſche Dominante werden, wie bey (a); oder eine ſimple Domi⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="422,2563 1064,2563 1064,2640 422,2640"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="422,2563 1064,2563 1064,2640 422,2640"/>
+                <pc:TextEquiv conf="0.9957558512687683">
+                    <pc:Unicode>nante, wie bey (b), als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>nante, wie bey (b), als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="1359,2635 1713,2635 1713,2766 1359,2766"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="1359,2635 1713,2635 1713,2766 1359,2766"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="1167,2921 1679,2921 1679,2996 1167,2996"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:Coords points="1167,2921 1679,2921 1679,2996 1167,2996"/>
+                <pc:TextEquiv conf="0.8482375144958496">
+                    <pc:Unicode>(a) (b)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(a) (b)</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0002">
+            <pc:Coords points="731,466 2109,466 2109,1016 731,1016"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0005">
+            <pc:Coords points="404,1624 2559,1624 2559,2182 404,2182"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:52</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:52</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-119.png" imageWidth="2973" imageHeight="3667" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-119-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-119.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="437,169 2614,169 2614,3235 437,3235"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="404,170 404,266 577,266 577,170 404,170"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="437,207 552,207 552,254 437,254"/>
+                <pc:TextEquiv conf="0.8315935134887695">
+                    <pc:Unicode>100</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>100</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="769,151 769,272 2273,272 2273,151 769,151"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="800,170 2249,170 2249,265 800,265"/>
+                <pc:TextEquiv conf="0.9691748023033142">
+                    <pc:Unicode>IIBuch. XCap. Von einigen Freyheiten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>IIBuch. XCap. Von einigen Freyheiten</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="570,317 577,516 2625,496 2625,317 570,317"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="410,535 410,836 2650,836 2650,535 410,535"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="444,539 2606,539 2606,633 444,633"/>
+                <pc:TextEquiv conf="0.9711706042289734">
+                    <pc:Unicode>Man kann in dem Traité de l' Harmonie des Herrn Rameau meh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,628 2603,628 2603,745 446,745"/>
+                <pc:TextEquiv conf="0.9995105862617493">
+                    <pc:Unicode>rere Nachricht von allerhand Arten untergeſchobener Accorde finden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,723 2605,723 2605,817 446,817"/>
+                <pc:TextEquiv conf="0.9975277185440063">
+                    <pc:Unicode>die wir der Kuͤrze wegen allhier ubergehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man kann in dem Traité de l' Harmonie des Herrn Rameau meh⸗
+rere Nachricht von allerhand Arten untergeſchobener Accorde finden
+die wir der Kuͤrze wegen allhier ubergehen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="474,1047 474,1489 2574,1489 2574,1047 474,1047"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="591,1047 2387,1047 2387,1187 591,1187"/>
+                <pc:TextEquiv conf="0.9950411319732666">
+                    <pc:Unicode>Zehntes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="520,1212 2538,1212 2538,1357 520,1357"/>
+                <pc:TextEquiv conf="0.9852392077445984">
+                    <pc:Unicode>Von einigen Freyheiten in der Oberſtimme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="1030,1373 2510,1373 2510,1489 1030,1489"/>
+                <pc:TextEquiv conf="0.9997159838676453">
+                    <pc:Unicode>und in dem Generalbaſſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zehntes Capitel.
+Von einigen Freyheiten in der Oberſtimme
+und in dem Generalbaſſe.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1357,1553 1357,1655 1690,1655 1690,1553 1357,1553"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1357,1573 1664,1573 1664,1653 1357,1653"/>
+                <pc:TextEquiv conf="0.9718092679977417">
+                    <pc:Unicode>§. 224.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 224.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="drop-capital">
+            <pc:Coords points="423,1661 424,1913 693,1921 694,1753 658,1663 423,1661"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="444,1681 444,1911 691,1911 691,1746 665,1681 444,1681"/>
+                <pc:TextEquiv conf="0.983919084072113">
+                    <pc:Unicode>M</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>M</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="676,1680 699,1764 710,1941 424,1951 418,2034 2645,2027 2638,1675 676,1680"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1461,1678 694,1680 694,1746 699,1768 2614,1768 2614,1678 1461,1678"/>
+                <pc:TextEquiv conf="0.9960267543792725">
+                    <pc:Unicode>an laͤſſet eine Diſſonanz, die ſich abſteigend aufloͤſen ſollte, oͤfters</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="719,1771 2613,1771 2613,1856 719,1856"/>
+                <pc:TextEquiv conf="0.9984109401702881">
+                    <pc:Unicode>in einer Oberſtimme uͤber ſich gehen. Die Note, worauf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="720,1861 2608,1861 2608,1944 720,1944"/>
+                <pc:TextEquiv conf="0.9970800876617432">
+                    <pc:Unicode>ſolche herabgehen ſollte, findet ſich alsdenn in einer andern</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="510,1948 452,1950 452,2033 736,2033 2385,2028 2385,1948 510,1948"/>
+                <pc:TextEquiv conf="0.9995354413986206">
+                    <pc:Unicode>Stimme. Dieſer Freyheit muß man ſich ſelten bedienen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>an laͤſſet eine Diſſonanz, die ſich abſteigend aufloͤſen ſollte, oͤfters
+in einer Oberſtimme uͤber ſich gehen. Die Note, worauf
+ſolche herabgehen ſollte, findet ſich alsdenn in einer andern
+Stimme. Dieſer Freyheit muß man ſich ſelten bedienen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footer">
+            <pc:Coords points="2369,2136 2369,2027 2600,2027 2600,2136 2369,2136"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="2381,2034 2600,2034 2600,2118 2381,2118"/>
+                <pc:TextEquiv conf="0.963503897190094">
+                    <pc:Unicode>§. 225.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 225.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footnote">
+            <pc:Coords points="411,2212 411,3281 2683,3281 2683,2212 411,2212"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="532,2240 2605,2240 2605,2319 532,2319"/>
+                <pc:TextEquiv conf="0.9777252078056335">
+                    <pc:Unicode>hhh) Da die Accorde gis h d f Da der verminderteSeptimenaccord gis h</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,2317 2606,2317 2606,2406 452,2406"/>
+                <pc:TextEquiv conf="0.9857403635978699">
+                    <pc:Unicode>und e gis h d nur in Anſehung der No⸗ d f, und der Septimenaccord h d f a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,2403 2602,2403 2602,2476 451,2476"/>
+                <pc:TextEquiv conf="0.9941540360450745">
+                    <pc:Unicode>ten e und f von einander unterſchieden in nichts anderm, als den beyden No⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="452,2481 2604,2481 2604,2553 452,2553"/>
+                <pc:TextEquiv conf="0.9986820816993713">
+                    <pc:Unicode>ſind: ſo kann man einen diatoniſchen Ge⸗ ten gis und a unterſchieden: ſo kann</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="452,2556 2601,2556 2601,2634 452,2634"/>
+                <pc:TextEquiv conf="0.9925843477249146">
+                    <pc:Unicode>ſang von dieſen beyden Noten formiren, man aus eben der Urſache folgende Saͤtze</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,2639 1813,2639 1813,2723 453,2723"/>
+                <pc:TextEquiv conf="0.995660662651062">
+                    <pc:Unicode>als: formiren:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="664,2710 2121,2710 2121,2866 664,2866"/>
+                <pc:TextEquiv conf="0.46728819608688354">
+                    <pc:Unicode>QN</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="707,2841 1678,2841 1678,2912 707,2912"/>
+                <pc:TextEquiv conf="0.4200381934642792">
+                    <pc:Unicode>i</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="462,2774 2350,2774 2350,3018 462,3018"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="464,3071 2551,3071 2551,3186 464,3186"/>
+                <pc:TextEquiv conf="0.3873148560523987">
+                    <pc:Unicode>n</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_10_region_id_10_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,3107 2342,3107 2342,3220 465,3220"/>
+                <pc:TextEquiv conf="0.5846680402755737">
+                    <pc:Unicode>E E</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>hhh) Da die Accorde gis h d f Da der verminderteSeptimenaccord gis h
+und e gis h d nur in Anſehung der No⸗ d f, und der Septimenaccord h d f a
+ten e und f von einander unterſchieden in nichts anderm, als den beyden No⸗
+ſind: ſo kann man einen diatoniſchen Ge⸗ ten gis und a unterſchieden: ſo kann
+ſang von dieſen beyden Noten formiren, man aus eben der Urſache folgende Saͤtze
+als: formiren:
+QN
+i
+
+n
+E E</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="1524,2231 1524,2698 436,2698 436,2231 1524,2231"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="532,2240 1507,2240 1507,2319 532,2319"/>
+                <pc:TextEquiv conf="0.9522584080696106">
+                    <pc:Unicode>hhh) Da die Accorde gis h d f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,2327 1512,2327 1512,2406 452,2406"/>
+                <pc:TextEquiv conf="0.990103006362915">
+                    <pc:Unicode>und e gis h d nur in Anſehung der No⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,2404 1493,2404 1493,2476 451,2476"/>
+                <pc:TextEquiv conf="0.997883141040802">
+                    <pc:Unicode>ten e und f von einander unterſchieden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="452,2481 1494,2481 1494,2549 452,2549"/>
+                <pc:TextEquiv conf="0.9986683130264282">
+                    <pc:Unicode>ſind: ſo kann man einen diatoniſchen Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:Coords points="452,2563 1493,2563 1493,2634 452,2634"/>
+                <pc:TextEquiv conf="0.9977498054504395">
+                    <pc:Unicode>ſang von dieſen beyden Noten formiren,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:Coords points="453,2647 558,2647 558,2698 453,2698"/>
+                <pc:TextEquiv conf="0.9995543956756592">
+                    <pc:Unicode>als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>hhh) Da die Accorde gis h d f
+und e gis h d nur in Anſehung der No⸗
+ten e und f von einander unterſchieden
+ſind: ſo kann man einen diatoniſchen Ge⸗
+ſang von dieſen beyden Noten formiren,
+als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="paragraph">
+            <pc:Coords points="2638,2705 2638,2231 1537,2231 1537,2705 2638,2705"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_13_region_id_13_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1558,2241 2605,2241 2605,2319 1558,2319"/>
+                <pc:TextEquiv conf="0.9810726046562195">
+                    <pc:Unicode>Da der verminderteSeptimenaccord gis h</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-119_region_id_13_region_id_13_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1558,2317 2606,2317 2606,2393 1558,2393"/>
+                <pc:TextEquiv conf="0.967480480670929">
+                    <pc:Unicode>d f, und der Septimenaccord h d f a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0002">
+                <pc:Coords points="1559,2403 2602,2403 2602,2469 1559,2469"/>
+                <pc:TextEquiv conf="0.9910260438919067">
+                    <pc:Unicode>in nichts anderm, als den beyden No⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0003">
+                <pc:Coords points="1559,2481 2604,2481 2604,2553 1559,2553"/>
+                <pc:TextEquiv conf="0.998823881149292">
+                    <pc:Unicode>ten gis und a unterſchieden: ſo kann</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0004">
+                <pc:Coords points="1559,2556 2601,2556 2601,2630 1559,2630"/>
+                <pc:TextEquiv conf="0.9957280158996582">
+                    <pc:Unicode>man aus eben der Urſache folgende Saͤtze</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0005">
+                <pc:Coords points="1559,2639 1813,2639 1813,2703 1559,2703"/>
+                <pc:TextEquiv conf="0.997636079788208">
+                    <pc:Unicode>formiren:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Da der verminderteSeptimenaccord gis h
+d f, und der Septimenaccord h d f a
+in nichts anderm, als den beyden No⸗
+ten gis und a unterſchieden: ſo kann
+man aus eben der Urſache folgende Saͤtze
+formiren:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_4">
+            <pc:Coords points="442,861 442,989 2586,989 2586,861 442,861"/>
+        </pc:SeparatorRegion>
+        <pc:MusicRegion id="region_id_12" custom="staffNotation">
+            <pc:Coords points="437,2709 439,3253 1519,3256 1505,2699 437,2709"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_14" custom="staffNotation">
+            <pc:Coords points="1800,2744 1800,3243 2395,3243 2395,2744 1800,2744"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

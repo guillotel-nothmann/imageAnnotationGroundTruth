@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:57</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:57</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-024.png" imageWidth="2973" imageHeight="3606" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-024-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-024.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="387,208 2506,208 2506,3352 387,3352"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+                <pc:RegionRefIndexed index="16" regionRef="region_id_16"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="1158,150 1158,307 1785,307 1785,150 1158,150"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1210,208 1705,208 1705,295 1210,295"/>
+                <pc:TextEquiv conf="0.9967073202133179">
+                    <pc:Unicode>Vorbereitung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbereitung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2419,171 2419,307 2519,307 2519,171 2419,171"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2459,223 2495,223 2495,283 2459,283"/>
+                <pc:TextEquiv conf="0.9188327193260193">
+                    <pc:Unicode>5</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>5</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="317,314 331,535 2533,513 2533,314 317,314"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="555,349 2490,349 2490,438 555,438"/>
+                <pc:TextEquiv conf="0.997559130191803">
+                    <pc:Unicode>Ein Jntervall, welches aus fuͤnf ganzen und einem halben Tone</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="387,438 387,527 1132,527 2201,516 2201,438 387,438"/>
+                <pc:TextEquiv conf="0.9932575821876526">
+                    <pc:Unicode>beſteht, als c:h, heißt eine große Septime.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein Jntervall, welches aus fuͤnf ganzen und einem halben Tone
+beſteht, als c:h, heißt eine große Septime.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="345,528 345,692 2512,692 2512,528 345,528"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="560,528 2488,528 2488,610 560,610"/>
+                <pc:TextEquiv conf="0.9903168082237244">
+                    <pc:Unicode>Ein Jntervall, welches aus fuͤnf ganzen und zweenen halben Td⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="388,613 1627,613 1627,692 388,692"/>
+                <pc:TextEquiv conf="0.9914718866348267">
+                    <pc:Unicode>nen beſteht, als c:c, heiſt eine Octave.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein Jntervall, welches aus fuͤnf ganzen und zweenen halben Td⸗
+nen beſteht, als c:c, heiſt eine Octave.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1300,713 1305,806 1564,791 1564,713 1300,713"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1338,725 1338,804 1340,804 1564,791 1564,725 1338,725"/>
+                <pc:TextEquiv conf="0.9968851208686829">
+                    <pc:Unicode>§. 10</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 10</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="350,795 350,997 2525,997 2525,795 350,795"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="559,795 2494,795 2494,912 559,912"/>
+                <pc:TextEquiv conf="0.9986188411712646">
+                    <pc:Unicode>Zween Klaͤnge, die von gleicher Hoͤhe oder Tiefe ſind, ſie moͤgen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="390,901 2489,901 2489,993 390,993"/>
+                <pc:TextEquiv conf="0.9979798197746277">
+                    <pc:Unicode>in der Staͤrke einander gleich ſeyn oder nicht, machen einen Einklang.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zween Klaͤnge, die von gleicher Hoͤhe oder Tiefe ſind, ſie moͤgen
+in der Staͤrke einander gleich ſeyn oder nicht, machen einen Einklang.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1334,1000 1334,1103 1579,1103 1579,1000 1334,1000"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1351,1017 1568,1017 1568,1098 1351,1098"/>
+                <pc:TextEquiv conf="0.8273397088050842">
+                    <pc:Unicode>§. 11.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 11.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="345,1085 345,1630 2512,1630 2512,1085 345,1085"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="392,1097 2492,1097 2492,1186 392,1186"/>
+                <pc:TextEquiv conf="0.9927687644958496">
+                    <pc:Unicode>.Von zweenen Toͤnen, die ein gewiſſes Jntervall zuſammen ma</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="390,1187 2487,1187 2487,1273 390,1273"/>
+                <pc:TextEquiv conf="0.9996234774589539">
+                    <pc:Unicode>chen, verhaͤlt ſich der unterſte gegen den oberſten, wie der oberſte gegen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,1276 2492,1276 2492,1359 393,1359"/>
+                <pc:TextEquiv conf="0.9949225187301636">
+                    <pc:Unicode>den unterſten. So iſt z. E. in der kleinen Terz e: g, wo das e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,1357 2492,1357 2492,1449 394,1449"/>
+                <pc:TextEquiv conf="0.9981784820556641">
+                    <pc:Unicode>den tiefſten, und das g den hoͤchſten Klang enthaͤlt, der Ton g die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="397,1443 2493,1443 2493,1536 397,1536"/>
+                <pc:TextEquiv conf="0.9958835244178772">
+                    <pc:Unicode>kleine Terz von e, aufwaͤrts gerechnet; und der Ton e die kleine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,1529 2232,1529 2232,1620 394,1620"/>
+                <pc:TextEquiv conf="0.9966843724250793">
+                    <pc:Unicode>Terz von g, abwaͤrts gerechnet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>.Von zweenen Toͤnen, die ein gewiſſes Jntervall zuſammen ma
+chen, verhaͤlt ſich der unterſte gegen den oberſten, wie der oberſte gegen
+den unterſten. So iſt z. E. in der kleinen Terz e: g, wo das e
+den tiefſten, und das g den hoͤchſten Klang enthaͤlt, der Ton g die
+kleine Terz von e, aufwaͤrts gerechnet; und der Ton e die kleine
+Terz von g, abwaͤrts gerechnet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1313,1635 1313,1741 1573,1741 1573,1635 1313,1635"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1337,1657 1556,1657 1556,1738 1337,1738"/>
+                <pc:TextEquiv conf="0.9663255214691162">
+                    <pc:Unicode>§. 12.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 12.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="357,1721 357,2121 2518,2121 2518,1721 357,1721"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="562,1751 2505,1751 2505,1834 562,1834"/>
+                <pc:TextEquiv conf="0.9994938969612122">
+                    <pc:Unicode>Gleiche Bewandniß hat es, wenn man von zweyen klingenden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,1839 2495,1839 2495,1923 396,1923"/>
+                <pc:TextEquiv conf="0.9983601570129395">
+                    <pc:Unicode>Werkzeugen ſpricht, daß das eine eine Quinte hoͤher ſteht, als das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,1923 2505,1923 2505,2006 393,2006"/>
+                <pc:TextEquiv conf="0.9995375871658325">
+                    <pc:Unicode>andere; welches naͤmlich ſo viel ſagen will, als daß der Ton, den das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="395,2012 2495,2012 2495,2094 395,2094"/>
+                <pc:TextEquiv conf="0.9974687099456787">
+                    <pc:Unicode>eine hervor bringet, eine Quinte hoͤher, als der Ton von dem andern iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Gleiche Bewandniß hat es, wenn man von zweyen klingenden
+Werkzeugen ſpricht, daß das eine eine Quinte hoͤher ſteht, als das
+andere; welches naͤmlich ſo viel ſagen will, als daß der Ton, den das
+eine hervor bringet, eine Quinte hoͤher, als der Ton von dem andern iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="heading">
+            <pc:Coords points="357,2233 357,2518 2518,2518 2518,2233 357,2233"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1084,2252 2325,2252 2325,2374 1084,2374"/>
+                <pc:TextEquiv conf="0.9993623495101929">
+                    <pc:Unicode>Drittes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="400,2375 2497,2375 2497,2507 400,2507"/>
+                <pc:TextEquiv conf="0.9867658615112305">
+                    <pc:Unicode>Von Jntervallen, die groͤßer als die Octave ſind.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Drittes Capitel.
+Von Jntervallen, die groͤßer als die Octave ſind.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="heading">
+            <pc:Coords points="1310,2532 1310,2657 1585,2657 1585,2532 1310,2532"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1344,2542 1557,2542 1557,2634 1344,2634"/>
+                <pc:TextEquiv conf="0.9585930705070496">
+                    <pc:Unicode>§. 13.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 13.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="drop-capital">
+            <pc:Coords points="385,2629 385,2890 649,2890 649,2629 385,2629"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="394,2661 649,2661 649,2880 394,2880"/>
+                <pc:TextEquiv conf="0.87525874376297">
+                    <pc:Unicode>W</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>W</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="paragraph">
+            <pc:Coords points="650,2905 340,2912 336,3266 2525,3266 2525,2643 653,2644 650,2905"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_14_region_id_14_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="656,2658 2496,2658 2496,2749 656,2749"/>
+                <pc:TextEquiv conf="0.981201171875">
+                    <pc:Unicode>enn man die Tonleiter c. d. e.f. g. a. h.c. im Hinaufſteigen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_14_region_id_14_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="700,2747 2505,2747 2505,2831 700,2831"/>
+                <pc:TextEquiv conf="0.9986937642097473">
+                    <pc:Unicode>weiter fortſetzen will: ſo wird man ohne Muͤhe wahrneh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0002">
+                <pc:Coords points="703,2835 2498,2835 2498,2920 703,2920"/>
+                <pc:TextEquiv conf="0.9995481967926025">
+                    <pc:Unicode>men, daß man eine der erſten ganz aͤhnliche neue Tonleiter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0003">
+                <pc:Coords points="401,2924 2498,2924 2498,3006 401,3006"/>
+                <pc:TextEquiv conf="0.9992464184761047">
+                    <pc:Unicode>formiren wird, und daß die Toͤne derſelben nichts anders, als Ober⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0004">
+                <pc:Coords points="396,3007 2496,3007 2496,3093 396,3093"/>
+                <pc:TextEquiv conf="0.9912425875663757">
+                    <pc:Unicode>octaven der Toͤne aus der erſten Leiter ſimd. So iſt z. E. das d aus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_14_region_id_14_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="401,3096 2496,3096 2496,3182 401,3182"/>
+                <pc:TextEquiv conf="0.9948821067810059">
+                    <pc:Unicode>der zweyten Tonleiter die Oberoctave des d aus der erſten; das e die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-024_region_id_14_region_id_14_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,3182 2479,3182 2479,3265 402,3265"/>
+                <pc:TextEquiv conf="0.994501531124115">
+                    <pc:Unicode>Oberoctave von e, und ſo weiter.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>enn man die Tonleiter c. d. e.f. g. a. h.c. im Hinaufſteigen
+weiter fortſetzen will: ſo wird man ohne Muͤhe wahrneh⸗
+men, daß man eine der erſten ganz aͤhnliche neue Tonleiter
+formiren wird, und daß die Toͤne derſelben nichts anders, als Ober⸗
+octaven der Toͤne aus der erſten Leiter ſimd. So iſt z. E. das d aus
+der zweyten Tonleiter die Oberoctave des d aus der erſten; das e die
+Oberoctave von e, und ſo weiter.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_15" type="footer">
+            <pc:Coords points="1554,3252 1554,3371 1745,3371 1745,3252 1554,3252"/>
+            <pc:TextLine id="region_id_15_line0000">
+                <pc:Coords points="1583,3271 1713,3271 1713,3352 1583,3352"/>
+                <pc:TextEquiv conf="0.9939849376678467">
+                    <pc:Unicode>A3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>A3</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_16" type="footer">
+            <pc:Coords points="2299,3252 2299,3367 2511,3367 2511,3252 2299,3252"/>
+            <pc:TextLine id="region_id_16_line0000">
+                <pc:Coords points="2325,3268 2494,3268 2494,3347 2325,3347"/>
+                <pc:TextEquiv conf="0.8710887432098389">
+                    <pc:Unicode>§. 14.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 14.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_10">
+            <pc:Coords points="374,2125 374,2208 2514,2208 2514,2125 374,2125"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

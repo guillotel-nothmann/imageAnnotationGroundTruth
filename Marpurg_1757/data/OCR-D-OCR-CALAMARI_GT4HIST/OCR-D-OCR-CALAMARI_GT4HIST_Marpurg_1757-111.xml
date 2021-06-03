@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:27</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:27</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-111.png" imageWidth="2973" imageHeight="3653" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-111-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-111.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="427,180 2579,180 2579,3293 427,3293"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+                <pc:RegionRefIndexed index="15" regionRef="region_id_15"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="401,169 401,291 523,291 523,169 401,169"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="428,208 511,208 511,279 428,279"/>
+                <pc:TextEquiv conf="0.9832357168197632">
+                    <pc:Unicode>92</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>92</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="969,112 969,278 2015,278 2015,112 969,112"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1002,181 1989,181 1989,277 1002,277"/>
+                <pc:TextEquiv conf="0.9288442730903625">
+                    <pc:Unicode>IBuch. VIi Cap. Regeln</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>IBuch. VIi Cap. Regeln</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="408,316 414,517 2624,522 2621,316 408,316"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="431,323 2579,323 2579,448 431,448"/>
+                <pc:TextEquiv conf="0.9958062767982483">
+                    <pc:Unicode>und in ſelbige mehr Veraͤnderung zu bringen, als ſolche haben wuͤrde,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="433,430 433,517 1740,520 2546,520 2546,430 433,430"/>
+                <pc:TextEquiv conf="0.9878617525100708">
+                    <pc:Unicode>wenn ſie aus nichts, als aus Grundharmonien beſtaͤnde ).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>und in ſelbige mehr Veraͤnderung zu bringen, als ſolche haben wuͤrde,
+wenn ſie aus nichts, als aus Grundharmonien beſtaͤnde ).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="401,533 399,907 2621,859 2621,533 401,533"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="614,533 2575,533 2575,628 614,628"/>
+                <pc:TextEquiv conf="0.999821126461029">
+                    <pc:Unicode>Der Generalbaß iſt alſo eine Art von Oberſtimme in Anſehung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="429,631 2575,631 2575,717 429,717"/>
+                <pc:TextEquiv conf="0.9926842451095581">
+                    <pc:Unicode>ſeines Grundbaſſes. Hier folgen die Regeln deſſelben, die, ausge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="431,717 2578,717 2578,806 431,806"/>
+                <pc:TextEquiv conf="0.9995161294937134">
+                    <pc:Unicode>nommen die erſte, im Grunde keine andern ſind, als die wir von der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:Coords points="431,809 431,897 862,897 1376,886 1376,809 431,809"/>
+                <pc:TextEquiv conf="0.9991894364356995">
+                    <pc:Unicode>Oberſtimme gegeben haben.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der Generalbaß iſt alſo eine Art von Oberſtimme in Anſehung
+ſeines Grundbaſſes. Hier folgen die Regeln deſſelben, die, ausge⸗
+nommen die erſte, im Grunde keine andern ſind, als die wir von der
+Oberſtimme gegeben haben.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1199,910 1199,1037 1811,1037 1811,910 1199,910"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1207,931 1811,931 1811,1037 1207,1037"/>
+                <pc:TextEquiv conf="0.9970145225524902">
+                    <pc:Unicode>Erſte Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſte Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1346,1056 1346,1152 1652,1152 1652,1056 1346,1056"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1372,1066 1630,1066 1630,1148 1372,1148"/>
+                <pc:TextEquiv conf="0.9853609800338745">
+                    <pc:Unicode>§. 210.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 210.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="402,1133 402,1515 1140,1523 1159,1427 2591,1436 2602,1133 1682,1143 1660,1160 1337,1158 1291,1135 402,1133"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="597,1159 597,1246 2576,1246 2576,1159 597,1159"/>
+                <pc:TextEquiv conf="0.9988677501678467">
+                    <pc:Unicode>Jede Note, die den Accord der falſchen Quinte uͤber ſich hat,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="427,1249 2575,1249 2575,1337 427,1337"/>
+                <pc:TextEquiv conf="0.99596107006073">
+                    <pc:Unicode>und folglich eine tonbezeichnende Note iſt, muß (§. 77) einen Grad</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="427,1337 427,1430 2576,1430 2576,1337 427,1337"/>
+                <pc:TextEquiv conf="0.9977874755859375">
+                    <pc:Unicode>uͤber ſich gehen, waͤhrender Zeit ſich die falſche Quinte einen Grad</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:Coords points="427,1432 427,1515 494,1516 1117,1516 1117,1432 427,1432"/>
+                <pc:TextEquiv conf="0.9880104064941406">
+                    <pc:Unicode>herunter beweget, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jede Note, die den Accord der falſchen Quinte uͤber ſich hat,
+und folglich eine tonbezeichnende Note iſt, muß (§. 77) einen Grad
+uͤber ſich gehen, waͤhrender Zeit ſich die falſche Quinte einen Grad
+herunter beweget, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1027,2000 1027,2134 1971,2134 1971,2000 1027,2000"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1064,2020 1945,2020 1945,2134 1064,2134"/>
+                <pc:TextEquiv conf="0.984524667263031">
+                    <pc:Unicode>Zweyte Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zweyte Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1352,2147 1352,2236 1451,2236 1456,2221 1644,2224 1645,2147 1352,2147"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1376,2161 1376,2236 1451,2236 1626,2224 1626,2161 1376,2161"/>
+                <pc:TextEquiv conf="0.8464183211326599">
+                    <pc:Unicode>§. 211.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 211.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="402,2236 402,2516 1432,2514 1441,2419 1725,2417 1747,2405 2592,2408 2587,2233 1483,2231 1459,2242 402,2236"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1479,2233 611,2237 611,2330 2567,2330 2567,2233 1479,2233"/>
+                <pc:TextEquiv conf="0.9976168870925903">
+                    <pc:Unicode>Jede Note, die den Accord der uͤbermaͤßigen Quarte traͤget, muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="429,2323 429,2414 1730,2414 2568,2408 2568,2323 429,2323"/>
+                <pc:TextEquiv conf="0.9993272423744202">
+                    <pc:Unicode>einen Grad unter ſich gehen, waͤhrender Zeit die uͤbermaͤßige Quarte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="432,2420 1416,2420 1416,2508 432,2508"/>
+                <pc:TextEquiv conf="0.9966355562210083">
+                    <pc:Unicode>einen Grad uͤber ſich gehet, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jede Note, die den Accord der uͤbermaͤßigen Quarte traͤget, muß
+einen Grad unter ſich gehen, waͤhrender Zeit die uͤbermaͤßige Quarte
+einen Grad uͤber ſich gehet, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="footer">
+            <pc:Coords points="2321,2746 2321,2867 2589,2867 2589,2746 2321,2746"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="2336,2769 2568,2769 2568,2854 2336,2854"/>
+                <pc:TextEquiv conf="0.9831350445747375">
+                    <pc:Unicode>Dritte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dritte</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footnote">
+            <pc:Coords points="396,2893 396,3307 2589,3307 2589,2893 396,2893"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_13_region_id_13_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="513,2900 2565,2900 2565,2985 513,2985"/>
+                <pc:TextEquiv conf="0.9967198967933655">
+                    <pc:Unicode>yy) Derjenige Generalbaß iſt allezeit ſchreitungen beſtehet, und folglich die ſtu⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_13_region_id_13_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="432,2983 2565,2983 2565,3062 432,3062"/>
+                <pc:TextEquiv conf="0.9982632398605347">
+                    <pc:Unicode>der ſangbarſte, wo die Noten in diatoni⸗ fenweiſe diatoniſche Fortſchreitung daſelb⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_13_region_id_13_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="431,3061 2562,3061 2562,3140 431,3140"/>
+                <pc:TextEquiv conf="0.99822998046875">
+                    <pc:Unicode>ſcher Ordnung, ſo viel als moͤglich, auf ſten unterbrochen wird: ſo ſiehet man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_13_region_id_13_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="434,3136 2563,3136 2563,3213 434,3213"/>
+                <pc:TextEquiv conf="0.9978481531143188">
+                    <pc:Unicode>einander folgen. Da der Grundbaß gar leicht ein, warum ein Generalbaß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_13_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-111_region_id_13_region_id_13_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="434,3213 2350,3213 2350,3293 434,3293"/>
+                <pc:TextEquiv conf="0.9959878325462341">
+                    <pc:Unicode>meiſtens aus Quinten und Quartenfort⸗ ſangbarer als ein Grundbaß iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>yy) Derjenige Generalbaß iſt allezeit ſchreitungen beſtehet, und folglich die ſtu⸗
+der ſangbarſte, wo die Noten in diatoni⸗ fenweiſe diatoniſche Fortſchreitung daſelb⸗
+ſcher Ordnung, ſo viel als moͤglich, auf ſten unterbrochen wird: ſo ſiehet man
+einander folgen. Da der Grundbaß gar leicht ein, warum ein Generalbaß
+meiſtens aus Quinten und Quartenfort⸗ ſangbarer als ein Grundbaß iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="paragraph">
+            <pc:Coords points="421,3288 421,2902 1478,2902 1478,3288 421,3288"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:Coords points="513,2905 1466,2905 1466,2985 513,2985"/>
+                <pc:TextEquiv conf="0.9893945455551147">
+                    <pc:Unicode>yy) Derjenige Generalbaß iſt allezeit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0001">
+                <pc:Coords points="432,2989 1466,2989 1466,3062 432,3062"/>
+                <pc:TextEquiv conf="0.9899799227714539">
+                    <pc:Unicode>der ſangbarſte, wo die Noten in diatoni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0002">
+                <pc:Coords points="431,3065 1471,3065 1471,3140 431,3140"/>
+                <pc:TextEquiv conf="0.9945026636123657">
+                    <pc:Unicode>ſcher Ordnung, ſo viel als moͤglich, auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0003">
+                <pc:Coords points="434,3143 1467,3143 1467,3213 434,3213"/>
+                <pc:TextEquiv conf="0.9962558150291443">
+                    <pc:Unicode>einander folgen. Da der Grundbaß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_14_line0004">
+                <pc:Coords points="434,3224 1468,3224 1468,3288 434,3288"/>
+                <pc:TextEquiv conf="0.9810934662818909">
+                    <pc:Unicode>meiſtens aus Quinten- und Quartenfort⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>yy) Derjenige Generalbaß iſt allezeit
+der ſangbarſte, wo die Noten in diatoni⸗
+ſcher Ordnung, ſo viel als moͤglich, auf
+einander folgen. Da der Grundbaß
+meiſtens aus Quinten- und Quartenfort⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_15" type="paragraph">
+            <pc:Coords points="1520,3291 1520,2899 2574,2899 2574,3291 1520,3291"/>
+            <pc:TextLine id="region_id_15_line0000">
+                <pc:Coords points="1529,2900 2565,2900 2565,2972 1529,2972"/>
+                <pc:TextEquiv conf="0.9963252544403076">
+                    <pc:Unicode>ſchreitungen beſtehet, und folglich die ſtu⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0001">
+                <pc:Coords points="1531,2983 2565,2983 2565,3050 1531,3050"/>
+                <pc:TextEquiv conf="0.9993663430213928">
+                    <pc:Unicode>fenweiſe diatoniſche Fortſchreitung daſelb⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0002">
+                <pc:Coords points="1533,3061 2562,3061 2562,3128 1533,3128"/>
+                <pc:TextEquiv conf="0.9971598982810974">
+                    <pc:Unicode>ſten unterbrochen wird: ſo ſiehet man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0003">
+                <pc:Coords points="1532,3136 2563,3136 2563,3209 1532,3209"/>
+                <pc:TextEquiv conf="0.9994350075721741">
+                    <pc:Unicode>gar leicht ein, warum ein Generalbaß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_15_line0004">
+                <pc:Coords points="1532,3213 2350,3213 2350,3291 1532,3291"/>
+                <pc:TextEquiv conf="0.9933190941810608">
+                    <pc:Unicode>ſangbarer als ein Grundbaß iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſchreitungen beſtehet, und folglich die ſtu⸗
+fenweiſe diatoniſche Fortſchreitung daſelb⸗
+ſten unterbrochen wird: ſo ſiehet man
+gar leicht ein, warum ein Generalbaß
+ſangbarer als ein Grundbaß iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_7" custom="staffNotation">
+            <pc:Coords points="1206,1435 1205,2000 1760,2000 1759,1436 1206,1435"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_11" custom="staffNotation">
+            <pc:Coords points="1494,2433 1492,2880 2041,2880 2043,2412 1761,2410 1745,2433 1494,2433"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

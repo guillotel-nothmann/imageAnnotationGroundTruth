@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:48</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:48</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-079.png" imageWidth="2973" imageHeight="3702" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-079-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-079.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="455,194 2652,194 2652,3361 455,3361"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="426,275 426,165 574,165 574,275 426,275"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="455,195 541,195 541,257 455,257"/>
+                <pc:TextEquiv conf="0.8769100904464722">
+                    <pc:Unicode>60</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>60</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="587,721 587,430 2481,430 2481,721 587,721"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1020,455 2448,455 2448,550 1020,550"/>
+                <pc:TextEquiv conf="0.9998584389686584">
+                    <pc:Unicode>Siebenzehntes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="617,576 2464,576 2464,721 617,721"/>
+                <pc:TextEquiv conf="0.9975252747535706">
+                    <pc:Unicode>Von unterbrochenen Cadenzen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Siebenzehntes Capitel.
+Von unterbrochenen Cadenzen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1408,863 1408,753 1660,753 1660,863 1408,863"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1427,764 1659,764 1659,849 1427,849"/>
+                <pc:TextEquiv conf="0.8958706855773926">
+                    <pc:Unicode>§. 13i.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 13i.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="drop-capital">
+            <pc:Coords points="432,1141 432,850 639,850 639,1141 432,1141"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="463,873 639,873 639,1135 463,1135"/>
+                <pc:TextEquiv conf="0.8380502462387085">
+                    <pc:Unicode>J</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>J</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="2655,2311 2655,870 665,870 665,1148 433,1154 446,2311 2655,2311"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="665,875 2632,875 2632,972 665,972"/>
+                <pc:TextEquiv conf="0.9971477389335632">
+                    <pc:Unicode>einem Grundbaſſe mit Quinten iſt, wie ſchon bemerket wor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="687,967 2634,967 2634,1061 687,1061"/>
+                <pc:TextEquiv conf="0.9776906967163086">
+                    <pc:Unicode>den (Cap. VIll.), allezeit ein mehr oder weniger vollkomme⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="686,1059 2631,1059 2631,1153 686,1153"/>
+                <pc:TextEquiv conf="0.9982603788375854">
+                    <pc:Unicode>ner Ruhepunct von einem Tone zum andern. Folglich muß in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="665,1144 467,1153 467,1242 2632,1242 2632,1144 665,1144"/>
+                <pc:TextEquiv conf="0.9997048377990723">
+                    <pc:Unicode>der davon entſpringenden diatoniſchen Leiter ebenfalls ein mehr oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,1237 2635,1237 2635,1334 468,1334"/>
+                <pc:TextEquiv conf="0.9980445504188538">
+                    <pc:Unicode>weniger vollkommener Ruhepunct von einem Tone zum andern ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,1326 2635,1326 2635,1423 469,1423"/>
+                <pc:TextEquiv conf="0.999617874622345">
+                    <pc:Unicode>Man kann vermittelſt einer ſehr leichten Erfahrung darthun, daß der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,1413 2636,1413 2636,1517 469,1517"/>
+                <pc:TextEquiv conf="0.997581958770752">
+                    <pc:Unicode>Grund des Ruhepuncts in der Melodie einzig und allein in dem ent⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,1497 2635,1497 2635,1597 461,1597"/>
+                <pc:TextEquiv conf="0.9968419075012207">
+                    <pc:Unicode>weder wuͤrklich vorhandenen, oder doch dazu gehoͤrigen Grundbaſſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="467,1592 2635,1592 2635,1689 467,1689"/>
+                <pc:TextEquiv conf="0.9937455058097839">
+                    <pc:Unicode>lieget. Man ſinge die drey Noten c, d, c hinter einander, und mache</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1682 2636,1682 2636,1776 470,1776"/>
+                <pc:TextEquiv conf="0.9959439635276794">
+                    <pc:Unicode>einen Triller auf d. Der Geſang wird nach dem zweyten c geendiget</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1768 2637,1768 2637,1865 470,1865"/>
+                <pc:TextEquiv conf="0.9966685175895691">
+                    <pc:Unicode>zu ſeyn ſcheinen, und das Gehoͤr nichts weiter verlangen. Eben ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1856 2640,1856 2640,1954 470,1954"/>
+                <pc:TextEquiv conf="0.999203622341156">
+                    <pc:Unicode>verhaͤlt es ſich, wenn man dieſen Geſang mit ſeinem natuͤrlichen Grund⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,1944 2639,1944 2639,2039 470,2039"/>
+                <pc:TextEquiv conf="0.990665078163147">
+                    <pc:Unicode>baſſe c, g, c begleitet. Wenn man aber anſtatt dieſes Baſſes den fol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,2033 2642,2033 2642,2132 470,2132"/>
+                <pc:TextEquiv conf="0.9850583076477051">
+                    <pc:Unicode>genden macht: c, g, a: ſo wird alsdenn der Geſang nicht mehr ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="473,2122 2639,2122 2639,2223 473,2223"/>
+                <pc:TextEquiv conf="0.9974406361579895">
+                    <pc:Unicode>endiget zu ſeyn ſcheinen, ſondern das Gehoͤr wird noch mehr verlan⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_5_region_id_5_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,2212 1859,2212 1859,2302 475,2302"/>
+                <pc:TextEquiv conf="0.9991270899772644">
+                    <pc:Unicode>gen. Dieſe Erfahrung iſt leicht zu machen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>einem Grundbaſſe mit Quinten iſt, wie ſchon bemerket wor⸗
+den (Cap. VIll.), allezeit ein mehr oder weniger vollkomme⸗
+ner Ruhepunct von einem Tone zum andern. Folglich muß in
+der davon entſpringenden diatoniſchen Leiter ebenfalls ein mehr oder
+weniger vollkommener Ruhepunct von einem Tone zum andern ſeyn.
+Man kann vermittelſt einer ſehr leichten Erfahrung darthun, daß der
+Grund des Ruhepuncts in der Melodie einzig und allein in dem ent⸗
+weder wuͤrklich vorhandenen, oder doch dazu gehoͤrigen Grundbaſſe
+lieget. Man ſinge die drey Noten c, d, c hinter einander, und mache
+einen Triller auf d. Der Geſang wird nach dem zweyten c geendiget
+zu ſeyn ſcheinen, und das Gehoͤr nichts weiter verlangen. Eben ſo
+verhaͤlt es ſich, wenn man dieſen Geſang mit ſeinem natuͤrlichen Grund⸗
+baſſe c, g, c begleitet. Wenn man aber anſtatt dieſes Baſſes den fol⸗
+genden macht: c, g, a: ſo wird alsdenn der Geſang nicht mehr ge⸗
+endiget zu ſeyn ſcheinen, ſondern das Gehoͤr wird noch mehr verlan⸗
+gen. Dieſe Erfahrung iſt leicht zu machen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1427,2427 1427,2343 1692,2343 1692,2427 1427,2427"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1445,2345 1675,2345 1675,2427 1445,2427"/>
+                <pc:TextEquiv conf="0.9817996025085449">
+                    <pc:Unicode>§. 132.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 132.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="452,2879 452,2427 2649,2427 2649,2879 452,2879"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="654,2427 2641,2427 2641,2531 654,2531"/>
+                <pc:TextEquiv conf="0.9967387318611145">
+                    <pc:Unicode>Dieſe Fortſchreitung g, a, wo die Dominante g diatoniſch zum</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,2519 2639,2519 2639,2616 475,2616"/>
+                <pc:TextEquiv conf="0.9933066964149475">
+                    <pc:Unicode>a hinaufſteiget, anſtatt auf den Stammton c Quintenweiſe herab⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,2608 2641,2608 2641,2703 478,2703"/>
+                <pc:TextEquiv conf="0.9996246099472046">
+                    <pc:Unicode>zugehen, heißt eine unterbrochene Cadenz, weil die vollkommene</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,2697 2639,2697 2639,2798 476,2798"/>
+                <pc:TextEquiv conf="0.985877513885498">
+                    <pc:Unicode>Cadenz g, c, welche das Ohr nach der Dominante g erwartet, unter⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,2788 2315,2788 2315,2879 477,2879"/>
+                <pc:TextEquiv conf="0.9976444244384766">
+                    <pc:Unicode>brochen, und durch den Gang von g zu gehemmet wird.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſe Fortſchreitung g, a, wo die Dominante g diatoniſch zum
+a hinaufſteiget, anſtatt auf den Stammton c Quintenweiſe herab⸗
+zugehen, heißt eine unterbrochene Cadenz, weil die vollkommene
+Cadenz g, c, welche das Ohr nach der Dominante g erwartet, unter⸗
+brochen, und durch den Gang von g zu gehemmet wird.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1389,3002 1389,2905 1679,2905 1679,3002 1389,3002"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1417,2914 1677,2914 1677,3002 1417,3002"/>
+                <pc:TextEquiv conf="0.9320979714393616">
+                    <pc:Unicode>§. 133.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 133.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="464,3267 464,3002 2662,3002 2662,3267 464,3267"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="656,3002 2638,3002 2638,3105 656,3105"/>
+                <pc:TextEquiv conf="0.9885901212692261">
+                    <pc:Unicode>Hieraus folget, daß, wenn der Geſang c, d, e geendiget zu ſeyn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="479,3091 2644,3091 2644,3187 479,3187"/>
+                <pc:TextEquiv conf="0.9942930936813354">
+                    <pc:Unicode>ſcheinet, wenn kein Baß dazu gehet, daß man alsdenn den natuͤrli⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-079_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="481,3182 2642,3182 2642,3267 481,3267"/>
+                <pc:TextEquiv conf="0.9705143570899963">
+                    <pc:Unicode>chen Grundbaß c, g,c dazu denket, weil das Ohr eine Folge dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Hieraus folget, daß, wenn der Geſang c, d, e geendiget zu ſeyn
+ſcheinet, wenn kein Baß dazu gehet, daß man alsdenn den natuͤrli⸗
+chen Grundbaß c, g,c dazu denket, weil das Ohr eine Folge dieſes</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="2500,3377 2500,3267 2662,3267 2662,3377 2500,3377"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2525,3267 2651,3267 2651,3361 2525,3361"/>
+                <pc:TextEquiv conf="0.8730735778808594">
+                    <pc:Unicode>Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ge⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_1" type="decoration">
+            <pc:Coords points="419,424 419,307 2642,307 2642,424 419,424"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

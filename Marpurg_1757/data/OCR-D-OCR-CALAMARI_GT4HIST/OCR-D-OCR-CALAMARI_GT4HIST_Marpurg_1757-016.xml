@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:32</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:32</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-016.png" imageWidth="2973" imageHeight="3688" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-016-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-016.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="343,192 2507,192 2507,3361 343,3361"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="909,193 1942,193 1942,315 909,315 909,193"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="909,193 1942,193 1942,315 909,315"/>
+                <pc:TextEquiv conf="0.9988722801208496">
+                    <pc:Unicode>Vorbericht des Ueberſetzers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbericht des Ueberſetzers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="paragraph">
+            <pc:Coords points="301,339 2506,354 2510,1588 295,1601 301,339"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="346,354 2487,354 2487,454 346,454"/>
+                <pc:TextEquiv conf="0.9970290064811707">
+                    <pc:Unicode>bert ſein Syſtem erbauet, wider alle vernuͤnftige Einwendungen nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:Coords points="344,465 2484,465 2484,557 344,557"/>
+                <pc:TextEquiv conf="0.9994122385978699">
+                    <pc:Unicode>daraus geſichert ſind: ſo hat es doch mit den daraus gefolgerten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:Coords points="346,569 2484,569 2484,663 346,663"/>
+                <pc:TextEquiv conf="0.9970431327819824">
+                    <pc:Unicode>Saͤtzen in der Praxi ſeine Richtigkeit. Zum wenigſten bleibt das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0003">
+                <pc:Coords points="343,673 2483,673 2483,767 343,767"/>
+                <pc:TextEquiv conf="0.9996421337127686">
+                    <pc:Unicode>theoretiſche Syſtem des Herrn Rameau ſo lange das wahrſcheinlich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0004">
+                <pc:Coords points="345,776 2484,776 2484,873 345,873"/>
+                <pc:TextEquiv conf="0.9986478686332703">
+                    <pc:Unicode>ſte, bis uns jemand ein beſſers liefert, und die practiſchen Lehrſaͤtze</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0005">
+                <pc:Coords points="343,882 2483,882 2483,972 343,972"/>
+                <pc:TextEquiv conf="0.998149573802948">
+                    <pc:Unicode>daraus herleitet. Bloße unerhebliche Einwendungen zu machen, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0006">
+                <pc:Coords points="344,987 2484,987 2484,1079 344,1079"/>
+                <pc:TextEquiv conf="0.999164879322052">
+                    <pc:Unicode>einen dem Streite unterworfnen Lehrſatz mit einem andern nicht we</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0007">
+                <pc:Coords points="346,1092 2484,1092 2484,1179 346,1179"/>
+                <pc:TextEquiv conf="0.9983705878257751">
+                    <pc:Unicode>niger bedenklichern zu verwechſeln, dazu wird eben kein Leibnitz er⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0008">
+                <pc:Coords points="348,1182 2485,1182 2485,1284 348,1284"/>
+                <pc:TextEquiv conf="0.9993531703948975">
+                    <pc:Unicode>fordert, und wer weis nicht, wie mancher nur bloß deswegen etwas</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0009">
+                <pc:Coords points="344,1300 2488,1300 2488,1387 344,1387"/>
+                <pc:TextEquiv conf="0.9850791692733765">
+                    <pc:Unicode>tadelt, weil er nicht der Urheber davon iſt? Denn der Eigenſinn der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0010">
+                <pc:Coords points="350,1402 2488,1402 2488,1490 350,1490"/>
+                <pc:TextEquiv conf="0.996544599533081">
+                    <pc:Unicode>Vorurtheile kann an dieſem Tadel wohl nicht allezeit Schuld ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0011">
+                <pc:Coords points="350,1509 350,1596 1147,1596 2484,1588 2484,1509 350,1509"/>
+                <pc:TextEquiv conf="0.999286413192749">
+                    <pc:Unicode>Doch hiervon zu einer andern Zeit ein mehrers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>bert ſein Syſtem erbauet, wider alle vernuͤnftige Einwendungen nicht
+daraus geſichert ſind: ſo hat es doch mit den daraus gefolgerten
+Saͤtzen in der Praxi ſeine Richtigkeit. Zum wenigſten bleibt das
+theoretiſche Syſtem des Herrn Rameau ſo lange das wahrſcheinlich
+ſte, bis uns jemand ein beſſers liefert, und die practiſchen Lehrſaͤtze
+daraus herleitet. Bloße unerhebliche Einwendungen zu machen, oder
+einen dem Streite unterworfnen Lehrſatz mit einem andern nicht we
+niger bedenklichern zu verwechſeln, dazu wird eben kein Leibnitz er⸗
+fordert, und wer weis nicht, wie mancher nur bloß deswegen etwas
+tadelt, weil er nicht der Urheber davon iſt? Denn der Eigenſinn der
+Vorurtheile kann an dieſem Tadel wohl nicht allezeit Schuld ſeyn.
+Doch hiervon zu einer andern Zeit ein mehrers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="327,1574 327,3268 2567,3268 2567,1574 327,1574"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="350,1611 2492,1611 2492,1695 350,1695"/>
+                <pc:TextEquiv conf="0.9991453886032104">
+                    <pc:Unicode>Wegen meiner Ueberſetzung muß ich erinnern, daß ich ſolche ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="351,1713 2493,1713 2493,1800 351,1800"/>
+                <pc:TextEquiv conf="0.9987099766731262">
+                    <pc:Unicode>getreu als moͤglich gemachet, und mich keiner andern Freyheit als ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="349,1816 2495,1816 2495,1903 349,1903"/>
+                <pc:TextEquiv conf="0.9991915225982666">
+                    <pc:Unicode>ner ſolchen bedienet habe, wozu ein jeder berechtiget iſt, der den Nu⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:Coords points="353,1920 2496,1920 2496,2008 353,2008"/>
+                <pc:TextEquiv conf="0.997367799282074">
+                    <pc:Unicode>ten ſeiner Leſer zum Augenmerke hat. Jch habe dieſer Denkungs⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:Coords points="350,2025 2494,2025 2494,2114 350,2114"/>
+                <pc:TextEquiv conf="0.99956214427948">
+                    <pc:Unicode>art zu Folge nicht allein die aretiniſche Gamme, deren man ſich in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:Coords points="356,2129 2495,2129 2495,2220 356,2220"/>
+                <pc:TextEquiv conf="0.9967917799949646">
+                    <pc:Unicode>Frankreich bedienet, in unſere Abeceleiter verwandelt, ſondern annoch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:Coords points="355,2227 2499,2227 2499,2321 355,2321"/>
+                <pc:TextEquiv conf="0.9958471059799194">
+                    <pc:Unicode>gewiſſe weitlaͤuftige Demonſtrationen hin und wieder etwas kuͤrzer ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:Coords points="362,2338 2501,2338 2501,2423 362,2423"/>
+                <pc:TextEquiv conf="0.9965060949325562">
+                    <pc:Unicode>faſſet. Am Ende ſind zween kurze Capitel, ſo wie verſchiedene an⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:Coords points="361,2441 2497,2441 2497,2526 361,2526"/>
+                <pc:TextEquiv conf="0.999146044254303">
+                    <pc:Unicode>dre Dinge an einigen Oertern, deswegen weggeblieben, weil ſie zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:Coords points="365,2542 2500,2542 2500,2630 365,2630"/>
+                <pc:TextEquiv conf="0.9962702393531799">
+                    <pc:Unicode>unſerer Abſicht unnothig waren. Nirgends aber habe ich den Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:Coords points="363,2646 2498,2646 2498,2736 363,2736"/>
+                <pc:TextEquiv conf="0.9994531273841858">
+                    <pc:Unicode>danken des Herrn Rameau die meinigen ſubſtituiret, ſondern da, wo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:Coords points="371,2747 2500,2747 2500,2837 371,2837"/>
+                <pc:TextEquiv conf="0.9967399835586548">
+                    <pc:Unicode>mir fuͤr meine deutſchen Leſer eine kleine Abaͤnderung noͤthig zu ſeyn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:Coords points="370,2854 2503,2854 2503,2940 370,2940"/>
+                <pc:TextEquiv conf="0.9985889196395874">
+                    <pc:Unicode>ſchien, ſolche nach dem Originale des Herrn Rameau ſelber, vorge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:Coords points="372,2954 2500,2954 2500,3044 372,3044"/>
+                <pc:TextEquiv conf="0.9980312585830688">
+                    <pc:Unicode>nommen. Meine Anmerkungen uͤber das Werk werden dazu dienen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:Coords points="371,3057 2501,3057 2501,3149 371,3149"/>
+                <pc:TextEquiv conf="0.9994615316390991">
+                    <pc:Unicode>verſchiedene Saͤtze und Gedanken des Verfaſſers in ein helleres Licht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0015">
+                <pc:Coords points="375,3168 2391,3168 2391,3253 375,3253"/>
+                <pc:TextEquiv conf="0.9987021088600159">
+                    <pc:Unicode>zu ſtellen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wegen meiner Ueberſetzung muß ich erinnern, daß ich ſolche ſo
+getreu als moͤglich gemachet, und mich keiner andern Freyheit als ei⸗
+ner ſolchen bedienet habe, wozu ein jeder berechtiget iſt, der den Nu⸗
+ten ſeiner Leſer zum Augenmerke hat. Jch habe dieſer Denkungs⸗
+art zu Folge nicht allein die aretiniſche Gamme, deren man ſich in
+Frankreich bedienet, in unſere Abeceleiter verwandelt, ſondern annoch
+gewiſſe weitlaͤuftige Demonſtrationen hin und wieder etwas kuͤrzer ge⸗
+faſſet. Am Ende ſind zween kurze Capitel, ſo wie verſchiedene an⸗
+dre Dinge an einigen Oertern, deswegen weggeblieben, weil ſie zu
+unſerer Abſicht unnothig waren. Nirgends aber habe ich den Ge⸗
+danken des Herrn Rameau die meinigen ſubſtituiret, ſondern da, wo
+mir fuͤr meine deutſchen Leſer eine kleine Abaͤnderung noͤthig zu ſeyn
+ſchien, ſolche nach dem Originale des Herrn Rameau ſelber, vorge⸗
+nommen. Meine Anmerkungen uͤber das Werk werden dazu dienen,
+verſchiedene Saͤtze und Gedanken des Verfaſſers in ein helleres Licht
+zu ſtellen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footer">
+            <pc:Coords points="404,3274 404,3371 2541,3371 2541,3274 404,3274"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="412,3274 2506,3274 2506,3361 412,3361"/>
+                <pc:TextEquiv conf="0.980413556098938">
+                    <pc:Unicode>Einteit. in die muſic. Setzk.b Daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einteit. in die muſic. Setzk.b Daß</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:26</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:26</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-072.png" imageWidth="2973" imageHeight="3632" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-072-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-072.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="403,453 2535,453 2535,3420 403,3420"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="2430,295 2430,181 2557,181 2557,295 2430,295"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="458,441 458,714 2468,714 2468,441 458,441"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="966,454 1986,454 1986,588 966,588"/>
+                <pc:TextEquiv conf="0.9966739416122437">
+                    <pc:Unicode>Vierzehntes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,580 2422,580 2422,714 501,714"/>
+                <pc:TextEquiv conf="0.9977794289588928">
+                    <pc:Unicode>Verſchiedene Arten des Septimenaccords.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vierzehntes Capitel.
+Verſchiedene Arten des Septimenaccords.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1321,866 1321,764 1612,764 1612,866 1321,866"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1352,773 1583,773 1583,856 1352,856"/>
+                <pc:TextEquiv conf="0.863253653049469">
+                    <pc:Unicode>§. ua.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. ua.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="drop-capital">
+            <pc:Coords points="393,1113 397,869 592,886 602,1035 528,1123 393,1113"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="403,883 403,1106 542,1106 598,1040 598,975 592,886 558,883 403,883"/>
+                <pc:TextEquiv conf="0.9098741412162781">
+                    <pc:Unicode>D</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>D</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="599,878 606,1138 377,1152 383,1418 2570,1417 2570,872 599,878"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1913,874 602,878 602,960 2530,960 2530,874 1913,874"/>
+                <pc:TextEquiv conf="0.993334949016571">
+                    <pc:Unicode>ie dem Accorde der Dominante und Unterdominante hinzuge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="645,967 2528,967 2528,1059 645,1059"/>
+                <pc:TextEquiv conf="0.9818348288536072">
+                    <pc:Unicode>fuͤgte Difſonanz, iſt, ob ſie gleich gewiſſermaßen von der Natur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="645,1051 2528,1051 2528,1149 645,1149"/>
+                <pc:TextEquiv conf="0.973388671875">
+                    <pc:Unicode>angezeiget wird (Cap. I), dennoch ein Werk der Kunſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="573,1140 404,1150 404,1236 2530,1236 2530,1140 573,1140"/>
+                <pc:TextEquiv conf="0.9934442043304443">
+                    <pc:Unicode>Da fie aber in der Harmonie die ſchoͤnſten Veraͤnderungen zuwege</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="405,1227 2531,1227 2531,1324 405,1324"/>
+                <pc:TextEquiv conf="0.9990606904029846">
+                    <pc:Unicode>bringet: ſo laſſet uns ſehen, ob die Kunſt, vermittelſt dieſes erſten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="403,1323 403,1418 1689,1417 1689,1323 403,1323"/>
+                <pc:TextEquiv conf="0.989115297794342">
+                    <pc:Unicode>Schritts, uicht annoch weiter gehen kann.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ie dem Accorde der Dominante und Unterdominante hinzuge⸗
+fuͤgte Difſonanz, iſt, ob ſie gleich gewiſſermaßen von der Natur
+angezeiget wird (Cap. I), dennoch ein Werk der Kunſt.
+Da fie aber in der Harmonie die ſchoͤnſten Veraͤnderungen zuwege
+bringet: ſo laſſet uns ſehen, ob die Kunſt, vermittelſt dieſes erſten
+Schritts, uicht annoch weiter gehen kann.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1322,1535 1323,1443 1622,1448 1623,1535 1322,1535"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1346,1449 1600,1449 1600,1530 1346,1530"/>
+                <pc:TextEquiv conf="0.9807320833206177">
+                    <pc:Unicode>§. 3.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 3.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="377,1729 377,1538 2545,1538 2544,1631 745,1666 689,1729 377,1729"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="403,1538 403,1729 689,1729 2531,1631 2531,1538 403,1538"/>
+                <pc:TextEquiv conf="0.9902027249336243">
+                    <pc:Unicode>Wir haben ſchon dreyerley Arten des Septimenaccords, wel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="465,1662 687,1662 687,1724 465,1724"/>
+                <pc:TextEquiv conf="0.9858713150024414">
+                    <pc:Unicode>e ſind:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir haben ſchon dreyerley Arten des Septimenaccords, wel⸗
+e ſind:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" custom="list" type="other">
+            <pc:Coords points="427,2274 427,1735 2576,1735 2577,2198 1265,2198 1271,2268 427,2274"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="495,1735 2530,1735 2530,1835 495,1835"/>
+                <pc:TextEquiv conf="0.9815571904182434">
+                    <pc:Unicode>1) Der Accord g, h d, f, welcher aus einer großen und zwoen klei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="437,1837 1519,1837 1519,1920 437,1920"/>
+                <pc:TextEquiv conf="0.9977432489395142">
+                    <pc:Unicode>nen Terzen beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,1904 2531,1904 2531,2006 493,2006"/>
+                <pc:TextEquiv conf="0.980072021484375">
+                    <pc:Unicode>2) Der Accord d, f, a, c, oder h, d, ſis, a, welcher aus einer großen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="579,2006 2266,2006 2266,2095 579,2095"/>
+                <pc:TextEquiv conf="0.9996809959411621">
+                    <pc:Unicode>Terz zwiſchen zwoen kleinen beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2086 2532,2086 2532,2188 492,2188"/>
+                <pc:TextEquiv conf="0.9880278706550598">
+                    <pc:Unicode>3) Der Accord h, d, f, a, welcher aus zwoen kleinen und einer</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="587,2185 587,2270 990,2270 1271,2268 1783,2198 1783,2185 587,2185"/>
+                <pc:TextEquiv conf="0.9997012615203857">
+                    <pc:Unicode>großen Terz beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1) Der Accord g, h d, f, welcher aus einer großen und zwoen klei⸗
+nen Terzen beſtehet.
+2) Der Accord d, f, a, c, oder h, d, ſis, a, welcher aus einer großen
+Terz zwiſchen zwoen kleinen beſtehet.
+3) Der Accord h, d, f, a, welcher aus zwoen kleinen und einer
+großen Terz beſtehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1321,2350 1321,2255 1619,2255 1619,2350 1321,2350"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1345,2269 1595,2269 1595,2348 1345,2348"/>
+                <pc:TextEquiv conf="0.8952236175537109">
+                    <pc:Unicode>§. 114.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 114.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="383,3225 415,2357 2602,2350 2596,3136 383,3225"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2290,2351 465,2357 465,2450 2534,2450 2534,2351 2290,2351"/>
+                <pc:TextEquiv conf="0.9963901042938232">
+                    <pc:Unicode>Es giebt noch zweyerley Arten des Septimenaccords, welche ſind:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="418,2468 2534,2468 2534,2567 418,2567"/>
+                <pc:TextEquiv conf="0.9857760071754456">
+                    <pc:Unicode>) Der Accord c, e, g, h, oder f, a,c, e welcher aus einer kleinen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,2562 1830,2562 1830,2663 484,2663"/>
+                <pc:TextEquiv conf="0.9981544017791748">
+                    <pc:Unicode>Terz zwiſchen zwoen großen beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="404,2645 403,2682 403,2743 2530,2743 2530,2645 404,2645"/>
+                <pc:TextEquiv conf="0.9893050193786621">
+                    <pc:Unicode>2) Der Accord gis, h, d, f, welcher aus lauter kleinen Terzen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="589,2747 2492,2747 2492,2825 589,2825"/>
+                <pc:TextEquiv conf="0.9998505115509033">
+                    <pc:Unicode>beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="409,2833 2530,2833 2530,2926 409,2926"/>
+                <pc:TextEquiv conf="0.9964511394500732">
+                    <pc:Unicode>Dieſe beyden Accorde, welchen die vorhergehenden Regeln den Ein⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="412,2924 2530,2924 2530,3017 412,3017"/>
+                <pc:TextEquiv conf="0.9997112154960632">
+                    <pc:Unicode>gang in die Harmonie bald zu verſagen ſcheinen, werden in dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="412,3008 2530,3008 2530,3115 412,3115"/>
+                <pc:TextEquiv conf="0.998528242111206">
+                    <pc:Unicode>Grundbaſſe gleichwohl oͤfters mit gutem Erfolge angebracht. Die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_10_region_id_10_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="406,3100 406,3198 1054,3198 2381,3145 2381,3100 406,3100"/>
+                <pc:TextEquiv conf="0.9936413168907166">
+                    <pc:Unicode>Urſache davon iſt dieſe.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es giebt noch zweyerley Arten des Septimenaccords, welche ſind:
+) Der Accord c, e, g, h, oder f, a,c, e welcher aus einer kleinen
+Terz zwiſchen zwoen großen beſtehet.
+2) Der Accord gis, h, d, f, welcher aus lauter kleinen Terzen
+beſtehet.
+Dieſe beyden Accorde, welchen die vorhergehenden Regeln den Ein⸗
+gang in die Harmonie bald zu verſagen ſcheinen, werden in dem
+Grundbaſſe gleichwohl oͤfters mit gutem Erfolge angebracht. Die
+Urſache davon iſt dieſe.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" custom="list" type="other">
+            <pc:Coords points="472,2819 472,2458 2570,2458 2570,2819 472,2819"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,2468 2534,2468 2534,2567 508,2567"/>
+                <pc:TextEquiv conf="0.9732304811477661">
+                    <pc:Unicode>i) Der Accord c, e, g, h, oder f, a,c, e, welcher aus einer kleinen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,2562 1830,2562 1830,2663 484,2663"/>
+                <pc:TextEquiv conf="0.9981544017791748">
+                    <pc:Unicode>Terz zwiſchen zwoen großen beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-072_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2645 2530,2645 2530,2743 486,2743"/>
+                <pc:TextEquiv conf="0.988981306552887">
+                    <pc:Unicode>2) Der Accord gis, h, d, f, welcher aus lauter kleinen Terzen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="589,2747 2492,2747 2492,2819 589,2819"/>
+                <pc:TextEquiv conf="0.9995760321617126">
+                    <pc:Unicode>beſtehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>i) Der Accord c, e, g, h, oder f, a,c, e, welcher aus einer kleinen
+Terz zwiſchen zwoen großen beſtehet.
+2) Der Accord gis, h, d, f, welcher aus lauter kleinen Terzen
+beſtehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="footer">
+            <pc:Coords points="1613,3339 1613,3206 2538,3206 2538,3339 1613,3339"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1642,3206 2529,3206 2529,3320 1642,3320"/>
+                <pc:TextEquiv conf="0.7761453986167908">
+                    <pc:Unicode>G3 . i15.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>G3 . i15.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_1" type="decoration">
+            <pc:Coords points="401,416 401,308 2525,308 2525,416 401,416"/>
+        </pc:GraphicRegion>
+    </pc:Page>
+</pc:PcGts>

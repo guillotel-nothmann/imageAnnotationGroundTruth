@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:17</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:17</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-069.png" imageWidth="2973" imageHeight="3678" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-069-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-069.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="465,189 2646,189 2646,3305 465,3305"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="439,312 439,196 555,196 555,312 439,312"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="465,230 554,230 554,296 465,296"/>
+                <pc:TextEquiv conf="0.9107181429862976">
+                    <pc:Unicode>50</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>50</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="2641,305 2641,164 580,164 580,305 2641,305"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="603,190 2627,190 2627,286 603,286"/>
+                <pc:TextEquiv conf="0.9702010154724121">
+                    <pc:Unicode>1Buch. XII Cap. Von dem Doppelgebrauche der Diſſonanz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XII Cap. Von dem Doppelgebrauche der Diſſonanz</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="445,800 445,325 2635,325 2642,678 870,794 445,800"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="470,338 2629,338 2629,432 470,432"/>
+                <pc:TextEquiv conf="0.9922047853469849">
+                    <pc:Unicode>noch außer derſelben den Ton c bey ſich fuͤhret, vermittelſt weſſen der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,428 2630,428 2630,521 478,521"/>
+                <pc:TextEquiv conf="0.9715156555175781">
+                    <pc:Unicode>Accord d, f, a, c mit dem vorhergehenden c, e, g, c, worinnen dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="482,514 2631,514 2631,612 482,612"/>
+                <pc:TextEquiv conf="0.99256432056427">
+                    <pc:Unicode>c vorhanden iſt, verbunden wird. Ferner iſt dieſer Accord d, f a, c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,606 483,798 587,798 870,794 2630,679 2630,606 483,606"/>
+                <pc:TextEquiv conf="0.9696162939071655">
+                    <pc:Unicode>eisentlich nichts anders, als der umgekehrte oder verſetzte Accord</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="480,715 480,794 870,794 1839,731 1839,715 480,715"/>
+                <pc:TextEquiv conf="0.9231345653533936">
+                    <pc:Unicode>f, a, c, d.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>noch außer derſelben den Ton c bey ſich fuͤhret, vermittelſt weſſen der
+Accord d, f, a, c mit dem vorhergehenden c, e, g, c, worinnen dieſes
+c vorhanden iſt, verbunden wird. Ferner iſt dieſer Accord d, f a, c
+eisentlich nichts anders, als der umgekehrte oder verſetzte Accord
+f, a, c, d.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1434,870 1434,761 1704,761 1704,870 1434,870"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1453,771 1696,771 1696,869 1453,869"/>
+                <pc:TextEquiv conf="0.9930734038352966">
+                    <pc:Unicode>§. 105.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 105.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="458,1429 458,870 2641,870 2654,1314 767,1340 754,1417 458,1429"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,877 2632,877 2632,973 484,973"/>
+                <pc:TextEquiv conf="0.996028482913971">
+                    <pc:Unicode>Dieſe Art, den Accord der Unterdominante unter zweyerley Ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="481,972 2630,972 2630,1071 481,1071"/>
+                <pc:TextEquiv conf="0.9990254044532776">
+                    <pc:Unicode>ſtalten vorzuſtellen und zu gebrauchen, wird von dem Hrn. Rameau</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="482,1058 2631,1058 2631,1158 482,1158"/>
+                <pc:TextEquiv conf="0.9995144009590149">
+                    <pc:Unicode>ein Doppelgebrauch der Diſſonanz genennet. Es iſt derſelbe die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="483,1150 2632,1150 2632,1241 483,1241"/>
+                <pc:TextEquiv conf="0.9978544116020203">
+                    <pc:Unicode>Quelle der ſchoͤnſten Veraͤnderungen in der Harmonie, und wir wer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1237 484,1332 1348,1332 2635,1314 2635,1237 484,1237"/>
+                <pc:TextEquiv conf="0.9984986782073975">
+                    <pc:Unicode>den in dem folgenden Capitel ſehen, was fuͤr Vortheile daraus er⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:Coords points="482,1340 482,1422 631,1422 745,1417 745,1340 482,1340"/>
+                <pc:TextEquiv conf="0.999962568283081">
+                    <pc:Unicode>wachſen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſe Art, den Accord der Unterdominante unter zweyerley Ge⸗
+ſtalten vorzuſtellen und zu gebrauchen, wird von dem Hrn. Rameau
+ein Doppelgebrauch der Diſſonanz genennet. Es iſt derſelbe die
+Quelle der ſchoͤnſten Veraͤnderungen in der Harmonie, und wir wer⸗
+den in dem folgenden Capitel ſehen, was fuͤr Vortheile daraus er⸗
+wachſen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="452,2142 452,1410 2635,1410 2642,2110 452,2142"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="665,1410 2632,1410 2632,1507 665,1507"/>
+                <pc:TextEquiv conf="0.9987636208534241">
+                    <pc:Unicode>Da uͤbrigens dieſer Doppelgebrauch eine Art von Freyheit iſt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1501 2635,1501 2635,1600 484,1600"/>
+                <pc:TextEquiv conf="0.9979090690612793">
+                    <pc:Unicode>ſo muß ſelbiger mit Behutſamkeit ausgeuͤbet werden. Wir haben ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1585 485,1689 2637,1689 2637,1610 2637,1585 485,1585"/>
+                <pc:TextEquiv conf="0.982876718044281">
+                    <pc:Unicode>ſehen, daß der Accord d, f, a, c, als umgekehrt von f, a, e, d betrach⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,1674 2637,1674 2637,1779 485,1779"/>
+                <pc:TextEquiv conf="0.9863570332527161">
+                    <pc:Unicode>tet, auf c, e, g, c folgen kann. Aber dieſes kann nicht gegenſeitig</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1761 2638,1761 2638,1869 486,1869"/>
+                <pc:TextEquiv conf="0.9773750901222229">
+                    <pc:Unicode>geſchehen; und, wenn gleich der Accord c, e, g, c auf f, a, c, d folgen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="487,1846 2636,1846 2636,1948 487,1948"/>
+                <pc:TextEquiv conf="0.9956908226013184">
+                    <pc:Unicode>kann: ſo iſt doch nicht daraus zu ſchließen, daß auf den Accord d, f,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,1939 2640,1939 2640,2044 488,2044"/>
+                <pc:TextEquiv conf="0.9748570919036865">
+                    <pc:Unicode>a, c, als umgekehrt von f, a, c, d betrachtet, der Accord c, e, g, c fol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,2029 486,2135 931,2135 2549,2111 2549,2029 486,2029"/>
+                <pc:TextEquiv conf="0.9898573160171509">
+                    <pc:Unicode>gen koͤnne. Man wird im XVI Cap. die Urſache davon erfahren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Da uͤbrigens dieſer Doppelgebrauch eine Art von Freyheit iſt:
+ſo muß ſelbiger mit Behutſamkeit ausgeuͤbet werden. Wir haben ge⸗
+ſehen, daß der Accord d, f, a, c, als umgekehrt von f, a, e, d betrach⸗
+tet, auf c, e, g, c folgen kann. Aber dieſes kann nicht gegenſeitig
+geſchehen; und, wenn gleich der Accord c, e, g, c auf f, a, c, d folgen
+kann: ſo iſt doch nicht daraus zu ſchließen, daß auf den Accord d, f,
+a, c, als umgekehrt von f, a, c, d betrachtet, der Accord c, e, g, c fol⸗
+gen koͤnne. Man wird im XVI Cap. die Urſache davon erfahren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="2680,2540 2680,2276 445,2276 445,2540 2680,2540"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="700,2281 2271,2281 2271,2386 700,2386"/>
+                <pc:TextEquiv conf="0.9987548589706421">
+                    <pc:Unicode>Dreyzehntes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="485,2402 2634,2402 2634,2540 485,2540"/>
+                <pc:TextEquiv conf="0.9973467588424683">
+                    <pc:Unicode>Regeln vom Doppelgebrauche der Diſſonanz.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dreyzehntes Capitel.
+Regeln vom Doppelgebrauche der Diſſonanz.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="heading">
+            <pc:Coords points="1389,2687 1389,2559 1723,2559 1723,2687 1389,2687"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1418,2559 1708,2559 1708,2680 1418,2680"/>
+                <pc:TextEquiv conf="0.9973689317703247">
+                    <pc:Unicode>§. 106.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 106.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="drop-capital">
+            <pc:Coords points="458,2957 458,2694 734,2694 734,2957 458,2957"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="491,2714 734,2714 734,2942 491,2942"/>
+                <pc:TextEquiv conf="0.7600482702255249">
+                    <pc:Unicode>W</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>W</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="2660,3220 2660,2687 754,2687 748,2951 452,2977 452,3253 2660,3220"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="754,2704 752,2775 752,2798 2643,2798 2643,2704 754,2704"/>
+                <pc:TextEquiv conf="0.9928772449493408">
+                    <pc:Unicode>ir haben geſehen (Cap. VI) wie die diatoniſche Leiter von dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="794,2794 2640,2794 2640,2887 794,2887"/>
+                <pc:TextEquiv conf="0.9832247495651245">
+                    <pc:Unicode>Grundbaſſe f, c, g, d, vermittelſt der Wiederholung des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="794,2878 2638,2878 2638,2979 794,2979"/>
+                <pc:TextEquiv conf="0.9970348477363586">
+                    <pc:Unicode>Tons g in der Mitte, formiret wird, und daß ſolche urſpruͤng⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="532,2970 489,2974 489,3072 2635,3072 2635,2970 532,2970"/>
+                <pc:TextEquiv conf="0.9994984865188599">
+                    <pc:Unicode>lich aus zweyen aͤhnlichen Tetrachorden zuſammengeſetzet iſt, wovon das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,3058 2636,3058 2636,3150 484,3150"/>
+                <pc:TextEquiv conf="0.9924824237823486">
+                    <pc:Unicode>eine in dem Tone c, das andre in dem Tone g zu Hauſe iſt. Man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-069_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,3145 486,3246 920,3246 2637,3220 2637,3145 486,3145"/>
+                <pc:TextEquiv conf="0.9939934015274048">
+                    <pc:Unicode>kann anitzt, vermittelſt des Doppelgebrauchs der Diſſonanz, den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ir haben geſehen (Cap. VI) wie die diatoniſche Leiter von dem
+Grundbaſſe f, c, g, d, vermittelſt der Wiederholung des
+Tons g in der Mitte, formiret wird, und daß ſolche urſpruͤng⸗
+lich aus zweyen aͤhnlichen Tetrachorden zuſammengeſetzet iſt, wovon das
+eine in dem Tone c, das andre in dem Tone g zu Hauſe iſt. Man
+kann anitzt, vermittelſt des Doppelgebrauchs der Diſſonanz, den</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footer">
+            <pc:Coords points="2481,3310 2481,3220 2648,3220 2648,3310 2481,3310"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="2497,3235 2633,3235 2633,3305 2497,3305"/>
+                <pc:TextEquiv conf="0.9923005104064941">
+                    <pc:Unicode>Ein⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region_id_6">
+            <pc:Coords points="484,2257 484,2155 2648,2122 2648,2257 484,2257"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

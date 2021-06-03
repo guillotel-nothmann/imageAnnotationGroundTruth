@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:10</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:10</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-144.png" imageWidth="2973" imageHeight="3596" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-144-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-144.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="397,187 2538,187 2538,3278 397,3278"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="951,188 2536,188 2536,280 951,280"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="951,188 2536,188 2536,280 951,280"/>
+                <pc:TextEquiv conf="0.9751349687576294">
+                    <pc:Unicode>Anmerkungen des Ueberſetzers. 125</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkungen des Ueberſetzers. 125</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="428,344 2537,344 2537,500 428,500"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="469,344 2537,344 2537,423 469,423"/>
+                <pc:TextEquiv conf="0.9968850016593933">
+                    <pc:Unicode>Will jemand die Temperatur in noch groͤßern Zahlen haben, ſo veraͤnde⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="428,424 1807,424 1807,500 428,500"/>
+                <pc:TextEquiv conf="0.9964240789413452">
+                    <pc:Unicode>re er den Jndicem der Logarithmen aus 5 in 6 als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Will jemand die Temperatur in noch groͤßern Zahlen haben, ſo veraͤnde⸗
+re er den Jndicem der Logarithmen aus 5 in 6 als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="691,525 1698,525 1698,676 691,676"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="748,525 1698,525 1698,598 748,598"/>
+                <pc:TextEquiv conf="0.9001265168190002">
+                    <pc:Unicode>6. 3010300. Log. von 200..00o</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:Coords points="691,603 1683,603 1683,676 691,676"/>
+                <pc:TextEquiv conf="0.8348685503005981">
+                    <pc:Unicode>6. 0000o0.. og. von 1000. 00o</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>6. 3010300. Log. von 200..00o
+6. 0000o0.. og. von 1000. 00o</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="428,669 2180,669 2180,876 428,876"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="428,669 2180,669 2180,778 428,778"/>
+                <pc:TextEquiv conf="0.9939028024673462">
+                    <pc:Unicode>Alsdenn ſtellen ſich folgende Zahlen zum Werthe derſelben dar:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:Coords points="696,795 2022,795 2022,876 696,876"/>
+                <pc:TextEquiv conf="0.9484977126121521">
+                    <pc:Unicode>Groͤßere Dif⸗ Kleinere Dif⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Alsdenn ſtellen ſich folgende Zahlen zum Werthe derſelben dar:
+Groͤßere Dif⸗ Kleinere Dif⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="1173,1906 2377,1906 2377,1984 1173,1984"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="1173,1906 2377,1906 2377,1984 1173,1984"/>
+                <pc:TextEquiv conf="0.9597682356834412">
+                    <pc:Unicode>1000. 000 Summe der groͤßern Differenzen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1000. 000 Summe der groͤßern Differenzen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="397,2021 2538,2021 2538,3278 397,3278"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:Coords points="579,2021 2527,2021 2527,2099 579,2099"/>
+                <pc:TextEquiv conf="0.9900254607200623">
+                    <pc:Unicode>Man mag nun dieſe letzte oder die erſte Temperatur aufs Monochord tra⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="426,2100 2527,2100 2527,2186 426,2186"/>
+                <pc:TextEquiv conf="0.9968414306640625">
+                    <pc:Unicode>gen: ſo brauchet man ſich um die drey Zahlen hinter dem Puncte nicht zu be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="425,2177 2523,2177 2523,2254 425,2254"/>
+                <pc:TextEquiv conf="0.9972093105316162">
+                    <pc:Unicode>kuͤmmern. Man mache ſich einen Maaßſtab, einen halben Fuß lang zu ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="424,2252 2531,2252 2531,2333 424,2333"/>
+                <pc:TextEquiv conf="0.9990746378898621">
+                    <pc:Unicode>nem Canon von zwey Fuß, und theile denſelben in fuͤnf hundert Theile. Auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="424,2330 2519,2330 2519,2413 424,2413"/>
+                <pc:TextEquiv conf="0.9974460601806641">
+                    <pc:Unicode>dieſem Maaßſtabe werden die durch den Punct von den letztern Zahlen abgeſon⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="397,2409 2521,2409 2521,2502 397,2502"/>
+                <pc:TextEquiv conf="0.9923288226127625">
+                    <pc:Unicode>Perte groͤſſere Differenzen der Toͤne, vermittelſt eines bequemen Handzirkels,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="424,2487 2538,2487 2538,2569 424,2569"/>
+                <pc:TextEquiv conf="0.9937736392021179">
+                    <pc:Unicode>abgenommen. Wer recht genau verfahren will, muß die Differenzen um ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="423,2564 2518,2564 2518,2648 423,2648"/>
+                <pc:TextEquiv conf="0.9911873936653137">
+                    <pc:Unicode>ne Einheit vermehren, wenn die Zahlen hinter dem Puncte die Zahl 50 oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="422,2640 2516,2640 2516,2725 422,2725"/>
+                <pc:TextEquiv conf="0.961773157119751">
+                    <pc:Unicode>500 uͤberſteigen, naͤmlich 50 bey der erſten, und 50o bey der letzten Temperatur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="576,2739 2517,2739 2517,2820 576,2820"/>
+                <pc:TextEquiv conf="0.9813242554664612">
+                    <pc:Unicode>(20) Oben bey der Anmerkung (15), mit dem Terte des Verfaſſers ver⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="421,2820 2512,2820 2512,2904 421,2904"/>
+                <pc:TextEquiv conf="0.9993582367897034">
+                    <pc:Unicode>glichen, hat man geſehen, daß das his in einer reinen Quintenprogreſſion das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="421,2897 2508,2897 2508,2976 421,2976"/>
+                <pc:TextEquiv conf="0.9980929493904114">
+                    <pc:Unicode>c ungefaͤhr um uͤberſteiget. Dieſes Comma iſt vermittelſt der gefundenen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="417,2973 2507,2973 2507,3056 417,3056"/>
+                <pc:TextEquiv conf="0.9908206462860107">
+                    <pc:Unicode>gleichſchwebenden Temperatur dergeſtalt unter die 1a Quinten vertheilet, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,3046 2532,3046 2532,3133 415,3133"/>
+                <pc:TextEquiv conf="0.9729371070861816">
+                    <pc:Unicode>eine jede ungefaͤhr um H aus , das iſt, um 12 mal 73 gegen 1, das iſt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="415,3127 2509,3127 2509,3267 415,3267"/>
+                <pc:TextEquiv conf="0.9739156365394592">
+                    <pc:Unicode>um r unter ſich ſchwebet. Wen man wiſſen will, wie viel r von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-144_region0006_region0006_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="772,3209 2509,3209 2509,3278 772,3278"/>
+                <pc:TextEquiv conf="0.8681595921516418">
+                    <pc:Unicode>3 dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man mag nun dieſe letzte oder die erſte Temperatur aufs Monochord tra⸗
+gen: ſo brauchet man ſich um die drey Zahlen hinter dem Puncte nicht zu be⸗
+kuͤmmern. Man mache ſich einen Maaßſtab, einen halben Fuß lang zu ei⸗
+nem Canon von zwey Fuß, und theile denſelben in fuͤnf hundert Theile. Auf
+dieſem Maaßſtabe werden die durch den Punct von den letztern Zahlen abgeſon⸗
+Perte groͤſſere Differenzen der Toͤne, vermittelſt eines bequemen Handzirkels,
+abgenommen. Wer recht genau verfahren will, muß die Differenzen um ei⸗
+ne Einheit vermehren, wenn die Zahlen hinter dem Puncte die Zahl 50 oder
+500 uͤberſteigen, naͤmlich 50 bey der erſten, und 50o bey der letzten Temperatur.
+(20) Oben bey der Anmerkung (15), mit dem Terte des Verfaſſers ver⸗
+glichen, hat man geſehen, daß das his in einer reinen Quintenprogreſſion das
+c ungefaͤhr um uͤberſteiget. Dieſes Comma iſt vermittelſt der gefundenen
+gleichſchwebenden Temperatur dergeſtalt unter die 1a Quinten vertheilet, daß
+eine jede ungefaͤhr um H aus , das iſt, um 12 mal 73 gegen 1, das iſt,
+um r unter ſich ſchwebet. Wen man wiſſen will, wie viel r von
+3 dem</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region0004">
+            <pc:Coords points="639,878 1928,878 1928,1867 639,1867"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

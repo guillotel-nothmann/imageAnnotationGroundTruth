@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:06</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:06</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-104.png" imageWidth="2973" imageHeight="3617" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-104-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-104.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="387,181 2531,181 2531,3195 387,3195"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="652,149 652,281 2262,281 2262,149 652,149"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="681,182 2237,182 2237,279 681,279"/>
+                <pc:TextEquiv conf="0.9234021306037903">
+                    <pc:Unicode>Buch. v Can. Regeln des Grundbaſſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Buch. v Can. Regeln des Grundbaſſes</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2420,174 2420,275 2547,288 2534,181 2420,174"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2423,199 2521,199 2521,275 2423,275"/>
+                <pc:TextEquiv conf="0.8904160261154175">
+                    <pc:Unicode>8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1182,326 1182,439 1700,439 1700,326 1182,326"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1182,336 1700,336 1700,439 1182,439"/>
+                <pc:TextEquiv conf="0.9957104921340942">
+                    <pc:Unicode>Anmerkung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="545,458 545,723 2534,723 2534,458 545,458"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="655,467 2520,467 2520,549 655,549"/>
+                <pc:TextEquiv conf="0.9995549321174622">
+                    <pc:Unicode>Anſtatt der drey erſtern vorhergehenden Regeln kann man die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="573,556 2517,556 2517,648 573,648"/>
+                <pc:TextEquiv conf="0.9978389739990234">
+                    <pc:Unicode>folgenden drey, die daraus entſpringen, nehmen; oder, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="565,642 2500,642 2500,723 565,723"/>
+                <pc:TextEquiv conf="0.9982312917709351">
+                    <pc:Unicode>man will, ſie voruͤber gehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anſtatt der drey erſtern vorhergehenden Regeln kann man die
+folgenden drey, die daraus entſpringen, nehmen; oder, wenn
+man will, ſie voruͤber gehen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1176,749 1176,869 1719,869 1719,749 1176,749"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1191,749 1719,749 1719,869 1191,869"/>
+                <pc:TextEquiv conf="0.9976689219474792">
+                    <pc:Unicode>Erſte Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſte Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="374,887 374,1519 2553,1519 2553,887 374,887"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="561,899 2522,899 2522,984 561,984"/>
+                <pc:TextEquiv conf="0.999423623085022">
+                    <pc:Unicode>Wenn in dem Grundbaſſe eine toniſche Note iſt, und ſolche</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="387,992 2521,992 2521,1074 387,1074"/>
+                <pc:TextEquiv conf="0.99307781457901">
+                    <pc:Unicode>Quinten⸗ oder Terzenweiſe auf eine andre Note hinaufſteiget: ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="390,1075 2520,1075 2520,1163 390,1163"/>
+                <pc:TextEquiv conf="0.986762285232544">
+                    <pc:Unicode>kann dieſe zweyte Note entweder eine toniſche Note ſeyn ), (§. 8a.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="390,1164 2520,1164 2520,1252 390,1252"/>
+                <pc:TextEquiv conf="0.9937396049499512">
+                    <pc:Unicode>43); oder eine toniſche Dominante (§. 124.), oder eine Unterdo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,1251 2524,1251 2524,1339 391,1339"/>
+                <pc:TextEquiv conf="0.9961457252502441">
+                    <pc:Unicode>minante, (§. 124); oder, um die Regel kuͤrzer zu faſſen, dieſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,1335 2527,1335 2527,1429 391,1429"/>
+                <pc:TextEquiv conf="0.9981822371482849">
+                    <pc:Unicode>zweyte Note kann alles ſeyn, was man will, aber nicht eine ſimple</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,1428 2329,1428 2329,1512 391,1512"/>
+                <pc:TextEquiv conf="0.9443666934967041">
+                    <pc:Unicode>Dominante (40).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn in dem Grundbaſſe eine toniſche Note iſt, und ſolche
+Quinten⸗ oder Terzenweiſe auf eine andre Note hinaufſteiget: ſo
+kann dieſe zweyte Note entweder eine toniſche Note ſeyn ), (§. 8a.
+43); oder eine toniſche Dominante (§. 124.), oder eine Unterdo⸗
+minante, (§. 124); oder, um die Regel kuͤrzer zu faſſen, dieſe
+zweyte Note kann alles ſeyn, was man will, aber nicht eine ſimple
+Dominante (40).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="heading">
+            <pc:Coords points="1145,1549 1150,1663 1747,1652 1747,1547 1145,1549"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="1161,1559 1161,1658 1421,1658 1735,1652 1735,1559 1161,1559"/>
+                <pc:TextEquiv conf="0.9985737204551697">
+                    <pc:Unicode>Zweyte Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zweyte Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="351,1677 355,2207 2559,2207 2563,1663 351,1677"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,1681 2521,1681 2521,1773 468,1773"/>
+                <pc:TextEquiv conf="0.9996917843818665">
+                    <pc:Unicode>Wenn in dem Grundbaſſe eine toniſche Note iſt, und ſolche</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,1769 2530,1769 2530,1857 394,1857"/>
+                <pc:TextEquiv conf="0.9913883805274963">
+                    <pc:Unicode>Quinten⸗ oder Terzenweiſe auf eine andre Note herabgehet: ſo kann</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="392,1857 2520,1857 2520,1944 392,1944"/>
+                <pc:TextEquiv conf="0.9919086694717407">
+                    <pc:Unicode>dieſe zweyte Note entweder eine toniſche Note ſeyn, (§. 82. 34) oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,1942 2520,1942 2520,2030 391,2030"/>
+                <pc:TextEquiv conf="0.9977483749389648">
+                    <pc:Unicode>eine toniſche Dominante, oder eine ſimple Dominante, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="393,2032 2522,2032 2522,2114 393,2114"/>
+                <pc:TextEquiv conf="0.9846264123916626">
+                    <pc:Unicode>man nur die im §. 192. gegebene Regel in Obacht nimmt (§. 124),</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:Coords points="394,2115 2476,2115 2476,2201 394,2201"/>
+                <pc:TextEquiv conf="0.9898476600646973">
+                    <pc:Unicode>oder eine Unterdominante (§. 124). Man ſehe Anmerk. (41).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn in dem Grundbaſſe eine toniſche Note iſt, und ſolche
+Quinten⸗ oder Terzenweiſe auf eine andre Note herabgehet: ſo kann
+dieſe zweyte Note entweder eine toniſche Note ſeyn, (§. 82. 34) oder
+eine toniſche Dominante, oder eine ſimple Dominante, wenn
+man nur die im §. 192. gegebene Regel in Obacht nimmt (§. 124),
+oder eine Unterdominante (§. 124). Man ſehe Anmerk. (41).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="381,2233 381,2429 2559,2429 2559,2233 381,2233"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="397,2235 2521,2235 2521,2327 397,2327"/>
+                <pc:TextEquiv conf="0.9800350666046143">
+                    <pc:Unicode>Die Fortſchreitung von dem Accordec, es, g, c zu f, a,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="394,2330 2342,2330 2342,2423 394,2423"/>
+                <pc:TextEquiv conf="0.9738933444023132">
+                    <pc:Unicode>c, e, iſt vermoͤge des §. 192. ausgeſchloſſen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Fortſchreitung von dem Accordec, es, g, c zu f, a,
+c, e, iſt vermoͤge des §. 192. ausgeſchloſſen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footer">
+            <pc:Coords points="1581,2479 1581,2599 2540,2599 2540,2479 1581,2479"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1615,2498 2521,2498 2521,2597 1615,2597"/>
+                <pc:TextEquiv conf="0.9795302152633667">
+                    <pc:Unicode>L3 Dritte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>L3 Dritte</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footnote">
+            <pc:Coords points="384,2645 379,3212 2541,3212 2536,2636 384,2645"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="477,2645 2519,2645 2519,2724 477,2724"/>
+                <pc:TextEquiv conf="0.9827712774276733">
+                    <pc:Unicode>nn) Wenn der Baß von einer toni⸗ Tonart e, e g h e veraͤndert. Uebri⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="397,2732 2517,2732 2517,2802 397,2802"/>
+                <pc:TextEquiv conf="0.9961158037185669">
+                    <pc:Unicode>ſchen Note zu einer andern Terzenweiſe gens muß man niemals von einer toni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="397,2807 2515,2807 2515,2879 397,2879"/>
+                <pc:TextEquiv conf="0.9916908144950867">
+                    <pc:Unicode>fortgehet: ſo wird insgemein die Tonart, ſchen Note zu einer andern fortgehen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="398,2885 2515,2885 2515,2955 398,2955"/>
+                <pc:TextEquiv conf="0.9897470474243164">
+                    <pc:Unicode>und eine große in eine kleine Tonart ver⸗ wenn ihre Tonarten keine gemeinſchaftli⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="395,2961 2509,2961 2509,3034 395,3034"/>
+                <pc:TextEquiv conf="0.9963935017585754">
+                    <pc:Unicode>aͤndert. Z. E. wenn man von der toni⸗ chen Toͤne haben. So kann man z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="394,3039 2512,3039 2512,3113 394,3113"/>
+                <pc:TextEquiv conf="0.9853670001029968">
+                    <pc:Unicode>ſchen Note c zu e fortgehet: ſo wird die nicht von c eg c zu dem kleinen Ac⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-104_region_id_10_region_id_10_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="396,3110 2504,3110 2504,3195 396,3195"/>
+                <pc:TextEquiv conf="0.972268283367157">
+                    <pc:Unicode>große Tonart c, ce g c in die kleine corde es ges b es hinweichen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>nn) Wenn der Baß von einer toni⸗ Tonart e, e g h e veraͤndert. Uebri⸗
+ſchen Note zu einer andern Terzenweiſe gens muß man niemals von einer toni⸗
+fortgehet: ſo wird insgemein die Tonart, ſchen Note zu einer andern fortgehen,
+und eine große in eine kleine Tonart ver⸗ wenn ihre Tonarten keine gemeinſchaftli⸗
+aͤndert. Z. E. wenn man von der toni⸗ chen Toͤne haben. So kann man z. E.
+ſchen Note c zu e fortgehet: ſo wird die nicht von c eg c zu dem kleinen Ac⸗
+große Tonart c, ce g c in die kleine corde es ges b es hinweichen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="1432,3190 1432,2652 390,2652 390,3190 1432,3190"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="477,2655 1423,2655 1423,2720 477,2720"/>
+                <pc:TextEquiv conf="0.9875155687332153">
+                    <pc:Unicode>nn) Wenn der Baß von einer toni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:Coords points="397,2734 1423,2734 1423,2802 397,2802"/>
+                <pc:TextEquiv conf="0.9994197487831116">
+                    <pc:Unicode>ſchen Note zu einer andern Terzenweiſe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:Coords points="397,2813 1421,2813 1421,2879 397,2879"/>
+                <pc:TextEquiv conf="0.9868892431259155">
+                    <pc:Unicode>fortgehet: ſo wird insgemein die Tonart,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="398,2891 1419,2891 1419,2955 398,2955"/>
+                <pc:TextEquiv conf="0.9932706952095032">
+                    <pc:Unicode>und eine große in eine kleine Tonart ver⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:Coords points="395,2965 1420,2965 1420,3034 395,3034"/>
+                <pc:TextEquiv conf="0.9945951700210571">
+                    <pc:Unicode>aͤndert. Z. E. wenn man von der toni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:Coords points="394,3044 1419,3044 1419,3110 394,3110"/>
+                <pc:TextEquiv conf="0.9942858815193176">
+                    <pc:Unicode>ſchen Note c zu e fortgehet: ſo wird die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0006">
+                <pc:Coords points="396,3121 1419,3121 1419,3190 396,3190"/>
+                <pc:TextEquiv conf="0.9702321290969849">
+                    <pc:Unicode>große Tonart c, ce g c in die kleine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>nn) Wenn der Baß von einer toni⸗
+ſchen Note zu einer andern Terzenweiſe
+fortgehet: ſo wird insgemein die Tonart,
+und eine große in eine kleine Tonart ver⸗
+aͤndert. Z. E. wenn man von der toni⸗
+ſchen Note c zu e fortgehet: ſo wird die
+große Tonart c, ce g c in die kleine</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="1480,3192 1480,2645 2514,2645 2514,3192 1480,3192"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1498,2645 2514,2645 2514,2724 1498,2724"/>
+                <pc:TextEquiv conf="0.9787251353263855">
+                    <pc:Unicode>Tonart e, e g h e veraͤndert. Uebri</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="1494,2732 2514,2732 2514,2797 1494,2797"/>
+                <pc:TextEquiv conf="0.9907366633415222">
+                    <pc:Unicode>gens muß man niemals von einer toni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:Coords points="1496,2807 2514,2807 2514,2876 1496,2876"/>
+                <pc:TextEquiv conf="0.998555064201355">
+                    <pc:Unicode>ſchen Note zu einer andern fortgehen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:Coords points="1496,2885 2514,2885 2514,2949 1496,2949"/>
+                <pc:TextEquiv conf="0.9867011308670044">
+                    <pc:Unicode>wenn ihre Tonarten keine gemeinſchaftli⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:Coords points="1496,2961 2509,2961 2509,3027 1496,3027"/>
+                <pc:TextEquiv conf="0.9981371164321899">
+                    <pc:Unicode>chen Toͤne haben. So kann man z. E.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:Coords points="1495,3039 2512,3039 2512,3114 1495,3114"/>
+                <pc:TextEquiv conf="0.9704658389091492">
+                    <pc:Unicode>nicht von ce g c zu dem kleinen Ac⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0006">
+                <pc:Coords points="1494,3116 2504,3116 2504,3192 1494,3192"/>
+                <pc:TextEquiv conf="0.9631364345550537">
+                    <pc:Unicode>corde es ges b es hinweichen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tonart e, e g h e veraͤndert. Uebri
+gens muß man niemals von einer toni⸗
+ſchen Note zu einer andern fortgehen,
+wenn ihre Tonarten keine gemeinſchaftli⸗
+chen Toͤne haben. So kann man z. E.
+nicht von ce g c zu dem kleinen Ac⸗
+corde es ges b es hinweichen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

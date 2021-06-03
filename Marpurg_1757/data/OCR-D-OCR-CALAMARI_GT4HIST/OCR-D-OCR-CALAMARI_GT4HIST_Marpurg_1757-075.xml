@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:40:35</pc:Created>
+        <pc:LastChange>2021-01-10T21:40:35</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-075.png" imageWidth="2973" imageHeight="3686" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-075-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-075.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="436,147 2618,147 2618,3319 436,3319"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="417,132 417,261 553,261 553,132 417,132"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="447,156 537,156 537,237 447,237"/>
+                <pc:TextEquiv conf="0.8620200157165527">
+                    <pc:Unicode>56</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>56</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="720,255 720,132 2354,132 2354,255 720,255"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="746,148 2289,148 2289,255 746,255"/>
+                <pc:TextEquiv conf="0.9857997894287109">
+                    <pc:Unicode>1Buch. XVCap. Von der Vorbereitung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. XVCap. Von der Vorbereitung</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1363,390 1363,287 1698,287 1698,390 1363,390"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1399,304 1655,304 1655,385 1399,385"/>
+                <pc:TextEquiv conf="0.7357712388038635">
+                    <pc:Unicode>§. i2I.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. i2I.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="411,1123 411,390 2657,390 2651,1072 907,1066 855,1124 411,1123"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="632,412 2617,412 2617,513 632,513"/>
+                <pc:TextEquiv conf="0.9970312714576721">
+                    <pc:Unicode>Ueberhaupt, da die Diſſonanz ein Werk der Kunſt iſt, (Cap.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,503 2615,503 2615,598 449,598"/>
+                <pc:TextEquiv conf="0.9873812198638916">
+                    <pc:Unicode>XI.) beſonders in den Accorden, die nicht der toniſchen Dominante</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,594 2615,594 2615,693 453,693"/>
+                <pc:TextEquiv conf="0.9953263401985168">
+                    <pc:Unicode>oder der Unterdominante zugehoren: ſo iſt kein andres Mittel uͤbrig,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,680 2617,680 2617,782 456,782"/>
+                <pc:TextEquiv conf="0.9962452054023743">
+                    <pc:Unicode>ſolche auf eine bequeme und gefaͤllige Art in die Harmonie einzufuͤh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="442,771 2613,771 2613,866 442,866"/>
+                <pc:TextEquiv conf="0.9978510737419128">
+                    <pc:Unicode>ren, als daß man ſie dem Ohre vorher ankuͤndiget, das iſt, daß ſie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="451,862 2611,862 2611,956 451,956"/>
+                <pc:TextEquiv conf="0.9945105314254761">
+                    <pc:Unicode>ſchon in dem vorhergehenden Accorde lieget, und vermittelſt deſſen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="442,954 2613,954 2613,1052 442,1052"/>
+                <pc:TextEquiv conf="0.9990261793136597">
+                    <pc:Unicode>beyde Accorde an einander bindet. Hieraus entſpringet folgende</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_3_region_id_3_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="442,1044 442,1123 660,1124 660,1044 442,1044"/>
+                <pc:TextEquiv conf="0.9849207401275635">
+                    <pc:Unicode>Regel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ueberhaupt, da die Diſſonanz ein Werk der Kunſt iſt, (Cap.
+XI.) beſonders in den Accorden, die nicht der toniſchen Dominante
+oder der Unterdominante zugehoren: ſo iſt kein andres Mittel uͤbrig,
+ſolche auf eine bequeme und gefaͤllige Art in die Harmonie einzufuͤh⸗
+ren, als daß man ſie dem Ohre vorher ankuͤndiget, das iſt, daß ſie
+ſchon in dem vorhergehenden Accorde lieget, und vermittelſt deſſen
+beyde Accorde an einander bindet. Hieraus entſpringet folgende
+Regel.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1389,1226 1389,1117 1679,1117 1679,1226 1389,1226"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1414,1132 1661,1132 1661,1218 1414,1218"/>
+                <pc:TextEquiv conf="0.9405112266540527">
+                    <pc:Unicode>§. 122.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 122.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="417,1677 417,1233 2631,1233 2631,1677 417,1677"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="628,1246 2611,1246 2611,1334 628,1334"/>
+                <pc:TextEquiv conf="0.999346911907196">
+                    <pc:Unicode>Jn jedem Septimenaccorde, der nicht einer toniſchen Dominan⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="437,1333 2605,1333 2605,1429 437,1429"/>
+                <pc:TextEquiv conf="0.9914048910140991">
+                    <pc:Unicode>te zugehoͤret, das iſt, (§. 102), der nicht aus einer großen, und zwoen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="445,1424 2610,1424 2610,1518 445,1518"/>
+                <pc:TextEquiv conf="0.9936457276344299">
+                    <pc:Unicode>darauf folgenden kleinen Terzen beſtehet, muß die Diſſonanz, die die⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_5_region_id_5_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,1512 2608,1512 2608,1605 449,1605"/>
+                <pc:TextEquiv conf="0.9956358075141907">
+                    <pc:Unicode>ſen Accord formiret, als Conſonanz in dem vorhergehenden Accorde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_5_region_id_5_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="436,1603 2604,1603 2604,1677 436,1677"/>
+                <pc:TextEquiv conf="0.9797355532646179">
+                    <pc:Unicode>vorhergehen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jn jedem Septimenaccorde, der nicht einer toniſchen Dominan⸗
+te zugehoͤret, das iſt, (§. 102), der nicht aus einer großen, und zwoen
+darauf folgenden kleinen Terzen beſtehet, muß die Diſſonanz, die die⸗
+ſen Accord formiret, als Conſonanz in dem vorhergehenden Accorde
+vorhergehen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="514,1779 514,1683 2135,1683 2135,1779 514,1779"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="538,1683 2103,1683 2103,1779 538,1779"/>
+                <pc:TextEquiv conf="0.9994069337844849">
+                    <pc:Unicode>Dieſes nennet man eine Diſſonanz vorbereiten.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſes nennet man eine Diſſonanz vorbereiten.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1376,1915 1376,1818 1666,1818 1666,1915 1376,1915"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1393,1826 1650,1826 1650,1910 1393,1910"/>
+                <pc:TextEquiv conf="0.9899932146072388">
+                    <pc:Unicode>§. 123.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 123.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="417,1915 411,3234 2625,3195 2631,1915 417,1915"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="469,1924 2604,1924 2604,2019 469,2019"/>
+                <pc:TextEquiv conf="0.9955557584762573">
+                    <pc:Unicode>Hieraus folget, daß, zur Vorbereitung einer Diſſonanz, der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="437,2014 2600,2014 2600,2097 437,2097"/>
+                <pc:TextEquiv conf="0.9995561838150024">
+                    <pc:Unicode>Grundbaß nothwendig</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2103 2299,2103 2299,2202 527,2202"/>
+                <pc:TextEquiv conf="0.9885539412498474">
+                    <pc:Unicode>1)entweder eine Secunde aufwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1050,2199 1942,2199 1942,2290 1050,2290"/>
+                <pc:TextEquiv conf="0.9129385352134705">
+                    <pc:Unicode>c, e g, c, und d, f, a, c,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="523,2293 2604,2293 2604,2391 523,2391"/>
+                <pc:TextEquiv conf="0.9937605857849121">
+                    <pc:Unicode>2) oder, daß derſelbe eine Terz abwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="697,2395 2383,2395 2383,2479 697,2479"/>
+                <pc:TextEquiv conf="0.9163613319396973">
+                    <pc:Unicode>c, e g,c, und , c, e, g,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="535,2480 2603,2480 2603,2581 535,2581"/>
+                <pc:TextEquiv conf="0.9911242723464966">
+                    <pc:Unicode>3) oder, daß derſelbe eine Quinte abwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="1086,2569 1971,2569 1971,2661 1086,2661"/>
+                <pc:TextEquiv conf="0.8504303097724915">
+                    <pc:Unicode>c, e g c, und f, a, c, e.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:Coords points="441,2671 2598,2671 2598,2760 441,2760"/>
+                <pc:TextEquiv conf="0.9990585446357727">
+                    <pc:Unicode>Jn jedem andern Falle iſt die Diſſonanz nicht vorbereitet. Dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="441,2761 2604,2761 2604,2859 441,2859"/>
+                <pc:TextEquiv conf="0.9988675117492676">
+                    <pc:Unicode>kann man leicht erfahren. Wenn z. E. der Grundbaß eine Terz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="444,2846 2597,2846 2597,2940 444,2940"/>
+                <pc:TextEquiv conf="0.9776893854141235">
+                    <pc:Unicode>ſteiget, alsc, e, g,c und e,g,h,d: ſo iſt die Diſſonanz d nicht in dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="446,2938 2599,2938 2599,3032 446,3032"/>
+                <pc:TextEquiv conf="0.9467787146568298">
+                    <pc:Unicode>Accorde c,e, g, c enthalten. Eben ſo iſt es mit c, e g, c, und g, h,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="443,3025 2593,3025 2593,3119 443,3119"/>
+                <pc:TextEquiv conf="0.9639023542404175">
+                    <pc:Unicode>d, f, ingleichen mit c, e, g, c, und h, d, f, a beſchaffen, allwo der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_8_region_id_8_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="442,3112 442,3204 2114,3204 2617,3195 2617,3112 442,3112"/>
+                <pc:TextEquiv conf="0.9992731213569641">
+                    <pc:Unicode>Grundbaß eine Quinte aufwaͤrts, oder eine Secunde abwaͤrts gehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Hieraus folget, daß, zur Vorbereitung einer Diſſonanz, der
+Grundbaß nothwendig
+1)entweder eine Secunde aufwaͤrts gehen muß, als:
+c, e g, c, und d, f, a, c,
+2) oder, daß derſelbe eine Terz abwaͤrts gehen muß, als:
+c, e g,c, und , c, e, g,
+3) oder, daß derſelbe eine Quinte abwaͤrts gehen muß, als:
+c, e g c, und f, a, c, e.
+Jn jedem andern Falle iſt die Diſſonanz nicht vorbereitet. Dieſes
+kann man leicht erfahren. Wenn z. E. der Grundbaß eine Terz
+ſteiget, alsc, e, g,c und e,g,h,d: ſo iſt die Diſſonanz d nicht in dem
+Accorde c,e, g, c enthalten. Eben ſo iſt es mit c, e g, c, und g, h,
+d, f, ingleichen mit c, e, g, c, und h, d, f, a beſchaffen, allwo der
+Grundbaß eine Quinte aufwaͤrts, oder eine Secunde abwaͤrts gehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" custom="list" type="other">
+            <pc:Coords points="475,2114 475,2661 2528,2661 2528,2114 475,2114"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="527,2114 2299,2114 2299,2202 527,2202"/>
+                <pc:TextEquiv conf="0.9802502989768982">
+                    <pc:Unicode>1) entweder eine Secunde aufwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1050,2199 1942,2199 1942,2290 1050,2290"/>
+                <pc:TextEquiv conf="0.9129385352134705">
+                    <pc:Unicode>c, e g, c, und d, f, a, c,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:Coords points="523,2293 2473,2293 2473,2391 523,2391"/>
+                <pc:TextEquiv conf="0.9937742352485657">
+                    <pc:Unicode>2) oder, daß derſelbe eine Terz abwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:Coords points="697,2395 2383,2395 2383,2479 697,2479"/>
+                <pc:TextEquiv conf="0.9163613319396973">
+                    <pc:Unicode>c, e g,c, und , c, e, g,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="535,2480 2509,2480 2509,2576 535,2576"/>
+                <pc:TextEquiv conf="0.9920074939727783">
+                    <pc:Unicode>3) oder, daß derſelbe eine Quinte abwaͤrts gehen muß, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-075_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="720,2569 1971,2569 1971,2661 720,2661"/>
+                <pc:TextEquiv conf="0.9158372282981873">
+                    <pc:Unicode>c, &amp; g, c, und f, a, c, e.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1) entweder eine Secunde aufwaͤrts gehen muß, als:
+c, e g, c, und d, f, a, c,
+2) oder, daß derſelbe eine Terz abwaͤrts gehen muß, als:
+c, e g,c, und , c, e, g,
+3) oder, daß derſelbe eine Quinte abwaͤrts gehen muß, als:
+c, &amp; g, c, und f, a, c, e.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2341,3343 2341,3227 2605,3227 2605,3343 2341,3343"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2373,3239 2597,3239 2597,3319 2373,3319"/>
+                <pc:TextEquiv conf="0.9500468373298645">
+                    <pc:Unicode>§. 124.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 124.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:MusicRegion id="region_id_10" custom="tablatureNotation">
+            <pc:Coords points="1022,2191 1016,2295 1962,2288 1962,2191 1022,2191"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_11" custom="tablatureNotation">
+            <pc:Coords points="1029,2391 1029,2481 1994,2481 1994,2391 1029,2391"/>
+        </pc:MusicRegion>
+        <pc:MusicRegion id="region_id_12" custom="tablatureNotation">
+            <pc:Coords points="1067,2571 1067,2655 2000,2655 2000,2571 1067,2571"/>
+        </pc:MusicRegion>
+    </pc:Page>
+</pc:PcGts>

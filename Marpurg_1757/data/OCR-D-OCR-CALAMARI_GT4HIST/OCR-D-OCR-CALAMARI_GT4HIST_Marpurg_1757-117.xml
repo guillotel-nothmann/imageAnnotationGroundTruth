@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:42:46</pc:Created>
+        <pc:LastChange>2021-01-10T21:42:46</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-117.png" imageWidth="2973" imageHeight="3679" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-117-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-117.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="445,176 2621,176 2621,3488 445,3488"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="414,171 414,280 555,280 555,171 414,171"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="445,195 533,195 533,269 445,269"/>
+                <pc:TextEquiv conf="0.994563102722168">
+                    <pc:Unicode>98</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>98</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="754,158 754,267 2327,267 2327,158 754,158"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="778,177 2268,177 2268,267 778,267"/>
+                <pc:TextEquiv conf="0.9715336561203003">
+                    <pc:Unicode>IBuch. X Cap. Von einigen Freyheiten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>IBuch. X Cap. Von einigen Freyheiten</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="heading">
+            <pc:Coords points="1384,332 1377,415 1653,415 1653,326 1384,332"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="1404,340 1649,340 1649,415 1404,415"/>
+                <pc:TextEquiv conf="0.9943162202835083">
+                    <pc:Unicode>§. 220.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 220.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="433,422 433,981 2623,981 2636,422 433,422"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="628,448 2620,448 2620,546 628,546"/>
+                <pc:TextEquiv conf="0.9964172840118408">
+                    <pc:Unicode>Wenn man endlich in der kleinen Tonart, z. E. in a moll, dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,539 2610,539 2610,638 455,638"/>
+                <pc:TextEquiv conf="0.9928743839263916">
+                    <pc:Unicode>Accorde der toniſchen Dominante e, gis, h, d, die Unterterz c hin⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,623 2613,623 2613,719 454,719"/>
+                <pc:TextEquiv conf="0.986611008644104">
+                    <pc:Unicode>zufuͤget: ſo bekoͤmmt man c, e, gis, h, d; ein Accord, der aus der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,712 2611,712 2611,812 454,812"/>
+                <pc:TextEquiv conf="0.9993258118629456">
+                    <pc:Unicode>Terz, uͤbermaͤßigen Quinte, Septime und None beſtehet, und ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,795 2610,795 2610,906 455,906"/>
+                <pc:TextEquiv conf="0.9986236095428467">
+                    <pc:Unicode>Accord der uͤbermaͤßigen Quinte genennet wird. Man beziffert</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,896 2429,896 2429,981 452,981"/>
+                <pc:TextEquiv conf="0.8495578169822693">
+                    <pc:Unicode>ihn mit 9, 54t und 3 sss).2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn man endlich in der kleinen Tonart, z. E. in a moll, dem
+Accorde der toniſchen Dominante e, gis, h, d, die Unterterz c hin⸗
+zufuͤget: ſo bekoͤmmt man c, e, gis, h, d; ein Accord, der aus der
+Terz, uͤbermaͤßigen Quinte, Septime und None beſtehet, und ein
+Accord der uͤbermaͤßigen Quinte genennet wird. Man beziffert
+ihn mit 9, 54t und 3 sss).2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="683,1006 683,1256 2366,1256 2366,1006 683,1006"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="863,1027 1852,1027 1852,1123 863,1123"/>
+                <pc:TextEquiv conf="0.9931178092956543">
+                    <pc:Unicode>Vierter Artikel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="713,1153 2342,1153 2342,1256 713,1256"/>
+                <pc:TextEquiv conf="0.9909178614616394">
+                    <pc:Unicode>Von dem Accorde der verminderten Septime.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vierter Artikel.
+Von dem Accorde der verminderten Septime.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1370,1276 1370,1385 1679,1385 1679,1276 1370,1276"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1400,1295 1664,1295 1664,1374 1400,1374"/>
+                <pc:TextEquiv conf="0.9279977083206177">
+                    <pc:Unicode>§. 221.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 221.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="drop-capital">
+            <pc:Coords points="472,1385 433,1436 440,1570 514,1572 556,1542 561,1385 472,1385"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="465,1394 451,1412 451,1566 522,1566 556,1542 561,1394 465,1394"/>
+                <pc:TextEquiv conf="0.4771381616592407">
+                    <pc:Unicode>3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>3</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="561,1390 571,1545 546,1572 440,1579 445,1759 2640,1755 2638,1397 561,1390"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_7_region_id_7_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="565,1392 565,1452 567,1489 2604,1489 2604,1397 1154,1392 565,1392"/>
+                <pc:TextEquiv conf="0.9957931637763977">
+                    <pc:Unicode>n der kleinen Tonart, z. E. in a moll, iſt e die toniſche Domi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="607,1483 2607,1483 2607,1591 607,1591"/>
+                <pc:TextEquiv conf="0.9883242249488831">
+                    <pc:Unicode>nante von a, (§. 109.) und hat den Accord e, gis, h, d,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="547,1571 452,1578 452,1660 2603,1660 2603,1571 547,1571"/>
+                <pc:TextEquiv conf="0.9969954490661621">
+                    <pc:Unicode>worinnen gis die tonbezeichnende Note iſt. Anſtatt dieſes Accords</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,1659 2604,1659 2604,1755 452,1755"/>
+                <pc:TextEquiv conf="0.9954190850257874">
+                    <pc:Unicode>bedienet man ſich oft des Accords gis, h, d, f, der aus lauter kleinen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>n der kleinen Tonart, z. E. in a moll, iſt e die toniſche Domi⸗
+nante von a, (§. 109.) und hat den Accord e, gis, h, d,
+worinnen gis die tonbezeichnende Note iſt. Anſtatt dieſes Accords
+bedienet man ſich oft des Accords gis, h, d, f, der aus lauter kleinen</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="footer">
+            <pc:Coords points="2381,1759 2381,1850 2615,1850 2615,1759 2381,1759"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="2392,1765 2602,1765 2602,1850 2392,1850"/>
+                <pc:TextEquiv conf="0.9999713897705078">
+                    <pc:Unicode>Terzen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Terzen</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="footnote">
+            <pc:Coords points="407,1796 407,3311 2655,3311 2655,1938 2347,1880 2327,1822 2283,1796 407,1796"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1839 2244,1839 2244,1925 453,1925"/>
+                <pc:TextEquiv conf="0.9676253199577332">
+                    <pc:Unicode>den koͤnnen. Zum Exempel, wenn in g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,1917 454,2026 2598,2026 2598,1927 2543,1917 454,1917"/>
+                <pc:TextEquiv conf="0.9858131408691406">
+                    <pc:Unicode>einem Generalbaſſe vor der toniſchen Note und den Generalbaß c c c daraus ziehe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,1992 2598,1992 2598,2106 453,2106"/>
+                <pc:TextEquiv conf="0.9739333987236023">
+                    <pc:Unicode>c die tonbezeichnende h vorhergeht, und ſo iſt ſolches eine Unterſchiebung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,2074 2589,2074 2589,2155 453,2155"/>
+                <pc:TextEquiv conf="0.9914305210113525">
+                    <pc:Unicode>man auf c einen Nonenaccord machen 7 73</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2139 2593,2139 2593,2225 456,2225"/>
+                <pc:TextEquiv conf="0.9854044318199158">
+                    <pc:Unicode>will: ſo muß die Septime h wegblelben, Wenn ich aber den Grundbaß c g g c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2217 2593,2217 2593,2299 455,2299"/>
+                <pc:TextEquiv conf="0.9990431666374207">
+                    <pc:Unicode>weil, wenn man ſolche beybehielte, die habe, und darauf den Generalbaß baue</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="453,2290 2596,2290 2596,2397 453,2397"/>
+                <pc:TextEquiv conf="0.9887482523918152">
+                    <pc:Unicode>Wirkung der Note h, die zur toniſchen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2384 2591,2384 2591,2485 456,2485"/>
+                <pc:TextEquiv conf="0.9892886281013489">
+                    <pc:Unicode>Note hinaufſteigen muß, verhindert wer⸗ c g c c: ſo iſt ſolches eine Verzoͤge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,2459 2589,2459 2589,2550 454,2550"/>
+                <pc:TextEquiv conf="0.9868091940879822">
+                    <pc:Unicode>den wurde. rung, weil der vollkommene Accord von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="535,2542 2589,2542 2589,2662 535,2662"/>
+                <pc:TextEquiv conf="0.9892305135726929">
+                    <pc:Unicode>ggg) Die Unterſchiebung bringet ei⸗ c, den man natuͤrlicher Weiſe nach dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="583,2623 1628,2623 1628,2681 583,2681"/>
+                <pc:TextEquiv conf="0.9912875890731812">
+                    <pc:Unicode>igur hervor, die man Suſpenſion</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2619 2589,2619 2589,2765 455,2765"/>
+                <pc:TextEquiv conf="0.5593604445457458">
+                    <pc:Unicode>.Ladaiion, .kla. sunueoe a arn, da den—</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2747 2591,2747 2591,2855 455,2855"/>
+                <pc:TextEquiv conf="0.9802066683769226">
+                    <pc:Unicode>Verzoͤgerung oder Auf haltung nen⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,2853 2582,2853 2582,2927 457,2927"/>
+                <pc:TextEquiv conf="0.9989068508148193">
+                    <pc:Unicode>net. Es beſtehet ſelbige darinnen, daß tergeſchobenen Accord c aufgehalten und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0014">
+                <pc:Coords points="452,2933 2585,2933 2585,3009 452,3009"/>
+                <pc:TextEquiv conf="0.997837245464325">
+                    <pc:Unicode>man ſo viele Noten als moͤglich, von dem verzoͤgert wird, und dieſer letzte wird</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,3011 2593,3011 2593,3103 455,3103"/>
+                <pc:TextEquiv conf="0.9889299273490906">
+                    <pc:Unicode>vorhergehenden Accorde behaͤlt, um ſol⸗ durch Beybehaltung der Toͤne g h d f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,3089 2582,3089 2582,3216 458,3216"/>
+                <pc:TextEquiv conf="0.9848048090934753">
+                    <pc:Unicode>che in dem folgenden hoͤren zu laſſen. e aus dem vorhergehenden Accorde g, uͤber</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_9_region_id_9_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,3205 2163,3205 2163,3286 449,3286"/>
+                <pc:TextEquiv conf="0.9815608859062195">
+                    <pc:Unicode>E. wenn ich den Grundbaß c g c habe, c formiret.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>den koͤnnen. Zum Exempel, wenn in g
+einem Generalbaſſe vor der toniſchen Note und den Generalbaß c c c daraus ziehe
+c die tonbezeichnende h vorhergeht, und ſo iſt ſolches eine Unterſchiebung.
+man auf c einen Nonenaccord machen 7 73
+will: ſo muß die Septime h wegblelben, Wenn ich aber den Grundbaß c g g c
+weil, wenn man ſolche beybehielte, die habe, und darauf den Generalbaß baue
+Wirkung der Note h, die zur toniſchen,
+Note hinaufſteigen muß, verhindert wer⸗ c g c c: ſo iſt ſolches eine Verzoͤge⸗
+den wurde. rung, weil der vollkommene Accord von
+ggg) Die Unterſchiebung bringet ei⸗ c, den man natuͤrlicher Weiſe nach dem
+igur hervor, die man Suſpenſion
+.Ladaiion, .kla. sunueoe a arn, da den—
+Verzoͤgerung oder Auf haltung nen⸗
+net. Es beſtehet ſelbige darinnen, daß tergeſchobenen Accord c aufgehalten und
+man ſo viele Noten als moͤglich, von dem verzoͤgert wird, und dieſer letzte wird
+vorhergehenden Accorde behaͤlt, um ſol⸗ durch Beybehaltung der Toͤne g h d f
+che in dem folgenden hoͤren zu laſſen. e aus dem vorhergehenden Accorde g, uͤber
+E. wenn ich den Grundbaß c g c habe, c formiret.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="1505,2527 1505,1827 432,1827 432,2527 1505,2527"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="453,1839 1498,1839 1498,1910 453,1910"/>
+                <pc:TextEquiv conf="0.9974476099014282">
+                    <pc:Unicode>den koͤnnen. Zum Exempel, wenn in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="454,1919 1493,1919 1493,1984 454,1984"/>
+                <pc:TextEquiv conf="0.9996580481529236">
+                    <pc:Unicode>einem Generalbaſſe vor der toniſchen Note</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="453,1992 1493,1992 1493,2062 453,2062"/>
+                <pc:TextEquiv conf="0.9979569911956787">
+                    <pc:Unicode>c die tonbezeichnende h vorhergeht, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="453,2074 1492,2074 1492,2140 453,2140"/>
+                <pc:TextEquiv conf="0.9919739961624146">
+                    <pc:Unicode>man auf c einen Nonenaccord machen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:Coords points="456,2149 1490,2149 1490,2225 456,2225"/>
+                <pc:TextEquiv conf="0.9980151653289795">
+                    <pc:Unicode>will: ſo muß die Septime h wegblelben,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:Coords points="455,2230 1493,2230 1493,2299 455,2299"/>
+                <pc:TextEquiv conf="0.999407947063446">
+                    <pc:Unicode>weil, wenn man ſolche beybehielte, die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:Coords points="453,2307 1491,2307 1491,2376 453,2376"/>
+                <pc:TextEquiv conf="0.9963384866714478">
+                    <pc:Unicode>Wirkung der Note h, die zur toniſchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0007">
+                <pc:Coords points="456,2384 1490,2384 1490,2454 456,2454"/>
+                <pc:TextEquiv conf="0.9989602565765381">
+                    <pc:Unicode>Note hinaufſteigen muß, verhindert wer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0008">
+                <pc:Coords points="454,2459 735,2459 735,2519 454,2519"/>
+                <pc:TextEquiv conf="0.9990787506103516">
+                    <pc:Unicode>den wuͤrde.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>den koͤnnen. Zum Exempel, wenn in
+einem Generalbaſſe vor der toniſchen Note
+c die tonbezeichnende h vorhergeht, und
+man auf c einen Nonenaccord machen
+will: ſo muß die Septime h wegblelben,
+weil, wenn man ſolche beybehielte, die
+Wirkung der Note h, die zur toniſchen
+Note hinaufſteigen muß, verhindert wer⸗
+den wuͤrde.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="1511,3285 1511,2540 432,2540 432,3285 1511,3285"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="535,2542 1490,2542 1490,2616 535,2616"/>
+                <pc:TextEquiv conf="0.9833460450172424">
+                    <pc:Unicode>gg) Die Unterſchiebung bringet ei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="456,2619 1489,2619 1489,2695 456,2695"/>
+                <pc:TextEquiv conf="0.997708797454834">
+                    <pc:Unicode>ne Figur hervor, die man Suſpenſion</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,2695 1489,2695 1489,2765 455,2765"/>
+                <pc:TextEquiv conf="0.9902864098548889">
+                    <pc:Unicode>oder Retardation, auf deutſch eine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:Coords points="455,2767 1487,2767 1487,2853 455,2853"/>
+                <pc:TextEquiv conf="0.9858897924423218">
+                    <pc:Unicode>Verʒoͤgerung oder Auf haltung nen⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:Coords points="457,2856 1487,2856 1487,2927 457,2927"/>
+                <pc:TextEquiv conf="0.9960014820098877">
+                    <pc:Unicode>net. Es beſtehet ſelbige darinnen, daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:Coords points="452,2933 1485,2933 1485,3005 452,3005"/>
+                <pc:TextEquiv conf="0.9966791868209839">
+                    <pc:Unicode>man ſo viele Noten als moͤglich, von dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0006">
+                <pc:Coords points="455,3011 1485,3011 1485,3079 455,3079"/>
+                <pc:TextEquiv conf="0.9913538694381714">
+                    <pc:Unicode>vorhergehenden Accorde behaͤlt, um ſol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0007">
+                <pc:Coords points="458,3089 1486,3089 1486,3162 458,3162"/>
+                <pc:TextEquiv conf="0.9990760087966919">
+                    <pc:Unicode>che in dem folgenden hoͤren zu laſſen. Z.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_11_region_id_11_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="521,3177 1258,3177 1258,3205 521,3205"/>
+                <pc:TextEquiv conf="0.7082407474517822">
+                    <pc:Unicode>7</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_11_region_id_11_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,3205 1485,3205 1485,3285 449,3285"/>
+                <pc:TextEquiv conf="0.9818649291992188">
+                    <pc:Unicode>E. wenn ich den Grundbaß c g c habe,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gg) Die Unterſchiebung bringet ei⸗
+ne Figur hervor, die man Suſpenſion
+oder Retardation, auf deutſch eine
+Verʒoͤgerung oder Auf haltung nen⸗
+net. Es beſtehet ſelbige darinnen, daß
+man ſo viele Noten als moͤglich, von dem
+vorhergehenden Accorde behaͤlt, um ſol⸗
+che in dem folgenden hoͤren zu laſſen. Z.
+7
+E. wenn ich den Grundbaß c g c habe,</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="1530,1827 1531,3273 2622,3253 2623,1956 2250,1834 1530,1827"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1770,1844 2244,1844 2244,1954 1770,1954"/>
+                <pc:TextEquiv conf="0.7410629987716675">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1560,1952 2598,1952 2598,2026 1560,2026"/>
+                <pc:TextEquiv conf="0.9871290326118469">
+                    <pc:Unicode>und den Generalbaß c c c daraus ziehe:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1556,2025 2598,2025 2598,2146 1556,2146"/>
+                <pc:TextEquiv conf="0.9969291687011719">
+                    <pc:Unicode>ſo iſt ſolches eine Unterſchiebung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="2490,2109 2589,2109 2589,2146 2490,2146"/>
+                <pc:TextEquiv conf="0.9720761775970459">
+                    <pc:Unicode>73</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="1556,2139 2593,2139 2593,2224 1556,2224"/>
+                <pc:TextEquiv conf="0.9793137907981873">
+                    <pc:Unicode>Wenn ich aber den Grundbaß c g g c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="1557,2217 2593,2217 2593,2294 1557,2294"/>
+                <pc:TextEquiv conf="0.9993826746940613">
+                    <pc:Unicode>habe, und darauf den Generalbaß baue</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="1633,2290 2596,2290 2596,2397 1633,2397"/>
+                <pc:TextEquiv conf="0.4319332242012024">
+                    <pc:Unicode>,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="1557,2399 2591,2399 2591,2485 1557,2485"/>
+                <pc:TextEquiv conf="0.9872402548789978">
+                    <pc:Unicode>cgcc: ſo iſt ſolches eine Verzoͤge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="1555,2481 2589,2481 2589,2550 1555,2550"/>
+                <pc:TextEquiv conf="0.9856145977973938">
+                    <pc:Unicode>rung, weil der vollkommene Accord vou</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="1556,2554 2589,2554 2589,2632 1556,2632"/>
+                <pc:TextEquiv conf="0.9991927146911621">
+                    <pc:Unicode>c, den man natuͤrlicher Weiſe nach dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="1558,2625 1588,2625 1588,2662 1558,2662"/>
+                <pc:TextEquiv conf="0.982600212097168">
+                    <pc:Unicode>7</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="1553,2670 2589,2670 2589,2746 1553,2746"/>
+                <pc:TextEquiv conf="0.9893405437469482">
+                    <pc:Unicode>g im Generalbaſſe erwartet, durch den un⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="1926,2745 2164,2745 2164,2819 1926,2819"/>
+                <pc:TextEquiv conf="0.2925918698310852">
+                    <pc:Unicode>z</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="2125,2816 2591,2816 2591,2855 2125,2855"/>
+                <pc:TextEquiv conf="0.8202806115150452">
+                    <pc:Unicode>4</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="1549,2853 2582,2853 2582,2924 1549,2924"/>
+                <pc:TextEquiv conf="0.9984908699989319">
+                    <pc:Unicode>tergeſchobenen Accord c aufgehalten und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0015">
+                <pc:Coords points="1549,2938 2585,2938 2585,3009 1549,3009"/>
+                <pc:TextEquiv conf="0.9992890954017639">
+                    <pc:Unicode>verzoͤgert wird, und dieſer letzte wird</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0016">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0016.png" comments="binarized,clipped"/>
+                <pc:Coords points="1549,3023 2593,3023 2593,3139 1549,3139"/>
+                <pc:TextEquiv conf="0.9824182987213135">
+                    <pc:Unicode>durch Beybehaltung der Toͤne g h d f</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0017">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0017.png" comments="binarized,clipped"/>
+                <pc:Coords points="1550,3134 2582,3134 2582,3216 1550,3216"/>
+                <pc:TextEquiv conf="0.9957712888717651">
+                    <pc:Unicode>aus dem vorhergehenden Accorde g, uͤber</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0018">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-117_region_id_12_region_id_12_line0018.png" comments="binarized,clipped"/>
+                <pc:Coords points="1549,3215 1549,3272 1586,3272 2163,3261 2163,3215 1549,3215"/>
+                <pc:TextEquiv conf="0.985282838344574">
+                    <pc:Unicode>c formiret.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>
+und den Generalbaß c c c daraus ziehe:
+ſo iſt ſolches eine Unterſchiebung.
+73
+Wenn ich aber den Grundbaß c g g c
+habe, und darauf den Generalbaß baue
+,
+cgcc: ſo iſt ſolches eine Verzoͤge⸗
+rung, weil der vollkommene Accord vou
+c, den man natuͤrlicher Weiſe nach dem
+7
+g im Generalbaſſe erwartet, durch den un⸗
+z
+4
+tergeſchobenen Accord c aufgehalten und
+verzoͤgert wird, und dieſer letzte wird
+durch Beybehaltung der Toͤne g h d f
+aus dem vorhergehenden Accorde g, uͤber
+c formiret.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

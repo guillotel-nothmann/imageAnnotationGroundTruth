@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:37</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:37</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-037.png" imageWidth="2973" imageHeight="3705" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-037-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-037.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="464,167 2650,167 2650,3369 464,3369"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="486,168 584,160 574,265 475,265 486,168"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="486,185 566,185 566,256 486,256"/>
+                <pc:TextEquiv conf="0.746363639831543">
+                    <pc:Unicode>18</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>18</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="673,265 678,160 2477,160 2477,279 673,265"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="689,168 689,265 2474,279 2474,168 689,168"/>
+                <pc:TextEquiv conf="0.9656360745429993">
+                    <pc:Unicode>1Buch. II Cap. Von Quintenfortſchreitungen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. II Cap. Von Quintenfortſchreitungen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="477,328 2665,334 2665,1667 450,1672 477,328"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,329 486,425 2649,425 2649,334 842,329 486,329"/>
+                <pc:TextEquiv conf="0.9843717217445374">
+                    <pc:Unicode>zu e fortzugehen. Dieſes zu beweiſen, muͤßen wir zufoͤrderſt bemeri</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,418 2649,418 2649,515 491,515"/>
+                <pc:TextEquiv conf="0.9978805780410767">
+                    <pc:Unicode>ken, daß der Ton d natuͤrlicher Weiſe den Ton a mit ſich fuͤhret;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,507 2647,507 2647,603 488,603"/>
+                <pc:TextEquiv conf="0.9988992214202881">
+                    <pc:Unicode>denn a iſt die Quinte von d, und die Octave dieſer Quinte erklinget</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,594 2645,594 2645,691 486,691"/>
+                <pc:TextEquiv conf="0.987002432346344">
+                    <pc:Unicode>mit dem d, vermittelſt der erſten Erfahrung (§. 20.). Wenn man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,684 2649,684 2649,782 486,782"/>
+                <pc:TextEquiv conf="0.9888433814048767">
+                    <pc:Unicode>alſo von c zu d, oder von d zu c gehet: ſo gehet man nothwendig</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="485,780 2645,780 2645,871 485,871"/>
+                <pc:TextEquiv conf="0.9870463609695435">
+                    <pc:Unicode>von c zu a, oder von a zu c. Nun iſt dieſe leztere Fortſchreitung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,868 2645,868 2645,953 484,953"/>
+                <pc:TextEquiv conf="0.9972330927848816">
+                    <pc:Unicode>wider die Regeln, die uns die Natur anweiſet; denn da das a in der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:Coords points="481,954 2645,954 2645,1044 481,1044"/>
+                <pc:TextEquiv conf="0.9986252784729004">
+                    <pc:Unicode>Quintenfolge als die Quinte von d betrachtet wird, ſo kann es als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="482,1045 2644,1045 2644,1133 482,1133"/>
+                <pc:TextEquiv conf="0.9912143349647522">
+                    <pc:Unicode>Quinte von der Quinte zu g, mit dem Tone c keine reine harmoni⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="484,1130 2641,1130 2641,1221 484,1221"/>
+                <pc:TextEquiv conf="0.9974568486213684">
+                    <pc:Unicode>ſche kleine Terz machen; ein Umſtand, worinnen alle Muſici uͤber⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0010">
+                <pc:Coords points="481,1224 2642,1224 2642,1310 481,1310"/>
+                <pc:TextEquiv conf="0.9814769625663757">
+                    <pc:Unicode>einkommen, und der leicht zu beweiſen iſt s). Folglich ſind die Toͤ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="477,1312 2645,1312 2645,1405 477,1405"/>
+                <pc:TextEquiv conf="0.9914970993995667">
+                    <pc:Unicode>ne c und a, aus der Quintenfortſchreitung herausgenommen, auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="478,1396 2639,1396 2639,1490 478,1490"/>
+                <pc:TextEquiv conf="0.9966146945953369">
+                    <pc:Unicode>keine Weiſe harmoniſch, und koͤnnen alſo nicht unmittelbar auf ein⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_2_region_id_2_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="479,1482 2641,1482 2641,1570 479,1570"/>
+                <pc:TextEquiv conf="0.9926149845123291">
+                    <pc:Unicode>ander folgen ). Folglich koͤnnen die Toͤne c und d in einem Grund⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0014">
+                <pc:Coords points="476,1576 2625,1576 2625,1667 476,1667"/>
+                <pc:TextEquiv conf="0.982685387134552">
+                    <pc:Unicode>baße auch nicht unmittelbar auf einander folgen (i0).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>zu e fortzugehen. Dieſes zu beweiſen, muͤßen wir zufoͤrderſt bemeri
+ken, daß der Ton d natuͤrlicher Weiſe den Ton a mit ſich fuͤhret;
+denn a iſt die Quinte von d, und die Octave dieſer Quinte erklinget
+mit dem d, vermittelſt der erſten Erfahrung (§. 20.). Wenn man
+alſo von c zu d, oder von d zu c gehet: ſo gehet man nothwendig
+von c zu a, oder von a zu c. Nun iſt dieſe leztere Fortſchreitung
+wider die Regeln, die uns die Natur anweiſet; denn da das a in der
+Quintenfolge als die Quinte von d betrachtet wird, ſo kann es als
+Quinte von der Quinte zu g, mit dem Tone c keine reine harmoni⸗
+ſche kleine Terz machen; ein Umſtand, worinnen alle Muſici uͤber⸗
+einkommen, und der leicht zu beweiſen iſt s). Folglich ſind die Toͤ⸗
+ne c und a, aus der Quintenfortſchreitung herausgenommen, auf
+keine Weiſe harmoniſch, und koͤnnen alſo nicht unmittelbar auf ein⸗
+ander folgen ). Folglich koͤnnen die Toͤne c und d in einem Grund⸗
+baße auch nicht unmittelbar auf einander folgen (i0).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="footer">
+            <pc:Coords points="2429,1769 2429,1668 2638,1668 2638,1769 2429,1769"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="2445,1679 2638,1679 2638,1761 2445,1761"/>
+                <pc:TextEquiv conf="0.980736255645752">
+                    <pc:Unicode>§. 37.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 37.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footnote">
+            <pc:Coords points="426,1770 416,3353 2682,3382 2667,1799 426,1770"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="553,1798 553,1871 2639,1871 2639,1799 2590,1798 553,1798"/>
+                <pc:TextEquiv conf="0.9685778021812439">
+                    <pc:Unicode>g Laßt uns ſetzen, daß cr iſt; die ſeyn 3. Nun iſt die kleine harmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="471,1878 2644,1878 2644,1950 471,1950"/>
+                <pc:TextEquiv conf="0.9739904999732971">
+                    <pc:Unicode>Quinte g wird ſeyn , und die Quinte d niſche Unterterz von c z (Anmerk. d).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="471,1955 2639,1955 2639,2028 471,2028"/>
+                <pc:TextEquiv conf="0.9838331341743469">
+                    <pc:Unicode>von der Quinte g wird ſeyn , die Quin⸗ Wenn man alſo die kleine Terz a: c mit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:Coords points="468,2032 2638,2032 2638,2107 468,2107"/>
+                <pc:TextEquiv conf="0.994476854801178">
+                    <pc:Unicode>te a von d aber . Die Toͤne d und der harmoniſchen kleinen Terz vergleichen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:Coords points="471,2113 2633,2113 2633,2187 471,2187"/>
+                <pc:TextEquiv conf="0.9884577989578247">
+                    <pc:Unicode>a werden alſo in der zweyten Octave von will, ſo muß man die Jntervalle 3 und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,2191 2639,2191 2639,2275 468,2275"/>
+                <pc:TextEquiv conf="0.9929456114768982">
+                    <pc:Unicode>c ſeyn. Die zweyfache Unteroctave von gegen einander vergleichen; und dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,2264 2635,2264 2635,2341 468,2341"/>
+                <pc:TextEquiv conf="0.9890496730804443">
+                    <pc:Unicode>diefem a ſollte alſo natuͤrlicher Weiſe die verrichtet man nach der bey der An⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:Coords points="469,2344 2636,2344 2636,2422 469,2422"/>
+                <pc:TextEquiv conf="0.9961241483688354">
+                    <pc:Unicode>kleine Unterterz von c ſeyn, wie man merk. d) erklaͤrten Methode, vermittelſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0008">
+                <pc:Coords points="467,2423 2635,2423 2635,2498 467,2498"/>
+                <pc:TextEquiv conf="0.9919635653495789">
+                    <pc:Unicode>aus folgender Vorſtellung ſehen wird: welcher man finden wird, daß das erſte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="845,2503 2632,2503 2632,2581 845,2581"/>
+                <pc:TextEquiv conf="0.9939465522766113">
+                    <pc:Unicode>Jntervall ſich gegen das zweyte wie 27</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="538,2555 2633,2555 2633,2654 538,2654"/>
+                <pc:TextEquiv conf="0.9748960137367249">
+                    <pc:Unicode>mal 6 gegen 5 mal 32 verhaͤlt, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="602,2643 2629,2643 2629,2738 602,2738"/>
+                <pc:TextEquiv conf="0.9645370841026306">
+                    <pc:Unicode>122 4 8 wie 7 mal 3 gegen 5 mal 16, das iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="595,2707 2631,2707 2631,2811 595,2811"/>
+                <pc:TextEquiv conf="0.7438471913337708">
+                    <pc:Unicode>vie i aen e. Folalic iſt die riei</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0013">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0013.png" comments="binarized,clipped"/>
+                <pc:Coords points="958,2802 2627,2802 2627,2890 958,2890"/>
+                <pc:TextEquiv conf="0.8370509147644043">
+                    <pc:Unicode>ne Tr a: c nicht einerly mit der bar⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0014">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0014.png" comments="binarized,clipped"/>
+                <pc:Coords points="598,2837 2628,2837 2628,2969 598,2969"/>
+                <pc:TextEquiv conf="0.4341663122177124">
+                    <pc:Unicode>ecdur. e ir iitr ei —</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0015">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_4_region_id_4_line0015.png" comments="binarized,clipped"/>
+                <pc:Coords points="544,2966 2629,2966 2629,3043 544,3043"/>
+                <pc:TextEquiv conf="0.9902614951133728">
+                    <pc:Unicode>Dieſes geſetzt, ſo iſt die zweyfache Un. die kleine Terz a: c nicht vollkommen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0016">
+                <pc:Coords points="466,3046 2626,3046 2626,3121 466,3121"/>
+                <pc:TextEquiv conf="0.9835350513458252">
+                    <pc:Unicode>teroctave von a 3 (Anmerk. c) weil rein, wenn man a als die Quinte von d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0017">
+                <pc:Coords points="465,3127 2253,3127 2253,3193 465,3193"/>
+                <pc:TextEquiv conf="0.9868417382240295">
+                    <pc:Unicode>man den. Bruch mit 4 dividiren muß.betrachtet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0018">
+                <pc:Coords points="464,3204 2624,3204 2624,3289 464,3289"/>
+                <pc:TextEquiv conf="0.972943127155304">
+                    <pc:Unicode>Die kleine Terz von a zu c wird alſo h) Wenn c und f auf einander fol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0019">
+                <pc:Coords points="565,3301 565,3355 1666,3369 2622,3369 2622,3301 565,3301"/>
+                <pc:TextEquiv conf="0.9457607269287109">
+                    <pc:Unicode>gen:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>g Laßt uns ſetzen, daß cr iſt; die ſeyn 3. Nun iſt die kleine harmo⸗
+Quinte g wird ſeyn , und die Quinte d niſche Unterterz von c z (Anmerk. d).
+von der Quinte g wird ſeyn , die Quin⸗ Wenn man alſo die kleine Terz a: c mit
+te a von d aber . Die Toͤne d und der harmoniſchen kleinen Terz vergleichen
+a werden alſo in der zweyten Octave von will, ſo muß man die Jntervalle 3 und
+c ſeyn. Die zweyfache Unteroctave von gegen einander vergleichen; und dieſes
+diefem a ſollte alſo natuͤrlicher Weiſe die verrichtet man nach der bey der An⸗
+kleine Unterterz von c ſeyn, wie man merk. d) erklaͤrten Methode, vermittelſt
+aus folgender Vorſtellung ſehen wird: welcher man finden wird, daß das erſte
+Jntervall ſich gegen das zweyte wie 27
+mal 6 gegen 5 mal 32 verhaͤlt, oder
+122 4 8 wie 7 mal 3 gegen 5 mal 16, das iſt
+vie i aen e. Folalic iſt die riei
+ne Tr a: c nicht einerly mit der bar⸗
+ecdur. e ir iitr ei —
+Dieſes geſetzt, ſo iſt die zweyfache Un. die kleine Terz a: c nicht vollkommen
+teroctave von a 3 (Anmerk. c) weil rein, wenn man a als die Quinte von d
+man den. Bruch mit 4 dividiren muß.betrachtet.
+Die kleine Terz von a zu c wird alſo h) Wenn c und f auf einander fol⸗
+gen:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="paragraph">
+            <pc:Coords points="454,1784 454,2500 1544,2500 1544,1784 454,1784"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="553,1798 1524,1798 1524,1870 553,1870"/>
+                <pc:TextEquiv conf="0.968652069568634">
+                    <pc:Unicode>g Laßt uns ſetzen, daß c1 iſt; die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0001">
+                <pc:Coords points="471,1879 1521,1879 1521,1948 471,1948"/>
+                <pc:TextEquiv conf="0.9679757952690125">
+                    <pc:Unicode>Quinte g wird ſeyn 4, und die Quinte d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0002">
+                <pc:Coords points="471,1955 1522,1955 1522,2028 471,2028"/>
+                <pc:TextEquiv conf="0.9882317781448364">
+                    <pc:Unicode>von der Quinte g wird ſeyn , die Quin⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0003">
+                <pc:Coords points="468,2032 1520,2032 1520,2103 468,2103"/>
+                <pc:TextEquiv conf="0.9883688688278198">
+                    <pc:Unicode>te a von d aber . Die Toͤne d und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0004">
+                <pc:Coords points="471,2113 1519,2113 1519,2177 471,2177"/>
+                <pc:TextEquiv conf="0.9859803915023804">
+                    <pc:Unicode>a werden alſo in der zweyten Octave von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0005">
+                <pc:Coords points="468,2191 1520,2191 1520,2254 468,2254"/>
+                <pc:TextEquiv conf="0.9806631207466125">
+                    <pc:Unicode>C ſeyn. Die zweyfache Unteroctave von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0006">
+                <pc:Coords points="468,2264 1524,2264 1524,2329 468,2329"/>
+                <pc:TextEquiv conf="0.9830000996589661">
+                    <pc:Unicode>dieſem a ſollte alſo natuͤrlicher Weiſe die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0007">
+                <pc:Coords points="469,2345 1519,2345 1519,2408 469,2408"/>
+                <pc:TextEquiv conf="0.9951764345169067">
+                    <pc:Unicode>kleine Unterterz von c ſeyn, wie man</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_5_line0008">
+                <pc:Coords points="467,2423 1438,2423 1438,2491 467,2491"/>
+                <pc:TextEquiv conf="0.9976999163627625">
+                    <pc:Unicode>aus folgender Vorſtellung ſehen wird:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>g Laßt uns ſetzen, daß c1 iſt; die
+Quinte g wird ſeyn 4, und die Quinte d
+von der Quinte g wird ſeyn , die Quin⸗
+te a von d aber . Die Toͤne d und
+a werden alſo in der zweyten Octave von
+C ſeyn. Die zweyfache Unteroctave von
+dieſem a ſollte alſo natuͤrlicher Weiſe die
+kleine Unterterz von c ſeyn, wie man
+aus folgender Vorſtellung ſehen wird:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="paragraph">
+            <pc:Coords points="454,3275 454,2955 1534,2955 1534,3275 454,3275"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="544,2966 1511,2966 1511,3039 544,3039"/>
+                <pc:TextEquiv conf="0.9730535745620728">
+                    <pc:Unicode>Dieſes geſetzt, ſo iſt die zweyfache Un.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="466,3046 1512,3046 1512,3115 466,3115"/>
+                <pc:TextEquiv conf="0.970302939414978">
+                    <pc:Unicode>teroctave von a Z (Anmerk. c) weil</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="465,3127 1510,3127 1510,3193 465,3193"/>
+                <pc:TextEquiv conf="0.9858232140541077">
+                    <pc:Unicode>man den. Bruch mit 4 dividiren muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="464,3204 1514,3204 1514,3275 464,3275"/>
+                <pc:TextEquiv conf="0.9583704471588135">
+                    <pc:Unicode>Die kleine Terz von a zu c wird alſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſes geſetzt, ſo iſt die zweyfache Un.
+teroctave von a Z (Anmerk. c) weil
+man den. Bruch mit 4 dividiren muß.
+Die kleine Terz von a zu c wird alſo</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="1582,1774 1559,3198 2638,3197 2653,1804 1582,1774"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="1587,1800 1587,1871 2639,1871 2639,1804 2510,1800 1587,1800"/>
+                <pc:TextEquiv conf="0.9625945091247559">
+                    <pc:Unicode>ſeyn 3. Nun iſt die kleine harmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="1589,1878 2644,1878 2644,1950 1589,1950"/>
+                <pc:TextEquiv conf="0.9704288840293884">
+                    <pc:Unicode>niſche Unterterz von c z (Anmerk. d).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="1589,1960 2639,1960 2639,2028 1589,2028"/>
+                <pc:TextEquiv conf="0.9771373867988586">
+                    <pc:Unicode>Wenn man akſo die kleine Terz a: c mit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="1586,2035 2638,2035 2638,2107 1586,2107"/>
+                <pc:TextEquiv conf="0.995589017868042">
+                    <pc:Unicode>der harmoniſchen kleinen Terz vergleichen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="1588,2113 2633,2113 2633,2187 1588,2187"/>
+                <pc:TextEquiv conf="0.9848390817642212">
+                    <pc:Unicode>will, ſo muß man die Jntervalle 3 und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="1587,2191 2639,2191 2639,2275 1587,2275"/>
+                <pc:TextEquiv conf="0.9992979764938354">
+                    <pc:Unicode>gegen einander vergleichen; und dieſes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="1586,2272 2635,2272 2635,2341 1586,2341"/>
+                <pc:TextEquiv conf="0.9924245476722717">
+                    <pc:Unicode>verrichtet man nach der bey der An⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:Coords points="1587,2344 2636,2344 2636,2422 1587,2422"/>
+                <pc:TextEquiv conf="0.98768150806427">
+                    <pc:Unicode>merk. d) erklaͤrten Methode, vermittelſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:Coords points="1580,2429 2635,2429 2635,2498 1580,2498"/>
+                <pc:TextEquiv conf="0.9823943972587585">
+                    <pc:Unicode>welcher man finden wird, daß das erſte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_8_region_id_8_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="1579,2503 2632,2503 2632,2581 1579,2581"/>
+                <pc:TextEquiv conf="0.9993635416030884">
+                    <pc:Unicode>Jntervall ſich gegen das zweyte wie 27</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-037_region_id_8_region_id_8_line0010.png" comments="binarized,clipped"/>
+                <pc:Coords points="1581,2581 2633,2581 2633,2654 1581,2654"/>
+                <pc:TextEquiv conf="0.9921959042549133">
+                    <pc:Unicode>mal 6 gegen 5 mal 32 verhaͤlt, oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:Coords points="1582,2662 2629,2662 2629,2738 1582,2738"/>
+                <pc:TextEquiv conf="0.9862158894538879">
+                    <pc:Unicode>wie 7 mal 3 gegen 5 mal 16, das iſt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0012">
+                <pc:Coords points="1582,2741 2631,2741 2631,2809 1582,2809"/>
+                <pc:TextEquiv conf="0.9773994088172913">
+                    <pc:Unicode>wie 8i gegen 80. Folglich iſt die klei⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0013">
+                <pc:Coords points="1582,2820 2627,2820 2627,2890 1582,2890"/>
+                <pc:TextEquiv conf="0.9770002961158752">
+                    <pc:Unicode>ne Terza: c nicht einerley mit der har⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0014">
+                <pc:Coords points="1580,2898 2628,2898 2628,2969 1580,2969"/>
+                <pc:TextEquiv conf="0.9994369745254517">
+                    <pc:Unicode>moniſchen kleinen Terz; und folglich iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0015">
+                <pc:Coords points="1578,2976 2629,2976 2629,3043 1578,3043"/>
+                <pc:TextEquiv conf="0.9892942905426025">
+                    <pc:Unicode>die kleine Terz a: c nicht vollkommen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0016">
+                <pc:Coords points="1575,3056 2626,3056 2626,3121 1575,3121"/>
+                <pc:TextEquiv conf="0.9875271916389465">
+                    <pc:Unicode>rein, wenn man a als die Quinte von d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0017">
+                <pc:Coords points="1576,3134 2253,3134 2253,3193 1576,3193"/>
+                <pc:TextEquiv conf="0.9947265386581421">
+                    <pc:Unicode>betrachtet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſeyn 3. Nun iſt die kleine harmo⸗
+niſche Unterterz von c z (Anmerk. d).
+Wenn man akſo die kleine Terz a: c mit
+der harmoniſchen kleinen Terz vergleichen
+will, ſo muß man die Jntervalle 3 und
+gegen einander vergleichen; und dieſes
+verrichtet man nach der bey der An⸗
+merk. d) erklaͤrten Methode, vermittelſt
+welcher man finden wird, daß das erſte
+Jntervall ſich gegen das zweyte wie 27
+mal 6 gegen 5 mal 32 verhaͤlt, oder
+wie 7 mal 3 gegen 5 mal 16, das iſt,
+wie 8i gegen 80. Folglich iſt die klei⸗
+ne Terza: c nicht einerley mit der har⸗
+moniſchen kleinen Terz; und folglich iſt
+die kleine Terz a: c nicht vollkommen
+rein, wenn man a als die Quinte von d
+betrachtet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="1621,3285 1621,3193 2638,3193 2638,3285 1621,3285"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1652,3208 2624,3208 2624,3285 1652,3285"/>
+                <pc:TextEquiv conf="0.9886281490325928">
+                    <pc:Unicode>h) Wenn c und f auf einander fol⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>h) Wenn c und f auf einander fol⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="footer">
+            <pc:Coords points="2492,3376 2492,3299 2642,3299 2642,3376 2492,3376"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="2511,3313 2622,3313 2622,3369 2511,3369"/>
+                <pc:TextEquiv conf="0.9707016944885254">
+                    <pc:Unicode>gen:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gen:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region_id_6">
+            <pc:Coords points="561,2907 561,2534 1408,2534 1408,2907 561,2907"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

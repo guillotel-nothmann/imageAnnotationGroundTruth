@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:41:28</pc:Created>
+        <pc:LastChange>2021-01-10T21:41:28</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-092.png" imageWidth="2973" imageHeight="3622" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-092-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-092.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="367,175 2526,175 2526,3595 367,3595"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="898,162 898,275 2023,275 2023,162 898,162"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="912,176 2007,176 2007,275 912,275"/>
+                <pc:TextEquiv conf="0.9996021389961243">
+                    <pc:Unicode>Benennungen eines Jntervalls.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Benennungen eines Jntervalls.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2415,187 2415,282 2522,282 2522,187 2415,187"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2433,208 2504,208 2504,282 2433,282"/>
+                <pc:TextEquiv conf="0.9929361343383789">
+                    <pc:Unicode>73</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>73</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="360,313 360,541 2522,541 2522,313 360,313"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="371,330 2502,330 2502,417 371,417"/>
+                <pc:TextEquiv conf="0.9966912865638733">
+                    <pc:Unicode>Es giebt aber einige Jntervalle, die nach der Verſchiedenheit der Um⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="377,420 2460,420 2460,522 377,522"/>
+                <pc:TextEquiv conf="0.9991530179977417">
+                    <pc:Unicode>ſtaͤnde verſchiedene Namen bekommen. Wir wollen ſelbige erklaͤren.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Es giebt aber einige Jntervalle, die nach der Verſchiedenheit der Um⸗
+ſtaͤnde verſchiedene Namen bekommen. Wir wollen ſelbige erklaͤren.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="1296,560 1296,661 1587,661 1587,560 1296,560"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1296,585 1553,585 1553,661 1296,661"/>
+                <pc:TextEquiv conf="0.9292292594909668">
+                    <pc:Unicode>§. 160.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 160.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="316,674 316,1135 2554,1135 2554,674 316,674"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_4_region_id_4_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="552,694 2505,694 2505,782 552,782"/>
+                <pc:TextEquiv conf="0.9988464117050171">
+                    <pc:Unicode>Ein aus anderthalb Ton beſtehendes Jntervall, welches insge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_4_region_id_4_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="367,777 2505,777 2505,874 367,874"/>
+                <pc:TextEquiv conf="0.9988206028938293">
+                    <pc:Unicode>mein eine kleine Terz heißt, wird auch oͤfters eine uͤbermaͤßige</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="381,868 2503,868 2503,956 381,956"/>
+                <pc:TextEquiv conf="0.9953712224960327">
+                    <pc:Unicode>Secunde genennet, z. E. c, dis. Wenn man von dem dis das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="382,955 2504,955 2504,1046 382,1046"/>
+                <pc:TextEquiv conf="0.9966951608657837">
+                    <pc:Unicode>Kreuz wegnaͤhme, ſo wuͤrde d, und folglich eine Secunde uͤbrig</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="382,1043 2080,1043 2080,1133 382,1133"/>
+                <pc:TextEquiv conf="0.995110273361206">
+                    <pc:Unicode>bleiben. Daher heißt c, dis eine uͤbermaͤßige Secunde.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein aus anderthalb Ton beſtehendes Jntervall, welches insge⸗
+mein eine kleine Terz heißt, wird auch oͤfters eine uͤbermaͤßige
+Secunde genennet, z. E. c, dis. Wenn man von dem dis das
+Kreuz wegnaͤhme, ſo wuͤrde d, und folglich eine Secunde uͤbrig
+bleiben. Daher heißt c, dis eine uͤbermaͤßige Secunde.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="heading">
+            <pc:Coords points="1296,1154 1296,1249 1606,1249 1606,1154 1296,1154"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1328,1174 1584,1174 1584,1249 1328,1249"/>
+                <pc:TextEquiv conf="0.9349111318588257">
+                    <pc:Unicode>§. 161.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 161.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="341,1255 341,1730 2529,1730 2529,1255 341,1255"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_6_region_id_6_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="534,1278 2508,1278 2508,1369 534,1369"/>
+                <pc:TextEquiv conf="0.9946947693824768">
+                    <pc:Unicode>Ein Jntervall, welches aus zween ganzen und zween halben Toͤ⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="383,1365 2506,1365 2506,1454 383,1454"/>
+                <pc:TextEquiv conf="0.9961074590682983">
+                    <pc:Unicode>nen beſteht, z. E. h, f, heißt eine falſche oder verminderte Quinte.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:Coords points="381,1457 2510,1457 2510,1536 381,1536"/>
+                <pc:TextEquiv conf="0.9983447790145874">
+                    <pc:Unicode>Dieſes Jntervall iſt auf dem Claviere mit dem Triton oder der uͤber⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="383,1538 2509,1538 2509,1631 383,1631"/>
+                <pc:TextEquiv conf="0.9995342493057251">
+                    <pc:Unicode>maͤßigen Quarte einerley. Die Urſache ihrer Verſchiedenheit im Ge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_6_region_id_6_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="387,1629 2410,1629 2410,1713 387,1713"/>
+                <pc:TextEquiv conf="0.9992311000823975">
+                    <pc:Unicode>brauche wird weiter unten vorkommen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein Jntervall, welches aus zween ganzen und zween halben Toͤ⸗
+nen beſteht, z. E. h, f, heißt eine falſche oder verminderte Quinte.
+Dieſes Jntervall iſt auf dem Claviere mit dem Triton oder der uͤber⸗
+maͤßigen Quarte einerley. Die Urſache ihrer Verſchiedenheit im Ge
+brauche wird weiter unten vorkommen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1296,1743 1296,1838 1575,1838 1575,1743 1296,1743"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1326,1755 1568,1755 1568,1836 1326,1836"/>
+                <pc:TextEquiv conf="0.9634643197059631">
+                    <pc:Unicode>§. 162.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 162.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="361,1857 361,2470 2554,2470 2554,1857 361,1857"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="563,1860 2510,1860 2510,1952 563,1952"/>
+                <pc:TextEquiv conf="0.9936248064041138">
+                    <pc:Unicode>So wie das Jntervall e, dis eine uͤbermaͤßige Secunde heißt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="380,1948 2510,1948 2510,2036 380,2036"/>
+                <pc:TextEquiv conf="0.9975041747093201">
+                    <pc:Unicode>ſo wird das Jntervall c, gis eine uͤbermaͤßige Quinte genennet. Die⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,2035 2507,2035 2507,2124 391,2124"/>
+                <pc:TextEquiv conf="0.9889639019966125">
+                    <pc:Unicode>ſes c, gis iſt auf dem Claviere einerley mit der kleinen Serte c, as.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="393,2124 2509,2124 2509,2209 393,2209"/>
+                <pc:TextEquiv conf="0.9990751147270203">
+                    <pc:Unicode>Es muͤſſen aber beyde im Gebrauche wohl von einander unterſchieden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="391,2210 2509,2210 2509,2297 391,2297"/>
+                <pc:TextEquiv conf="0.998549222946167">
+                    <pc:Unicode>werden. Wenn man von gis das Kreuz wegnaͤhme, ſo wuͤrde die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="389,2294 2509,2294 2509,2384 389,2384"/>
+                <pc:TextEquiv conf="0.9980698823928833">
+                    <pc:Unicode>Quinte g uͤbrig bleiben; und nimmt man von as das Be weg: ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_8_region_id_8_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="388,2384 2276,2384 2276,2469 388,2469"/>
+                <pc:TextEquiv conf="0.9905520677566528">
+                    <pc:Unicode>bleibet die große Sexte a nach.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>So wie das Jntervall e, dis eine uͤbermaͤßige Secunde heißt:
+ſo wird das Jntervall c, gis eine uͤbermaͤßige Quinte genennet. Die⸗
+ſes c, gis iſt auf dem Claviere einerley mit der kleinen Serte c, as.
+Es muͤſſen aber beyde im Gebrauche wohl von einander unterſchieden
+werden. Wenn man von gis das Kreuz wegnaͤhme, ſo wuͤrde die
+Quinte g uͤbrig bleiben; und nimmt man von as das Be weg: ſo
+bleibet die große Sexte a nach.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1334,2495 1334,2590 1606,2590 1606,2495 1334,2495"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1355,2511 1585,2511 1585,2590 1355,2590"/>
+                <pc:TextEquiv conf="0.930974543094635">
+                    <pc:Unicode>§. 163.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 163.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="382,2611 380,3146 2554,3146 2556,2611 382,2611"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="395,2617 2513,2617 2513,2707 395,2707"/>
+                <pc:TextEquiv conf="0.9996223449707031">
+                    <pc:Unicode>Aus eben dem Grunde wird ein aus drey ganzen und drey hal⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="401,2706 2511,2706 2511,2793 401,2793"/>
+                <pc:TextEquiv conf="0.9916723966598511">
+                    <pc:Unicode>ben Toͤnen beſtehendes Jntervall, z. E. gis, f, eine verminderte Se⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,2795 2520,2795 2520,2882 402,2882"/>
+                <pc:TextEquiv conf="0.9924225211143494">
+                    <pc:Unicode>ptime genennet. Denn, wenn man von gis das Kreuz wegnimmt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="406,2877 2518,2877 2518,2969 406,2969"/>
+                <pc:TextEquiv conf="0.9984472990036011">
+                    <pc:Unicode>ſo bleibet g zuruͤck, und g, f machet eine kleine Septime aus. Sonſten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="406,2967 2525,2967 2525,3061 406,3061"/>
+                <pc:TextEquiv conf="0.9924988746643066">
+                    <pc:Unicode>iſt die verminderte Septime gis, f und die große Sexte as, f auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-092_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="409,3056 2474,3056 2474,3146 409,3146"/>
+                <pc:TextEquiv conf="0.9864258766174316">
+                    <pc:Unicode>dem Claviere einerley. 0</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Aus eben dem Grunde wird ein aus drey ganzen und drey hal⸗
+ben Toͤnen beſtehendes Jntervall, z. E. gis, f, eine verminderte Se⸗
+ptime genennet. Denn, wenn man von gis das Kreuz wegnimmt:
+ſo bleibet g zuruͤck, und g, f machet eine kleine Septime aus. Sonſten
+iſt die verminderte Septime gis, f und die große Sexte as, f auf
+dem Claviere einerley. 0</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="footer">
+            <pc:Coords points="474,3171 474,3266 2535,3266 2535,3171 474,3171"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="490,3181 2522,3181 2522,3266 490,3266"/>
+                <pc:TextEquiv conf="0.9671727418899536">
+                    <pc:Unicode>Einleit. in die muſic. Setzk. §. 164.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Einleit. in die muſic. Setzk. §. 164.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

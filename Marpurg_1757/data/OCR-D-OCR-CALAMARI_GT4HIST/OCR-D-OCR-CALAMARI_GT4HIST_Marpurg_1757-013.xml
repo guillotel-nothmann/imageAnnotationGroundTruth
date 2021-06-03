@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:37:22</pc:Created>
+        <pc:LastChange>2021-01-10T21:37:22</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-013.png" imageWidth="2973" imageHeight="3697" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-013-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-013.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="452,184 2633,184 2633,3476 452,3476"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="1293,179 1749,185 1749,296 1319,302 1293,179"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1332,185 1749,185 1749,296 1332,296"/>
+                <pc:TextEquiv conf="0.9989262819290161">
+                    <pc:Unicode>Vorbericht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbericht</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="paragraph">
+            <pc:Coords points="426,336 426,1031 2691,1031 2691,336 426,336"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="475,354 2632,354 2632,460 475,460"/>
+                <pc:TextEquiv conf="0.9983444809913635">
+                    <pc:Unicode>Um die Anzahl der Gegenſtaͤnde und Lehrſaͤtze nicht zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0001">
+                <pc:Coords points="470,473 2627,473 2627,572 470,572"/>
+                <pc:TextEquiv conf="0.9984623789787292">
+                    <pc:Unicode>haͤufen, habe ich verſchiedene Anmerkungen und Regeln, deren</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0002">
+                <pc:Coords points="472,586 2626,586 2626,684 472,684"/>
+                <pc:TextEquiv conf="0.9987728595733643">
+                    <pc:Unicode>Gebrauch ſelten iſt, in die Noten des zweyten Buches herunter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0003">
+                <pc:Coords points="469,697 2624,697 2624,803 469,803"/>
+                <pc:TextEquiv conf="0.9996245503425598">
+                    <pc:Unicode>geſetzet, welche man zu einer zweyten Durchleſung ausſetzen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0004">
+                <pc:Coords points="468,809 2629,809 2629,913 468,913"/>
+                <pc:TextEquiv conf="0.9924120306968689">
+                    <pc:Unicode>kann, wenn man die im Texte vorgetragene weſentliche Regeln</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_1_line0005">
+                <pc:Coords points="466,929 2625,929 2625,1030 466,1030"/>
+                <pc:TextEquiv conf="0.9997656345367432">
+                    <pc:Unicode>genugſam wird begriffen haben.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Um die Anzahl der Gegenſtaͤnde und Lehrſaͤtze nicht zu
+haͤufen, habe ich verſchiedene Anmerkungen und Regeln, deren
+Gebrauch ſelten iſt, in die Noten des zweyten Buches herunter
+geſetzet, welche man zu einer zweyten Durchleſung ausſetzen
+kann, wenn man die im Texte vorgetragene weſentliche Regeln
+genugſam wird begriffen haben.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="404,1016 389,2169 2640,2119 2640,1016 404,1016"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="456,1036 2623,1036 2623,1140 456,1140"/>
+                <pc:TextEquiv conf="0.9984573125839233">
+                    <pc:Unicode>Dieſes zweyte Buch ſetzet ebenfalls im Grunde keine Be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,1145 2623,1145 2623,1260 461,1260"/>
+                <pc:TextEquiv conf="0.99738609790802">
+                    <pc:Unicode>kanntſchaft mit dem Geſange, ja nicht einmal eine Kaͤnntniß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,1260 2622,1260 2622,1362 458,1362"/>
+                <pc:TextEquiv conf="0.9967812299728394">
+                    <pc:Unicode>der Muſik voraus. Es erfordert nur, daß man wiſſe, nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:Coords points="458,1373 2619,1373 2619,1480 458,1480"/>
+                <pc:TextEquiv conf="0.9990881681442261">
+                    <pc:Unicode>die Noten anzuſtimmen, ſondern nur, daß man den Diskant⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0004">
+                <pc:Coords points="459,1482 2623,1482 2623,1590 459,1590"/>
+                <pc:TextEquiv conf="0.9943628907203674">
+                    <pc:Unicode>und Baßſchluͤſſel kenne. Annoch kann man ſich vermittelſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_2_region_id_2_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1595 2615,1595 2615,1701 457,1701"/>
+                <pc:TextEquiv conf="0.997416079044342">
+                    <pc:Unicode>meines Werks ſelbſt dieſe Kaͤnntniß zuwege bringen, weil ich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_2_region_id_2_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="457,1701 2615,1701 2615,1818 457,1818"/>
+                <pc:TextEquiv conf="0.9986743927001953">
+                    <pc:Unicode>im Anfange des zweyten Buches, die Stellung der Schluͤſſel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0007">
+                <pc:Coords points="457,1820 2615,1820 2615,1920 457,1920"/>
+                <pc:TextEquiv conf="0.9988464117050171">
+                    <pc:Unicode>und der Noten erklaͤre. Es koͤmmt nur darauf an, ſich ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0008">
+                <pc:Coords points="457,1932 2616,1932 2616,2044 457,2044"/>
+                <pc:TextEquiv conf="0.9998408555984497">
+                    <pc:Unicode>wenig bekannt damit zu machen, und alle Schwierigkeit wird</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0009">
+                <pc:Coords points="457,2045 457,2155 1019,2155 2221,2128 2221,2045 457,2045"/>
+                <pc:TextEquiv conf="0.9974993467330933">
+                    <pc:Unicode>ſofort wegfallen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſes zweyte Buch ſetzet ebenfalls im Grunde keine Be⸗
+kanntſchaft mit dem Geſange, ja nicht einmal eine Kaͤnntniß
+der Muſik voraus. Es erfordert nur, daß man wiſſe, nicht
+die Noten anzuſtimmen, ſondern nur, daß man den Diskant⸗
+und Baßſchluͤſſel kenne. Annoch kann man ſich vermittelſt
+meines Werks ſelbſt dieſe Kaͤnntniß zuwege bringen, weil ich
+im Anfange des zweyten Buches, die Stellung der Schluͤſſel
+und der Noten erklaͤre. Es koͤmmt nur darauf an, ſich ein
+wenig bekannt damit zu machen, und alle Schwierigkeit wird
+ſofort wegfallen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="437,2177 437,3168 2674,3168 2675,2136 437,2177"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1529,2157 476,2176 476,2271 2613,2271 2613,2157 1529,2157"/>
+                <pc:TextEquiv conf="0.9994145631790161">
+                    <pc:Unicode>Man erwarte aber nicht, hier alle Regeln der muſicali⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,2272 2614,2272 2614,2380 454,2380"/>
+                <pc:TextEquiv conf="0.988541305065155">
+                    <pc:Unicode>ſchen Setzkunſt zu ſinden, insbeſondere die Regeln der vielſtim⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,2380 2612,2380 2612,2497 454,2497"/>
+                <pc:TextEquiv conf="0.9982722401618958">
+                    <pc:Unicode>migen Muſik, die, weil ſie weniger ſtrenge ſind, fuͤrnehmlich</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-013_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="452,2495 2614,2495 2614,2604 452,2604"/>
+                <pc:TextEquiv conf="0.9993417263031006">
+                    <pc:Unicode>durch die Uebung, durch Nachahmung guter Muſter, durch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:Coords points="457,2611 2612,2611 2612,2720 457,2720"/>
+                <pc:TextEquiv conf="0.9913042187690735">
+                    <pc:Unicode>Beyhuͤlfe eines muͤndlichen Unterrichts, ꝛc. erlernet werden.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:Coords points="455,2722 2611,2722 2611,2827 455,2827"/>
+                <pc:TextEquiv conf="0.9974116683006287">
+                    <pc:Unicode>Dieſes Werk iſt eigentlich nichts anders, als ein muſicaliſcher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:Coords points="457,2833 2612,2833 2612,2939 457,2939"/>
+                <pc:TextEquiv conf="0.999553918838501">
+                    <pc:Unicode>Donat, welchen ich dazu beſtimmet habe, den Anfaͤngern die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:Coords points="456,2945 2611,2945 2611,3051 456,3051"/>
+                <pc:TextEquiv conf="0.9931972026824951">
+                    <pc:Unicode>Grundlehren der Muſik, aber nicht alle beſondere Regeln und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0008">
+                <pc:Coords points="456,3065 2576,3065 2576,3167 456,3167"/>
+                <pc:TextEquiv conf="0.9974314570426941">
+                    <pc:Unicode>Ausnahmen der Regeln, zu entwickeln.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Man erwarte aber nicht, hier alle Regeln der muſicali⸗
+ſchen Setzkunſt zu ſinden, insbeſondere die Regeln der vielſtim⸗
+migen Muſik, die, weil ſie weniger ſtrenge ſind, fuͤrnehmlich
+durch die Uebung, durch Nachahmung guter Muſter, durch
+Beyhuͤlfe eines muͤndlichen Unterrichts, ꝛc. erlernet werden.
+Dieſes Werk iſt eigentlich nichts anders, als ein muſicaliſcher
+Donat, welchen ich dazu beſtimmet habe, den Anfaͤngern die
+Grundlehren der Muſik, aber nicht alle beſondere Regeln und
+Ausnahmen der Regeln, zu entwickeln.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="footer">
+            <pc:Coords points="2335,3245 2612,3245 2612,3373 2335,3373 2335,3245"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="2335,3245 2612,3245 2612,3373 2335,3373"/>
+                <pc:TextEquiv conf="0.9082750678062439">
+                    <pc:Unicode>Noch</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Noch</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

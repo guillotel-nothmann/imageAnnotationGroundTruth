@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:16</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:16</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-146.png" imageWidth="2973" imageHeight="3594" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-146-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-146.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="399,182 2531,182 2531,3257 399,3257"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="950,183 2530,183 2530,277 950,277"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="950,183 2530,183 2530,277 950,277"/>
+                <pc:TextEquiv conf="0.9885752201080322">
+                    <pc:Unicode>Anmerkungen des Ueberſetzers. 127</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Anmerkungen des Ueberſetzers. 127</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="409,338 2528,338 2528,1344 409,1344"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="424,338 2528,338 2528,415 424,415"/>
+                <pc:TextEquiv conf="0.9772869944572449">
+                    <pc:Unicode>Tons. Jſt aber die Veroͤnderung ſehr groß, ſo wie in den ungleichſchwo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="424,418 2525,418 2525,491 424,491"/>
+                <pc:TextEquiv conf="0.9989586472511292">
+                    <pc:Unicode>benden Stimmungen; ſo kann dieſe Beſchaͤfftigung mit dem Grundbaſſe das</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0002">
+                <pc:Coords points="418,495 2525,495 2525,570 418,570"/>
+                <pc:TextEquiv conf="0.9986367225646973">
+                    <pc:Unicode>Misvergnuͤgen des Ohrs uͤber dieſe Unreinigkeit wohl nicht verhindern. Waͤre</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0003">
+                <pc:Coords points="414,573 2523,573 2523,646 414,646"/>
+                <pc:TextEquiv conf="0.9910007119178772">
+                    <pc:Unicode>dieſes, ſo waͤre es einerley, ob eine Quinte uͤber oder unter ſich ſchwebete c.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0004">
+                <pc:Coords points="416,650 2527,650 2527,723 416,723"/>
+                <pc:TextEquiv conf="0.9987366199493408">
+                    <pc:Unicode>Es iſt alſo wohl nicht ſo gar einerley, was man ſich fuͤr eine Temperatur er⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0005">
+                <pc:Coords points="415,729 2525,729 2525,802 415,802"/>
+                <pc:TextEquiv conf="0.9962081909179688">
+                    <pc:Unicode>waͤhlet. Zum wenigſten kann man eine ſolche nicht erwaͤhlen, wo fuͤnf bis ſechs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0006">
+                <pc:Coords points="414,804 2524,804 2524,877 414,877"/>
+                <pc:TextEquiv conf="0.9879775047302246">
+                    <pc:Unicode>unertraͤgliche Tonarten vorkommen, aus welchen man nichts ſpielen kann, wie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0007">
+                <pc:Coords points="412,881 2521,881 2521,959 412,959"/>
+                <pc:TextEquiv conf="0.9975109696388245">
+                    <pc:Unicode>der Verfaſſer ſelbſt behauptet. Hier wird die Alteration dem Gehoͤre gar zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0001_region0001_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="411,960 2522,960 2522,1036 411,1036"/>
+                <pc:TextEquiv conf="0.9990673661231995">
+                    <pc:Unicode>merklich, und folglich verdrießlich. Jn allen Temperaturen aber, wo die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0009">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0001_region0001_line0009.png" comments="binarized,clipped"/>
+                <pc:Coords points="410,1035 2519,1035 2519,1111 410,1111"/>
+                <pc:TextEquiv conf="0.9928165674209595">
+                    <pc:Unicode>zwoͤlf halben Toͤne nicht in gleicher geometriſchen Proportion einer von dem an⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0010">
+                <pc:Coords points="413,1114 2520,1114 2520,1191 413,1191"/>
+                <pc:TextEquiv conf="0.999234676361084">
+                    <pc:Unicode>dern abſtehen, giebet es ſolche zu merkliche und verdrießliche Alterationen, wel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0011">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0001_region0001_line0011.png" comments="binarized,clipped"/>
+                <pc:Coords points="409,1192 2515,1192 2515,1271 409,1271"/>
+                <pc:TextEquiv conf="0.9995074272155762">
+                    <pc:Unicode>ches nicht anders ſeyn kann, indem, wenn ein Ton zu gut iſt, nothwendig ein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0012">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0001_region0001_line0012.png" comments="binarized,clipped"/>
+                <pc:Coords points="409,1269 2126,1269 2126,1344 409,1344"/>
+                <pc:TextEquiv conf="0.999729573726654">
+                    <pc:Unicode>anderer zu ſchlecht ſeyn muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Tons. Jſt aber die Veroͤnderung ſehr groß, ſo wie in den ungleichſchwo⸗
+benden Stimmungen; ſo kann dieſe Beſchaͤfftigung mit dem Grundbaſſe das
+Misvergnuͤgen des Ohrs uͤber dieſe Unreinigkeit wohl nicht verhindern. Waͤre
+dieſes, ſo waͤre es einerley, ob eine Quinte uͤber oder unter ſich ſchwebete c.
+Es iſt alſo wohl nicht ſo gar einerley, was man ſich fuͤr eine Temperatur er⸗
+waͤhlet. Zum wenigſten kann man eine ſolche nicht erwaͤhlen, wo fuͤnf bis ſechs
+unertraͤgliche Tonarten vorkommen, aus welchen man nichts ſpielen kann, wie
+der Verfaſſer ſelbſt behauptet. Hier wird die Alteration dem Gehoͤre gar zu
+merklich, und folglich verdrießlich. Jn allen Temperaturen aber, wo die
+zwoͤlf halben Toͤne nicht in gleicher geometriſchen Proportion einer von dem an⸗
+dern abſtehen, giebet es ſolche zu merkliche und verdrießliche Alterationen, wel⸗
+ches nicht anders ſeyn kann, indem, wenn ein Ton zu gut iſt, nothwendig ein
+anderer zu ſchlecht ſeyn muß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="400,1361 2516,1361 2516,2053 400,2053"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="435,1361 2516,1361 2516,1448 435,1448"/>
+                <pc:TextEquiv conf="0.9987253546714783">
+                    <pc:Unicode>(24) Die Stimme temperiret natuͤrlicher Weiſe, und giebet einer guten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="407,1444 2515,1444 2515,1525 407,1525"/>
+                <pc:TextEquiv conf="0.999276876449585">
+                    <pc:Unicode>Temperatur nach. Aber einer ſchlechten? Man accompagnire eine Stimme</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,1523 2513,1523 2513,1598 402,1598"/>
+                <pc:TextEquiv conf="0.9924919605255127">
+                    <pc:Unicode>auf einem uͤbelgeſtimmten Claviere, z. E. aus dem h, fis oder as dur, wenn</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,1597 2512,1597 2512,1673 402,1673"/>
+                <pc:TextEquiv conf="0.9847442507743835">
+                    <pc:Unicode>daſelbſt die große Terz fis ais, und h dis, c. nebſt der Quinte as es,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="402,1676 2511,1676 2511,1752 402,1752"/>
+                <pc:TextEquiv conf="0.9992339015007019">
+                    <pc:Unicode>unleidlich zu hoch ſind. Die Erfahrung wird lehren, daß die Stimme des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="400,1752 2511,1752 2511,1829 400,1829"/>
+                <pc:TextEquiv conf="0.9992257952690125">
+                    <pc:Unicode>geuͤbteſten Saͤngers dieſer uͤblen Temperatur niemals gaͤnzlich nachgeben, und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="403,1830 2508,1830 2508,1907 403,1907"/>
+                <pc:TextEquiv conf="0.9991110563278198">
+                    <pc:Unicode>daß ſich folglich zwiſchen der Stimme und dem Claviere eine unertraͤgliche Ca⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="403,1907 2506,1907 2506,1985 403,1985"/>
+                <pc:TextEquiv conf="0.9923782348632812">
+                    <pc:Unicode>cophonie ereignen wird, der Cacophonie zwiſchen den uͤbrigen Jnſtrumenten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0008">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0002_region0002_line0008.png" comments="binarized,clipped"/>
+                <pc:Coords points="404,1984 2494,1984 2494,2053 404,2053"/>
+                <pc:TextEquiv conf="0.9991706609725952">
+                    <pc:Unicode>und dem Claviere nicht zu gedenken.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(24) Die Stimme temperiret natuͤrlicher Weiſe, und giebet einer guten
+Temperatur nach. Aber einer ſchlechten? Man accompagnire eine Stimme
+auf einem uͤbelgeſtimmten Claviere, z. E. aus dem h, fis oder as dur, wenn
+daſelbſt die große Terz fis ais, und h dis, c. nebſt der Quinte as es,
+unleidlich zu hoch ſind. Die Erfahrung wird lehren, daß die Stimme des
+geuͤbteſten Saͤngers dieſer uͤblen Temperatur niemals gaͤnzlich nachgeben, und
+daß ſich folglich zwiſchen der Stimme und dem Claviere eine unertraͤgliche Ca⸗
+cophonie ereignen wird, der Cacophonie zwiſchen den uͤbrigen Jnſtrumenten
+und dem Claviere nicht zu gedenken.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="403,2080 2511,2080 2511,2244 403,2244"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0003_region0003_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="554,2080 2511,2080 2511,2159 554,2159"/>
+                <pc:TextEquiv conf="0.9803734421730042">
+                    <pc:Unicode>(25) (a6) Der Verfaſſer machet einen Unterſcheid zwiſchen dem Sertquin⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-146_region0003_region0003_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="403,2157 1572,2157 1572,2244 403,2244"/>
+                <pc:TextEquiv conf="0.9882493615150452">
+                    <pc:Unicode>tenaccorde in folgendem Exempel:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(25) (a6) Der Verfaſſer machet einen Unterſcheid zwiſchen dem Sertquin⸗
+tenaccorde in folgendem Exempel:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="1116,2231 1673,2231 1673,2456 1116,2456"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="1428,2435 1560,2435 1560,2509 1428,2509"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="1428,2435 1560,2435 1560,2509 1428,2509"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="1182,2503 1673,2503 1673,2711 1182,2711"/>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="399,2721 2050,2721 2050,2799 399,2799"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:Coords points="399,2721 2050,2721 2050,2799 399,2799"/>
+                <pc:TextEquiv conf="0.981454610824585">
+                    <pc:Unicode>und zwiſchen dem Sextquintenaccorde in folgendem Exempel :</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>und zwiſchen dem Sextquintenaccorde in folgendem Exempel :</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="1182,2808 1674,2808 1674,3035 1182,3035"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="1182,2808 1674,2808 1674,3035 1182,3035"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="1426,3015 1558,3015 1558,3087 1426,3087"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="1426,3015 1558,3015 1558,3087 1426,3087"/>
+                <pc:TextEquiv conf="0.39913544058799744">
+                    <pc:Unicode>3</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>3</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="1182,3083 2487,3083 2487,3257 1182,3257"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:Coords points="1182,3083 2487,3083 2487,3257 1182,3257"/>
+                <pc:TextEquiv conf="0.0">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode></pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>

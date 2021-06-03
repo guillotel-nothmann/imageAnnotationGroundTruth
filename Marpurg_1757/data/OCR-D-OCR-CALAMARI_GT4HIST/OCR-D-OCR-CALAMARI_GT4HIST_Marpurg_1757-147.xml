@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:44:19</pc:Created>
+        <pc:LastChange>2021-01-10T21:44:19</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-147.png" imageWidth="2973" imageHeight="3636" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-147-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-147.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="449,190 2627,190 2627,3275 449,3275"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="449,191 2060,191 2060,285 449,285"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="449,191 2060,191 2060,285 449,285"/>
+                <pc:TextEquiv conf="0.9865270853042603">
+                    <pc:Unicode>128 Anmerkungen des Ueberſetzers.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>128 Anmerkungen des Ueberſetzers.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="454,347 2585,347 2585,519 454,519"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0001_region0001_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,347 2584,347 2584,435 455,435"/>
+                <pc:TextEquiv conf="0.977491021156311">
+                    <pc:Unicode>und bieſer Unterſcheid betrift die Quinte, die in dem erſten Exempel nicht rei</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0001_region0001_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="454,429 2585,429 2585,519 454,519"/>
+                <pc:TextEquiv conf="0.9994641542434692">
+                    <pc:Unicode>ſolviret wird, in dem zweyten Exempel aber zur Reſolution eine Stufe herabgehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>und bieſer Unterſcheid betrift die Quinte, die in dem erſten Exempel nicht rei
+ſolviret wird, in dem zweyten Exempel aber zur Reſolution eine Stufe herabgehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="455,554 2591,554 2591,1203 455,1203"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="612,554 2585,554 2585,638 612,638"/>
+                <pc:TextEquiv conf="0.9943947196006775">
+                    <pc:Unicode>Den Sertquintenaccord aus dem erſten Exempel haͤlt der Verfaſſer fuͤr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="455,632 2585,632 2585,716 455,716"/>
+                <pc:TextEquiv conf="0.9991706013679504">
+                    <pc:Unicode>einen Grundaccord, und behauptet, daß die Sexte darinnen diſſoniret. Den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,714 2586,714 2586,801 459,801"/>
+                <pc:TextEquiv conf="0.994685173034668">
+                    <pc:Unicode>Sextquintenaccord aber aus dem zweyten Exempel haͤlt er fuͤr einen vermittelſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="458,792 2589,792 2589,879 458,879"/>
+                <pc:TextEquiv conf="0.982799232006073">
+                    <pc:Unicode>der Umkehrung von dem Septimenſatze d f a c abſtammenden Satz, weil die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="461,868 2588,868 2588,957 461,957"/>
+                <pc:TextEquiv conf="0.9970126152038574">
+                    <pc:Unicode>Quinte darinnen reſolviret. Er nimmt alſo drey Grundaccorde an,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="463,948 2591,948 2591,1030 463,1030"/>
+                <pc:TextEquiv conf="0.9982317686080933">
+                    <pc:Unicode>woraus alle uͤbrigen Accorde herſtammen, und dieſe Grundaccorde nach ihm</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="463,1025 2587,1025 2587,1124 463,1124"/>
+                <pc:TextEquiv conf="0.9867570996284485">
+                    <pc:Unicode>ſind 1) der harmoniſche Drey⸗oder Vierklang; a) der Septimenaccord;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0002_region0002_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="464,1105 2587,1105 2587,1203 464,1203"/>
+                <pc:TextEquiv conf="0.9919834733009338">
+                    <pc:Unicode>3) der Sextquintenaccord, worinnen die Sexte uͤber ſich gehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Den Sertquintenaccord aus dem erſten Exempel haͤlt der Verfaſſer fuͤr
+einen Grundaccord, und behauptet, daß die Sexte darinnen diſſoniret. Den
+Sextquintenaccord aber aus dem zweyten Exempel haͤlt er fuͤr einen vermittelſt
+der Umkehrung von dem Septimenſatze d f a c abſtammenden Satz, weil die
+Quinte darinnen reſolviret. Er nimmt alſo drey Grundaccorde an,
+woraus alle uͤbrigen Accorde herſtammen, und dieſe Grundaccorde nach ihm
+ſind 1) der harmoniſche Drey⸗oder Vierklang; a) der Septimenaccord;
+3) der Sextquintenaccord, worinnen die Sexte uͤber ſich gehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="459,1230 2601,1230 2601,1871 459,1871"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="652,1230 2597,1230 2597,1325 652,1325"/>
+                <pc:TextEquiv conf="0.9805625677108765">
+                    <pc:Unicode>Jch mache gleichfalls unter dem einen und dem andern Sextquintenac⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="459,1310 2595,1310 2595,1394 459,1394"/>
+                <pc:TextEquiv conf="0.9974141120910645">
+                    <pc:Unicode>corde einen Unterſcheid. Da ich aber, aus einem andern Grunde, nicht mehr als</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,1387 2596,1387 2596,1487 466,1487"/>
+                <pc:TextEquiv conf="0.9994618892669678">
+                    <pc:Unicode>zween Hauptaccorde erkenne, woraus alle uͤbrigen ihren Urſprung nehmen, wie</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="468,1465 2597,1465 2597,1552 468,1552"/>
+                <pc:TextEquiv conf="0.985159695148468">
+                    <pc:Unicode>man im I Theile meines Handbuches Seite 24 finden kann: ſo entſtehet, meiner</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="471,1542 2599,1542 2599,1634 471,1634"/>
+                <pc:TextEquiv conf="0.9863206148147583">
+                    <pc:Unicode>Meynung nach, der Satz des erſten Accords aus einer ganz andern Quelle.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,1613 2600,1613 2600,1712 472,1712"/>
+                <pc:TextEquiv conf="0.9640153050422668">
+                    <pc:Unicode>Man ſehe hiervon Tab. V. Fig. 20 (a) (b) (c), ingleichen Tab. IV Fig. 13 (a) (b)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="473,1695 2601,1695 2601,1786 473,1786"/>
+                <pc:TextEquiv conf="0.9909761548042297">
+                    <pc:Unicode>in dem ITheile dieſes Handbuches, und ſuche die Erklaͤrung der daſelbſt befind⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0003_region0003_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="472,1780 1813,1780 1813,1871 472,1871"/>
+                <pc:TextEquiv conf="0.9721384644508362">
+                    <pc:Unicode>lichen Saͤtze an ſeinem Orte auf.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Jch mache gleichfalls unter dem einen und dem andern Sextquintenac⸗
+corde einen Unterſcheid. Da ich aber, aus einem andern Grunde, nicht mehr als
+zween Hauptaccorde erkenne, woraus alle uͤbrigen ihren Urſprung nehmen, wie
+man im I Theile meines Handbuches Seite 24 finden kann: ſo entſtehet, meiner
+Meynung nach, der Satz des erſten Accords aus einer ganz andern Quelle.
+Man ſehe hiervon Tab. V. Fig. 20 (a) (b) (c), ingleichen Tab. IV Fig. 13 (a) (b)
+in dem ITheile dieſes Handbuches, und ſuche die Erklaͤrung der daſelbſt befind⸗
+lichen Saͤtze an ſeinem Orte auf.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="476,1901 2603,1901 2603,2070 476,2070"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0004_region0004_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="643,1901 2603,1901 2603,1993 643,1993"/>
+                <pc:TextEquiv conf="0.9906027913093567">
+                    <pc:Unicode>(27) Wenn man die Ration der großen Terz quadriret, und fuͤr den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0004_region0004_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,1979 2596,1979 2596,2070 476,2070"/>
+                <pc:TextEquiv conf="0.9813978672027588">
+                    <pc:Unicode>Grundton c annimmt: ſo erhaͤlt man die Ration fuͤr gis, als:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>(27) Wenn man die Ration der großen Terz quadriret, und fuͤr den
+Grundton c annimmt: ſo erhaͤlt man die Ration fuͤr gis, als:</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="489,2375 2611,2375 2611,2549 489,2549"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0007_region0007_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="489,2375 2603,2375 2603,2472 489,2472"/>
+                <pc:TextEquiv conf="0.985234797000885">
+                    <pc:Unicode>Die Differenz zwiſchen gis und g zu finden, multiplicire man die Ration ?</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0007_region0007_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2380 2611,2380 2611,2549 491,2549"/>
+                <pc:TextEquiv conf="0.6084452271461487">
+                    <pc:Unicode>?ee ve s i a m meilee mmn iiben, minluen en</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Differenz zwiſchen gis und g zu finden, multiplicire man die Ration ?
+?ee ve s i a m meilee mmn iiben, minluen en</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="501,2591 2626,2591 2626,3275 501,3275"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1129,2591 1703,2591 1703,2687 1129,2687"/>
+                <pc:TextEquiv conf="0.599916398525238">
+                    <pc:Unicode>21EE</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1140,2679 1704,2679 1704,2757 1140,2757"/>
+                <pc:TextEquiv conf="0.9396993517875671">
+                    <pc:Unicode>i6 2148 24</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="679,2806 2617,2806 2617,2912 679,2912"/>
+                <pc:TextEquiv conf="0.9507507681846619">
+                    <pc:Unicode>(28) E:F iſt , und F fis iſt 14. Nun giebt 25 mal i6 die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="501,2892 2620,2892 2620,2983 501,2983"/>
+                <pc:TextEquiv conf="0.9746420383453369">
+                    <pc:Unicode>Summe von 400, und 24 mal 15 iſt 36o. Die Zahl 400 ſtellet den Dividen⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="504,2971 2622,2971 2622,3066 504,3066"/>
+                <pc:TextEquiv conf="0.9960787296295166">
+                    <pc:Unicode>dum, und 36o den Diviſorem vor. Beyde Zahlen werden vermittelſt der Zahl</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="506,3048 2620,3048 2620,3146 506,3146"/>
+                <pc:TextEquiv conf="0.9710186123847961">
+                    <pc:Unicode>40 reduciret. Die Zahl 400 giebt 10, und 360 giebt 9; Alſo , das iſt 10</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-147_region0008_region0008_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="508,3141 1666,3141 1666,3226 508,3226"/>
+                <pc:TextEquiv conf="0.9851880073547363">
+                    <pc:Unicode>mit 9 dividiret.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0008_line0007">
+                <pc:Coords points="1810,3196 2626,3196 2626,3275 1810,3275"/>
+                <pc:TextEquiv conf="0.7683905959129333">
+                    <pc:Unicode>(o)</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>21EE
+i6 2148 24
+(28) E:F iſt , und F fis iſt 14. Nun giebt 25 mal i6 die
+Summe von 400, und 24 mal 15 iſt 36o. Die Zahl 400 ſtellet den Dividen⸗
+dum, und 36o den Diviſorem vor. Beyde Zahlen werden vermittelſt der Zahl
+40 reduciret. Die Zahl 400 giebt 10, und 360 giebt 9; Alſo , das iſt 10
+mit 9 dividiret.
+(o)</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TableRegion id="region0006">
+            <pc:Coords points="1332,2107 1525,2107 1525,2343 1332,2343"/>
+        </pc:TableRegion>
+        <pc:SeparatorRegion id="region0005">
+            <pc:Coords points="1291,2246 1608,2246 1608,2263 1291,2263"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

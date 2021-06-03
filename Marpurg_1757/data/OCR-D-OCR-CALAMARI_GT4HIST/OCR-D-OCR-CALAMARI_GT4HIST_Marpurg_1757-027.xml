@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:06</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:06</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-027.png" imageWidth="2973" imageHeight="3702" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-027-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-027.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="482,187 2646,187 2646,3410 482,3410"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+                <pc:RegionRefIndexed index="14" regionRef="region_id_14"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="468,147 454,264 556,286 556,147 468,147"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="482,200 521,200 521,265 482,265"/>
+                <pc:TextEquiv conf="0.9993738532066345">
+                    <pc:Unicode>8</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>8</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="1244,139 1244,293 1822,293 1822,139 1244,139"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="1291,188 1804,188 1804,278 1291,278"/>
+                <pc:TextEquiv conf="0.9999366402626038">
+                    <pc:Unicode>Vorbereitung.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vorbereitung.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="heading">
+            <pc:Coords points="563,425 563,717 2532,717 2532,425 563,425"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="1200,444 2332,444 2332,575 1200,575"/>
+                <pc:TextEquiv conf="0.9966841340065002">
+                    <pc:Unicode>Fuͤnftes Capitel.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="625,577 2509,577 2509,717 625,717"/>
+                <pc:TextEquiv conf="0.9920357465744019">
+                    <pc:Unicode>Was eine Conſonanz und Diſſonanz iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Fuͤnftes Capitel.
+Was eine Conſonanz und Diſſonanz iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="heading">
+            <pc:Coords points="1390,739 1390,856 1727,856 1727,739 1390,739"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="1440,743 1681,743 1681,845 1440,845"/>
+                <pc:TextEquiv conf="0.9934626221656799">
+                    <pc:Unicode>§. 16.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 16.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="drop-capital">
+            <pc:Coords points="446,842 446,1134 673,1134 673,842 446,842"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="491,884 668,884 668,1128 491,1128"/>
+                <pc:TextEquiv conf="0.9778047800064087">
+                    <pc:Unicode>E</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>E</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="paragraph">
+            <pc:Coords points="692,1146 338,1170 337,1244 2693,1244 2693,871 665,880 665,959 689,980 692,1146"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="672,888 672,965 682,974 2641,974 2641,888 672,888"/>
+                <pc:TextEquiv conf="0.9989134669303894">
+                    <pc:Unicode>in aus ſolchen Toͤnen beſtehender Accord, deren Vereinigung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:Coords points="713,976 2645,976 2645,1062 713,1062"/>
+                <pc:TextEquiv conf="0.9979769587516785">
+                    <pc:Unicode>dem Gehoͤre angenehm iſt, heißet ein conſonirender Accord,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="714,1069 2642,1069 2642,1155 714,1155"/>
+                <pc:TextEquiv conf="0.9982604384422302">
+                    <pc:Unicode>und die Toͤne, die denſelben ausmachen, werden einer in Be⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_6_region_id_6_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,1154 488,1160 488,1244 2639,1244 2639,1154 574,1154"/>
+                <pc:TextEquiv conf="0.999657928943634">
+                    <pc:Unicode>tracht gegen den andern Conſonanzen genennet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>in aus ſolchen Toͤnen beſtehender Accord, deren Vereinigung
+dem Gehoͤre angenehm iſt, heißet ein conſonirender Accord,
+und die Toͤne, die denſelben ausmachen, werden einer in Be⸗
+tracht gegen den andern Conſonanzen genennet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="heading">
+            <pc:Coords points="1412,1252 1412,1369 1712,1369 1712,1252 1412,1252"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1452,1286 1677,1286 1677,1368 1452,1368"/>
+                <pc:TextEquiv conf="0.9729304313659668">
+                    <pc:Unicode>§. 17.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 17.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="446,1360 462,1662 2671,1661 2664,1363 446,1360"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,1362 496,1458 2640,1458 2640,1363 1925,1362 496,1362"/>
+                <pc:TextEquiv conf="0.9921813011169434">
+                    <pc:Unicode>Die Oetave eines Tones iſt die vollkommenſte Conſonanz, de</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,1457 2641,1457 2641,1560 492,1560"/>
+                <pc:TextEquiv conf="0.9967843294143677">
+                    <pc:Unicode>ren derſelbe faͤhig iſt; hernach folget die Quinte, Terz, u. ſ. w.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,1549 2423,1549 2423,1641 491,1641"/>
+                <pc:TextEquiv conf="0.9970778226852417">
+                    <pc:Unicode>Dieſer Umſtand iſt aus der Erfahrung klar.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die Oetave eines Tones iſt die vollkommenſte Conſonanz, de
+ren derſelbe faͤhig iſt; hernach folget die Quinte, Terz, u. ſ. w.
+Dieſer Umſtand iſt aus der Erfahrung klar.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="heading">
+            <pc:Coords points="1420,1661 1420,1764 1692,1764 1692,1661 1420,1661"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="1444,1683 1676,1683 1676,1764 1444,1764"/>
+                <pc:TextEquiv conf="0.9595957398414612">
+                    <pc:Unicode>§. 18.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 18.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="463,1760 469,2409 2658,2379 2658,1760 463,1760"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_10_region_id_10_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="661,1781 2641,1781 2641,1866 661,1866"/>
+                <pc:TextEquiv conf="0.9945316314697266">
+                    <pc:Unicode>Ein aus ſolchen Toͤnen beſtehender Accord, deren Vereinigung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_10_region_id_10_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="486,1866 2637,1866 2637,1954 486,1954"/>
+                <pc:TextEquiv conf="0.9927323460578918">
+                    <pc:Unicode>das Gehoͤr verletzet, heißt ein diſſonirender Accord, und die Toͤne,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="490,1960 2640,1960 2640,2039 490,2039"/>
+                <pc:TextEquiv conf="0.999228298664093">
+                    <pc:Unicode>die denſelben ausmachen, werden einer in Betracht gegen den andern</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_10_region_id_10_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="491,2044 2636,2044 2636,2136 491,2136"/>
+                <pc:TextEquiv conf="0.9963053464889526">
+                    <pc:Unicode>Diſſonanzen genennet (4). Die Secunde, der Triton, und die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_10_region_id_10_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="493,2135 2639,2135 2639,2223 493,2223"/>
+                <pc:TextEquiv conf="0.9980653524398804">
+                    <pc:Unicode>Septime ſind in dieſer Abſicht Diſſonanzen. Ein Accord alſo, der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_10_region_id_10_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2222 2640,2222 2640,2311 492,2311"/>
+                <pc:TextEquiv conf="0.9877422451972961">
+                    <pc:Unicode>aus den Toͤnen c: d, oder f: h, oder c: h beſtehet, iſt ein diſſoniren⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0006">
+                <pc:Coords points="492,2321 853,2321 853,2391 492,2391"/>
+                <pc:TextEquiv conf="0.9960081577301025">
+                    <pc:Unicode>der Accord.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Ein aus ſolchen Toͤnen beſtehender Accord, deren Vereinigung
+das Gehoͤr verletzet, heißt ein diſſonirender Accord, und die Toͤne,
+die denſelben ausmachen, werden einer in Betracht gegen den andern
+Diſſonanzen genennet (4). Die Secunde, der Triton, und die
+Septime ſind in dieſer Abſicht Diſſonanzen. Ein Accord alſo, der
+aus den Toͤnen c: d, oder f: h, oder c: h beſtehet, iſt ein diſſoniren⸗
+der Accord.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="heading">
+            <pc:Coords points="1425,2385 1425,2486 1668,2486 1668,2385 1425,2385"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1450,2407 1667,2407 1667,2483 1450,2483"/>
+                <pc:TextEquiv conf="0.9944760203361511">
+                    <pc:Unicode>§. 19</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>§. 19</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="470,2476 470,3038 2650,3038 2650,2476 470,2476"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="662,2494 2637,2494 2637,2586 662,2586"/>
+                <pc:TextEquiv conf="0.9995436072349548">
+                    <pc:Unicode>Der Ausdruck, Diſſonanz, entſteht aus einem griechiſchen und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="492,2582 2637,2582 2637,2674 492,2674"/>
+                <pc:TextEquiv conf="0.9987958669662476">
+                    <pc:Unicode>lateiniſchen Worte, und bedeutet ſo viel, als zweymal anſchlagen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2672 2636,2672 2636,2763 496,2763"/>
+                <pc:TextEquiv conf="0.9997079968452454">
+                    <pc:Unicode>Jn der That iſt die Urſache, daß die Diſſonanz unangenehm iſt, dieſe,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="496,2762 2638,2762 2638,2852 496,2852"/>
+                <pc:TextEquiv conf="0.9988422989845276">
+                    <pc:Unicode>weil die beyden Toͤne, woraus ſie beſteht, ſich auf keine Weiſe im</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,2850 2636,2850 2636,2942 500,2942"/>
+                <pc:TextEquiv conf="0.9979660511016846">
+                    <pc:Unicode>Gehoͤre vermiſchen, und, ungeachtet ſie zuſammen angeſchlagen werden,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-027_region_id_12_region_id_12_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="500,2942 2373,2942 2373,3035 500,3035"/>
+                <pc:TextEquiv conf="0.9848178029060364">
+                    <pc:Unicode>dennoch als zween getrennte Toͤne vernommen werden ().</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Der Ausdruck, Diſſonanz, entſteht aus einem griechiſchen und
+lateiniſchen Worte, und bedeutet ſo viel, als zweymal anſchlagen.
+Jn der That iſt die Urſache, daß die Diſſonanz unangenehm iſt, dieſe,
+weil die beyden Toͤne, woraus ſie beſteht, ſich auf keine Weiſe im
+Gehoͤre vermiſchen, und, ungeachtet ſie zuſammen angeſchlagen werden,
+dennoch als zween getrennte Toͤne vernommen werden ().</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_14" type="footer">
+            <pc:Coords points="2401,3299 2401,3418 2683,3418 2683,3299 2401,3299"/>
+            <pc:TextLine id="region_id_14_line0000">
+                <pc:Coords points="2417,3316 2640,3316 2640,3410 2417,3410"/>
+                <pc:TextEquiv conf="0.9983201622962952">
+                    <pc:Unicode>Erſtes</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Erſtes</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="region_id_13" type="decoration">
+            <pc:Coords points="1397,3102 1397,3232 1681,3232 1681,3102 1397,3102"/>
+        </pc:GraphicRegion>
+        <pc:SeparatorRegion id="region_id_2">
+            <pc:Coords points="498,293 498,432 2656,432 2656,293 498,293"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

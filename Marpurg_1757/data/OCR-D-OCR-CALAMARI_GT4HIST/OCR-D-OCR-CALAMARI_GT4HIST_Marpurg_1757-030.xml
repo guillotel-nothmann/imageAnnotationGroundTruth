@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
+        <pc:Created>2021-01-10T21:38:15</pc:Created>
+        <pc:LastChange>2021-01-10T21:38:15</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="101" type="win-size"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels>
+                <pc:Label value="True" type="force"/>
+                <pc:Label value="0.04" type="colSeparator"/>
+                <pc:Label value="0.3" type="maxRularArea"/>
+                <pc:Label value="0.05" type="minArea"/>
+                <pc:Label value="0.01" type="minRularArea"/>
+                <pc:Label value="0.75" type="positionBelow"/>
+                <pc:Label value="0.4" type="positionLeft"/>
+                <pc:Label value="0.6" type="positionRight"/>
+                <pc:Label value="10.0" type="rularRatioMax"/>
+                <pc:Label value="3.0" type="rularRatioMin"/>
+                <pc:Label value="0.95" type="rularWidth"/>
+                <pc:Label value="page" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="sparse_text"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="level-of-operation"/>
+                <pc:Label value="-1" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="/data/models/calamari/GT4HistOCR/*.ckpt.json" type="checkpoint"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/Marpurg_1757-030.png" imageWidth="2973" imageHeight="3598" type="content">
+        <pc:AlternativeImage filename="OCR-D-IMG-BIN/OCR-D-BIN_Marpurg_1757-030-BIN_sauvola.png" comments="binarized"/>
+        <pc:AlternativeImage filename="OCR-D-IMG-CROP/OCR-D-IMG-CROP_Marpurg_1757-030.png" comments="binarized,cropped"/>
+        <pc:Border>
+            <pc:Coords points="410,194 2512,194 2512,3253 410,3253"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
+                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
+                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
+                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
+                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
+                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region_id_0" type="header">
+            <pc:Coords points="795,199 2136,187 2128,292 795,284 795,199"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="1242,195 795,199 795,284 962,285 2102,285 2102,195 1242,195"/>
+                <pc:TextEquiv conf="0.9764647483825684">
+                    <pc:Unicode>1Buch. Cap. Von Erfahrungen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>1Buch. Cap. Von Erfahrungen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="page-number">
+            <pc:Coords points="2387,195 2490,195 2512,292 2399,288 2387,195"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="2434,220 2490,220 2490,269 2434,269"/>
+                <pc:TextEquiv conf="0.6620733737945557">
+                    <pc:Unicode>II</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>II</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="449,343 2494,343 2508,677 447,709 449,343"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_2_region_id_2_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="488,343 2490,343 2490,433 488,433"/>
+                <pc:TextEquiv conf="0.9955058693885803">
+                    <pc:Unicode>Wir wollen ſetzen, daß A B eine klingende, an den beyden Enden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="449,431 1950,431 1950,515 449,515"/>
+                <pc:TextEquiv conf="0.9911511540412903">
+                    <pc:Unicode>A, B befeſtigte, Seyte iſt; und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="478,516 2494,516 2494,601 478,601"/>
+                <pc:TextEquiv conf="0.9947933554649353">
+                    <pc:Unicode>daß eine andere klingende und an ihren beyden Enden C, F befe⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:Coords points="564,604 564,690 1671,690 2179,682 2179,604 564,604"/>
+                <pc:TextEquiv conf="0.9955055713653564">
+                    <pc:Unicode>ſtigte Seyte, die Unterduodecime gegen A B machet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir wollen ſetzen, daß A B eine klingende, an den beyden Enden
+A, B befeſtigte, Seyte iſt; und
+daß eine andere klingende und an ihren beyden Enden C, F befe⸗
+ſtigte Seyte, die Unterduodecime gegen A B machet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="455,677 2524,681 2520,1288 476,1288 455,677"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:Coords points="481,689 2494,689 2494,772 481,772"/>
+                <pc:TextEquiv conf="0.9968857765197754">
+                    <pc:Unicode>Sobald die Seyte A B allein erklingen wird, ſo wird man die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:Coords points="568,774 2496,774 2496,864 568,864"/>
+                <pc:TextEquiv conf="0.9953390955924988">
+                    <pc:Unicode>Seyte C F erzittern ſehen, ohne zu erklingen, und ſie wird waͤh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="567,865 2498,865 2498,950 567,950"/>
+                <pc:TextEquiv conf="0.9923359155654907">
+                    <pc:Unicode>render Erzitterung die Figur C KDHE GFmachen, worinnen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="569,950 2504,950 2504,1033 569,1033"/>
+                <pc:TextEquiv conf="0.9979178309440613">
+                    <pc:Unicode>man leichtlich die unbeweglichen Puncte D, E, und die drey Aus⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="561,1031 2499,1031 2499,1120 561,1120"/>
+                <pc:TextEquiv conf="0.9951263666152954">
+                    <pc:Unicode>ſchweifungen uͤber ihre Graͤnzen K, H, G unterſcheiden wird;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="574,1122 2499,1122 2499,1209 574,1209"/>
+                <pc:TextEquiv conf="0.9948437809944153">
+                    <pc:Unicode>folglich werden die drey Theile CD, DE, EF c. gleich und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_3_region_id_3_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="570,1208 1514,1208 1514,1288 570,1288"/>
+                <pc:TextEquiv conf="0.9967766404151917">
+                    <pc:Unicode>die Puncte D, E in Ruhe ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Sobald die Seyte A B allein erklingen wird, ſo wird man die
+Seyte C F erzittern ſehen, ohne zu erklingen, und ſie wird waͤh⸗
+render Erzitterung die Figur C KDHE GFmachen, worinnen
+man leichtlich die unbeweglichen Puncte D, E, und die drey Aus⸗
+ſchweifungen uͤber ihre Graͤnzen K, H, G unterſcheiden wird;
+folglich werden die drey Theile CD, DE, EF c. gleich und
+die Puncte D, E in Ruhe ſeyn.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="447,1288 447,1988 2528,1988 2528,1288 447,1288"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="493,1288 2502,1288 2502,1379 493,1379"/>
+                <pc:TextEquiv conf="0.9912243485450745">
+                    <pc:Unicode>Wenn ferner die an den beyden Enden L, M befeſtigte Seyte L M,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="573,1383 2504,1383 2504,1465 573,1465"/>
+                <pc:TextEquiv conf="0.9841813445091248">
+                    <pc:Unicode>die Unterdecime Septime gegen die Seyte A B hervorbringt:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_4_region_id_4_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="575,1467 2503,1467 2503,1552 575,1552"/>
+                <pc:TextEquiv conf="0.9878394603729248">
+                    <pc:Unicode>ſo wird dieſe Seyte LM erzittern, ſobald die Seyte A B er⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_4_region_id_4_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="571,1550 2504,1550 2504,1636 571,1636"/>
+                <pc:TextEquiv conf="0.9961872696876526">
+                    <pc:Unicode>klingen wird, und man wird bey der Seyte L M, waͤhrender</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_4_region_id_4_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="572,1636 2504,1636 2504,1726 572,1726"/>
+                <pc:TextEquiv conf="0.9931212067604065">
+                    <pc:Unicode>Erzitterung, die fuͤnf Ausſchweifungen X, V, T, S, R, und die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_4_region_id_4_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="578,1726 2506,1726 2506,1809 578,1809"/>
+                <pc:TextEquiv conf="0.9932788610458374">
+                    <pc:Unicode>vier feſten und unbeweglichen Puncte N, O, P, Q, außer den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_4_region_id_4_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="578,1809 2507,1809 2507,1895 578,1895"/>
+                <pc:TextEquiv conf="0.99860018491745">
+                    <pc:Unicode>beyden feſten Enden, L, M, wahrnehmen; ja dieſe Puncte wer⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0007">
+                <pc:Coords points="573,1896 2463,1896 2463,1985 573,1985"/>
+                <pc:TextEquiv conf="0.998376727104187">
+                    <pc:Unicode>den annoch in gleicher Weite einer von dem andern abſtehen ).</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wenn ferner die an den beyden Enden L, M befeſtigte Seyte L M,
+die Unterdecime Septime gegen die Seyte A B hervorbringt:
+ſo wird dieſe Seyte LM erzittern, ſobald die Seyte A B er⸗
+klingen wird, und man wird bey der Seyte L M, waͤhrender
+Erzitterung, die fuͤnf Ausſchweifungen X, V, T, S, R, und die
+vier feſten und unbeweglichen Puncte N, O, P, Q, außer den
+beyden feſten Enden, L, M, wahrnehmen; ja dieſe Puncte wer⸗
+den annoch in gleicher Weite einer von dem andern abſtehen ).</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footer">
+            <pc:Coords points="1598,1990 1598,2070 1768,2070 1768,1990 1598,1990"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="1604,1997 1755,1997 1755,2064 1604,2064"/>
+                <pc:TextEquiv conf="0.974375307559967">
+                    <pc:Unicode>B 2</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>B 2</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footer">
+            <pc:Coords points="2368,1984 2368,2106 2523,2106 2523,1984 2368,1984"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="2386,2000 2510,2000 2510,2068 2386,2068"/>
+                <pc:TextEquiv conf="0.9998916983604431">
+                    <pc:Unicode>Die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footnote">
+            <pc:Coords points="353,2094 353,3199 2539,3199 2539,2094 353,2094"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="488,2127 2511,2127 2511,2201 488,2201"/>
+                <pc:TextEquiv conf="0.9889845252037048">
+                    <pc:Unicode>d) Um die Oberquarte von dem von der Decime⸗Septime iſt: ſo folget</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="413,2206 2509,2206 2509,2275 413,2275"/>
+                <pc:TextEquiv conf="0.9884855151176453">
+                    <pc:Unicode>Tone 1 zu haben, muß man die Unter⸗ daher, daß die große Terz von dem Tone</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="410,2284 2510,2284 2510,2351 410,2351"/>
+                <pc:TextEquiv conf="0.9858344793319702">
+                    <pc:Unicode>duodecime des Tons 1, und die zweyfache 1 ſo viel als 5 dividirt mit 4, das iſt</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="411,2358 2512,2358 2512,2422 411,2422"/>
+                <pc:TextEquiv conf="0.9938348531723022">
+                    <pc:Unicode>Oberoctave von dieſer Duodecime neh⸗ ſeyn muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="411,2431 2509,2431 2509,2501 411,2501"/>
+                <pc:TextEquiv conf="0.9941533803939819">
+                    <pc:Unicode>men. Jn der That iſt f die Unterduo⸗ Die große Terz eines Tons, z. E. die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_7_region_id_7_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="410,2510 2508,2510 2508,2586 410,2586"/>
+                <pc:TextEquiv conf="0.9920955300331116">
+                    <pc:Unicode>decime von , und die zweyfache Octave große Terz e von c, und die Quinte g,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_7_region_id_7_line0006.png" comments="binarized,clipped"/>
+                <pc:Coords points="413,2585 2507,2585 2507,2662 413,2662"/>
+                <pc:TextEquiv conf="0.9929481744766235">
+                    <pc:Unicode>dieſes f, welche F iſt, iſt die Quarte machen unter ſich die kleine Terz e: g.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_7_region_id_7_line0007.png" comments="binarized,clipped"/>
+                <pc:Coords points="416,2661 2509,2661 2509,2734 416,2734"/>
+                <pc:TextEquiv conf="0.9716088771820068">
+                    <pc:Unicode>von F. Weil die Unterduodecime von1 Weil nun e H, und g iſt, wie vorher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:Coords points="420,2740 2508,2740 2508,2810 420,2810"/>
+                <pc:TextEquiv conf="0.9963251352310181">
+                    <pc:Unicode>alſo iſt, ſo folget, daß die Doppel⸗ bewieſen worden: ſo folget daher, daß die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0009">
+                <pc:Coords points="418,2812 2508,2812 2508,2888 418,2888"/>
+                <pc:TextEquiv conf="0.9905150532722473">
+                    <pc:Unicode>octave dieſer Duodecime, das iſt, die kleine Terz, z. E. e: g durch die Pro⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0010">
+                <pc:Coords points="422,2891 2508,2891 2508,2963 422,2963"/>
+                <pc:TextEquiv conf="0.9811351299285889">
+                    <pc:Unicode>Quarte des Tons 1 im Hinaufſteigen, portion des Bruches gegen vorgeſtel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0011">
+                <pc:Coords points="423,2968 1914,2968 1914,3037 423,3037"/>
+                <pc:TextEquiv conf="0.9952885508537292">
+                    <pc:Unicode>mit 4 multiplicirt, das iſt iſt. let werden muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0012">
+                <pc:Coords points="499,3044 2508,3044 2508,3119 499,3119"/>
+                <pc:TextEquiv conf="0.9962155818939209">
+                    <pc:Unicode>Weil endlich die große Terz nichts Dieſe Proportion zu beſtimmen, muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0013">
+                <pc:Coords points="427,3123 2509,3123 2509,3199 427,3199"/>
+                <pc:TextEquiv conf="0.9971036911010742">
+                    <pc:Unicode>anders, als die zweyfache Unteroctave man in Obacht nehmen, daß eben ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>d) Um die Oberquarte von dem von der Decime⸗Septime iſt: ſo folget
+Tone 1 zu haben, muß man die Unter⸗ daher, daß die große Terz von dem Tone
+duodecime des Tons 1, und die zweyfache 1 ſo viel als 5 dividirt mit 4, das iſt
+Oberoctave von dieſer Duodecime neh⸗ ſeyn muß.
+men. Jn der That iſt f die Unterduo⸗ Die große Terz eines Tons, z. E. die
+decime von , und die zweyfache Octave große Terz e von c, und die Quinte g,
+dieſes f, welche F iſt, iſt die Quarte machen unter ſich die kleine Terz e: g.
+von F. Weil die Unterduodecime von1 Weil nun e H, und g iſt, wie vorher
+alſo iſt, ſo folget, daß die Doppel⸗ bewieſen worden: ſo folget daher, daß die
+octave dieſer Duodecime, das iſt, die kleine Terz, z. E. e: g durch die Pro⸗
+Quarte des Tons 1 im Hinaufſteigen, portion des Bruches gegen vorgeſtel⸗
+mit 4 multiplicirt, das iſt iſt. let werden muß.
+Weil endlich die große Terz nichts Dieſe Proportion zu beſtimmen, muß
+anders, als die zweyfache Unteroctave man in Obacht nehmen, daß eben ſo</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_8" type="paragraph">
+            <pc:Coords points="373,2106 373,3048 1451,3048 1451,2106 373,2106"/>
+            <pc:TextLine id="region_id_8_line0000">
+                <pc:Coords points="488,2129 1427,2129 1427,2201 488,2201"/>
+                <pc:TextEquiv conf="0.9937468767166138">
+                    <pc:Unicode>d) Um die Oberquarte von dem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0001">
+                <pc:Coords points="413,2211 1428,2211 1428,2275 413,2275"/>
+                <pc:TextEquiv conf="0.9811315536499023">
+                    <pc:Unicode>Tone 1 zu haben, muß man die Unter⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0002">
+                <pc:Coords points="410,2287 1429,2287 1429,2347 410,2347"/>
+                <pc:TextEquiv conf="0.9785634279251099">
+                    <pc:Unicode>duodecime des Tons 1, und die zweyfache</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0003">
+                <pc:Coords points="411,2358 1430,2358 1430,2419 411,2419"/>
+                <pc:TextEquiv conf="0.99289870262146">
+                    <pc:Unicode>Oberoctave von dieſer Duodecime neh⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0004">
+                <pc:Coords points="411,2431 1432,2431 1432,2501 411,2501"/>
+                <pc:TextEquiv conf="0.9915574193000793">
+                    <pc:Unicode>men. Jn der That iſt f die Unterduo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0005">
+                <pc:Coords points="410,2510 1433,2510 1433,2578 410,2578"/>
+                <pc:TextEquiv conf="0.9762200713157654">
+                    <pc:Unicode>decime von F, und die zweyfache Octave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0006">
+                <pc:Coords points="413,2586 1434,2586 1434,2660 413,2660"/>
+                <pc:TextEquiv conf="0.9825138449668884">
+                    <pc:Unicode>dieſes f, welche F iſt, iſt die Quarte</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0007">
+                <pc:Coords points="416,2666 1432,2666 1432,2729 416,2729"/>
+                <pc:TextEquiv conf="0.9774817228317261">
+                    <pc:Unicode>von F. Weil die Unterduodecime von 1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0008">
+                <pc:Coords points="420,2740 1434,2740 1434,2810 420,2810"/>
+                <pc:TextEquiv conf="0.9962937831878662">
+                    <pc:Unicode>alſo iſt, ſo folget, daß die Doppel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0009">
+                <pc:Coords points="418,2815 1433,2815 1433,2883 418,2883"/>
+                <pc:TextEquiv conf="0.9981805682182312">
+                    <pc:Unicode>octave dieſer Duodecime, das iſt, die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0010">
+                <pc:Coords points="422,2891 1434,2891 1434,2960 422,2960"/>
+                <pc:TextEquiv conf="0.9947914481163025">
+                    <pc:Unicode>Quarte des Tons 1 im Hinaufſteigen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_8_line0011">
+                <pc:Coords points="423,2968 1213,2968 1213,3037 423,3037"/>
+                <pc:TextEquiv conf="0.997665286064148">
+                    <pc:Unicode>mit 4 multiplicirt, das iſt iſt.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>d) Um die Oberquarte von dem
+Tone 1 zu haben, muß man die Unter⸗
+duodecime des Tons 1, und die zweyfache
+Oberoctave von dieſer Duodecime neh⸗
+men. Jn der That iſt f die Unterduo⸗
+decime von F, und die zweyfache Octave
+dieſes f, welche F iſt, iſt die Quarte
+von F. Weil die Unterduodecime von 1
+alſo iſt, ſo folget, daß die Doppel⸗
+octave dieſer Duodecime, das iſt, die
+Quarte des Tons 1 im Hinaufſteigen,
+mit 4 multiplicirt, das iſt iſt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_9" type="paragraph">
+            <pc:Coords points="415,3034 415,3192 1451,3192 1451,3034 415,3034"/>
+            <pc:TextLine id="region_id_9_line0000">
+                <pc:Coords points="499,3034 1435,3034 1435,3119 499,3119"/>
+                <pc:TextEquiv conf="0.9921590089797974">
+                    <pc:Unicode>Weil endlich die große Terz nichts</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_9_line0001">
+                <pc:Coords points="427,3125 1438,3125 1438,3192 427,3192"/>
+                <pc:TextEquiv conf="0.9948756098747253">
+                    <pc:Unicode>anders, als die zweyfache Unteroctave</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Weil endlich die große Terz nichts
+anders, als die zweyfache Unteroctave</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_10" type="paragraph">
+            <pc:Coords points="1473,2112 1471,2439 2539,2419 2539,2112 1473,2112"/>
+            <pc:TextLine id="region_id_10_line0000">
+                <pc:Coords points="1490,2127 2511,2127 2511,2195 1490,2195"/>
+                <pc:TextEquiv conf="0.9889249205589294">
+                    <pc:Unicode>von der Decime⸗Septime iſt: ſo folget</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0001">
+                <pc:Coords points="1491,2206 2509,2206 2509,2273 1491,2273"/>
+                <pc:TextEquiv conf="0.9995309710502625">
+                    <pc:Unicode>daher, daß die große Terz von dem Tone</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0002">
+                <pc:Coords points="1494,2284 2510,2284 2510,2351 1494,2351"/>
+                <pc:TextEquiv conf="0.9710159301757812">
+                    <pc:Unicode>1ſo viel als 5 dividirt mit 4, das iſt L</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_10_line0003">
+                <pc:Coords points="1471,2359 1471,2422 2379,2422 2512,2420 2512,2359 1471,2359"/>
+                <pc:TextEquiv conf="0.9990975260734558">
+                    <pc:Unicode>ſeyn muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>von der Decime⸗Septime iſt: ſo folget
+daher, daß die große Terz von dem Tone
+1ſo viel als 5 dividirt mit 4, das iſt L
+ſeyn muß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_11" type="paragraph">
+            <pc:Coords points="1490,2427 1490,3039 2534,3039 2534,2427 1490,2427"/>
+            <pc:TextLine id="region_id_11_line0000">
+                <pc:Coords points="1575,2432 2509,2432 2509,2500 1575,2500"/>
+                <pc:TextEquiv conf="0.9970709681510925">
+                    <pc:Unicode>Die große Terz eines Tons, z. E. die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="1496,2510 2508,2510 2508,2586 1496,2586"/>
+                <pc:TextEquiv conf="0.9891883134841919">
+                    <pc:Unicode>große Terz e von c, und die Quinte g,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="1496,2585 2507,2585 2507,2662 1496,2662"/>
+                <pc:TextEquiv conf="0.9970004558563232">
+                    <pc:Unicode>machen unter ſich die kleine Terz e: g.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-030_region_id_11_region_id_11_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="1497,2661 2509,2661 2509,2734 1497,2734"/>
+                <pc:TextEquiv conf="0.9881687164306641">
+                    <pc:Unicode>Weil nun e, und g iſt, wie vorher</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0004">
+                <pc:Coords points="1497,2740 2508,2740 2508,2807 1497,2807"/>
+                <pc:TextEquiv conf="0.998102068901062">
+                    <pc:Unicode>bewieſen worden: ſo folget daher, daß die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0005">
+                <pc:Coords points="1497,2812 2508,2812 2508,2888 1497,2888"/>
+                <pc:TextEquiv conf="0.9880186319351196">
+                    <pc:Unicode>kleine Terz, z. E.e: g durch die Pro⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0006">
+                <pc:Coords points="1498,2891 2508,2891 2508,2963 1498,2963"/>
+                <pc:TextEquiv conf="0.9766281247138977">
+                    <pc:Unicode>portion des Bruches gegen Hvorgeſtel⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_11_line0007">
+                <pc:Coords points="1499,2970 1914,2970 1914,3029 1499,3029"/>
+                <pc:TextEquiv conf="0.9945136308670044">
+                    <pc:Unicode>let werden muß.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Die große Terz eines Tons, z. E. die
+große Terz e von c, und die Quinte g,
+machen unter ſich die kleine Terz e: g.
+Weil nun e, und g iſt, wie vorher
+bewieſen worden: ſo folget daher, daß die
+kleine Terz, z. E.e: g durch die Pro⸗
+portion des Bruches gegen Hvorgeſtel⸗
+let werden muß.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_12" type="paragraph">
+            <pc:Coords points="1479,3037 1479,3200 2534,3200 2534,3037 1479,3037"/>
+            <pc:TextLine id="region_id_12_line0000">
+                <pc:Coords points="1578,3044 2508,3044 2508,3114 1578,3114"/>
+                <pc:TextEquiv conf="0.9989476799964905">
+                    <pc:Unicode>Dieſe Proportion zu beſtimmen, muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_12_line0001">
+                <pc:Coords points="1500,3123 2509,3123 2509,3196 1500,3196"/>
+                <pc:TextEquiv conf="0.9973465204238892">
+                    <pc:Unicode>man in Obacht nehmen, daß eben ſo</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Dieſe Proportion zu beſtimmen, muß
+man in Obacht nehmen, daß eben ſo</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_13" type="footer">
+            <pc:Coords points="2415,3192 2415,3264 2528,3264 2528,3192 2415,3192"/>
+            <pc:TextLine id="region_id_13_line0000">
+                <pc:Coords points="2423,3200 2511,3200 2511,3253 2423,3253"/>
+                <pc:TextEquiv conf="0.9997717142105103">
+                    <pc:Unicode>viel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>viel</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>
