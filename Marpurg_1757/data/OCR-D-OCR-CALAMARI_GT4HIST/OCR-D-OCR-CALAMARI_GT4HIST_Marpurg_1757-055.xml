@@ -1,4 +1,5 @@
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-10T21:39:33</pc:Created>
@@ -66,22 +67,293 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/></pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
+                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
+                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
+                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
+                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
+                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
+            </pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="453,172 453,284 584,284 584,172 453,172"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="453,172 453,284 584,284 584,172 453,172"/><pc:TextEquiv conf="0.9768178462982178"><pc:Unicode>36</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>36</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="753,153 753,279 2339,279 2339,153 753,153"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="753,153 753,279 2339,279 2339,153 753,153"/><pc:TextEquiv conf="0.9608213901519775"><pc:Unicode>IBuch. VI Cap. Von der Temperatur.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>IBuch. VI Cap. Von der Temperatur.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="paragraph"><pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/><pc:TextEquiv conf="0.9994381070137024"><pc:Unicode>Vermittelſt dieſer Operation werden alle zwoͤlf halbe Toͤne der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/><pc:TextEquiv conf="0.9992557764053345"><pc:Unicode>Octave geſtimmet ſeyn. Es fehlet nichts mehr daran, als die uͤbri⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/><pc:TextEquiv conf="0.9978535175323486"><pc:Unicode>gen Octaven alle nachzuholen, und das Clavier wird ſehr wohl ge⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0003"><pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/><pc:TextEquiv conf="0.9995790123939514"><pc:Unicode>ſtimmet ſeyn.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Vermittelſt dieſer Operation werden alle zwoͤlf halbe Toͤne der
+        <pc:TextRegion id="region_id_0" type="page-number">
+            <pc:Coords points="453,172 453,284 584,284 584,172 453,172"/>
+            <pc:TextLine id="region_id_0_line0000">
+                <pc:Coords points="476,193 559,193 559,280 476,280"/>
+                <pc:TextEquiv conf="0.9768178462982178">
+                    <pc:Unicode>36</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>36</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_1" type="header">
+            <pc:Coords points="753,153 753,279 2339,279 2339,153 753,153"/>
+            <pc:TextLine id="region_id_1_line0000">
+                <pc:Coords points="783,181 2311,181 2311,279 783,279"/>
+                <pc:TextEquiv conf="0.9608213901519775">
+                    <pc:Unicode>IBuch. VI Cap. Von der Temperatur.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>IBuch. VI Cap. Von der Temperatur.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_2" type="paragraph">
+            <pc:Coords points="474,334 2644,334 2674,638 938,624 928,691 468,706 474,334"/>
+            <pc:TextLine id="region_id_2_line0000">
+                <pc:Coords points="655,334 2644,334 2644,422 655,422"/>
+                <pc:TextEquiv conf="0.9994381070137024">
+                    <pc:Unicode>Vermittelſt dieſer Operation werden alle zwoͤlf halbe Toͤne der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0001">
+                <pc:Coords points="481,423 2643,423 2643,512 481,512"/>
+                <pc:TextEquiv conf="0.9992557764053345">
+                    <pc:Unicode>Octave geſtimmet ſeyn. Es fehlet nichts mehr daran, als die uͤbri⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0002">
+                <pc:Coords points="480,517 2643,517 2643,607 480,607"/>
+                <pc:TextEquiv conf="0.9978535175323486">
+                    <pc:Unicode>gen Octaven alle nachzuholen, und das Clavier wird ſehr wohl ge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_2_line0003">
+                <pc:Coords points="479,609 479,695 805,695 928,691 1261,627 1261,609 479,609"/>
+                <pc:TextEquiv conf="0.9995790123939514">
+                    <pc:Unicode>ſtimmet ſeyn.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Vermittelſt dieſer Operation werden alle zwoͤlf halbe Toͤne der
 Octave geſtimmet ſeyn. Es fehlet nichts mehr daran, als die uͤbri⸗
 gen Octaven alle nachzuholen, und das Clavier wird ſehr wohl ge⸗
-ſtimmet ſeyn.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9997018575668335"><pc:Unicode>Wir haben dieſe Regel der Temperatur nach dem Hrn. Rameau</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9965367913246155"><pc:Unicode>gegeben, und uͤberlaßen uneingenommenen Kuͤnſtlern, ſelbige zu beur⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9989051222801208"><pc:Unicode>theilen. Dem ſey wie ihm wolle, und man greife zu dieſer oder je⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9997459053993225"><pc:Unicode>ner Temperatur; ſo werden die dadurch verurſachten Alterationen in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9935387969017029"><pc:Unicode>der Harmonie dem Gehoͤre wenig merklich ſeyn (23), als welches,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0005"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9976285099983215"><pc:Unicode>wegen ſeiner Beſchaͤftigung mit dem Grundbaße, ſolche entweder we⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0006"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9979994893074036"><pc:Unicode>nig achtet, oder ſie ohne Verdruß vernimmt, weil es von ſelbſt das⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0007"><pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/><pc:TextEquiv conf="0.9997192025184631"><pc:Unicode>jenige erſetzt, was den Jntervallen an ihrer Reinigkeit abgehet.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Wir haben dieſe Regel der Temperatur nach dem Hrn. Rameau
+ſtimmet ſeyn.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_3" type="paragraph">
+            <pc:Coords points="453,720 453,1423 2678,1423 2650,691 904,706 453,720"/>
+            <pc:TextLine id="region_id_3_line0000">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
+                <pc:Coords points="1137,704 904,706 654,714 654,792 2639,792 2639,704 1137,704"/>
+                <pc:TextEquiv conf="0.9997018575668335">
+                    <pc:Unicode>Wir haben dieſe Regel der Temperatur nach dem Hrn. Rameau</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="476,790 2640,790 2640,886 476,886"/>
+                <pc:TextEquiv conf="0.9965367913246155">
+                    <pc:Unicode>gegeben, und uͤberlaßen uneingenommenen Kuͤnſtlern, ſelbige zu beur⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,885 2641,885 2641,974 474,974"/>
+                <pc:TextEquiv conf="0.9989051222801208">
+                    <pc:Unicode>theilen. Dem ſey wie ihm wolle, und man greife zu dieſer oder je⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0003">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
+                <pc:Coords points="474,974 2641,974 2641,1070 474,1070"/>
+                <pc:TextEquiv conf="0.9997459053993225">
+                    <pc:Unicode>ner Temperatur; ſo werden die dadurch verurſachten Alterationen in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0004">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0004.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,1066 2636,1066 2636,1156 475,1156"/>
+                <pc:TextEquiv conf="0.9935387969017029">
+                    <pc:Unicode>der Harmonie dem Gehoͤre wenig merklich ſeyn (23), als welches,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0005">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_3_region_id_3_line0005.png" comments="binarized,clipped"/>
+                <pc:Coords points="475,1156 2638,1156 2638,1245 475,1245"/>
+                <pc:TextEquiv conf="0.9976285099983215">
+                    <pc:Unicode>wegen ſeiner Beſchaͤftigung mit dem Grundbaße, ſolche entweder we⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0006">
+                <pc:Coords points="474,1247 2636,1247 2636,1333 474,1333"/>
+                <pc:TextEquiv conf="0.9979994893074036">
+                    <pc:Unicode>nig achtet, oder ſie ohne Verdruß vernimmt, weil es von ſelbſt das⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_3_line0007">
+                <pc:Coords points="472,1337 2436,1337 2436,1423 472,1423"/>
+                <pc:TextEquiv conf="0.9997192025184631">
+                    <pc:Unicode>jenige erſetzt, was den Jntervallen an ihrer Reinigkeit abgehet.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Wir haben dieſe Regel der Temperatur nach dem Hrn. Rameau
 gegeben, und uͤberlaßen uneingenommenen Kuͤnſtlern, ſelbige zu beur⸗
 theilen. Dem ſey wie ihm wolle, und man greife zu dieſer oder je⸗
 ner Temperatur; ſo werden die dadurch verurſachten Alterationen in
 der Harmonie dem Gehoͤre wenig merklich ſeyn (23), als welches,
 wegen ſeiner Beſchaͤftigung mit dem Grundbaße, ſolche entweder we⸗
 nig achtet, oder ſie ohne Verdruß vernimmt, weil es von ſelbſt das⸗
-jenige erſetzt, was den Jntervallen an ihrer Reinigkeit abgehet.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="paragraph"><pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/><pc:TextEquiv conf="0.9997625350952148"><pc:Unicode>Zwo ſimple und taͤgliche Erfahrungen werden beſtaͤtigen, was</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0001"><pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/><pc:TextEquiv conf="0.9991267323493958"><pc:Unicode>ich ſage. Man hoͤre eine Stimme, die in Begleitung verſchiedener</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0002"><pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/><pc:TextEquiv conf="0.9960419535636902"><pc:Unicode>Jnſtrumente ſinget. So ſehr die Stimme von den uͤbrigen Jnſtru⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_4_line0003"><pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/><pc:TextEquiv conf="0.9997715950012207"><pc:Unicode>menten, und dieſe wieder unter ſich in der Temperatur unterſchieden</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Zwo ſimple und taͤgliche Erfahrungen werden beſtaͤtigen, was
+jenige erſetzt, was den Jntervallen an ihrer Reinigkeit abgehet.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_4" type="paragraph">
+            <pc:Coords points="453,1816 453,1428 2664,1428 2664,1816 453,1816"/>
+            <pc:TextLine id="region_id_4_line0000">
+                <pc:Coords points="652,1442 2637,1442 2637,1531 652,1531"/>
+                <pc:TextEquiv conf="0.9997625350952148">
+                    <pc:Unicode>Zwo ſimple und taͤgliche Erfahrungen werden beſtaͤtigen, was</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0001">
+                <pc:Coords points="472,1537 2635,1537 2635,1619 472,1619"/>
+                <pc:TextEquiv conf="0.9991267323493958">
+                    <pc:Unicode>ich ſage. Man hoͤre eine Stimme, die in Begleitung verſchiedener</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0002">
+                <pc:Coords points="473,1622 2635,1622 2635,1710 473,1710"/>
+                <pc:TextEquiv conf="0.9960419535636902">
+                    <pc:Unicode>Jnſtrumente ſinget. So ſehr die Stimme von den uͤbrigen Jnſtru⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_4_line0003">
+                <pc:Coords points="470,1716 2636,1716 2636,1816 470,1816"/>
+                <pc:TextEquiv conf="0.9997715950012207">
+                    <pc:Unicode>menten, und dieſe wieder unter ſich in der Temperatur unterſchieden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Zwo ſimple und taͤgliche Erfahrungen werden beſtaͤtigen, was
 ich ſage. Man hoͤre eine Stimme, die in Begleitung verſchiedener
 Jnſtrumente ſinget. So ſehr die Stimme von den uͤbrigen Jnſtru⸗
-menten, und dieſe wieder unter ſich in der Temperatur unterſchieden</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="footer"><pc:Coords points="2517,1804 2635,1804 2635,1890 2517,1890 2517,1804"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="2517,1804 2635,1804 2635,1890 2517,1890 2517,1804"/><pc:TextEquiv conf="0.9999231100082397"><pc:Unicode>ſind</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ſind</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="footnote"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9938886761665344"><pc:Unicode>ne der Octave ungleich machen, ſie da⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0001"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9896023273468018"><pc:Unicode>durch jeder Tonart einen beſondern Cha-</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0002"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9966835379600525"><pc:Unicode>racter geben, und nach ihnen iſt die Ton⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0003"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9996016025543213"><pc:Unicode>leiter</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0004"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9732292294502258"><pc:Unicode>c, d, e, f, g, a, h, c</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0005"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9991413354873657"><pc:Unicode>nicht einerley mit der Tonleiter:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0006"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9953880906105042"><pc:Unicode>e, fis, gis, a, h, cis, dis, e</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0007"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9996997714042664"><pc:Unicode>und dieſe Ungleichheit, ſagen ſie, machet</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0008"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9979082345962524"><pc:Unicode>den Ton c und den Ton e zu verſchiedenen</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0009"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9993818402290344"><pc:Unicode>Ausdruͤcken geſchickt. Aber nach allem</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0010"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9993287324905396"><pc:Unicode>dem, was wir in dieſem Werke von</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0011"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9973120093345642"><pc:Unicode>der Formation des diatoniſchen Klangge⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0012"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9983034729957581"><pc:Unicode>ſchlechts geſagt haben, muß man uͤber⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0013"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9979202151298523"><pc:Unicode>zeuget ſeyn, daß, nach der Abſicht der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0014"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9978199005126953"><pc:Unicode>Natur, die diatoniſche Leiter in allen Ton</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0015"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9991458058357239"><pc:Unicode>arten gleich ſeyn muß; die gegentheilige</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_6_line0016"><pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/><pc:TextEquiv conf="0.9709532856941223"><pc:Unicode>Meinung, ſagt Hr. Rameau, iſt ein Vor⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ne der Octave ungleich machen, ſie da⸗
+menten, und dieſe wieder unter ſich in der Temperatur unterſchieden</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_5" type="footer">
+            <pc:Coords points="2517,1804 2635,1804 2635,1890 2517,1890 2517,1804"/>
+            <pc:TextLine id="region_id_5_line0000">
+                <pc:Coords points="2517,1804 2635,1804 2635,1890 2517,1890"/>
+                <pc:TextEquiv conf="0.9999231100082397">
+                    <pc:Unicode>ſind</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ſind</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_6" type="footnote">
+            <pc:Coords points="433,1937 433,3392 1534,3392 1534,1937 433,1937"/>
+            <pc:TextLine id="region_id_6_line0000">
+                <pc:Coords points="470,1940 1519,1940 1519,2023 470,2023"/>
+                <pc:TextEquiv conf="0.9938886761665344">
+                    <pc:Unicode>ne der Octave ungleich machen, ſie da⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0001">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_6_region_id_6_line0001.png" comments="binarized,clipped"/>
+                <pc:Coords points="467,2035 1519,2035 1519,2115 467,2115"/>
+                <pc:TextEquiv conf="0.9896023273468018">
+                    <pc:Unicode>durch jeder Tonart einen beſondern Cha-</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0002">
+                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-055_region_id_6_region_id_6_line0002.png" comments="binarized,clipped"/>
+                <pc:Coords points="466,2113 1519,2113 1519,2190 466,2190"/>
+                <pc:TextEquiv conf="0.9966835379600525">
+                    <pc:Unicode>racter geben, und nach ihnen iſt die Ton⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0003">
+                <pc:Coords points="468,2202 593,2202 593,2255 468,2255"/>
+                <pc:TextEquiv conf="0.9996016025543213">
+                    <pc:Unicode>leiter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0004">
+                <pc:Coords points="503,2269 1320,2269 1320,2347 503,2347"/>
+                <pc:TextEquiv conf="0.9732292294502258">
+                    <pc:Unicode>c, d, e, f, g, a, h, c</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0005">
+                <pc:Coords points="469,2392 1353,2392 1353,2463 469,2463"/>
+                <pc:TextEquiv conf="0.9991413354873657">
+                    <pc:Unicode>nicht einerley mit der Tonleiter:</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0006">
+                <pc:Coords points="588,2470 1356,2470 1356,2549 588,2549"/>
+                <pc:TextEquiv conf="0.9953880906105042">
+                    <pc:Unicode>e, fis, gis, a, h, cis, dis, e</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0007">
+                <pc:Coords points="466,2586 1516,2586 1516,2657 466,2657"/>
+                <pc:TextEquiv conf="0.9996997714042664">
+                    <pc:Unicode>und dieſe Ungleichheit, ſagen ſie, machet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0008">
+                <pc:Coords points="468,2667 1516,2667 1516,2741 468,2741"/>
+                <pc:TextEquiv conf="0.9979082345962524">
+                    <pc:Unicode>den Ton c und den Ton e zu verſchiedenen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0009">
+                <pc:Coords points="472,2745 1516,2745 1516,2815 472,2815"/>
+                <pc:TextEquiv conf="0.9993818402290344">
+                    <pc:Unicode>Ausdruͤcken geſchickt. Aber nach allem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0010">
+                <pc:Coords points="470,2826 1518,2826 1518,2897 470,2897"/>
+                <pc:TextEquiv conf="0.9993287324905396">
+                    <pc:Unicode>dem, was wir in dieſem Werke von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0011">
+                <pc:Coords points="468,2906 1521,2906 1521,2972 468,2972"/>
+                <pc:TextEquiv conf="0.9973120093345642">
+                    <pc:Unicode>der Formation des diatoniſchen Klangge⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0012">
+                <pc:Coords points="471,2978 1518,2978 1518,3055 471,3055"/>
+                <pc:TextEquiv conf="0.9983034729957581">
+                    <pc:Unicode>ſchlechts geſagt haben, muß man uͤber⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0013">
+                <pc:Coords points="471,3064 1518,3064 1518,3135 471,3135"/>
+                <pc:TextEquiv conf="0.9979202151298523">
+                    <pc:Unicode>zeuget ſeyn, daß, nach der Abſicht der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0014">
+                <pc:Coords points="470,3142 1516,3142 1516,3219 470,3219"/>
+                <pc:TextEquiv conf="0.9978199005126953">
+                    <pc:Unicode>Natur, die diatoniſche Leiter in allen Ton</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0015">
+                <pc:Coords points="472,3223 1517,3223 1517,3291 472,3291"/>
+                <pc:TextEquiv conf="0.9991458058357239">
+                    <pc:Unicode>arten gleich ſeyn muß; die gegentheilige</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_6_line0016">
+                <pc:Coords points="471,3297 1515,3297 1515,3372 471,3372"/>
+                <pc:TextEquiv conf="0.9709532856941223">
+                    <pc:Unicode>Meinung, ſagt Hr. Rameau, iſt ein Vor⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ne der Octave ungleich machen, ſie da⸗
 durch jeder Tonart einen beſondern Cha-
 racter geben, und nach ihnen iſt die Ton⸗
 leiter
@@ -97,7 +369,121 @@ der Formation des diatoniſchen Klangge⸗
 zeuget ſeyn, daß, nach der Abſicht der
 Natur, die diatoniſche Leiter in allen Ton
 arten gleich ſeyn muß; die gegentheilige
-Meinung, ſagt Hr. Rameau, iſt ein Vor⸗</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="footnote"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9884825944900513"><pc:Unicode>urtheil des Tonkuͤnſtlers. Der Cbaracter</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0001"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9974949359893799"><pc:Unicode>eines muſikaliſchen Stuͤcks entſpringet</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0002"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9920632243156433"><pc:Unicode>hauptſaͤchlich aus der Vermiſchung der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0003"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9989044070243835"><pc:Unicode>Tonarten, aus der mehr oder weniger</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0004"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9991136789321899"><pc:Unicode>lebhaften Bewegung, aus der Hoͤhe oder</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0005"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9988406300544739"><pc:Unicode>Tiefe der Toͤne, aus der Staͤrke und</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0006"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9959167838096619"><pc:Unicode>Schwaͤche der Toͤne, aus der Wendung</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0007"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9959673285484314"><pc:Unicode>der Gedanken, aus der Art der Harmo⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0008"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9636589884757996"><pc:Unicode>nie und Melodie ic.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0009"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9996284246444702"><pc:Unicode>Der lezte Vortheil unſerer Temperatur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0010"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9993575215339661"><pc:Unicode>beſtehet endlich darinnen, daß ſie von</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0011"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9993070363998413"><pc:Unicode>derjenigen gar wenig unterſchieden iſt, die</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0012"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9985936880111694"><pc:Unicode>man auf andern Jnſtrumenten, z. E. auf</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0013"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.962652325630188"><pc:Unicode>der Violine 2. ausuͤbet, allwo man die</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0014"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9970439076423645"><pc:Unicode>guten Quinten und Quarten den guten</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0015"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9889155030250549"><pc:Unicode>Terzen und Sexten vorziehet; eine Tem⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0016"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9987617135047913"><pc:Unicode>peratur, die der Schlentrianstemperatur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0017"><pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/><pc:TextEquiv conf="0.9960797429084778"><pc:Unicode>auf dem Claviere entgegen laͤuft.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>urtheil des Tonkuͤnſtlers. Der Cbaracter
+Meinung, ſagt Hr. Rameau, iſt ein Vor⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region_id_7" type="footnote">
+            <pc:Coords points="1568,1932 1568,3382 2644,3382 2644,1932 1568,1932"/>
+            <pc:TextLine id="region_id_7_line0000">
+                <pc:Coords points="1582,1948 2635,1948 2635,2011 1582,2011"/>
+                <pc:TextEquiv conf="0.9884825944900513">
+                    <pc:Unicode>urtheil des Tonkuͤnſtlers. Der Cbaracter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0001">
+                <pc:Coords points="1582,2024 2637,2024 2637,2096 1582,2096"/>
+                <pc:TextEquiv conf="0.9974949359893799">
+                    <pc:Unicode>eines muſikaliſchen Stuͤcks entſpringet</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0002">
+                <pc:Coords points="1580,2105 2639,2105 2639,2176 1580,2176"/>
+                <pc:TextEquiv conf="0.9920632243156433">
+                    <pc:Unicode>hauptſaͤchlich aus der Vermiſchung der</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0003">
+                <pc:Coords points="1584,2188 2637,2188 2637,2255 1584,2255"/>
+                <pc:TextEquiv conf="0.9989044070243835">
+                    <pc:Unicode>Tonarten, aus der mehr oder weniger</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0004">
+                <pc:Coords points="1583,2267 2636,2267 2636,2334 1583,2334"/>
+                <pc:TextEquiv conf="0.9991136789321899">
+                    <pc:Unicode>lebhaften Bewegung, aus der Hoͤhe oder</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0005">
+                <pc:Coords points="1580,2344 2634,2344 2634,2416 1580,2416"/>
+                <pc:TextEquiv conf="0.9988406300544739">
+                    <pc:Unicode>Tiefe der Toͤne, aus der Staͤrke und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0006">
+                <pc:Coords points="1579,2424 2636,2424 2636,2492 1579,2492"/>
+                <pc:TextEquiv conf="0.9959167838096619">
+                    <pc:Unicode>Schwaͤche der Toͤne, aus der Wendung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0007">
+                <pc:Coords points="1579,2503 2632,2503 2632,2570 1579,2570"/>
+                <pc:TextEquiv conf="0.9959673285484314">
+                    <pc:Unicode>der Gedanken, aus der Art der Harmo⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0008">
+                <pc:Coords points="1580,2583 2561,2583 2561,2638 1580,2638"/>
+                <pc:TextEquiv conf="0.9636589884757996">
+                    <pc:Unicode>nie und Melodie ic.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0009">
+                <pc:Coords points="1661,2661 2632,2661 2632,2727 1661,2727"/>
+                <pc:TextEquiv conf="0.9996284246444702">
+                    <pc:Unicode>Der lezte Vortheil unſerer Temperatur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0010">
+                <pc:Coords points="1581,2740 2632,2740 2632,2805 1581,2805"/>
+                <pc:TextEquiv conf="0.9993575215339661">
+                    <pc:Unicode>beſtehet endlich darinnen, daß ſie von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0011">
+                <pc:Coords points="1583,2819 2633,2819 2633,2888 1583,2888"/>
+                <pc:TextEquiv conf="0.9993070363998413">
+                    <pc:Unicode>derjenigen gar wenig unterſchieden iſt, die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0012">
+                <pc:Coords points="1587,2897 2635,2897 2635,2965 1587,2965"/>
+                <pc:TextEquiv conf="0.9985936880111694">
+                    <pc:Unicode>man auf andern Jnſtrumenten, z. E. auf</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0013">
+                <pc:Coords points="1584,2974 2630,2974 2630,3046 1584,3046"/>
+                <pc:TextEquiv conf="0.962652325630188">
+                    <pc:Unicode>der Violine 2. ausuͤbet, allwo man die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0014">
+                <pc:Coords points="1581,3057 2632,3057 2632,3129 1581,3129"/>
+                <pc:TextEquiv conf="0.9970439076423645">
+                    <pc:Unicode>guten Quinten und Quarten den guten</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0015">
+                <pc:Coords points="1583,3137 2628,3137 2628,3203 1583,3203"/>
+                <pc:TextEquiv conf="0.9889155030250549">
+                    <pc:Unicode>Terzen und Sexten vorziehet; eine Tem⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0016">
+                <pc:Coords points="1583,3215 2631,3215 2631,3286 1583,3286"/>
+                <pc:TextEquiv conf="0.9987617135047913">
+                    <pc:Unicode>peratur, die der Schlentrianstemperatur</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region_id_7_line0017">
+                <pc:Coords points="1584,3289 2434,3289 2434,3363 1584,3363"/>
+                <pc:TextEquiv conf="0.9960797429084778">
+                    <pc:Unicode>auf dem Claviere entgegen laͤuft.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>urtheil des Tonkuͤnſtlers. Der Cbaracter
 eines muſikaliſchen Stuͤcks entſpringet
 hauptſaͤchlich aus der Vermiſchung der
 Tonarten, aus der mehr oder weniger
@@ -114,5 +500,8 @@ der Violine 2. ausuͤbet, allwo man die
 guten Quinten und Quarten den guten
 Terzen und Sexten vorziehet; eine Tem⸗
 peratur, die der Schlentrianstemperatur
-auf dem Claviere entgegen laͤuft.</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
+auf dem Claviere entgegen laͤuft.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
 </pc:PcGts>
