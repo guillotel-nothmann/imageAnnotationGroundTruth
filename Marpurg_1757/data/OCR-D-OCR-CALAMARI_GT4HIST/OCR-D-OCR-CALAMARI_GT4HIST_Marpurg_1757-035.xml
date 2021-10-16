@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-10T21:38:31</pc:Created>
@@ -67,268 +66,23 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
-                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
-                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number">
-            <pc:Coords points="400,108 400,257 555,257 555,108 400,108"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="466,184 538,184 538,250 466,250"/>
-                <pc:TextEquiv conf="0.9691638350486755">
-                    <pc:Unicode>16</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>16</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_1" type="header">
-            <pc:Coords points="601,125 2542,163 2542,264 601,263 601,125"/>
-            <pc:TextLine id="region_id_1_line0000">
-                <pc:Coords points="624,163 624,263 2542,264 2542,163 624,163"/>
-                <pc:TextEquiv conf="0.966009259223938">
-                    <pc:Unicode>IBuch. Il Cap. Von deim Urſprunge der Tonarten.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>IBuch. Il Cap. Von deim Urſprunge der Tonarten.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="heading">
-            <pc:Coords points="1398,280 1398,395 1668,395 1668,280 1398,280"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:Coords points="1441,320 1657,320 1657,395 1441,395"/>
-                <pc:TextEquiv conf="0.9958605766296387">
-                    <pc:Unicode>§. 30.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>§. 30.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="paragraph">
-            <pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_3_region_id_3_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="555,416 2637,416 2637,518 555,518"/>
-                <pc:TextEquiv conf="0.995364785194397">
-                    <pc:Unicode>Hieraus und aus der natuͤrlichen Leichtigkeit, einen Ton mit</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_3_region_id_3_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="478,510 2637,510 2637,604 478,604"/>
-                <pc:TextEquiv conf="0.9847236275672913">
-                    <pc:Unicode>ſeiner Octave zu vermiſchen, koͤnnen wir den von der Natur ange⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_3_region_id_3_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="479,593 2636,593 2636,690 479,690"/>
-                <pc:TextEquiv conf="0.9941023588180542">
-                    <pc:Unicode>wieſenen Geſang bilden f: as: c, worinnen die kleine Terz f: as</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_3_region_id_3_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="480,682 2632,682 2632,779 480,779"/>
-                <pc:TextEquiv conf="0.9994840025901794">
-                    <pc:Unicode>vorhanden iſt. Das iſt der Urſprung der kleinen oder weichen</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_3_line0004">
-                <pc:Coords points="478,790 478,866 599,866 2239,826 2239,790 478,790"/>
-                <pc:TextEquiv conf="0.9998162388801575">
-                    <pc:Unicode>Tonart.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Hieraus und aus der natuͤrlichen Leichtigkeit, einen Ton mit
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="400,108 400,257 555,257 555,108 400,108"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="400,108 400,257 555,257 555,108 400,108"/><pc:TextEquiv conf="0.9691638350486755"><pc:Unicode>16</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>16</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="601,125 2542,163 2542,264 601,263 601,125"/><pc:TextLine id="region_id_1_line0000"><pc:Coords points="601,125 2542,163 2542,264 601,263 601,125"/><pc:TextEquiv conf="0.966009259223938"><pc:Unicode>IBuch. Il Cap. Von deim Urſprunge der Tonarten.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>IBuch. Il Cap. Von deim Urſprunge der Tonarten.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_2" type="heading" custom="level_3"><pc:Coords points="1398,280 1398,395 1668,395 1668,280 1398,280"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="1398,280 1398,395 1668,395 1668,280 1398,280"/><pc:TextEquiv conf="0.9958605766296387"><pc:Unicode>§. 30.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>§. 30.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="paragraph"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextEquiv conf="0.995364785194397"><pc:Unicode>Hieraus und aus der natuͤrlichen Leichtigkeit, einen Ton mit</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0001"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextEquiv conf="0.9847236275672913"><pc:Unicode>ſeiner Octave zu vermiſchen, koͤnnen wir den von der Natur ange⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0002"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextEquiv conf="0.9941023588180542"><pc:Unicode>wieſenen Geſang bilden f: as: c, worinnen die kleine Terz f: as</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0003"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextEquiv conf="0.9994840025901794"><pc:Unicode>vorhanden iſt. Das iſt der Urſprung der kleinen oder weichen</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_3_line0004"><pc:Coords points="400,383 394,871 2736,814 2736,383 400,383"/><pc:TextEquiv conf="0.9998162388801575"><pc:Unicode>Tonart.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Hieraus und aus der natuͤrlichen Leichtigkeit, einen Ton mit
 ſeiner Octave zu vermiſchen, koͤnnen wir den von der Natur ange⸗
 wieſenen Geſang bilden f: as: c, worinnen die kleine Terz f: as
 vorhanden iſt. Das iſt der Urſprung der kleinen oder weichen
-Tonart.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="heading">
-            <pc:Coords points="1427,848 1427,957 1668,957 1668,848 1427,848"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:Coords points="1454,871 1649,871 1649,952 1454,952"/>
-                <pc:TextEquiv conf="0.856261670589447">
-                    <pc:Unicode>§. 31.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>§. 31.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            <pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/>
-            <pc:TextLine id="region_id_5_line0000">
-                <pc:Coords points="655,966 2632,966 2632,1052 655,1052"/>
-                <pc:TextEquiv conf="0.9929841160774231">
-                    <pc:Unicode>Weil aber die Toͤne f: as oder vielmehr ihre Octaven, nur</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="479,1056 2631,1056 2631,1151 479,1151"/>
-                <pc:TextEquiv conf="0.9898662567138672">
-                    <pc:Unicode>bloß erzittern, wennc erklinget, und nicht zugleich, wie e und g,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="479,1146 2631,1146 2631,1230 479,1230"/>
-                <pc:TextEquiv conf="0.9992708563804626">
-                    <pc:Unicode>einen Laut von ſich geben: ſo folget daher, daß uns die kleine oder</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0003">
-                <pc:Coords points="481,1235 2633,1235 2633,1321 481,1321"/>
-                <pc:TextEquiv conf="0.9993535876274109">
-                    <pc:Unicode>weiche Tonart nicht ſo unmittelbar und gerade, als die große oder</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0004">
-                <pc:Coords points="480,1327 1876,1327 1876,1425 480,1425"/>
-                <pc:TextEquiv conf="0.9994193911552429">
-                    <pc:Unicode>harte Tonart, von der Natur ertheilet wird.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Weil aber die Toͤne f: as oder vielmehr ihre Octaven, nur
+Tonart.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="heading" custom="level_3"><pc:Coords points="1427,848 1427,957 1668,957 1668,848 1427,848"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="1427,848 1427,957 1668,957 1668,848 1427,848"/><pc:TextEquiv conf="0.856261670589447"><pc:Unicode>§. 31.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>§. 31.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="paragraph"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextLine id="region_id_5_line0000"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextEquiv conf="0.9929841160774231"><pc:Unicode>Weil aber die Toͤne f: as oder vielmehr ihre Octaven, nur</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextEquiv conf="0.9898662567138672"><pc:Unicode>bloß erzittern, wennc erklinget, und nicht zugleich, wie e und g,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0002"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextEquiv conf="0.9992708563804626"><pc:Unicode>einen Laut von ſich geben: ſo folget daher, daß uns die kleine oder</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0003"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextEquiv conf="0.9993535876274109"><pc:Unicode>weiche Tonart nicht ſo unmittelbar und gerade, als die große oder</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0004"><pc:Coords points="446,969 445,1428 2695,1428 2656,929 446,969"/><pc:TextEquiv conf="0.9994193911552429"><pc:Unicode>harte Tonart, von der Natur ertheilet wird.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Weil aber die Toͤne f: as oder vielmehr ihre Octaven, nur
 bloß erzittern, wennc erklinget, und nicht zugleich, wie e und g,
 einen Laut von ſich geben: ſo folget daher, daß uns die kleine oder
 weiche Tonart nicht ſo unmittelbar und gerade, als die große oder
-harte Tonart, von der Natur ertheilet wird.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_6" type="heading">
-            <pc:Coords points="1438,1422 1438,1554 1714,1554 1714,1422 1438,1422"/>
-            <pc:TextLine id="region_id_6_line0000">
-                <pc:Coords points="1471,1463 1668,1463 1668,1544 1471,1544"/>
-                <pc:TextEquiv conf="0.9928494095802307">
-                    <pc:Unicode>§. 32.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>§. 32.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_7" custom="list" type="other">
-            <pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/>
-            <pc:TextLine id="region_id_7_line0000">
-                <pc:Coords points="664,1586 1925,1586 1925,1672 664,1672"/>
-                <pc:TextEquiv conf="0.9998213052749634">
-                    <pc:Unicode>Die vollkommenſten Accorde ſind alſo:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_7_region_id_7_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="564,1680 2631,1680 2631,1788 564,1788"/>
-                <pc:TextEquiv conf="0.9832601547241211">
-                    <pc:Unicode>1) Jeder Accord, wie c: e, g: c, der aus einem Tone, der</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_7_region_id_7_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="650,1774 2216,1774 2216,1875 650,1875"/>
-                <pc:TextEquiv conf="0.9994595050811768">
-                    <pc:Unicode>großen Terz, der Quinte und der Octave beſteht.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_7_region_id_7_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="538,1862 2630,1862 2630,1966 538,1966"/>
-                <pc:TextEquiv conf="0.9930893182754517">
-                    <pc:Unicode>2) Jeder Accord, wie f: as: c: f, der aus einem Tone, der</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_7_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_7_region_id_7_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="661,1952 2210,1952 2210,2045 661,2045"/>
-                <pc:TextEquiv conf="0.9904708862304688">
-                    <pc:Unicode>kleinen Terz, der Qunte und der Octave beſteht.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Die vollkommenſten Accorde ſind alſo:
+harte Tonart, von der Natur ertheilet wird.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="heading" custom="level_3"><pc:Coords points="1438,1422 1438,1554 1714,1554 1714,1422 1438,1422"/><pc:TextLine id="region_id_6_line0000"><pc:Coords points="1438,1422 1438,1554 1714,1554 1714,1422 1438,1422"/><pc:TextEquiv conf="0.9928494095802307"><pc:Unicode>§. 32.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>§. 32.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="other" custom="list"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextLine id="region_id_7_line0000"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextEquiv conf="0.9998213052749634"><pc:Unicode>Die vollkommenſten Accorde ſind alſo:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0001"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextEquiv conf="0.9832601547241211"><pc:Unicode>1) Jeder Accord, wie c: e, g: c, der aus einem Tone, der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0002"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextEquiv conf="0.9994595050811768"><pc:Unicode>großen Terz, der Quinte und der Octave beſteht.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0003"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextEquiv conf="0.9930893182754517"><pc:Unicode>2) Jeder Accord, wie f: as: c: f, der aus einem Tone, der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_7_line0004"><pc:Coords points="509,1566 509,2065 2672,2065 2672,1566 509,1566"/><pc:TextEquiv conf="0.9904708862304688"><pc:Unicode>kleinen Terz, der Qunte und der Octave beſteht.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Die vollkommenſten Accorde ſind alſo:
 1) Jeder Accord, wie c: e, g: c, der aus einem Tone, der
 großen Terz, der Quinte und der Octave beſteht.
 2) Jeder Accord, wie f: as: c: f, der aus einem Tone, der
-kleinen Terz, der Qunte und der Octave beſteht.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_8" type="paragraph">
-            <pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/>
-            <pc:TextLine id="region_id_8_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="482,2078 2629,2078 2629,2183 482,2183"/>
-                <pc:TextEquiv conf="0.9981498718261719">
-                    <pc:Unicode>Jn der That, erhalten wir dieſe beyden Accorde von der Natur,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,2167 2627,2167 2627,2258 485,2258"/>
-                <pc:TextEquiv conf="0.9996997714042664">
-                    <pc:Unicode>aber den erſten unmittelbarer als den zweyten. Der erſte heißt der</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="486,2254 2624,2254 2624,2366 486,2366"/>
-                <pc:TextEquiv conf="0.9935838580131531">
-                    <pc:Unicode>große harmoniſche Vierklang, oder der harte vollkommene Ac⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,2344 2625,2344 2625,2447 485,2447"/>
-                <pc:TextEquiv conf="0.9927651286125183">
-                    <pc:Unicode>cord; der zweyte der kleine harmoniſche Vierklang, oder der</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-035_region_id_8_region_id_8_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="485,2434 1629,2434 1629,2542 485,2542"/>
-                <pc:TextEquiv conf="0.9959995746612549">
-                    <pc:Unicode>weiche vollkommene Accord (9).</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Jn der That, erhalten wir dieſe beyden Accorde von der Natur,
+kleinen Terz, der Qunte und der Octave beſteht.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="paragraph"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextEquiv conf="0.9981498718261719"><pc:Unicode>Jn der That, erhalten wir dieſe beyden Accorde von der Natur,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0001"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextEquiv conf="0.9996997714042664"><pc:Unicode>aber den erſten unmittelbarer als den zweyten. Der erſte heißt der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0002"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextEquiv conf="0.9935838580131531"><pc:Unicode>große harmoniſche Vierklang, oder der harte vollkommene Ac⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0003"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextEquiv conf="0.9927651286125183"><pc:Unicode>cord; der zweyte der kleine harmoniſche Vierklang, oder der</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0004"><pc:Coords points="405,2053 405,2553 2672,2553 2672,2053 405,2053"/><pc:TextEquiv conf="0.9959995746612549"><pc:Unicode>weiche vollkommene Accord (9).</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Jn der That, erhalten wir dieſe beyden Accorde von der Natur,
 aber den erſten unmittelbarer als den zweyten. Der erſte heißt der
 große harmoniſche Vierklang, oder der harte vollkommene Ac⸗
 cord; der zweyte der kleine harmoniſche Vierklang, oder der
-weiche vollkommene Accord (9).</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_10" type="footer">
-            <pc:Coords points="2305,3190 2305,3322 2661,3322 2661,3190 2305,3190"/>
-            <pc:TextLine id="region_id_10_line0000">
-                <pc:Coords points="2352,3191 2621,3191 2621,3319 2352,3319"/>
-                <pc:TextEquiv conf="0.9999209642410278">
-                    <pc:Unicode>Drittes</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Drittes</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:GraphicRegion id="region_id_9" type="decoration">
-            <pc:Coords points="1071,2576 1071,3104 1961,3104 1961,2576 1071,2576"/>
-        </pc:GraphicRegion>
-    </pc:Page>
+weiche vollkommene Accord (9).</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:GraphicRegion id="region_id_9" type="decoration"><pc:Coords points="1071,2576 1071,3104 1961,3104 1961,2576 1071,2576"/><pc:TextEquiv><pc:Unicode/></pc:TextEquiv></pc:GraphicRegion><pc:TextRegion id="region_id_10" type="footer"><pc:Coords points="2305,3190 2305,3322 2661,3322 2661,3190 2305,3190"/><pc:TextLine id="region_id_10_line0000"><pc:Coords points="2305,3190 2305,3322 2661,3322 2661,3190 2305,3190"/><pc:TextEquiv conf="0.9999209642410278"><pc:Unicode>Drittes</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Drittes</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>

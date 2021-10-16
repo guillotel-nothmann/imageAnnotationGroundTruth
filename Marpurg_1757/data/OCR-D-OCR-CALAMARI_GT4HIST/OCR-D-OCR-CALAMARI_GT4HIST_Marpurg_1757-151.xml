@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-10T21:44:31</pc:Created>
@@ -67,90 +66,9 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000" orientation="90.">
-            <pc:Coords points="964,173 2095,173 2095,272 964,272"/>
-            <pc:TextLine id="region0000_line0000">
-                <pc:Coords points="964,260 964,179 1029,179 1029,260"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0001">
-                <pc:Coords points="1031,255 1031,195 1073,195 1073,255"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0002">
-                <pc:Coords points="1074,256 1074,193 1146,193 1146,256"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0003">
-                <pc:Coords points="1147,256 1147,177 1247,177 1247,256"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-151_region0000_region0000_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="1248,268 1248,188 1385,188 1385,268"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-151_region0000_region0000_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="1382,253 1382,190 1472,190 1472,253"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0006">
-                <pc:Coords points="1499,254 1499,173 1541,173 1541,254"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0007">
-                <pc:Coords points="1543,256 1543,177 1615,177 1615,256"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0008">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-151_region0000_region0000_line0008.png" comments="binarized,clipped"/>
-                <pc:Coords points="1656,257 1656,178 1757,178 1757,257"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0009">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-151_region0000_region0000_line0009.png" comments="binarized,clipped"/>
-                <pc:Coords points="1757,257 1757,181 1795,181 1795,257"/>
-                <pc:TextEquiv conf="0.5060279965400696">
-                    <pc:Unicode>&amp;</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0010">
-                <pc:Coords points="1798,269 1798,179 1916,179 1916,269"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0000_line0011">
-                <pc:Coords points="1918,272 1918,187 1958,187 1958,272"/>
-                <pc:TextEquiv conf="0.0">
-                    <pc:Unicode></pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>
+        <pc:TextRegion id="region_id_0" type="page-number"><pc:Coords points="436,190 436,282 581,282 581,190 436,190"/></pc:TextRegion><pc:TextRegion id="region_id_1" type="header"><pc:Coords points="964,173 2095,173 2095,272 964,272 964,173"/><pc:TextLine id="region0000_line0000"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0001"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0002"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0003"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0004"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0005"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0006"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0007"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0008"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0009"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.5060279965400696"><pc:Unicode>&amp;</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0010"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0000_line0011"><pc:Coords points="964,173 2095,173 2095,272 964,272"/><pc:TextEquiv conf="0.0"><pc:Unicode/></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>
 
 
 
@@ -161,11 +79,5 @@
 
 &amp;
 
-</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:ImageRegion id="region0001">
-            <pc:Coords points="379,330 2616,330 2616,3321 379,3321"/>
-        </pc:ImageRegion>
-    </pc:Page>
+</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:MusicRegion id="region_id_2" custom="staffNotation"><pc:Coords points="379,330 2616,330 2636,3184 394,3189 379,330"/></pc:MusicRegion><pc:TextRegion id="region_id_3" type="footer"><pc:Coords points="2472,3217 2472,3328 2626,3328 2626,3217 2472,3217"/></pc:TextRegion></pc:Page>
 </pc:PcGts>

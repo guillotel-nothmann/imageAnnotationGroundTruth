@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-10T21:44:22</pc:Created>
@@ -67,290 +66,25 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
-                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
-                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
-                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
-                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
-                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
-                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
-                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
-                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
-                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
-                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region0000">
-            <pc:Coords points="912,199 2529,199 2529,309 912,309"/>
-            <pc:TextLine id="region0000_line0000">
-                <pc:Coords points="912,199 2529,199 2529,309 912,309"/>
-                <pc:TextEquiv conf="0.976684033870697">
-                    <pc:Unicode>. Anmerkungen des Ueberſetzers. 29</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>. Anmerkungen des Ueberſetzers. 29</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0001">
-            <pc:Coords points="425,356 2527,356 2527,592 425,592"/>
-            <pc:TextLine id="region0001_line0000">
-                <pc:Coords points="586,356 2527,356 2527,437 586,437"/>
-                <pc:TextEquiv conf="0.9804085493087769">
-                    <pc:Unicode>(a) Der Bruch iſt um das Comma groͤßer, als der große</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0001_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0001_region0001_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="425,438 2522,438 2522,592 425,592"/>
-                <pc:TextEquiv conf="0.981820285320282">
-                    <pc:Unicode>ie on, und um das Comma großer, als der kleine ganze Ton, wie man</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0001_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0001_region0001_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="450,529 597,529 597,586 450,586"/>
-                <pc:TextEquiv conf="0.9899906516075134">
-                    <pc:Unicode>iehet:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(a) Der Bruch iſt um das Comma groͤßer, als der große
+        <pc:TextRegion id="region_id_0" type="other" continuation="false"><pc:Coords points="912,199 2529,199 2529,309 912,309 912,199"/><pc:TextLine id="region0000_line0000"><pc:Coords points="912,199 2529,199 2529,309 912,309"/><pc:TextEquiv conf="0.976684033870697"><pc:Unicode>. Anmerkungen des Ueberſetzers. 29</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>. Anmerkungen des Ueberſetzers. 29</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_1" type="other" continuation="false"><pc:Coords points="425,356 2527,356 2527,592 425,592 425,356"/><pc:TextLine id="region0001_line0000"><pc:Coords points="425,356 2527,356 2527,592 425,592"/><pc:TextEquiv conf="0.9804085493087769"><pc:Unicode>(a) Der Bruch iſt um das Comma groͤßer, als der große</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0001_line0001"><pc:Coords points="425,356 2527,356 2527,592 425,592"/><pc:TextEquiv conf="0.981820285320282"><pc:Unicode>ie on, und um das Comma großer, als der kleine ganze Ton, wie man</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0001_line0002"><pc:Coords points="425,356 2527,356 2527,592 425,592"/><pc:TextEquiv conf="0.9899906516075134"><pc:Unicode>iehet:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(a) Der Bruch iſt um das Comma groͤßer, als der große
 ie on, und um das Comma großer, als der kleine ganze Ton, wie man
-iehet:</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0005">
-            <pc:Coords points="591,1098 2382,1098 2382,1380 591,1380"/>
-            <pc:TextLine id="region0005_line0000">
-                <pc:Coords points="591,1098 2382,1098 2382,1184 591,1184"/>
-                <pc:TextEquiv conf="0.9739815592765808">
-                    <pc:Unicode>0) Der große halbe Ton iſt 3, und der kleine . Folglich</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0005_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0005_region0005_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="729,1205 2294,1205 2294,1380 729,1380"/>
-                <pc:TextEquiv conf="0.5763972401618958">
-                    <pc:Unicode>*</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0005_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0005_region0005_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="757,1311 1770,1311 1770,1380 757,1380"/>
-                <pc:TextEquiv conf="0.9201936721801758">
-                    <pc:Unicode>15 24 36o 9</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>0) Der große halbe Ton iſt 3, und der kleine . Folglich
+iehet:</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TableRegion id="region_id_2" continuation="false"><pc:Coords points="457,597 1981,597 1981,1067 457,1067 457,597"/></pc:TableRegion><pc:TextRegion id="region_id_3" type="other" continuation="false"><pc:Coords points="591,1098 2382,1098 2382,1380 591,1380 591,1098"/><pc:TextLine id="region0005_line0000"><pc:Coords points="591,1098 2382,1098 2382,1380 591,1380"/><pc:TextEquiv conf="0.9739815592765808"><pc:Unicode>0) Der große halbe Ton iſt 3, und der kleine . Folglich</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0005_line0001"><pc:Coords points="591,1098 2382,1098 2382,1380 591,1380"/><pc:TextEquiv conf="0.5763972401618958"><pc:Unicode>*</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0005_line0002"><pc:Coords points="591,1098 2382,1098 2382,1380 591,1380"/><pc:TextEquiv conf="0.9201936721801758"><pc:Unicode>15 24 36o 9</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>0) Der große halbe Ton iſt 3, und der kleine . Folglich
 *
-15 24 36o 9</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0006">
-            <pc:Coords points="1063,1288 1770,1288 1770,1381 1063,1381"/>
-            <pc:TextLine id="region0006_line0000">
-                <pc:Coords points="1063,1288 1770,1288 1770,1381 1063,1381"/>
-                <pc:TextEquiv conf="0.4729231894016266">
-                    <pc:Unicode>l oo3</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>l oo3</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0007">
-            <pc:Coords points="428,1415 2527,1415 2527,1572 428,1572"/>
-            <pc:TextLine id="region0007_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0007_region0007_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="570,1415 2024,1415 2024,1497 570,1497"/>
-                <pc:TextEquiv conf="0.9841524362564087">
-                    <pc:Unicode>(1) Zween kleine halbe Toͤne geben die Ration</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0007_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0007_region0007_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="428,1417 2527,1417 2527,1572 428,1572"/>
-                <pc:TextEquiv conf="0.3887975513935089">
-                    <pc:Unicode>Aitae:etarin m ·</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(1) Zween kleine halbe Toͤne geben die Ration
-Aitae:etarin m ·</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0008">
-            <pc:Coords points="423,1606 2528,1606 2528,1829 423,1829"/>
-            <pc:TextLine id="region0008_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0008_region0008_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="575,1606 2528,1606 2528,1691 575,1691"/>
-                <pc:TextEquiv conf="0.9747231006622314">
-                    <pc:Unicode>(32) Daß aus ſo viel als . iſt, erfaͤhret man durch ſolgende Be⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0008_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0008_region0008_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="423,1688 1366,1688 1366,1829 423,1829"/>
-                <pc:TextEquiv conf="0.9403769969940186">
-                    <pc:Unicode>rechnung: 1</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0008_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0008_region0008_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="445,1776 2129,1776 2129,1829 445,1829"/>
-                <pc:TextEquiv conf="0.5555025339126587">
-                    <pc:Unicode>11[</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(32) Daß aus ſo viel als . iſt, erfaͤhret man durch ſolgende Be⸗
+15 24 36o 9</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="other" continuation="false"><pc:Coords points="1063,1288 1770,1288 1770,1381 1063,1381 1063,1288"/><pc:TextLine id="region0006_line0000"><pc:Coords points="1063,1288 1770,1288 1770,1381 1063,1381"/><pc:TextEquiv conf="0.4729231894016266"><pc:Unicode>l oo3</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>l oo3</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="other" continuation="false"><pc:Coords points="428,1415 2527,1415 2527,1572 428,1572 428,1415"/><pc:TextLine id="region0007_line0000"><pc:Coords points="428,1415 2527,1415 2527,1572 428,1572"/><pc:TextEquiv conf="0.9841524362564087"><pc:Unicode>(1) Zween kleine halbe Toͤne geben die Ration</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0007_line0001"><pc:Coords points="428,1415 2527,1415 2527,1572 428,1572"/><pc:TextEquiv conf="0.3887975513935089"><pc:Unicode>Aitae:etarin m ·</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(1) Zween kleine halbe Toͤne geben die Ration
+Aitae:etarin m ·</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_6" type="other" continuation="false"><pc:Coords points="423,1606 2528,1606 2528,1829 423,1829 423,1606"/><pc:TextLine id="region0008_line0000"><pc:Coords points="423,1606 2528,1606 2528,1829 423,1829"/><pc:TextEquiv conf="0.9747231006622314"><pc:Unicode>(32) Daß aus ſo viel als . iſt, erfaͤhret man durch ſolgende Be⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0008_line0001"><pc:Coords points="423,1606 2528,1606 2528,1829 423,1829"/><pc:TextEquiv conf="0.9403769969940186"><pc:Unicode>rechnung: 1</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0008_line0002"><pc:Coords points="423,1606 2528,1606 2528,1829 423,1829"/><pc:TextEquiv conf="0.5555025339126587"><pc:Unicode>11[</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(32) Daß aus ſo viel als . iſt, erfaͤhret man durch ſolgende Be⸗
 rechnung: 1
-11[</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0009">
-            <pc:Coords points="900,1984 1887,1984 1887,2145 900,2145"/>
-            <pc:TextLine id="region0009_line0000">
-                <pc:Coords points="900,1984 1756,1984 1756,2057 900,2057"/>
-                <pc:TextEquiv conf="0.9830111265182495">
-                    <pc:Unicode>Das heißt: 1 mal 1 iſt 1, und</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0009_line0001">
-                <pc:Coords points="1226,2058 1887,2058 1887,2145 1226,2145"/>
-                <pc:TextEquiv conf="0.9752709865570068">
-                    <pc:Unicode>4 mal 8 iſt 32, alſo .</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Das heißt: 1 mal 1 iſt 1, und
-4 mal 8 iſt 32, alſo .</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0010">
-            <pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/>
-            <pc:TextLine id="region0010_line0000">
-                <pc:Coords points="579,2175 2521,2175 2521,2254 579,2254"/>
-                <pc:TextEquiv conf="0.9836435317993164">
-                    <pc:Unicode>(33) Zum §. i56. Wenn geſaget wird, daß der Accord gis h d f in</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0010_line0001">
-                <pc:Coords points="425,2255 2522,2255 2522,2328 425,2328"/>
-                <pc:TextEquiv conf="0.9995668530464172">
-                    <pc:Unicode>allen verſchiedenen Geſtalten aus drey kleinen Terzen beſtehet, da gleichwohl in</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0010_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0010_region0010_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="418,2332 2525,2332 2525,2410 418,2410"/>
-                <pc:TextEquiv conf="0.9892044067382812">
-                    <pc:Unicode>der Berſetzung h d f gis zwiſchen f und gis keine kleine Terz, ſondern eine</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0010_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0010_region0010_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="429,2408 2523,2408 2523,2485 429,2485"/>
-                <pc:TextEquiv conf="0.9978598356246948">
-                    <pc:Unicode>uͤbermaͤßige Secunde zum Vorſchein koͤmmt: ſo kann man ſolches am beſten</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0010_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0010_region0010_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="426,2484 2521,2484 2521,2563 426,2563"/>
-                <pc:TextEquiv conf="0.9817708134651184">
-                    <pc:Unicode>enharmoniſch erklaͤren. Auf dieſe Art ſind in gis h d f; in h d f as; in</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0010_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0010_region0010_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="430,2563 2263,2563 2263,2641 430,2641"/>
-                <pc:TextEquiv conf="0.9970039129257202">
-                    <pc:Unicode>d fas ces, und in eis gis h d lauter kleine Terzen vorhanden.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(33) Zum §. i56. Wenn geſaget wird, daß der Accord gis h d f in
+11[</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_7" type="other" continuation="false"><pc:Coords points="900,1984 1887,1984 1887,2145 900,2145 900,1984"/><pc:TextLine id="region0009_line0000"><pc:Coords points="900,1984 1887,1984 1887,2145 900,2145"/><pc:TextEquiv conf="0.9830111265182495"><pc:Unicode>Das heißt: 1 mal 1 iſt 1, und</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0009_line0001"><pc:Coords points="900,1984 1887,1984 1887,2145 900,2145"/><pc:TextEquiv conf="0.9752709865570068"><pc:Unicode>4 mal 8 iſt 32, alſo .</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Das heißt: 1 mal 1 iſt 1, und
+4 mal 8 iſt 32, alſo .</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="other" continuation="false"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641 418,2175"/><pc:TextLine id="region0010_line0000"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9836435317993164"><pc:Unicode>(33) Zum §. i56. Wenn geſaget wird, daß der Accord gis h d f in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0010_line0001"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9995668530464172"><pc:Unicode>allen verſchiedenen Geſtalten aus drey kleinen Terzen beſtehet, da gleichwohl in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0010_line0002"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9892044067382812"><pc:Unicode>der Berſetzung h d f gis zwiſchen f und gis keine kleine Terz, ſondern eine</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0010_line0003"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9978598356246948"><pc:Unicode>uͤbermaͤßige Secunde zum Vorſchein koͤmmt: ſo kann man ſolches am beſten</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0010_line0004"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9817708134651184"><pc:Unicode>enharmoniſch erklaͤren. Auf dieſe Art ſind in gis h d f; in h d f as; in</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0010_line0005"><pc:Coords points="418,2175 2525,2175 2525,2641 418,2641"/><pc:TextEquiv conf="0.9970039129257202"><pc:Unicode>d fas ces, und in eis gis h d lauter kleine Terzen vorhanden.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(33) Zum §. i56. Wenn geſaget wird, daß der Accord gis h d f in
 allen verſchiedenen Geſtalten aus drey kleinen Terzen beſtehet, da gleichwohl in
 der Berſetzung h d f gis zwiſchen f und gis keine kleine Terz, ſondern eine
 uͤbermaͤßige Secunde zum Vorſchein koͤmmt: ſo kann man ſolches am beſten
 enharmoniſch erklaͤren. Auf dieſe Art ſind in gis h d f; in h d f as; in
-d fas ces, und in eis gis h d lauter kleine Terzen vorhanden.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0011">
-            <pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/>
-            <pc:TextLine id="region0011_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0011_region0011_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="583,2684 2521,2684 2521,2762 583,2762"/>
-                <pc:TextEquiv conf="0.9930720329284668">
-                    <pc:Unicode>(34) Um ſich hlervon einen deutlichen Begriff zu machen, wollen wir</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0011_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0011_region0011_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="428,2762 2522,2762 2522,2837 428,2837"/>
-                <pc:TextEquiv conf="0.9914672374725342">
-                    <pc:Unicode>den Geſang e d ſetzen, und darzu einige Baͤſſe entwerfen. Wer ſich die Muͤhe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0011_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0011_region0011_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="430,2838 2521,2838 2521,2916 430,2916"/>
-                <pc:TextEquiv conf="0.9971579313278198">
-                    <pc:Unicode>geben will, mehrere darzu zu ſuchen, wird annoch ein weitlaͤuftiges Feld vor ſich</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0011_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-148_region0011_region0011_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="429,2916 2517,2916 2517,2988 429,2988"/>
-                <pc:TextEquiv conf="0.993148148059845">
-                    <pc:Unicode>finden. Wir werden die Grund⸗ und Generalbaͤſſe ohne Unterſcheid, nachdem</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0011_line0004">
-                <pc:Coords points="431,2992 2519,2992 2519,3067 431,3067"/>
-                <pc:TextEquiv conf="0.9983130097389221">
-                    <pc:Unicode>ſie uns einfallen werden, unter einander ſetzen. Daß wir nicht alle moͤgliche</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region0011_line0005">
-                <pc:Coords points="426,3068 2437,3068 2437,3148 426,3148"/>
-                <pc:TextEquiv conf="0.9981173276901245">
-                    <pc:Unicode>Verſetzungen von jeder beſondern Harmonie nehmen, giebet der Augenſchein.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>(34) Um ſich hlervon einen deutlichen Begriff zu machen, wollen wir
+d fas ces, und in eis gis h d lauter kleine Terzen vorhanden.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_9" type="other" continuation="false"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148 426,2684"/><pc:TextLine id="region0011_line0000"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.9930720329284668"><pc:Unicode>(34) Um ſich hlervon einen deutlichen Begriff zu machen, wollen wir</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0011_line0001"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.9914672374725342"><pc:Unicode>den Geſang e d ſetzen, und darzu einige Baͤſſe entwerfen. Wer ſich die Muͤhe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0011_line0002"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.9971579313278198"><pc:Unicode>geben will, mehrere darzu zu ſuchen, wird annoch ein weitlaͤuftiges Feld vor ſich</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0011_line0003"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.993148148059845"><pc:Unicode>finden. Wir werden die Grund⸗ und Generalbaͤſſe ohne Unterſcheid, nachdem</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0011_line0004"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.9983130097389221"><pc:Unicode>ſie uns einfallen werden, unter einander ſetzen. Daß wir nicht alle moͤgliche</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region0011_line0005"><pc:Coords points="426,2684 2522,2684 2522,3148 426,3148"/><pc:TextEquiv conf="0.9981173276901245"><pc:Unicode>Verſetzungen von jeder beſondern Harmonie nehmen, giebet der Augenſchein.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>(34) Um ſich hlervon einen deutlichen Begriff zu machen, wollen wir
 den Geſang e d ſetzen, und darzu einige Baͤſſe entwerfen. Wer ſich die Muͤhe
 geben will, mehrere darzu zu ſuchen, wird annoch ein weitlaͤuftiges Feld vor ſich
 finden. Wir werden die Grund⸗ und Generalbaͤſſe ohne Unterſcheid, nachdem
 ſie uns einfallen werden, unter einander ſetzen. Daß wir nicht alle moͤgliche
-Verſetzungen von jeder beſondern Harmonie nehmen, giebet der Augenſchein.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region0012">
-            <pc:Coords points="429,3189 2521,3189 2521,3267 429,3267"/>
-            <pc:TextLine id="region0012_line0000">
-                <pc:Coords points="502,3189 2521,3189 2521,3267 502,3267"/>
-                <pc:TextEquiv conf="0.9568648338317871">
-                    <pc:Unicode>Einleit. in die muſic. Setzk. R ()</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Einleit. in die muſic. Setzk. R ()</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TableRegion id="region0003">
-            <pc:Coords points="457,597 1981,597 1981,1067 457,1067"/>
-        </pc:TableRegion>
-        <pc:SeparatorRegion id="region0002">
-            <pc:Coords points="1343,596 1361,596 1361,767 1343,767"/>
-        </pc:SeparatorRegion>
-        <pc:SeparatorRegion id="region0004">
-            <pc:Coords points="1295,893 1310,893 1310,1065 1295,1065"/>
-        </pc:SeparatorRegion>
-    </pc:Page>
+Verſetzungen von jeder beſondern Harmonie nehmen, giebet der Augenſchein.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_10" type="other" continuation="false"><pc:Coords points="429,3189 2521,3189 2521,3267 429,3267 429,3189"/><pc:TextLine id="region0012_line0000"><pc:Coords points="429,3189 2521,3189 2521,3267 429,3267"/><pc:TextEquiv conf="0.9568648338317871"><pc:Unicode>Einleit. in die muſic. Setzk. R ()</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Einleit. in die muſic. Setzk. R ()</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>

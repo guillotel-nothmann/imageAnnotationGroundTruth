@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.4.4</pc:Creator>
         <pc:Created>2021-01-10T21:41:13</pc:Created>
@@ -67,377 +66,36 @@
         </pc:Border>
         <pc:ReadingOrder>
             <pc:OrderedGroup id="reading-order">
-                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/>
-                <pc:RegionRefIndexed index="1" regionRef="region_id_1"/>
-                <pc:RegionRefIndexed index="2" regionRef="region_id_2"/>
-                <pc:RegionRefIndexed index="3" regionRef="region_id_3"/>
-                <pc:RegionRefIndexed index="4" regionRef="region_id_4"/>
-                <pc:RegionRefIndexed index="5" regionRef="region_id_5"/>
-                <pc:RegionRefIndexed index="6" regionRef="region_id_6"/>
-                <pc:RegionRefIndexed index="7" regionRef="region_id_7"/>
-                <pc:RegionRefIndexed index="8" regionRef="region_id_8"/>
-                <pc:RegionRefIndexed index="9" regionRef="region_id_9"/>
-                <pc:RegionRefIndexed index="10" regionRef="region_id_10"/>
-                <pc:RegionRefIndexed index="11" regionRef="region_id_11"/>
-                <pc:RegionRefIndexed index="12" regionRef="region_id_12"/>
-                <pc:RegionRefIndexed index="13" regionRef="region_id_13"/>
-            </pc:OrderedGroup>
+                <pc:RegionRefIndexed index="0" regionRef="region_id_0"/><pc:RegionRefIndexed index="1" regionRef="region_id_1"/><pc:RegionRefIndexed index="2" regionRef="region_id_2"/><pc:RegionRefIndexed index="3" regionRef="region_id_3"/><pc:RegionRefIndexed index="4" regionRef="region_id_4"/><pc:RegionRefIndexed index="5" regionRef="region_id_5"/><pc:RegionRefIndexed index="6" regionRef="region_id_6"/><pc:RegionRefIndexed index="7" regionRef="region_id_7"/><pc:RegionRefIndexed index="8" regionRef="region_id_8"/><pc:RegionRefIndexed index="9" regionRef="region_id_9"/><pc:RegionRefIndexed index="10" regionRef="region_id_10"/><pc:RegionRefIndexed index="11" regionRef="region_id_11"/><pc:RegionRefIndexed index="12" regionRef="region_id_12"/><pc:RegionRefIndexed index="13" regionRef="region_id_13"/></pc:OrderedGroup>
         </pc:ReadingOrder>
-        <pc:TextRegion id="region_id_0" type="page-number">
-            <pc:Coords points="427,249 427,133 550,133 550,249 427,249"/>
-            <pc:TextLine id="region_id_0_line0000">
-                <pc:Coords points="457,161 542,161 542,235 457,235"/>
-                <pc:TextEquiv conf="0.9870666265487671">
-                    <pc:Unicode>68</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>68</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_2" type="heading">
-            <pc:Coords points="434,797 434,397 2647,397 2647,797 434,797"/>
-            <pc:TextLine id="region_id_2_line0000">
-                <pc:Coords points="658,418 2378,418 2378,512 658,512"/>
-                <pc:TextEquiv conf="0.9966370463371277">
-                    <pc:Unicode>Zwanzigſtes Capitel.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_2_region_id_2_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="454,545 2632,545 2632,700 454,700"/>
-                <pc:TextEquiv conf="0.9900588989257812">
-                    <pc:Unicode>Von dem diatoniſch-enharmoniſchen</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_2_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_2_region_id_2_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="647,696 2617,696 2617,797 647,797"/>
-                <pc:TextEquiv conf="0.965878963470459">
-                    <pc:Unicode>Klan ggeſchlecht e.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Zwanzigſtes Capitel.
+        <pc:TextRegion id="region_id_0" type="page-number" continuation="false"><pc:Coords points="427,249 427,133 550,133 550,249 427,249"/><pc:TextLine id="region_id_0_line0000"><pc:Coords points="427,249 427,133 550,133 550,249 427,249"/><pc:TextEquiv conf="0.9870666265487671"><pc:Unicode>68</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>68</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:GraphicRegion id="region_id_1" type="decoration" continuation="false"><pc:Coords points="479,365 479,288 2628,288 2628,365 479,365"/></pc:GraphicRegion><pc:TextRegion id="region_id_2" type="heading" custom="level_2" continuation="false"><pc:Coords points="434,797 434,397 2647,397 2647,797 434,797"/><pc:TextLine id="region_id_2_line0000"><pc:Coords points="434,797 434,397 2647,397 2647,797 434,797"/><pc:TextEquiv conf="0.9966370463371277"><pc:Unicode>Zwanzigſtes Capitel.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0001"><pc:Coords points="434,797 434,397 2647,397 2647,797 434,797"/><pc:TextEquiv conf="0.9900588989257812"><pc:Unicode>Von dem diatoniſch-enharmoniſchen</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_2_line0002"><pc:Coords points="434,797 434,397 2647,397 2647,797 434,797"/><pc:TextEquiv conf="0.965878963470459"><pc:Unicode>Klan ggeſchlecht e.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Zwanzigſtes Capitel.
 Von dem diatoniſch-enharmoniſchen
-Klan ggeſchlecht e.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_3" type="heading">
-            <pc:Coords points="1369,965 1369,855 1679,855 1679,965 1369,965"/>
-            <pc:TextLine id="region_id_3_line0000">
-                <pc:Coords points="1401,869 1664,869 1664,954 1401,954"/>
-                <pc:TextEquiv conf="0.9826337695121765">
-                    <pc:Unicode>§. 147.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>§. 147.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_4" type="drop-capital">
-            <pc:Coords points="427,1217 427,939 718,939 718,1217 427,1217"/>
-            <pc:TextLine id="region_id_4_line0000">
-                <pc:Coords points="456,975 712,975 712,1207 456,1207"/>
-                <pc:TextEquiv conf="0.9877654910087585">
-                    <pc:Unicode>W</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>W</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_5" type="paragraph">
-            <pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/>
-            <pc:TextLine id="region_id_5_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="738,979 738,1016 739,1077 2632,1077 2632,979 738,979"/>
-                <pc:TextEquiv conf="0.9920510053634644">
-                    <pc:Unicode>nn man einen Grundbaß aus wechſelsweiſe ſteigenden Quin⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="764,1072 2631,1072 2631,1167 764,1167"/>
-                <pc:TextEquiv conf="0.9960086345672607">
-                    <pc:Unicode>ten und Terzen, oder welches einerley iſt, aus wechſelsweiſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="764,1159 2544,1159 2544,1268 764,1268"/>
-                <pc:TextEquiv conf="0.995169997215271">
-                    <pc:Unicode>fallenden Quarten und ſteigenden Terzen formiret, z. E.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0003">
-                <pc:Coords points="821,1273 2038,1273 2038,1371 821,1371"/>
-                <pc:TextEquiv conf="0.8973736763000488">
-                    <pc:Unicode>f, c, e, h.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0004">
-                <pc:Coords points="459,1390 2615,1390 2615,1490 459,1490"/>
-                <pc:TextEquiv conf="0.9996416568756104">
-                    <pc:Unicode>ſo giebet dieſer Baß den Geſang:</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="1251,1510 2636,1510 2636,1626 1251,1626"/>
-                <pc:TextEquiv conf="0.9964891672134399">
-                    <pc:Unicode>f, e, e, dis.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0006">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0006.png" comments="binarized,clipped"/>
-                <pc:Coords points="461,1625 2632,1625 2632,1723 461,1723"/>
-                <pc:TextEquiv conf="0.9937213659286499">
-                    <pc:Unicode>worinnen die halben Toͤne f, e, und e, dis einander gleich ) und</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_5_line0007">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_5_region_id_5_line0007.png" comments="binarized,clipped"/>
-                <pc:Coords points="459,1715 1424,1715 1424,1798 459,1798"/>
-                <pc:TextEquiv conf="0.9983286261558533">
-                    <pc:Unicode>zwar große halbe Toͤne ſind.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>nn man einen Grundbaß aus wechſelsweiſe ſteigenden Quin⸗
+Klan ggeſchlecht e.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_3" type="heading" custom="level_3" continuation="false"><pc:Coords points="1369,965 1369,855 1679,855 1679,965 1369,965"/><pc:TextLine id="region_id_3_line0000"><pc:Coords points="1369,965 1369,855 1679,855 1679,965 1369,965"/><pc:TextEquiv conf="0.9826337695121765"><pc:Unicode>§. 147.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>§. 147.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_4" type="drop-capital" continuation="false"><pc:Coords points="427,1217 427,939 718,939 718,1217 427,1217"/><pc:TextLine id="region_id_4_line0000"><pc:Coords points="427,1217 427,939 718,939 718,1217 427,1217"/><pc:TextEquiv conf="0.9877654910087585"><pc:Unicode>W</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>W</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_5" type="paragraph" continuation="false"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:MusicRegion id="region_id_6" custom="tablatureNotation" continuation="false"><pc:Coords points="1279,1378 1279,1262 1821,1262 1821,1378 1279,1378"/></pc:MusicRegion><pc:MusicRegion id="region_id_7" custom="tablatureNotation" continuation="false"><pc:Coords points="1227,1611 1227,1494 1834,1494 1834,1611 1227,1611"/></pc:MusicRegion><pc:TextLine id="region_id_5_line0000"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9920510053634644"><pc:Unicode>nn man einen Grundbaß aus wechſelsweiſe ſteigenden Quin⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0001"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9960086345672607"><pc:Unicode>ten und Terzen, oder welches einerley iſt, aus wechſelsweiſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0002"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.995169997215271"><pc:Unicode>fallenden Quarten und ſteigenden Terzen formiret, z. E.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0003"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.8973736763000488"><pc:Unicode>f, c, e, h.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0004"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9996416568756104"><pc:Unicode>ſo giebet dieſer Baß den Geſang:</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0005"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9964891672134399"><pc:Unicode>f, e, e, dis.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0006"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9937213659286499"><pc:Unicode>worinnen die halben Toͤne f, e, und e, dis einander gleich ) und</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_5_line0007"><pc:Coords points="2660,1798 2660,978 737,972 744,1282 408,1288 434,1798 2660,1798"/><pc:TextEquiv conf="0.9983286261558533"><pc:Unicode>zwar große halbe Toͤne ſind.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>nn man einen Grundbaß aus wechſelsweiſe ſteigenden Quin⸗
 ten und Terzen, oder welches einerley iſt, aus wechſelsweiſe
 fallenden Quarten und ſteigenden Terzen formiret, z. E.
 f, c, e, h.
 ſo giebet dieſer Baß den Geſang:
 f, e, e, dis.
 worinnen die halben Toͤne f, e, und e, dis einander gleich ) und
-zwar große halbe Toͤne ſind.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_8" type="paragraph">
-            <pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/>
-            <pc:TextLine id="region_id_8_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_8_region_id_8_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="638,1825 2630,1825 2630,1928 638,1928"/>
-                <pc:TextEquiv conf="0.9979894161224365">
-                    <pc:Unicode>Dieſes Klanggeſchlecht, worinnen alle halbe Toͤne groß ſind,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_8_region_id_8_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="460,1911 2633,1911 2633,2018 460,2018"/>
-                <pc:TextEquiv conf="0.9932659268379211">
-                    <pc:Unicode>heiſſet das diatoniſch⸗enharmoniſche Klanggeſchlecht, weil zween</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_8_region_id_8_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="463,2002 2631,2002 2631,2104 463,2104"/>
-                <pc:TextEquiv conf="0.9981749653816223">
-                    <pc:Unicode>große halbe Toͤne hinter einander einen, um einen enharmoniſchen</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_8_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_8_region_id_8_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="461,2094 2411,2094 2411,2190 461,2190"/>
-                <pc:TextEquiv conf="0.997352659702301">
-                    <pc:Unicode>Viertheilston, zu großen ganzen Ton formiren.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Dieſes Klanggeſchlecht, worinnen alle halbe Toͤne groß ſind,
+zwar große halbe Toͤne ſind.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_8" type="paragraph" continuation="false"><pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/><pc:TextLine id="region_id_8_line0000"><pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/><pc:TextEquiv conf="0.9979894161224365"><pc:Unicode>Dieſes Klanggeſchlecht, worinnen alle halbe Toͤne groß ſind,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0001"><pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/><pc:TextEquiv conf="0.9932659268379211"><pc:Unicode>heiſſet das diatoniſch⸗enharmoniſche Klanggeſchlecht, weil zween</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0002"><pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/><pc:TextEquiv conf="0.9981749653816223"><pc:Unicode>große halbe Toͤne hinter einander einen, um einen enharmoniſchen</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_8_line0003"><pc:Coords points="447,2198 447,1798 2647,1798 2647,2198 447,2198"/><pc:TextEquiv conf="0.997352659702301"><pc:Unicode>Viertheilston, zu großen ganzen Ton formiren.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Dieſes Klanggeſchlecht, worinnen alle halbe Toͤne groß ſind,
 heiſſet das diatoniſch⸗enharmoniſche Klanggeſchlecht, weil zween
 große halbe Toͤne hinter einander einen, um einen enharmoniſchen
-Viertheilston, zu großen ganzen Ton formiren.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_10" type="footer">
-            <pc:Coords points="2447,2721 2447,2604 2647,2604 2647,2721 2447,2721"/>
-            <pc:TextLine id="region_id_10_line0000">
-                <pc:Coords points="2467,2640 2627,2640 2627,2715 2467,2715"/>
-                <pc:TextEquiv conf="0.9951310157775879">
-                    <pc:Unicode>Ein⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>Ein⸗</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_11" type="footnote">
-            <pc:Coords points="427,2727 427,3346 2712,3346 2712,2727 427,2727"/>
-            <pc:TextLine id="region_id_11_line0000">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0000.png" comments="binarized,clipped"/>
-                <pc:Coords points="550,2759 2628,2759 2628,2846 550,2846"/>
-                <pc:TextEquiv conf="0.9735257625579834">
-                    <pc:Unicode>ff Der Augenſchein giebet, daß, wenn aus 4, oder 4 iſt, h aus dem Baſſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0001">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0001.png" comments="binarized,clipped"/>
-                <pc:Coords points="472,2840 2627,2840 2627,2922 472,2922"/>
-                <pc:TextEquiv conf="0.9773566126823425">
-                    <pc:Unicode>das f aus dem Baſſe fuͤr 1 angenommen aus , und dis von h: ſo ver⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0002">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0002.png" comments="binarized,clipped"/>
-                <pc:Coords points="473,2921 2628,2921 2628,3007 473,3007"/>
-                <pc:TextEquiv conf="0.9811932444572449">
-                    <pc:Unicode>wird, das f aus der Leiter 2 iſt, c aus haͤlt ſich e gegen dis wie gegen 3</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="469,3003 2630,3003 2630,3086 469,3086"/>
-                <pc:TextEquiv conf="0.9649264216423035">
-                    <pc:Unicode>dem Baſſe 3 und e aus der Leiter aus aus 44, das iſt wie i6 gegen 15. Folglich</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="469,3080 2624,3080 2624,3168 469,3168"/>
-                <pc:TextEquiv conf="0.9876851439476013">
-                    <pc:Unicode>4, das iſt . Die Differenz von f zu ſind die beyden halben Toͤne f, e und e,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_11_region_id_11_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="473,3159 2101,3159 2101,3240 473,3240"/>
-                <pc:TextEquiv conf="0.9923545718193054">
-                    <pc:Unicode>e iſt alſo wie 2 gegen, oder wie 1ge⸗ dis alle beyde groß.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_11_line0006">
-                <pc:Coords points="472,3241 1517,3241 1517,3312 472,3312"/>
-                <pc:TextEquiv conf="0.9840372204780579">
-                    <pc:Unicode>gen H Wenn nun e aus dem Baſſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ff Der Augenſchein giebet, daß, wenn aus 4, oder 4 iſt, h aus dem Baſſe
-das f aus dem Baſſe fuͤr 1 angenommen aus , und dis von h: ſo ver⸗
-wird, das f aus der Leiter 2 iſt, c aus haͤlt ſich e gegen dis wie gegen 3
-dem Baſſe 3 und e aus der Leiter aus aus 44, das iſt wie i6 gegen 15. Folglich
-4, das iſt . Die Differenz von f zu ſind die beyden halben Toͤne f, e und e,
-e iſt alſo wie 2 gegen, oder wie 1ge⸗ dis alle beyde groß.
-gen H Wenn nun e aus dem Baſſe</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_12" type="paragraph">
-            <pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/>
-            <pc:TextLine id="region_id_12_line0000">
-                <pc:Coords points="550,2759 1522,2759 1522,2837 550,2837"/>
-                <pc:TextEquiv conf="0.987777829170227">
-                    <pc:Unicode>ff Der Augenſchein giebet, daß, wenn</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0001">
-                <pc:Coords points="472,2840 1521,2840 1521,2915 472,2915"/>
-                <pc:TextEquiv conf="0.986668050289154">
-                    <pc:Unicode>das f aus dem Baſſe fuͤr 1 angenommen</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0002">
-                <pc:Coords points="473,2921 1520,2921 1520,2993 473,2993"/>
-                <pc:TextEquiv conf="0.9952394366264343">
-                    <pc:Unicode>wird, das f aus der Leiter 2 iſt, c aus</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0003">
-                <pc:Coords points="469,3003 1519,3003 1519,3073 469,3073"/>
-                <pc:TextEquiv conf="0.99286949634552">
-                    <pc:Unicode>dem Baſſe und e aus der Leiter aus</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0004">
-                <pc:Coords points="469,3080 1518,3080 1518,3156 469,3156"/>
-                <pc:TextEquiv conf="0.9593534469604492">
-                    <pc:Unicode>4, das iſt 4. Die Differenz von f zu</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0005">
-                <pc:Coords points="473,3159 1519,3159 1519,3228 473,3228"/>
-                <pc:TextEquiv conf="0.9869132041931152">
-                    <pc:Unicode>e iſt alſo wie 2 gegen , oder wie 1ge⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_12_line0006">
-                <pc:Coords points="472,3241 1517,3241 1517,3312 472,3312"/>
-                <pc:TextEquiv conf="0.9840372204780579">
-                    <pc:Unicode>gen H Wenn nun e aus dem Baſſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>ff Der Augenſchein giebet, daß, wenn
+Viertheilston, zu großen ganzen Ton formiren.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:GraphicRegion id="region_id_9" type="decoration" continuation="false"><pc:Coords points="1273,2624 1273,2269 1802,2269 1802,2624 1273,2624"/></pc:GraphicRegion><pc:TextRegion id="region_id_10" type="footer" continuation="false"><pc:Coords points="2447,2721 2447,2604 2647,2604 2647,2721 2447,2721"/><pc:TextLine id="region_id_10_line0000"><pc:Coords points="2447,2721 2447,2604 2647,2604 2647,2721 2447,2721"/><pc:TextEquiv conf="0.9951310157775879"><pc:Unicode>Ein⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>Ein⸗</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_11" type="footnote" continuation="false"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextRegion id="region_id_12" type="paragraph" continuation="false"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextLine id="region_id_12_line0000"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.987777829170227"><pc:Unicode>ff Der Augenſchein giebet, daß, wenn</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0001"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.986668050289154"><pc:Unicode>das f aus dem Baſſe fuͤr 1 angenommen</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0002"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.9952394366264343"><pc:Unicode>wird, das f aus der Leiter 2 iſt, c aus</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0003"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.99286949634552"><pc:Unicode>dem Baſſe und e aus der Leiter aus</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0004"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.9593534469604492"><pc:Unicode>4, das iſt 4. Die Differenz von f zu</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0005"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.9869132041931152"><pc:Unicode>e iſt alſo wie 2 gegen , oder wie 1ge⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_12_line0006"><pc:Coords points="1556,3321 1556,2753 453,2753 453,3321 1556,3321"/><pc:TextEquiv conf="0.9840372204780579"><pc:Unicode>gen H Wenn nun e aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ff Der Augenſchein giebet, daß, wenn
 das f aus dem Baſſe fuͤr 1 angenommen
 wird, das f aus der Leiter 2 iſt, c aus
 dem Baſſe und e aus der Leiter aus
 4, das iſt 4. Die Differenz von f zu
 e iſt alſo wie 2 gegen , oder wie 1ge⸗
-gen H Wenn nun e aus dem Baſſe</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:TextRegion id="region_id_13" type="paragraph">
-            <pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/>
-            <pc:TextLine id="region_id_13_line0000">
-                <pc:Coords points="1586,2770 2628,2770 2628,2846 1586,2846"/>
-                <pc:TextEquiv conf="0.9793985486030579">
-                    <pc:Unicode>aus , oder 4 iſt, h aus dem Baſſe</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_13_line0001">
-                <pc:Coords points="1583,2851 2627,2851 2627,2922 1583,2922"/>
-                <pc:TextEquiv conf="0.9930050373077393">
-                    <pc:Unicode>aus , und dis von h: ſo ver⸗</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_13_line0002">
-                <pc:Coords points="1583,2924 2628,2924 2628,3007 1583,3007"/>
-                <pc:TextEquiv conf="0.9712393879890442">
-                    <pc:Unicode>haͤlt ſich e gegen dis wie gegen z</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_13_line0003">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_13_region_id_13_line0003.png" comments="binarized,clipped"/>
-                <pc:Coords points="1588,3008 2630,3008 2630,3086 1588,3086"/>
-                <pc:TextEquiv conf="0.9445661306381226">
-                    <pc:Unicode>aus 44, das iſt wie i6 gegen 15. Folglich</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_13_line0004">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_13_region_id_13_line0004.png" comments="binarized,clipped"/>
-                <pc:Coords points="1583,3086 2624,3086 2624,3168 1583,3168"/>
-                <pc:TextEquiv conf="0.9918808937072754">
-                    <pc:Unicode>ſind die beyden halben Toͤne f, e und e,</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextLine id="region_id_13_line0005">
-                <pc:AlternativeImage filename="OCR-D-IMG-CLIP/OCR-D-IMG-CLIP_Marpurg_1757-087_region_id_13_region_id_13_line0005.png" comments="binarized,clipped"/>
-                <pc:Coords points="1581,3163 2101,3163 2101,3240 1581,3240"/>
-                <pc:TextEquiv conf="0.9987649917602539">
-                    <pc:Unicode>dis alle beyde groß.</pc:Unicode>
-                </pc:TextEquiv>
-            </pc:TextLine>
-            <pc:TextEquiv>
-                <pc:Unicode>aus , oder 4 iſt, h aus dem Baſſe
+gen H Wenn nun e aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextRegion id="region_id_13" type="paragraph" continuation="true"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextLine id="region_id_13_line0000"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9793985486030579"><pc:Unicode>aus , oder 4 iſt, h aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_13_line0001"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9930050373077393"><pc:Unicode>aus , und dis von h: ſo ver⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_13_line0002"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9712393879890442"><pc:Unicode>haͤlt ſich e gegen dis wie gegen z</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_13_line0003"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9445661306381226"><pc:Unicode>aus 44, das iſt wie i6 gegen 15. Folglich</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_13_line0004"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9918808937072754"><pc:Unicode>ſind die beyden halben Toͤne f, e und e,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_13_line0005"><pc:Coords points="1576,3263 1576,2753 2654,2753 2654,3263 1576,3263"/><pc:TextEquiv conf="0.9987649917602539"><pc:Unicode>dis alle beyde groß.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>aus , oder 4 iſt, h aus dem Baſſe
 aus , und dis von h: ſo ver⸗
 haͤlt ſich e gegen dis wie gegen z
 aus 44, das iſt wie i6 gegen 15. Folglich
 ſind die beyden halben Toͤne f, e und e,
-dis alle beyde groß.</pc:Unicode>
-            </pc:TextEquiv>
-        </pc:TextRegion>
-        <pc:GraphicRegion id="region_id_1" type="decoration">
-            <pc:Coords points="479,365 479,288 2628,288 2628,365 479,365"/>
-        </pc:GraphicRegion>
-        <pc:GraphicRegion id="region_id_9" type="decoration">
-            <pc:Coords points="1273,2624 1273,2269 1802,2269 1802,2624 1273,2624"/>
-        </pc:GraphicRegion>
-        <pc:MusicRegion id="region_id_6" custom="tablatureNotation">
-            <pc:Coords points="1279,1378 1279,1262 1821,1262 1821,1378 1279,1378"/>
-        </pc:MusicRegion>
-        <pc:MusicRegion id="region_id_7" custom="tablatureNotation">
-            <pc:Coords points="1227,1611 1227,1494 1834,1494 1834,1611 1227,1611"/>
-        </pc:MusicRegion>
-    </pc:Page>
+dis alle beyde groß.</pc:Unicode></pc:TextEquiv></pc:TextRegion><pc:TextLine id="region_id_11_line0000"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9735257625579834"><pc:Unicode>ff Der Augenſchein giebet, daß, wenn aus 4, oder 4 iſt, h aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0001"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9773566126823425"><pc:Unicode>das f aus dem Baſſe fuͤr 1 angenommen aus , und dis von h: ſo ver⸗</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0002"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9811932444572449"><pc:Unicode>wird, das f aus der Leiter 2 iſt, c aus haͤlt ſich e gegen dis wie gegen 3</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0003"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9649264216423035"><pc:Unicode>dem Baſſe 3 und e aus der Leiter aus aus 44, das iſt wie i6 gegen 15. Folglich</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0004"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9876851439476013"><pc:Unicode>4, das iſt . Die Differenz von f zu ſind die beyden halben Toͤne f, e und e,</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0005"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9923545718193054"><pc:Unicode>e iſt alſo wie 2 gegen, oder wie 1ge⸗ dis alle beyde groß.</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextLine id="region_id_11_line0006"><pc:Coords points="427,2727 427,3346 2708,3331 2712,2727 427,2727"/><pc:TextEquiv conf="0.9840372204780579"><pc:Unicode>gen H Wenn nun e aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextLine><pc:TextEquiv><pc:Unicode>ff Der Augenſchein giebet, daß, wenn aus 4, oder 4 iſt, h aus dem Baſſe
+das f aus dem Baſſe fuͤr 1 angenommen aus , und dis von h: ſo ver⸗
+wird, das f aus der Leiter 2 iſt, c aus haͤlt ſich e gegen dis wie gegen 3
+dem Baſſe 3 und e aus der Leiter aus aus 44, das iſt wie i6 gegen 15. Folglich
+4, das iſt . Die Differenz von f zu ſind die beyden halben Toͤne f, e und e,
+e iſt alſo wie 2 gegen, oder wie 1ge⸗ dis alle beyde groß.
+gen H Wenn nun e aus dem Baſſe</pc:Unicode></pc:TextEquiv></pc:TextRegion></pc:Page>
 </pc:PcGts>
